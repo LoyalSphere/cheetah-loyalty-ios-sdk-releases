@@ -1,0 +1,2990 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Member Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Member" class="dashAnchor"></a>
+    <a title="Member Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CheetahLoyaltyCore Docs</a> (87% documented)</p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CheetahLoyaltyCore Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Member Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../API.html">API</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/API.html">API</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIResponse.html">APIResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration/DefaultsKeys.html">– DefaultsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONDecoder.html">JSONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ListInfo.html">ListInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ResponseError.html">ResponseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ResponseError/ResponseSerializationFailureReason.html">– ResponseSerializationFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UserLocation.html">UserLocation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../URL%20and%20URLRequest%20Convertibles.html">URL and URLRequest Convertibles</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLConvertible.html">URLConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLError.html">URLError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLError/ParameterEncodingFailureReason.html">– ParameterEncodingFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLRequest.html">URLRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLRequest/MultipartAttachment.html">– MultipartAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Activities.html">Activities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ActivitiesAPI.html">ActivitiesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ActivitiesRequest.html">ActivitiesRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Activity.html">Activity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Activity/Detail.html">– Detail</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Authentication.html">Authentication</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthenticationAPI.html">AuthenticationAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AuthenticationAPI/SocialLoginType.html">– SocialLoginType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AuthenticationAPI/SignUpParameterKeys.html">– SignUpParameterKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AuthenticationInfo.html">AuthenticationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AuthenticationInfo/SettingsKeys.html">– SettingsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AuthenticationRequest.html">AuthenticationRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Badges.html">Badges</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Badge.html">Badge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BadgesAPI.html">BadgesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BadgesRequest.html">BadgesRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Challenges.html">Challenges</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Challenge.html">Challenge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Challenge/ResponseType.html">– ResponseType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Challenge/Response.html">– Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Challenge/ResponseInfo.html">– ResponseInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Challenge/MetricPrize.html">– MetricPrize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ChallengesAPI.html">ChallengesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ChallengesRequest.html">ChallengesRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultipleChoiceSurvey.html">MultipleChoiceSurvey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Poll.html">Poll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Poll/Result.html">– Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Prize.html">Prize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RatingSurvey.html">RatingSurvey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Challenges.html#/s:18CheetahLoyaltyCore14SecondaryPrizeP">SecondaryPrize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Survey.html">Survey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SurveyOption.html">SurveyOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SurveyType.html">SurveyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TextSurvey.html">TextSurvey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Challenge%20Response%20Settings.html">Challenge Response Settings</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ARChallengeResponseSetting.html">ARChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ARDefinition.html">ARDefinition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Challenge%20Response%20Settings.html#/s:18CheetahLoyaltyCore24ChallengeResponseSettingP">ChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CheckInChallengeResponseSetting.html">CheckInChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GameChallengeResponseSetting.html">GameChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GameChallengeResponseSetting/Game.html">– Game</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GenericChallengeResponseSetting.html">GenericChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JoinGroupChallengeResponseSetting.html">JoinGroupChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultiQuestionChallengeResponseSetting.html">MultiQuestionChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PhotoCaptionChallengeResponseSetting.html">PhotoCaptionChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PhotoCaptionChallengeResponseSetting/Subtype.html">– Subtype</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PhotoChallengeResponseSetting.html">PhotoChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ReferralChallengeResponseSetting.html">ReferralChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SocialMediaChallengeResponseSetting.html">SocialMediaChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SurveyChallengeResponseSetting.html">SurveyChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UpdateProfileChallengeResponseSetting.html">UpdateProfileChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UpdateProfileChallengeResponseSetting/SubType.html">– SubType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UpdateProfileChallengeResponseSetting/Attribute.html">– Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoChallengeResponseSetting.html">VideoChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ViewContentChallengeResponseSetting.html">ViewContentChallengeResponseSetting</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Codes.html">Codes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Code.html">Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CodesAPI.html">CodesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CodesRequest.html">CodesRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Content.html">Content</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ContentAPI.html">ContentAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentPage.html">ContentPage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentPage/StaticFile.html">– StaticFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ContentRequest.html">ContentRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentToken.html">ContentToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentToken/Value.html">– Value</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StaticFile.html">StaticFile</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Events.html">Events</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Event/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Event/Date.html">– Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Event/Response.html">– Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventsAPI.html">EventsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventsRequest.html">EventsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Host.html">Host</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Host/Profile.html">– Profile</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Feedbacks.html">Feedbacks</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/FeedbackCategory.html">FeedbackCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FeedbackItem.html">FeedbackItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FeedbackItem/FeedbackType.html">– FeedbackType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeedbacksAPI.html">FeedbacksAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeedbacksRequest.html">FeedbacksRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Friends.html">Friends</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/FacebookFriend.html">FacebookFriend</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FriendsAPI.html">FriendsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FriendsRequest.html">FriendsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Gift%20Cards.html">Gift Cards</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/GiftCard.html">GiftCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GiftCard/TransactionType.html">– TransactionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GiftCard/Transaction.html">– Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GiftCard/GiftCardType.html">– GiftCardType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GiftCardsAPI.html">GiftCardsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GiftCardsRequest.html">GiftCardsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Groups.html">Groups</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Group.html">Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GroupClass.html">GroupClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GroupsAPI.html">GroupsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GroupsRequest.html">GroupsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Household.html">Household</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HouseholdAPI.html">HouseholdAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HouseholdRequest.html">HouseholdRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Leaderboards.html">Leaderboards</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Leaderboard.html">Leaderboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Leaderboard/Feed.html">– Feed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LeaderboardsAPI.html">LeaderboardsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LeaderboardsRequest.html">LeaderboardsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Members.html">Members</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Member.html">Member</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Member/ConnectionStatus.html">– ConnectionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MembersAPI.html">MembersAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MembersRequest.html">MembersRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Messages.html">Messages</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Message.html">Message</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Message/Attachment.html">– Attachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Message/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MessagesAPI.html">MessagesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MessagesRequest.html">MessagesRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MessagesRequest/TrackAction.html">– TrackAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../News%20Feed.html">News Feed</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Comment.html">Comment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Commenter.html">Commenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NewsFeed.html">NewsFeed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NewsFeedAPI.html">NewsFeedAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NewsFeedRequest.html">NewsFeedRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Post.html">Post</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Post/Owner.html">– Owner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Post/Flag.html">– Flag</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Offers.html">Offers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Offer.html">Offer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Offer/OfferType.html">– OfferType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Offer/Response.html">– Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Offer/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Offer/TargetObject.html">– TargetObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Offer/ResponseInfo.html">– ResponseInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OffersAPI.html">OffersAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OffersRequest.html">OffersRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Places.html">Places</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/OperatingDay.html">OperatingDay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OperatingDay/Hours.html">– Hours</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Place.html">Place</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Place/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Place/ClientEventType.html">– ClientEventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Place.html">Place</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Place/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlacesAPI.html">PlacesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlacesRequest.html">PlacesRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Preferences.html">Preferences</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Preference.html">Preference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Preference/Domain.html">– Domain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PreferencesAPI.html">PreferencesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PreferencesRequest.html">PreferencesRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Products.html">Products</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Order.html">Order</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Order/Item.html">– Item</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Order/Place.html">– Place</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product.html">Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Attribute.html">– Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/AttributeOption.html">– AttributeOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Configuration.html">– Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Component.html">– Component</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductsAPI.html">ProductsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductsRequest.html">ProductsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Profile.html">Profile</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary.html">AccountSummary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/Member.html">– Member</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/Metric.html">– Metric</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/MemberBadge.html">– MemberBadge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/TierInfo.html">– TierInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/CurrentTier.html">– CurrentTier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/Tier.html">– Tier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/MetricThreshold.html">– MetricThreshold</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProfileAPI.html">ProfileAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProfileAttribute.html">ProfileAttribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProfileAttribute/Domain.html">– Domain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProfileRequest.html">ProfileRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UserIdentity.html">UserIdentity</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Punch%20Cards.html">Punch Cards</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/PunchCard.html">PunchCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PunchCard/Detail.html">– Detail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PunchCard/PunchCardType.html">– PunchCardType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PunchCard/Punch.html">– Punch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PunchCard/Reward.html">– Reward</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PunchCard/Place.html">– Place</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PunchCardsAPI.html">PunchCardsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PunchCardsRequest.html">PunchCardsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Receipts.html">Receipts</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Receipt.html">Receipt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Receipt/Item.html">– Item</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ReceiptsAPI.html">ReceiptsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ReceiptsRequest.html">ReceiptsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Referrals.html">Referrals</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ReferralsAPI.html">ReferralsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ReferralsRequest.html">ReferralsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Rewards.html">Rewards</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Award.html">Award</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Certificate.html">Certificate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Coupon.html">Coupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward.html">Reward</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/Class.html">– Class</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/Response.html">– Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/ResponseInfo.html">– ResponseInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/Attribute.html">– Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/AttributeCombination.html">– AttributeCombination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/AttributeOption.html">– AttributeOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reward.html">Reward</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reward/Class.html">– Class</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reward/Response.html">– Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reward/ResponseInfo.html">– ResponseInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reward/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reward/Attribute.html">– Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reward/AttributeCombination.html">– AttributeCombination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reward/AttributeOption.html">– AttributeOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RewardsAPI.html">RewardsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RewardsRequest.html">RewardsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Objects.html">Other Objects</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/_AnyDecodable.html">_AnyDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/_AnyEncodable.html">_AnyEncodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyCodable.html">AnyCodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyDecodable.html">AnyDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyEncodable.html">AnyEncodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RespondableInfo.html">RespondableInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DevicesAPI.html">DevicesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DevicesRequest.html">DevicesRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InfoAPI.html">InfoAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InfoRequest.html">InfoRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MetaReferencesAPI.html">MetaReferencesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MetaReferencesRequest.html">MetaReferencesRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UpgradeCheckAPI.html">UpgradeCheckAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UpgradeCheckRequest.html">UpgradeCheckRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Extensions.html">Other Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Other%20Protocols.html#/s:18CheetahLoyaltyCore31UpdateProfileChallengeAttributeP">UpdateProfileChallengeAttribute</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CountriesStates.html">CountriesStates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Country.html">Country</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Country/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeychainError.html">KeychainError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeychainItem.html">KeychainItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NearbyPlaces.html">NearbyPlaces</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UpgradeCheck.html">UpgradeCheck</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UpgradeCheck/Action.html">– Action</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Other%20Typealiases.html#/s:18CheetahLoyaltyCore11HTTPHeadersa">HTTPHeaders</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Member</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Member</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Struct representing Member related values.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV5emailSSvp"></a>
+                    <a name="//apple_ref/swift/Property/email" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV5emailSSvp">email</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Email of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">email</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV9firstNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/firstName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV9firstNameSSvp">firstName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>First name of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">firstName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV8lastNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/lastName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV8lastNameSSvp">lastName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Last name of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lastName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV13mailingStreetSSvp"></a>
+                    <a name="//apple_ref/swift/Property/mailingStreet" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV13mailingStreetSSvp">mailingStreet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mailing street address of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">mailingStreet</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV11mailingCitySSvp"></a>
+                    <a name="//apple_ref/swift/Property/mailingCity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV11mailingCitySSvp">mailingCity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mailing city address of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">mailingCity</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV12mailingStateSSvp"></a>
+                    <a name="//apple_ref/swift/Property/mailingState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV12mailingStateSSvp">mailingState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mailing state address of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">mailingState</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV17mailingPostalCodeSSvp"></a>
+                    <a name="//apple_ref/swift/Property/mailingPostalCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV17mailingPostalCodeSSvp">mailingPostalCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mailing postal code of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">mailingPostalCode</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV14mailingCountrySSvp"></a>
+                    <a name="//apple_ref/swift/Property/mailingCountry" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV14mailingCountrySSvp">mailingCountry</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mailing country address of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">mailingCountry</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV9birthdateSSvp"></a>
+                    <a name="//apple_ref/swift/Property/birthdate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV9birthdateSSvp">birthdate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Birthday of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">birthdate</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV11mobilePhoneSSvp"></a>
+                    <a name="//apple_ref/swift/Property/mobilePhone" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV11mobilePhoneSSvp">mobilePhone</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Contact Number of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">mobilePhone</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV11memberSinceSSvp"></a>
+                    <a name="//apple_ref/swift/Property/memberSince" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV11memberSinceSSvp">memberSince</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Date when the member joined the program.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">memberSince</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV8memberIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/memberId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV8memberIdSSvp">memberId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Member Id of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">memberId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV18receiveEmailOffersSbvp"></a>
+                    <a name="//apple_ref/swift/Property/receiveEmailOffers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV18receiveEmailOffersSbvp">receiveEmailOffers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member will be able to receive email offers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">receiveEmailOffers</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV16receiveSmsOffersSbvp"></a>
+                    <a name="//apple_ref/swift/Property/receiveSmsOffers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV16receiveSmsOffersSbvp">receiveSmsOffers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member will be able to receive sms offers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">receiveSmsOffers</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV22receiveMobileAppOffersSbvp"></a>
+                    <a name="//apple_ref/swift/Property/receiveMobileAppOffers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV22receiveMobileAppOffersSbvp">receiveMobileAppOffers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member will be able to receive mobile app offers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">receiveMobileAppOffers</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV17receiveMailOffersSbvp"></a>
+                    <a name="//apple_ref/swift/Property/receiveMailOffers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV17receiveMailOffersSbvp">receiveMailOffers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member will be able to receive mail offers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">receiveMailOffers</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV23receiveEstatementOffersSbvp"></a>
+                    <a name="//apple_ref/swift/Property/receiveEstatementOffers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV23receiveEstatementOffersSbvp">receiveEstatementOffers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member will be able to receive e statement offers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">receiveEstatementOffers</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV11currentTierSSvp"></a>
+                    <a name="//apple_ref/swift/Property/currentTier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV11currentTierSSvp">currentTier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current tier of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">currentTier</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV14expirationDateSSvp"></a>
+                    <a name="//apple_ref/swift/Property/expirationDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV14expirationDateSSvp">expirationDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Membership Expiration date of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">expirationDate</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV17tierInProgressionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/tierInProgression" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV17tierInProgressionSSvp">tierInProgression</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current tier in Progression of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">tierInProgression</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV10referrerIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/referrerId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV10referrerIdSSvp">referrerId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Referrer Id of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">referrerId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV13integrationIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/integrationId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV13integrationIdSSvp">integrationId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Integration Id of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">integrationId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV6genderSSvp"></a>
+                    <a name="//apple_ref/swift/Property/gender" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV6genderSSvp">gender</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gender of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">gender</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV13maritalStatusSSvp"></a>
+                    <a name="//apple_ref/swift/Property/maritalStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV13maritalStatusSSvp">maritalStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Marital Status of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">maritalStatus</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV9educationSSvp"></a>
+                    <a name="//apple_ref/swift/Property/education" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV9educationSSvp">education</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Education of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">education</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV6incomeSSvp"></a>
+                    <a name="//apple_ref/swift/Property/income" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV6incomeSSvp">income</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Income of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">income</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV11hasChildrenSbvp"></a>
+                    <a name="//apple_ref/swift/Property/hasChildren" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV11hasChildrenSbvp">hasChildren</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member has children or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hasChildren</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV10employmentSSvp"></a>
+                    <a name="//apple_ref/swift/Property/employment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV10employmentSSvp">employment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Employment value of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">employment</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV9ethnicitySSvp"></a>
+                    <a name="//apple_ref/swift/Property/ethnicity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV9ethnicitySSvp">ethnicity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ethnicity value of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">ethnicity</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV7housingSSvp"></a>
+                    <a name="//apple_ref/swift/Property/housing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV7housingSSvp">housing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Housing value of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">housing</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV04testD0Sbvp"></a>
+                    <a name="//apple_ref/swift/Property/testMember" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV04testD0Sbvp">testMember</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Test member value of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">testMember</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV9isVisitorSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isVisitor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV9isVisitorSbvp">isVisitor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Visitor value of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isVisitor</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV6cardIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/cardId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV6cardIdSSvp">cardId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Card Id of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">cardId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV31receiveNewsFeedLikeNotificationSbvp"></a>
+                    <a name="//apple_ref/swift/Property/receiveNewsFeedLikeNotification" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV31receiveNewsFeedLikeNotificationSbvp">receiveNewsFeedLikeNotification</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member will receive news feed like notification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">receiveNewsFeedLikeNotification</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV34receiveNewsFeedCommentNotificationSbvp"></a>
+                    <a name="//apple_ref/swift/Property/receiveNewsFeedCommentNotification" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV34receiveNewsFeedCommentNotificationSbvp">receiveNewsFeedCommentNotification</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member will receive news feed comment notification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">receiveNewsFeedCommentNotification</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV7companySSvp"></a>
+                    <a name="//apple_ref/swift/Property/company" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV7companySSvp">company</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Company of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">company</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV5gradeSSvp"></a>
+                    <a name="//apple_ref/swift/Property/grade" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV5gradeSSvp">grade</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Grade of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">grade</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV10highSchoolSSvp"></a>
+                    <a name="//apple_ref/swift/Property/highSchool" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV10highSchoolSSvp">highSchool</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Highschool name of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">highSchool</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV18highSchoolLocationSSvp"></a>
+                    <a name="//apple_ref/swift/Property/highSchoolLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV18highSchoolLocationSSvp">highSchoolLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Highschool location of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">highSchoolLocation</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV3ageSivp"></a>
+                    <a name="//apple_ref/swift/Property/age" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV3ageSivp">age</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Age of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">age</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV11anniversarySSvp"></a>
+                    <a name="//apple_ref/swift/Property/anniversary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV11anniversarySSvp">anniversary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Anniversary of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">anniversary</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV21securityAcountBalanceSivp"></a>
+                    <a name="//apple_ref/swift/Property/securityAcountBalance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV21securityAcountBalanceSivp">securityAcountBalance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Security Account Balance of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">securityAcountBalance</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV25receivePersonalizedOffersSbvp"></a>
+                    <a name="//apple_ref/swift/Property/receivePersonalizedOffers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV25receivePersonalizedOffersSbvp">receivePersonalizedOffers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member will be able to receive Personalized offers.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">receivePersonalizedOffers</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV17receiveStatementsSSvp"></a>
+                    <a name="//apple_ref/swift/Property/receiveStatements" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV17receiveStatementsSSvp">receiveStatements</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member will be able to receive statements.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">receiveStatements</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV13lastVisitDateSSvp"></a>
+                    <a name="//apple_ref/swift/Property/lastVisitDate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV13lastVisitDateSSvp">lastVisitDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Last visit date of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lastVisitDate</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV9hasDeviceSbvp"></a>
+                    <a name="//apple_ref/swift/Property/hasDevice" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV9hasDeviceSbvp">hasDevice</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member has device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hasDevice</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV06parentD2IdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/parentMemberId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV06parentD2IdSSvp">parentMemberId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Parent Member Id of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">parentMemberId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV3gpaSivp"></a>
+                    <a name="//apple_ref/swift/Property/gpa" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV3gpaSivp">gpa</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>GPA value of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">gpa</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV22customerOptinProfilingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/customerOptinProfiling" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV22customerOptinProfilingSbvp">customerOptinProfiling</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member will have customer optin profiling.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">customerOptinProfiling</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV22customerOptinMarketingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/customerOptinMarketing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV22customerOptinMarketingSbvp">customerOptinMarketing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member will have customer optin marketing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">customerOptinMarketing</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV7aboutMeSSvp"></a>
+                    <a name="//apple_ref/swift/Property/aboutMe" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV7aboutMeSSvp">aboutMe</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Member description.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">aboutMe</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV12referralCodeSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/referralCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV12referralCodeSaySSGvp">referralCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Referral codes of the Member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">referralCode</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV11betaAllowedSbvp"></a>
+                    <a name="//apple_ref/swift/Property/betaAllowed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV11betaAllowedSbvp">betaAllowed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the member is allowed to use beta vesion of the app.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">betaAllowed</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV11recentScoreSivp"></a>
+                    <a name="//apple_ref/swift/Property/recentScore" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV11recentScoreSivp">recentScore</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Recent score of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">recentScore</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV14frequencyScoreSivp"></a>
+                    <a name="//apple_ref/swift/Property/frequencyScore" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV14frequencyScoreSivp">frequencyScore</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Frequency Score of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">frequencyScore</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV13monetaryScoreSivp"></a>
+                    <a name="//apple_ref/swift/Property/monetaryScore" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV13monetaryScoreSivp">monetaryScore</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Monetary score of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">monetaryScore</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV11recentValueSivp"></a>
+                    <a name="//apple_ref/swift/Property/recentValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV11recentValueSivp">recentValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Recent Value of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">recentValue</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV18placeIntegrationIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/placeIntegrationId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV18placeIntegrationIdSSvp">placeIntegrationId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Place Integration Id of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">placeIntegrationId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV8migratedSSvp"></a>
+                    <a name="//apple_ref/swift/Property/migrated" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV8migratedSSvp">migrated</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Migtated value of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">migrated</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV7myTableSSvp"></a>
+                    <a name="//apple_ref/swift/Property/myTable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV7myTableSSvp">myTable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>My Table value of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">myTable</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV10isEmployeeSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isEmployee" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV10isEmployeeSbvp">isEmployee</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Employee value of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isEmployee</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV19regionIntegrationIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/regionIntegrationId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV19regionIntegrationIdSSvp">regionIntegrationId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Region integration Id of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">regionIntegrationId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV20preferredPhoneBrandsSSvp"></a>
+                    <a name="//apple_ref/swift/Property/preferredPhoneBrands" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV20preferredPhoneBrandsSSvp">preferredPhoneBrands</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Preferred Phone Brands of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">preferredPhoneBrands</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV7channelSSvp"></a>
+                    <a name="//apple_ref/swift/Property/channel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV7channelSSvp">channel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Preferred channel of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">channel</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV9localCodeSSvp"></a>
+                    <a name="//apple_ref/swift/Property/localCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV9localCodeSSvp">localCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Local code of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">localCode</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV9avatarUrlSSvp"></a>
+                    <a name="//apple_ref/swift/Property/avatarUrl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV9avatarUrlSSvp">avatarUrl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Image url of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">avatarUrl</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV10placeLabelSSvp"></a>
+                    <a name="//apple_ref/swift/Property/placeLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV10placeLabelSSvp">placeLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Place label of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">placeLabel</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV12satisfactionSivp"></a>
+                    <a name="//apple_ref/swift/Property/satisfaction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV12satisfactionSivp">satisfaction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Satisfaction value of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">satisfaction</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV9interestsSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/interests" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV9interestsSaySSGvp">interests</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Interests of the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">interests</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV16connectionStatusAC010ConnectionF0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/connectionStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV16connectionStatusAC010ConnectionF0Ovp">connectionStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connection status of the member to the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">connectionStatus</span><span class="p">:</span> <span class="kt"><a href="../Structs/Member/ConnectionStatus.html">ConnectionStatus</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV7messageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/message" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV7messageSSvp">message</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Message sent to the member.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV5email9firstName04lastG013mailingStreet0I4City0I5State0I10PostalCode0I7Country9birthdate11mobilePhone11memberSince0S2Id18receiveEmailOffers0v3SmsX00v9MobileAppX00v4MailX00v10EstatementX011currentTier14expirationDate17tierInProgression08referrerU0011integrationU06gender13maritalStatus9education6income11hasChildren10employment9ethnicity7housing04testD09isVisitor04cardU00V24NewsFeedLikeNotification0V27NewsFeedCommentNotification7company5grade10highSchool18highSchoolLocation3age11anniversary21securityAcountBalance0v12PersonalizedX00V10Statements0H9VisitDate9hasDevice06parentdU03gpa22customerOptinProfiling22customerOptinMarketing7aboutMe08referralN011betaAllowed11recentScore14frequencyScore13monetaryScore11recentValue016placeIntegrationU08migrated7myTable10isEmployee017regionIntegrationU009preferredR6Brands7channel05localN09avatarUrl10placeLabel12satisfaction9interests16connectionStatus7messageACSS_S11SS5bS9SSbS3SS2bSSS2bS4SSiSSSiSbS2SSbSSSiS2bSSSaySSGSbS4iS3SSbS6SSiA47_AC16ConnectionStatusOSStcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(email:firstName:lastName:mailingStreet:mailingCity:mailingState:mailingPostalCode:mailingCountry:birthdate:mobilePhone:memberSince:memberId:receiveEmailOffers:receiveSmsOffers:receiveMobileAppOffers:receiveMailOffers:receiveEstatementOffers:currentTier:expirationDate:tierInProgression:referrerId:integrationId:gender:maritalStatus:education:income:hasChildren:employment:ethnicity:housing:testMember:isVisitor:cardId:receiveNewsFeedLikeNotification:receiveNewsFeedCommentNotification:company:grade:highSchool:highSchoolLocation:age:anniversary:securityAcountBalance:receivePersonalizedOffers:receiveStatements:lastVisitDate:hasDevice:parentMemberId:gpa:customerOptinProfiling:customerOptinMarketing:aboutMe:referralCode:betaAllowed:recentScore:frequencyScore:monetaryScore:recentValue:placeIntegrationId:migrated:myTable:isEmployee:regionIntegrationId:preferredPhoneBrands:channel:localCode:avatarUrl:placeLabel:satisfaction:interests:connectionStatus:message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV5email9firstName04lastG013mailingStreet0I4City0I5State0I10PostalCode0I7Country9birthdate11mobilePhone11memberSince0S2Id18receiveEmailOffers0v3SmsX00v9MobileAppX00v4MailX00v10EstatementX011currentTier14expirationDate17tierInProgression08referrerU0011integrationU06gender13maritalStatus9education6income11hasChildren10employment9ethnicity7housing04testD09isVisitor04cardU00V24NewsFeedLikeNotification0V27NewsFeedCommentNotification7company5grade10highSchool18highSchoolLocation3age11anniversary21securityAcountBalance0v12PersonalizedX00V10Statements0H9VisitDate9hasDevice06parentdU03gpa22customerOptinProfiling22customerOptinMarketing7aboutMe08referralN011betaAllowed11recentScore14frequencyScore13monetaryScore11recentValue016placeIntegrationU08migrated7myTable10isEmployee017regionIntegrationU009preferredR6Brands7channel05localN09avatarUrl10placeLabel12satisfaction9interests16connectionStatus7messageACSS_S11SS5bS9SSbS3SS2bSSS2bS4SSiSSSiSbS2SSbSSSiS2bSSSaySSGSbS4iS3SSbS6SSiA47_AC16ConnectionStatusOSStcfc">init(email:firstName:lastName:mailingStreet:mailingCity:mailingState:mailingPostalCode:mailingCountry:birthdate:mobilePhone:memberSince:memberId:receiveEmailOffers:receiveSmsOffers:receiveMobileAppOffers:receiveMailOffers:receiveEstatementOffers:currentTier:expirationDate:tierInProgression:referrerId:integrationId:gender:maritalStatus:education:income:hasChildren:employment:ethnicity:housing:testMember:isVisitor:cardId:receiveNewsFeedLikeNotification:receiveNewsFeedCommentNotification:company:grade:highSchool:highSchoolLocation:age:anniversary:securityAcountBalance:receivePersonalizedOffers:receiveStatements:lastVisitDate:hasDevice:parentMemberId:gpa:customerOptinProfiling:customerOptinMarketing:aboutMe:referralCode:betaAllowed:recentScore:frequencyScore:monetaryScore:recentValue:placeIntegrationId:migrated:myTable:isEmployee:regionIntegrationId:preferredPhoneBrands:channel:localCode:avatarUrl:placeLabel:satisfaction:interests:connectionStatus:message:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">firstName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">lastName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">mailingStreet</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">mailingCity</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">mailingState</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">mailingPostalCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">mailingCountry</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">birthdate</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">mobilePhone</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">memberSince</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">memberId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">receiveEmailOffers</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">receiveSmsOffers</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">receiveMobileAppOffers</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">receiveMailOffers</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">receiveEstatementOffers</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">currentTier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">expirationDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">tierInProgression</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">referrerId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">integrationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">gender</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">maritalStatus</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">education</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">income</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">hasChildren</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">employment</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">ethnicity</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">housing</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">testMember</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">isVisitor</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">cardId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">receiveNewsFeedLikeNotification</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">receiveNewsFeedCommentNotification</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">company</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">grade</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">highSchool</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">highSchoolLocation</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">age</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">anniversary</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">securityAcountBalance</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">receivePersonalizedOffers</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">receiveStatements</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">lastVisitDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">hasDevice</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">parentMemberId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">gpa</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">customerOptinProfiling</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">customerOptinMarketing</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">aboutMe</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">referralCode</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span> <span class="nv">betaAllowed</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">recentScore</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">frequencyScore</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">monetaryScore</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">recentValue</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">placeIntegrationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">migrated</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">myTable</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">isEmployee</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">regionIntegrationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">preferredPhoneBrands</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">channel</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">localCode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">avatarUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">placeLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">satisfaction</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">interests</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span>
+            <span class="nv">connectionStatus</span><span class="p">:</span> <span class="kt"><a href="../Structs/Member/ConnectionStatus.html">ConnectionStatus</a></span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore6MemberV16ConnectionStatusO"></a>
+                    <a name="//apple_ref/swift/Enum/ConnectionStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore6MemberV16ConnectionStatusO">ConnectionStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Connection Status of a member to the user.</p>
+
+                        <a href="../Structs/Member/ConnectionStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">ConnectionStatus</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">from</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">Decoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SE6encode2toys7Encoder_p_tKF"></a>
+                    <a name="//apple_ref/swift/Method/encode(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SE6encode2toys7Encoder_p_tKF">encode(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">encode</span><span class="p">(</span><span class="n">to</span> <span class="nv">encoder</span><span class="p">:</span> <span class="kt">Encoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2019-12-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.12.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
