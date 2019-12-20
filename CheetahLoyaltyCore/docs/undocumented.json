@@ -1409,77 +1409,84 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Profile.swift",
-      "line": 51,
-      "symbol": "ProfileAttribute.init(name:label:type:description:isReadOnly:isRequired:isHidden:capitalized:maxLength:value:defaultValue:domain:)",
+      "line": 54,
+      "symbol": "ProfileAttribute.init(name:label:type:description:isReadOnly:isRequired:isHidden:capitalized:maxLength:value:defaultValue:domain:categories:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Profile.swift",
-      "line": 79,
+      "line": 84,
       "symbol": "ProfileAttribute.Domain.list",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Profile.swift",
-      "line": 81,
+      "line": 86,
       "symbol": "ProfileAttribute.Domain.init(list:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Profile.swift",
-      "line": 105,
+      "line": 100,
+      "symbol": "ProfileAttribute.Category.init(key:label:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Profile.swift",
+      "line": 125,
       "symbol": "AccountSummary.init(tier:member:metrics:memberBadges:permissions:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Profile.swift",
-      "line": 144,
+      "line": 164,
       "symbol": "AccountSummary.Member.init(memberId:firstName:lastName:memberSince:referred:visitor:localeCode:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Profile.swift",
-      "line": 197,
+      "line": 217,
       "symbol": "AccountSummary.Metric.init(label:balance:lifeTime:last12mos:ytd:last30d:mtd:today:redeemTotal:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Profile.swift",
-      "line": 245,
+      "line": 265,
       "symbol": "AccountSummary.MemberBadge.init(id:label:type:grantedAt:expiresAt:expired:count:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Profile.swift",
-      "line": 286,
+      "line": 306,
       "symbol": "AccountSummary.TierInfo.init(currentTier:tierInProgression:primaryMetricName:metrics:expressionExists:tiers:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Profile.swift",
-      "line": 318,
+      "line": 338,
       "symbol": "AccountSummary.CurrentTier.init(name:label:expirationDate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Profile.swift",
-      "line": 349,
+      "line": 369,
       "symbol": "AccountSummary.Tier.init(id:name:label:description:metricThresholds:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Profile.swift",
-      "line": 373,
+      "line": 393,
       "symbol": "AccountSummary.MetricThreshold.init(points:spend:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

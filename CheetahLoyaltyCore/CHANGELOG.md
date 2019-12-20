@@ -6,6 +6,46 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-1.1.4] - 2019-12-20
+### Added
+- Added `ProfileAttribute.Category` model [#269]
+
+### Fixed
+- Fixed unlike post http method [#273]
+- Fixed properties of Preference not declared as public: [#271]
+	- `isToggle`
+	- `hasNoOption`
+	- `hasYesOption`
+	- `hasSelectedYes`
+
+[#273]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/273
+[#271]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/271
+[#269]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/269
+
+## [Core-1.1.3] - 2019-12-18
+### Added
+- Added tests for `Place` conforming to `Equatable` [#267]
+
+### Changed
+- Change `Message.Attachment`'s `type` property type to `Message.Attachment.AttachmenType?` [#257], [#263]
+- Removed `AuthenticationAPI.logOut`'s `accessToken` parameter to just use current access token saved in `API` [#256]
+- Renamed *"Business-Unit"* header key to *"SL-Business-Unit"* [#262]
+- Changed access control of `accessUsingUserPrescence` property of `KeychainItem` to public [#261]
+- Renamed `accessUsingUserPrescence` to `accessControlWithUserPrescence` [#265]
+
+### Fixed
+- Fixed `Offer`'s `subheading` property not being decoded [#258], [#266]
+
+[#267]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/267
+[#266]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/266
+[#265]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/265
+[#263]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/263
+[#262]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/262
+[#261]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/261
+[#258]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/258
+[#257]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/257
+[#256]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/256
+
 ## [Core-1.1.2] - 2019-12-23
 ### Added
 - Added `businessUnit` property in `Configuration` [#235]
@@ -162,6 +202,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Models and API requests.
 - Authentication Handling
 
+[Core-1.1.4]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/16?closed=1
+[Core-1.1.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/15?closed=1
+[Core-1.1.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/13?closed=1
 [Core-1.1.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/10?closed=1
 [Core-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/8?closed=1
 [Core-1.0.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/6?closed=1
