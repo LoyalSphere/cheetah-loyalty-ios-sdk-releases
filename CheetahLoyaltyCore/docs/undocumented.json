@@ -954,14 +954,77 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Message.swift",
+      "line": 76,
+      "symbol": "Message.Attachment.AttachmentType.award",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Message.swift",
       "line": 77,
-      "symbol": "Message.Action.delivered",
+      "symbol": "Message.Attachment.AttachmentType.challenge",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Message.swift",
       "line": 78,
+      "symbol": "Message.Attachment.AttachmentType.contentPage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Message.swift",
+      "line": 79,
+      "symbol": "Message.Attachment.AttachmentType.event",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Message.swift",
+      "line": 80,
+      "symbol": "Message.Attachment.AttachmentType.offer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Message.swift",
+      "line": 81,
+      "symbol": "Message.Attachment.AttachmentType.post",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Message.swift",
+      "line": 82,
+      "symbol": "Message.Attachment.AttachmentType.reward",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Message.swift",
+      "line": 83,
+      "symbol": "Message.Attachment.AttachmentType.custom(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Message.swift",
+      "line": 85,
+      "symbol": "Message.Attachment.AttachmentType.stringValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Message.swift",
+      "line": 122,
+      "symbol": "Message.Action.delivered",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Message.swift",
+      "line": 123,
       "symbol": "Message.Action.opened",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
@@ -976,7 +1039,7 @@
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Offer.swift",
       "line": 81,
-      "symbol": "Offer.init(id:action:barcode:barcodeStandard:body:categories:clipped:descriptionText:details:endDate:heading:imageUrl:internalUrl:isFavorited:responses:startDate:subHeading:targetObject:targetUrl:thumbnailUrl:type:url:)",
+      "symbol": "Offer.init(id:action:barcode:barcodeStandard:body:categories:clipped:descriptionText:details:endDate:heading:imageUrl:internalUrl:isFavorited:responses:startDate:subheading:targetObject:targetUrl:thumbnailUrl:type:url:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -1839,6 +1902,13 @@
       "line": 28,
       "symbol": "KeychainItem.init(serviceName:account:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Utils/KeychainAccess.swift",
+      "line": 33,
+      "symbol": "KeychainItem.accessControlWithUserPrescence",
+      "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
