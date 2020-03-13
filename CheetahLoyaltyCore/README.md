@@ -23,6 +23,7 @@
 	* [Respondable Objects](#respondable-objects)
 		+ [Responding to a Challenge](#responding-to-a-challenge)
 		+ [Responding to an Offer](#responding-to-an-offer)
+       + [Responding to a Reward](#responding-to-a-reward)
 	* [Clipping or Unclipping an Offer](#clipping-or-unclipping-an-offer)
 	* [Submitting Feedback](#submitting-feedback)
 
@@ -34,17 +35,42 @@
 
 ## Installation
 
-### Manually
+### Cocoapods
 
- 1. [Download the CheetahLoyaltyCore SDK from the releases](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/releases).
-2. Extract it then drag & drop CheetahLoyaltyCore.framework to your project's "Embedded Binaries" section under the "General" tab, and make sure that the "Copy items if needed" checkbox is checked
-3. Create a new "Run Script Phase" in your project’s target "Build Phases" and add the following snippet
+1. Open a terminal window then add the private podspec repo to the Cocoapods installation by entering the following:
 
- ```
-bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/CheetahLoyaltyCore.framework/strip-frameworks.sh"
+```sh
+pod repo add CheetahLoyaltySDK https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk-podspecs.git
 ```
 
-*Only a single run of the strip-frameworks.sh is needed when using other Cheetah Loyalty frameworks.*
+2. Add a source for the CheetahLoyaltySDK and add the `CheetahLoyaltyCore` pod in your podfile:
+
+```ruby
+platform :ios, '11.0'
+
+source 'https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk-podspecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target '<YourApp>' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'CheetahLoyaltyCore'
+end
+```
+
+3. Open a terminal window to where your project and podfile is located and run the following to install the pod:
+
+```sh
+pod install
+```
+
+### Manually
+
+1. [Download the CheetahLoyaltyCore SDK from the releases](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/releases).
+2. Extract it then drag & drop CheetahLoyaltyCore.xcframework to your project's directory.
+3. In "Frameworks, Libraries, and Embedded Content" section under the "General" tab, click on the "+" button then "Add Other", and then "Add Files...".
+4. Select the CheetahLoyaltyCore.xcframework file and make sure that it is set to "Embed & Sign" in the "Embed" column in the "Frameworks, Libraries, and Embedded Content" section under the "General" tab.
 
 ## Usage
 
@@ -474,7 +500,67 @@ OffersAPI.respondToOffer(id: id, completion: { (result) in
 })
 ```
 
-If the request is successful it will return a *response info*.
+#### Responding to a Reward
+Reward objects can be responded for a user to redeem a reward. There are three ways to respond on the reward depending on the content to respond with. When responding to a reward, a `Reward.ResponseInfo` is returned containing information on the status of the reward response. If redeeming a reward fails, an error is returned.
+
+1. To respond to a reward:
+
+	```swift
+	RewardsAPI.redeemReward(id: 249,
+                                awardId: nil,
+                                address: [
+                                    "street_address": "221B Baker",
+                                    "city": "London"
+                                ],
+                                parameter: ["combination_id": "reward_combination_id"],
+                                isResponse: true) { [unowned self] (result) in
+                                    // Handle request result
+                                    switch result {
+                                    case .success(let apiResponse):
+                                        let responseInfo = apiResponse.value
+                                    // Handle Reward Response Info
+                                    case .failure(let error):
+                                        // Show error
+                                    }
+        }
+	
+	```
+	If you are giving a reward of type `award` to the user, just provide the award ID in the parameter supplied.
+	
+	Here are the available keys for the address:
+	
+	|Keys|Usage|
+|---|---|
+|*first_name*| First name of the user|
+|*last_name*| Last name of the user|
+|*street_address*| Street address of the user|
+|*street_address2*| Street address 2 of the user|
+|*city*| City of the user|
+|*state*| State of the user|
+|*zip_code*| Zip Code of the user|
+|*country_code*| Country Code of the user|
+|*phone_number*| Phone Number of the user|
+
+2. To respond to a reward of type certificate / coupon / embedded challenge:
+
+	```swift
+	RewardsAPI.redeemReward(id: 249,
+                                awardId: nil,
+                                address: nil,
+                                isResponse: true) { [unowned self] (result) in
+                                    // Handle request result
+                                    switch result {
+                                    case .success(let apiResponse):
+                                        let responseInfo = apiResponse.value
+                                    // Handle Reward Response Info
+                                    case .failure(let error):
+                                        // Show error
+                                    }
+        }
+	
+	```
+	
+	Just take note of the returned `Reward.ResponseInfo` since this will provide you with what present your users whether if it is a `Coupon`, a `Certificate` or an `embedded` Challenge.
 
 ### Clipping or Unclipping an Offer
 Clipping an offer marks it for use while unclipping removes this from an existing clipped *Offer*.
