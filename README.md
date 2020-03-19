@@ -12,3 +12,6 @@ The **Cheetah Loyalty iOS SDK** contains components and tools to build iOS appli
 Please refer to the *README.md* for each component.
 
 * [Cheetah Loyalty Core](CheetahLoyaltyCore/README.md)
+* [Cheetah Loyalty UI](CheetahLoyaltyUI/README.md)
+* [Cheetah Loyalty Places](CheetahLoyaltyPlaces/README.md)
+* [Cheetah Loyalty Challenges](CheetahLoyaltyChallenges/README.md)
