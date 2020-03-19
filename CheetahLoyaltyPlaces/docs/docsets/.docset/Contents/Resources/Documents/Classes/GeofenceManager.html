@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GeofenceManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/GeofenceManager" class="dashAnchor"></a>
+    <a title="GeofenceManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (90% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        GeofenceManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/GeofenceClientEventsManager.html">GeofenceClientEventsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GeofenceManager.html">GeofenceManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocationManager.html">LocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocationManager/Event.html">– Event</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Place.html">Place</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/GeofenceClientEvents.html">GeofenceClientEvents</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GeofencePlace.html">GeofencePlace</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>GeofenceManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">GeofenceManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">GeofenceManager</span><span class="p">:</span> <span class="kt">CLLocationManagerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>A singleton object that is responsible for
+handling geofence related data and events</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC7managerSo010CLLocationE0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/manager" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC7managerSo010CLLocationE0CSgvp">manager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The native <code>CLLocationManager</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC21locationEventListenerSo8NSObject_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/locationEventListener" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC21locationEventListenerSo8NSObject_pSgvp">locationEventListener</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Listener for <code>LocationManager.notificationName</code> event</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">locationEventListener</span><span class="p">:</span> <span class="kt">NSObjectProtocol</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC012clientEventsE0AA0d6ClientG0_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/clientEventsManager" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC012clientEventsE0AA0d6ClientG0_pSgvp">clientEventsManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The associated <code><a href="../Protocols/GeofenceClientEvents.html">GeofenceClientEvents</a></code>
+that handles client events</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">clientEventsManager</span><span class="p">:</span> <span class="kt"><a href="../Protocols/GeofenceClientEvents.html">GeofenceClientEvents</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC17lastKnownLocationSo10CLLocationCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastKnownLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC17lastKnownLocationSo10CLLocationCSgvp">lastKnownLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The last known location returned by <code><a href="../Classes/LocationManager.html">LocationManager</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">lastKnownLocation</span><span class="p">:</span> <span class="kt">CLLocation</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Init"></a>
+                <a name="//apple_ref/swift/Section/Init" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Init"></a>
+                  <h3 class="section-name"><p>Init</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC6sharedACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC6sharedACvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Singleton property</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">GeofenceManager</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC19isGeofencingEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isGeofencingEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC19isGeofencingEnabledSbvp">isGeofencingEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A boolean flag that returns the value of <code>Configuration.shared.isGeofencingEnabled</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">isGeofencingEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC38isLocationServicesAndGeofencingEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isLocationServicesAndGeofencingEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC38isLocationServicesAndGeofencingEnabledSbvp">isLocationServicesAndGeofencingEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A boolean flag that indicates whether the location services and geofencing is allowed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">isLocationServicesAndGeofencingEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Control%20methods"></a>
+                <a name="//apple_ref/swift/Section/Control methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Control%20methods"></a>
+                  <h3 class="section-name"><p>Control methods</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC5startyyF"></a>
+                    <a name="//apple_ref/swift/Method/start()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC5startyyF">start()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Starts the <code>GeofenceManager</code> -
+validates the value of <code><a href="../Classes/GeofenceManager.html#/s:20CheetahLoyaltyPlaces15GeofenceManagerC19isGeofencingEnabledSbvp">isGeofencingEnabled</a></code>,
+adds listener for <code>LocationManager.notificationName</code>, event
+calls <code>LocationManager.shared.checkAndRequestAuthorizationIfNeeded()</code>,
+and listens for location updates,
+then will create regions based on the returned location</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">start</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC4stopyyF"></a>
+                    <a name="//apple_ref/swift/Method/stop()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC4stopyyF">stop()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Stops the <code>GeofenceManager</code> -
+validates the value of <code><a href="../Classes/GeofenceManager.html#/s:20CheetahLoyaltyPlaces15GeofenceManagerC19isGeofencingEnabledSbvp">isGeofencingEnabled</a></code>,
+calls <code>LocationManager.shared.stopReceivingLocationUpdates()</code>,
+removes listener for <code>LocationManager.notificationName</code> event</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">stop</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Region%20control%20methods"></a>
+                <a name="//apple_ref/swift/Section/Region control methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Region%20control%20methods"></a>
+                  <h3 class="section-name"><p>Region control methods</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC24stopMonitoringAllRegionsyyF"></a>
+                    <a name="//apple_ref/swift/Method/stopMonitoringAllRegions()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC24stopMonitoringAllRegionsyyF">stopMonitoringAllRegions()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Calls <code>stopMonitoring</code> for each monitored <code>CLRegion</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">stopMonitoringAllRegions</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC21updateThresholdRegion6radiusySd_tF"></a>
+                    <a name="//apple_ref/swift/Method/updateThresholdRegion(radius:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC21updateThresholdRegion6radiusySd_tF">updateThresholdRegion(radius:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resets the radius of the monitored <code>CLRegion</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">updateThresholdRegion</span><span class="p">(</span><span class="nv">radius</span><span class="p">:</span> <span class="kt">CLLocationDistance</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC22updateMonitoredRegions6placesySayAA0D5Place_pG_tF"></a>
+                    <a name="//apple_ref/swift/Method/updateMonitoredRegions(places:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC22updateMonitoredRegions6placesySayAA0D5Place_pG_tF">updateMonitoredRegions(places:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates monitored regions based on the given <code>[Place]</code>,
+monitors only up to 19 regions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">updateMonitoredRegions</span><span class="p">(</span><span class="nv">places</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/GeofencePlace.html">GeofencePlace</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Location%20Events"></a>
+                <a name="//apple_ref/swift/Section/Location Events" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Location%20Events"></a>
+                  <h3 class="section-name"><p>Location Events</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC16addEventListeneryyF"></a>
+                    <a name="//apple_ref/swift/Method/addEventListener()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC16addEventListeneryyF">addEventListener()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds an event listener for <code>LocationManager.notificationName</code> event</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">addEventListener</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyPlaces15GeofenceManagerC19removeEventListeneryyF"></a>
+                    <a name="//apple_ref/swift/Method/removeEventListener()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyPlaces15GeofenceManagerC19removeEventListeneryyF">removeEventListener()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes an event listener for <code>LocationManager.notificationName</code> event</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">removeEventListener</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@CheetahLoyaltyPlaces@objc(cs)GeofenceManager(im)locationManager:didEnterRegion:"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didEnterRegion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@CheetahLoyaltyPlaces@objc(cs)GeofenceManager(im)locationManager:didEnterRegion:">locationManager(_:didEnterRegion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Triggers a <code>GeofenceClientEvents.tiggerClientEvent(in: CLRegion, event: Place.ClientEventType)</code>
+given that <code>LocationManager.shared.isAuthorized</code> and <code><a href="../Classes/GeofenceManager.html#/s:20CheetahLoyaltyPlaces15GeofenceManagerC19isGeofencingEnabledSbvp">GeofenceManager.isGeofencingEnabled</a></code> are both true</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="p">,</span> <span class="n">didEnterRegion</span> <span class="nv">region</span><span class="p">:</span> <span class="kt">CLRegion</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@CheetahLoyaltyPlaces@objc(cs)GeofenceManager(im)locationManager:didExitRegion:"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didExitRegion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@CheetahLoyaltyPlaces@objc(cs)GeofenceManager(im)locationManager:didExitRegion:">locationManager(_:didExitRegion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Triggers a <code>GeofenceClientEvents.tiggerClientEvent(in: CLRegion, event: Place.ClientEventType)</code>
+given that <code>LocationManager.shared.isAuthorized</code> aznd <code><a href="../Classes/GeofenceManager.html#/s:20CheetahLoyaltyPlaces15GeofenceManagerC19isGeofencingEnabledSbvp">GeofenceManager.isGeofencingEnabled</a></code> are both true</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="p">,</span> <span class="n">didExitRegion</span> <span class="nv">region</span><span class="p">:</span> <span class="kt">CLRegion</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-03-19)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
