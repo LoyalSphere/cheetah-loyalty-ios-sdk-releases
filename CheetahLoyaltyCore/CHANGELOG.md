@@ -5,44 +5,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-### Added
-- Add additional tests for Keychain error [#278]
-- Add `extraJSON` property in `Offer` [#283]
-- Add documentation for redeeming a reward [#284]
-- Add `QuestionType` enumeration in `SurveyChallengeReponseSetting` [#287]
-- Add `imageUrl` property in `ViewContentChallengeResponseSetting` [#307]
-
-### Fixed
-- Change `VideoChallengeResponseSetting`'s `videoSizeLimit` property type to `String` [#275]
-
-### Changed
-- Moved initialization methods with literals in `_AnyEncodable` to `AnyCodable` and `AnyEncodable` [#277]
-- Enqueue `.APIAccessTokenDidBecomeInvalid` notification in main queue[#280]
-- Change `NewsfeedAPI.addNewPost`'s `feedName` parameter type to `String?` [#281]
-- Change `SurveyChallengeReponseSetting`'s `questionType` property type to `SurveyChallengeReponseSetting.QuestionType` [#287]
-- Change `MultiQuestionChallengeResponseSetting`'s `definitions` property type to `[Survey]` [#292]
-- Configure CheetahLoyaltyCore to build XCFrameworks [#295]
-- Remove unnecessary properties from `SurveyChallengeResponseSetting` [#299], [#303]
-- Change `ViewContentChallengeResponseSetting`'s `subtype` property type to `ViewContentChallengeResponseSetting.Subtype` [#307][#310]
-- Consolidated custom `Notification` objects [#315]
-- Change `ReferralChallengeResponseSetting`'s `shareableText` to a computed property [#318]
-
-[#275]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/275
-[#277]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/277
-[#278]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/278
-[#280]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/280
-[#281]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/281
-[#283]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/283
-[#284]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/284
-[#287]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/287
-[#292]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/292
-[#295]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/295
-[#299]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/299
-[#303]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/303
-[#307]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/307
-[#310]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/310
-[#315]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/315
-[#318]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/318
 
 ## [Core-1.2.1] - 2020-04-27
 ### Added
@@ -307,6 +269,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Models and API requests.
 - Authentication Handling
 
+[Core-1.2.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/21?closed=1
 [Core-1.2.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/17?closed=1
 [Core-1.1.4]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/16?closed=1
 [Core-1.1.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/15?closed=1
