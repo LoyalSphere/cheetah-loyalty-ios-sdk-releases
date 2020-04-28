@@ -219,70 +219,77 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 52,
+      "line": 54,
       "symbol": "Configuration.CodingKeys.userAgentName",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 53,
+      "line": 55,
       "symbol": "Configuration.CodingKeys.clientId",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 54,
+      "line": 56,
       "symbol": "Configuration.CodingKeys.clientSecret",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 55,
+      "line": 57,
       "symbol": "Configuration.CodingKeys.clientUrl",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 56,
+      "line": 58,
       "symbol": "Configuration.CodingKeys.metric",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 57,
+      "line": 59,
       "symbol": "Configuration.CodingKeys.isGeofencingEnabled",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 58,
+      "line": 60,
       "symbol": "Configuration.CodingKeys.businessUnit",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 65,
+      "line": 61,
+      "symbol": "Configuration.CodingKeys.isAccessTokenExternal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
+      "line": 68,
       "symbol": "Configuration.DefaultsKeys.sendLocationAnonymously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 66,
+      "line": 69,
       "symbol": "Configuration.DefaultsKeys.lastActiveTrackingDate",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 67,
+      "line": 70,
       "symbol": "Configuration.DefaultsKeys.registeredDeviceToken",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
@@ -464,7 +471,7 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/ChallengeResponse.swift",
-      "line": 144,
+      "line": 176,
       "symbol": "Challenge.MetricPrize.init(metric:point:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1724,28 +1731,35 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Reward.swift",
-      "line": 436,
+      "line": 422,
+      "symbol": "Reward.Response.ShippingAddress.init(id:streetAddress:city:zipCode:state:countryCode:createdAt:updatedAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Reward.swift",
+      "line": 487,
       "symbol": "Reward.Category.init(id:imageUrl:key:label:thumbImageUrl:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Reward.swift",
-      "line": 469,
+      "line": 520,
       "symbol": "Reward.Attribute.init(id:label:name:options:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Reward.swift",
-      "line": 513,
+      "line": 564,
       "symbol": "Reward.AttributeCombination.init(id:sku:imageUrl:thumbnailUrl:metricName:metricAmount:values:respondable:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/Reward.swift",
-      "line": 553,
+      "line": 604,
       "symbol": "Reward.AttributeOption.init(id:code:label:isDefault:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

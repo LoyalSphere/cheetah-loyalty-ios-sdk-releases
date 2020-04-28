@@ -2,6 +2,7 @@
 
 - [Requirements](#requirements)
 - [Installation](#installation)
+	* [Cocoapods](#cocoapods)
 	* [Manually](#manually)
 - [Usage](#usage)
 	* [Configuration](#configuration)
@@ -84,6 +85,10 @@ The primary contents of this **CheetahLoyalty-Info.plist** are as follows:
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>BUSINESS_UNIT</key>
+	<string>SwiftSDKBusinessUnit</string>
+	<key>USER_AGENT_NAME</key>
+	<string>SwiftSDK</string>
 	<key>CLIENT_ID</key>
 	<string><your_client_id></string>
 	<key>CLIENT_SECRET</key>
@@ -92,11 +97,26 @@ The primary contents of this **CheetahLoyalty-Info.plist** are as follows:
 	<string><your_client_url></string>
 	<key>METRIC</key>
 	<string><your_metric></string>
+	<key>GEOFENCING_ENABLED</key>
+	<true/>
+	<key>ACCESS_TOKEN_EXTERNAL</key>
+	<false/>
 </dict>
 </plist>
 ```
 
-These values can be found in the console of the environment the app is going to use.
+The key used in the **CheetahLoyalty-Info.plist** are:
+
+* `BUSINESS_UNIT` - String indicating the business unit.
+* `USER_AGENT_NAME` - The user agent name to be used in the header of requests.
+* `CLIENT_ID` - The API KEY for the Loyalty API
+* `CLIENT_SECRET` - The API SECRET KEY for the Loyalty API
+* `CLIENT_URL` - The URL of the Loyalty API gateway
+* `METRIC` - The API metric
+* `GEOFENCING_ENABLED` - Boolean flag that indicates whether geofencing is enabled
+* `ACCESS_TOKEN_EXTERNAL` - Boolean flag that indicates whether the access token is from an external source
+
+Some of these values can be found in the console of the environment the app is going to use.
 
 ### Authentication
 
