@@ -6,6 +6,34 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-1.2.1] - 2020-05-07
+### Added
+- Module Stability and XCFrameworks support [#354]
+- Added pull down to refresh in `DetailViewController` [#351]
+- Added detail image url in `DetailController` [#364]
+
+### Changed
+- Removed default text and adjust layout of `DetailViewController` [#348]
+- Move setting up of `DetailViewController` to a separate method [#347]
+- Changed access control of method `actionButtonPressed(_ sender: UIButton)` of `DetailViewController` to open and replaced *IBAction* association with *target-action* association in `setup` [#350]
+- Implement all UISearchBarDelegate methods in BaseCollectionController to be overridable [#352]
+- Change completion closure parameters of image loader to a `Result` object [#353]
+- Set initial state of `StatefulViewController` to `loading` [#355]
+- Color and Text Theming enhancement and fixes [#361], [#362], [#366]
+
+[#347]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/347
+[#348]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/348
+[#350]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/350
+[#351]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/351
+[#352]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/352
+[#353]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/353
+[#354]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/354
+[#355]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/355
+[#361]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/361
+[#362]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/362
+[#364]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/364
+[#366]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/366
+
 ## [UI-1.2.0] - 2020-03-11
 ### Added
 - Added `RatingButton` [#286]
