@@ -1,0 +1,652 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyChallenges
+@_exported import CheetahLoyaltyChallenges
+import CheetahLoyaltyCore
+import CheetahLoyaltyUI
+import Photos
+import Swift
+import UIKit
+import WebKit
+open class GenericChallengeViewController : CheetahLoyaltyUI.GenericAlertViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate {
+  @objc @IBOutlet public var containerStackView: UIKit.UIStackView!
+  @objc @IBOutlet public var activityIndicator: UIKit.UIActivityIndicatorView!
+  @objc @IBOutlet public var messageContainerView: UIKit.UIView!
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge)
+  override open func setup()
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
+  open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol PreferenceChallengeCollectionController : CheetahLoyaltyUI.CollectionController {
+  var preferences: [CheetahLoyaltyCore.Preference] { get set }
+}
+open class PreferenceChallengeViewController : CheetahLoyaltyUI.CollectionViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate {
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController
+  open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
+  convenience public init(challenge: CheetahLoyaltyCore.Challenge, preferenceListController: CheetahLoyaltyChallenges.PreferenceChallengeCollectionController, nibName: Swift.String = "CollectionViewController")
+  override open func setup()
+  open func setupSubmitButton()
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
+  open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc open class SurveyTextViewCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet weak public var textView: UIKit.UITextView!
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public typealias ProfileChallengeController = (CheetahLoyaltyChallenges.ProfileResponderDelegate & CheetahLoyaltyUI.CollectionController)
+public protocol ProfileResponderDelegate {
+  func modifiedAttributes(_ profileChallengeViewController: CheetahLoyaltyChallenges.ProfileChallengeViewController) -> [CheetahLoyaltyCore.MutableProfileAttribute]
+  func requiredAttributeIsMissing(_ profileChallengeViewController: CheetahLoyaltyChallenges.ProfileChallengeViewController, name: CheetahLoyaltyCore.MutableProfileAttribute)
+  func noModifiedAttributesFound(_ profileChallengeViewController: CheetahLoyaltyChallenges.ProfileChallengeViewController)
+}
+open class ProfileChallengeViewController : CheetahLoyaltyUI.CollectionViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate {
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController
+  open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
+  open var answer: CheetahLoyaltyCore.Parameters?
+  convenience public init(challenge: CheetahLoyaltyCore.Challenge, collectionController: CheetahLoyaltyChallenges.ProfileChallengeController?, nibName: Swift.String = "CollectionViewController")
+  override open func setup()
+  open func setupSubmitButton()
+  open func answerIsSetFromAttributes(_ attributes: [CheetahLoyaltyCore.MutableProfileAttribute]) -> Swift.Bool
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
+  open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc open class SurveyTextFieldCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet weak public var textField: UIKit.UITextField!
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+open class MultiQuestionCarouselController : CheetahLoyaltyUI.CarouselCollectionController<CheetahLoyaltyChallenges.SurveyResponderController> {
+  final public let cellReuseIdentifier: Swift.String
+  open var responderViewController: CheetahLoyaltyChallenges.MultiQuestionChallengeViewController? {
+    get
+  }
+  open var surveyAnswers: [CheetahLoyaltyCore.Parameters] {
+    get
+  }
+  open var isAnswersComplete: Swift.Bool {
+    get
+  }
+  convenience public init(challenge: CheetahLoyaltyCore.Challenge)
+  override open func setupPageControl()
+  override open func registerComponents()
+  open func previousButtonPressed(_ sender: UIKit.UIButton)
+  override open func loadContent()
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc override open func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @objc override open func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  open func getResponders(from challenge: CheetahLoyaltyCore.Challenge) -> [CheetahLoyaltyChallenges.SurveyResponderController]
+  open func scrollToNext()
+  override public init(collectionView: UIKit.UICollectionView? = super)
+  @objc deinit
+}
+@objc open class MultiQuestionCell : UIKit.UICollectionViewCell {
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  open func setupEmbeddedCollectionView()
+  @objc deinit
+}
+public protocol MemeColorPickerDelegate {
+  func presentColorPicker(in memeChallengeViewController: CheetahLoyaltyChallenges.MemeChallengeViewController)
+  var userSelectedColor: UIKit.UIColor { get set }
+}
+open class MemeChallengeViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate, UIKit.UIGestureRecognizerDelegate, UIKit.UITextFieldDelegate, UIKit.UIPickerViewDelegate, UIKit.UIPickerViewDataSource {
+  @objc @IBOutlet weak public var captionSeparateFromImageTextField: UIKit.UITextField!
+  @objc @IBOutlet weak public var fontTextField: UIKit.UITextField!
+  @objc @IBOutlet weak public var colorPickerButton: UIKit.UIButton!
+  @objc @IBOutlet weak public var canvasView: UIKit.UIView!
+  @objc @IBOutlet weak public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet weak public var captionTextField: UIKit.UITextField!
+  @objc @IBOutlet weak public var addButton: UIKit.UIButton!
+  @objc @IBOutlet weak public var captionEditorView: UIKit.UIView!
+  open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
+  open var fontPickerView: UIKit.UIPickerView {
+    get
+    set
+  }
+  open var selectedCaption: UIKit.UILabel?
+  open var captionColor: UIKit.UIColor? {
+    get
+  }
+  open var minCaptionFontSize: Swift.Int
+  open var maxCaptionFontSize: Swift.Int
+  open var fontSizes: [Swift.Int]
+  open var captionFont: UIKit.UIFont {
+    get
+    set
+  }
+  open var memeColorPickerDelegate: CheetahLoyaltyChallenges.MemeColorPickerDelegate?
+  open var shareToSocialMediaDelegate: CheetahLoyaltyChallenges.ShareChallengeToSocialMediaDelegate?
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController
+  @objc override dynamic open func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  convenience public init(challenge: CheetahLoyaltyCore.Challenge)
+  override open func setup()
+  open func updateSelectedCaption()
+  open func selectCaption(label: UIKit.UILabel)
+  open func resetViews()
+  open func createCaptionInsideCanvas()
+  @objc open func didPanCaption(_ gestureRecognizer: UIKit.UIPanGestureRecognizer)
+  @objc open func didTapCaption(_ gestureRecognizer: UIKit.UITapGestureRecognizer)
+  @objc open func dismissKeyboard()
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
+  open func onFailure(with error: Swift.Error)
+  @objc open func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+  @objc open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @objc open func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @objc public func pickerView(_ pickerView: UIKit.UIPickerView, titleForRow row: Swift.Int, forComponent component: Swift.Int) -> Swift.String?
+  @objc public func pickerView(_ pickerView: UIKit.UIPickerView, didSelectRow row: Swift.Int, inComponent component: Swift.Int)
+  @objc public func numberOfComponents(in pickerView: UIKit.UIPickerView) -> Swift.Int
+  @objc public func pickerView(_ pickerView: UIKit.UIPickerView, numberOfRowsInComponent component: Swift.Int) -> Swift.Int
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIView {
+  public func takeSnaphot(frame: CoreGraphics.CGRect) -> UIKit.UIImage
+}
+public protocol ShareChallengeToSocialMediaDelegate {
+  func share(image: UIKit.UIImage, with: CheetahLoyaltyCore.Challenge, completion: (() -> Swift.Void)?)
+  func share(video url: Foundation.URL, with: CheetahLoyaltyCore.Challenge, completion: (() -> Swift.Void)?)
+  func share(url: Foundation.URL, with: CheetahLoyaltyCore.Challenge, completion: (() -> Swift.Void)?)
+}
+@objc open class RatingSurveyResponderController : CheetahLoyaltyChallenges.SurveyResponderController, CheetahLoyaltyChallenges.SurveyRatingCellDelegate {
+  @objc override dynamic public init()
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  override open func registerComponents()
+  override open func responderCell(for collectionView: UIKit.UICollectionView, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  open func buildAnswer(with rating: Swift.Int)
+  open func surveyRatingCellMaxRatingDidChange(_ cell: CheetahLoyaltyChallenges.SurveyRatingCell, maxRating: Swift.Int)
+  open func surveyRatingCellRateDidChange(_ cell: CheetahLoyaltyChallenges.SurveyRatingCell, rating: Swift.Int)
+  @objc deinit
+}
+open class SurveyChallengeViewController : CheetahLoyaltyUI.CollectionViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate {
+  open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController
+  override open class var nibName: Swift.String {
+    get
+  }
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responderController: CheetahLoyaltyChallenges.SurveyResponderController)
+  override open func setup()
+  open func setupTitle()
+  open func onFailure(with error: Swift.Error)
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
+  open func respondButtonPressed()
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc open class SurveyResponderController : ObjectiveC.NSObject, CheetahLoyaltyUI.CollectionController {
+  open var answer: CheetahLoyaltyCore.Parameters?
+  open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
+  open var collectionViewController: CheetahLoyaltyUI.CollectionViewController? {
+    get
+    set
+  }
+  weak open var collectionView: UIKit.UICollectionView? {
+    get
+    set
+  }
+  open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    get
+  }
+  open var responseSetting: CheetahLoyaltyCore.SurveyChallengeResponseSetting? {
+    get
+  }
+  open var survey: CheetahLoyaltyCore.Survey?
+  open var surveyRespondable: CheetahLoyaltyChallenges.SurveyRespondable? {
+    get
+  }
+  convenience public init(survey: CheetahLoyaltyCore.Survey)
+  open func loadContent()
+  open func refreshContent()
+  open func setupCollectionView()
+  open func registerComponents()
+  open func responderCell(for collectionView: UIKit.UICollectionView, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  open func handleError(_ error: Swift.Error, in collectionViewController: CheetahLoyaltyUI.CollectionViewController?)
+  @objc open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc open func respondButtonPressed(_ sender: UIKit.UIButton)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension SurveyChallengeViewController {
+  public static func surveyResponderFor(challenge: CheetahLoyaltyCore.Challenge) -> CheetahLoyaltyChallenges.SurveyChallengeViewController?
+}
+public protocol SurveyRespondable : CheetahLoyaltyChallenges.SurveyDetailCellPresentable, CheetahLoyaltyChallenges.SurveyRespondCellPresentable {
+}
+extension SurveyChallengeResponseSetting : CheetahLoyaltyChallenges.SurveyRespondable {
+  public var image: UIKit.UIImage? {
+    get
+  }
+  public var questionText: Swift.String {
+    get
+  }
+  public var descriptionText: Swift.String {
+    get
+  }
+  public var respondTitle: Swift.String {
+    get
+  }
+}
+extension Survey where Self : CheetahLoyaltyChallenges.SurveyRespondable {
+  public var image: UIKit.UIImage? {
+    get
+  }
+  public var questionText: Swift.String {
+    get
+  }
+  public var descriptionText: Swift.String {
+    get
+  }
+  public var respondTitle: Swift.String {
+    get
+  }
+}
+extension MultipleChoiceSurvey : CheetahLoyaltyChallenges.SurveyRespondable {
+}
+extension RatingSurvey : CheetahLoyaltyChallenges.SurveyRespondable {
+}
+extension TextSurvey : CheetahLoyaltyChallenges.SurveyRespondable {
+}
+public protocol ChallengeResponderDelegate : AnyObject {
+  func onFailure(with error: Swift.Error)
+  func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
+}
+public protocol ChallengeResponder : AnyObject {
+  var challenge: CheetahLoyaltyCore.Challenge { get }
+  var delegate: CheetahLoyaltyChallenges.ChallengeResponderDelegate? { get set }
+  var isResponding: Swift.Bool { get set }
+  func didRespond(with result: Swift.Result<CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>, Swift.Error>)
+  func respond(with parameters: CheetahLoyaltyCore.Parameters?)
+  func respond(with image: UIKit.UIImage, and parameters: CheetahLoyaltyCore.Parameters?)
+  func respond(withVideo videoURL: Foundation.URL, and parameters: CheetahLoyaltyCore.Parameters?)
+}
+@objc open class BaseChallengeResponder : ObjectiveC.NSObject, CheetahLoyaltyChallenges.ChallengeResponder {
+  open var challenge: CheetahLoyaltyCore.Challenge
+  open var isResponding: Swift.Bool
+  weak open var delegate: CheetahLoyaltyChallenges.ChallengeResponderDelegate?
+  public init(with challenge: CheetahLoyaltyCore.Challenge, delegate: CheetahLoyaltyChallenges.ChallengeResponderDelegate? = nil)
+  open func didRespond(with result: Swift.Result<CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>, Swift.Error>)
+  open func respond(with parameters: CheetahLoyaltyCore.Parameters?)
+  open func respond(with image: UIKit.UIImage, and parameters: CheetahLoyaltyCore.Parameters? = nil)
+  open func respond(withVideo videoURL: Foundation.URL, and parameters: CheetahLoyaltyCore.Parameters? = nil)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension NSNotification.Name {
+  public static let challengeUpdated: Foundation.Notification.Name
+}
+open class ViewPhotoChallengeController : CheetahLoyaltyChallenges.ViewContentController {
+  public var responseSetting: CheetahLoyaltyCore.ViewContentChallengeResponseSetting
+  open var contentHasLoaded: Swift.Bool {
+    get
+    set
+  }
+  open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
+  open var viewContentViewController: CheetahLoyaltyChallenges.ViewContentViewController? {
+    get
+  }
+  open var shareToSocialMediaDelegate: CheetahLoyaltyChallenges.ShareChallengeToSocialMediaDelegate?
+  open var imageView: UIKit.UIImageView
+  public init(responseSetting: CheetahLoyaltyCore.ViewContentChallengeResponseSetting)
+  open func loadContent()
+  open func refreshContent()
+  open func shareToSocialMedia(completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
+open class AvatarChallengeViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate, CheetahLoyaltyUI.ImagePickerPresenterDelegate {
+  @objc @IBOutlet weak public var scrollView: UIKit.UIScrollView!
+  @objc @IBOutlet weak public var submitButton: UIKit.UIButton!
+  @objc @IBOutlet weak public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet weak public var uploadLabel: UIKit.UILabel!
+  open var imagePickerPresenter: CheetahLoyaltyUI.ImagePickerPresenter?
+  open var playerObserver: ObjectiveC.NSObjectProtocol?
+  open var uiImage: UIKit.UIImage?
+  open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge)
+  override open func setup()
+  open func setupImageView()
+  open func setupUploadLabel()
+  @objc open func uploadPhoto()
+  open func didSelect(asset: Photos.PHAsset?, image: UIKit.UIImage, with imageURL: Foundation.URL?, from imagePickerPresenter: CheetahLoyaltyUI.ImagePickerPresenter)
+  open func didSelect(asset: Photos.PHAsset?, movieURL: Foundation.URL, from imagePickerPresenter: CheetahLoyaltyUI.ImagePickerPresenter)
+  open func didCancelPickingImage()
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
+  open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc open class ReferralChallengeController : ObjectiveC.NSObject, UIKit.UIActivityItemSource {
+  open var challenge: CheetahLoyaltyCore.Challenge?
+  public init(challenge: CheetahLoyaltyCore.Challenge)
+  @objc open func activityViewControllerPlaceholderItem(_ activityViewController: UIKit.UIActivityViewController) -> Any
+  @objc open func activityViewController(_ activityViewController: UIKit.UIActivityViewController, itemForActivityType activityType: UIKit.UIActivity.ActivityType?) -> Any?
+  @objc open func activityViewController(_ activityViewController: UIKit.UIActivityViewController, subjectForActivityType activityType: UIKit.UIActivity.ActivityType?) -> Swift.String
+  open func showReferralChallengeResponder(in viewController: UIKit.UIViewController? = nil)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc open class MultipleChoiceSurveyResponderController : CheetahLoyaltyChallenges.SurveyResponderController, CheetahLoyaltyUI.SelectionButtonDelegate, UIKit.UITextFieldDelegate {
+  open var selectedOptions: [Swift.Int]
+  open var otherAnswer: Swift.String
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  override open func registerComponents()
+  override open func responderCell(for collectionView: UIKit.UICollectionView, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  open func willChange(_ selectionButton: CheetahLoyaltyUI.SelectionButton, isSelected: Swift.Bool) -> Swift.Bool
+  open func didTap(_ selectionButton: CheetahLoyaltyUI.SelectionButton)
+  @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  open func buildAnswer()
+  open func choiceCell(for collectionView: UIKit.UICollectionView, at indexPath: Foundation.IndexPath, item: Any) -> CheetahLoyaltyChallenges.SurveyChoiceCell?
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class CheckInChallengeViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate {
+  @objc @IBOutlet weak public var stackView: UIKit.UIStackView!
+  @objc @IBOutlet weak public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet weak public var activityIndicatorView: UIKit.UIActivityIndicatorView!
+  @objc @IBOutlet weak public var headerLabel: UIKit.UILabel!
+  @objc @IBOutlet weak public var detailLabel: UIKit.UILabel!
+  @objc @IBOutlet weak public var subheaderLabel: UIKit.UILabel!
+  @objc @IBOutlet weak public var respondButton: UIKit.UIButton!
+  open var nearestPlace: CheetahLoyaltyCore.Place? {
+    get
+  }
+  open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController
+  open var userLocation: CheetahLoyaltyCore.UserLocation?
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge)
+  override open func setup()
+  open func refetchLatestChallenge()
+  open func setupNearby(place: CheetahLoyaltyCore.Place)
+  open func setupNoNearby()
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
+  open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol ChallengeDetailController : CheetahLoyaltyUI.ContentController {
+  var challenge: CheetahLoyaltyCore.Challenge? { get set }
+  var responseInfo: CheetahLoyaltyCore.Challenge.ResponseInfo? { get set }
+  func setupViewController(_ viewController: CheetahLoyaltyChallenges.ChallengeResponseDetailViewController)
+  func backButtonPressed(_ backButton: UIKit.UIButton)
+  func feedButtonPressed(_ feedButton: UIKit.UIButton)
+}
+open class ChallengeResponseDetailViewController : CheetahLoyaltyUI.NibViewController {
+  @objc @IBOutlet public var responseMessageLabel: UIKit.UILabel!
+  @objc @IBOutlet public var challengeDetailsLabel: UIKit.UILabel!
+  @objc @IBOutlet public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet public var feedButton: UIKit.UIButton!
+  @objc @IBOutlet public var backButton: UIKit.UIButton!
+  open var challengeDetailController: CheetahLoyaltyChallenges.ChallengeDetailController?
+  override open func setup()
+  convenience public init(challengeDetailController: CheetahLoyaltyChallenges.ChallengeDetailController)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+open class MultiQuestionChallengeViewController : CheetahLoyaltyUI.CollectionViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate {
+  @objc @IBOutlet weak public var pageControl: UIKit.UIPageControl!
+  @objc @IBOutlet weak public var buttonsStackView: UIKit.UIStackView!
+  @objc @IBOutlet weak public var previousButton: UIKit.UIButton!
+  @objc @IBOutlet weak public var respondButton: UIKit.UIButton!
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController
+  open var carouselController: CheetahLoyaltyChallenges.MultiQuestionCarouselController? {
+    get
+  }
+  open var responder: CheetahLoyaltyChallenges.ChallengeResponder? {
+    get
+    set
+  }
+  convenience public init(challenge: CheetahLoyaltyCore.Challenge)
+  override open func setup()
+  open func setupPageControl()
+  open func setupButtons()
+  public func onFailure(with error: Swift.Error)
+  public func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+open class GameChallengeViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
+  @objc @IBOutlet public var gameView: WebKit.WKWebView!
+  open var prizeWon: CheetahLoyaltyCore.Prize?
+  open var errorDescription: Swift.String
+  open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge)
+  override open func setup()
+  open func setupView()
+  open func loadURL(url: Foundation.URL)
+  open func challengeViewDidFinishLoading()
+  open func challengeViewShowResult()
+  open func challengeViewSubmitChallenge()
+  @objc open func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @objc open func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: Swift.Error)
+  @objc open func webView(_ webView: WebKit.WKWebView, didCommit navigation: WebKit.WKNavigation!)
+  @objc open func webView(_ webView: WebKit.WKWebView, runJavaScriptAlertPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping () -> Swift.Void)
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
+  open func onFailure(with error: Swift.Error)
+  @objc open func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+open class ViewUrlChallengeController : CheetahLoyaltyChallenges.ViewContentController {
+  open var responseSetting: CheetahLoyaltyCore.ViewContentChallengeResponseSetting
+  open var contentHasLoaded: Swift.Bool {
+    get
+    set
+  }
+  open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
+  open var viewContentViewController: CheetahLoyaltyChallenges.ViewContentViewController? {
+    get
+  }
+  open var shareToSocialMediaDelegate: CheetahLoyaltyChallenges.ShareChallengeToSocialMediaDelegate?
+  open var contentUrl: Foundation.URL?
+  open var webView: WebKit.WKWebView?
+  public init(responseSetting: CheetahLoyaltyCore.ViewContentChallengeResponseSetting)
+  open func loadContent()
+  open func refreshContent()
+  open func shareToSocialMedia(completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
+@objc open class SurveyChoiceCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet weak public var containerView: UIKit.UIView!
+  @objc @IBOutlet weak public var stackView: UIKit.UIStackView!
+  @objc @IBOutlet weak public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet weak public var selectionStackView: UIKit.UIStackView!
+  @objc @IBOutlet weak public var textField: UIKit.UITextField!
+  open var listType: CheetahLoyaltyCore.MultipleChoiceSurvey.ListType {
+    get
+    set
+  }
+  open var selectionButton: CheetahLoyaltyUI.CheckBox? {
+    get
+  }
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  open func setUpSelectionButton()
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc open class SurveyRespondCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet weak public var respondButton: UIKit.UIButton!
+  @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol SurveyRespondCellPresentable {
+  var respondTitle: Swift.String { get }
+  func configure(cell: CheetahLoyaltyChallenges.SurveyRespondCell)
+}
+extension SurveyRespondCellPresentable {
+  public func configure(cell: CheetahLoyaltyChallenges.SurveyRespondCell)
+}
+public protocol ViewContentController : CheetahLoyaltyUI.ContentController {
+  var responseSetting: CheetahLoyaltyCore.ViewContentChallengeResponseSetting { get }
+  var contentHasLoaded: Swift.Bool { get set }
+  var shareToSocialMediaDelegate: CheetahLoyaltyChallenges.ShareChallengeToSocialMediaDelegate? { get set }
+  func shareToSocialMedia(completion: (() -> Swift.Void)?)
+}
+open class ViewContentViewController : CheetahLoyaltyUI.StatefulViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate {
+  @objc @IBOutlet weak public var contentView: UIKit.UIView!
+  @objc @IBOutlet weak public var actionButton: UIKit.UIButton!
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController {
+    get
+    set
+  }
+  open var viewContentController: CheetahLoyaltyChallenges.ViewContentController? {
+    get
+    set
+  }
+  open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
+  convenience public init(challenge: CheetahLoyaltyCore.Challenge, viewContentController: CheetahLoyaltyChallenges.ViewContentController)
+  override open func setup()
+  open func setupTitle()
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
+  open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc open class NumericSurveyResponderController : CheetahLoyaltyChallenges.SurveyResponderController, UIKit.UITextFieldDelegate {
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  override open func registerComponents()
+  override open func responderCell(for collectionView: UIKit.UICollectionView, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @objc override dynamic public init()
+  @objc deinit
+}
+open class MediaChallengeViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.ImagePickerPresenterDelegate, CheetahLoyaltyChallenges.ChallengeResponderDelegate {
+  @objc @IBOutlet weak public var videoContainerView: UIKit.UIView!
+  @objc @IBOutlet weak public var textView: CheetahLoyaltyUI.GrowingTextView!
+  @objc @IBOutlet weak public var submitButton: UIKit.UIButton!
+  @objc @IBOutlet weak public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet weak public var actionLabel: UIKit.UILabel!
+  @objc @IBOutlet weak public var scrollView: UIKit.UIScrollView!
+  open var uiImage: UIKit.UIImage?
+  open var videoURL: Foundation.URL?
+  open var imageURL: Swift.String?
+  open var playerObserver: ObjectiveC.NSObjectProtocol?
+  open var imagePickerPresenter: CheetahLoyaltyUI.ImagePickerPresenter?
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController
+  open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
+  open var player: AVFoundation.AVPlayer?
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge)
+  override open func setup()
+  @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
+  open func setupTitle()
+  open func setupTextView()
+  open func setupImageView()
+  open func setupVideoContainerView()
+  open func setupLabel()
+  @objc open func uploadMedia()
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
+  open func onFailure(with error: Swift.Error)
+  open func didSelect(asset: Photos.PHAsset?, image: UIKit.UIImage, with imageURL: Foundation.URL?, from imagePickerPresenter: CheetahLoyaltyUI.ImagePickerPresenter)
+  open func didSelect(asset: Photos.PHAsset?, movieURL: Foundation.URL, from imagePickerPresenter: CheetahLoyaltyUI.ImagePickerPresenter)
+  open func didCancelPickingImage()
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc open class SurveyRatingCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet weak public var containerView: UIKit.UIView!
+  @objc @IBOutlet weak public var stackView: UIKit.UIStackView!
+  open var maxRating: Swift.Int {
+    get
+    set
+  }
+  open var ratingButtonGroupName: Swift.String {
+    get
+    set
+  }
+  open var delegate: CheetahLoyaltyChallenges.SurveyRatingCellDelegate?
+  open var rating: Swift.Int {
+    get
+    set
+  }
+  @objc override dynamic open func awakeFromNib()
+  open func setupRatingButtons()
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol SurveyRatingCellDelegate {
+  func surveyRatingCellMaxRatingDidChange(_ cell: CheetahLoyaltyChallenges.SurveyRatingCell, maxRating: Swift.Int)
+  func surveyRatingCellRateDidChange(_ cell: CheetahLoyaltyChallenges.SurveyRatingCell, rating: Swift.Int)
+}
+@objc open class SurveyDetailCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet weak public var containerView: UIKit.UIView!
+  @objc @IBOutlet weak public var stackView: UIKit.UIStackView!
+  @objc @IBOutlet weak public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet weak public var questionLabel: UIKit.UILabel!
+  @objc @IBOutlet weak public var descriptionLabel: UIKit.UILabel!
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol SurveyDetailCellPresentable {
+  var image: UIKit.UIImage? { get }
+  var questionText: Swift.String { get }
+  var descriptionText: Swift.String { get }
+  func configure(cell: CheetahLoyaltyChallenges.SurveyDetailCell)
+}
+extension SurveyDetailCellPresentable {
+  public func configure(cell: CheetahLoyaltyChallenges.SurveyDetailCell)
+}
+@objc open class TextSurveyResponderController : CheetahLoyaltyChallenges.SurveyResponderController, UIKit.UITextViewDelegate {
+  override open func registerComponents()
+  override open func responderCell(for collectionView: UIKit.UICollectionView, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @objc open func textView(_ textView: UIKit.UITextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}

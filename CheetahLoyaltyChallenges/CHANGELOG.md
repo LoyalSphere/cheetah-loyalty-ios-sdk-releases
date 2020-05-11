@@ -6,6 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Challenges-1.0.1] - 2020-05-11
+
+### Added
+- Add title to navigation bar of challenge responders [#360]
+- Set font styles for labels [#367]
+
+### Changed
+- Module Stability and XCFrameworks support [#369]
+
+### Fixed
+- Handle unsupported post messages to prevent the HTML game from crashing [#356]
+
+[#356]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/356
+[#360]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/360
+[#367]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/367
+[#369]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/369
+
 ## [Challenges-1.0.0] - 2020-03-13
 
 ### Added
