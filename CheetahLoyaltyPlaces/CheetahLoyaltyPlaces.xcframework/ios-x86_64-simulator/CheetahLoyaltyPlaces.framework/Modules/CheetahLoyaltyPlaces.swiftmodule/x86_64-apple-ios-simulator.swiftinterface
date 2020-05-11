@@ -1,0 +1,115 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyPlaces
+import CheetahLoyaltyCore
+@_exported import CheetahLoyaltyPlaces
+import CheetahLoyaltyUI
+import CoreLocation
+import Foundation
+import Swift
+import UserNotifications
+@objc open class LocationManager : ObjectiveC.NSObject {
+  public static let eventKey: Swift.String
+  public enum Event {
+    case didSetCurrentLocation(_: CoreLocation.CLLocation)
+    case didFailUpdatingLocation(_: Swift.Error)
+    case userDidGrantLocationPermission(_: Swift.Bool)
+    case unknownAuthorizationStatusReceived(_: CoreLocation.CLAuthorizationStatus)
+  }
+  public var manager: CoreLocation.CLLocationManager! {
+    get
+    }
+  open var lastKnownLocation: CoreLocation.CLLocation? {
+    get
+  }
+  open var isAuthorized: Swift.Bool {
+    get
+  }
+  open func isLocationValid(_ location: CoreLocation.CLLocation) -> Swift.Bool
+  open var isLocationServicesEnabled: Swift.Bool {
+    get
+  }
+  public static let shared: CheetahLoyaltyPlaces.LocationManager
+  open func startReceivingLocationUpdates()
+  open func stopReceivingLocationUpdates()
+  open func checkAndRequestAuthorizationIfNeeded()
+  open func handleAuthorizationStatus(_ status: CoreLocation.CLAuthorizationStatus)
+  open func isStatusAllowed(_ status: CoreLocation.CLAuthorizationStatus) -> Swift.Bool
+  open func broadcastEvent(_ event: CheetahLoyaltyPlaces.LocationManager.Event)
+  @objc deinit
+}
+extension LocationManager : CoreLocation.CLLocationManagerDelegate {
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: Swift.Error)
+}
+public protocol GeofencePlace {
+  var placeId: Swift.String { get }
+  var radius: Swift.Double { get }
+  var coordinates: CoreLocation.CLLocationCoordinate2D? { get }
+  var notifyOnEntry: Swift.Bool { get }
+  var notifyOnExit: Swift.Bool { get }
+}
+extension Place : CheetahLoyaltyPlaces.GeofencePlace {
+  public var coordinates: CoreLocation.CLLocationCoordinate2D? {
+    get
+  }
+  public var notifyOnEntry: Swift.Bool {
+    get
+  }
+  public var notifyOnExit: Swift.Bool {
+    get
+  }
+}
+extension Bundle {
+  public static var CheetahLoyaltyPlacesIdentifier: Swift.String {
+    get
+  }
+}
+extension NSNotification.Name {
+  public static let locationManagerEvents: Foundation.Notification.Name
+}
+public protocol GeofenceClientEvents {
+  func createClientEventRegions(for location: CoreLocation.CLLocation)
+  func triggerClientEvent(in region: CoreLocation.CLRegion, event: CheetahLoyaltyCore.Place.ClientEventType)
+  func sendLocalNotification(for offers: [CheetahLoyaltyCore.Offer], withTitle title: Swift.String, andInterval fireDateInterval: Foundation.TimeInterval, completion: ((Swift.Error?) -> Swift.Void)?)
+}
+@objc open class GeofenceClientEventsManager : ObjectiveC.NSObject, CheetahLoyaltyPlaces.GeofenceClientEvents {
+  open func createClientEventRegions(for location: CoreLocation.CLLocation)
+  open func triggerClientEvent(in region: CoreLocation.CLRegion, event: CheetahLoyaltyCore.Place.ClientEventType)
+  public func sendLocalNotification(for offers: [CheetahLoyaltyCore.Offer], withTitle title: Swift.String, andInterval fireDateInterval: Foundation.TimeInterval, completion: ((Swift.Error?) -> Swift.Void)?)
+  open func formParamsForNearbyPlaces(using location: CoreLocation.CLLocation) -> CheetahLoyaltyCore.Parameters
+  open func computeRadius(placeDistance: Swift.Double?, placeRadius: Swift.Double?, defaultRadius: Swift.Int) -> Swift.Double
+  open func getTitleFor(event: CheetahLoyaltyCore.Place.ClientEventType, placeName: Swift.String) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc open class GeofenceManager : ObjectiveC.NSObject {
+  public var manager: CoreLocation.CLLocationManager! {
+    get
+    }
+  open var locationEventListener: ObjectiveC.NSObjectProtocol?
+  public var clientEventsManager: CheetahLoyaltyPlaces.GeofenceClientEvents?
+  public var lastKnownLocation: CoreLocation.CLLocation? {
+    get
+    }
+  public static let shared: CheetahLoyaltyPlaces.GeofenceManager
+  open var isGeofencingEnabled: Swift.Bool {
+    get
+  }
+  open var isLocationServicesAndGeofencingEnabled: Swift.Bool {
+    get
+  }
+  open func start()
+  open func stop()
+  open func stopMonitoringAllRegions()
+  open func updateThresholdRegion(radius: CoreLocation.CLLocationDistance)
+  open func updateMonitoredRegions(places: [CheetahLoyaltyPlaces.GeofencePlace])
+  open func addEventListener()
+  open func removeEventListener()
+  @objc deinit
+}
+extension GeofenceManager : CoreLocation.CLLocationManagerDelegate {
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didEnterRegion region: CoreLocation.CLRegion)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didExitRegion region: CoreLocation.CLRegion)
+}
