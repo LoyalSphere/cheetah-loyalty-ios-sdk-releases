@@ -517,12 +517,14 @@ public struct Offer : Swift.Codable, Swift.Equatable {
   }
   public struct Response : Swift.Codable, Swift.Equatable {
     public var id: Swift.Int
+    public var certificate: CheetahLoyaltyCore.Certificate?
+    public var coupon: CheetahLoyaltyCore.Coupon?
     public var offer: CheetahLoyaltyCore.Offer?
     public var processingStatus: Swift.String
     public var respondable: Swift.Bool
     public var usageEndDate: Swift.String
     public var usageStartDate: Swift.String
-    public init(id: Swift.Int, offer: CheetahLoyaltyCore.Offer?, processingStatus: Swift.String, respondable: Swift.Bool, usageEndDate: Swift.String, usageStartDate: Swift.String)
+    public init(id: Swift.Int, certificate: CheetahLoyaltyCore.Certificate?, coupon: CheetahLoyaltyCore.Coupon?, offer: CheetahLoyaltyCore.Offer?, processingStatus: Swift.String, respondable: Swift.Bool, usageEndDate: Swift.String, usageStartDate: Swift.String)
     public func encode(to encoder: Swift.Encoder) throws
     public static func == (a: CheetahLoyaltyCore.Offer.Response, b: CheetahLoyaltyCore.Offer.Response) -> Swift.Bool
   }
@@ -557,9 +559,11 @@ public struct Offer : Swift.Codable, Swift.Equatable {
   }
   public struct ResponseInfo : Swift.Codable, Swift.Equatable {
     public let id: Swift.Int
+    public var certificate: CheetahLoyaltyCore.Certificate?
+    public var coupon: CheetahLoyaltyCore.Coupon?
     public let respondable: Swift.Bool
     public let respondableInfo: CheetahLoyaltyCore.RespondableInfo?
-    public init(id: Swift.Int, respondable: Swift.Bool, respondableInfo: CheetahLoyaltyCore.RespondableInfo?)
+    public init(id: Swift.Int, certificate: CheetahLoyaltyCore.Certificate?, coupon: CheetahLoyaltyCore.Coupon?, respondable: Swift.Bool, respondableInfo: CheetahLoyaltyCore.RespondableInfo?)
     public func encode(to encoder: Swift.Encoder) throws
     public static func == (a: CheetahLoyaltyCore.Offer.ResponseInfo, b: CheetahLoyaltyCore.Offer.ResponseInfo) -> Swift.Bool
   }
@@ -1777,7 +1781,7 @@ public struct Reward : Swift.Codable, Swift.Equatable {
   public var metricDisplayName: Swift.String
   public var imageUrl: Swift.String
   public var thumbnailUrl: Swift.String
-  public var type: Swift.String
+  public var type: CheetahLoyaltyCore.Reward.RewardType?
   public var startDate: Swift.String
   public var endDate: Swift.String
   public var drawDate: Swift.String
@@ -1785,7 +1789,7 @@ public struct Reward : Swift.Codable, Swift.Equatable {
   public var requiredAttributes: [CheetahLoyaltyCore.Reward.Class]
   public var combinations: [CheetahLoyaltyCore.Reward.AttributeCombination]
   public var selectedCombination: CheetahLoyaltyCore.Reward.AttributeCombination?
-  public var redeemOptions: [Swift.String]
+  public var redemptionOptions: [CheetahLoyaltyCore.Reward.RedemptionOptions]
   public var points: Swift.String
   public var responseCount: Swift.Int
   public var isRespondable: Swift.Bool
@@ -1805,10 +1809,43 @@ public struct Reward : Swift.Codable, Swift.Equatable {
   public var acceptanceUrl: Swift.String
   public var responseMessage: Swift.String
   public var businessValue: Swift.String
+  public var maximumMetric: Swift.String
+  public var minimumMetric: Swift.String
   public var hasRespondableCombination: Swift.Bool {
     get
   }
-  public init(id: Swift.Int, sku: Swift.String, heading: Swift.String, subHeading: Swift.String, body: Swift.String, details: Swift.String, metricDisplayName: Swift.String, imageUrl: Swift.String, thumbnailUrl: Swift.String, type: Swift.String, startDate: Swift.String, endDate: Swift.String, drawDate: Swift.String, attributes: [CheetahLoyaltyCore.Reward.Attribute], requiredAttributes: [CheetahLoyaltyCore.Reward.Class], combinations: [CheetahLoyaltyCore.Reward.AttributeCombination], selectedCombination: CheetahLoyaltyCore.Reward.AttributeCombination?, redeemOptions: [Swift.String], points: Swift.String, responseCount: Swift.Int, isRespondable: Swift.Bool, isFavorited: Swift.Bool, addressRequired: Swift.Bool, isAwarded: Swift.Bool, paymentMethod: Swift.String, action: Swift.String, responseCurrencyAmount: Swift.String, responseCurrencyName: Swift.String, expirationInterval: Swift.String, expirationPeriod: Swift.String, respondableInfo: CheetahLoyaltyCore.RespondableInfo?, embedded: CheetahLoyaltyCore.AnyCodable?, isAcceptanceRequired: Swift.Bool, acceptanceText: Swift.String, acceptanceUrl: Swift.String, responseMessage: Swift.String, businessValue: Swift.String)
+  public var extraJSON: [Swift.String : CheetahLoyaltyCore.AnyCodable]
+  public init(id: Swift.Int, sku: Swift.String, heading: Swift.String, subHeading: Swift.String, body: Swift.String, details: Swift.String, metricDisplayName: Swift.String, imageUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahLoyaltyCore.Reward.RewardType?, startDate: Swift.String, endDate: Swift.String, drawDate: Swift.String, attributes: [CheetahLoyaltyCore.Reward.Attribute], requiredAttributes: [CheetahLoyaltyCore.Reward.Class], combinations: [CheetahLoyaltyCore.Reward.AttributeCombination], selectedCombination: CheetahLoyaltyCore.Reward.AttributeCombination?, redemptionOptions: [CheetahLoyaltyCore.Reward.RedemptionOptions], points: Swift.String, responseCount: Swift.Int, isRespondable: Swift.Bool, isFavorited: Swift.Bool, addressRequired: Swift.Bool, isAwarded: Swift.Bool, paymentMethod: Swift.String, action: Swift.String, responseCurrencyAmount: Swift.String, responseCurrencyName: Swift.String, expirationInterval: Swift.String, expirationPeriod: Swift.String, respondableInfo: CheetahLoyaltyCore.RespondableInfo?, embedded: CheetahLoyaltyCore.AnyCodable?, isAcceptanceRequired: Swift.Bool, acceptanceText: Swift.String, acceptanceUrl: Swift.String, responseMessage: Swift.String, businessValue: Swift.String, maximumMetric: Swift.String, minimumMetric: Swift.String, extraJSON: [Swift.String : CheetahLoyaltyCore.AnyCodable])
+  public enum RewardType : Swift.String, Swift.Codable {
+    case badge
+    case certificate
+    case challenge
+    case contest
+    case coupon
+    case debit
+    case couponCom
+    case giftcard
+    case metric
+    case metricPurchase
+    case metricTransfer
+    case offer
+    case product
+    case dynamic
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum RedemptionOptions : Swift.String, Swift.Codable {
+    case inStore
+    case ship
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
   public struct Class : Swift.Codable, Swift.Equatable {
     public var id: Swift.Int
     public var name: Swift.String
@@ -1822,7 +1859,7 @@ public struct Reward : Swift.Codable, Swift.Equatable {
   }
   public struct Response : Swift.Codable, Swift.Equatable {
     public var id: Swift.Int
-    public var redemptionStatus: Swift.String
+    public var redemptionStatus: CheetahLoyaltyCore.Reward.Response.RedemptionStatus
     public var memberName: Swift.String
     public var memberId: Swift.String
     public var redemptionAmount: Swift.String
@@ -1842,7 +1879,20 @@ public struct Reward : Swift.Codable, Swift.Equatable {
     public var reward: CheetahLoyaltyCore.Reward?
     public var certificate: CheetahLoyaltyCore.Certificate?
     public var coupon: CheetahLoyaltyCore.Coupon?
-    public init(id: Swift.Int, redemptionStatus: Swift.String, memberName: Swift.String, memberId: Swift.String, redemptionAmount: Swift.String, metricName: Swift.String, redemptionUnit: Swift.String, metricDisplayName: Swift.String, metricAmount: Swift.String, sku: Swift.String, integrationId: Swift.String, shippingAddress: CheetahLoyaltyCore.Reward.Response.ShippingAddress?, imageUrl: Swift.String, thumbImageUrl: Swift.String, useStart: Swift.String, useEnd: Swift.String, createdAt: Swift.String, updatedAt: Swift.String, reward: CheetahLoyaltyCore.Reward?, certificate: CheetahLoyaltyCore.Certificate?, coupon: CheetahLoyaltyCore.Coupon?)
+    public var notes: [CheetahLoyaltyCore.AnyCodable]
+    public init(id: Swift.Int, redemptionStatus: CheetahLoyaltyCore.Reward.Response.RedemptionStatus, memberName: Swift.String, memberId: Swift.String, redemptionAmount: Swift.String, metricName: Swift.String, redemptionUnit: Swift.String, metricDisplayName: Swift.String, metricAmount: Swift.String, sku: Swift.String, integrationId: Swift.String, shippingAddress: CheetahLoyaltyCore.Reward.Response.ShippingAddress?, imageUrl: Swift.String, thumbImageUrl: Swift.String, useStart: Swift.String, useEnd: Swift.String, createdAt: Swift.String, updatedAt: Swift.String, reward: CheetahLoyaltyCore.Reward?, certificate: CheetahLoyaltyCore.Certificate?, coupon: CheetahLoyaltyCore.Coupon?, notes: [CheetahLoyaltyCore.AnyCodable])
+    public enum RedemptionStatus : Swift.String, Swift.Codable {
+      case pending
+      case completed
+      case cancelled
+      case processing
+      case errored
+      public typealias RawValue = Swift.String
+      public init?(rawValue: Swift.String)
+      public var rawValue: Swift.String {
+        get
+      }
+    }
     public struct ShippingAddress : Swift.Codable, Swift.Equatable {
       public var id: Swift.Int
       public var streetAddress: Swift.String
@@ -1868,6 +1918,7 @@ public struct Reward : Swift.Codable, Swift.Equatable {
     public var certificate: CheetahLoyaltyCore.Certificate?
     public var coupon: CheetahLoyaltyCore.Coupon?
     public var embedded: CheetahLoyaltyCore.AnyCodable?
+    public init(responseId: Swift.Int, isRespondable: Swift.Bool, respondableInfo: CheetahLoyaltyCore.RespondableInfo?, responseMessage: Swift.String, certificate: CheetahLoyaltyCore.Certificate?, coupon: CheetahLoyaltyCore.Coupon?, embedded: CheetahLoyaltyCore.AnyCodable?)
     public static func == (a: CheetahLoyaltyCore.Reward.ResponseInfo, b: CheetahLoyaltyCore.Reward.ResponseInfo) -> Swift.Bool
   }
   public struct Category : Swift.Codable, Swift.Equatable {
@@ -1895,10 +1946,10 @@ public struct Reward : Swift.Codable, Swift.Equatable {
     public var imageUrl: Swift.String
     public var thumbnailUrl: Swift.String
     public var metricName: Swift.String
-    public var metricAmount: Swift.Double
+    public var metricAmount: Swift.String
     public var values: [Swift.String]
     public var respondable: Swift.Bool
-    public init(id: Swift.Int, sku: Swift.String, imageUrl: Swift.String, thumbnailUrl: Swift.String, metricName: Swift.String, metricAmount: Swift.Double, values: [Swift.String], respondable: Swift.Bool)
+    public init(id: Swift.Int, sku: Swift.String, imageUrl: Swift.String, thumbnailUrl: Swift.String, metricName: Swift.String, metricAmount: Swift.String, values: [Swift.String], respondable: Swift.Bool)
     public static func == (a: CheetahLoyaltyCore.Reward.AttributeCombination, b: CheetahLoyaltyCore.Reward.AttributeCombination) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
   }
@@ -3337,6 +3388,14 @@ extension CheetahLoyaltyCore.AuthenticationAPI.SignUpParameterKeys : Swift.RawRe
 extension CheetahLoyaltyCore.AuthenticationInfo.SettingsKeys : Swift.Equatable {}
 extension CheetahLoyaltyCore.AuthenticationInfo.SettingsKeys : Swift.Hashable {}
 extension CheetahLoyaltyCore.AuthenticationInfo.SettingsKeys : Swift.RawRepresentable {}
+extension CheetahLoyaltyCore.Reward.RewardType : Swift.Equatable {}
+extension CheetahLoyaltyCore.Reward.RewardType : Swift.Hashable {}
+extension CheetahLoyaltyCore.Reward.RewardType : Swift.RawRepresentable {}
+extension CheetahLoyaltyCore.Reward.RedemptionOptions : Swift.Hashable {}
+extension CheetahLoyaltyCore.Reward.RedemptionOptions : Swift.RawRepresentable {}
+extension CheetahLoyaltyCore.Reward.Response.RedemptionStatus : Swift.Equatable {}
+extension CheetahLoyaltyCore.Reward.Response.RedemptionStatus : Swift.Hashable {}
+extension CheetahLoyaltyCore.Reward.Response.RedemptionStatus : Swift.RawRepresentable {}
 extension CheetahLoyaltyCore.MemeChallengeResponseSetting.Subtype : Swift.Equatable {}
 extension CheetahLoyaltyCore.MemeChallengeResponseSetting.Subtype : Swift.Hashable {}
 extension CheetahLoyaltyCore.MemeChallengeResponseSetting.Subtype : Swift.RawRepresentable {}

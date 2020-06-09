@@ -6,6 +6,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-1.3.0] - 2020-06-09
+### Added
+- Added `Certificate` and `Coupon` properties in `Offer.Response` and `Offer.ResponseInfo` [#371]
+- Added `maximumMetric` and `minimumMetric` `String` properties in `Reward` [#375]
+- Added `Reward.ResponseInfo` memberwise initializer [#393]
+- Added `extraJSON` property in `Reward` [#391]
+
+### Changed
+- Changed `metricAmount` property type of `Reward.AttributeCombination` to `String` [#377]
+- Changed `type` property type of `Reward` to `Reward.RewardType` enum [#378]
+- Changed `redeemOptions` property name of `Reward` to `redemptionOptions` and type to an array of `RedemptionOptions` [#386]
+- Changed `redemptionStatus` property type of `Reward` to `Reward.RedemptionStatus` [#401]
+
+### Fixed
+- Fixed client id header key in requests when access token is retrieved externally [#406]
+
+[#371]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/371
+[#375]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/375
+[#377]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/377
+[#378]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/378
+[#386]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/386
+[#391]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/391
+[#393]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/393
+[#401]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/401
+[#406]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/406
+
 ## [Core-1.2.1] - 2020-04-27
 ### Added
 - Added validation of url [#343]
