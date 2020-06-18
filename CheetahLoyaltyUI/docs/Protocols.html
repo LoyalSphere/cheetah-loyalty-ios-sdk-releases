@@ -188,9 +188,6 @@
               <li class="nav-group-task">
                 <a href="Enums/Localizer.html">Localizer</a>
               </li>
-              <li class="nav-group-task">
-                <a href="Enums/NotificationType.html">NotificationType</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -274,9 +271,6 @@
               <li class="nav-group-task">
                 <a href="Extensions/UIWindow.html">UIWindow</a>
               </li>
-              <li class="nav-group-task">
-                <a href="Extensions/UNUserNotificationCenter.html">UNUserNotificationCenter</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -290,9 +284,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/AnalyticsManager.html">AnalyticsManager</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/ButtonTextAppearance.html">ButtonTextAppearance</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/CarouselItemCellPresentable.html">CarouselItemCellPresentable</a>
@@ -340,13 +331,7 @@
                 <a href="Protocols/MenuItemCellPresentable.html">MenuItemCellPresentable</a>
               </li>
               <li class="nav-group-task">
-                <a href="Protocols/MessageNavigator.html">MessageNavigator</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Protocols/Navigator.html">Navigator</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Protocols/NotificationHelper.html">NotificationHelper</a>
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/Reloadable.html">Reloadable</a>
@@ -372,6 +357,9 @@
             <a href="Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Structs/CheetahAlertButtonTextAppearance.html">CheetahAlertButtonTextAppearance</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/CheetahBody.html">CheetahBody</a>
               </li>
               <li class="nav-group-task">
@@ -387,19 +375,34 @@
                 <a href="Structs/CheetahColorTheme.html">CheetahColorTheme</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/CheetahDisabledButtonTextAppearance.html">CheetahDisabledButtonTextAppearance</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/CheetahFootnote.html">CheetahFootnote</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/CheetahHeadline.html">CheetahHeadline</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/CheetahHighlightedButtonTextAppearance.html">CheetahHighlightedButtonTextAppearance</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/CheetahLargeTitle.html">CheetahLargeTitle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/CheetahNormalButtonTextAppearance.html">CheetahNormalButtonTextAppearance</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/CheetahSubheadline.html">CheetahSubheadline</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/CheetahTextFieldTextAppearance.html">CheetahTextFieldTextAppearance</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/CheetahTextTheme.html">CheetahTextTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/CheetahTextViewTextAppearance.html">CheetahTextViewTextAppearance</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/CheetahTitle1.html">CheetahTitle1</a>
@@ -782,73 +785,6 @@ And then implementing the <code>logEvent(from:)</code> and <code>logScreen(from:
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16CheetahLoyaltyUI16MessageNavigatorP"></a>
-                    <a name="//apple_ref/swift/Protocol/MessageNavigator" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI16MessageNavigatorP">MessageNavigator</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Represents a type that navigates message objects.</p>
-
-                        <a href="Protocols/MessageNavigator.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MessageNavigator</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:16CheetahLoyaltyUI18NotificationHelperP"></a>
-                    <a name="//apple_ref/swift/Protocol/NotificationHelper" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI18NotificationHelperP">NotificationHelper</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Represents a type that setups and handles received local and remote notifications.</p>
-
-<p>Some of the methods of this protocol have default implementations throught protocol implementations.
-Please refer to the documentation of the methods.</p>
-
-<p>To setup the conforming type to receive and handle local and remote notifications:</p>
-
-<ul>
-<li>Call <code>registerForRemoteNotifications</code> inside the application&rsquo;s <code>didFinishLaunchingWithOptions</code> method.</li>
-<li>Call <code>setAsUserNotificationCenterDelegate</code> to get <code>UNUserNotificationCenterDelegate</code> callbacks</li>
-<li>Call <code>handleNotification</code> inside <code>userNotificationCenter(_: UNUserNotificationCenter, didReceive: UNNotificationResponse, withCompletionHandler: @escaping () -&gt; Void)</code></li>
-</ul>
-
-                        <a href="Protocols/NotificationHelper.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">NotificationHelper</span> <span class="p">:</span> <span class="kt"><a href="Protocols/MessageNavigator.html">MessageNavigator</a></span><span class="p">,</span> <span class="kt">UNUserNotificationCenterDelegate</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:16CheetahLoyaltyUI19SegmentedControllerP"></a>
                     <a name="//apple_ref/swift/Protocol/SegmentedController" class="dashAnchor"></a>
                     <a class="token" href="#/s:16CheetahLoyaltyUI19SegmentedControllerP">SegmentedController</a>
@@ -1186,34 +1122,6 @@ By default variant of the primary and text color is automatically computed based
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16CheetahLoyaltyUI20ButtonTextAppearanceP"></a>
-                    <a name="//apple_ref/swift/Protocol/ButtonTextAppearance" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI20ButtonTextAppearanceP">ButtonTextAppearance</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Represents a type of the design of a text of a <strong>button</strong>.</p>
-
-                        <a href="Protocols/ButtonTextAppearance.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ButtonTextAppearance</span> <span class="p">:</span> <span class="kt"><a href="Protocols/TextAppearance.html">TextAppearance</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:16CheetahLoyaltyUI9TextThemeP"></a>
                     <a name="//apple_ref/swift/Protocol/TextTheme" class="dashAnchor"></a>
                     <a class="token" href="#/s:16CheetahLoyaltyUI9TextThemeP">TextTheme</a>
@@ -1244,7 +1152,7 @@ By default variant of the primary and text color is automatically computed based
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-05-08)</p>
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-18)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -6,6 +6,52 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-1.3.0] - 2020-06-16
+### Added
+- Added alert button text styles [#397]
+- Added an extension method of `String` to create a period between two dates [#399]
+- Added theming to the segement control of `SegmentedViewController` [#403], [#413]
+- Added text theming to text field and text views [#402]
+- Added error color in `ColorTheme` [#410]
+- Added `didSet` for `isRefreshable` of `DetailViewController to set scroll view refresh control [#409]
+- Added text theming for labels in cells [#408]
+- Added button text theming [#412], [#422], [#424]
+- Added bar item color themes [#416]
+- Added method to set text theme for multiple elements [#418]
+
+### Changed
+- Added height constraint of 44 to the action button in `DetailViewController.xib` [#383]
+- Change image picker error localizable string key to the generic error key [#400]
+
+### Fixed
+- Fixed access control level issues of the base init of `BaseCollectionController` [#373]
+- Fixed showing of initial loading state of `StatefulViewController` [#374]
+- Fixed typo in the protocol extension method `willChange(_ selectionButton: SelectionButton, isSelected: Bool) -> Bool` of `SelectionButtonDelegate` [#387]
+
+### Removed
+- Removed `NotificationHelper` to be moved into a separate Notifications SDK [#381], [#390]
+
+[#373]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/373
+[#374]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/374
+[#381]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/381
+[#383]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/383
+[#387]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/387
+[#390]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/390
+[#397]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/397
+[#399]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/399
+[#400]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/400
+[#402]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/402
+[#403]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/403
+[#408]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/408
+[#409]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/409
+[#410]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/410
+[#412]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/412
+[#413]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/413
+[#416]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/416
+[#418]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/418
+[#422]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/422
+[#424]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/424
+
 ## [UI-1.2.1] - 2020-05-07
 ### Added
 - Module Stability and XCFrameworks support [#354]
@@ -206,6 +252,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- `FloatingTextView`
 	- `ThemeManager`
 
+[UI-1.3.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/26?closed=1
+[UI-1.2.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/22?closed=1
 [UI-1.2.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/18?closed=1
 [UI-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/9?closed=1
 [UI-1.0.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/7?closed=1

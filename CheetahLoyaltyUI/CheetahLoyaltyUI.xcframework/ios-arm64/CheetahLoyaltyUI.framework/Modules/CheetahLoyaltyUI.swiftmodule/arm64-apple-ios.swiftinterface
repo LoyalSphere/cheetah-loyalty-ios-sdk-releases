@@ -8,7 +8,6 @@ import MobileCoreServices
 import Photos
 import Swift
 import UIKit
-import UserNotifications
 import WebKit
 public protocol TextTheme {
   var largeTitle: CheetahLoyaltyUI.TextAppearance { get }
@@ -22,17 +21,18 @@ public protocol TextTheme {
   var footnote: CheetahLoyaltyUI.TextAppearance { get }
   var caption1: CheetahLoyaltyUI.TextAppearance { get }
   var caption2: CheetahLoyaltyUI.TextAppearance { get }
+  var alertButton: CheetahLoyaltyUI.TextAppearance { get }
+  var textView: CheetahLoyaltyUI.TextAppearance { get }
+  var textField: CheetahLoyaltyUI.TextAppearance { get }
+  var normalButton: CheetahLoyaltyUI.TextAppearance { get }
+  var disabledButton: CheetahLoyaltyUI.TextAppearance { get }
+  var highlightedButton: CheetahLoyaltyUI.TextAppearance { get }
 }
 public protocol TextAppearance {
   var fontName: Swift.String { get }
-  var alignment: UIKit.NSTextAlignment { get }
   var textColor: UIKit.UIColor { get }
   var textStyle: UIKit.UIFont.TextStyle? { get }
   var fontSize: CoreGraphics.CGFloat? { get }
-}
-public protocol ButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
-  var disabledTextColor: UIKit.UIColor? { get }
-  var highlightedTextColor: UIKit.UIColor? { get }
 }
 extension TextAppearance {
   public var font: UIKit.UIFont {
@@ -47,7 +47,8 @@ extension NSMutableAttributedString {
   public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle)
 }
 extension UIButton {
-  public func setTextAppearance(_ textButtonAppearance: CheetahLoyaltyUI.ButtonTextAppearance, normalText: Swift.String, disabledText: Swift.String? = nil, highlightedText: Swift.String? = nil)
+  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance, with title: Swift.String, for state: UIKit.UIControl.State)
+  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle, with title: Swift.String, for state: UIKit.UIControl.State)
 }
 extension UILabel {
   public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance)
@@ -305,8 +306,10 @@ public protocol ColorTheme {
   var primaryVariantColor: UIKit.UIColor { get }
   var disabledButtonColor: UIKit.UIColor? { get }
   var highlightedButtonColor: UIKit.UIColor? { get }
+  var errorColor: UIKit.UIColor { get }
   var textColor: UIKit.UIColor { get }
   var textInputColor: UIKit.UIColor { get }
+  var barItemColor: UIKit.UIColor { get }
 }
 extension ColorTheme {
   public var textColor: UIKit.UIColor {
@@ -316,6 +319,12 @@ extension ColorTheme {
     get
   }
   public var primaryVariantColor: UIKit.UIColor {
+    get
+  }
+  public var errorColor: UIKit.UIColor {
+    get
+  }
+  public var barItemColor: UIKit.UIColor {
     get
   }
 }
@@ -352,7 +361,10 @@ public protocol DetailController : CheetahLoyaltyUI.ContentController {
     get
     set
   }
-  open var isRefreshable: Swift.Bool
+  open var isRefreshable: Swift.Bool {
+    get
+    set
+  }
   convenience public init(detailController: CheetahLoyaltyUI.DetailController, isRefreshable: Swift.Bool = true)
   override open func setup()
   open func setupDetails()
@@ -489,6 +501,7 @@ open class MenuCollectionController : CheetahLoyaltyUI.BaseCollectionController<
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
   override open func loadContent()
   open func didPressLogoutButton(_ logOutButton: UIKit.UIButton)
+  @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
   @objc deinit
 }
@@ -511,55 +524,6 @@ public protocol SegmentedController {
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
-}
-public protocol MessageNavigator {
-  func showAward(id: Swift.Int)
-  func showChallenge(id: Swift.Int)
-  func showClientEvents(_ offers: [Any])
-  func showContentPage(name: Swift.String)
-  func showContentPage(id: Swift.Int)
-  func showEvent(id: Swift.Int)
-  func showMember(id: Swift.Int)
-  func showMessages()
-  func showOffer(id: Swift.Int)
-  func showOfferResponse(id: Swift.Int)
-  func showPost(id: Swift.Int)
-  func showReward(id: Swift.Int)
-}
-public protocol NotificationHelper : CheetahLoyaltyUI.MessageNavigator, UserNotifications.UNUserNotificationCenterDelegate {
-  func handleNotification(request: UserNotifications.UNNotificationRequest, with date: Foundation.Date)
-  func requestAuthorization(options: UserNotifications.UNAuthorizationOptions, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  func registerForRemoteNotifications()
-  func sendDeviceTokenToServer(_ deviceToken: Foundation.Data)
-  func setAsUserNotificationCenterDelegate()
-  func trackMessage(id: Swift.Int)
-}
-public enum NotificationType : Swift.String {
-  case award
-  case challenge
-  case clientEvents
-  case contentPage
-  case event
-  case member
-  case offer
-  case offerResponse
-  case post
-  case reward
-  public typealias RawValue = Swift.String
-  public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
-    get
-  }
-}
-extension NotificationHelper {
-  public func setAsUserNotificationCenterDelegate()
-  public func requestAuthorization(options: UserNotifications.UNAuthorizationOptions = [.alert, .sound, .badge], completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
-  public func registerForRemoteNotifications()
-  public func sendDeviceTokenToServer(_ deviceToken: Foundation.Data)
-  public func handleNotification(request: UserNotifications.UNNotificationRequest, with date: Foundation.Date)
-}
-extension UNUserNotificationCenter {
-  public static func scheduleLocalNotification(content: UserNotifications.UNMutableNotificationContent, trigger: UserNotifications.UNNotificationTrigger?, completion: ((Swift.Error?) -> Swift.Void)? = nil)
 }
 open class CollectionDataProvider<ItemType> {
   open var items: [[ItemType]]
@@ -863,6 +827,12 @@ open class ThemeManager {
     case footnote
     case caption1
     case caption2
+    case textView
+    case textField
+    case alertButton
+    case normalButton
+    case disabledButton
+    case highlightedButton
     public var textAppearance: CheetahLoyaltyUI.TextAppearance {
       get
     }
@@ -873,6 +843,8 @@ open class ThemeManager {
     public func hash(into hasher: inout Swift.Hasher)
   }
   open func applyColor(theme: CheetahLoyaltyUI.ColorTheme = ThemeManager.shared.color, with painter: CheetahLoyaltyUI.ColorThemePainter = CheetahColorThemePainter())
+  public static func setTextAppearance(for views: [UIKit.UIView], using textAppearance: CheetahLoyaltyUI.TextAppearance)
+  public static func setTextStyle(for views: [UIKit.UIView], using textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle)
   @objc deinit
 }
 extension UIColor {
@@ -883,6 +855,9 @@ extension UIColor {
     get
   }
   convenience public init(hex: Swift.String?)
+  public static var error: UIKit.UIColor {
+    get
+  }
   public static var primary: UIKit.UIColor {
     get
   }
@@ -968,6 +943,7 @@ extension String {
   public var isBlank: Swift.Bool {
     get
   }
+  public static func createPeriod(startDate: Swift.String, endDate: Swift.String, withFormat format: Swift.String = Date.CheetahStringFormat) -> Swift.String
 }
 extension Array {
   public func appending(_ newElement: Element) -> [Element]
@@ -1227,6 +1203,7 @@ open class StatesCollectionController : CheetahLoyaltyUI.CountriesCollectionCont
   override open func registerComponents()
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
   override open func loadContent()
+  @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
   @objc deinit
 }
@@ -1285,6 +1262,7 @@ open class BaseCollectionController<T> : ObjectiveC.NSObject, CheetahLoyaltyUI.C
     get
   }
   open var isFetching: Swift.Bool
+  @objc override dynamic public init()
   public init(collectionView: UIKit.UICollectionView? = nil)
   open func setupCollectionView()
   open func registerComponents()
@@ -1309,7 +1287,6 @@ open class BaseCollectionController<T> : ObjectiveC.NSObject, CheetahLoyaltyUI.C
   @objc open func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
   @objc open func searchBarResultsListButtonClicked(_ searchBar: UIKit.UISearchBar)
   @objc open func searchBar(_ searchBar: UIKit.UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Swift.Int)
-  @objc override dynamic public init()
   @objc deinit
 }
 open class ListCollectionController<T> : CheetahLoyaltyUI.BaseCollectionController<T>, UIKit.UICollectionViewDataSourcePrefetching {
@@ -1333,6 +1310,7 @@ open class ListCollectionController<T> : CheetahLoyaltyUI.BaseCollectionControll
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
   @objc open func collectionView(_ collectionView: UIKit.UICollectionView, prefetchItemsAt indexPaths: [Foundation.IndexPath])
+  @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
   @objc deinit
 }
@@ -1354,6 +1332,7 @@ open class CarouselCollectionController<T> : CheetahLoyaltyUI.BaseCollectionCont
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
   @objc open func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
   @objc open func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
   @objc deinit
 }
@@ -1375,80 +1354,111 @@ public struct CheetahTextTheme : CheetahLoyaltyUI.TextTheme {
   public var footnote: CheetahLoyaltyUI.TextAppearance
   public var caption1: CheetahLoyaltyUI.TextAppearance
   public var caption2: CheetahLoyaltyUI.TextAppearance
+  public var alertButton: CheetahLoyaltyUI.TextAppearance
+  public var textView: CheetahLoyaltyUI.TextAppearance
+  public var textField: CheetahLoyaltyUI.TextAppearance
+  public var normalButton: CheetahLoyaltyUI.TextAppearance
+  public var disabledButton: CheetahLoyaltyUI.TextAppearance
+  public var highlightedButton: CheetahLoyaltyUI.TextAppearance
+}
+public struct CheetahNormalButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
+  public var fontName: Swift.String
+  public var textColor: UIKit.UIColor
+  public var textStyle: UIKit.UIFont.TextStyle?
+  public var fontSize: CoreGraphics.CGFloat?
+}
+public struct CheetahDisabledButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
+  public var fontName: Swift.String
+  public var textColor: UIKit.UIColor
+  public var textStyle: UIKit.UIFont.TextStyle?
+  public var fontSize: CoreGraphics.CGFloat?
+}
+public struct CheetahHighlightedButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
+  public var fontName: Swift.String
+  public var textColor: UIKit.UIColor
+  public var textStyle: UIKit.UIFont.TextStyle?
+  public var fontSize: CoreGraphics.CGFloat?
+}
+public struct CheetahAlertButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
+  public var fontName: Swift.String
+  public var textColor: UIKit.UIColor
+  public var textStyle: UIKit.UIFont.TextStyle?
+  public var fontSize: CoreGraphics.CGFloat?
+}
+public struct CheetahTextViewTextAppearance : CheetahLoyaltyUI.TextAppearance {
+  public var fontName: Swift.String
+  public var textColor: UIKit.UIColor
+  public var textStyle: UIKit.UIFont.TextStyle?
+  public var fontSize: CoreGraphics.CGFloat?
+}
+public struct CheetahTextFieldTextAppearance : CheetahLoyaltyUI.TextAppearance {
+  public var fontName: Swift.String
+  public var textColor: UIKit.UIColor
+  public var textStyle: UIKit.UIFont.TextStyle?
+  public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahLargeTitle : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var alignment: UIKit.NSTextAlignment
   public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahTitle1 : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var alignment: UIKit.NSTextAlignment
   public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahTitle2 : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var alignment: UIKit.NSTextAlignment
   public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahTitle3 : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var alignment: UIKit.NSTextAlignment
   public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahHeadline : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var alignment: UIKit.NSTextAlignment
   public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahSubheadline : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var alignment: UIKit.NSTextAlignment
   public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahBody : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var alignment: UIKit.NSTextAlignment
   public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahCallout : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var alignment: UIKit.NSTextAlignment
   public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahFootnote : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var alignment: UIKit.NSTextAlignment
   public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahCaption1 : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var alignment: UIKit.NSTextAlignment
   public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahCaption2 : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var alignment: UIKit.NSTextAlignment
   public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
@@ -1485,6 +1495,7 @@ open class CountriesCollectionController : CheetahLoyaltyUI.BaseCollectionContro
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
   override open func loadContent()
+  @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
   @objc deinit
 }
@@ -1534,7 +1545,7 @@ public protocol SelectionButtonDelegate {
   func didTap(_ selectionButton: CheetahLoyaltyUI.SelectionButton)
 }
 extension SelectionButtonDelegate {
-  public func willChange(selectionButton: CheetahLoyaltyUI.SelectionButton, isSelected: Swift.Bool) -> Swift.Bool
+  public func willChange(_ selectionButton: CheetahLoyaltyUI.SelectionButton, isSelected: Swift.Bool) -> Swift.Bool
 }
 public protocol Loadable {
   var loadMessage: Swift.String { get set }
@@ -1593,9 +1604,6 @@ extension CheetahLoyaltyUI.ImagePickerPresenter.MediaType : Swift.Hashable {}
 extension CheetahLoyaltyUI.AnalyticsLogger.LogKeys : Swift.Equatable {}
 extension CheetahLoyaltyUI.AnalyticsLogger.LogKeys : Swift.Hashable {}
 extension CheetahLoyaltyUI.AnalyticsLogger.LogKeys : Swift.RawRepresentable {}
-extension CheetahLoyaltyUI.NotificationType : Swift.Equatable {}
-extension CheetahLoyaltyUI.NotificationType : Swift.Hashable {}
-extension CheetahLoyaltyUI.NotificationType : Swift.RawRepresentable {}
 extension CheetahLoyaltyUI.FloatingTextFieldWithIcon.IconPosition : Swift.Equatable {}
 extension CheetahLoyaltyUI.FloatingTextFieldWithIcon.IconPosition : Swift.Hashable {}
 extension CheetahLoyaltyUI.FloatingTextFieldWithIcon.IconPosition : Swift.RawRepresentable {}
