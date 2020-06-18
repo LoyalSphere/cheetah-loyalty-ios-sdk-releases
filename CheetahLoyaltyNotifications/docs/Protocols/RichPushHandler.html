@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RichPushHandler Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/RichPushHandler" class="dashAnchor"></a>
+    <a title="RichPushHandler Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (69% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RichPushHandler Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultNotificationHelper.html">DefaultNotificationHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultPushHandler.html">DefaultPushHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultRichPushHandler.html">DefaultRichPushHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RichPushService.html">RichPushService</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/NotificationType.html">NotificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RichPushAction.html">RichPushAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RichPushCategory.html">RichPushCategory</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UNNotificationAttachment.html">UNNotificationAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UNUserNotificationCenter.html">UNUserNotificationCenter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/NotificationHelper.html">NotificationHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PushHandler.html">PushHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RichPushHandler.html">RichPushHandler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RichPushHandler</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RichPushHandler</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Handler of Rich Push Notification Quick Actions</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP14handleLikePost8userInfo010completionF0ySDySSypG_yyctF"></a>
+                    <a name="//apple_ref/swift/Method/handleLikePost(userInfo:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP14handleLikePost8userInfo010completionF0ySDySSypG_yyctF">handleLikePost(userInfo:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles <code><a href="../Enums/RichPushAction.html#/s:27CheetahLoyaltyNotifications14RichPushActionO8likePostyA2CmF">RichPushAction.likePost</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleLikePost</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP17handleCommentPost8userInfo4text010completionF0ySDySSypG_SSyyctF"></a>
+                    <a name="//apple_ref/swift/Method/handleCommentPost(userInfo:text:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP17handleCommentPost8userInfo4text010completionF0ySDySSypG_SSyyctF">handleCommentPost(userInfo:text:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles <code><a href="../Enums/RichPushAction.html#/s:27CheetahLoyaltyNotifications14RichPushActionO11commentPostyA2CmF">RichPushAction.commentPost</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleCommentPost</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP19handleOpenChallenge8userInfo010completionF0ySDySSypG_yyctF"></a>
+                    <a name="//apple_ref/swift/Method/handleOpenChallenge(userInfo:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP19handleOpenChallenge8userInfo010completionF0ySDySSypG_yyctF">handleOpenChallenge(userInfo:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles <code><a href="../Enums/RichPushAction.html#/s:27CheetahLoyaltyNotifications14RichPushActionO13openChallengeyA2CmF">RichPushAction.openChallenge</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleOpenChallenge</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP19handleOpenOfferLink8userInfo010completionF0ySDySSypG_yyctF"></a>
+                    <a name="//apple_ref/swift/Method/handleOpenOfferLink(userInfo:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP19handleOpenOfferLink8userInfo010completionF0ySDySSypG_yyctF">handleOpenOfferLink(userInfo:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles <code><a href="../Enums/RichPushAction.html#/s:27CheetahLoyaltyNotifications14RichPushActionO13openOfferLinkyA2CmF">RichPushAction.openOfferLink</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleOpenOfferLink</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP16handleOpenCoupon8userInfo010completionF0ySDySSypG_yyctF"></a>
+                    <a name="//apple_ref/swift/Method/handleOpenCoupon(userInfo:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP16handleOpenCoupon8userInfo010completionF0ySDySSypG_yyctF">handleOpenCoupon(userInfo:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles <code><a href="../Enums/RichPushAction.html#/s:27CheetahLoyaltyNotifications14RichPushActionO10openCouponyA2CmF">RichPushAction.openCoupon</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleOpenCoupon</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP21handleOpenCertificate8userInfo010completionF0ySDySSypG_yyctF"></a>
+                    <a name="//apple_ref/swift/Method/handleOpenCertificate(userInfo:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP21handleOpenCertificate8userInfo010completionF0ySDySSypG_yyctF">handleOpenCertificate(userInfo:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles <code><a href="../Enums/RichPushAction.html#/s:27CheetahLoyaltyNotifications14RichPushActionO15openCertificateyA2CmF">RichPushAction.openCertificate</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleOpenCertificate</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP15handleClipOffer8userInfo010completionF0ySDySSypG_yyctF"></a>
+                    <a name="//apple_ref/swift/Method/handleClipOffer(userInfo:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP15handleClipOffer8userInfo010completionF0ySDySSypG_yyctF">handleClipOffer(userInfo:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles <code><a href="../Enums/RichPushAction.html#/s:27CheetahLoyaltyNotifications14RichPushActionO9clipOfferyA2CmF">RichPushAction.clipOffer</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleClipOffer</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP19handleFavoriteEvent8userInfo010completionF0ySDySSypG_yyctF"></a>
+                    <a name="//apple_ref/swift/Method/handleFavoriteEvent(userInfo:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP19handleFavoriteEvent8userInfo010completionF0ySDySSypG_yyctF">handleFavoriteEvent(userInfo:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles <code><a href="../Enums/RichPushAction.html#/s:27CheetahLoyaltyNotifications14RichPushActionO13favoriteEventyA2CmF">RichPushAction.favoriteEvent</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleFavoriteEvent</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP21handleOpenContentPage8userInfo010completionF0ySDySSypG_yyctF"></a>
+                    <a name="//apple_ref/swift/Method/handleOpenContentPage(userInfo:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP21handleOpenContentPage8userInfo010completionF0ySDySSypG_yyctF">handleOpenContentPage(userInfo:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles <code><a href="../Enums/RichPushAction.html#/s:27CheetahLoyaltyNotifications14RichPushActionO15openContentPageyA2CmF">RichPushAction.openContentPage</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleOpenContentPage</span><span class="p">(</span><span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP22showChallengeResponderyyXecxAaBRzlF"></a>
+                    <a name="//apple_ref/swift/Method/showChallengeResponder(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP22showChallengeResponderyyXecxAaBRzlF">showChallengeResponder(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shows Challenge Responder on your application</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showChallengeResponder</span><span class="p">(</span><span class="n">_</span> <span class="nv">challenge</span><span class="p">:</span> <span class="kt">Challenge</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP23showOfferResponseDetailyyXecxAaBRzlF"></a>
+                    <a name="//apple_ref/swift/Method/showOfferResponseDetail(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP23showOfferResponseDetailyyXecxAaBRzlF">showOfferResponseDetail(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shows Offer Response Detail on your application</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showOfferResponseDetail</span><span class="p">(</span><span class="n">_</span> <span class="nv">response</span><span class="p">:</span> <span class="kt">Offer</span><span class="o">.</span><span class="kt">ResponseInfo</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP11showMessageyySSF"></a>
+                    <a name="//apple_ref/swift/Method/showMessage(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP11showMessageyySSF">showMessage(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shows a single message on your application</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">showMessage</span><span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications15RichPushHandlerP06handledE8Response16actionIdentifier16notificationType4text8userInfo010completionF0ySS_AA012NotificationL0OSSSgSDySSypGyyctF"></a>
+                    <a name="//apple_ref/swift/Method/handleRichPushResponse(actionIdentifier:notificationType:text:userInfo:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications15RichPushHandlerP06handledE8Response16actionIdentifier16notificationType4text8userInfo010completionF0ySS_AA012NotificationL0OSSSgSDySSypGyyctF">handleRichPushResponse(actionIdentifier:notificationType:text:userInfo:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Handles <code><a href="../Enums/RichPushAction.html">RichPushAction</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">handleRichPushResponse</span><span class="p">(</span><span class="nv">actionIdentifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">notificationType</span><span class="p">:</span> <span class="kt"><a href="../Enums/NotificationType.html">NotificationType</a></span><span class="p">,</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>actionIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/RichPushAction.html">RichPushAction</a></code> identifier</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>notificationType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/NotificationType.html">NotificationType</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User&rsquo;s input if response is <code>UNTextInputNotificationResponse</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The whole push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Completion block that should always be called</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

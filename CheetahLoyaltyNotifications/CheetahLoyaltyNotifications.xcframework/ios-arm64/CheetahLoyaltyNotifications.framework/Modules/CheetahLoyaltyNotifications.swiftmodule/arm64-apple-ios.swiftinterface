@@ -1,0 +1,179 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyNotifications
+import CheetahLoyaltyCore
+@_exported import CheetahLoyaltyNotifications
+import Foundation
+import Swift
+import UIKit
+import UserNotifications
+public protocol RichPushHandler : AnyObject {
+  func handleLikePost(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleCommentPost(userInfo: [Swift.String : Any], text: Swift.String, completionHandler: @escaping () -> Swift.Void)
+  func handleOpenChallenge(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleOpenOfferLink(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleOpenCoupon(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleOpenCertificate(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleClipOffer(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleFavoriteEvent(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleOpenContentPage(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func showChallengeResponder(_ challenge: CheetahLoyaltyCore.Challenge)
+  func showOfferResponseDetail(_ response: CheetahLoyaltyCore.Offer.ResponseInfo)
+  func showMessage(_ message: Swift.String)
+  func handleRichPushResponse(actionIdentifier: Swift.String, notificationType: CheetahLoyaltyNotifications.NotificationType, text: Swift.String?, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+}
+public protocol NotificationHelper {
+  var pushHandler: CheetahLoyaltyNotifications.PushHandler { get }
+  var richPushHandler: CheetahLoyaltyNotifications.RichPushHandler { get }
+  var deviceId: Swift.String { get }
+  func registerForRemoteNotifications()
+  func requestAuthorization(options: UserNotifications.UNAuthorizationOptions, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  func sendDeviceTokenToServerIfNeeded(_ deviceToken: Foundation.Data)
+  func trackMessage(id: Swift.Int)
+  func setApplicationBadgeCount(_ count: Swift.Int)
+  func handleNotificationResponse(_ response: UserNotifications.UNNotificationResponse, completionHandler: @escaping () -> Swift.Void)
+}
+extension UNNotificationAttachment {
+  convenience public init(identifier: Swift.String, data: Foundation.Data, options: [ObjectiveC.NSObject : Swift.AnyObject]? = nil) throws
+}
+extension UNUserNotificationCenter {
+  public static func scheduleLocalNotification(content: UserNotifications.UNMutableNotificationContent, trigger: UserNotifications.UNNotificationTrigger?, completion: ((Swift.Error?) -> Swift.Void)? = nil)
+}
+open class DefaultPushHandler : CheetahLoyaltyNotifications.PushHandler {
+  public init()
+  open func handleClientEvents(_ offers: [Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleContentPageWithName(_ name: Swift.String, completionHandler: @escaping () -> Swift.Void)
+  open func handleNotificationWithoutType(completionHandler: @escaping () -> Swift.Void)
+  open func handleObjectWithId(_ id: Swift.Int, notificationType: CheetahLoyaltyNotifications.NotificationType, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handlePush(notificationType: CheetahLoyaltyNotifications.NotificationType, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  @objc deinit
+}
+@objc open class RichPushService : UserNotifications.UNNotificationServiceExtension {
+  public var contentHandler: ((UserNotifications.UNNotificationContent) -> Swift.Void)?
+  public var bestAttemptContent: UserNotifications.UNMutableNotificationContent?
+  @objc override dynamic open func didReceive(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
+  @objc override dynamic open func serviceExtensionTimeWillExpire()
+  open func addImageIfNecessary(content: UserNotifications.UNMutableNotificationContent, userInfo: [Swift.String : Any])
+  open func createSupportedCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory?
+  open func setupPostLikeCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupPostLikeCommentCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupChallengeCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupOfferLinkCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupOfferCouponCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupOfferCertificateCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupOfferClipCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupEventFavoriteCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupContentPageCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func createAction(_ action: CheetahLoyaltyNotifications.RichPushAction, title: Swift.String, isText: Swift.Bool = false, options: UserNotifications.UNNotificationActionOptions = []) -> UserNotifications.UNNotificationAction
+  open func createCategory(_ category: CheetahLoyaltyNotifications.RichPushCategory, actions: [UserNotifications.UNNotificationAction], options: UserNotifications.UNNotificationCategoryOptions = []) -> UserNotifications.UNNotificationCategory
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum NotificationType : Swift.String, Swift.CaseIterable {
+  case award
+  case challenge
+  case clientEvents
+  case contentPage
+  case event
+  case member
+  case offer
+  case offerResponse
+  case post
+  case reward
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public typealias AllCases = [CheetahLoyaltyNotifications.NotificationType]
+  public static var allCases: [CheetahLoyaltyNotifications.NotificationType] {
+    get
+  }
+}
+public enum RichPushCategory : Swift.String, Swift.CaseIterable {
+  case postLike
+  case postLikeComment
+  case challenge
+  case offerLink
+  case offerCoupon
+  case offerCertificate
+  case offerClip
+  case eventFavorite
+  case contentPage
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+  public typealias AllCases = [CheetahLoyaltyNotifications.RichPushCategory]
+  public static var allCases: [CheetahLoyaltyNotifications.RichPushCategory] {
+    get
+  }
+}
+public enum RichPushAction : Swift.String, Swift.CaseIterable {
+  case likePost
+  case commentPost
+  case openChallenge
+  case openOfferLink
+  case openCoupon
+  case openCertificate
+  case clipOffer
+  case favoriteEvent
+  case openContentPage
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [CheetahLoyaltyNotifications.RichPushAction]
+  public static var allCases: [CheetahLoyaltyNotifications.RichPushAction] {
+    get
+  }
+}
+public protocol PushHandler {
+  func handleClientEvents(_ offers: [Any], completionHandler: @escaping () -> Swift.Void)
+  func handleContentPageWithName(_ name: Swift.String, completionHandler: @escaping () -> Swift.Void)
+  func handleNotificationWithoutType(completionHandler: @escaping () -> Swift.Void)
+  func handleObjectWithId(_ id: Swift.Int, notificationType: CheetahLoyaltyNotifications.NotificationType, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handlePush(notificationType: CheetahLoyaltyNotifications.NotificationType, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+}
+open class DefaultNotificationHelper : CheetahLoyaltyNotifications.NotificationHelper {
+  public var pushHandler: CheetahLoyaltyNotifications.PushHandler
+  public var richPushHandler: CheetahLoyaltyNotifications.RichPushHandler
+  open var deviceId: Swift.String {
+    get
+  }
+  required public init(pushHandler: CheetahLoyaltyNotifications.PushHandler, richPushHandler: CheetahLoyaltyNotifications.RichPushHandler)
+  open func sendDeviceTokenToServerIfNeeded(_ deviceToken: Foundation.Data)
+  open func registerForRemoteNotifications()
+  open func requestAuthorization(options: UserNotifications.UNAuthorizationOptions = [.alert, .sound, .badge], completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  open func trackMessage(id: Swift.Int)
+  open func setApplicationBadgeCount(_ count: Swift.Int)
+  open func handleNotificationResponse(_ response: UserNotifications.UNNotificationResponse, completionHandler: @escaping () -> Swift.Void)
+  @objc deinit
+}
+open class DefaultRichPushHandler : CheetahLoyaltyNotifications.RichPushHandler {
+  public init()
+  open func handleLikePost(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleCommentPost(userInfo: [Swift.String : Any], text: Swift.String, completionHandler: @escaping () -> Swift.Void)
+  open func handleOpenChallenge(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleOpenOfferLink(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleOpenCoupon(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleOpenCertificate(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleClipOffer(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleFavoriteEvent(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleOpenContentPage(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleRichPushResponse(actionIdentifier: Swift.String, notificationType: CheetahLoyaltyNotifications.NotificationType, text: Swift.String?, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func showChallengeResponder(_ challenge: CheetahLoyaltyCore.Challenge)
+  open func showOfferResponseDetail(_ response: CheetahLoyaltyCore.Offer.ResponseInfo)
+  open func showMessage(_ message: Swift.String)
+  @objc deinit
+}
+extension CheetahLoyaltyNotifications.NotificationType : Swift.Hashable {}
+extension CheetahLoyaltyNotifications.NotificationType : Swift.RawRepresentable {}
+extension CheetahLoyaltyNotifications.RichPushCategory : Swift.Equatable {}
+extension CheetahLoyaltyNotifications.RichPushCategory : Swift.Hashable {}
+extension CheetahLoyaltyNotifications.RichPushCategory : Swift.RawRepresentable {}
+extension CheetahLoyaltyNotifications.RichPushAction : Swift.Equatable {}
+extension CheetahLoyaltyNotifications.RichPushAction : Swift.Hashable {}
+extension CheetahLoyaltyNotifications.RichPushAction : Swift.RawRepresentable {}

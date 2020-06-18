@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UNUserNotificationCenter Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/UNUserNotificationCenter" class="dashAnchor"></a>
+    <a title="UNUserNotificationCenter Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (69% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        UNUserNotificationCenter Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultNotificationHelper.html">DefaultNotificationHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultPushHandler.html">DefaultPushHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultRichPushHandler.html">DefaultRichPushHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RichPushService.html">RichPushService</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/NotificationType.html">NotificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RichPushAction.html">RichPushAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RichPushCategory.html">RichPushCategory</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UNNotificationAttachment.html">UNNotificationAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UNUserNotificationCenter.html">UNUserNotificationCenter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/NotificationHelper.html">NotificationHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PushHandler.html">PushHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RichPushHandler.html">RichPushHandler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UNUserNotificationCenter</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">extension</span> <span class="kt">UNUserNotificationCenter</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So24UNUserNotificationCenterC27CheetahLoyaltyNotificationsE013scheduleLocalB07content7trigger10completionySo09UNMutableB7ContentC_So21UNNotificationTriggerCSgys5Error_pSgcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/scheduleLocalNotification(content:trigger:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So24UNUserNotificationCenterC27CheetahLoyaltyNotificationsE013scheduleLocalB07content7trigger10completionySo09UNMutableB7ContentC_So21UNNotificationTriggerCSgys5Error_pSgcSgtFZ">scheduleLocalNotification(content:trigger:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Schedules a local notification with the current user notification center.</p>
+
+<p>This creates a notification request with the content and trigger values and schedules
+it for local delivery through the <code>add(_:, withCompletionHandler:)</code>
+method of <code>UNUserNotificationCenter</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">scheduleLocalNotification</span><span class="p">(</span><span class="nv">content</span><span class="p">:</span> <span class="kt">UNMutableNotificationContent</span><span class="p">,</span>
+                                      <span class="nv">trigger</span><span class="p">:</span> <span class="kt">UNNotificationTrigger</span><span class="p">?,</span>
+                                      <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The content of the notification.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>trigger</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The condition that causes the notification to be delivered. Specify nil to deliver the notification right away.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to execute with the results. It has no return value and takes the an error as a parameter.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error object indicating whether a problem occurred. If the notification was scheduled successfully, this parameter is nil; otherwise,
+it is set to an error object indicating the reason for the failure.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
