@@ -1,0 +1,11 @@
+framework module CheetahLoyaltyRewards {
+  umbrella header "CheetahLoyaltyRewards.h"
+
+  export *
+  module * { export * }
+}
+
+module CheetahLoyaltyRewards.Swift {
+    header "CheetahLoyaltyRewards-Swift.h"
+    requires objc
+}
