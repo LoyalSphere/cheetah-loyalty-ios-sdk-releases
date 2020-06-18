@@ -96,6 +96,7 @@ open class MultiQuestionCarouselController : CheetahLoyaltyUI.CarouselCollection
   @objc override open func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
   open func getResponders(from challenge: CheetahLoyaltyCore.Challenge) -> [CheetahLoyaltyChallenges.SurveyResponderController]
   open func scrollToNext()
+  @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
   @objc deinit
 }

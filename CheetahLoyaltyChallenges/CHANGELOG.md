@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Challenges-1.0.2] - 2020-06-17
+
+### Changed
+- Set button height constraint to 44 [#384]
+- Changed dependency version requirements to CheetahLoyaltyCore 1.3.0 and CheetahLoyaltyUI 1.3.0 [#427]
+
+[#384]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/384
+[#427]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/427
+
 ## [Challenges-1.0.1] - 2020-05-11
 
 ### Added
