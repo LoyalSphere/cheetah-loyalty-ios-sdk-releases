@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Places-1.1.3] - 2020-06-17
+### Changed
+- Handle scheduling of local notification natively [#380]
+- Changed dependency version requirements to CheetahLoyaltyCore 1.3.0 and CheetahLoyaltyUI 1.3.0 [#426]
+
+[#380]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/380
+[#426]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/426
+
 ## [Places-1.1.2] - 2020-05-11
 
 ### Changed
@@ -46,6 +54,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added extension of `Place` object to conform on `GeofencePlace`
 - Added `GeofencePlace` protocol
 
+[Places-1.1.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/28?closed=1
+[Places-1.1.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/24?closed=1
 [Places-1.1.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/20?closed=1
 [Places-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/14?closed=1
 [Places-1.0.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/3?closed=1

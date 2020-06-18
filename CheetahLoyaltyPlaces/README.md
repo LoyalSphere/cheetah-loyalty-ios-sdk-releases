@@ -6,8 +6,8 @@ The Cheetah Loyalty Places iOS SDK contains a collection of classes, methods, an
 * Deployment Target: iOS 11.0
 * Xcode 11.x
 * Swift 5.1
-* `CheetahLoyaltyCore` v1.2.1
-* `CheetahLoyaltyUI` v1.2.1
+* `CheetahLoyaltyCore` v1.3.0
+* `CheetahLoyaltyUI` v1.3.0
 
 ## Installation
 
