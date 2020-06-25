@@ -3,7 +3,6 @@
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyPlaces
 import CheetahLoyaltyCore
 @_exported import CheetahLoyaltyPlaces
-import CheetahLoyaltyUI
 import CoreLocation
 import Foundation
 import Swift

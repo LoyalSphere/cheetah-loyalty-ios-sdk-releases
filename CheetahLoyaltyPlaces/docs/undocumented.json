@@ -2,21 +2,21 @@
   "warnings": [
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/GeofenceClientEventsManager.swift",
-      "line": 16,
+      "line": 15,
       "symbol": "GeofenceClientEvents.createClientEventRegions(for:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/GeofenceClientEventsManager.swift",
-      "line": 17,
+      "line": 16,
       "symbol": "GeofenceClientEvents.triggerClientEvent(in:event:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/GeofenceClientEventsManager.swift",
-      "line": 18,
+      "line": 17,
       "symbol": "GeofenceClientEvents.sendLocalNotification(for:withTitle:andInterval:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Places-1.1.4] - 2020-06-25
+### Changed
+- Removed dependency requirements for CheetahLoyaltyUI [#430]
+- Localizable strings now retrieved from main bundle [#430]
+
+### Fixed
+- Removed lingering references to dependency on CheetahLoyaltyUI [#430]
+
+[#430]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/430
+
 ## [Places-1.1.3] - 2020-06-17
 ### Changed
 - Handle scheduling of local notification natively [#380]
