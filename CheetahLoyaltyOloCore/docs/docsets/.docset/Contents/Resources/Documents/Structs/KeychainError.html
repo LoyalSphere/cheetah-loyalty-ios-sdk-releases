@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KeychainError Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/KeychainError" class="dashAnchor"></a>
+    <a title="KeychainError Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        KeychainError Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/API.html">API</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration/CodingKeys.html">– CodingKeys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BasketAPI.html">BasketAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter.html">BasketParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/LoyaltyScheme.html">– LoyaltyScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/TimeWanted.html">– TimeWanted</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/ChainProduct.html">– ChainProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/BatchProduct.html">– BatchProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/UpsellItem.html">– UpsellItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/BillingField.html">– BillingField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/OrderCustomData.html">– OrderCustomData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/BillingMethod.html">– BillingMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/UserType.html">– UserType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/Order.html">– Order</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/BillingAccount.html">– BillingAccount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/MultiplePaymentsOrder.html">– MultiplePaymentsOrder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketRequest.html">BasketRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing.html">Billing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Account.html">– Account</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/AccountType.html">– AccountType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Accounts.html">– Accounts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Balance.html">– Balance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/FieldInput.html">– FieldInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/FieldInputType.html">– FieldInputType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Scheme.html">– Scheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Schemes.html">– Schemes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/SchemeType.html">– SchemeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/StoredValueCards.html">– StoredValueCards</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CalendarType.html">CalendarType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardType.html">CardType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommonParameter.html">CommonParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommonParameter/Coordinates.html">– Coordinates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommonParameter/Address.html">– Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Contact.html">Contact</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Contact/Detail.html">– Detail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Contact/Option.html">– Option</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EightySixed.html">EightySixed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EightySixed/Choice.html">– Choice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EightySixed/Items.html">– Items</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EightySixed/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeedbackAPI.html">FeedbackAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeedbackRequest.html">FeedbackRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty.html">Loyalty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Balance.html">– Balance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Reward.html">– Reward</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Rewards.html">– Rewards</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Membership.html">– Membership</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Scheme.html">– Scheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Schemes.html">– Schemes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Vendor.html">– Vendor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Vendors.html">– Vendors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order.html">Order</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/Group.html">– Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/Fee.html">– Fee</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/ManualFire.html">– ManualFire</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/ManualFires.html">– ManualFires</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/ManualFireResult.html">– ManualFireResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/ProductChoice.html">– ProductChoice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/RecentOrders.html">– RecentOrders</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderAPI.html">OrderAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderParameter.html">OrderParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderParameter/ManualFire.html">– ManualFire</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderParameter/CustomFieldValue.html">– CustomFieldValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderRequest.html">OrderRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderStatus.html">OrderStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductAPI.html">ProductAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductParameter.html">ProductParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductParameter/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductParameter/Choice.html">– Choice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductParameter/ChainChoice.html">– ChainChoice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductRequest.html">ProductRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Response.html">Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Response/BinValidation.html">– BinValidation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ResponseError.html">ResponseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ResponseError/ResponseSerializationFailureReason.html">– ResponseSerializationFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestaurantAPI.html">RestaurantAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestaurantParameter.html">RestaurantParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestaurantParameter/DeliveryCoverageCheck.html">– DeliveryCoverageCheck</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestaurantRequest.html">RestaurantRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TokenLocation.html">TokenLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLError.html">URLError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLError/ParameterEncodingFailureReason.html">– ParameterEncodingFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Upsell.html">Upsell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Upsell/Item.html">– Item</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Upsell/Group.html">– Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Upsell/Groups.html">– Groups</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserAPI.html">UserAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserParameter.html">UserParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserParameter/NewUser.html">– NewUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserParameter/UpdateUser.html">– UpdateUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserParameter/Favorite.html">– Favorite</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserRequest.html">UserRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONDecoder.html">JSONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLRequest.html">URLRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLRequest/MultipartAttachment.html">– MultipartAttachment</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/URLConvertible.html">URLConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/APIResponse.html">APIResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket.html">Basket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/TimeMode.html">– TimeMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Coupon.html">– Coupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Discount.html">– Discount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Fee.html">– Fee</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Choice.html">– Choice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ChoiceCustomFieldValue.html">– ChoiceCustomFieldValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/PlatformTransfer.html">– PlatformTransfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/CustomFieldScope.html">– CustomFieldScope</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Validation.html">– Validation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/TaxResult.html">– TaxResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ValidationMessage.html">– ValidationMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ValidationMessageCategory.html">– ValidationMessageCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ProductBatchError.html">– ProductBatchError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ProductBatchResult.html">– ProductBatchResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/TransferResult.html">– TransferResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContextualPricing.html">ContextualPricing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Deliveries.html">Deliveries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery.html">Delivery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/Address.html">– Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/Addresses.html">– Addresses</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/FeeTier.html">– FeeTier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/FeeType.html">– FeeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/CoverageResponse.html">– CoverageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EmptyResponse.html">EmptyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite.html">Favorite</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/ProductChoice.html">– ProductChoice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/Location.html">– Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/UserFavoriteLocations.html">– UserFavoriteLocations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/UserFavorites.html">– UserFavorites</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Feedback.html">Feedback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Feedback/Target.html">– Target</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Feedback/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Feedback/Parameter.html">– Parameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Image.html">Image</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeychainError.html">KeychainError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeychainItem.html">KeychainItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Menu.html">Menu</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Menu/ItemAvailability.html">– ItemAvailability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Menu/ItemLabel.html">– ItemLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Menu/ItemLabels.html">– ItemLabels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MetadataItem.html">MetadataItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product.html">Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Option.html">– Option</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/OptionGroup.html">– OptionGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/OptionGroups.html">– OptionGroups</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant.html">Restaurant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/CustomLabel.html">– CustomLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/Calendar.html">– Calendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/CalendarTimeRange.html">– CalendarTimeRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/Calendars.html">– Calendars</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/Disclaimer.html">– Disclaimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/Disclaimers.html">– Disclaimers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurants.html">Restaurants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User.html">User</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/Exists.html">– Exists</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/LoginUser.html">– LoginUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/New.html">– New</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/Login.html">– Login</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/ChangePassword.html">– ChangePassword</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/SingleSignOn.html">– SingleSignOn</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore11HTTPHeadersa">HTTPHeaders</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore10Parametersa">Parameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore18ResponseCompletiona">ResponseCompletion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>KeychainError</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KeychainError</span> <span class="p">:</span> <span class="kt">Error</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore13KeychainErrorV6statuss5Int32Vvp"></a>
+                    <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore13KeychainErrorV6statuss5Int32Vvp">status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">OSStatus</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore13KeychainErrorV20localizedDescriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/localizedDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore13KeychainErrorV20localizedDescriptionSSvp">localizedDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">localizedDescription</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-07-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

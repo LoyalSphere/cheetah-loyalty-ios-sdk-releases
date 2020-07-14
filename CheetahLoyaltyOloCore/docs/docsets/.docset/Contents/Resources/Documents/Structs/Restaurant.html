@@ -1,0 +1,2803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Restaurant Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Restaurant" class="dashAnchor"></a>
+    <a title="Restaurant Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Restaurant Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/API.html">API</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration/CodingKeys.html">– CodingKeys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BasketAPI.html">BasketAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter.html">BasketParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/LoyaltyScheme.html">– LoyaltyScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/TimeWanted.html">– TimeWanted</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/ChainProduct.html">– ChainProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/BatchProduct.html">– BatchProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/UpsellItem.html">– UpsellItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/BillingField.html">– BillingField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/OrderCustomData.html">– OrderCustomData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/BillingMethod.html">– BillingMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/UserType.html">– UserType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/Order.html">– Order</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/BillingAccount.html">– BillingAccount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/MultiplePaymentsOrder.html">– MultiplePaymentsOrder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketRequest.html">BasketRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing.html">Billing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Account.html">– Account</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/AccountType.html">– AccountType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Accounts.html">– Accounts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Balance.html">– Balance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/FieldInput.html">– FieldInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/FieldInputType.html">– FieldInputType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Scheme.html">– Scheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Schemes.html">– Schemes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/SchemeType.html">– SchemeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/StoredValueCards.html">– StoredValueCards</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CalendarType.html">CalendarType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardType.html">CardType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommonParameter.html">CommonParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommonParameter/Coordinates.html">– Coordinates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommonParameter/Address.html">– Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Contact.html">Contact</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Contact/Detail.html">– Detail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Contact/Option.html">– Option</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EightySixed.html">EightySixed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EightySixed/Choice.html">– Choice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EightySixed/Items.html">– Items</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EightySixed/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeedbackAPI.html">FeedbackAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeedbackRequest.html">FeedbackRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty.html">Loyalty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Balance.html">– Balance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Reward.html">– Reward</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Rewards.html">– Rewards</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Membership.html">– Membership</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Scheme.html">– Scheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Schemes.html">– Schemes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Vendor.html">– Vendor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Vendors.html">– Vendors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order.html">Order</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/Group.html">– Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/Fee.html">– Fee</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/ManualFire.html">– ManualFire</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/ManualFires.html">– ManualFires</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/ManualFireResult.html">– ManualFireResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/ProductChoice.html">– ProductChoice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/RecentOrders.html">– RecentOrders</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderAPI.html">OrderAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderParameter.html">OrderParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderParameter/ManualFire.html">– ManualFire</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderParameter/CustomFieldValue.html">– CustomFieldValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderRequest.html">OrderRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderStatus.html">OrderStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductAPI.html">ProductAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductParameter.html">ProductParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductParameter/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductParameter/Choice.html">– Choice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductParameter/ChainChoice.html">– ChainChoice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductRequest.html">ProductRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Response.html">Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Response/BinValidation.html">– BinValidation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ResponseError.html">ResponseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ResponseError/ResponseSerializationFailureReason.html">– ResponseSerializationFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestaurantAPI.html">RestaurantAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestaurantParameter.html">RestaurantParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestaurantParameter/DeliveryCoverageCheck.html">– DeliveryCoverageCheck</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestaurantRequest.html">RestaurantRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TokenLocation.html">TokenLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLError.html">URLError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLError/ParameterEncodingFailureReason.html">– ParameterEncodingFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Upsell.html">Upsell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Upsell/Item.html">– Item</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Upsell/Group.html">– Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Upsell/Groups.html">– Groups</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserAPI.html">UserAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserParameter.html">UserParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserParameter/NewUser.html">– NewUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserParameter/UpdateUser.html">– UpdateUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserParameter/Favorite.html">– Favorite</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserRequest.html">UserRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONDecoder.html">JSONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLRequest.html">URLRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLRequest/MultipartAttachment.html">– MultipartAttachment</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/URLConvertible.html">URLConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/APIResponse.html">APIResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket.html">Basket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/TimeMode.html">– TimeMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Coupon.html">– Coupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Discount.html">– Discount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Fee.html">– Fee</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Choice.html">– Choice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ChoiceCustomFieldValue.html">– ChoiceCustomFieldValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/PlatformTransfer.html">– PlatformTransfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/CustomFieldScope.html">– CustomFieldScope</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Validation.html">– Validation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/TaxResult.html">– TaxResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ValidationMessage.html">– ValidationMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ValidationMessageCategory.html">– ValidationMessageCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ProductBatchError.html">– ProductBatchError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ProductBatchResult.html">– ProductBatchResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/TransferResult.html">– TransferResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContextualPricing.html">ContextualPricing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Deliveries.html">Deliveries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery.html">Delivery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/Address.html">– Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/Addresses.html">– Addresses</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/FeeTier.html">– FeeTier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/FeeType.html">– FeeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/CoverageResponse.html">– CoverageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EmptyResponse.html">EmptyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite.html">Favorite</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/ProductChoice.html">– ProductChoice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/Location.html">– Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/UserFavoriteLocations.html">– UserFavoriteLocations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/UserFavorites.html">– UserFavorites</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Feedback.html">Feedback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Feedback/Target.html">– Target</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Feedback/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Feedback/Parameter.html">– Parameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Image.html">Image</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeychainError.html">KeychainError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeychainItem.html">KeychainItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Menu.html">Menu</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Menu/ItemAvailability.html">– ItemAvailability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Menu/ItemLabel.html">– ItemLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Menu/ItemLabels.html">– ItemLabels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MetadataItem.html">MetadataItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product.html">Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Option.html">– Option</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/OptionGroup.html">– OptionGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/OptionGroups.html">– OptionGroups</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant.html">Restaurant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/CustomLabel.html">– CustomLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/Calendar.html">– Calendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/CalendarTimeRange.html">– CalendarTimeRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/Calendars.html">– Calendars</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/Disclaimer.html">– Disclaimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/Disclaimers.html">– Disclaimers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurants.html">Restaurants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User.html">User</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/Exists.html">– Exists</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/LoginUser.html">– LoginUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/New.html">– New</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/Login.html">– Login</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/ChangePassword.html">– ChangePassword</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/SingleSignOn.html">– SingleSignOn</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore11HTTPHeadersa">HTTPHeaders</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore10Parametersa">Parameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore18ResponseCompletiona">ResponseCompletion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Restaurant</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Restaurant</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV2idSivp"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV2idSivp">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV4nameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV4nameSSvp">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV5brandSSvp"></a>
+                    <a name="//apple_ref/swift/Property/brand" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV5brandSSvp">brand</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">brand</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV9storeNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/storeName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV9storeNameSSvp">storeName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">storeName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV9telephoneSSvp"></a>
+                    <a name="//apple_ref/swift/Property/telephone" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV9telephoneSSvp">telephone</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">telephone</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV13streetAddressSSvp"></a>
+                    <a name="//apple_ref/swift/Property/streetAddress" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV13streetAddressSSvp">streetAddress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">streetAddress</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV11crossStreetSSvp"></a>
+                    <a name="//apple_ref/swift/Property/crossStreet" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV11crossStreetSSvp">crossStreet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">crossStreet</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV4citySSvp"></a>
+                    <a name="//apple_ref/swift/Property/city" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV4citySSvp">city</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">city</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV17contextualPricingAA010ContextualG0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contextualPricing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV17contextualPricingAA010ContextualG0VSgvp">contextualPricing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">contextualPricing</span><span class="p">:</span> <span class="kt"><a href="../Structs/ContextualPricing.html">ContextualPricing</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV5stateSSvp"></a>
+                    <a name="//apple_ref/swift/Property/state" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV5stateSSvp">state</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV3zipSSvp"></a>
+                    <a name="//apple_ref/swift/Property/zip" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV3zipSSvp">zip</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">zip</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV7countrySSvp"></a>
+                    <a name="//apple_ref/swift/Property/country" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV7countrySSvp">country</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">country</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV8latitudeSdvp"></a>
+                    <a name="//apple_ref/swift/Property/latitude" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV8latitudeSdvp">latitude</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV9longitudeSdvp"></a>
+                    <a name="//apple_ref/swift/Property/longitude" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV9longitudeSdvp">longitude</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV9utcOffsetSfvp"></a>
+                    <a name="//apple_ref/swift/Property/utcOffset" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV9utcOffsetSfvp">utcOffset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">utcOffset</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV3urlSSvp"></a>
+                    <a name="//apple_ref/swift/Property/url" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV3urlSSvp">url</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV9mobileUrlSSvp"></a>
+                    <a name="//apple_ref/swift/Property/mobileUrl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV9mobileUrlSSvp">mobileUrl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">mobileUrl</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV8distanceSdvp"></a>
+                    <a name="//apple_ref/swift/Property/distance" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV8distanceSdvp">distance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">distance</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV6extRefSSvp"></a>
+                    <a name="//apple_ref/swift/Property/extRef" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV6extRefSSvp">extRef</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">extRef</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV13isAdvanceOnlySbvp"></a>
+                    <a name="//apple_ref/swift/Property/isAdvanceOnly" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV13isAdvanceOnlySbvp">isAdvanceOnly</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isAdvanceOnly</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV16advanceOrderDaysSivp"></a>
+                    <a name="//apple_ref/swift/Property/advanceOrderDays" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV16advanceOrderDaysSivp">advanceOrderDays</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">advanceOrderDays</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV15supportsCouponsSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsCoupons" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV15supportsCouponsSbvp">supportsCoupons</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsCoupons</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV08supportsB0Sbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsLoyalty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV08supportsB0Sbvp">supportsLoyalty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsLoyalty</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV18supportedCardTypesSSvp"></a>
+                    <a name="//apple_ref/swift/Property/supportedCardTypes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV18supportedCardTypesSSvp">supportedCardTypes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportedCardTypes</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV18supportsManualFireSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsManualFire" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV18supportsManualFireSbvp">supportsManualFire</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsManualFire</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV10canDeliverSbvp"></a>
+                    <a name="//apple_ref/swift/Property/canDeliver" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV10canDeliverSbvp">canDeliver</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">canDeliver</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV9canPickupSbvp"></a>
+                    <a name="//apple_ref/swift/Property/canPickup" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV9canPickupSbvp">canPickup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">canPickup</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV16supportsCurbSideSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsCurbSide" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV16supportsCurbSideSbvp">supportsCurbSide</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsCurbSide</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV16supportsDispatchSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsDispatch" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV16supportsDispatchSbvp">supportsDispatch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsDispatch</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV03hasC4PassSbvp"></a>
+                    <a name="//apple_ref/swift/Property/hasOloPass" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV03hasC4PassSbvp">hasOloPass</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hasOloPass</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV12deliveryAreaSSvp"></a>
+                    <a name="//apple_ref/swift/Property/deliveryArea" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV12deliveryAreaSSvp">deliveryArea</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">deliveryArea</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV20minimumDeliveryOrderSdvp"></a>
+                    <a name="//apple_ref/swift/Property/minimumDeliveryOrder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV20minimumDeliveryOrderSdvp">minimumDeliveryOrder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">minimumDeliveryOrder</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV18minimumPickUpOrderSdvp"></a>
+                    <a name="//apple_ref/swift/Property/minimumPickUpOrder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV18minimumPickUpOrderSdvp">minimumPickUpOrder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">minimumPickUpOrder</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV22maximumPayInStoreOrderSdvp"></a>
+                    <a name="//apple_ref/swift/Property/maximumPayInStoreOrder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV22maximumPayInStoreOrderSdvp">maximumPayInStoreOrder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">maximumPayInStoreOrder</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV11deliveryFeeSdvp"></a>
+                    <a name="//apple_ref/swift/Property/deliveryFee" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV11deliveryFeeSdvp">deliveryFee</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">deliveryFee</span><span class="p">:</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV16deliveryFeetiersSayAA8DeliveryV7FeeTierVGvp"></a>
+                    <a name="//apple_ref/swift/Property/deliveryFeetiers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV16deliveryFeetiersSayAA8DeliveryV7FeeTierVGvp">deliveryFeetiers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">deliveryFeetiers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Delivery.html">Delivery</a></span><span class="o">.</span><span class="kt">FeeTier</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV11supportsTipSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsTip" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV11supportsTipSbvp">supportsTip</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsTip</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV27supportsSpecialInstructionsSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsSpecialInstructions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV27supportsSpecialInstructionsSbvp">supportsSpecialInstructions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsSpecialInstructions</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV28specialInstructionsMaxLengthSivp"></a>
+                    <a name="//apple_ref/swift/Property/specialInstructionsMaxLength" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV28specialInstructionsMaxLengthSivp">specialInstructionsMaxLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">specialInstructionsMaxLength</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV21supportsGuestOrderingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsGuestOrdering" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV21supportsGuestOrderingSbvp">supportsGuestOrdering</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsGuestOrdering</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV19requiresPhoneNumberSbvp"></a>
+                    <a name="//apple_ref/swift/Property/requiresPhoneNumber" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV19requiresPhoneNumberSbvp">requiresPhoneNumber</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">requiresPhoneNumber</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV22supportsOnlineOrderingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsOnlineOrdering" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV22supportsOnlineOrderingSbvp">supportsOnlineOrdering</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsOnlineOrdering</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV20supportsNationalMenuSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsNationalMenu" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV20supportsNationalMenuSbvp">supportsNationalMenu</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsNationalMenu</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV16supportsFeedbackSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsFeedback" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV16supportsFeedbackSbvp">supportsFeedback</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsFeedback</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV21supportsSplitPaymentsSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsSplitPayments" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV21supportsSplitPaymentsSbvp">supportsSplitPayments</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsSplitPayments</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV4slugSSvp"></a>
+                    <a name="//apple_ref/swift/Property/slug" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV4slugSSvp">slug</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">slug</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV11isAvailableSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isAvailable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV11isAvailableSbvp">isAvailable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isAvailable</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV19supportsGroupOrdersSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsGroupOrders" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV19supportsGroupOrdersSbvp">supportsGroupOrders</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsGroupOrders</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV29supportsProductRecipientNamesSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsProductRecipientNames" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV29supportsProductRecipientNamesSbvp">supportsProductRecipientNames</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsProductRecipientNames</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV23supportsBasketTransfersSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsBasketTransfers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV23supportsBasketTransfersSbvp">supportsBasketTransfers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsBasketTransfers</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV30allowHandOffChoiceAtManualFireSbvp"></a>
+                    <a name="//apple_ref/swift/Property/allowHandOffChoiceAtManualFire" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV30allowHandOffChoiceAtManualFireSbvp">allowHandOffChoiceAtManualFire</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">allowHandOffChoiceAtManualFire</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV25productRecipientNameLabelSSvp"></a>
+                    <a name="//apple_ref/swift/Property/productRecipientNameLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV25productRecipientNameLabelSSvp">productRecipientNameLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">productRecipientNameLabel</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV21customerFacingMessageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/customerFacingMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV21customerFacingMessageSSvp">customerFacingMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">customerFacingMessage</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV19availabilityMessageSSvp"></a>
+                    <a name="//apple_ref/swift/Property/availabilityMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV19availabilityMessageSSvp">availabilityMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">availabilityMessage</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV17supportsDriveThruSbvp"></a>
+                    <a name="//apple_ref/swift/Property/supportsDriveThru" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV17supportsDriveThruSbvp">supportsDriveThru</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportsDriveThru</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV12showCaloriesSbvp"></a>
+                    <a name="//apple_ref/swift/Property/showCalories" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV12showCaloriesSbvp">showCalories</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">showCalories</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV25acceptsOrdersUntilClosingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/acceptsOrdersUntilClosing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV25acceptsOrdersUntilClosingSbvp">acceptsOrdersUntilClosing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">acceptsOrdersUntilClosing</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV26acceptsOrdersBeforeOpeningSbvp"></a>
+                    <a name="//apple_ref/swift/Property/acceptsOrdersBeforeOpening" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV26acceptsOrdersBeforeOpeningSbvp">acceptsOrdersBeforeOpening</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">acceptsOrdersBeforeOpening</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV22suggestedTipPercentageSfvp"></a>
+                    <a name="//apple_ref/swift/Property/suggestedTipPercentage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV22suggestedTipPercentageSfvp">suggestedTipPercentage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">suggestedTipPercentage</span><span class="p">:</span> <span class="kt">Float</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV12customFieldsSayAC11CustomFieldVGvp"></a>
+                    <a name="//apple_ref/swift/Property/customFields" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV12customFieldsSayAC11CustomFieldVGvp">customFields</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">customFields</span><span class="p">:</span> <span class="p">[</span><span class="kt">Restaurant</span><span class="o">.</span><span class="kt"><a href="../Structs/Restaurant/CustomField.html">CustomField</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV6labelsSayAC11CustomLabelVGvp"></a>
+                    <a name="//apple_ref/swift/Property/labels" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV6labelsSayAC11CustomLabelVGvp">labels</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">labels</span><span class="p">:</span> <span class="p">[</span><span class="kt">Restaurant</span><span class="o">.</span><span class="kt"><a href="../Structs/Restaurant/CustomLabel.html">CustomLabel</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV8metadataSayAA12MetadataItemVGvp"></a>
+                    <a name="//apple_ref/swift/Property/metadata" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV8metadataSayAA12MetadataItemVGvp">metadata</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">metadata</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/MetadataItem.html">MetadataItem</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV18supportedTimeModesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/supportedTimeModes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV18supportedTimeModesSaySSGvp">supportedTimeModes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportedTimeModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV10attributesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/attributes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV10attributesSaySSGvp">attributes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV18supportedCountriesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/supportedCountries" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV18supportedCountriesSaySSGvp">supportedCountries</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportedCountries</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV2id4name5brand9storeName9telephone13streetAddress11crossStreet4city17contextualPricing5state3zip7country8latitude9longitude9utcOffset3url9mobileUrl8distance6extRef13isAdvanceOnly16advanceOrderDays15supportsCoupons08supportsB018supportedCardTypes18supportsManualFire10canDeliver9canPickup16supportsCurbSide16supportsDispatch03hasC4Pass12deliveryArea20minimumDeliveryOrder18minimumPickUpOrder22maximumPayInStoreOrder11deliveryFee16deliveryFeetiers11supportsTip27supportsSpecialInstructions28specialInstructionsMaxLength21supportsGuestOrdering19requiresPhoneNumber22supportsOnlineOrdering20supportsNationalMenu16supportsFeedback21supportsSplitPayments4slug11isAvailable19supportsGroupOrders29supportsProductRecipientNames23supportsBasketTransfers30allowHandOffChoiceAtManualFire016productRecipientJ5Label21customerFacingMessage19availabilityMessage17supportsDriveThru12showCalories25acceptsOrdersUntilClosing26acceptsOrdersBeforeOpening22suggestedTipPercentage12customFields6labels8metadata18supportedTimeModes10attributes18supportedCountriesACSi_S7SAA010ContextualR0VSgS3SS2dSfS2SSdSSSbSiS2bSSS6bSSS4dSayAA8DeliveryV7FeeTierVGS2bSiS6bSSS5bS3SS4bSfSayAC11CustomFieldVGSayAC11CustomLabelVGSayAA12MetadataItemVGSaySSGA58_A58_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(id:name:brand:storeName:telephone:streetAddress:crossStreet:city:contextualPricing:state:zip:country:latitude:longitude:utcOffset:url:mobileUrl:distance:extRef:isAdvanceOnly:advanceOrderDays:supportsCoupons:supportsLoyalty:supportedCardTypes:supportsManualFire:canDeliver:canPickup:supportsCurbSide:supportsDispatch:hasOloPass:deliveryArea:minimumDeliveryOrder:minimumPickUpOrder:maximumPayInStoreOrder:deliveryFee:deliveryFeetiers:supportsTip:supportsSpecialInstructions:specialInstructionsMaxLength:supportsGuestOrdering:requiresPhoneNumber:supportsOnlineOrdering:supportsNationalMenu:supportsFeedback:supportsSplitPayments:slug:isAvailable:supportsGroupOrders:supportsProductRecipientNames:supportsBasketTransfers:allowHandOffChoiceAtManualFire:productRecipientNameLabel:customerFacingMessage:availabilityMessage:supportsDriveThru:showCalories:acceptsOrdersUntilClosing:acceptsOrdersBeforeOpening:suggestedTipPercentage:customFields:labels:metadata:supportedTimeModes:attributes:supportedCountries:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV2id4name5brand9storeName9telephone13streetAddress11crossStreet4city17contextualPricing5state3zip7country8latitude9longitude9utcOffset3url9mobileUrl8distance6extRef13isAdvanceOnly16advanceOrderDays15supportsCoupons08supportsB018supportedCardTypes18supportsManualFire10canDeliver9canPickup16supportsCurbSide16supportsDispatch03hasC4Pass12deliveryArea20minimumDeliveryOrder18minimumPickUpOrder22maximumPayInStoreOrder11deliveryFee16deliveryFeetiers11supportsTip27supportsSpecialInstructions28specialInstructionsMaxLength21supportsGuestOrdering19requiresPhoneNumber22supportsOnlineOrdering20supportsNationalMenu16supportsFeedback21supportsSplitPayments4slug11isAvailable19supportsGroupOrders29supportsProductRecipientNames23supportsBasketTransfers30allowHandOffChoiceAtManualFire016productRecipientJ5Label21customerFacingMessage19availabilityMessage17supportsDriveThru12showCalories25acceptsOrdersUntilClosing26acceptsOrdersBeforeOpening22suggestedTipPercentage12customFields6labels8metadata18supportedTimeModes10attributes18supportedCountriesACSi_S7SAA010ContextualR0VSgS3SS2dSfS2SSdSSSbSiS2bSSS6bSSS4dSayAA8DeliveryV7FeeTierVGS2bSiS6bSSS5bS3SS4bSfSayAC11CustomFieldVGSayAC11CustomLabelVGSayAA12MetadataItemVGSaySSGA58_A58_tcfc">init(id:<wbr>name:<wbr>brand:<wbr>storeName:<wbr>telephone:<wbr>streetAddress:<wbr>crossStreet:<wbr>city:<wbr>contextualPricing:<wbr>state:<wbr>zip:<wbr>country:<wbr>latitude:<wbr>longitude:<wbr>utcOffset:<wbr>url:<wbr>mobileUrl:<wbr>distance:<wbr>extRef:<wbr>isAdvanceOnly:<wbr>advanceOrderDays:<wbr>supportsCoupons:<wbr>supportsLoyalty:<wbr>supportedCardTypes:<wbr>supportsManualFire:<wbr>canDeliver:<wbr>canPickup:<wbr>supportsCurbSide:<wbr>supportsDispatch:<wbr>hasOloPass:<wbr>deliveryArea:<wbr>minimumDeliveryOrder:<wbr>minimumPickUpOrder:<wbr>maximumPayInStoreOrder:<wbr>deliveryFee:<wbr>deliveryFeetiers:<wbr>supportsTip:<wbr>supportsSpecialInstructions:<wbr>specialInstructionsMaxLength:<wbr>supportsGuestOrdering:<wbr>requiresPhoneNumber:<wbr>supportsOnlineOrdering:<wbr>supportsNationalMenu:<wbr>supportsFeedback:<wbr>supportsSplitPayments:<wbr>slug:<wbr>isAvailable:<wbr>supportsGroupOrders:<wbr>supportsProductRecipientNames:<wbr>supportsBasketTransfers:<wbr>allowHandOffChoiceAtManualFire:<wbr>productRecipientNameLabel:<wbr>customerFacingMessage:<wbr>availabilityMessage:<wbr>supportsDriveThru:<wbr>showCalories:<wbr>acceptsOrdersUntilClosing:<wbr>acceptsOrdersBeforeOpening:<wbr>suggestedTipPercentage:<wbr>customFields:<wbr>labels:<wbr>metadata:<wbr>supportedTimeModes:<wbr>attributes:<wbr>supportedCountries:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+            <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">brand</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">storeName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">telephone</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">streetAddress</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">crossStreet</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">city</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">contextualPricing</span><span class="p">:</span> <span class="kt"><a href="../Structs/ContextualPricing.html">ContextualPricing</a></span><span class="p">?,</span>
+            <span class="nv">state</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">zip</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+            <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+            <span class="nv">utcOffset</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span>
+            <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">mobileUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">distance</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+            <span class="nv">extRef</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">isAdvanceOnly</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">advanceOrderDays</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+            <span class="nv">supportsCoupons</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportsLoyalty</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportedCardTypes</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">supportsManualFire</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">canDeliver</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">canPickup</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportsCurbSide</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportsDispatch</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">hasOloPass</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">deliveryArea</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">minimumDeliveryOrder</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+            <span class="nv">minimumPickUpOrder</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+            <span class="nv">maximumPayInStoreOrder</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+            <span class="nv">deliveryFee</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+            <span class="nv">deliveryFeetiers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Delivery.html">Delivery</a></span><span class="o">.</span><span class="kt">FeeTier</span><span class="p">],</span>
+            <span class="nv">supportsTip</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportsSpecialInstructions</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">specialInstructionsMaxLength</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+            <span class="nv">supportsGuestOrdering</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">requiresPhoneNumber</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportsOnlineOrdering</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportsNationalMenu</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportsFeedback</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportsSplitPayments</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">slug</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">isAvailable</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportsGroupOrders</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportsProductRecipientNames</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportsBasketTransfers</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">allowHandOffChoiceAtManualFire</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">productRecipientNameLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">customerFacingMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">availabilityMessage</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">supportsDriveThru</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">showCalories</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">acceptsOrdersUntilClosing</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">acceptsOrdersBeforeOpening</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">suggestedTipPercentage</span><span class="p">:</span> <span class="kt">Float</span><span class="p">,</span>
+            <span class="nv">customFields</span><span class="p">:</span> <span class="p">[</span><span class="kt">Restaurant</span><span class="o">.</span><span class="kt"><a href="../Structs/Restaurant/CustomField.html">CustomField</a></span><span class="p">],</span>
+            <span class="nv">labels</span><span class="p">:</span> <span class="p">[</span><span class="kt">Restaurant</span><span class="o">.</span><span class="kt"><a href="../Structs/Restaurant/CustomLabel.html">CustomLabel</a></span><span class="p">],</span>
+            <span class="nv">metadata</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/MetadataItem.html">MetadataItem</a></span><span class="p">],</span>
+            <span class="nv">supportedTimeModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span>
+            <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span>
+            <span class="nv">supportedCountries</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Restaurant.CustomField"></a>
+                <a name="//apple_ref/swift/Section/Restaurant.CustomField" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant.CustomField"></a>
+                  <h3 class="section-name"><p>Restaurant.CustomField</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV11CustomFieldV"></a>
+                    <a name="//apple_ref/swift/Struct/CustomField" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV11CustomFieldV">CustomField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Restaurant/CustomField.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CustomField</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Restaurant.CustomLabel"></a>
+                <a name="//apple_ref/swift/Section/Restaurant.CustomLabel" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant.CustomLabel"></a>
+                  <h3 class="section-name"><p>Restaurant.CustomLabel</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV11CustomLabelV"></a>
+                    <a name="//apple_ref/swift/Struct/CustomLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV11CustomLabelV">CustomLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Restaurant/CustomLabel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CustomLabel</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Restaurant.Calendar"></a>
+                <a name="//apple_ref/swift/Section/Restaurant.Calendar" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant.Calendar"></a>
+                  <h3 class="section-name"><p>Restaurant.Calendar</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV8CalendarV"></a>
+                    <a name="//apple_ref/swift/Struct/Calendar" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV8CalendarV">Calendar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Restaurant/Calendar.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Calendar</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Restaurant.CalendarTimeRange"></a>
+                <a name="//apple_ref/swift/Section/Restaurant.CalendarTimeRange" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant.CalendarTimeRange"></a>
+                  <h3 class="section-name"><p>Restaurant.CalendarTimeRange</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV17CalendarTimeRangeV"></a>
+                    <a name="//apple_ref/swift/Struct/CalendarTimeRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV17CalendarTimeRangeV">CalendarTimeRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Restaurant/CalendarTimeRange.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CalendarTimeRange</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Restaurant.Calendars"></a>
+                <a name="//apple_ref/swift/Section/Restaurant.Calendars" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant.Calendars"></a>
+                  <h3 class="section-name"><p>Restaurant.Calendars</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV9CalendarsV"></a>
+                    <a name="//apple_ref/swift/Struct/Calendars" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV9CalendarsV">Calendars</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Restaurant/Calendars.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Calendars</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Restaurant.Disclaimer"></a>
+                <a name="//apple_ref/swift/Section/Restaurant.Disclaimer" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant.Disclaimer"></a>
+                  <h3 class="section-name"><p>Restaurant.Disclaimer</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV10DisclaimerV"></a>
+                    <a name="//apple_ref/swift/Struct/Disclaimer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV10DisclaimerV">Disclaimer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Restaurant/Disclaimer.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Disclaimer</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Restaurant.Disclaimers"></a>
+                <a name="//apple_ref/swift/Section/Restaurant.Disclaimers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant.Disclaimers"></a>
+                  <h3 class="section-name"><p>Restaurant.Disclaimers</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV11DisclaimersV"></a>
+                    <a name="//apple_ref/swift/Struct/Disclaimers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV11DisclaimersV">Disclaimers</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Restaurant/Disclaimers.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Disclaimers</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Restaurant"></a>
+                <a name="//apple_ref/swift/Section/Restaurant" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant"></a>
+                  <h3 class="section-name"><p>Restaurant</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">from</span> <span class="nv">decoder</span><span class="p">:</span> <span class="kt">Decoder</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-07-14)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
