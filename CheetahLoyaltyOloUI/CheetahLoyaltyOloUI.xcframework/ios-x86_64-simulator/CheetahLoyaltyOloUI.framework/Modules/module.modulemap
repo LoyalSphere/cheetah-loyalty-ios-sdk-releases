@@ -1,0 +1,11 @@
+framework module CheetahLoyaltyOloUI {
+  umbrella header "CheetahLoyaltyOloUI.h"
+
+  export *
+  module * { export * }
+}
+
+module CheetahLoyaltyOloUI.Swift {
+    header "CheetahLoyaltyOloUI-Swift.h"
+    requires objc
+}
