@@ -6,9 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [Olo-Core-1.0.0] - 2020-07-14
+## [Olo-UI-1.0.0] - 2020-07-16
 ### Added
-- Models and API requests.
-- Authentication Handling
+- Added components for complete Ordering System
+
+## [Olo-UI-1.0.1] - 2020-07-16
+### Added
+- Do not embed Frameworks
 
 [Olo-Core-1.0.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/2
+[Olo-Core-1.0.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/2
