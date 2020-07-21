@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Places-1.1.5] - 2020-07-21
+### Changed
+- Changed dependency version requirements to CheetahLoyaltyCore 1.4.0 [#453]
+
+[#453]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/453
+
 ## [Places-1.1.4] - 2020-06-25
 ### Changed
 - Removed dependency requirements for CheetahLoyaltyUI [#430]
@@ -64,6 +70,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added extension of `Place` object to conform on `GeofencePlace`
 - Added `GeofencePlace` protocol
 
+[Places-1.1.5]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/38?closed=1
+[Places-1.1.4]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/31?closed=1
 [Places-1.1.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/28?closed=1
 [Places-1.1.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/24?closed=1
 [Places-1.1.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/20?closed=1
