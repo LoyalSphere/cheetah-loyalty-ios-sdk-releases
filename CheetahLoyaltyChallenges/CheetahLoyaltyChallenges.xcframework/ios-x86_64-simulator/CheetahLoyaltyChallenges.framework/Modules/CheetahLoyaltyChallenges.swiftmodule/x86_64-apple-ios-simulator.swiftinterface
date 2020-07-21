@@ -37,6 +37,7 @@ open class PreferenceChallengeViewController : CheetahLoyaltyUI.CollectionViewCo
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
 @objc open class SurveyTextViewCell : UIKit.UICollectionViewCell {
@@ -66,6 +67,7 @@ open class ProfileChallengeViewController : CheetahLoyaltyUI.CollectionViewContr
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
 @objc open class SurveyTextFieldCell : UIKit.UICollectionViewCell {
@@ -198,11 +200,16 @@ open class SurveyChallengeViewController : CheetahLoyaltyUI.CollectionViewContro
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
 @objc open class SurveyResponderController : ObjectiveC.NSObject, CheetahLoyaltyUI.CollectionController {
+  open var navigationItemTitle: Swift.String?
   open var answer: CheetahLoyaltyCore.Parameters?
   open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
+  open var surveyChallengeViewController: CheetahLoyaltyChallenges.SurveyChallengeViewController? {
+    get
+  }
   open var collectionViewController: CheetahLoyaltyUI.CollectionViewController? {
     get
     set
@@ -303,7 +310,8 @@ extension NSNotification.Name {
   public static let challengeUpdated: Foundation.Notification.Name
 }
 open class ViewPhotoChallengeController : CheetahLoyaltyChallenges.ViewContentController {
-  public var responseSetting: CheetahLoyaltyCore.ViewContentChallengeResponseSetting
+  open var navigationItemTitle: Swift.String?
+  open var responseSetting: CheetahLoyaltyCore.ViewContentChallengeResponseSetting
   open var contentHasLoaded: Swift.Bool {
     get
     set
@@ -444,6 +452,7 @@ open class MultiQuestionChallengeViewController : CheetahLoyaltyUI.CollectionVie
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
 open class GameChallengeViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
@@ -472,6 +481,7 @@ open class GameChallengeViewController : CheetahLoyaltyUI.NibViewController, Che
   @objc deinit
 }
 open class ViewUrlChallengeController : CheetahLoyaltyChallenges.ViewContentController {
+  open var navigationItemTitle: Swift.String?
   open var responseSetting: CheetahLoyaltyCore.ViewContentChallengeResponseSetting
   open var contentHasLoaded: Swift.Bool {
     get
@@ -551,6 +561,7 @@ open class ViewContentViewController : CheetahLoyaltyUI.StatefulViewController, 
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
 @objc open class NumericSurveyResponderController : CheetahLoyaltyChallenges.SurveyResponderController, UIKit.UITextFieldDelegate {

@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Challenges-1.0.3] - 2020-07-21
+### Changed
+- Changed dependency version requirements to CheetahLoyaltyCore 1.4.0 and CheetahLoyaltyUI 1.4.0 [#451]
+
+### Fixed
+- Fixed state not set to content after loading [#437]
+
+[#437]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/437
+[#451]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/451
+
+
 ## [Challenges-1.0.2] - 2020-06-17
 
 ### Changed
@@ -59,4 +70,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added `ChallengeResponseDetailViewController`
 - Added `ShareChallengeToSocialMediaDelegate` protocol
 
+[Challenges-1.0.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/35?closed=1
+[Challenges-1.0.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/30?closed=1
+[Challenges-1.0.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/23?closed=1
 [Challenges-1.0.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/19?closed=1
