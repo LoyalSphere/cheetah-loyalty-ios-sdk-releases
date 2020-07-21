@@ -14,31 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8thVcE2sTeCvUhatxeJbM2PHVEQ=
+		22APFaVbSe9If73TmXDEGWylqTo=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		fppVoEkWTJdeiy0bZ7FkL87mAPk=
+		7GcGAj5H7vD1UeJMNqCInaPAz60=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		M2jDuTNuuO+i7zNoaKMk9dtb/Eg=
+		rK1OdQWQ2ps+/EYDrbSJaYUovBg=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BpvKk14qqxbdb6PbFuYFtrpXGrw=
+		ptv9IRJT8vM5uUiPaBpJIL4yjnA=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		fppVoEkWTJdeiy0bZ7FkL87mAPk=
+		7GcGAj5H7vD1UeJMNqCInaPAz60=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		M2jDuTNuuO+i7zNoaKMk9dtb/Eg=
+		rK1OdQWQ2ps+/EYDrbSJaYUovBg=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		BpvKk14qqxbdb6PbFuYFtrpXGrw=
+		ptv9IRJT8vM5uUiPaBpJIL4yjnA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,42 +69,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sBdNlg0S6NvrvkWoK+r+kUDCEKQtVb9gRw34HI14VpM=
+			gJDJSGeSsrTGOaX/7w7+wdVRzN3zxte/41FbZze+ruA=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			11IURRn/9FID/vmNcGlPY9OQwKnOcn7TQ20wi7T36Gs=
+			9pP2eIyFqWPziDbMqEMF7FV+4M9kPymBsGLpnDtnw58=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nTSgPQedBIvav0GMbQJBvnl7L0ONUeCxD7k68/j9AYI=
+			91gUVg6MOrWEJL33Tcv3QbfdHa2Kefsjt37kIzpigVY=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sBdNlg0S6NvrvkWoK+r+kUDCEKQtVb9gRw34HI14VpM=
+			gJDJSGeSsrTGOaX/7w7+wdVRzN3zxte/41FbZze+ruA=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			11IURRn/9FID/vmNcGlPY9OQwKnOcn7TQ20wi7T36Gs=
+			9pP2eIyFqWPziDbMqEMF7FV+4M9kPymBsGLpnDtnw58=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nTSgPQedBIvav0GMbQJBvnl7L0ONUeCxD7k68/j9AYI=
+			91gUVg6MOrWEJL33Tcv3QbfdHa2Kefsjt37kIzpigVY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

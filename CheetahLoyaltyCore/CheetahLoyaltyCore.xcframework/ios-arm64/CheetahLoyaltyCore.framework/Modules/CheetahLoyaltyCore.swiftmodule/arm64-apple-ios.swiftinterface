@@ -498,9 +498,9 @@ public struct Offer : Swift.Codable, Swift.Equatable {
   public var targetObject: CheetahLoyaltyCore.Offer.TargetObject?
   public var targetUrl: Swift.String
   public var thumbnailUrl: Swift.String
-  public var type: CheetahLoyaltyCore.Offer.OfferType?
+  public var type: CheetahLoyaltyCore.Offer.OfferType
   public var url: Swift.String
-  public init(id: Swift.Int, action: Swift.String, barcode: Swift.String, barcodeStandard: Swift.String, body: Swift.String, categories: [CheetahLoyaltyCore.Offer.Category], clipped: Swift.Bool, descriptionText: Swift.String, details: Swift.String, endDate: Swift.String, extraJSON: [Swift.String : CheetahLoyaltyCore.AnyCodable], heading: Swift.String, imageUrl: Swift.String, internalUrl: Swift.String, isFavorited: Swift.Bool, responses: [CheetahLoyaltyCore.Offer.Response], startDate: Swift.String, subheading: Swift.String, targetObject: CheetahLoyaltyCore.Offer.TargetObject?, targetUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahLoyaltyCore.Offer.OfferType?, url: Swift.String)
+  public init(id: Swift.Int, action: Swift.String, barcode: Swift.String, barcodeStandard: Swift.String, body: Swift.String, categories: [CheetahLoyaltyCore.Offer.Category], clipped: Swift.Bool, descriptionText: Swift.String, details: Swift.String, endDate: Swift.String, extraJSON: [Swift.String : CheetahLoyaltyCore.AnyCodable], heading: Swift.String, imageUrl: Swift.String, internalUrl: Swift.String, isFavorited: Swift.Bool, responses: [CheetahLoyaltyCore.Offer.Response], startDate: Swift.String, subheading: Swift.String, targetObject: CheetahLoyaltyCore.Offer.TargetObject?, targetUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahLoyaltyCore.Offer.OfferType, url: Swift.String)
   public enum OfferType : Swift.Codable, Swift.Equatable {
     case details
     case url
@@ -832,10 +832,10 @@ public struct FeedbackItem : Swift.Equatable {
   public var id: Swift.Int
   public var labelText: Swift.String
   public var descriptionText: Swift.String
-  public var type: CheetahLoyaltyCore.FeedbackItem.FeedbackType?
+  public var type: CheetahLoyaltyCore.FeedbackItem.FeedbackType
   public var paramName: Swift.String
   public var value: Swift.String
-  public init(id: Swift.Int, labelText: Swift.String, descriptionText: Swift.String, type: CheetahLoyaltyCore.FeedbackItem.FeedbackType?, paramName: Swift.String, value: Swift.String)
+  public init(id: Swift.Int, labelText: Swift.String, descriptionText: Swift.String, type: CheetahLoyaltyCore.FeedbackItem.FeedbackType, paramName: Swift.String, value: Swift.String)
   public static func == (a: CheetahLoyaltyCore.FeedbackItem, b: CheetahLoyaltyCore.FeedbackItem) -> Swift.Bool
 }
 public struct FeedbackCategory : Swift.Codable, Swift.Equatable {
@@ -1781,7 +1781,7 @@ public struct Reward : Swift.Codable, Swift.Equatable {
   public var metricDisplayName: Swift.String
   public var imageUrl: Swift.String
   public var thumbnailUrl: Swift.String
-  public var type: CheetahLoyaltyCore.Reward.RewardType?
+  public var type: CheetahLoyaltyCore.Reward.RewardType
   public var startDate: Swift.String
   public var endDate: Swift.String
   public var drawDate: Swift.String
@@ -1815,7 +1815,7 @@ public struct Reward : Swift.Codable, Swift.Equatable {
     get
   }
   public var extraJSON: [Swift.String : CheetahLoyaltyCore.AnyCodable]
-  public init(id: Swift.Int, sku: Swift.String, heading: Swift.String, subHeading: Swift.String, body: Swift.String, details: Swift.String, metricDisplayName: Swift.String, imageUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahLoyaltyCore.Reward.RewardType?, startDate: Swift.String, endDate: Swift.String, drawDate: Swift.String, attributes: [CheetahLoyaltyCore.Reward.Attribute], requiredAttributes: [CheetahLoyaltyCore.Reward.Class], combinations: [CheetahLoyaltyCore.Reward.AttributeCombination], selectedCombination: CheetahLoyaltyCore.Reward.AttributeCombination?, redemptionOptions: [CheetahLoyaltyCore.Reward.RedemptionOptions], points: Swift.String, responseCount: Swift.Int, isRespondable: Swift.Bool, isFavorited: Swift.Bool, addressRequired: Swift.Bool, isAwarded: Swift.Bool, paymentMethod: Swift.String, action: Swift.String, responseCurrencyAmount: Swift.String, responseCurrencyName: Swift.String, expirationInterval: Swift.String, expirationPeriod: Swift.String, respondableInfo: CheetahLoyaltyCore.RespondableInfo?, embedded: CheetahLoyaltyCore.AnyCodable?, isAcceptanceRequired: Swift.Bool, acceptanceText: Swift.String, acceptanceUrl: Swift.String, responseMessage: Swift.String, businessValue: Swift.String, maximumMetric: Swift.String, minimumMetric: Swift.String, extraJSON: [Swift.String : CheetahLoyaltyCore.AnyCodable])
+  public init(id: Swift.Int, sku: Swift.String, heading: Swift.String, subHeading: Swift.String, body: Swift.String, details: Swift.String, metricDisplayName: Swift.String, imageUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahLoyaltyCore.Reward.RewardType, startDate: Swift.String, endDate: Swift.String, drawDate: Swift.String, attributes: [CheetahLoyaltyCore.Reward.Attribute], requiredAttributes: [CheetahLoyaltyCore.Reward.Class], combinations: [CheetahLoyaltyCore.Reward.AttributeCombination], selectedCombination: CheetahLoyaltyCore.Reward.AttributeCombination?, redemptionOptions: [CheetahLoyaltyCore.Reward.RedemptionOptions], points: Swift.String, responseCount: Swift.Int, isRespondable: Swift.Bool, isFavorited: Swift.Bool, addressRequired: Swift.Bool, isAwarded: Swift.Bool, paymentMethod: Swift.String, action: Swift.String, responseCurrencyAmount: Swift.String, responseCurrencyName: Swift.String, expirationInterval: Swift.String, expirationPeriod: Swift.String, respondableInfo: CheetahLoyaltyCore.RespondableInfo?, embedded: CheetahLoyaltyCore.AnyCodable?, isAcceptanceRequired: Swift.Bool, acceptanceText: Swift.String, acceptanceUrl: Swift.String, responseMessage: Swift.String, businessValue: Swift.String, maximumMetric: Swift.String, minimumMetric: Swift.String, extraJSON: [Swift.String : CheetahLoyaltyCore.AnyCodable])
   public enum RewardType : Swift.String, Swift.Codable {
     case badge
     case certificate
@@ -2047,7 +2047,7 @@ public protocol MutableProfileAttribute {
   var isReadOnly: Swift.Bool { get }
   var isOptional: Swift.Bool { get }
 }
-public struct ProfileAttribute : Swift.Codable, Swift.Equatable {
+public struct ProfileAttribute : Swift.Codable, Swift.Equatable, CheetahLoyaltyCore.MutableProfileAttribute {
   public var name: Swift.String
   public var label: Swift.String
   public var type: Swift.String
@@ -2061,6 +2061,12 @@ public struct ProfileAttribute : Swift.Codable, Swift.Equatable {
   public var defaultValue: CheetahLoyaltyCore.AnyCodable?
   public var domain: CheetahLoyaltyCore.ProfileAttribute.Domain?
   public var categories: [CheetahLoyaltyCore.ProfileAttribute.Category]
+  public var domainList: [[Swift.String : Swift.String]] {
+    get
+  }
+  public var isOptional: Swift.Bool {
+    get
+  }
   public init(name: Swift.String, label: Swift.String, type: Swift.String, description: Swift.String, isReadOnly: Swift.Bool, isRequired: Swift.Bool, isHidden: Swift.Bool, capitalized: Swift.Bool, maxLength: Swift.Int, value: CheetahLoyaltyCore.AnyCodable?, defaultValue: CheetahLoyaltyCore.AnyCodable?, domain: CheetahLoyaltyCore.ProfileAttribute.Domain?, categories: [CheetahLoyaltyCore.ProfileAttribute.Category])
   public struct Domain : Swift.Codable, Swift.Equatable {
     public var list: [[Swift.String : Swift.String]]
@@ -2203,14 +2209,24 @@ extension NSNotification.Name {
 }
 public struct Award : Swift.Codable, Swift.Equatable {
   public var id: Swift.Int
-  public var status: Swift.String
+  public var status: CheetahLoyaltyCore.Award.Status
   public var type: Swift.String
   public var startDate: Swift.String
   public var endDate: Swift.String
   public var dateClaimed: Swift.String
   public var dateAwarded: Swift.String
   public var reward: CheetahLoyaltyCore.Reward?
-  public init(id: Swift.Int, status: Swift.String, type: Swift.String, startDate: Swift.String, endDate: Swift.String, dateClaimed: Swift.String, dateAwarded: Swift.String, reward: CheetahLoyaltyCore.Reward?)
+  public enum Status : Swift.String, Swift.Codable {
+    case claimed
+    case cancelled
+    case awarded
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(id: Swift.Int, status: CheetahLoyaltyCore.Award.Status, type: Swift.String, startDate: Swift.String, endDate: Swift.String, dateClaimed: Swift.String, dateAwarded: Swift.String, reward: CheetahLoyaltyCore.Reward?)
   public func encode(to encoder: Swift.Encoder) throws
   public static func == (a: CheetahLoyaltyCore.Award, b: CheetahLoyaltyCore.Award) -> Swift.Bool
 }
@@ -2354,7 +2370,7 @@ extension MultiQuestionChallengeResponseSetting : Swift.Equatable {
   public static func == (lhs: CheetahLoyaltyCore.MultiQuestionChallengeResponseSetting, rhs: CheetahLoyaltyCore.MultiQuestionChallengeResponseSetting) -> Swift.Bool
 }
 public struct MemeChallengeResponseSetting : CheetahLoyaltyCore.ChallengeResponseSetting, Swift.Equatable {
-  public var subtype: CheetahLoyaltyCore.MemeChallengeResponseSetting.Subtype?
+  public var subtype: CheetahLoyaltyCore.MemeChallengeResponseSetting.Subtype
   public enum Subtype : Swift.String, Swift.Codable {
     case overImage
     case separateFromImage
@@ -2365,7 +2381,7 @@ public struct MemeChallengeResponseSetting : CheetahLoyaltyCore.ChallengeRespons
     }
   }
   public var imageUrl: Swift.String
-  public init(subtype: CheetahLoyaltyCore.MemeChallengeResponseSetting.Subtype?, imageUrl: Swift.String)
+  public init(subtype: CheetahLoyaltyCore.MemeChallengeResponseSetting.Subtype, imageUrl: Swift.String)
   public static func == (a: CheetahLoyaltyCore.MemeChallengeResponseSetting, b: CheetahLoyaltyCore.MemeChallengeResponseSetting) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -2820,7 +2836,7 @@ public struct Message : Swift.Codable, Swift.Equatable {
   public init(id: Swift.Int, title: Swift.String, text: Swift.String, desc: Swift.String, dateSent: Swift.String, attachment: CheetahLoyaltyCore.Message.Attachment?)
   public struct Attachment : Swift.Codable, Swift.Equatable {
     public var id: Swift.Int
-    public var type: CheetahLoyaltyCore.Message.Attachment.AttachmentType?
+    public var type: CheetahLoyaltyCore.Message.Attachment.AttachmentType
     public var thumbnailUrl: Swift.String
     public var imageUrl: Swift.String
     public init(id: Swift.Int, type: CheetahLoyaltyCore.Message.Attachment.AttachmentType, thumbnailUrl: Swift.String, imageUrl: Swift.String)
@@ -2937,11 +2953,11 @@ public struct GiftCard : Swift.Codable, Swift.Equatable {
   }
   public struct Transaction : Swift.Codable, Swift.Equatable {
     public var id: Swift.Int
-    public var type: CheetahLoyaltyCore.GiftCard.TransactionType?
+    public var type: CheetahLoyaltyCore.GiftCard.TransactionType
     public var createdAt: Swift.String
     public var desc: Swift.String
     public var amount: Swift.String
-    public init(id: Swift.Int, type: CheetahLoyaltyCore.GiftCard.TransactionType?, createdAt: Swift.String, desc: Swift.String, amount: Swift.String)
+    public init(id: Swift.Int, type: CheetahLoyaltyCore.GiftCard.TransactionType, createdAt: Swift.String, desc: Swift.String, amount: Swift.String)
     public func encode(to encoder: Swift.Encoder) throws
     public static func == (a: CheetahLoyaltyCore.GiftCard.Transaction, b: CheetahLoyaltyCore.GiftCard.Transaction) -> Swift.Bool
   }
@@ -3396,6 +3412,9 @@ extension CheetahLoyaltyCore.Reward.RedemptionOptions : Swift.RawRepresentable {
 extension CheetahLoyaltyCore.Reward.Response.RedemptionStatus : Swift.Equatable {}
 extension CheetahLoyaltyCore.Reward.Response.RedemptionStatus : Swift.Hashable {}
 extension CheetahLoyaltyCore.Reward.Response.RedemptionStatus : Swift.RawRepresentable {}
+extension CheetahLoyaltyCore.Award.Status : Swift.Equatable {}
+extension CheetahLoyaltyCore.Award.Status : Swift.Hashable {}
+extension CheetahLoyaltyCore.Award.Status : Swift.RawRepresentable {}
 extension CheetahLoyaltyCore.MemeChallengeResponseSetting.Subtype : Swift.Equatable {}
 extension CheetahLoyaltyCore.MemeChallengeResponseSetting.Subtype : Swift.Hashable {}
 extension CheetahLoyaltyCore.MemeChallengeResponseSetting.Subtype : Swift.RawRepresentable {}

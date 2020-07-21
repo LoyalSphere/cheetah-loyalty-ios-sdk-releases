@@ -6,6 +6,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-1.4.0] - 2020-07-14
+### Changed
+- Enable require only App Extension Safe API to YES [#446]
+- `ProfileAttribute` to conform to `MutableProfileAttribute` [#445]
+- Type properties of some models from optional to non-optional [#444]:
+	- `GiftCard`'s `type` property
+	- `FeedbackItem`'s `type` property
+	- `MemeChallengeResponseSetting`'s `subtype` property
+	- `Message`'s `type` property
+	- `Offer`'s `type` property
+	- `Reward`'s `type` property
+- `Award`'s `status` property from String to an enum `Award.Status` [#435]
+
+### Removed
+- `canBeOpened()` instance extension method of `URL` as part of making `CheetahLoyaltyCore` App Extension Safe [#431]
+
+[#431]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/431
+[#435]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/435
+[#444]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/444
+[#445]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/445
+[#446]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/446
+
 ## [Core-1.3.0] - 2020-06-09
 ### Added
 - Added `Certificate` and `Coupon` properties in `Offer.Response` and `Offer.ResponseInfo` [#371]
@@ -295,7 +317,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Models and API requests.
 - Authentication Handling
 
-[Core-1.2.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/21?closed=1
+[Core-1.4.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/32?closed=1
+[Core-1.3.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/27?closed=1
 [Core-1.2.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/17?closed=1
 [Core-1.1.4]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/16?closed=1
 [Core-1.1.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/15?closed=1
