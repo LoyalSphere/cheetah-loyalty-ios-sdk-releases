@@ -14,7 +14,8 @@
     <a title="DefaultNotificationHelper Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (69% documented)</p>
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -274,38 +275,6 @@ is the same with the one that was saved.
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27CheetahLoyaltyNotifications25DefaultNotificationHelperC017registerForRemoteC0yyF"></a>
-                    <a name="//apple_ref/swift/Method/registerForRemoteNotifications()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27CheetahLoyaltyNotifications25DefaultNotificationHelperC017registerForRemoteC0yyF">registerForRemoteNotifications()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Register to receive remote notifications via Apple Push Notification service.</p>
-
-<p>The default implementation of this method
-is calling <code>UIApplication.shared.registerForRemoteNotifications()</code></p>
-
-<p>This is usually called after being authorized on <code>requestAuthorization</code> completion</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">registerForRemoteNotifications</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:27CheetahLoyaltyNotifications25DefaultNotificationHelperC20requestAuthorization7options10completionySo22UNAuthorizationOptionsV_ySb_s5Error_pSgtctF"></a>
                     <a name="//apple_ref/swift/Method/requestAuthorization(options:completion:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:27CheetahLoyaltyNotifications25DefaultNotificationHelperC20requestAuthorization7options10completionySo22UNAuthorizationOptionsV_ySb_s5Error_pSgtctF">requestAuthorization(options:completion:)</a>
@@ -444,57 +413,6 @@ then calls <code>MessagesAPI.trackMessage(id:, action: .opened)</code> using the
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27CheetahLoyaltyNotifications25DefaultNotificationHelperC24setApplicationBadgeCountyySiF"></a>
-                    <a name="//apple_ref/swift/Method/setApplicationBadgeCount(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27CheetahLoyaltyNotifications25DefaultNotificationHelperC24setApplicationBadgeCountyySiF">setApplicationBadgeCount(_:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Sets the Application&rsquo;s badge count with the given number if allowed</p>
-
-<p>The default implementation of this method is
-calling the <code>UNUserNotificationCenter.current().requestAuthorization(options:, completionHandler:)</code>,
-then checks if authorization is granted,
-then calls <code>UIApplication.shared.applicationIconBadgeNumber = count</code> in the main queue</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setApplicationBadgeCount</span><span class="p">(</span><span class="n">_</span> <span class="nv">count</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>count</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Number to be displayed on Application&rsquo;s Icon</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:27CheetahLoyaltyNotifications25DefaultNotificationHelperC06handleE8Response_17completionHandlerySo014UNNotificationH0C_yyctF"></a>
                     <a name="//apple_ref/swift/Method/handleNotificationResponse(_:completionHandler:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:27CheetahLoyaltyNotifications25DefaultNotificationHelperC06handleE8Response_17completionHandlerySo014UNNotificationH0C_yyctF">handleNotificationResponse(_:completionHandler:)</a>
@@ -571,7 +489,7 @@ it calls <code>richPushHandler.handleRichPushResponse</code></p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-18)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-07-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

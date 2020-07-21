@@ -14,7 +14,8 @@
     <a title="DefaultRichPushHandler Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (69% documented)</p>
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -307,9 +308,7 @@ If the API call failed, it does nothing.</p>
 <p>The default implementation of this method is
 calling <code>OffersAPI.getOffer(id:)</code>.
 After a successful API call, <code>OffersAPI.respondToOffer(id:)</code> is called,
-then the <code>Offer</code>&lsquo;s URL is validated, if valid,
-<code>UIApplication.shared.open(url, options:, completionHandler:)</code> is
-called on the main queue.
+then <code>openUrl()</code> is called on the main queue.
 If the API call failed, it does nothing.</p>
 
                       </div>
@@ -561,10 +560,8 @@ calling <code>EventsAPI.favoriteEvent(id:)</code>.</p>
                         <p>Handles <code><a href="../Enums/RichPushAction.html#/s:27CheetahLoyaltyNotifications14RichPushActionO15openContentPageyA2CmF">RichPushAction.openContentPage</a></code></p>
 
 <p>The default implementation of this method is
-calling <code>ContentAPI.getContentPage(id:)</code>.
-then the <code>ContentPage</code>&lsquo;s URL is validated, if valid,
-<code>UIApplication.shared.open(url, options:, completionHandler:)</code> is
-called on the main queue.
+calling <code>ContentAPI.getContentPage(id:)</code>,
+then <code>openUrl()</code> is called on the main queue.
 If the API call failed, it does nothing.</p>
 
                       </div>
@@ -702,9 +699,9 @@ calling respective method within self depending on <code>actionIdentifier</code>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27CheetahLoyaltyNotifications22DefaultRichPushHandlerC22showChallengeResponderyyXecACF"></a>
+                    <a name="/s:27CheetahLoyaltyNotifications22DefaultRichPushHandlerC22showChallengeResponderyy0aB4Core0I0VF"></a>
                     <a name="//apple_ref/swift/Method/showChallengeResponder(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27CheetahLoyaltyNotifications22DefaultRichPushHandlerC22showChallengeResponderyyXecACF">showChallengeResponder(_:)</a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications22DefaultRichPushHandlerC22showChallengeResponderyy0aB4Core0I0VF">showChallengeResponder(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -734,9 +731,9 @@ calling respective method within self depending on <code>actionIdentifier</code>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:27CheetahLoyaltyNotifications22DefaultRichPushHandlerC23showOfferResponseDetailyyXecACF"></a>
+                    <a name="/s:27CheetahLoyaltyNotifications22DefaultRichPushHandlerC23showOfferResponseDetailyy0aB4Core0I0V0J4InfoVF"></a>
                     <a name="//apple_ref/swift/Method/showOfferResponseDetail(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:27CheetahLoyaltyNotifications22DefaultRichPushHandlerC23showOfferResponseDetailyyXecACF">showOfferResponseDetail(_:)</a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications22DefaultRichPushHandlerC23showOfferResponseDetailyy0aB4Core0I0V0J4InfoVF">showOfferResponseDetail(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -795,12 +792,48 @@ calling respective method within self depending on <code>actionIdentifier</code>
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahLoyaltyNotifications22DefaultRichPushHandlerC7openUrlyy10Foundation3URLVF"></a>
+                    <a name="//apple_ref/swift/Method/openUrl(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahLoyaltyNotifications22DefaultRichPushHandlerC7openUrlyy10Foundation3URLVF">openUrl(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Opens the given URL if valid</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This does not have a default implementation to avoid using unavailable APIs in Application Extensions
+
+</div><div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    This does not have a default implementation. You MUST override this method.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">openUrl</span><span class="p">(</span><span class="n">_</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-18)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-07-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

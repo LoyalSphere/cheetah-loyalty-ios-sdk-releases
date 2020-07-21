@@ -21,16 +21,15 @@ public protocol RichPushHandler : AnyObject {
   func showOfferResponseDetail(_ response: CheetahLoyaltyCore.Offer.ResponseInfo)
   func showMessage(_ message: Swift.String)
   func handleRichPushResponse(actionIdentifier: Swift.String, notificationType: CheetahLoyaltyNotifications.NotificationType, text: Swift.String?, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func openUrl(_ url: Foundation.URL)
 }
 public protocol NotificationHelper {
   var pushHandler: CheetahLoyaltyNotifications.PushHandler { get }
   var richPushHandler: CheetahLoyaltyNotifications.RichPushHandler { get }
   var deviceId: Swift.String { get }
-  func registerForRemoteNotifications()
   func requestAuthorization(options: UserNotifications.UNAuthorizationOptions, completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   func sendDeviceTokenToServerIfNeeded(_ deviceToken: Foundation.Data)
   func trackMessage(id: Swift.Int)
-  func setApplicationBadgeCount(_ count: Swift.Int)
   func handleNotificationResponse(_ response: UserNotifications.UNNotificationResponse, completionHandler: @escaping () -> Swift.Void)
 }
 extension UNNotificationAttachment {
@@ -145,10 +144,8 @@ open class DefaultNotificationHelper : CheetahLoyaltyNotifications.NotificationH
   }
   required public init(pushHandler: CheetahLoyaltyNotifications.PushHandler, richPushHandler: CheetahLoyaltyNotifications.RichPushHandler)
   open func sendDeviceTokenToServerIfNeeded(_ deviceToken: Foundation.Data)
-  open func registerForRemoteNotifications()
   open func requestAuthorization(options: UserNotifications.UNAuthorizationOptions = [.alert, .sound, .badge], completion: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
   open func trackMessage(id: Swift.Int)
-  open func setApplicationBadgeCount(_ count: Swift.Int)
   open func handleNotificationResponse(_ response: UserNotifications.UNNotificationResponse, completionHandler: @escaping () -> Swift.Void)
   @objc deinit
 }
@@ -167,6 +164,7 @@ open class DefaultRichPushHandler : CheetahLoyaltyNotifications.RichPushHandler 
   open func showChallengeResponder(_ challenge: CheetahLoyaltyCore.Challenge)
   open func showOfferResponseDetail(_ response: CheetahLoyaltyCore.Offer.ResponseInfo)
   open func showMessage(_ message: Swift.String)
+  open func openUrl(_ url: Foundation.URL)
   @objc deinit
 }
 extension CheetahLoyaltyNotifications.NotificationType : Swift.Hashable {}
