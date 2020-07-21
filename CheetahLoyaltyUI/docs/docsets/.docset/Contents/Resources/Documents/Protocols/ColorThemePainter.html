@@ -14,7 +14,8 @@
     <a title="ColorThemePainter Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (58% documented)</p>
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -40,6 +41,9 @@
                 <a href="../Classes/BaseCollectionController.html">BaseCollectionController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/BaseTableController.html">BaseTableController</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/CarouselCollectionController.html">CarouselCollectionController</a>
               </li>
               <li class="nav-group-task">
@@ -58,9 +62,6 @@
                 <a href="../Classes/CheetahColorThemePainter.html">CheetahColorThemePainter</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CollectionDataProvider.html">CollectionDataProvider</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/CollectionViewController.html">CollectionViewController</a>
               </li>
               <li class="nav-group-task">
@@ -68,6 +69,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/CountryCollectionViewCell.html">CountryCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DataProvider.html">DataProvider</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/DefaultLoadingViewController.html">DefaultLoadingViewController</a>
@@ -157,6 +161,12 @@
                 <a href="../Classes/StatesCollectionController.html">StatesCollectionController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/TableRowCell.html">TableRowCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableViewController.html">TableViewController</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/ThemeManager.html">ThemeManager</a>
               </li>
               <li class="nav-group-task">
@@ -181,6 +191,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CheetahImageLoader.html">CheetahImageLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ColorThemeButtonStyle.html">ColorThemeButtonStyle</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/FloatingTextFieldInputType.html">FloatingTextFieldInputType</a>
@@ -344,6 +357,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SelectionButtonDelegate.html">SelectionButtonDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TableController.html">TableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TableRowCellPresentable.html">TableRowCellPresentable</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/TextAppearance.html">TextAppearance</a>
@@ -515,8 +534,6 @@
                       <div class="abstract">
                         <p>Change the color appearance of UILabel.</p>
 
-<p>The default implementation of this method paint activityIndicator using text</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -543,8 +560,6 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Change the color appearance of UIActivityIndicatorView.</p>
-
-<p>The default implementation of this method paint activityIndicator using primaryColor</p>
 
                       </div>
                       <div class="declaration">
@@ -573,8 +588,6 @@
                       <div class="abstract">
                         <p>Change the color appearance of UINavigationBar.</p>
 
-<p>The default implementation of this method paint the pageIndicatorTintColor using secondaryColor and currentPageIndicatorTintColor with primaryColor.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -601,8 +614,6 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Change the color appearance of UIPageControl.</p>
-
-<p>The default implementation of this method paint the pageIndicatorTintColor using secondaryColor and currentPageIndicatorTintColor with primaryColor.</p>
 
                       </div>
                       <div class="declaration">
@@ -631,9 +642,6 @@
                       <div class="abstract">
                         <p>Change the color appearance of UISegmentedControl.</p>
 
-<p>The default implementation of this method paint the tintColor using primaryColor.
-This also change the color of the text in selected state to textColor and primaryColor when in normal state.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -660,8 +668,6 @@ This also change the color of the text in selected state to textColor and primar
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Change the color appearance of UISlider.</p>
-
-<p>The default implementation of this method paint the tintColor and thumbTintColor using secondaryColor.</p>
 
                       </div>
                       <div class="declaration">
@@ -690,8 +696,6 @@ This also change the color of the text in selected state to textColor and primar
                       <div class="abstract">
                         <p>Change the color appearance of UISwitch.</p>
 
-<p>The default implementation of this method paint the onTintColor using primaryColor and thumbTintCOlor using secondaryColor.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -718,8 +722,6 @@ This also change the color of the text in selected state to textColor and primar
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Change the color appearance of UIButton.</p>
-
-<p>The default implementation of this method paint the backgroundColor using primaryColor and its&rsquo; text to textColor.</p>
 
                       </div>
                       <div class="declaration">
@@ -748,8 +750,6 @@ This also change the color of the text in selected state to textColor and primar
                       <div class="abstract">
                         <p>Change the color appearance of CheckBox.</p>
 
-<p>The default implementation of this method clear the background color of CheckBox.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -776,9 +776,6 @@ This also change the color of the text in selected state to textColor and primar
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Change the color appearance of UIStepper.</p>
-
-<p>The default implementation of this method paint the backgroundColor of the button it contain to UIColor.clear and its tintColor to textColor.
-This also set the default tintColor to textColor and backgroundColor to primaryColor</p>
 
                       </div>
                       <div class="declaration">
@@ -807,8 +804,6 @@ This also set the default tintColor to textColor and backgroundColor to primaryC
                       <div class="abstract">
                         <p>Change the color appearance of UIProgressView.</p>
 
-<p>The default implementation of this method paint the progressTintColor using secondary color.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -835,8 +830,6 @@ This also set the default tintColor to textColor and backgroundColor to primaryC
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Change the color appearance of UITableView.</p>
-
-<p>The default implementation of this method paint the tintColor using the primary color and will set its background color to UIColor.clear.</p>
 
                       </div>
                       <div class="declaration">
@@ -865,8 +858,6 @@ This also set the default tintColor to textColor and backgroundColor to primaryC
                       <div class="abstract">
                         <p>Change the color appearance of UITableViewCell.</p>
 
-<p>The default implementation of this method paint the selected cell using accent color.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -893,8 +884,6 @@ This also set the default tintColor to textColor and backgroundColor to primaryC
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Change the color appearance of UIRefreshControl.</p>
-
-<p>The default implementation of this method paint the tintColor using primaryColor.</p>
 
                       </div>
                       <div class="declaration">
@@ -923,8 +912,6 @@ This also set the default tintColor to textColor and backgroundColor to primaryC
                       <div class="abstract">
                         <p>Change the color appearance of UIToolbar.</p>
 
-<p>The default implementation of this method paint barTintColor using primaryColor and tintColor using secondaryColor</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -951,8 +938,6 @@ This also set the default tintColor to textColor and backgroundColor to primaryC
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Change the color appearance of UIStatusbar.</p>
-
-<p>The default implementation of this method change the style of SearchBar to .minimal</p>
 
                       </div>
                       <div class="declaration">
@@ -981,8 +966,6 @@ This also set the default tintColor to textColor and backgroundColor to primaryC
                       <div class="abstract">
                         <p>Change the color appearance of UIStatusbar.</p>
 
-<p>The default implementation of this method change the barTintColor using primaryColor, tintColor to secondaryColor and unselectedItemTintColor using textColor</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -1000,7 +983,7 @@ This also set the default tintColor to textColor and backgroundColor to primaryC
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-18)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-07-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

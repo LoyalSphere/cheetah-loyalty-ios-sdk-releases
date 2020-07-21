@@ -6,6 +6,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-1.4.0] - 2020-07-20
+### Added
+- Added `WKWebView` delegate methods for decide policy for navigation response and action in `WebViewController` [#434]
+- Added Navigation title for `StatefulViewController` set in `ContentController` [#439]
+- `UIColor` extension methods for theme colors [#440]:
+	- Text Input
+	- Bar Item
+	- Disabled Button
+	- Highlighted Button
+- Added deselect and displaying cell collection view delegate methods to be overrideable in `CollectionController` [#442]
+- Added `TableController` and `TableViewController` [#443]
+- Added button tint color and button style in `ColorTheme` [#447]
+
+### Changed
+- Moved `configureListCell` after setting the text style in `ListCollectionController` [#436]
+- Set default disabled button color to light gray and default highlighted button color to primary [#433]
+- Changed property names of List and Carousel Item Protocols to prevent conflict [#438]
+- Updated Painter to use button tint color and button style [#447]
+- Changed convenience init to designated and override designated inits in DetailViewController and StatefulViewController [#449]
+
+### Removed
+- Removed setting of segmented control color in `SegmentedViewController` [#441]
+
+[#433]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/433
+[#434]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/434
+[#436]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/436
+[#438]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/438
+[#439]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/439
+[#440]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/440
+[#441]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/441
+[#442]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/442
+[#443]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/443
+[#447]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/447
+[#449]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/449
+
 ## [UI-1.3.0] - 2020-06-16
 ### Added
 - Added alert button text styles [#397]
@@ -252,6 +287,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- `FloatingTextView`
 	- `ThemeManager`
 
+[UI-1.4.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/34?closed=1
 [UI-1.3.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/26?closed=1
 [UI-1.2.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/22?closed=1
 [UI-1.2.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/18?closed=1

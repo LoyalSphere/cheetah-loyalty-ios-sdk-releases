@@ -14,7 +14,8 @@
     <a title="UITableViewCell Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (58% documented)</p>
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -40,6 +41,9 @@
                 <a href="../Classes/BaseCollectionController.html">BaseCollectionController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/BaseTableController.html">BaseTableController</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/CarouselCollectionController.html">CarouselCollectionController</a>
               </li>
               <li class="nav-group-task">
@@ -58,9 +62,6 @@
                 <a href="../Classes/CheetahColorThemePainter.html">CheetahColorThemePainter</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CollectionDataProvider.html">CollectionDataProvider</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/CollectionViewController.html">CollectionViewController</a>
               </li>
               <li class="nav-group-task">
@@ -68,6 +69,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/CountryCollectionViewCell.html">CountryCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DataProvider.html">DataProvider</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/DefaultLoadingViewController.html">DefaultLoadingViewController</a>
@@ -157,6 +161,12 @@
                 <a href="../Classes/StatesCollectionController.html">StatesCollectionController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/TableRowCell.html">TableRowCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableViewController.html">TableViewController</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/ThemeManager.html">ThemeManager</a>
               </li>
               <li class="nav-group-task">
@@ -181,6 +191,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CheetahImageLoader.html">CheetahImageLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ColorThemeButtonStyle.html">ColorThemeButtonStyle</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/FloatingTextFieldInputType.html">FloatingTextFieldInputType</a>
@@ -346,6 +359,12 @@
                 <a href="../Protocols/SelectionButtonDelegate.html">SelectionButtonDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/TableController.html">TableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TableRowCellPresentable.html">TableRowCellPresentable</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/TextAppearance.html">TextAppearance</a>
               </li>
               <li class="nav-group-task">
@@ -431,7 +450,7 @@
             <h1>UITableViewCell</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">UITableViewCell</span><span class="p">:</span> <span class="kt">TextDecorator</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">UITableViewCell</span></code></pre>
 
                 </div>
               </div>
@@ -440,6 +459,68 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So15UITableViewCellC16CheetahLoyaltyUIE7nibNameSSyFZ"></a>
+                    <a name="//apple_ref/swift/Method/nibName()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So15UITableViewCellC16CheetahLoyaltyUIE7nibNameSSyFZ">nibName()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the nib name based on the class name as a <code>String</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">nibName</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>String</code> value representing the nib name derived from its class name.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So15UITableViewCellC16CheetahLoyaltyUIE3nibSo5UINibCyFZ"></a>
+                    <a name="//apple_ref/swift/Method/nib()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So15UITableViewCellC16CheetahLoyaltyUIE3nibSo5UINibCyFZ">nib()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the nib based on the values returned by <code><a href="../Extensions/UITableViewCell.html#/s:So15UITableViewCellC16CheetahLoyaltyUIE7nibNameSSyFZ">UITableViewCell.nibName()</a></code> and <code><a href="../Extensions/Bundle.html#/s:So8NSBundleC16CheetahLoyaltyUIE6bundle11forFileNameABSgSS_tFZ">Bundle.bundle(forFileName:)</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kd">func</span> <span class="nf">nib</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UINib</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>UINib</code> retrived using <code><a href="../Extensions/UITableViewCell.html#/s:So15UITableViewCellC16CheetahLoyaltyUIE7nibNameSSyFZ">UITableViewCell.nibName()</a></code> and <code><a href="../Extensions/Bundle.html#/s:So8NSBundleC16CheetahLoyaltyUIE6bundle11forFileNameABSgSS_tFZ">Bundle.bundle(forFileName:)</a></code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -497,7 +578,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-18)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-07-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

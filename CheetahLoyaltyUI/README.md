@@ -9,36 +9,6 @@ The Cheetah Loyalty UI iOS SDK is a collection of UI components used for creatin
 
 ## Installation
 
-### Cocoapods
-
-1. Open a terminal window then add the private podspec repo to the Cocoapods installation by entering the following:
-
-```sh
-pod repo add CheetahLoyaltySDK https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk-podspecs.git
-```
-
-2. Add a source for the CheetahLoyaltySDK and add the `CheetahLoyaltyUI` pod in your podfile:
-
-```ruby
-platform :ios, '11.0'
-
-source 'https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk-podspecs.git'
-source 'https://github.com/CocoaPods/Specs.git'
-
-target '<YourApp>' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  pod 'CheetahLoyaltyUI'
-end
-```
-
-3. Open a terminal window to where your project and podfile is located and run the following to install the pod:
-
-```sh
-pod install
-```
-
 ### Manually
 
 1. [Download the CheetahLoyaltyUI SDK from the releases](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/releases).

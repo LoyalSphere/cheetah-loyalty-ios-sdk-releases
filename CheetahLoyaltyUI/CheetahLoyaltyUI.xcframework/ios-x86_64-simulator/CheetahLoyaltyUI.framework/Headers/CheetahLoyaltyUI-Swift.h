@@ -336,6 +336,7 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI22StatefulViewController")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidAppear:(BOOL)animated;
 @end
 
 @class UIStackView;
@@ -447,11 +448,11 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI20DetailViewController")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified periodLabel;
 /// The button use for providing action for the detail.
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified actionButton;
-- (void)actionButtonPressed:(UIButton * _Nonnull)sender;
-- (void)refreshControlValueChanged:(UIRefreshControl * _Nonnull)sender;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)actionButtonPressed:(UIButton * _Nonnull)sender;
+- (void)refreshControlValueChanged:(UIRefreshControl * _Nonnull)sender;
 @end
 
 @class UICollectionViewLayoutAttributes;
@@ -703,6 +704,57 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI23StateCollectionViewCell")
 
 
 
+SWIFT_CLASS("_TtC16CheetahLoyaltyUI12TableRowCell")
+@interface TableRowCell : UITableViewCell
+/// A container view for all elements except for the activitiy indicator.
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified containerView;
+/// An image view for the content.
+@property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified contentImageView;
+/// A stack view holding the title and subtitle label.
+@property (nonatomic, strong) IBOutlet UIStackView * _Null_unspecified contentStackView;
+/// The title label.
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified titleLabel;
+/// The subtitle label.
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified subtitleLabel;
+/// A general action button.
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified actionButton;
+/// An activity Indicator for loading content.
+@property (nonatomic, strong) IBOutlet UIActivityIndicatorView * _Null_unspecified activityIndicator;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+@class UITableView;
+
+/// A <code>StatefulViewController</code> subclass that manages a table view.
+/// This class has an associated value depending on the associated value of its table view controller.
+/// A refresh control is added in the table view to capture pull to refresh events which will call the <code>refreshContent(completion:)</code> of the table controller.
+/// If there is an error during the refresh, the <code>showRefreshError(title:, message:)</code> by default will show an alert with the error information.
+/// The localize description of the error will be passed as the message with no title.
+/// note:
+/// Being a subclass of a <code>NibViewController</code>, an associated nib file is required with outlets connected.
+SWIFT_CLASS("_TtC16CheetahLoyaltyUI19TableViewController")
+@interface TableViewController : StatefulViewController
+/// A stack view that holds both the collection view and search bar container view.
+/// The stack view’s axis is set to vertical by default.
+@property (nonatomic, strong) IBOutlet UIStackView * _Null_unspecified containerStackView;
+/// The search bar.
+@property (nonatomic, strong) IBOutlet UISearchBar * _Nullable searchBar;
+/// The table view
+@property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tableView;
+/// Actions to execute when the refresh control value has changed to refreshing.
+/// By default, this calls the refresh content of the table controller.
+- (void)refreshControlValueChanged:(UIRefreshControl * _Nonnull)sender;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
 
 
 
@@ -766,6 +818,8 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI26UpgradeCheckViewController")
 
 
 @class WKNavigation;
+@class WKNavigationResponse;
+@class WKNavigationAction;
 
 /// A <code>NibViewController</code> subclass that displays web content.
 /// This view controller holds a <code>WKWebView</code> and a <code>UIProgressView</code>.
@@ -779,6 +833,8 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI17WebViewController")
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationResponse:(WKNavigationResponse * _Nonnull)navigationResponse decisionHandler:(void (^ _Nonnull)(WKNavigationResponsePolicy))decisionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;

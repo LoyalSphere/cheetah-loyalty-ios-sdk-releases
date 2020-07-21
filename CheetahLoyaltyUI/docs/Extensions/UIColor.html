@@ -14,7 +14,8 @@
     <a title="UIColor Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (58% documented)</p>
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -40,6 +41,9 @@
                 <a href="../Classes/BaseCollectionController.html">BaseCollectionController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/BaseTableController.html">BaseTableController</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/CarouselCollectionController.html">CarouselCollectionController</a>
               </li>
               <li class="nav-group-task">
@@ -58,9 +62,6 @@
                 <a href="../Classes/CheetahColorThemePainter.html">CheetahColorThemePainter</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CollectionDataProvider.html">CollectionDataProvider</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/CollectionViewController.html">CollectionViewController</a>
               </li>
               <li class="nav-group-task">
@@ -68,6 +69,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/CountryCollectionViewCell.html">CountryCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DataProvider.html">DataProvider</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/DefaultLoadingViewController.html">DefaultLoadingViewController</a>
@@ -157,6 +161,12 @@
                 <a href="../Classes/StatesCollectionController.html">StatesCollectionController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/TableRowCell.html">TableRowCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableViewController.html">TableViewController</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/ThemeManager.html">ThemeManager</a>
               </li>
               <li class="nav-group-task">
@@ -181,6 +191,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CheetahImageLoader.html">CheetahImageLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ColorThemeButtonStyle.html">ColorThemeButtonStyle</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/FloatingTextFieldInputType.html">FloatingTextFieldInputType</a>
@@ -344,6 +357,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/SelectionButtonDelegate.html">SelectionButtonDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TableController.html">TableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TableRowCellPresentable.html">TableRowCellPresentable</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/TextAppearance.html">TextAppearance</a>
@@ -615,7 +634,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This instance of UIColor will get its value from the Accent color of the Theme.</p>
+                        <p>This instance of UIColor will get its value from the primary variant color of the Theme.</p>
 
                       </div>
                       <div class="declaration">
@@ -642,7 +661,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>This instance of UIColor will get its value from the text  color of the Theme.</p>
 
                       </div>
                       <div class="declaration">
@@ -650,6 +669,141 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">textColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So7UIColorC16CheetahLoyaltyUIE14textInputColorABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/textInputColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7UIColorC16CheetahLoyaltyUIE14textInputColorABvpZ">textInputColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This instance of UIColor will get its value from the text input color of the Theme.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">textInputColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So7UIColorC16CheetahLoyaltyUIE12barItemColorABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/barItemColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7UIColorC16CheetahLoyaltyUIE12barItemColorABvpZ">barItemColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This instance of UIColor will get its value from the bar item color of the Theme.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">barItemColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So7UIColorC16CheetahLoyaltyUIE19disabledButtonColorABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/disabledButtonColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7UIColorC16CheetahLoyaltyUIE19disabledButtonColorABvpZ">disabledButtonColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This instance of UIColor will get its value from the  disabled button color of the Theme.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">disabledButtonColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So7UIColorC16CheetahLoyaltyUIE22highlightedButtonColorABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/highlightedButtonColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7UIColorC16CheetahLoyaltyUIE22highlightedButtonColorABvpZ">highlightedButtonColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This instance of UIColor will get its value from the  highlighted button color of the Theme.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">highlightedButtonColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So7UIColorC16CheetahLoyaltyUIE15buttonTintColorABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/buttonTintColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So7UIColorC16CheetahLoyaltyUIE15buttonTintColorABvpZ">buttonTintColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">buttonTintColor</span><span class="p">:</span> <span class="kt">UIColor</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -688,7 +842,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-18)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-07-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

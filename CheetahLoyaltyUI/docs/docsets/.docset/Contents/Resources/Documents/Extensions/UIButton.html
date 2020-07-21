@@ -14,7 +14,8 @@
     <a title="UIButton Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (58% documented)</p>
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -40,6 +41,9 @@
                 <a href="../Classes/BaseCollectionController.html">BaseCollectionController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/BaseTableController.html">BaseTableController</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/CarouselCollectionController.html">CarouselCollectionController</a>
               </li>
               <li class="nav-group-task">
@@ -58,9 +62,6 @@
                 <a href="../Classes/CheetahColorThemePainter.html">CheetahColorThemePainter</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/CollectionDataProvider.html">CollectionDataProvider</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/CollectionViewController.html">CollectionViewController</a>
               </li>
               <li class="nav-group-task">
@@ -68,6 +69,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/CountryCollectionViewCell.html">CountryCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DataProvider.html">DataProvider</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/DefaultLoadingViewController.html">DefaultLoadingViewController</a>
@@ -157,6 +161,12 @@
                 <a href="../Classes/StatesCollectionController.html">StatesCollectionController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/TableRowCell.html">TableRowCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableViewController.html">TableViewController</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/ThemeManager.html">ThemeManager</a>
               </li>
               <li class="nav-group-task">
@@ -181,6 +191,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CheetahImageLoader.html">CheetahImageLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ColorThemeButtonStyle.html">ColorThemeButtonStyle</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/FloatingTextFieldInputType.html">FloatingTextFieldInputType</a>
@@ -346,6 +359,12 @@
                 <a href="../Protocols/SelectionButtonDelegate.html">SelectionButtonDelegate</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Protocols/TableController.html">TableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TableRowCellPresentable.html">TableRowCellPresentable</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Protocols/TextAppearance.html">TextAppearance</a>
               </li>
               <li class="nav-group-task">
@@ -501,6 +520,72 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:So8UIButtonC16CheetahLoyaltyUIE18setBackgroundColor5color3forySo7UIColorC_So14UIControlStateVtF"></a>
+                    <a name="//apple_ref/swift/Method/setBackgroundColor(color:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So8UIButtonC16CheetahLoyaltyUIE18setBackgroundColor5color3forySo7UIColorC_So14UIControlStateVtF">setBackgroundColor(color:for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Change the background color depending on the state.</p>
+
+<ul>
+<li>Calling this method and using color <strong>gray</strong> for <strong>disabled</strong> state will change the background color to gray whenever the button become disabled.</li>
+</ul><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This method does not actually change the background color but rather sets a background image of the given color on the specified state.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setBackgroundColor</span><span class="p">(</span><span class="nv">color</span><span class="p">:</span> <span class="kt">UIColor</span><span class="p">,</span> <span class="k">for</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">State</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>color</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Background color to use.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>state</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The state of the button.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:16CheetahLoyaltyUI19ButtonTextDecoratorP03setE10Appearance_4with3foryAA0eH0_p_SSSo14UIControlStateVtF"></a>
                     <a name="//apple_ref/swift/Method/setTextAppearance(_:with:for:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:16CheetahLoyaltyUI19ButtonTextDecoratorP03setE10Appearance_4with3foryAA0eH0_p_SSSo14UIControlStateVtF">setTextAppearance(_:with:for:)</a>
@@ -556,7 +641,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-06-18)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-07-21)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

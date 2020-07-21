@@ -87,10 +87,10 @@ extension UINavigationBar {
   @objc deinit
 }
 public protocol ListItemCellPresentable {
-  var image: UIKit.UIImage? { get }
-  var imageURL: Foundation.URL? { get }
-  var subtitle: Swift.String { get }
-  var title: Swift.String { get }
+  var listImage: UIKit.UIImage? { get }
+  var listImageURL: Foundation.URL? { get }
+  var listSubtitle: Swift.String { get }
+  var listTitle: Swift.String { get }
   func configureListCell(_ cell: CheetahLoyaltyUI.ListItemCell)
 }
 @objc open class ListItemCell : UIKit.UICollectionViewCell {
@@ -135,6 +135,7 @@ extension ListItemCell : CheetahLoyaltyUI.Loadable {
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
 @objc open class AppInfoViewController : CheetahLoyaltyUI.NibViewController {
@@ -178,6 +179,8 @@ extension ListItemCell : CheetahLoyaltyUI.Loadable {
   @objc open func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @objc open func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: Swift.Error)
   @objc open func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: Swift.Error)
+  @objc open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
+  @objc open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -300,16 +303,26 @@ public protocol ImagePickerPresenterDelegate : AnyObject {
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+public enum ColorThemeButtonStyle {
+  case outline, solid
+  public static func == (a: CheetahLoyaltyUI.ColorThemeButtonStyle, b: CheetahLoyaltyUI.ColorThemeButtonStyle) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
 public protocol ColorTheme {
   var primaryColor: UIKit.UIColor { get }
   var secondaryColor: UIKit.UIColor { get }
   var primaryVariantColor: UIKit.UIColor { get }
-  var disabledButtonColor: UIKit.UIColor? { get }
-  var highlightedButtonColor: UIKit.UIColor? { get }
+  var disabledButtonColor: UIKit.UIColor { get }
+  var highlightedButtonColor: UIKit.UIColor { get }
   var errorColor: UIKit.UIColor { get }
   var textColor: UIKit.UIColor { get }
   var textInputColor: UIKit.UIColor { get }
   var barItemColor: UIKit.UIColor { get }
+  var buttonTintColor: UIKit.UIColor { get }
+  var buttonStyle: CheetahLoyaltyUI.ColorThemeButtonStyle { get }
 }
 extension ColorTheme {
   public var textColor: UIKit.UIColor {
@@ -325,6 +338,18 @@ extension ColorTheme {
     get
   }
   public var barItemColor: UIKit.UIColor {
+    get
+  }
+  public var disabledButtonColor: UIKit.UIColor {
+    get
+  }
+  public var highlightedButtonColor: UIKit.UIColor {
+    get
+  }
+  public var buttonTintColor: UIKit.UIColor {
+    get
+  }
+  public var buttonStyle: CheetahLoyaltyUI.ColorThemeButtonStyle {
     get
   }
 }
@@ -365,15 +390,16 @@ public protocol DetailController : CheetahLoyaltyUI.ContentController {
     get
     set
   }
-  convenience public init(detailController: CheetahLoyaltyUI.DetailController, isRefreshable: Swift.Bool = true)
-  override open func setup()
-  open func setupDetails()
-  @objc open func actionButtonPressed(_ sender: UIKit.UIButton)
-  @objc open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = nil, empty: CheetahLoyaltyUI.ReloadableViewController? = nil, error: CheetahLoyaltyUI.ReloadableViewController? = nil)
+  public init(detailController: CheetahLoyaltyUI.DetailController, isRefreshable: Swift.Bool = true)
+  override open func setup()
+  open func setupDetails()
+  @objc open func actionButtonPressed(_ sender: UIKit.UIButton)
+  @objc open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
   @objc deinit
 }
 public protocol AlertEmbeddableViewControllerDelegate {
@@ -525,7 +551,7 @@ public protocol SegmentedController {
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-open class CollectionDataProvider<ItemType> {
+open class DataProvider<ItemType> {
   open var items: [[ItemType]]
   open var lastIndexPath: Foundation.IndexPath? {
     get
@@ -589,6 +615,33 @@ extension UICollectionViewFlowLayout {
   public static var dynamicList: CheetahLoyaltyUI.DynamicListCollectionViewFlowLayout {
     get
   }
+}
+@objc open class TableViewController : CheetahLoyaltyUI.StatefulViewController {
+  @objc @IBOutlet public var containerStackView: UIKit.UIStackView!
+  @objc @IBOutlet public var searchBar: UIKit.UISearchBar?
+  @objc @IBOutlet public var tableView: UIKit.UITableView!
+  open var refreshControl: UIKit.UIRefreshControl {
+    get
+    set
+  }
+  open var searchEnabled: Swift.Bool {
+    get
+    set
+  }
+  open var tableController: CheetahLoyaltyUI.TableController? {
+    get
+    set
+  }
+  convenience public init(tableController: CheetahLoyaltyUI.TableController?)
+  override open func setup()
+  open func setupSearchBar()
+  @objc open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
+  @objc deinit
 }
 @objc open class FloatingTextView : CheetahLoyaltyUI.GrowingTextView {
   open var title: Swift.String? {
@@ -870,6 +923,21 @@ extension UIColor {
   public static var textColor: UIKit.UIColor {
     get
   }
+  public static var textInputColor: UIKit.UIColor {
+    get
+  }
+  public static var barItemColor: UIKit.UIColor {
+    get
+  }
+  public static var disabledButtonColor: UIKit.UIColor {
+    get
+  }
+  public static var highlightedButtonColor: UIKit.UIColor {
+    get
+  }
+  public static var buttonTintColor: UIKit.UIColor {
+    get
+  }
 }
 extension UIView {
   public func embed(subview: UIKit.UIView)
@@ -881,6 +949,7 @@ extension UIView {
 }
 extension UIButton {
   public func setAttributedTitleString(_ title: Swift.String, for state: UIKit.UIControl.State)
+  public func setBackgroundColor(color: UIKit.UIColor, for state: UIKit.UIControl.State)
 }
 extension UIViewController {
   public func embed(child newChild: UIKit.UIViewController, in container: UIKit.UIView? = nil)
@@ -911,6 +980,10 @@ extension Bundle {
   }
 }
 extension UICollectionViewCell {
+  open class func nibName() -> Swift.String
+  open class func nib() -> UIKit.UINib
+}
+extension UITableViewCell {
   open class func nibName() -> Swift.String
   open class func nib() -> UIKit.UINib
 }
@@ -1152,10 +1225,10 @@ public enum FloatingTextFieldInputType {
   @objc deinit
 }
 public protocol CarouselItemCellPresentable {
-  var image: UIKit.UIImage? { get }
-  var imageURL: Foundation.URL? { get }
-  var title: Swift.String { get }
-  func configureListCell(_ cell: CheetahLoyaltyUI.CarouselItemCell)
+  var carouselImage: UIKit.UIImage? { get }
+  var carouselImageURL: Foundation.URL? { get }
+  var carouselTitle: Swift.String { get }
+  func configureCarouselCell(_ cell: CheetahLoyaltyUI.CarouselItemCell)
 }
 @objc open class CarouselItemCell : UIKit.UICollectionViewCell {
   @objc @IBOutlet public var imageView: UIKit.UIImageView!
@@ -1167,7 +1240,83 @@ public protocol CarouselItemCellPresentable {
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+public protocol TableController : CheetahLoyaltyUI.ContentController, UIKit.UISearchBarDelegate, UIKit.UITableViewDataSource, UIKit.UITableViewDataSourcePrefetching, UIKit.UITableViewDelegate {
+  var tableView: UIKit.UITableView? { get set }
+}
+open class BaseTableController<T> : ObjectiveC.NSObject, CheetahLoyaltyUI.TableController {
+  open var navigationItemTitle: Swift.String?
+  open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
+  open var tableViewController: CheetahLoyaltyUI.TableViewController? {
+    get
+  }
+  open var provider: CheetahLoyaltyUI.DataProvider<T>
+  open var filteredProvider: CheetahLoyaltyUI.DataProvider<T> {
+    get
+    set
+  }
+  open var isFiltered: Swift.Bool
+  open var tableView: UIKit.UITableView? {
+    get
+    set
+  }
+  open var isFetching: Swift.Bool
+  open var currentPage: Swift.Int
+  open var totalItems: Swift.Int
+  open var onLastPage: Swift.Bool {
+    get
+  }
+  open var loadCellIndexPath: Foundation.IndexPath {
+    get
+  }
+  @objc override dynamic public init()
+  public init(tableView: UIKit.UITableView? = nil)
+  open func setupTableView()
+  open func registerComponents()
+  open func dataItem(at indexPath: Foundation.IndexPath) -> T?
+  open func updateFilteredData(with searchTerm: Swift.String)
+  open func filteredData(with searchTerm: Swift.String) -> [T]
+  open func isLoadingCell(at indexPath: Foundation.IndexPath) -> Swift.Bool
+  open func visibleIndexPaths(from indexPaths: [Foundation.IndexPath]) -> [Foundation.IndexPath]
+  open func updateCollection(with newItems: [T])
+  @objc open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc open func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @objc open func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @objc open func tableView(_ tableView: UIKit.UITableView, willDisplayHeaderView view: UIKit.UIView, forSection section: Swift.Int)
+  @objc open func tableView(_ tableView: UIKit.UITableView, willDisplayFooterView view: UIKit.UIView, forSection section: Swift.Int)
+  @objc open func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @objc open func tableView(_ tableView: UIKit.UITableView, didEndDisplayingHeaderView view: UIKit.UIView, forSection section: Swift.Int)
+  @objc open func tableView(_ tableView: UIKit.UITableView, didEndDisplayingFooterView view: UIKit.UIView, forSection section: Swift.Int)
+  @objc open func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @objc open func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @objc open func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @objc open func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @objc open func tableView(_ tableView: UIKit.UITableView, estimatedHeightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @objc open func tableView(_ tableView: UIKit.UITableView, estimatedHeightForFooterInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @objc open func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @objc open func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
+  @objc open func tableView(_ tableView: UIKit.UITableView, willSelectRowAt indexPath: Foundation.IndexPath) -> Foundation.IndexPath?
+  @objc open func tableView(_ tableView: UIKit.UITableView, willDeselectRowAt indexPath: Foundation.IndexPath) -> Foundation.IndexPath?
+  @objc open func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @objc open func tableView(_ tableView: UIKit.UITableView, didDeselectRowAt indexPath: Foundation.IndexPath)
+  @objc open func tableView(_ tableView: UIKit.UITableView, prefetchRowsAt indexPaths: [Foundation.IndexPath])
+  @objc open func searchBarShouldBeginEditing(_ searchBar: UIKit.UISearchBar) -> Swift.Bool
+  @objc open func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
+  @objc open func searchBarShouldEndEditing(_ searchBar: UIKit.UISearchBar) -> Swift.Bool
+  @objc open func searchBarTextDidEndEditing(_ searchBar: UIKit.UISearchBar)
+  @objc open func searchBar(_ searchBar: UIKit.UISearchBar, textDidChange searchText: Swift.String)
+  @objc open func searchBar(_ searchBar: UIKit.UISearchBar, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @objc open func searchBarSearchButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @objc open func searchBarBookmarkButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @objc open func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @objc open func searchBarResultsListButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @objc open func searchBar(_ searchBar: UIKit.UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Swift.Int)
+  open func loadContent()
+  open func refreshContent()
+  @objc deinit
+}
 public protocol ContentController : AnyObject {
+  var navigationItemTitle: Swift.String? { get }
   var statefulViewController: CheetahLoyaltyUI.StatefulViewController? { get set }
   func loadContent()
   func refreshContent()
@@ -1189,12 +1338,13 @@ public protocol ContentController : AnyObject {
     get
     set
   }
-  convenience public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = nil, empty: CheetahLoyaltyUI.ReloadableViewController? = nil, error: CheetahLoyaltyUI.ReloadableViewController? = nil)
-  override open func setup()
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = nil, empty: CheetahLoyaltyUI.ReloadableViewController? = nil, error: CheetahLoyaltyUI.ReloadableViewController? = nil)
+  override open func setup()
+  @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
   @objc deinit
 }
 open class StatesCollectionController : CheetahLoyaltyUI.CountriesCollectionController {
@@ -1206,6 +1356,31 @@ open class StatesCollectionController : CheetahLoyaltyUI.CountriesCollectionCont
   @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
   @objc deinit
+}
+public protocol TableRowCellPresentable {
+  var rowImage: UIKit.UIImage? { get }
+  var rowImageURL: Foundation.URL? { get }
+  var rowSubtitle: Swift.String { get }
+  var rowTitle: Swift.String { get }
+  func configureRowCell(_ cell: CheetahLoyaltyUI.TableRowCell)
+}
+@objc open class TableRowCell : UIKit.UITableViewCell {
+  @objc @IBOutlet public var containerView: UIKit.UIView!
+  @objc @IBOutlet public var contentImageView: UIKit.UIImageView!
+  @objc @IBOutlet public var contentStackView: UIKit.UIStackView!
+  @objc @IBOutlet public var titleLabel: UIKit.UILabel!
+  @objc @IBOutlet public var subtitleLabel: UIKit.UILabel!
+  @objc @IBOutlet public var actionButton: UIKit.UIButton!
+  @objc @IBOutlet public var activityIndicator: UIKit.UIActivityIndicatorView!
+  public var loadMessage: Swift.String
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension TableRowCell : CheetahLoyaltyUI.Loadable {
+  public func showLoading()
+  public func hideLoading()
 }
 @objc open class MenuViewController : CheetahLoyaltyUI.CollectionViewController {
   @objc @IBOutlet public var logOutButton: UIKit.UIButton!
@@ -1223,6 +1398,7 @@ open class StatesCollectionController : CheetahLoyaltyUI.CountriesCollectionCont
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
 public typealias ImageLoaderCompletion = ((Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
@@ -1244,12 +1420,13 @@ public protocol CollectionController : CheetahLoyaltyUI.ContentController, UIKit
   var collectionView: UIKit.UICollectionView? { get set }
 }
 open class BaseCollectionController<T> : ObjectiveC.NSObject, CheetahLoyaltyUI.CollectionController {
+  open var navigationItemTitle: Swift.String?
   weak open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
   open var collectionViewController: CheetahLoyaltyUI.CollectionViewController? {
     get
   }
-  open var provider: CheetahLoyaltyUI.CollectionDataProvider<T>
-  open var filteredProvider: CheetahLoyaltyUI.CollectionDataProvider<T> {
+  open var provider: CheetahLoyaltyUI.DataProvider<T>
+  open var filteredProvider: CheetahLoyaltyUI.DataProvider<T> {
     get
     set
   }
@@ -1269,11 +1446,16 @@ open class BaseCollectionController<T> : ObjectiveC.NSObject, CheetahLoyaltyUI.C
   open func dataItem(at indexPath: Foundation.IndexPath) -> T?
   open func updateFilteredData(with searchTerm: Swift.String)
   open func filteredData(with searchTerm: Swift.String) -> [T]
-  @objc open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
   @objc open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
   @objc open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
   @objc open func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
   @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didDeselectItemAt indexPath: Foundation.IndexPath)
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, willDisplaySupplementaryView view: UIKit.UICollectionReusableView, forElementKind elementKind: Swift.String, at indexPath: Foundation.IndexPath)
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplayingSupplementaryView view: UIKit.UICollectionReusableView, forElementOfKind elementKind: Swift.String, at indexPath: Foundation.IndexPath)
   open func loadContent()
   open func refreshContent()
   @objc open func searchBarShouldBeginEditing(_ searchBar: UIKit.UISearchBar) -> Swift.Bool
@@ -1601,6 +1783,8 @@ public protocol LoadableViewController : UIKit.UIViewController, CheetahLoyaltyU
 }
 extension CheetahLoyaltyUI.ImagePickerPresenter.MediaType : Swift.Equatable {}
 extension CheetahLoyaltyUI.ImagePickerPresenter.MediaType : Swift.Hashable {}
+extension CheetahLoyaltyUI.ColorThemeButtonStyle : Swift.Equatable {}
+extension CheetahLoyaltyUI.ColorThemeButtonStyle : Swift.Hashable {}
 extension CheetahLoyaltyUI.AnalyticsLogger.LogKeys : Swift.Equatable {}
 extension CheetahLoyaltyUI.AnalyticsLogger.LogKeys : Swift.Hashable {}
 extension CheetahLoyaltyUI.AnalyticsLogger.LogKeys : Swift.RawRepresentable {}
