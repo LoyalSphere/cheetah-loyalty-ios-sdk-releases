@@ -303,7 +303,6 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI15SelectionButton")
 - (CGRect)imageRectForContentRect:(CGRect)contentRect SWIFT_WARN_UNUSED_RESULT;
 - (CGRect)titleRectForContentRect:(CGRect)contentRect SWIFT_WARN_UNUSED_RESULT;
 - (void)didTapButton;
-- (void)groupStateDidChange:(NSNotification * _Nonnull)notification;
 @end
 
 
@@ -361,11 +360,11 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI24CollectionViewController")
 @property (nonatomic, strong) IBOutlet UISearchBar * _Nullable searchBar;
 /// The collection view.
 @property (nonatomic, strong) IBOutlet UICollectionView * _Null_unspecified collectionView;
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
-- (void)refreshControlValueChanged:(UIRefreshControl * _Nonnull)sender;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
+- (void)refreshControlValueChanged:(UIRefreshControl * _Nonnull)sender;
 @end
 
 
@@ -377,8 +376,6 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI25CountryCollectionViewCell")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
-
-
 
 @class UIActivityIndicatorView;
 
@@ -393,10 +390,10 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI28DefaultLoadingViewController")
 @property (nonatomic, strong) IBOutlet UIActivityIndicatorView * _Null_unspecified activityIndicator;
 /// The loading label
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified loadingLabel;
-- (void)viewWillAppear:(BOOL)animated;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewWillAppear:(BOOL)animated;
 @end
 
 
@@ -413,10 +410,10 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI27DefaultReloadViewController")
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified messageLabel;
 /// The retry button.
 @property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified retryButton;
-- (void)viewWillAppear:(BOOL)animated;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewWillAppear:(BOOL)animated;
 @end
 
 @class UIScrollView;
@@ -667,11 +664,11 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI12RatingButton")
 /// Being a subclass of a <code>NibViewController</code>, an associated nib file is required with outlets connected.
 SWIFT_CLASS("_TtC16CheetahLoyaltyUI21ScannerViewController")
 @interface ScannerViewController : NibViewController <AVCaptureMetadataOutputObjectsDelegate>
-- (void)viewDidLayoutSubviews;
-- (void)captureOutput:(AVCaptureMetadataOutput * _Nonnull)output didOutputMetadataObjects:(NSArray<AVMetadataObject *> * _Nonnull)metadataObjects fromConnection:(AVCaptureConnection * _Nonnull)connection;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLayoutSubviews;
+- (void)captureOutput:(AVCaptureMetadataOutput * _Nonnull)output didOutputMetadataObjects:(NSArray<AVMetadataObject *> * _Nonnull)metadataObjects fromConnection:(AVCaptureConnection * _Nonnull)connection;
 @end
 
 @class UISegmentedControl;
@@ -744,15 +741,13 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI19TableViewController")
 @property (nonatomic, strong) IBOutlet UISearchBar * _Nullable searchBar;
 /// The table view
 @property (nonatomic, strong) IBOutlet UITableView * _Null_unspecified tableView;
-/// Actions to execute when the refresh control value has changed to refreshing.
-/// By default, this calls the refresh content of the table controller.
-- (void)refreshControlValueChanged:(UIRefreshControl * _Nonnull)sender;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+/// Actions to execute when the refresh control value has changed to refreshing.
+/// By default, this calls the refresh content of the table controller.
+- (void)refreshControlValueChanged:(UIRefreshControl * _Nonnull)sender;
 @end
-
-
 
 
 
@@ -829,15 +824,15 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI17WebViewController")
 @interface WebViewController : NibViewController <WKNavigationDelegate>
 /// The web view.
 @property (nonatomic, strong) IBOutlet WKWebView * _Null_unspecified webView;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationResponse:(WKNavigationResponse * _Nonnull)navigationResponse decisionHandler:(void (^ _Nonnull)(WKNavigationResponsePolicy))decisionHandler;
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #if __has_attribute(external_source_symbol)

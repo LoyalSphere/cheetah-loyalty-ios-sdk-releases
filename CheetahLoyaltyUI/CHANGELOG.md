@@ -6,6 +6,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-1.5.0] - 2020-08-10
+### Added
+- `NibViewController` back button customizability [#465]
+- Cheetah theme dark mode [#466], [#472]
+- Dependency to `CheetahLoyaltyUtils` [#471], [#475]
+
+
+### Changed
+- Number of lines to 0 of Message Label in Default Reload View Controller [#462]
+- Utility code transferred to `CheetahLoyaltyUtils` [#471], [#475]
+
+### Fixed
+- Initializer visibility for subclasses of View Controllers [#473]
+- Linter warnings [#468]
+
+[#462]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/462
+[#465]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/465
+[#466]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/466
+[#468]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/468
+[#471]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/471
+[#472]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/472
+[#473]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/473
+[#475]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/475
+[UI-1.5.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/41?closed=1
+
 ## [UI-1.4.0] - 2020-07-20
 ### Added
 - Added `WKWebView` delegate methods for decide policy for navigation response and action in `WebViewController` [#434]
@@ -40,6 +65,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#443]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/443
 [#447]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/447
 [#449]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/449
+[UI-1.4.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/34?closed=1
 
 ## [UI-1.3.0] - 2020-06-16
 ### Added
@@ -86,6 +112,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#418]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/418
 [#422]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/422
 [#424]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/424
+[UI-1.3.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/26?closed=1
 
 ## [UI-1.2.1] - 2020-05-07
 ### Added
@@ -114,6 +141,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#362]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/362
 [#364]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/364
 [#366]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/366
+[UI-1.2.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/22?closed=1
 
 ## [UI-1.2.0] - 2020-03-11
 ### Added
@@ -161,6 +189,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#336]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/336
 [#338]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/338
 [#345]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/345
+[UI-1.2.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/18?closed=1
 
 ## [UI-1.1.1] - 2019-12-18
 ### Added
@@ -186,6 +215,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#251]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/251
 [#234]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/234
 [#228]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/228
+[UI-1.1.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/11?closed=1
 
 ## [UI-1.1.0] - 2019-11-08
 ### Changed
@@ -197,6 +227,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [#212]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/212
 [#213]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/213
+[UI-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/9?closed=1
 
 ## [UI-1.0.2] - 2019-10-22
 ### Added
@@ -222,6 +253,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#203]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/203
 [#201]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/201
 [#195]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/195
+[UI-1.0.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/7?closed=1
 
 ## [UI-1.0.1] - 2019-09-30
 ### Added
@@ -260,6 +292,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#191]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/191
 [#192]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/192
 [#193]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/193
+[UI-1.0.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/4?closed=1
 
 ## [UI-1.0.0] - 2019-09-09
 ### Added
@@ -287,11 +320,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 	- `FloatingTextView`
 	- `ThemeManager`
 
-[UI-1.4.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/34?closed=1
-[UI-1.3.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/26?closed=1
-[UI-1.2.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/22?closed=1
-[UI-1.2.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/18?closed=1
-[UI-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/9?closed=1
-[UI-1.0.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/7?closed=1
-[UI-1.0.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/4?closed=1
 [UI-1.0.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/2?closed=1

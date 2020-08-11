@@ -3,6 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyUI
 import AVFoundation
 @_exported import CheetahLoyaltyUI
+import CheetahLoyaltyUtils
 import Foundation
 import MobileCoreServices
 import Photos
@@ -79,11 +80,11 @@ extension UINavigationBar {
   @objc @IBOutlet weak public var loadingLabel: UIKit.UILabel!
   public var delegate: CheetahLoyaltyUI.AlertEmbeddableViewControllerDelegate?
   open var loadingText: Swift.String?
-  override open func setup()
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override open func setup()
   @objc deinit
 }
 public protocol ListItemCellPresentable {
@@ -126,15 +127,15 @@ extension ListItemCell : CheetahLoyaltyUI.Loadable {
     get
     set
   }
-  convenience public init(collectionController: CheetahLoyaltyUI.CollectionController?)
-  override open func setup()
-  @objc override dynamic open func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
-  @objc open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
-  open func setupSearchBar()
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  public init(collectionController: CheetahLoyaltyUI.CollectionController?)
+  @objc override dynamic open func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  override open func setup()
+  @objc open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
+  open func setupSearchBar()
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
@@ -155,15 +156,15 @@ extension ListItemCell : CheetahLoyaltyUI.Loadable {
   public var descriptionText: Swift.String! {
     get
   }
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
   override open func setup()
   open func setupImages()
   open func setupDescription()
   open func setupInfo()
   open func adjustContentConstraintsIfNeeded()
-  @objc override dynamic public init()
-  override public init(nibName: Swift.String)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 @objc open class WebViewController : CheetahLoyaltyUI.NibViewController, WebKit.WKNavigationDelegate {
@@ -171,6 +172,10 @@ extension ListItemCell : CheetahLoyaltyUI.Loadable {
   open var url: Foundation.URL?
   open var webViewConfiguration: WebKit.WKWebViewConfiguration
   open var estimatedProgressObserver: Foundation.NSKeyValueObservation?
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
   override open func setup()
   open func setupEstimatedProgressObserver()
   open func showProgressView()
@@ -181,10 +186,6 @@ extension ListItemCell : CheetahLoyaltyUI.Loadable {
   @objc open func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: Swift.Error)
   @objc open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
   @objc open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
-  @objc override dynamic public init()
-  override public init(nibName: Swift.String)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 public protocol GrowingTextViewDelegate {
@@ -288,12 +289,12 @@ public protocol ImagePickerPresenterDelegate : AnyObject {
   public var upgradeNowText: Swift.String!
   public var upgradeLaterText: Swift.String!
   public var appLink: Swift.String!
-  override open func setup()
-  open func goToAppStore()
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override open func setup()
+  open func goToAppStore()
   @objc deinit
 }
 @objc final public class CheetahAppWindow : UIKit.UIWindow {
@@ -315,6 +316,7 @@ public protocol ColorTheme {
   var primaryColor: UIKit.UIColor { get }
   var secondaryColor: UIKit.UIColor { get }
   var primaryVariantColor: UIKit.UIColor { get }
+  var backgroundColor: UIKit.UIColor { get }
   var disabledButtonColor: UIKit.UIColor { get }
   var highlightedButtonColor: UIKit.UIColor { get }
   var errorColor: UIKit.UIColor { get }
@@ -332,6 +334,9 @@ extension ColorTheme {
     get
   }
   public var primaryVariantColor: UIKit.UIColor {
+    get
+  }
+  public var backgroundColor: UIKit.UIColor {
     get
   }
   public var errorColor: UIKit.UIColor {
@@ -441,27 +446,6 @@ extension AlertViewController {
   public static func upgradeCheck(heading: Swift.String = "UpgradeCheck.SuggestedUpgrade".localized, subheading: Swift.String = "UpgradeCheck.NewVersionAvailable".localized, upgradeNowText: Swift.String = "UpgradeCheck.UpgradeNow".localized, upgradeLaterText: Swift.String = "UpgradeCheck.UpgradeLater".localized, appLink: Swift.String, isFullScreen: Swift.Bool = true) -> CheetahLoyaltyUI.AlertViewController
   public static func loading(loadingText: Swift.String? = nil, isFullScreen: Swift.Bool = false) -> CheetahLoyaltyUI.AlertViewController
 }
-extension String {
-  public var localized: Swift.String {
-    get
-  }
-}
-public enum Localizer {
-  public static var languageOptions: [(code: Swift.String, name: Swift.String)] {
-    get
-  }
-  public static var defaultLanguage: Swift.String {
-    get
-  }
-  public static var currentLanguage: Swift.String {
-    get
-  }
-  public static func getLocalizedVersion(ofString string: Swift.String, in bundle: Foundation.Bundle) -> Swift.String
-  public static func stringFor(key: Swift.String) -> Swift.String
-  public static func getDisplayNameForLanguage(_ language: Swift.String) -> Swift.String
-  public static func setCurrentLanguage(_ language: Swift.String)
-  public static func resetCurrentLanguageToDefault()
-}
 public protocol Navigator : AnyObject {
   func navigate(to destinationViewController: UIKit.UIViewController, modally isModal: Swift.Bool, animated: Swift.Bool, completion: (() -> Swift.Void)?)
 }
@@ -500,7 +484,14 @@ extension AnalyticsManager {
   public func observeAnalyticsLogs()
   public func removeAnalyticsLogsObservers()
 }
+public enum BackButtonType {
+  case text(title: Swift.String)
+  case image(image: UIKit.UIImage?)
+  case iOSDefault
+}
 @objc open class NibViewController : UIKit.UIViewController {
+  public static var customBackButtonType: CheetahLoyaltyUI.BackButtonType
+  public var customBackButtonAction: (() -> Swift.Void)?
   open class var nibName: Swift.String {
     get
   }
@@ -510,6 +501,7 @@ extension AnalyticsManager {
   public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  open func setupCustomBackButton()
   @objc deinit
 }
 open class MenuCollectionController : CheetahLoyaltyUI.BaseCollectionController<CheetahLoyaltyUI.MenuItemCellPresentable> {
@@ -541,14 +533,15 @@ public protocol SegmentedController {
   @objc @IBOutlet open var segmentedControl: UIKit.UISegmentedControl!
   @objc @IBOutlet open var contentView: UIKit.UIView!
   open var segmentedController: CheetahLoyaltyUI.SegmentedController?
-  override open func setup()
-  open func reloadData()
-  open func reloadSegments()
-  open func selectSegment(atIndex index: Swift.Int)
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  public init(segmentedController: CheetahLoyaltyUI.SegmentedController)
+  override open func setup()
+  open func reloadData()
+  open func reloadSegments()
+  open func selectSegment(atIndex index: Swift.Int)
   @objc deinit
 }
 open class DataProvider<ItemType> {
@@ -632,14 +625,14 @@ extension UICollectionViewFlowLayout {
     get
     set
   }
-  convenience public init(tableController: CheetahLoyaltyUI.TableController?)
-  override open func setup()
-  open func setupSearchBar()
-  @objc open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  convenience public init(tableController: CheetahLoyaltyUI.TableController?)
+  override open func setup()
+  open func setupSearchBar()
+  @objc open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
@@ -729,13 +722,13 @@ extension UICollectionViewFlowLayout {
   public var itemBorderColor: UIKit.UIColor
   public var itemBorderWitdh: CoreGraphics.CGFloat
   public var didTapActionButton: ((Swift.Int) -> Swift.Void)?
-  override open func setup()
-  open func addButtons()
-  open func setupStackAxis()
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override open func setup()
+  open func addButtons()
+  open func setupStackAxis()
   @objc deinit
 }
 extension UIColor {
@@ -763,6 +756,7 @@ public protocol ColorThemePainter {
   func paintUIToolBar(using theme: CheetahLoyaltyUI.ColorTheme)
   func paintUISearchBar(using theme: CheetahLoyaltyUI.ColorTheme)
   func paintUITabBar(using theme: CheetahLoyaltyUI.ColorTheme)
+  func paintFloatingTextFields(using theme: CheetahLoyaltyUI.ColorTheme)
 }
 open class CheetahColorThemePainter : CheetahLoyaltyUI.ColorThemePainter {
   public init()
@@ -785,6 +779,7 @@ open class CheetahColorThemePainter : CheetahLoyaltyUI.ColorThemePainter {
   open func paintUIToolBar(using theme: CheetahLoyaltyUI.ColorTheme)
   open func paintUISearchBar(using theme: CheetahLoyaltyUI.ColorTheme)
   open func paintUITabBar(using theme: CheetahLoyaltyUI.ColorTheme)
+  open func paintFloatingTextFields(using theme: CheetahLoyaltyUI.ColorTheme)
   @objc deinit
 }
 public protocol MenuItemCellPresentable {
@@ -920,24 +915,28 @@ extension UIColor {
   public static var primaryVariant: UIKit.UIColor {
     get
   }
-  public static var textColor: UIKit.UIColor {
+  public static var text: UIKit.UIColor {
     get
   }
-  public static var textInputColor: UIKit.UIColor {
+  public static var textInput: UIKit.UIColor {
     get
   }
-  public static var barItemColor: UIKit.UIColor {
+  public static var barItem: UIKit.UIColor {
     get
   }
-  public static var disabledButtonColor: UIKit.UIColor {
+  public static var disabledButton: UIKit.UIColor {
     get
   }
-  public static var highlightedButtonColor: UIKit.UIColor {
+  public static var highlightedButton: UIKit.UIColor {
     get
   }
-  public static var buttonTintColor: UIKit.UIColor {
+  public static var buttonTint: UIKit.UIColor {
     get
   }
+  public static var background: UIKit.UIColor {
+    get
+  }
+  public static func fromMainOrCheetah(named: Swift.String) -> UIKit.UIColor?
 }
 extension UIView {
   public func embed(subview: UIKit.UIView)
@@ -973,11 +972,6 @@ extension Bundle {
   public static var CheetahLoyaltyUI: Foundation.Bundle? {
     get
   }
-  public static func bundle(forResource resource: Swift.String?, withExtension resourceExtension: Swift.String?) -> Foundation.Bundle?
-  public static func bundle(forFileName fileName: Swift.String) -> Foundation.Bundle?
-  public static var cheetahBundles: [Foundation.Bundle] {
-    get
-  }
 }
 extension UICollectionViewCell {
   open class func nibName() -> Swift.String
@@ -987,80 +981,24 @@ extension UITableViewCell {
   open class func nibName() -> Swift.String
   open class func nib() -> UIKit.UINib
 }
-extension String {
-  public var youtubeId: Swift.String? {
-    get
-  }
-  public var firstUrl: Foundation.URL? {
-    get
-  }
-  public func firstMatchForRegEx(_ pattern: Swift.String) -> Swift.String?
-  public var attributedHTMLString: Foundation.NSAttributedString? {
-    get
-  }
-  public var strippedCSS: Swift.String {
-    get
-  }
-  public var strippedHTML: Swift.String {
-    get
-  }
-  public var isValidURL: Swift.Bool {
-    get
-  }
-  public var isValidEmail: Swift.Bool {
-    get
-  }
-  public var isValidPhoneNumber: Swift.Bool {
-    get
-  }
-  public var isBlank: Swift.Bool {
-    get
-  }
-  public static func createPeriod(startDate: Swift.String, endDate: Swift.String, withFormat format: Swift.String = Date.CheetahStringFormat) -> Swift.String
-}
-extension Array {
-  public func appending(_ newElement: Element) -> [Element]
-  public func removing(at index: Swift.Int) -> [Element]
-  mutating public func move(at index: Swift.Array<Element>.Index, to newIndex: Swift.Array<Element>.Index)
-}
-extension Array where Element : Swift.Equatable {
-  mutating public func move(_ item: Element, to newIndex: Swift.Array<Element>.Index)
-  mutating public func moveToStart(item: Element)
-  mutating public func moveToEnd(item: Element)
-}
 extension DispatchQueue {
   public static func mainAsyncIfNeeded(execute work: @escaping @convention(block) () -> Swift.Void)
-}
-extension Date {
-  public static let CheetahDateFormat: Swift.String
-  public static let CheetahStringFormat: Swift.String
-  public static func dateFrom(string: Swift.String, withFormat format: Swift.String) -> Foundation.Date?
-  public static func dateFrom(timestampString timestamp: Swift.String) -> Foundation.Date?
-  public static func dateFrom(formattedString string: Swift.String) -> Foundation.Date?
-  public func string(withFormat format: Swift.String, locale: Foundation.Locale? = nil) -> Swift.String
-  public var timestampString: Swift.String {
-    get
-  }
-  public func localizedString(withFormat format: Swift.String) -> Swift.String
-  public func formattedStringWithDate(showDate: Swift.Bool, showTime: Swift.Bool, timeZone: Foundation.TimeZone = .current) -> Swift.String?
-  public func numberOfYears(fromDate date: Foundation.Date) -> Swift.Int?
 }
 extension UIImage {
   public static func fromMainOrCheetah(named: Swift.String) -> UIKit.UIImage?
 }
-extension UIDevice {
-  public static var deviceNamesList: [Swift.String : Swift.String] {
+public enum UINotification : CheetahLoyaltyUtils.CheetahNotification {
+  case analyticsLogEvent
+  case analyticsLogScreen
+  case selectionButtonGroupStateChange
+  public var name: Swift.String {
     get
   }
-  public static var name: Swift.String {
+  public static func == (a: CheetahLoyaltyUI.UINotification, b: CheetahLoyaltyUI.UINotification) -> Swift.Bool
+  public var hashValue: Swift.Int {
     get
   }
-}
-extension NSNotification.Name {
-  public static let analyticsLogEvent: Foundation.Notification.Name
-  public static let analyticsLogScreen: Foundation.Notification.Name
-  public static let selectionButtonGroupStateChange: Foundation.Notification.Name
-  public static let languageChange: Foundation.Notification.Name
+  public func hash(into hasher: inout Swift.Hasher)
 }
 extension UIFont {
   public static var largeTitle: UIKit.UIFont {
@@ -1391,14 +1329,13 @@ extension TableRowCell : CheetahLoyaltyUI.Loadable {
     get
     set
   }
-  convenience public init(collectionController: CheetahLoyaltyUI.CollectionController?)
   convenience public init(items: [CheetahLoyaltyUI.MenuItemCellPresentable], selection: ((CheetahLoyaltyUI.MenuViewController?, CheetahLoyaltyUI.MenuItemCellPresentable) -> Swift.Void)?, logOut: ((CheetahLoyaltyUI.MenuViewController?) -> Swift.Void)?)
   open func setupLogoutButton()
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
+  override public init(collectionController: CheetahLoyaltyUI.CollectionController?)
   @objc deinit
 }
 public typealias ImageLoaderCompletion = ((Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
@@ -1521,8 +1458,7 @@ open class CarouselCollectionController<T> : CheetahLoyaltyUI.BaseCollectionCont
 public struct CheetahColorTheme : CheetahLoyaltyUI.ColorTheme {
   public let primaryColor: UIKit.UIColor
   public let secondaryColor: UIKit.UIColor
-  public var disabledButtonColor: UIKit.UIColor?
-  public var highlightedButtonColor: UIKit.UIColor?
+  public let primaryVariantColor: UIKit.UIColor
 }
 public struct CheetahTextTheme : CheetahLoyaltyUI.TextTheme {
   public var largeTitle: CheetahLoyaltyUI.TextAppearance
@@ -1657,12 +1593,12 @@ public protocol ReloadableViewController : UIKit.UIViewController, CheetahLoyalt
   @objc @IBOutlet public var retryButton: UIKit.UIButton!
   open var reload: (() -> Swift.Void)?
   open var reloadMessage: Swift.String
-  @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
-  override open func setup()
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  override open func setup()
   @objc deinit
 }
 open class CountriesCollectionController : CheetahLoyaltyUI.BaseCollectionController<CheetahLoyaltyUI.CountriesCollectionController.ItemTuple> {
@@ -1708,6 +1644,7 @@ open class CountriesCollectionController : CheetahLoyaltyUI.BaseCollectionContro
   open var shouldNotify: Swift.Bool
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
   open func initializeSelectionButton()
   @objc override dynamic open var intrinsicContentSize: CoreGraphics.CGSize {
     @objc get
@@ -1719,8 +1656,7 @@ open class CountriesCollectionController : CheetahLoyaltyUI.BaseCollectionContro
   open func notifyGroupMembers()
   open func groupStateDidChange(by selectionButton: CheetahLoyaltyUI.SelectionButton)
   @objc open func didTapButton()
-  @objc open func groupStateDidChange(_ notification: Foundation.Notification)
-  @objc deinit
+  open func groupStateDidChange(_ notification: Foundation.Notification)
 }
 public protocol SelectionButtonDelegate {
   func willChange(_ selectionButton: CheetahLoyaltyUI.SelectionButton, isSelected: Swift.Bool) -> Swift.Bool
@@ -1740,14 +1676,14 @@ public protocol LoadableViewController : UIKit.UIViewController, CheetahLoyaltyU
   @objc @IBOutlet public var activityIndicator: UIKit.UIActivityIndicatorView!
   @objc @IBOutlet public var loadingLabel: UIKit.UILabel!
   open var loadMessage: Swift.String
-  @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
-  override open func setup()
-  open func showLoading()
-  open func hideLoading()
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  override open func setup()
+  open func showLoading()
+  open func hideLoading()
   @objc deinit
 }
 @objc open class RatingButton : CheetahLoyaltyUI.SelectionButton {
@@ -1767,18 +1703,18 @@ public protocol LoadableViewController : UIKit.UIViewController, CheetahLoyaltyU
   open var metadataOutput: AVFoundation.AVCaptureMetadataOutput?
   open var metadataObjectTypes: [AVFoundation.AVMetadataObject.ObjectType]
   open var captureAction: ((CheetahLoyaltyUI.ScannerViewController, Swift.String) -> Swift.Void)?
-  override open func setup()
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc override dynamic open func viewDidLayoutSubviews()
+  override open func setup()
   open func setupHelp()
   open func setupCaptor()
   open func startScanning()
   open func stopScanning()
   open func scanFailed(with title: Swift.String?, message: Swift.String?)
   @objc open func metadataOutput(_ output: AVFoundation.AVCaptureMetadataOutput, didOutput metadataObjects: [AVFoundation.AVMetadataObject], from connection: AVFoundation.AVCaptureConnection)
-  @objc override dynamic public init()
-  override public init(nibName: Swift.String)
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 extension CheetahLoyaltyUI.ImagePickerPresenter.MediaType : Swift.Equatable {}
@@ -1793,3 +1729,5 @@ extension CheetahLoyaltyUI.FloatingTextFieldWithIcon.IconPosition : Swift.Hashab
 extension CheetahLoyaltyUI.FloatingTextFieldWithIcon.IconPosition : Swift.RawRepresentable {}
 extension CheetahLoyaltyUI.ThemeManager.TextStyle : Swift.Equatable {}
 extension CheetahLoyaltyUI.ThemeManager.TextStyle : Swift.Hashable {}
+extension CheetahLoyaltyUI.UINotification : Swift.Equatable {}
+extension CheetahLoyaltyUI.UINotification : Swift.Hashable {}

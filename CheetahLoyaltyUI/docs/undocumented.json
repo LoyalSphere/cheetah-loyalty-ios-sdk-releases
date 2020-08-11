@@ -2,100 +2,114 @@
   "warnings": [
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/AlertViewController.swift",
-      "line": 20,
+      "line": 22,
       "symbol": "AlertEmbeddableViewController.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/AlertViewController.swift",
-      "line": 69,
+      "line": 71,
       "symbol": "AlertViewController.init(nibName:bundle:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/AlertViewController.swift",
-      "line": 74,
+      "line": 76,
       "symbol": "AlertViewController.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/AlertViewController.swift",
-      "line": 79,
+      "line": 81,
       "symbol": "AlertViewController.init(embeddedView:isFullScreen:fitEmbeddedViewToLayout:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/AlertViewController.swift",
-      "line": 248,
+      "line": 250,
       "symbol": "AlertViewController.loading(loadingText:isFullScreen:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/GenericAlertViewController/GenericAlertViewController.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "GenericAlertViewController.headingLabel",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/GenericAlertViewController/GenericAlertViewController.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "GenericAlertViewController.subheadingLabel",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/GenericAlertViewController/GenericAlertViewController.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "GenericAlertViewController.stackView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/GenericAlertViewController/GenericAlertViewController.swift",
-      "line": 17,
+      "line": 19,
       "symbol": "GenericAlertViewController.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/GenericAlertViewController/GenericAlertViewController.swift",
-      "line": 18,
+      "line": 20,
       "symbol": "GenericAlertViewController.heading",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/GenericAlertViewController/GenericAlertViewController.swift",
-      "line": 19,
+      "line": 21,
       "symbol": "GenericAlertViewController.subheading",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/GenericAlertViewController/GenericAlertViewController.swift",
-      "line": 20,
+      "line": 22,
       "symbol": "GenericAlertViewController.buttons",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/GenericAlertViewController/GenericAlertViewController.swift",
-      "line": 21,
+      "line": 23,
       "symbol": "GenericAlertViewController.itemBorderColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/GenericAlertViewController/GenericAlertViewController.swift",
-      "line": 22,
+      "line": 24,
       "symbol": "GenericAlertViewController.itemBorderWitdh",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/GenericAlertViewController/GenericAlertViewController.swift",
+      "line": 39,
+      "symbol": "GenericAlertViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/GenericAlertViewController/GenericAlertViewController.swift",
+      "line": 43,
+      "symbol": "GenericAlertViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -134,213 +148,255 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/LoadingAlertViewController/LoadingAlertViewController.swift",
+      "line": 31,
+      "symbol": "LoadingAlertViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/LoadingAlertViewController/LoadingAlertViewController.swift",
+      "line": 35,
+      "symbol": "LoadingAlertViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "UpgradeCheckViewController.titleLabel",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "UpgradeCheckViewController.messageTextView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "UpgradeCheckViewController.upgradeNowButton",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "UpgradeCheckViewController.upgradeLaterButton",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "UpgradeCheckViewController.photoImageView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
-      "line": 19,
+      "line": 21,
       "symbol": "UpgradeCheckViewController.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
-      "line": 20,
+      "line": 22,
       "symbol": "UpgradeCheckViewController.isForced",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
-      "line": 21,
+      "line": 23,
       "symbol": "UpgradeCheckViewController.heading",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
-      "line": 22,
+      "line": 24,
       "symbol": "UpgradeCheckViewController.subheading",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
-      "line": 23,
+      "line": 25,
       "symbol": "UpgradeCheckViewController.upgradeNowText",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
-      "line": 24,
+      "line": 26,
       "symbol": "UpgradeCheckViewController.upgradeLaterText",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
-      "line": 25,
+      "line": 27,
       "symbol": "UpgradeCheckViewController.appLink",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
+      "line": 38,
+      "symbol": "UpgradeCheckViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AlertViewController/UpgradeCheckViewController/UpgradeCheckViewController.swift",
+      "line": 42,
+      "symbol": "UpgradeCheckViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Analytics/Analytics.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "AnalyticsLogger.LogKeys",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Analytics/Analytics.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "AnalyticsLogger.LogKeys.eventName",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Analytics/Analytics.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "AnalyticsLogger.LogKeys.screenName",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Analytics/Analytics.swift",
-      "line": 18,
+      "line": 19,
       "symbol": "AnalyticsLogger.LogKeys.screenClass",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 9,
+      "line": 11,
       "symbol": "AppInfoViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 11,
+      "line": 14,
       "symbol": "AppInfoViewController.logoImageViewHeightConstraint",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 12,
+      "line": 15,
       "symbol": "AppInfoViewController.logoImageViewAspectRatioConstraint",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 13,
+      "line": 16,
       "symbol": "AppInfoViewController.logoImageViewTopSpaceConstraint",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 14,
+      "line": 17,
       "symbol": "AppInfoViewController.descriptionLabelTopSpaceConstraint",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 15,
+      "line": 18,
       "symbol": "AppInfoViewController.infoLabelTopSpaceConstraint",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 16,
+      "line": 19,
       "symbol": "AppInfoViewController.infoLabelBottomSpaceConstraint",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 18,
+      "line": 21,
       "symbol": "AppInfoViewController.backgroundImageView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 19,
+      "line": 22,
       "symbol": "AppInfoViewController.logoImageView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 20,
+      "line": 23,
       "symbol": "AppInfoViewController.containerView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 21,
+      "line": 24,
       "symbol": "AppInfoViewController.descriptionLabel",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 22,
+      "line": 25,
       "symbol": "AppInfoViewController.infoLabel",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 24,
+      "line": 28,
       "symbol": "AppInfoViewController.backgroundImage",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
-      "line": 25,
+      "line": 29,
       "symbol": "AppInfoViewController.logoImage",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
+      "line": 45,
+      "symbol": "AppInfoViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/AppInfoViewController/AppInfoViewController.swift",
+      "line": 49,
+      "symbol": "AppInfoViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -352,238 +408,252 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 69,
+      "line": 70,
       "symbol": "BaseCollectionController.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 132,
+      "line": 133,
       "symbol": "BaseCollectionController.collectionView(_:numberOfItemsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 139,
+      "line": 140,
       "symbol": "BaseCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 143,
+      "line": 144,
       "symbol": "BaseCollectionController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 150,
+      "line": 151,
       "symbol": "BaseCollectionController.collectionView(_:viewForSupplementaryElementOfKind:at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 157,
+      "line": 158,
       "symbol": "BaseCollectionController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 159,
+      "line": 160,
       "symbol": "BaseCollectionController.collectionView(_:didDeselectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 161,
+      "line": 162,
       "symbol": "BaseCollectionController.collectionView(_:willDisplay:forItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 163,
+      "line": 164,
       "symbol": "BaseCollectionController.collectionView(_:willDisplaySupplementaryView:forElementKind:at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 165,
+      "line": 166,
       "symbol": "BaseCollectionController.collectionView(_:didEndDisplaying:forItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 167,
+      "line": 168,
       "symbol": "BaseCollectionController.collectionView(_:didEndDisplayingSupplementaryView:forElementOfKind:at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 177,
+      "line": 178,
       "symbol": "BaseCollectionController.searchBarShouldBeginEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 181,
+      "line": 182,
       "symbol": "BaseCollectionController.searchBarTextDidBeginEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 183,
+      "line": 184,
       "symbol": "BaseCollectionController.searchBarShouldEndEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 187,
+      "line": 188,
       "symbol": "BaseCollectionController.searchBarTextDidEndEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 189,
+      "line": 190,
       "symbol": "BaseCollectionController.searchBar(_:textDidChange:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 193,
+      "line": 194,
       "symbol": "BaseCollectionController.searchBar(_:shouldChangeTextIn:replacementText:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 197,
+      "line": 198,
       "symbol": "BaseCollectionController.searchBarSearchButtonClicked(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 199,
+      "line": 200,
       "symbol": "BaseCollectionController.searchBarBookmarkButtonClicked(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 201,
+      "line": 202,
       "symbol": "BaseCollectionController.searchBarCancelButtonClicked(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 203,
+      "line": 204,
       "symbol": "BaseCollectionController.searchBarResultsListButtonClicked(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 205,
+      "line": 206,
       "symbol": "BaseCollectionController.searchBar(_:selectedScopeButtonIndexDidChange:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 347,
+      "line": 348,
       "symbol": "ListCollectionController.refreshContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 353,
+      "line": 354,
       "symbol": "ListCollectionController.collectionView(_:numberOfItemsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 361,
+      "line": 362,
       "symbol": "ListCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 388,
+      "line": 389,
       "symbol": "ListCollectionController.collectionView(_:prefetchItemsAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 482,
+      "line": 483,
       "symbol": "CarouselCollectionController.pageControlValueChanged(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 488,
+      "line": 489,
       "symbol": "CarouselCollectionController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 492,
+      "line": 493,
       "symbol": "CarouselCollectionController.collectionView(_:numberOfItemsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 499,
+      "line": 500,
       "symbol": "CarouselCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 521,
+      "line": 522,
       "symbol": "CarouselCollectionController.scrollViewDidEndDecelerating(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionController.swift",
-      "line": 526,
+      "line": 527,
       "symbol": "CarouselCollectionController.scrollViewDidEndScrollingAnimation(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionViewController.swift",
-      "line": 81,
+      "line": 70,
+      "symbol": "CollectionViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionViewController.swift",
+      "line": 74,
+      "symbol": "CollectionViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionViewController.swift",
+      "line": 89,
       "symbol": "CollectionViewController.viewWillTransition(to:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CollectionViewController/CollectionViewController.swift",
-      "line": 90,
+      "line": 107,
       "symbol": "CollectionViewController.refreshControlValueChanged(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -681,21 +751,21 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CountriesStates/CountriesCollectionController.swift",
-      "line": 81,
+      "line": 82,
       "symbol": "CountriesCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CountriesStates/CountriesCollectionController.swift",
-      "line": 94,
+      "line": 95,
       "symbol": "CountriesCollectionController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CountriesStates/CountriesCollectionController.swift",
-      "line": 100,
+      "line": 101,
       "symbol": "CountriesCollectionController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -716,14 +786,14 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CountriesStates/StatesCollectionController.swift",
-      "line": 57,
+      "line": 58,
       "symbol": "StatesCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CountriesStates/StatesCollectionController.swift",
-      "line": 70,
+      "line": 71,
       "symbol": "StatesCollectionController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -779,30 +849,16 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/ImagePickerPresenter/ImagePickerPresenter.swift",
-      "line": 101,
+      "line": 102,
       "symbol": "ImagePickerPresenter.imagePickerControllerDidCancel(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/ImagePickerPresenter/ImagePickerPresenter.swift",
-      "line": 106,
+      "line": 107,
       "symbol": "ImagePickerPresenter.imagePickerController(_:didFinishPickingMediaWithInfo:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Localization/Localizer.swift",
-      "line": 12,
-      "symbol": "String.localized",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Localization/Localizer.swift",
-      "line": 17,
-      "symbol": "Localizer",
-      "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
@@ -828,78 +884,197 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NativeExtensions.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "UIColor.hexDescription",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NativeExtensions.swift",
-      "line": 24,
+      "line": 25,
       "symbol": "UIColor.hexWithAlphaDescription",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NativeExtensions.swift",
-      "line": 30,
+      "line": 31,
       "symbol": "UIColor.init(hex:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NativeExtensions.swift",
-      "line": 107,
-      "symbol": "UIColor.buttonTintColor",
+      "line": 89,
+      "symbol": "UIColor.buttonTint",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NativeExtensions.swift",
-      "line": 151,
+      "line": 93,
+      "symbol": "UIColor.background",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NativeExtensions.swift",
+      "line": 177,
       "symbol": "UIView.cornerRadius",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NativeExtensions.swift",
+      "line": 482,
+      "symbol": "UINotification",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NativeExtensions.swift",
+      "line": 484,
+      "symbol": "UINotification.analyticsLogEvent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NativeExtensions.swift",
+      "line": 485,
+      "symbol": "UINotification.analyticsLogScreen",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NativeExtensions.swift",
+      "line": 486,
+      "symbol": "UINotification.selectionButtonGroupStateChange",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NibViewController.swift",
-      "line": 16,
+      "line": 12,
+      "symbol": "BackButtonType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NibViewController.swift",
+      "line": 13,
+      "symbol": "BackButtonType.text(title:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NibViewController.swift",
+      "line": 14,
+      "symbol": "BackButtonType.image(image:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NibViewController.swift",
+      "line": 15,
+      "symbol": "BackButtonType.iOSDefault",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NibViewController.swift",
+      "line": 23,
+      "symbol": "NibViewController.customBackButtonType",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NibViewController.swift",
+      "line": 24,
+      "symbol": "NibViewController.customBackButtonAction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NibViewController.swift",
+      "line": 26,
       "symbol": "NibViewController.nibName",
       "symbol_kind": "source.lang.swift.decl.var.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NibViewController.swift",
-      "line": 23,
+      "line": 33,
       "symbol": "NibViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NibViewController.swift",
-      "line": 49,
+      "line": 60,
       "symbol": "NibViewController.init(nibName:bundle:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NibViewController.swift",
-      "line": 53,
+      "line": 64,
       "symbol": "NibViewController.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/NibViewController.swift",
+      "line": 68,
+      "symbol": "NibViewController.setupCustomBackButton()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/ScannerViewController/ScannerViewController.swift",
-      "line": 73,
+      "line": 80,
+      "symbol": "ScannerViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/ScannerViewController/ScannerViewController.swift",
+      "line": 84,
+      "symbol": "ScannerViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/ScannerViewController/ScannerViewController.swift",
+      "line": 89,
       "symbol": "ScannerViewController.viewDidLayoutSubviews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/ScannerViewController/ScannerViewController.swift",
-      "line": 163,
+      "line": 186,
       "symbol": "ScannerViewController.metadataOutput(_:didOutput:from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SegmentedViewController/SegmentedViewController.swift",
+      "line": 65,
+      "symbol": "SegmentedViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SegmentedViewController/SegmentedViewController.swift",
+      "line": 69,
+      "symbol": "SegmentedViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SegmentedViewController/SegmentedViewController.swift",
+      "line": 73,
+      "symbol": "SegmentedViewController.init(segmentedController:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -947,196 +1122,224 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 11,
+      "line": 12,
       "symbol": "SelectionButton",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "SelectionButton.groupName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "SelectionButton.isSelected",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 24,
+      "line": 25,
       "symbol": "SelectionButton.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 26,
+      "line": 27,
       "symbol": "SelectionButton.titleColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 32,
+      "line": 33,
       "symbol": "SelectionButton.selectedTitleColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 38,
+      "line": 39,
       "symbol": "SelectionButton.imageColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 44,
+      "line": 45,
       "symbol": "SelectionButton.selectedImageColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 50,
+      "line": 51,
       "symbol": "SelectionButton.adjustsImageWithTitle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 52,
+      "line": 53,
       "symbol": "SelectionButton.shouldNotify",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 55,
+      "line": 58,
       "symbol": "SelectionButton.init(frame:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 60,
+      "line": 63,
       "symbol": "SelectionButton.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 65,
+      "line": 74,
       "symbol": "SelectionButton.initializeSelectionButton()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 81,
+      "line": 95,
       "symbol": "SelectionButton.intrinsicContentSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 89,
+      "line": 103,
       "symbol": "SelectionButton.imageRect(forContentRect:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 122,
+      "line": 136,
       "symbol": "SelectionButton.titleRect(forContentRect:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 146,
+      "line": 160,
       "symbol": "SelectionButton.setTitleColors()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 151,
+      "line": 165,
       "symbol": "SelectionButton.notifyGroupMembers()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 156,
+      "line": 171,
       "symbol": "SelectionButton.groupStateDidChange(by:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 160,
+      "line": 175,
       "symbol": "SelectionButton.didTapButton()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 171,
+      "line": 185,
       "symbol": "SelectionButton.groupStateDidChange(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 183,
+      "line": 197,
       "symbol": "SelectionButtonDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 184,
+      "line": 198,
       "symbol": "SelectionButtonDelegate.willChange(_:isSelected:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 185,
+      "line": 199,
       "symbol": "SelectionButtonDelegate.didTap(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 188,
+      "line": 202,
       "symbol": "SelectionButtonDelegate",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/SelectionButton.swift",
-      "line": 189,
+      "line": 203,
       "symbol": "SelectionButtonDelegate.willChange(_:isSelected:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/StatefulViewController/LoadableViewController.swift",
-      "line": 42,
+      "line": 53,
+      "symbol": "DefaultLoadingViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/StatefulViewController/LoadableViewController.swift",
+      "line": 57,
+      "symbol": "DefaultLoadingViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/StatefulViewController/LoadableViewController.swift",
+      "line": 62,
       "symbol": "DefaultLoadingViewController.viewWillAppear(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/StatefulViewController/ReloadableViewController.swift",
-      "line": 43,
+      "line": 55,
+      "symbol": "DefaultReloadViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/StatefulViewController/ReloadableViewController.swift",
+      "line": 59,
+      "symbol": "DefaultReloadViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/StatefulViewController/ReloadableViewController.swift",
+      "line": 64,
       "symbol": "DefaultReloadViewController.viewWillAppear(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1171,259 +1374,259 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/StatefulViewController/StatefulViewController.swift",
-      "line": 119,
+      "line": 120,
       "symbol": "StatefulViewController.init(nibName:bundle:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/StatefulViewController/StatefulViewController.swift",
-      "line": 123,
+      "line": 124,
       "symbol": "StatefulViewController.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/StatefulViewController/StatefulViewController.swift",
-      "line": 157,
+      "line": 158,
       "symbol": "StatefulViewController.viewDidAppear(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 98,
+      "line": 99,
       "symbol": "BaseTableController.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 251,
+      "line": 252,
       "symbol": "BaseTableController.tableView(_:numberOfRowsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 262,
+      "line": 263,
       "symbol": "BaseTableController.tableView(_:cellForRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 288,
+      "line": 289,
       "symbol": "BaseTableController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 296,
+      "line": 297,
       "symbol": "BaseTableController.tableView(_:willDisplay:forRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 298,
+      "line": 299,
       "symbol": "BaseTableController.tableView(_:willDisplayHeaderView:forSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 300,
+      "line": 301,
       "symbol": "BaseTableController.tableView(_:willDisplayFooterView:forSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 302,
+      "line": 303,
       "symbol": "BaseTableController.tableView(_:didEndDisplaying:forRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 304,
+      "line": 305,
       "symbol": "BaseTableController.tableView(_:didEndDisplayingHeaderView:forSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 306,
+      "line": 307,
       "symbol": "BaseTableController.tableView(_:didEndDisplayingFooterView:forSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 308,
+      "line": 309,
       "symbol": "BaseTableController.tableView(_:heightForRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 312,
+      "line": 313,
       "symbol": "BaseTableController.tableView(_:heightForHeaderInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 316,
+      "line": 317,
       "symbol": "BaseTableController.tableView(_:heightForFooterInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 320,
+      "line": 321,
       "symbol": "BaseTableController.tableView(_:estimatedHeightForRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 324,
+      "line": 325,
       "symbol": "BaseTableController.tableView(_:estimatedHeightForHeaderInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 328,
+      "line": 329,
       "symbol": "BaseTableController.tableView(_:estimatedHeightForFooterInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 332,
+      "line": 333,
       "symbol": "BaseTableController.tableView(_:viewForHeaderInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 336,
+      "line": 337,
       "symbol": "BaseTableController.tableView(_:viewForFooterInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 340,
+      "line": 341,
       "symbol": "BaseTableController.tableView(_:willSelectRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 344,
+      "line": 345,
       "symbol": "BaseTableController.tableView(_:willDeselectRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 348,
+      "line": 349,
       "symbol": "BaseTableController.tableView(_:didSelectRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 352,
+      "line": 353,
       "symbol": "BaseTableController.tableView(_:didDeselectRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 355,
+      "line": 356,
       "symbol": "BaseTableController.tableView(_:prefetchRowsAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 362,
+      "line": 363,
       "symbol": "BaseTableController.searchBarShouldBeginEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 366,
+      "line": 367,
       "symbol": "BaseTableController.searchBarTextDidBeginEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 368,
+      "line": 369,
       "symbol": "BaseTableController.searchBarShouldEndEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 372,
+      "line": 373,
       "symbol": "BaseTableController.searchBarTextDidEndEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 374,
+      "line": 375,
       "symbol": "BaseTableController.searchBar(_:textDidChange:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 378,
+      "line": 379,
       "symbol": "BaseTableController.searchBar(_:shouldChangeTextIn:replacementText:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 382,
+      "line": 383,
       "symbol": "BaseTableController.searchBarSearchButtonClicked(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 384,
+      "line": 385,
       "symbol": "BaseTableController.searchBarBookmarkButtonClicked(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 386,
+      "line": 387,
       "symbol": "BaseTableController.searchBarCancelButtonClicked(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 388,
+      "line": 389,
       "symbol": "BaseTableController.searchBarResultsListButtonClicked(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableController.swift",
-      "line": 390,
+      "line": 391,
       "symbol": "BaseTableController.searchBar(_:selectedScopeButtonIndexDidChange:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1443,323 +1646,337 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableViewController.swift",
+      "line": 71,
+      "symbol": "TableViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TableViewController/TableViewController.swift",
+      "line": 75,
+      "symbol": "TableViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 10,
+      "line": 11,
       "symbol": "FloatingTextFieldInputType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 11,
+      "line": 12,
       "symbol": "FloatingTextFieldInputType.date(target:selector:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "FloatingTextFieldInputType.decimal",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "FloatingTextFieldInputType.email",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "FloatingTextFieldInputType.phone",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "FloatingTextFieldInputType.integer",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "FloatingTextFieldInputType.url",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "FloatingTextFieldInputType.domain(pickerView:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 18,
+      "line": 19,
       "symbol": "FloatingTextFieldInputType.generic",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 21,
+      "line": 22,
       "symbol": "FloatingTextField",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 25,
+      "line": 26,
       "symbol": "FloatingTextField.title",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 31,
+      "line": 32,
       "symbol": "FloatingTextField.titleFont",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 37,
+      "line": 38,
       "symbol": "FloatingTextField.placeholder",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 44,
+      "line": 45,
       "symbol": "FloatingTextField.placeholderFont",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 50,
+      "line": 51,
       "symbol": "FloatingTextField.textAlignment",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 56,
+      "line": 57,
       "symbol": "FloatingTextField.textAlignmentIndex",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 62,
+      "line": 63,
       "symbol": "FloatingTextField.errorMessage",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 68,
+      "line": 69,
       "symbol": "FloatingTextField.text",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 74,
+      "line": 75,
       "symbol": "FloatingTextField.datePicker",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 80,
+      "line": 81,
       "symbol": "FloatingTextField.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 90,
+      "line": 91,
       "symbol": "FloatingTextField.titleColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 96,
+      "line": 97,
       "symbol": "FloatingTextField.selectedTitleColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 102,
+      "line": 103,
       "symbol": "FloatingTextField.lineColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 108,
+      "line": 109,
       "symbol": "FloatingTextField.selectedLineColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 114,
+      "line": 115,
       "symbol": "FloatingTextField.placeholderColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 120,
+      "line": 121,
       "symbol": "FloatingTextField.disabledColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 127,
+      "line": 128,
       "symbol": "FloatingTextField.errorColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 135,
+      "line": 136,
       "symbol": "FloatingTextField.lineHeight",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 142,
+      "line": 143,
       "symbol": "FloatingTextField.selectedLineHeight",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 151,
+      "line": 152,
       "symbol": "FloatingTextField.isSecureTextEntry",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 163,
+      "line": 164,
       "symbol": "FloatingTextField.isHighlighted",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 174,
+      "line": 175,
       "symbol": "FloatingTextField.isSelected",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 180,
+      "line": 181,
       "symbol": "FloatingTextField.isEnabled",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 187,
+      "line": 188,
       "symbol": "FloatingTextField.isEditingOrSelected",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 191,
+      "line": 192,
       "symbol": "FloatingTextField.hasErrorMessage",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 197,
+      "line": 198,
       "symbol": "FloatingTextField.setIsTitleVisible(_:animated:animationCompletion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 211,
+      "line": 212,
       "symbol": "FloatingTextField.titleLabel",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 212,
+      "line": 213,
       "symbol": "FloatingTextField.lineView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 216,
+      "line": 217,
       "symbol": "FloatingTextField.init(frame:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 221,
+      "line": 222,
       "symbol": "FloatingTextField.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 226,
+      "line": 227,
       "symbol": "FloatingTextField.init_FloatingTextField()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 390,
+      "line": 391,
       "symbol": "FloatingTextField.setInputType(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 438,
+      "line": 439,
       "symbol": "FloatingTextField.formatTitle(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 485,
+      "line": 486,
       "symbol": "FloatingTextField.textHeight()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 498,
+      "line": 499,
       "symbol": "FloatingTextField.becomeFirstResponder()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/FloatingTextField/FloatingTextField.swift",
-      "line": 505,
+      "line": 506,
       "symbol": "FloatingTextField.resignFirstResponder()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -2319,616 +2536,602 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 18,
-      "symbol": "CheetahColorTheme.disabledButtonColor",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 20,
-      "symbol": "CheetahColorTheme.highlightedButtonColor",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 24,
+      "line": 22,
       "symbol": "CheetahTextTheme",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 61,
+      "line": 59,
       "symbol": "CheetahNormalButtonTextAppearance",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 63,
+      "line": 61,
       "symbol": "CheetahNormalButtonTextAppearance.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 65,
+      "line": 63,
       "symbol": "CheetahNormalButtonTextAppearance.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 67,
+      "line": 65,
       "symbol": "CheetahNormalButtonTextAppearance.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 69,
+      "line": 67,
       "symbol": "CheetahNormalButtonTextAppearance.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 73,
+      "line": 71,
       "symbol": "CheetahDisabledButtonTextAppearance",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 75,
+      "line": 73,
       "symbol": "CheetahDisabledButtonTextAppearance.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 77,
+      "line": 75,
       "symbol": "CheetahDisabledButtonTextAppearance.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 79,
+      "line": 77,
       "symbol": "CheetahDisabledButtonTextAppearance.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 81,
+      "line": 79,
       "symbol": "CheetahDisabledButtonTextAppearance.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 85,
+      "line": 83,
       "symbol": "CheetahHighlightedButtonTextAppearance",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 87,
+      "line": 85,
       "symbol": "CheetahHighlightedButtonTextAppearance.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 89,
+      "line": 87,
       "symbol": "CheetahHighlightedButtonTextAppearance.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 91,
+      "line": 89,
       "symbol": "CheetahHighlightedButtonTextAppearance.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 93,
+      "line": 91,
       "symbol": "CheetahHighlightedButtonTextAppearance.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 97,
+      "line": 95,
       "symbol": "CheetahAlertButtonTextAppearance",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 99,
+      "line": 97,
       "symbol": "CheetahAlertButtonTextAppearance.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 101,
+      "line": 99,
       "symbol": "CheetahAlertButtonTextAppearance.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 103,
+      "line": 101,
       "symbol": "CheetahAlertButtonTextAppearance.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 105,
+      "line": 103,
       "symbol": "CheetahAlertButtonTextAppearance.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 109,
+      "line": 107,
       "symbol": "CheetahTextViewTextAppearance",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 111,
+      "line": 109,
       "symbol": "CheetahTextViewTextAppearance.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 113,
+      "line": 111,
       "symbol": "CheetahTextViewTextAppearance.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 115,
+      "line": 113,
       "symbol": "CheetahTextViewTextAppearance.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 117,
+      "line": 115,
       "symbol": "CheetahTextViewTextAppearance.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 120,
+      "line": 118,
       "symbol": "CheetahTextFieldTextAppearance",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 122,
+      "line": 120,
       "symbol": "CheetahTextFieldTextAppearance.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 124,
+      "line": 122,
       "symbol": "CheetahTextFieldTextAppearance.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 126,
+      "line": 124,
       "symbol": "CheetahTextFieldTextAppearance.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 128,
+      "line": 126,
       "symbol": "CheetahTextFieldTextAppearance.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 132,
+      "line": 130,
       "symbol": "CheetahLargeTitle",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 134,
+      "line": 132,
       "symbol": "CheetahLargeTitle.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 136,
+      "line": 134,
       "symbol": "CheetahLargeTitle.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 138,
+      "line": 136,
       "symbol": "CheetahLargeTitle.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 140,
+      "line": 138,
       "symbol": "CheetahLargeTitle.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 144,
+      "line": 142,
       "symbol": "CheetahTitle1",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 146,
+      "line": 144,
       "symbol": "CheetahTitle1.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 148,
+      "line": 146,
       "symbol": "CheetahTitle1.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 150,
+      "line": 148,
       "symbol": "CheetahTitle1.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 152,
+      "line": 150,
       "symbol": "CheetahTitle1.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 156,
+      "line": 154,
       "symbol": "CheetahTitle2",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 158,
+      "line": 156,
       "symbol": "CheetahTitle2.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 160,
+      "line": 158,
       "symbol": "CheetahTitle2.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 162,
+      "line": 160,
       "symbol": "CheetahTitle2.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 164,
+      "line": 162,
       "symbol": "CheetahTitle2.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 168,
+      "line": 166,
       "symbol": "CheetahTitle3",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 170,
+      "line": 168,
       "symbol": "CheetahTitle3.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 172,
+      "line": 170,
       "symbol": "CheetahTitle3.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 174,
+      "line": 172,
       "symbol": "CheetahTitle3.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 176,
+      "line": 174,
       "symbol": "CheetahTitle3.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 180,
+      "line": 178,
       "symbol": "CheetahHeadline",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 182,
+      "line": 180,
       "symbol": "CheetahHeadline.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 184,
+      "line": 182,
       "symbol": "CheetahHeadline.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 186,
+      "line": 184,
       "symbol": "CheetahHeadline.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 188,
+      "line": 186,
       "symbol": "CheetahHeadline.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 192,
+      "line": 190,
       "symbol": "CheetahSubheadline",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 194,
+      "line": 192,
       "symbol": "CheetahSubheadline.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 196,
+      "line": 194,
       "symbol": "CheetahSubheadline.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 198,
+      "line": 196,
       "symbol": "CheetahSubheadline.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 200,
+      "line": 198,
       "symbol": "CheetahSubheadline.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 204,
+      "line": 202,
       "symbol": "CheetahBody",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 206,
+      "line": 204,
       "symbol": "CheetahBody.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 208,
+      "line": 206,
       "symbol": "CheetahBody.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 210,
+      "line": 208,
       "symbol": "CheetahBody.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 212,
+      "line": 210,
       "symbol": "CheetahBody.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 216,
+      "line": 214,
       "symbol": "CheetahCallout",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 218,
+      "line": 216,
       "symbol": "CheetahCallout.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 220,
+      "line": 218,
       "symbol": "CheetahCallout.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 222,
+      "line": 220,
       "symbol": "CheetahCallout.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 224,
+      "line": 222,
       "symbol": "CheetahCallout.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 228,
+      "line": 226,
       "symbol": "CheetahFootnote",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 230,
+      "line": 228,
       "symbol": "CheetahFootnote.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 232,
+      "line": 230,
       "symbol": "CheetahFootnote.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 234,
+      "line": 232,
       "symbol": "CheetahFootnote.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 236,
+      "line": 234,
       "symbol": "CheetahFootnote.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 240,
+      "line": 238,
       "symbol": "CheetahCaption1",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 242,
+      "line": 240,
       "symbol": "CheetahCaption1.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 244,
+      "line": 242,
       "symbol": "CheetahCaption1.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 246,
+      "line": 244,
       "symbol": "CheetahCaption1.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 248,
+      "line": 246,
       "symbol": "CheetahCaption1.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 252,
+      "line": 250,
       "symbol": "CheetahCaption2",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 254,
+      "line": 252,
       "symbol": "CheetahCaption2.fontName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 256,
+      "line": 254,
       "symbol": "CheetahCaption2.textColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 258,
+      "line": 256,
       "symbol": "CheetahCaption2.textStyle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
-      "line": 260,
+      "line": 258,
       "symbol": "CheetahCaption2.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -2963,14 +3166,14 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/ColorThemePainter.swift",
-      "line": 73,
+      "line": 76,
       "symbol": "CheetahColorThemePainter",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/ColorThemePainter.swift",
-      "line": 75,
+      "line": 78,
       "symbol": "CheetahColorThemePainter.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -3033,42 +3236,56 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/WebViewController/WebViewController.swift",
-      "line": 84,
+      "line": 45,
+      "symbol": "WebViewController.init(nibName:bundle:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/WebViewController/WebViewController.swift",
+      "line": 49,
+      "symbol": "WebViewController.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/WebViewController/WebViewController.swift",
+      "line": 104,
       "symbol": "WebViewController.webView(_:didStartProvisionalNavigation:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/WebViewController/WebViewController.swift",
-      "line": 88,
+      "line": 108,
       "symbol": "WebViewController.webView(_:didFinish:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/WebViewController/WebViewController.swift",
-      "line": 92,
+      "line": 112,
       "symbol": "WebViewController.webView(_:didFail:withError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/WebViewController/WebViewController.swift",
-      "line": 96,
+      "line": 116,
       "symbol": "WebViewController.webView(_:didFailProvisionalNavigation:withError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/WebViewController/WebViewController.swift",
-      "line": 100,
+      "line": 120,
       "symbol": "WebViewController.webView(_:decidePolicyFor:decisionHandler:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/WebViewController/WebViewController.swift",
-      "line": 106,
+      "line": 126,
       "symbol": "WebViewController.webView(_:decidePolicyFor:decisionHandler:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
