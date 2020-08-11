@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Notification Extension Reference</title>
+    <title>CreditCardScanner Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Extension/Notification" class="dashAnchor"></a>
-    <a title="Notification Extension Reference"></a>
+    <a name="//apple_ref/swift/Protocol/CreditCardScanner" class="dashAnchor"></a>
+    <a title="CreditCardScanner Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a></p>
@@ -30,7 +30,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        Notification Extension Reference
+        CreditCardScanner Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -97,10 +97,16 @@
                 <a href="../Classes/PaymentCheckoutCollectionViewController.html">PaymentCheckoutCollectionViewController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/PaymentCollectionActionViewCell.html">PaymentCollectionActionViewCell</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/PaymentCollectionController.html">PaymentCollectionController</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/PaymentCollectionViewController.html">PaymentCollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentDisplayCollectionViewCell.html">PaymentDisplayCollectionViewCell</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/ProductCategoriesCollectionController.html">ProductCategoriesCollectionController</a>
@@ -163,7 +169,7 @@
                 <a href="../Classes/RestaurantScheduleViewController.html">RestaurantScheduleViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes.html#/s:19CheetahLoyaltyOloUI25RestaurantsViewControllerC">RestaurantsViewController</a>
+                <a href="../Classes/RestaurantsCollectionViewController.html">RestaurantsCollectionViewController</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/TextFieldCollectionViewCell.html">TextFieldCollectionViewCell</a>
@@ -174,10 +180,16 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/OrderProgressSavedData.html">OrderProgressSavedData</a>
+                <a href="../Enums/CreditCardScannerLoader.html">CreditCardScannerLoader</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/PaymentViewCellDisplayType.html">PaymentViewCellDisplayType</a>
+                <a href="../Enums/OLOUINotification.html">OLOUINotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OloOrdering.html">OloOrdering</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderProgressSavedData.html">OrderProgressSavedData</a>
               </li>
             </ul>
           </li>
@@ -185,19 +197,10 @@
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Extensions/CollectionViewController.html">CollectionViewController</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Delivery.html">Delivery</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/Delivery/Address.html">– Address</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Notification.html">Notification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Notification/Name.html">– Name</a>
               </li>
             </ul>
           </li>
@@ -209,6 +212,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/BillingAccountCellDelegate.html">BillingAccountCellDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CreditCardScanner.html">CreditCardScanner</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/OrderProgressCompletable.html">OrderProgressCompletable</a>
@@ -230,6 +236,9 @@
               <li class="nav-group-task">
                 <a href="../Structs.html#/s:19CheetahLoyaltyOloUI10CreditCardV">CreditCard</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:19CheetahLoyaltyOloUI8GiftCardV">GiftCard</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -237,8 +246,16 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Notification</h1>
-            
+            <h1>CreditCardScanner</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CreditCardScanner</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents a type for displaying a Credit Card Scanner.</p>
+
           </section>
           <section class="section task-group-section">
             <div class="task-group">
@@ -246,9 +263,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:10Foundation12NotificationV4Namea"></a>
-                    <a name="//apple_ref/swift/Extension/Name" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10Foundation12NotificationV4Namea">Name</a>
+                    <a name="/s:19CheetahLoyaltyOloUI17CreditCardScannerP04openG02inyAA0eF14ViewControllerC_tF"></a>
+                    <a name="//apple_ref/swift/Method/openScanner(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI17CreditCardScannerP04openG02inyAA0eF14ViewControllerC_tF">openScanner(in:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -256,14 +273,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
-                        <a href="../Extensions/Notification/Name.html" class="slightly-smaller">See more</a>
+                        <p>Open a credit card scanner on top of the <code>viewController</code>.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">openScanner</span><span class="p">(</span><span class="k">in</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/CreditCardViewController.html">CreditCardViewController</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -275,7 +292,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-07-16)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-08-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -181,7 +181,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CheetahLoyaltyUI;
 @import CoreGraphics;
 @import Foundation;
 @import UIKit;
@@ -202,14 +201,20 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UITextField;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI32BillingAccountCollectionViewCell")
-@interface BillingAccountCollectionViewCell : UICollectionViewCell
+@interface BillingAccountCollectionViewCell : UICollectionViewCell <UITextFieldDelegate>
 - (void)awakeFromNib;
+- (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
+- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI24ButtonCollectionViewCell")
@@ -233,8 +238,6 @@ SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI26CheckBoxCollectionViewCell")
 @end
 
 
-
-
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI24HeaderCollectionViewCell")
 @interface HeaderCollectionViewCell : UICollectionViewCell
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -246,17 +249,51 @@ SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI24HeaderCollectionViewCell")
 
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI17OrderProgressView")
 @interface OrderProgressView : UIView
+/// Leading line to be placed before the state image view
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified leadingLineView;
+/// Trailing line to be placed after the state image view
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified trailingLineView;
+/// State image view
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified stateImageView;
+/// State label
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified stateLabel;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+/// A UICollectionViewCell that is used for indicating an action when the cell is pressed. This is mostly used to display another view when pressed.
+SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI31PaymentCollectionActionViewCell")
+@interface PaymentCollectionActionViewCell : UICollectionViewCell
+/// The action that will happen when pressed.
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified actionLabel;
+/// Image view used to display a caret.
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified caretImageView;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+/// A UICollectionViewCell that is used for dispaying details.
+SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI32PaymentDisplayCollectionViewCell")
+@interface PaymentDisplayCollectionViewCell : UICollectionViewCell
+/// The heading of the detail to display.
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headingLabel;
+/// The subheading of the detail to display.
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified subHeadingLabel;
+/// A straight line at the top of the cell.
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified dividerView;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI31ProductDetailCollectionViewCell")
 @interface ProductDetailCollectionViewCell : UICollectionViewCell
+/// Heading label
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified headingLabel;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -266,6 +303,7 @@ SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI31ProductDetailCollectionViewCell")
 
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI37ProductInstructionsCollectionViewCell")
 @interface ProductInstructionsCollectionViewCell : UICollectionViewCell <UITextViewDelegate>
+/// Text view for the instructions
 @property (nonatomic, strong) IBOutlet UITextView * _Null_unspecified instructionsTextView;
 - (void)awakeFromNib;
 - (void)textViewDidChange:(UITextView * _Nonnull)textView;
@@ -277,8 +315,11 @@ SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI37ProductInstructionsCollectionViewCell")
 
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI31ProductOptionCollectionViewCell")
 @interface ProductOptionCollectionViewCell : UICollectionViewCell
+/// CheckBox for each options
 @property (nonatomic, strong) IBOutlet CheckBox * _Null_unspecified checkBox;
+/// Caret image for options with suboptions
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified caretImage;
+/// Label for the additional cost and chosen sub option names
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified subheadingLabel;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -288,7 +329,9 @@ SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI31ProductOptionCollectionViewCell")
 
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI37ProductOptionHeaderCollectionViewCell")
 @interface ProductOptionHeaderCollectionViewCell : UICollectionViewCell
+/// Label for the heading
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified headingLabel;
+/// Label for the separator view
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified separatorView;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -298,15 +341,17 @@ SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI37ProductOptionHeaderCollectionViewCell")
 
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI33ProductQuantityCollectionViewCell")
 @interface ProductQuantityCollectionViewCell : UICollectionViewCell
+/// Imageview for the minus sign
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified minusImageView;
+/// Imageview for the add sign
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified addImageView;
+/// Label for the quantity
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified quantityLabel;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextField;
 
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI27TextFieldCollectionViewCell")
 @interface TextFieldCollectionViewCell : UICollectionViewCell <UITextFieldDelegate>

@@ -97,10 +97,16 @@
                 <a href="../Classes/PaymentCheckoutCollectionViewController.html">PaymentCheckoutCollectionViewController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/PaymentCollectionActionViewCell.html">PaymentCollectionActionViewCell</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/PaymentCollectionController.html">PaymentCollectionController</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/PaymentCollectionViewController.html">PaymentCollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentDisplayCollectionViewCell.html">PaymentDisplayCollectionViewCell</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/ProductCategoriesCollectionController.html">ProductCategoriesCollectionController</a>
@@ -163,7 +169,7 @@
                 <a href="../Classes/RestaurantScheduleViewController.html">RestaurantScheduleViewController</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes.html#/s:19CheetahLoyaltyOloUI25RestaurantsViewControllerC">RestaurantsViewController</a>
+                <a href="../Classes/RestaurantsCollectionViewController.html">RestaurantsCollectionViewController</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/TextFieldCollectionViewCell.html">TextFieldCollectionViewCell</a>
@@ -174,10 +180,16 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/OrderProgressSavedData.html">OrderProgressSavedData</a>
+                <a href="../Enums/CreditCardScannerLoader.html">CreditCardScannerLoader</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/PaymentViewCellDisplayType.html">PaymentViewCellDisplayType</a>
+                <a href="../Enums/OLOUINotification.html">OLOUINotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OloOrdering.html">OloOrdering</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderProgressSavedData.html">OrderProgressSavedData</a>
               </li>
             </ul>
           </li>
@@ -185,19 +197,10 @@
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Extensions/CollectionViewController.html">CollectionViewController</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Delivery.html">Delivery</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/Delivery/Address.html">– Address</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Notification.html">Notification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Notification/Name.html">– Name</a>
               </li>
             </ul>
           </li>
@@ -209,6 +212,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/BillingAccountCellDelegate.html">BillingAccountCellDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CreditCardScanner.html">CreditCardScanner</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/OrderProgressCompletable.html">OrderProgressCompletable</a>
@@ -230,6 +236,9 @@
               <li class="nav-group-task">
                 <a href="../Structs.html#/s:19CheetahLoyaltyOloUI10CreditCardV">CreditCard</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:19CheetahLoyaltyOloUI8GiftCardV">GiftCard</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -250,6 +259,15 @@
           </section>
           <section class="section task-group-section">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><p>Properties</p>
+</h3>
+                </div>
+              </div>
               <ul>
                 <li class="item">
                   <div>
@@ -264,7 +282,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Determines whether the view is from basket&rsquo;s product update</p>
 
                       </div>
                       <div class="declaration">
@@ -291,7 +309,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Basket.Product object for updating a product</p>
 
                       </div>
                       <div class="declaration">
@@ -305,6 +323,19 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><p>Initializers</p>
+</h3>
+                </div>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -318,7 +349,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Returns a newly initialized ProductCustomizationViewController with specified parameters that mainly holds whether the view will be used for adding a new product or updating a product from basket</p>
 
                       </div>
                       <div class="declaration">
@@ -334,9 +365,93 @@
 
                         </div>
                       </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isBasketUpdate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Determines whether view is for update or adding new product</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>product</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The product to be added.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>basketProduct</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The product to be updated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>basketUpdateOptionIds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The selected options from the product to be updated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>collectionController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ProductCustomizationCollectionController for the collection view datasoure and delegate methods.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The initialized ProductCustomizationViewController.</p>
+                      </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Setup"></a>
+                <a name="//apple_ref/swift/Section/Setup" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Setup"></a>
+                  <h3 class="section-name"><p>Setup</p>
+</h3>
+                </div>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -350,8 +465,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -364,6 +478,19 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Overriden%20methods"></a>
+                <a name="//apple_ref/swift/Section/Overriden methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Overriden%20methods"></a>
+                  <h3 class="section-name"><p>Overriden methods</p>
+</h3>
+                </div>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -377,8 +504,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -391,6 +517,19 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Add%20to%20cart"></a>
+                <a name="//apple_ref/swift/Section/Add to cart" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Add%20to%20cart"></a>
+                  <h3 class="section-name"><p>Add to cart</p>
+</h3>
+                </div>
+              </div>
+              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -404,7 +543,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Shows an add to cart error after dismissing the loading view</p>
 
                       </div>
                       <div class="declaration">
@@ -431,7 +570,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Adds a product to the cart
+If there&rsquo;s no available basket, creating of basket will be perform
+If basket is already available, product will be either added or updated</p>
 
                       </div>
                       <div class="declaration">
@@ -458,7 +599,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Update existing product in the basket</p>
 
                       </div>
                       <div class="declaration">
@@ -485,7 +626,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>Add a new product in the basket</p>
 
                       </div>
                       <div class="declaration">
@@ -504,7 +645,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-07-16)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-08-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
