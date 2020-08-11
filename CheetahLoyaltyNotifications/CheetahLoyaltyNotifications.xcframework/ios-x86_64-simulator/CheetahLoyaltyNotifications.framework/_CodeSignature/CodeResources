@@ -14,7 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Zy/xb4OsggdwWeZllwwC3Ov3Gzg=
+		FGfPzBb0h7I4Zs+JVuU0hdnJORw=
+		</data>
+		<key>Localizable.strings</key>
+		<data>
+		RMbOw5uAi0ElilpWm7EW7edKP5A=
 		</data>
 		<key>Modules/CheetahLoyaltyNotifications.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +26,11 @@
 		</data>
 		<key>Modules/CheetahLoyaltyNotifications.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HAw7s3u09SlIBYPP/lqe2lbbb6s=
+		qYItNAfRB7pbayrkKsFbBVP+iI4=
 		</data>
 		<key>Modules/CheetahLoyaltyNotifications.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Xztk7CBHYZq6Fb0MjEstzPL6v4w=
+		LhLbS4Eu/oSC8ABb/G7z4qWOYvc=
 		</data>
 		<key>Modules/CheetahLoyaltyNotifications.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -34,11 +38,11 @@
 		</data>
 		<key>Modules/CheetahLoyaltyNotifications.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		HAw7s3u09SlIBYPP/lqe2lbbb6s=
+		qYItNAfRB7pbayrkKsFbBVP+iI4=
 		</data>
 		<key>Modules/CheetahLoyaltyNotifications.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Xztk7CBHYZq6Fb0MjEstzPL6v4w=
+		LhLbS4Eu/oSC8ABb/G7z4qWOYvc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -61,6 +65,13 @@
 			PpnSkZbJFL6+sS7jp6rS3g8l1vfvMtUCkS0DCYgDaBM=
 			</data>
 		</dict>
+		<key>Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7elqlk4nAdKbQ9tT8tMw0uTpqPpStVBIIHj9KC1aH9U=
+			</data>
+		</dict>
 		<key>Modules/CheetahLoyaltyNotifications.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
@@ -72,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jiUNXL1CCGv2Ay+OnNAI69NvIcMOWWFf2ufGXXhp/3s=
+			iDAzB07l/l0wZcnQ/dtJEAn7g1r3J86z3ncuiicdfYQ=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyNotifications.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bWFJnHmMlie7V2k9NhVwlubcoCyO/2Li5I32IDTO8bE=
+			xqsdT6ZzeXI6JZvevmUL6r5tZBjIdVB1ZzniWPgkOUU=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyNotifications.swiftmodule/x86_64.swiftdoc</key>
@@ -93,14 +104,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jiUNXL1CCGv2Ay+OnNAI69NvIcMOWWFf2ufGXXhp/3s=
+			iDAzB07l/l0wZcnQ/dtJEAn7g1r3J86z3ncuiicdfYQ=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyNotifications.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bWFJnHmMlie7V2k9NhVwlubcoCyO/2Li5I32IDTO8bE=
+			xqsdT6ZzeXI6JZvevmUL6r5tZBjIdVB1ZzniWPgkOUU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

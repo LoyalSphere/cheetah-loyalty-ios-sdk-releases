@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Notifications-1.2.0] - 2020-08-11
+### Added
+- Dependency to CheetahLoyaltyUtils 1.0.0 [#476]
+### Changed
+- Dependency version requirements to CheetahLoyaltyCore 1.5.0 [#476]
+- Use utilities `CheetahLoyaltyUtils` [#476]
+
+[#476]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/476
+[Notifications-1.2.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/42?closed=1
+
 ## [Notifications-1.1.0] - 2020-07-20
 ### Changed
 - Changed dependency version requirements to CheetahLoyaltyCore 1.4.0 [#450]
@@ -15,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [#432]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/432
 [#450]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/450
+[Notifications-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/33?closed=1
 
 ## [Notifications-1.0.0] - 2020-06-18
 ### Added
@@ -25,5 +36,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Handling of Push Notification user responses
 - Setting of application's badge count
 
-[Notifications-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/33?closed=1
 [Notifications-1.0.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/29?closed=1

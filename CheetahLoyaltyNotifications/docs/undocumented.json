@@ -198,7 +198,7 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyNotifications/CheetahLoyaltyNotifications/DefaultNotificationHelper.swift",
-      "line": 28,
+      "line": 29,
       "symbol": "DefaultNotificationHelper.init(pushHandler:richPushHandler:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -212,7 +212,7 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyNotifications/CheetahLoyaltyNotifications/DefaultRichPushHandler.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "DefaultRichPushHandler.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -226,21 +226,21 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyNotifications/CheetahLoyaltyNotifications/RichPushService.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "RichPushService",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyNotifications/CheetahLoyaltyNotifications/RichPushService.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "RichPushService.didReceive(_:withContentHandler:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyNotifications/CheetahLoyaltyNotifications/RichPushService.swift",
-      "line": 42,
+      "line": 43,
       "symbol": "RichPushService.serviceExtensionTimeWillExpire()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
