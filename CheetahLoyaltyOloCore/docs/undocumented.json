@@ -2,413 +2,413 @@
   "warnings": [
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "BasketRequest",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "BasketRequest.create(vendor:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "BasketRequest.createFromOrder(orderRef:orderId:ignoreUnavailableProducts:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "BasketRequest.createFromFave(faveId:ignoreUnavailableProducts:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 18,
+      "line": 19,
       "symbol": "BasketRequest.getBasket(id:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 19,
+      "line": 20,
       "symbol": "BasketRequest.updateGroupOrder(groupOrderId:deadline:note:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "BasketRequest.createGroupOrder(restaurantId:basketId:deadline:note:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 21,
+      "line": 22,
       "symbol": "BasketRequest.sendGroupOrderInvites(groupOrderId:emailAddress:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "BasketRequest.getGroupOrder(id:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 23,
+      "line": 24,
       "symbol": "BasketRequest.addProduct(basketId:product:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 24,
+      "line": 25,
       "symbol": "BasketRequest.addProductByChainId(basketId:product:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 25,
+      "line": 26,
       "symbol": "BasketRequest.deleteProduct(basketId:basketProductId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 26,
+      "line": 27,
       "symbol": "BasketRequest.updateProduct(basketId:basketProductId:updatedProduct:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 27,
+      "line": 28,
       "symbol": "BasketRequest.addProducts(basketId:products:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 28,
+      "line": 29,
       "symbol": "BasketRequest.updateProducts(basketId:updateProducts:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 29,
+      "line": 30,
       "symbol": "BasketRequest.addProductsByChainId(basketId:products:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 30,
+      "line": 31,
       "symbol": "BasketRequest.addProductsFromFave(basketId:faveId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 31,
+      "line": 32,
       "symbol": "BasketRequest.getUpsellItems(basketId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 32,
+      "line": 33,
       "symbol": "BasketRequest.addUpsellItems(basketId:upsellItems:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 33,
+      "line": 34,
       "symbol": "BasketRequest.setTip(amount:basketId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 34,
+      "line": 35,
       "symbol": "BasketRequest.deleteCoupons(basketId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 35,
+      "line": 36,
       "symbol": "BasketRequest.applyCoupon(couponCode:basketId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 36,
+      "line": 37,
       "symbol": "BasketRequest.getLoyaltySchemes(basketId:checkBalance:checkRewards:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 37,
+      "line": 38,
       "symbol": "BasketRequest.addUserMembership(basketId:loyaltyScheme:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 38,
+      "line": 39,
       "symbol": "BasketRequest.getLoyaltyRewards(basketId:membershipId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 39,
+      "line": 40,
       "symbol": "BasketRequest.getQualifyingRewards(basketId:membershipId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 40,
+      "line": 41,
       "symbol": "BasketRequest.applyReward(basketId:membershipId:references:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 41,
+      "line": 42,
       "symbol": "BasketRequest.deleteReward(basketId:rewardId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 42,
+      "line": 43,
       "symbol": "BasketRequest.setDeliveryMode(basketId:deliveryMode:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 43,
+      "line": 44,
       "symbol": "BasketRequest.getDeliveryAddress(basketId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 44,
+      "line": 45,
       "symbol": "BasketRequest.setDeliveryAddress(basketId:address:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 45,
+      "line": 46,
       "symbol": "BasketRequest.getDispatchAddress(basketId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 46,
+      "line": 47,
       "symbol": "BasketRequest.setDispatchAddress(basketId:address:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 47,
+      "line": 48,
       "symbol": "BasketRequest.deleteTimeWanted(basketId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 48,
+      "line": 49,
       "symbol": "BasketRequest.setTimeWanted(basketId:timeWanted:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 49,
+      "line": 50,
       "symbol": "BasketRequest.setCustomField(basketId:customFieldId:value:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 50,
+      "line": 51,
       "symbol": "BasketRequest.deleteCustomField(basketId:customFieldId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 51,
+      "line": 52,
       "symbol": "BasketRequest.transferToAnotherRestaurant(basketId:restaurantId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 52,
+      "line": 53,
       "symbol": "BasketRequest.transferToOloWebsite(basketId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 53,
+      "line": 54,
       "symbol": "BasketRequest.getBillingSchemes(basketId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 54,
+      "line": 55,
       "symbol": "BasketRequest.getBillingScheme(basketId:billingSchemeId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 55,
+      "line": 56,
       "symbol": "BasketRequest.getGiftCardBalance(basketId:billingSchemeId:cardNumber:pin:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 56,
+      "line": 57,
       "symbol": "BasketRequest.verifyGiftCardPinRequirement(billingSchemeId:cardNumber:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 58,
+      "line": 59,
       "symbol": "BasketRequest.validate(basketId:checkUpsell:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 59,
+      "line": 60,
       "symbol": "BasketRequest.submitOrderWithSinglePayment(basketId:order:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 60,
+      "line": 61,
       "symbol": "BasketRequest.submitOrderWithMultiplePayments(basketId:order:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/BasketAPI.swift",
-      "line": 432,
+      "line": 433,
       "symbol": "BasketAPI",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/FeedbackAPI.swift",
-      "line": 11,
+      "line": 12,
       "symbol": "FeedbackRequest",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/FeedbackAPI.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "FeedbackRequest.submit(feedback:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/FeedbackAPI.swift",
-      "line": 37,
+      "line": 38,
       "symbol": "FeedbackAPI",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/OrderAPI.swift",
-      "line": 11,
+      "line": 12,
       "symbol": "OrderRequest",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/OrderAPI.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "OrderRequest.editOrder(guid:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/OrderAPI.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "OrderRequest.cancelOrder(guid:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/OrderAPI.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "OrderRequest.getOrderStatus(guid:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/OrderAPI.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "OrderRequest.getOrderStatusByReference(reference:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/OrderAPI.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "OrderRequest.getOrderDeliveryStatus(guid:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/OrderAPI.swift",
-      "line": 18,
+      "line": 19,
       "symbol": "OrderRequest.manualFireOrderByReference(reference:manualFire:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/OrderAPI.swift",
-      "line": 19,
+      "line": 20,
       "symbol": "OrderRequest.manualFireOrder(guid:manualFire:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/OrderAPI.swift",
-      "line": 79,
+      "line": 80,
       "symbol": "OrderAPI",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
@@ -457,399 +457,399 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 11,
+      "line": 12,
       "symbol": "RestaurantRequest",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "RestaurantRequest.getRestaurants(includePrivate:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "RestaurantRequest.getNearbyRestaurants(coordinates:radius:limit:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "RestaurantRequest.getNearbyRestaurantsWithInHouseDelivery(coordinates:limit:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "RestaurantRequest.getRestaurantsByTelephone(telephone:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "RestaurantRequest.getRestaurant(restaurantId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 18,
+      "line": 19,
       "symbol": "RestaurantRequest.getRestaurantByReference(storeNumber:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 19,
+      "line": 20,
       "symbol": "RestaurantRequest.getRestaurantBySlug(slug:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "RestaurantRequest.getMenu(restaurantId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 21,
+      "line": 22,
       "symbol": "RestaurantRequest.getEightySixedItems(restaurantId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "RestaurantRequest.getCalendars(restaurantId:fromDate:toDate:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 23,
+      "line": 24,
       "symbol": "RestaurantRequest.getDisclaimers(restaurantId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 24,
+      "line": 25,
       "symbol": "RestaurantRequest.checkRestaurantDelivery(restaurantId:coverageCheck:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/RestaurantAPI.swift",
-      "line": 114,
+      "line": 115,
       "symbol": "RestaurantAPI",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 11,
+      "line": 12,
       "symbol": "UserRequest",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "UserRequest.create(newUser:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "UserRequest.getOrCreate(userSSO:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "UserRequest.createFromOrder(guid:password:optin:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "UserRequest.authenticate(login:password:basketId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "UserRequest.changePassword(oldPassword:newPassword:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 18,
+      "line": 19,
       "symbol": "UserRequest.forgotPassword(email:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 19,
+      "line": 20,
       "symbol": "UserRequest.getCurrentUser",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "UserRequest.getQualifyingRewards(restaurantId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 21,
+      "line": 22,
       "symbol": "UserRequest.getNearbyRewards(coordinates:radius:limit:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "UserRequest.getRecentOrders",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 23,
+      "line": 24,
       "symbol": "UserRequest.getRecentOrdersByReference(reference:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 24,
+      "line": 25,
       "symbol": "UserRequest.getOpenManualFireOrders",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 25,
+      "line": 26,
       "symbol": "UserRequest.checkUserExistence(email:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 26,
+      "line": 27,
       "symbol": "UserRequest.updateUser(updatedUser:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 27,
+      "line": 28,
       "symbol": "UserRequest.revokeToken",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 28,
+      "line": 29,
       "symbol": "UserRequest.deleteAccount",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 29,
+      "line": 30,
       "symbol": "UserRequest.getBillingAccounts(basketId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 30,
+      "line": 31,
       "symbol": "UserRequest.getGiftCardBalances",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 31,
+      "line": 32,
       "symbol": "UserRequest.getGiftCardBalance(billingAccountId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 32,
+      "line": 33,
       "symbol": "UserRequest.updateDefaultCreditCard(billingAccountId:isDefault:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 33,
+      "line": 34,
       "symbol": "UserRequest.deleteBillingAccount(billingAccountId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 34,
+      "line": 35,
       "symbol": "UserRequest.getContactDetails",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 35,
+      "line": 36,
       "symbol": "UserRequest.updateContactDetails(contactNumber:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 36,
+      "line": 37,
       "symbol": "UserRequest.getContactOptions",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 37,
+      "line": 38,
       "symbol": "UserRequest.updateContactOptions(option:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 38,
+      "line": 39,
       "symbol": "UserRequest.getDeliveryAddresses",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 39,
+      "line": 40,
       "symbol": "UserRequest.updateDefaultDeliveryAddress(addressId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 40,
+      "line": 41,
       "symbol": "UserRequest.deleteDeliveryAddress(addressId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 41,
+      "line": 42,
       "symbol": "UserRequest.getUserByGuid(guid:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 42,
+      "line": 43,
       "symbol": "UserRequest.updateUserByGuid(guid:updatedUser:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 43,
+      "line": 44,
       "symbol": "UserRequest.getContactDetailsByGuid(guid:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 44,
+      "line": 45,
       "symbol": "UserRequest.updateContactDetailsByGuid(guid:contactNumber:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 45,
+      "line": 46,
       "symbol": "UserRequest.getContactOptionsByGuid(guid:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 46,
+      "line": 47,
       "symbol": "UserRequest.updateContactOptionsByGuid(guid:option:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 47,
+      "line": 48,
       "symbol": "UserRequest.changePasswordByGuid(guid:newPassword:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 48,
+      "line": 49,
       "symbol": "UserRequest.getFavorites",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 49,
+      "line": 50,
       "symbol": "UserRequest.addFavorite(favorite:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 50,
+      "line": 51,
       "symbol": "UserRequest.deleteFavorite(favoriteId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 51,
+      "line": 52,
       "symbol": "UserRequest.getFavoriteLocations",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 52,
+      "line": 53,
       "symbol": "UserRequest.addFavoriteLocation(locationId:isDefault:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 53,
+      "line": 54,
       "symbol": "UserRequest.deleteFavoriteLocation(locationId:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/API/UserAPI.swift",
-      "line": 336,
+      "line": 337,
       "symbol": "UserAPI",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
@@ -1003,6 +1003,48 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 41,
+      "symbol": "BasketParameter.TimeWanted.isManualFire",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 42,
+      "symbol": "BasketParameter.TimeWanted.year",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 43,
+      "symbol": "BasketParameter.TimeWanted.month",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 44,
+      "symbol": "BasketParameter.TimeWanted.day",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 45,
+      "symbol": "BasketParameter.TimeWanted.hour",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 46,
+      "symbol": "BasketParameter.TimeWanted.minute",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
       "line": 53,
       "symbol": "BasketParameter.TimeWanted.init(isManualFire:year:month:day:hour:minute:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -1013,6 +1055,55 @@
       "line": 68,
       "symbol": "BasketParameter.Product",
       "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 69,
+      "symbol": "BasketParameter.Product.productId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 70,
+      "symbol": "BasketParameter.Product.quantity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 71,
+      "symbol": "BasketParameter.Product.options",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 72,
+      "symbol": "BasketParameter.Product.specialInstructions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 73,
+      "symbol": "BasketParameter.Product.recipient",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 74,
+      "symbol": "BasketParameter.Product.customData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 75,
+      "symbol": "BasketParameter.Product.choiceCustomFields",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -1031,6 +1122,48 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 104,
+      "symbol": "BasketParameter.ChainProduct.chainProductId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 105,
+      "symbol": "BasketParameter.ChainProduct.quantity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 106,
+      "symbol": "BasketParameter.ChainProduct.choices",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 107,
+      "symbol": "BasketParameter.ChainProduct.specialInstructions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 108,
+      "symbol": "BasketParameter.ChainProduct.recipient",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 109,
+      "symbol": "BasketParameter.ChainProduct.customData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
       "line": 119,
       "symbol": "BasketParameter.ChainProduct.init(chainProductId:quantity:choices:specialInstructions:recipient:customData:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -1041,6 +1174,55 @@
       "line": 134,
       "symbol": "BasketParameter.BatchProduct",
       "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 135,
+      "symbol": "BasketParameter.BatchProduct.productId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 136,
+      "symbol": "BasketParameter.BatchProduct.quantity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 137,
+      "symbol": "BasketParameter.BatchProduct.options",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 138,
+      "symbol": "BasketParameter.BatchProduct.specialInstructions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 139,
+      "symbol": "BasketParameter.BatchProduct.recipient",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 140,
+      "symbol": "BasketParameter.BatchProduct.customData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 141,
+      "symbol": "BasketParameter.BatchProduct.choices",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -1241,6 +1423,188 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 246,
+      "symbol": "BasketParameter.Order.billingMethod",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 247,
+      "symbol": "BasketParameter.Order.billingAccountId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 248,
+      "symbol": "BasketParameter.Order.billingSchemeId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 249,
+      "symbol": "BasketParameter.Order.billingFields",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 250,
+      "symbol": "BasketParameter.Order.userType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 251,
+      "symbol": "BasketParameter.Order.firstName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 252,
+      "symbol": "BasketParameter.Order.lastName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 253,
+      "symbol": "BasketParameter.Order.emailAddress",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 254,
+      "symbol": "BasketParameter.Order.contactNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 255,
+      "symbol": "BasketParameter.Order.reference",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 256,
+      "symbol": "BasketParameter.Order.cardNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 257,
+      "symbol": "BasketParameter.Order.expiryYear",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 258,
+      "symbol": "BasketParameter.Order.expiryMonth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 259,
+      "symbol": "BasketParameter.Order.cvv",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 260,
+      "symbol": "BasketParameter.Order.streetAddress",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 261,
+      "symbol": "BasketParameter.Order.streetAddress2",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 262,
+      "symbol": "BasketParameter.Order.city",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 263,
+      "symbol": "BasketParameter.Order.state",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 264,
+      "symbol": "BasketParameter.Order.zip",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 265,
+      "symbol": "BasketParameter.Order.country",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 266,
+      "symbol": "BasketParameter.Order.saveOnFile",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 267,
+      "symbol": "BasketParameter.Order.orderRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 268,
+      "symbol": "BasketParameter.Order.prepaidTransactionId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 269,
+      "symbol": "BasketParameter.Order.prepaidDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 270,
+      "symbol": "BasketParameter.Order.customData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 271,
+      "symbol": "BasketParameter.Order.guestOptIn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
       "line": 302,
       "symbol": "BasketParameter.Order.init(billingMethod:billingAccountId:billingSchemeId:billingFields:userType:firstName:lastName:emailAddress:contactNumber:reference:cardNumber:expiryYear:expiryMonth:cvv:streetAddress:streetAddress2:city:state:zip:country:saveOnFile:orderRef:prepaidTransactionId:prepaidDescription:customData:guestOptIn:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -1248,28 +1612,217 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
-      "line": 357,
+      "line": 358,
       "symbol": "BasketParameter.BillingAccount",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
-      "line": 393,
+      "line": 359,
+      "symbol": "BasketParameter.BillingAccount.billingMethod",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 360,
+      "symbol": "BasketParameter.BillingAccount.amount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 361,
+      "symbol": "BasketParameter.BillingAccount.tipPortion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 362,
+      "symbol": "BasketParameter.BillingAccount.cardNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 363,
+      "symbol": "BasketParameter.BillingAccount.expiryYear",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 364,
+      "symbol": "BasketParameter.BillingAccount.expiryMonth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 365,
+      "symbol": "BasketParameter.BillingAccount.cvv",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 366,
+      "symbol": "BasketParameter.BillingAccount.streetAddress",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 367,
+      "symbol": "BasketParameter.BillingAccount.streetAddress2",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 368,
+      "symbol": "BasketParameter.BillingAccount.city",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 369,
+      "symbol": "BasketParameter.BillingAccount.state",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 370,
+      "symbol": "BasketParameter.BillingAccount.zip",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 371,
+      "symbol": "BasketParameter.BillingAccount.country",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 372,
+      "symbol": "BasketParameter.BillingAccount.saveOnFile",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 373,
+      "symbol": "BasketParameter.BillingAccount.billingAccountId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 374,
+      "symbol": "BasketParameter.BillingAccount.billingSchemeId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 375,
+      "symbol": "BasketParameter.BillingAccount.billingFields",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 394,
       "symbol": "BasketParameter.BillingAccount.init(billingMethod:amount:tipPortion:cardNumber:expiryYear:expiryMonth:cvv:streetAddress:streetAddress2:city:state:zip:country:saveOnFile:billingAccountId:billingSchemeId:billingFields:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
-      "line": 430,
+      "line": 431,
       "symbol": "BasketParameter.MultiplePaymentsOrder",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
-      "line": 455,
+      "line": 432,
+      "symbol": "BasketParameter.MultiplePaymentsOrder.userType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 433,
+      "symbol": "BasketParameter.MultiplePaymentsOrder.firstName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 434,
+      "symbol": "BasketParameter.MultiplePaymentsOrder.lastName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 435,
+      "symbol": "BasketParameter.MultiplePaymentsOrder.emailAddress",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 436,
+      "symbol": "BasketParameter.MultiplePaymentsOrder.contactNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 437,
+      "symbol": "BasketParameter.MultiplePaymentsOrder.reference",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 438,
+      "symbol": "BasketParameter.MultiplePaymentsOrder.orderRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 439,
+      "symbol": "BasketParameter.MultiplePaymentsOrder.customData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 440,
+      "symbol": "BasketParameter.MultiplePaymentsOrder.guestOptIn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 441,
+      "symbol": "BasketParameter.MultiplePaymentsOrder.billingAccounts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/BasketParameter.swift",
+      "line": 456,
       "symbol": "BasketParameter.MultiplePaymentsOrder.init(userType:firstName:lastName:emailAddress:contactNumber:reference:orderRef:customData:guestOptIn:billingAccounts:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1458,6 +2011,20 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/ProductParameter.swift",
+      "line": 14,
+      "symbol": "ProductParameter.CustomField.fieldId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/ProductParameter.swift",
+      "line": 15,
+      "symbol": "ProductParameter.CustomField.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/ProductParameter.swift",
       "line": 22,
       "symbol": "ProductParameter.CustomField.init(fieldId:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -1472,6 +2039,27 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/ProductParameter.swift",
+      "line": 29,
+      "symbol": "ProductParameter.Choice.choiceId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/ProductParameter.swift",
+      "line": 30,
+      "symbol": "ProductParameter.Choice.quantity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/ProductParameter.swift",
+      "line": 31,
+      "symbol": "ProductParameter.Choice.customFields",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/ProductParameter.swift",
       "line": 39,
       "symbol": "ProductParameter.Choice.init(choiceId:quantity:customFields:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -1482,6 +2070,34 @@
       "line": 48,
       "symbol": "ProductParameter.ChainChoice",
       "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/ProductParameter.swift",
+      "line": 49,
+      "symbol": "ProductParameter.ChainChoice.chainChoiceId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/ProductParameter.swift",
+      "line": 50,
+      "symbol": "ProductParameter.ChainChoice.quantity",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/ProductParameter.swift",
+      "line": 51,
+      "symbol": "ProductParameter.ChainChoice.customFields",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Parameters/ProductParameter.swift",
+      "line": 52,
+      "symbol": "ProductParameter.ChainChoice.choices",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
@@ -7967,118 +8583,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 12,
-      "symbol": "KeychainError",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 13,
-      "symbol": "KeychainError.status",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 15,
-      "symbol": "KeychainError.localizedDescription",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 24,
-      "symbol": "KeychainItem",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 25,
-      "symbol": "KeychainItem.serviceName",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 26,
-      "symbol": "KeychainItem.account",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 28,
-      "symbol": "KeychainItem.init(serviceName:account:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 33,
-      "symbol": "KeychainItem.accessControlWithUserPrescence",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 40,
-      "symbol": "KeychainItem.read(context:message:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 69,
-      "symbol": "KeychainItem.readPassword(context:message:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 77,
-      "symbol": "KeychainItem.readJSON(context:message:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 83,
-      "symbol": "KeychainItem.write(data:with:context:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 112,
-      "symbol": "KeychainItem.writePassword(_:with:context:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 117,
-      "symbol": "KeychainItem.write(json:with:context:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 122,
-      "symbol": "KeychainItem.delete()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/KeychainAccess.swift",
-      "line": 128,
-      "symbol": "KeychainItem.keychainQuery()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/NativeExtensions.swift",
       "line": 32,
       "symbol": "Bundle.appName",
@@ -8101,14 +8605,14 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/NativeExtensions.swift",
-      "line": 68,
+      "line": 58,
       "symbol": "Notification.Name.APIAccessTokenDidBecomeInvalid",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/NativeExtensions.swift",
-      "line": 71,
+      "line": 61,
       "symbol": "Notification.Name.ResetPasswordRequired",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"

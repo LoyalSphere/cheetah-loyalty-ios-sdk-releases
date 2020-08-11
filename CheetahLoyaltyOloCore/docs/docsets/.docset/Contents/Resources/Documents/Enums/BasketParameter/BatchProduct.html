@@ -8,6 +8,9 @@
     <script src="../../js/jquery.min.js" defer></script>
     <script src="../../js/jazzy.js" defer></script>
     
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Struct/BatchProduct" class="dashAnchor"></a>
@@ -16,6 +19,11 @@
       <div class="content-wrapper">
         <p><a href="../../index.html"> Docs</a></p>
         <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk"><img src="../../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -336,9 +344,6 @@
                 <a href="../../Extensions/Bundle.html">Bundle</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Extensions/JSONDecoder.html">JSONDecoder</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../../Extensions/Notification.html">Notification</a>
               </li>
               <li class="nav-group-task">
@@ -496,12 +501,6 @@
                 <a href="../../Structs/Image.html">Image</a>
               </li>
               <li class="nav-group-task">
-                <a href="../../Structs/KeychainError.html">KeychainError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/KeychainItem.html">KeychainItem</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../../Structs/Menu.html">Menu</a>
               </li>
               <li class="nav-group-task">
@@ -606,6 +605,7 @@
             <h1>BatchProduct</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BatchProduct</span> <span class="p">:</span> <span class="kt">Encodable</span></code></pre>
 
                 </div>
@@ -616,6 +616,195 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV9productIdSivp"></a>
+                    <a name="//apple_ref/swift/Property/productId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV9productIdSivp">productId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">productId</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV8quantitySiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/quantity" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV8quantitySiSgvp">quantity</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">quantity</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV7optionsSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/options" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV7optionsSSSgvp">options</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">options</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV19specialInstructionsSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/specialInstructions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV19specialInstructionsSSSgvp">specialInstructions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">specialInstructions</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV9recipientSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/recipient" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV9recipientSSSgvp">recipient</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">recipient</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV10customDataSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/customData" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV10customDataSSSgvp">customData</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">customData</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV7choicesSayAA0hF0O6ChoiceVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/choices" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore15BasketParameterO12BatchProductV7choicesSayAA0hF0O6ChoiceVGSgvp">choices</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">choices</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../../Enums/ProductParameter.html">ProductParameter</a></span><span class="o">.</span><span class="kt">Choice</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -654,8 +843,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-07-14)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-08-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

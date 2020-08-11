@@ -6,9 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Olo-Core-1.1.0] - 2020-08-11
+### Updated
+- Set some of the parameter model's to public
+- Update types of Billing Account properties
+### Added
+- Added CheetahLoyaltyUtils dependency
+
 ## [Olo-Core-1.0.0] - 2020-07-14
 ### Added
 - Models and API requests.
 - Authentication Handling
 
+[Olo-Core-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/4
 [Olo-Core-1.0.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/2
+
