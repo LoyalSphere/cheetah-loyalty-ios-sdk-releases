@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Fr7kIrp47OqnFG18sF33W3pHI1U=
+		f921CGdT3Dg1X7u8o5bHZgGQJwE=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
@@ -22,27 +22,27 @@
 		</data>
 		<key>Modules/CheetahLoyaltyPlaces.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		/eXqqmkjWW1p91QKWKw+B2GD2Zo=
+		FHc3x/aKsGfh+mEQfUmRWS6I1zo=
 		</data>
 		<key>Modules/CheetahLoyaltyPlaces.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kjepfkd6hfItZA5aW4hIAwk+b2Q=
+		nAGFtJfF8h4IGDmZRbv4EvIsCSg=
 		</data>
 		<key>Modules/CheetahLoyaltyPlaces.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		r45A1CJGUD4taVgUXm+4sXwzO38=
+		jWoc85Ft8J5HuYM10SKjk83xGOA=
 		</data>
 		<key>Modules/CheetahLoyaltyPlaces.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		/eXqqmkjWW1p91QKWKw+B2GD2Zo=
+		FHc3x/aKsGfh+mEQfUmRWS6I1zo=
 		</data>
 		<key>Modules/CheetahLoyaltyPlaces.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		kjepfkd6hfItZA5aW4hIAwk+b2Q=
+		nAGFtJfF8h4IGDmZRbv4EvIsCSg=
 		</data>
 		<key>Modules/CheetahLoyaltyPlaces.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		r45A1CJGUD4taVgUXm+4sXwzO38=
+		jWoc85Ft8J5HuYM10SKjk83xGOA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -76,42 +76,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z/h1lVohcggmRmeQ5B2mod5NCUJoNjAQ8/YVMYY/JK4=
+			kaLo8rPtWtVBq/sdf9HJ3CssVAJAgHet49DQeBga7GA=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyPlaces.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y6IuKN8ptP/lSbx03rI7CtUi4693MRNTfaIyYYRMaDg=
+			mIzkpVexrNerZLJYhWrBoWnJoXNaX8Ap5GmLxs0tuUg=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyPlaces.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SWKpMhrtTQOhGFs3AtrWzFwN8+m17fNnKYMj1KfN408=
+			2KxW9lE4ARU6aYVvFhc1V1+j+o6R6K4fRUgvjiEuiDs=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyPlaces.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z/h1lVohcggmRmeQ5B2mod5NCUJoNjAQ8/YVMYY/JK4=
+			kaLo8rPtWtVBq/sdf9HJ3CssVAJAgHet49DQeBga7GA=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyPlaces.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y6IuKN8ptP/lSbx03rI7CtUi4693MRNTfaIyYYRMaDg=
+			mIzkpVexrNerZLJYhWrBoWnJoXNaX8Ap5GmLxs0tuUg=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyPlaces.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SWKpMhrtTQOhGFs3AtrWzFwN8+m17fNnKYMj1KfN408=
+			2KxW9lE4ARU6aYVvFhc1V1+j+o6R6K4fRUgvjiEuiDs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

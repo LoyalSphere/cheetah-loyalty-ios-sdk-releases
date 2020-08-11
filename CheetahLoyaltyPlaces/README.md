@@ -6,7 +6,8 @@ The Cheetah Loyalty Places iOS SDK contains a collection of classes, methods, an
 * Deployment Target: iOS 11.0
 * Xcode 11.x
 * Swift 5.1
-* `CheetahLoyaltyCore` v1.4.0
+* `CheetahLoyaltyCore` v1.5.0
+* `CheetahLoyaltyUtils` v1.0.0
 
 ## Installation
 
@@ -42,7 +43,7 @@ pod install
 
 ### Manually
 
-1. Install [`CheetahLoyaltyCore`](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/blob/master/CheetahLoyaltyCore/README.md) framework.
+1. Install [`CheetahLoyaltyUtils`](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/blob/master/CheetahLoyaltyUtils/README.md) and [`CheetahLoyaltyCore `](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/blob/master/CheetahLoyaltyCore/README.md) framework.
 2. [Download the CheetahLoyaltyPlaces SDK from the releases](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/releases).
 3. Extract it then drag & drop CheetahLoyaltyPlaces.framework to your project's directory.
 4. In "Frameworks, Libraries, and Embedded Content" section under the "General" tab, click on the "+" button then "Add Other", and then "Add Files...".

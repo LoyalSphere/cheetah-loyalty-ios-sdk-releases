@@ -3,6 +3,7 @@
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyPlaces
 import CheetahLoyaltyCore
 @_exported import CheetahLoyaltyPlaces
+import CheetahLoyaltyUtils
 import CoreLocation
 import Foundation
 import Swift
@@ -65,8 +66,16 @@ extension Bundle {
     get
   }
 }
-extension NSNotification.Name {
-  public static let locationManagerEvents: Foundation.Notification.Name
+public enum PlacesNotification : CheetahLoyaltyUtils.CheetahNotification {
+  case locationManagerEvents
+  public var name: Swift.String {
+    get
+  }
+  public static func == (a: CheetahLoyaltyPlaces.PlacesNotification, b: CheetahLoyaltyPlaces.PlacesNotification) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
 }
 public protocol GeofenceClientEvents {
   func createClientEventRegions(for location: CoreLocation.CLLocation)
@@ -112,3 +121,5 @@ extension GeofenceManager : CoreLocation.CLLocationManagerDelegate {
   @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didEnterRegion region: CoreLocation.CLRegion)
   @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didExitRegion region: CoreLocation.CLRegion)
 }
+extension CheetahLoyaltyPlaces.PlacesNotification : Swift.Equatable {}
+extension CheetahLoyaltyPlaces.PlacesNotification : Swift.Hashable {}
