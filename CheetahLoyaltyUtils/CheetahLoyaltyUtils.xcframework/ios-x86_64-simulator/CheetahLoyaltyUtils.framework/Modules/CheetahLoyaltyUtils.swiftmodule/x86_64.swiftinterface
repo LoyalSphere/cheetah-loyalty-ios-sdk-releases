@@ -1,0 +1,175 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyUtils
+@_exported import CheetahLoyaltyUtils
+import Foundation
+import LocalAuthentication
+import Swift
+import UIKit
+public protocol CheetahNotification {
+  var name: Swift.String { get }
+}
+extension Notification {
+  public init(_ notification: CheetahLoyaltyUtils.CheetahNotification, object: Any? = nil, userInfo: [Swift.AnyHashable : Any]? = nil)
+}
+extension NotificationCenter {
+  public func addObserver(for notification: CheetahLoyaltyUtils.CheetahNotification, object: Any?, queue: Foundation.OperationQueue?, using: @escaping (Foundation.Notification) -> Swift.Void) -> ObjectiveC.NSObjectProtocol
+}
+public enum UtilsNotification : CheetahLoyaltyUtils.CheetahNotification {
+  case languageChange
+  public var name: Swift.String {
+    get
+  }
+  public static func == (a: CheetahLoyaltyUtils.UtilsNotification, b: CheetahLoyaltyUtils.UtilsNotification) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension KeyedDecodingContainer {
+  public func decode<T>(forKey key: K, defaultValue: T) throws -> T where T : Swift.Decodable
+}
+extension Encodable {
+  public var json: [Swift.String : Any] {
+    get
+  }
+}
+extension Data {
+  public var hexString: Swift.String {
+    get
+  }
+  public func serializedJsonObject(options: Foundation.JSONSerialization.ReadingOptions = .allowFragments) -> Any?
+}
+extension Dictionary where Key == Swift.String, Value == Any {
+  public func filterVoid() -> [Swift.String : Any]
+}
+extension Date {
+  public static let CheetahTimestampFormat: Swift.String
+  public static let CheetahDateFormat: Swift.String
+  public static func dateFrom(string: Swift.String, withFormat format: Swift.String) -> Foundation.Date?
+  public static func dateFrom(timestampString timestamp: Swift.String) -> Foundation.Date?
+  public static func dateFrom(formattedString string: Swift.String) -> Foundation.Date?
+  public func string(withFormat format: Swift.String, locale: Foundation.Locale? = nil) -> Swift.String
+  public var timestampString: Swift.String {
+    get
+  }
+  public func localizedString(withFormat format: Swift.String) -> Swift.String
+  public func formattedStringWithDate(showDate: Swift.Bool, showTime: Swift.Bool, timeZone: Foundation.TimeZone = .current) -> Swift.String?
+  public func numberOfYears(fromDate date: Foundation.Date) -> Swift.Int?
+}
+extension Array {
+  public func appending(_ newElement: Element) -> [Element]
+  public func removing(at index: Swift.Int) -> [Element]
+  mutating public func move(at index: Swift.Array<Element>.Index, to newIndex: Swift.Array<Element>.Index)
+  public subscript(safe index: Swift.Array<Element>.Index) -> Element? {
+    get
+  }
+}
+extension Array where Element : Swift.Equatable {
+  mutating public func move(_ item: Element, to newIndex: Swift.Array<Element>.Index)
+  mutating public func moveToStart(item: Element)
+  mutating public func moveToEnd(item: Element)
+}
+extension Bundle {
+  public static var CheetahLoyaltyUtilsIdentifier: Swift.String {
+    get
+  }
+  public static var cheetahBundles: [Foundation.Bundle] {
+    get
+  }
+  public static var testBundle: Foundation.Bundle? {
+    get
+  }
+  public static func bundle(forResource resource: Swift.String?, withExtension resourceExtension: Swift.String?) -> Foundation.Bundle?
+  public static func bundle(forFileName fileName: Swift.String) -> Foundation.Bundle?
+}
+extension String {
+  public var localized: Swift.String {
+    get
+  }
+}
+public enum Localizer {
+  public static var languageOptions: [(code: Swift.String, name: Swift.String)] {
+    get
+  }
+  public static var defaultLanguage: Swift.String {
+    get
+  }
+  public static var currentLanguage: Swift.String {
+    get
+  }
+  public static func getLocalizedVersion(ofString string: Swift.String, in bundle: Foundation.Bundle) -> Swift.String
+  public static func stringFor(key: Swift.String) -> Swift.String
+  public static func getDisplayNameForLanguage(_ language: Swift.String) -> Swift.String
+  public static func setCurrentLanguage(_ language: Swift.String)
+  public static func resetCurrentLanguageToDefault()
+}
+public struct KeychainError : Swift.Error {
+  public var status: Darwin.OSStatus
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+public struct KeychainItem {
+  public let serviceName: Swift.String
+  public let account: Swift.String
+  public init(serviceName: Swift.String, account: Swift.String)
+  public static var accessControlWithUserPrescence: Security.SecAccessControl? {
+    get
+  }
+  public func read(context: LocalAuthentication.LAContext? = nil, message: Swift.String? = nil) throws -> Foundation.Data?
+  public func readPassword(context: LocalAuthentication.LAContext? = nil, message: Swift.String? = nil) throws -> Swift.String?
+  public func readJSON(context: LocalAuthentication.LAContext? = nil, message: Swift.String? = nil) throws -> [Swift.String : Any]?
+  public func write(data: Foundation.Data, with access: Security.SecAccessControl? = nil, context: LocalAuthentication.LAContext? = nil) throws
+  public func writePassword(_ password: Swift.String, with access: Security.SecAccessControl? = nil, context: LocalAuthentication.LAContext? = nil) throws
+  public func write(json: [Swift.String : Any], with access: Security.SecAccessControl? = nil, context: LocalAuthentication.LAContext? = nil) throws
+  public func delete() throws
+  public func keychainQuery() -> [Swift.String : Any]
+}
+extension JSONDecoder {
+  public func decode<T>(_ type: T.Type, from data: Foundation.Data, keyPath: Swift.String) throws -> T where T : Swift.Decodable
+}
+extension DateFormatter {
+  convenience public init(format: Swift.String? = nil, timeZone: Foundation.TimeZone? = .current, locale: Foundation.Locale? = Locale(identifier: "en_US_POSIX"))
+}
+extension String {
+  public var youtubeId: Swift.String? {
+    get
+  }
+  public var firstUrl: Foundation.URL? {
+    get
+  }
+  public func firstMatchForRegEx(_ pattern: Swift.String) -> Swift.String?
+  public var attributedHTMLString: Foundation.NSAttributedString? {
+    get
+  }
+  public var strippedCSS: Swift.String {
+    get
+  }
+  public var strippedHTML: Swift.String {
+    get
+  }
+  public var isValidURL: Swift.Bool {
+    get
+  }
+  public var isValidEmail: Swift.Bool {
+    get
+  }
+  public var isValidPhoneNumber: Swift.Bool {
+    get
+  }
+  public var isBlank: Swift.Bool {
+    get
+  }
+  public static func createPeriod(startDate: Swift.String, endDate: Swift.String, withFormat format: Swift.String = Date.CheetahDateFormat) -> Swift.String
+}
+extension UIDevice {
+  public static var deviceNamesList: [Swift.String : Swift.String] {
+    get
+  }
+  public static var name: Swift.String {
+    get
+  }
+}
+extension CheetahLoyaltyUtils.UtilsNotification : Swift.Equatable {}
+extension CheetahLoyaltyUtils.UtilsNotification : Swift.Hashable {}

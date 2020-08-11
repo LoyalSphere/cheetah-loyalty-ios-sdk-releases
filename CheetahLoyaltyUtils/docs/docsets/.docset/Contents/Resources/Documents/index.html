@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (98% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/Localizer.html">Localizer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/UtilsNotification.html">UtilsNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/DateFormatter.html">DateFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/JSONDecoder.html">JSONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/KeyedDecodingContainer.html">KeyedDecodingContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/NotificationCenter.html">NotificationCenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UIDevice.html">UIDevice</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/CheetahNotification.html">CheetahNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/KeychainError.html">KeychainError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/KeychainItem.html">KeychainItem</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='cheetah-loyalty-utils-ios' class='heading'>Cheetah Loyalty Utils iOS</h1>
+
+<p>The Cheetah Loyalty Utils iOS SDK contains a collection of classes, methods, and protocols that are generally used across all other Cheetah Loyalty iOS SDKs.</p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>Deployment Target: iOS 11.0</li>
+<li>Xcode 11.x</li>
+<li>Swift 5.1</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>Cocoapods</h3>
+
+<ol>
+<li>Open a terminal window then add the private podspec repo to the Cocoapods installation by entering the following:</li>
+</ol>
+<pre class="highlight shell"><code>pod repo add CheetahLoyaltySDK https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk-podspecs.git
+</code></pre>
+
+<ol>
+<li>Add a source for the CheetahLoyaltySDK and add the <code>CheetahLoyaltyUtils</code> pod in your podfile:</li>
+</ol>
+<pre class="highlight ruby"><code><span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'11.0'</span>
+
+<span class="n">source</span> <span class="s1">'https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk-podspecs.git'</span>
+<span class="n">source</span> <span class="s1">'https://github.com/CocoaPods/Specs.git'</span>
+
+<span class="n">target</span> <span class="s1">'&lt;YourApp&gt;'</span> <span class="k">do</span>
+  <span class="c1"># Comment the next line if you're not using Swift and don't want to use dynamic frameworks</span>
+  <span class="n">use_frameworks!</span>
+
+  <span class="n">pod</span> <span class="s1">'CheetahLoyaltyUtils'</span>
+<span class="k">end</span>
+</code></pre>
+
+<ol>
+<li>Open a terminal window to where your project and podfile is located and run the following to install the pod:</li>
+</ol>
+<pre class="highlight shell"><code>pod <span class="nb">install</span>
+</code></pre>
+<h3 id='manually' class='heading'>Manually</h3>
+
+<ol>
+<li><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/releases">Download the CheetahLoyaltyUtils SDK from the releases</a>.</li>
+<li>Extract it then drag &amp; drop CheetahLoyaltyUtils.framework to your project&rsquo;s directory.</li>
+<li>In &ldquo;Frameworks, Libraries, and Embedded Content&rdquo; section under the &ldquo;General&rdquo; tab, click on the &ldquo;+&rdquo; button then &ldquo;Add Other&rdquo;, and then &ldquo;Add Files&hellip;&rdquo;.</li>
+<li>Select the CheetahLoyaltyUtils.framework file and make sure that it is set to &ldquo;Embed &amp; Sign&rdquo; in the &ldquo;Embed&rdquo; column in the &ldquo;Frameworks, Libraries, and Embedded Content&rdquo; section under the &ldquo;General&rdquo; tab.</li>
+</ol>
+<h2 id='more' class='heading'>More</h2>
+
+<p>You can also check out our API Reference for more detailed information about our SDK.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-08-11)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

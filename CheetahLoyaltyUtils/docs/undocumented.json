@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Localizer.swift",
+      "line": 18,
+      "symbol": "Localizer",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils"
+}

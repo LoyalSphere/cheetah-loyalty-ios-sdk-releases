@@ -1,0 +1,11 @@
+framework module CheetahLoyaltyUtils {
+  umbrella header "CheetahLoyaltyUtils.h"
+
+  export *
+  module * { export * }
+}
+
+module CheetahLoyaltyUtils.Swift {
+    header "CheetahLoyaltyUtils-Swift.h"
+    requires objc
+}
