@@ -4,6 +4,7 @@
 import CheetahLoyaltyCore
 @_exported import CheetahLoyaltyRewards
 import CheetahLoyaltyUI
+import CheetahLoyaltyUtils
 import Foundation
 import Swift
 import UIKit
@@ -30,8 +31,16 @@ extension Bundle {
     get
   }
 }
-extension NSNotification.Name {
-  public static let rewardUpdated: Foundation.Notification.Name
+public enum RewardsNotification : CheetahLoyaltyUtils.CheetahNotification {
+  case rewardUpdated
+  public var name: Swift.String {
+    get
+  }
+  public static func == (a: CheetahLoyaltyRewards.RewardsNotification, b: CheetahLoyaltyRewards.RewardsNotification) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
 }
 public protocol RewardResponderFactory {
   static func responder(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController?
@@ -322,7 +331,7 @@ open class RequiredAttributesRewardViewController : CheetahLoyaltyUI.CollectionV
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
+  override public init(collectionController: CheetahLoyaltyUI.CollectionController?)
   @objc deinit
 }
 @objc open class RewardAttributeCell : UIKit.UICollectionViewCell {
@@ -405,3 +414,5 @@ open class ShipToAddressViewController : CheetahLoyaltyUI.StatefulViewController
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
+extension CheetahLoyaltyRewards.RewardsNotification : Swift.Equatable {}
+extension CheetahLoyaltyRewards.RewardsNotification : Swift.Hashable {}
