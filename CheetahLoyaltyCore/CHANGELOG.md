@@ -6,6 +6,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-1.5.0] - 2020-08-10
+### Added
+- `Offer.OfferType` cases: [#460]
+	- `coupon`
+	- `noAction`
+- Get Offers with responses API [#459]
+- Dependency to `CheetahLoyaltyUtils` [#470]
+
+### Changed
+- `Reward`'s `expirationInterval` property type to `Int?` [#461]
+- Utility code transferred to `CheetahLoyaltyUtils` [#470]
+
+[#459]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/459
+[#460]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/460
+[#461]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/461
+[#470]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/470
+[Core-1.5.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/37?closed=1
+
 ## [Core-1.4.0] - 2020-07-14
 ### Changed
 - Enable require only App Extension Safe API to YES [#446]
@@ -27,6 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#444]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/444
 [#445]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/445
 [#446]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/446
+[Core-1.4.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/32?closed=1
 
 ## [Core-1.3.0] - 2020-06-09
 ### Added
@@ -53,6 +72,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#393]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/393
 [#401]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/401
 [#406]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/406
+[Core-1.3.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/27?closed=1
 
 ## [Core-1.2.1] - 2020-04-27
 ### Added
@@ -69,6 +89,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#349]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/349
 [#346]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/346
 [#343]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/343
+[Core-1.2.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/21?closed=1
 
 ## [Core-1.2.0] - 2020-03-11
 ### Added
@@ -120,6 +141,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#337]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/337
 [#339]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/339
 [#340]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/340
+[Core-1.2.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/17?closed=1
 
 ## [Core-1.1.4] - 2019-12-20
 ### Added
@@ -136,6 +158,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#273]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/273
 [#271]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/271
 [#269]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/269
+[Core-1.1.4]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/16?closed=1
 
 ## [Core-1.1.3] - 2019-12-18
 ### Added
@@ -160,6 +183,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#258]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/258
 [#257]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/257
 [#256]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/256
+[Core-1.1.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/15?closed=1
 
 ## [Core-1.1.2] - 2019-12-23
 ### Added
@@ -199,6 +223,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#247]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/247
 [#248]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/248
 [#249]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/249
+[Core-1.1.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/13?closed=1
 
 ## [Core-1.1.1] - 2019-11-21
 ### Added
@@ -254,6 +279,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#225]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/225
 [#226]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/226
 [#227]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/227
+[Core-1.1.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/10?closed=1
 
 ## [Core-1.1.0] - 2019-11-08
 ### Added
@@ -273,6 +299,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#210]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/210
 [#211]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/211
 [#214]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/214
+[Core-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/8?closed=1
 
 ## [Core-1.0.2] - 2019-10-11
 ### Added
@@ -294,6 +321,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#200]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/200
 [#202]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/202
 [#205]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/205
+[Core-1.0.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/6?closed=1
 
 ## [Core-1.0.1] - 2019-09-25
 ### Added
@@ -311,20 +339,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#180]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/180
 [#181]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/181
 [#184]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/184
+[Core-1.0.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/5?closed=1
 
 ## [Core-1.0.0] - 2019-09-06
 ### Added
 - Models and API requests.
 - Authentication Handling
 
-[Core-1.4.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/32?closed=1
-[Core-1.3.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/27?closed=1
-[Core-1.2.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/17?closed=1
-[Core-1.1.4]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/16?closed=1
-[Core-1.1.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/15?closed=1
-[Core-1.1.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/13?closed=1
-[Core-1.1.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/10?closed=1
-[Core-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/8?closed=1
-[Core-1.0.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/6?closed=1
-[Core-1.0.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/5?closed=1
 [Core-1.0.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/1?closed=1
