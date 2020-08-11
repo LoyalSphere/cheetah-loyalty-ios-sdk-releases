@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Challenges-1.1.0] - 2020-08-11
+### Added
+- Dependency to CheetahLoyaltyUtils 1.0.0 [#477]
+
+### Changed
+- Changed dependency version requirements to CheetahLoyaltyCore 1.5.0 and CheetahLoyaltyUI 1.5.0 [#477]
+
+[#477]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/477
+[Challenges-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/44?closed=1
+
 ## [Challenges-1.0.3] - 2020-07-21
 ### Changed
 - Changed dependency version requirements to CheetahLoyaltyCore 1.4.0 and CheetahLoyaltyUI 1.4.0 [#451]
@@ -15,7 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [#437]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/437
 [#451]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/451
-
+[Challenges-1.0.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/35?closed=1
 
 ## [Challenges-1.0.2] - 2020-06-17
 
@@ -25,6 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [#384]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/384
 [#427]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/427
+[Challenges-1.0.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/30?closed=1
 
 ## [Challenges-1.0.1] - 2020-05-11
 
@@ -42,6 +53,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#360]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/360
 [#367]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/367
 [#369]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/369
+[Challenges-1.0.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/23?closed=1
 
 ## [Challenges-1.0.0] - 2020-03-13
 
@@ -70,7 +82,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added `ChallengeResponseDetailViewController`
 - Added `ShareChallengeToSocialMediaDelegate` protocol
 
-[Challenges-1.0.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/35?closed=1
-[Challenges-1.0.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/30?closed=1
-[Challenges-1.0.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/23?closed=1
 [Challenges-1.0.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/19?closed=1

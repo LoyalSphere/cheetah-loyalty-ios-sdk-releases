@@ -6,8 +6,9 @@ The Cheetah Loyalty Challenges iOS SDK contains a collection of components used 
 * Deployment Target: iOS 11.0
 * Xcode 11.x
 * Swift 5.1
-* `CheetahLoyaltyCore` v1.4.0
-* `CheetahLoyaltyUI` v1.4.0
+* `CheetahLoyaltyCore` v1.5.0
+* `CheetahLoyaltyUI` v1.5.0
+* `CheetahLoyaltyUtils` v1.0.0
 
 ## Installation
 
@@ -43,7 +44,7 @@ pod install
 
 ### Manually
 
-1. Install [`CheetahLoyaltyCore`](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/blob/master/CheetahLoyaltyCore/README.md) and [`CheetahLoyaltyUI`](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/blob/master/CheetahLoyaltyUI/README.md) frameworks.
+1. Install [`CheetahLoyaltyUtils`](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/blob/master/CheetahLoyaltyUtils/README.md), [`CheetahLoyaltyCore`](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/blob/master/CheetahLoyaltyCore/README.md) and [`CheetahLoyaltyUI`](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/blob/master/CheetahLoyaltyUI/README.md) frameworks.
 2. [Download the CheetahLoyaltyChallenges SDK from the releases](https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/releases).
 2. Extract it then drag & drop CheetahLoyaltyChallenges.framework to your project's directory.
 3. In "Frameworks, Libraries, and Embedded Content" section under the "General" tab, click on the "+" button then "Add Other", and then "Add Files...".

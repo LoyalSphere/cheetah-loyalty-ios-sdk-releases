@@ -2,163 +2,177 @@
   "warnings": [
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Avatar/AvatarChallengeViewController.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "AvatarChallengeViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Avatar/AvatarChallengeViewController.swift",
-      "line": 113,
+      "line": 114,
       "symbol": "AvatarChallengeViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Avatar/AvatarChallengeViewController.swift",
-      "line": 128,
+      "line": 129,
       "symbol": "AvatarChallengeViewController.onFailure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "ChallengeResponderDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "ChallengeResponderDelegate.onFailure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "ChallengeResponderDelegate.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "ChallengeResponder",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "ChallengeResponder.challenge",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 21,
+      "line": 22,
       "symbol": "ChallengeResponder.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 23,
+      "line": 24,
       "symbol": "ChallengeResponder.isResponding",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 25,
+      "line": 26,
       "symbol": "ChallengeResponder.didRespond(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 26,
+      "line": 27,
       "symbol": "ChallengeResponder.respond(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 27,
+      "line": 28,
       "symbol": "ChallengeResponder.respond(with:and:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 29,
+      "line": 30,
       "symbol": "ChallengeResponder.respond(withVideo:and:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 33,
+      "line": 34,
       "symbol": "BaseChallengeResponder",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 36,
+      "line": 37,
       "symbol": "BaseChallengeResponder.challenge",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 37,
+      "line": 38,
       "symbol": "BaseChallengeResponder.isResponding",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 38,
+      "line": 39,
       "symbol": "BaseChallengeResponder.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 41,
+      "line": 42,
       "symbol": "BaseChallengeResponder.init(with:delegate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 47,
+      "line": 48,
       "symbol": "BaseChallengeResponder.didRespond(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 63,
+      "line": 66,
       "symbol": "BaseChallengeResponder.respond(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 73,
+      "line": 76,
       "symbol": "BaseChallengeResponder.respond(with:and:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
-      "line": 85,
+      "line": 88,
       "symbol": "BaseChallengeResponder.respond(withVideo:and:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
+      "line": 101,
+      "symbol": "ChallengesNotification",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ChallengeResponder.swift",
+      "line": 103,
+      "symbol": "ChallengesNotification.challengeUpdated",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
@@ -177,224 +191,224 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/CheckIn/CheckInChallengeViewController.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "CheckInChallengeViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/CheckIn/CheckInChallengeViewController.swift",
-      "line": 146,
+      "line": 147,
       "symbol": "CheckInChallengeViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/CheckIn/CheckInChallengeViewController.swift",
-      "line": 161,
+      "line": 162,
       "symbol": "CheckInChallengeViewController.onFailure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Game/GameChallengeViewController.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "GameChallengeViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Game/GameChallengeViewController.swift",
-      "line": 158,
+      "line": 159,
       "symbol": "GameChallengeViewController.webView(_:didFinish:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Game/GameChallengeViewController.swift",
-      "line": 162,
+      "line": 163,
       "symbol": "GameChallengeViewController.webView(_:didFail:withError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Game/GameChallengeViewController.swift",
-      "line": 172,
+      "line": 173,
       "symbol": "GameChallengeViewController.webView(_:didCommit:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Game/GameChallengeViewController.swift",
-      "line": 178,
+      "line": 179,
       "symbol": "GameChallengeViewController.webView(_:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Game/GameChallengeViewController.swift",
-      "line": 192,
+      "line": 193,
       "symbol": "GameChallengeViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Game/GameChallengeViewController.swift",
-      "line": 206,
+      "line": 207,
       "symbol": "GameChallengeViewController.onFailure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Game/GameChallengeViewController.swift",
-      "line": 215,
+      "line": 216,
       "symbol": "GameChallengeViewController.userContentController(_:didReceive:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Generic/GenericChallengeViewController.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "GenericChallengeViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Generic/GenericChallengeViewController.swift",
-      "line": 43,
+      "line": 44,
       "symbol": "GenericChallengeViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Generic/GenericChallengeViewController.swift",
-      "line": 52,
+      "line": 53,
       "symbol": "GenericChallengeViewController.onFailure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/MediaManager/MediaChallengeViewController.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "MediaChallengeViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/MediaManager/MediaChallengeViewController.swift",
-      "line": 67,
+      "line": 68,
       "symbol": "MediaChallengeViewController.viewDidDisappear(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/MediaManager/MediaChallengeViewController.swift",
-      "line": 212,
+      "line": 213,
       "symbol": "MediaChallengeViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/MediaManager/MediaChallengeViewController.swift",
-      "line": 226,
+      "line": 227,
       "symbol": "MediaChallengeViewController.onFailure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 21,
+      "line": 22,
       "symbol": "MemeChallengeViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 99,
+      "line": 100,
       "symbol": "MemeChallengeViewController.dismiss(animated:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 105,
+      "line": 106,
       "symbol": "MemeChallengeViewController.viewWillAppear(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 112,
+      "line": 113,
       "symbol": "MemeChallengeViewController.init(challenge:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 335,
+      "line": 336,
       "symbol": "MemeChallengeViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 361,
+      "line": 362,
       "symbol": "MemeChallengeViewController.onFailure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 370,
+      "line": 371,
       "symbol": "MemeChallengeViewController.gestureRecognizer(_:shouldReceive:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 375,
+      "line": 376,
       "symbol": "MemeChallengeViewController.textField(_:shouldChangeCharactersIn:replacementString:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 384,
+      "line": 385,
       "symbol": "MemeChallengeViewController.textFieldShouldReturn(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 390,
+      "line": 391,
       "symbol": "MemeChallengeViewController.pickerView(_:titleForRow:forComponent:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 394,
+      "line": 395,
       "symbol": "MemeChallengeViewController.pickerView(_:didSelectRow:inComponent:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 400,
+      "line": 401,
       "symbol": "MemeChallengeViewController.numberOfComponents(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 404,
+      "line": 405,
       "symbol": "MemeChallengeViewController.pickerView(_:numberOfRowsInComponent:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Meme/MemeChallengeViewController.swift",
-      "line": 412,
+      "line": 413,
       "symbol": "UIView.takeSnaphot(frame:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -457,84 +471,84 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/MultiQuestion/MultiQuestionChallengeViewController.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "MultiQuestionChallengeViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/MultiQuestion/MultiQuestionChallengeViewController.swift",
-      "line": 150,
+      "line": 151,
       "symbol": "MultiQuestionChallengeViewController.onFailure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/MultiQuestion/MultiQuestionChallengeViewController.swift",
-      "line": 159,
+      "line": 160,
       "symbol": "MultiQuestionChallengeViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Preferences/PreferenceChallengeViewController.swift",
-      "line": 18,
+      "line": 19,
       "symbol": "PreferenceChallengeViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Preferences/PreferenceChallengeViewController.swift",
-      "line": 28,
+      "line": 29,
       "symbol": "PreferenceChallengeViewController.init(challenge:preferenceListController:nibName:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Preferences/PreferenceChallengeViewController.swift",
-      "line": 107,
+      "line": 108,
       "symbol": "PreferenceChallengeViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Preferences/PreferenceChallengeViewController.swift",
-      "line": 119,
+      "line": 120,
       "symbol": "PreferenceChallengeViewController.onFailure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Profile/ProfileChallengeViewController.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "ProfileChallengeController",
       "symbol_kind": "source.lang.swift.decl.typealias",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Profile/ProfileChallengeViewController.swift",
-      "line": 24,
+      "line": 25,
       "symbol": "ProfileChallengeViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Profile/ProfileChallengeViewController.swift",
-      "line": 39,
+      "line": 40,
       "symbol": "ProfileChallengeViewController.init(challenge:collectionController:nibName:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Profile/ProfileChallengeViewController.swift",
-      "line": 114,
+      "line": 115,
       "symbol": "ProfileChallengeViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Profile/ProfileChallengeViewController.swift",
-      "line": 128,
+      "line": 129,
       "symbol": "ProfileChallengeViewController.onFailure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -632,35 +646,35 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/Components/SurveyRatingCell.swift",
-      "line": 11,
+      "line": 12,
       "symbol": "SurveyRatingCell",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/Components/SurveyRatingCell.swift",
-      "line": 63,
+      "line": 66,
       "symbol": "SurveyRatingCell.awakeFromNib()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/Components/SurveyRatingCell.swift",
-      "line": 119,
+      "line": 130,
       "symbol": "SurveyRatingCellDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/Components/SurveyRatingCell.swift",
-      "line": 120,
+      "line": 131,
       "symbol": "SurveyRatingCellDelegate.surveyRatingCellMaxRatingDidChange(_:maxRating:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/Components/SurveyRatingCell.swift",
-      "line": 121,
+      "line": 132,
       "symbol": "SurveyRatingCellDelegate.surveyRatingCellRateDidChange(_:rating:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -828,112 +842,112 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "SurveyChallengeViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 37,
+      "line": 38,
       "symbol": "SurveyChallengeViewController.setupTitle()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 55,
+      "line": 56,
       "symbol": "SurveyChallengeViewController.onFailure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 63,
+      "line": 64,
       "symbol": "SurveyChallengeViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 89,
+      "line": 90,
       "symbol": "SurveyResponderController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 99,
+      "line": 100,
       "symbol": "SurveyResponderController.surveyChallengeViewController",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 180,
+      "line": 181,
       "symbol": "SurveyResponderController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 190,
+      "line": 191,
       "symbol": "SurveyResponderController.collectionView(_:numberOfItemsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 206,
+      "line": 207,
       "symbol": "SurveyResponderController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 258,
+      "line": 259,
       "symbol": "SurveyChallengeViewController",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 260,
+      "line": 261,
       "symbol": "SurveyChallengeViewController.surveyResponderFor(challenge:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 279,
+      "line": 280,
       "symbol": "SurveyRespondable",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 300,
+      "line": 301,
       "symbol": "Survey.image",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 304,
+      "line": 305,
       "symbol": "Survey.questionText",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 308,
+      "line": 309,
       "symbol": "Survey.descriptionText",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/Survey/SurveyChallengeViewController.swift",
-      "line": 312,
+      "line": 313,
       "symbol": "Survey.respondTitle",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -961,91 +975,91 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewContentViewController.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "ViewContentController.responseSetting",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewContentViewController.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "ViewContentController.shareToSocialMediaDelegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewContentViewController.swift",
-      "line": 27,
+      "line": 28,
       "symbol": "ViewContentViewController.contentView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewContentViewController.swift",
-      "line": 28,
+      "line": 29,
       "symbol": "ViewContentViewController.actionButton",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewContentViewController.swift",
-      "line": 34,
+      "line": 35,
       "symbol": "ViewContentViewController.viewContentController",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewContentViewController.swift",
-      "line": 47,
+      "line": 48,
       "symbol": "ViewContentViewController.init(challenge:viewContentController:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewContentViewController.swift",
-      "line": 63,
+      "line": 64,
       "symbol": "ViewContentViewController.setupTitle()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewContentViewController.swift",
-      "line": 90,
+      "line": 91,
       "symbol": "ViewContentViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewContentViewController.swift",
-      "line": 111,
+      "line": 112,
       "symbol": "ViewContentViewController.onFailure(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewPhotoChallengeController.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "ViewPhotoChallengeController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewPhotoChallengeController.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "ViewPhotoChallengeController.responseSetting",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewPhotoChallengeController.swift",
-      "line": 34,
+      "line": 35,
       "symbol": "ViewPhotoChallengeController.shareToSocialMediaDelegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyChallenges/CheetahLoyaltyChallenges/Challenge Responder/ViewContent/ViewPhotoChallengeController.swift",
-      "line": 36,
+      "line": 37,
       "symbol": "ViewPhotoChallengeController.imageView",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
