@@ -51,14 +51,18 @@ open class OfferCouponListController : CheetahLoyaltyOffers.OfferListController 
   open var clippingObserver: ObjectiveC.NSObjectProtocol?
   open var doneClippingObserver: ObjectiveC.NSObjectProtocol?
   open var isClipping: Swift.Bool
+  @objc override dynamic public init()
+  override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+  @objc open func clipButtonPressed(_ button: UIKit.UIButton)
   open func isClippingNotification(_ notification: Foundation.Notification)
   open func doneClippingNotification(_ notification: Foundation.Notification)
-  @objc deinit
   override open func loadContent()
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
-  override public init(collectionView: UIKit.UICollectionView? = super)
 }
 open class OfferCouponClippedListController : CheetahLoyaltyOffers.OfferCouponListController {
+  @objc override dynamic public init()
+  override public init(collectionView: UIKit.UICollectionView? = nil)
   override open func doneClippingNotification(_ notification: Foundation.Notification)
   @objc deinit
 }
