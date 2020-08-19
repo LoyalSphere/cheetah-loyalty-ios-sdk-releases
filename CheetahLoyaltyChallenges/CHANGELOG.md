@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Challenges-1.1.1] - 2020-08-19
+### Changed
+- Pass placeholder parameter for image loader methods [#497]
+- Changed dependency version requirements to CheetahLoyaltyCore 1.6.0 and CheetahLoyaltyUI 1.6.0 [#497]
+
+[#497]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/477
+[Challenges-1.1.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/52?closed=1
+
 ## [Challenges-1.1.0] - 2020-08-11
 ### Added
 - Dependency to CheetahLoyaltyUtils 1.0.0 [#477]
