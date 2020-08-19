@@ -6,6 +6,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Rewards-1.2.1] - 2020-08-19
+### Added
+- Add accessibility labels for views that are not default accessibility elements [#482]
+
+### Changed
+- Changed dependency version requirements to CheetahLoyaltyCore 1.6.0 and CheetahLoyaltyUI 1.6.0 [#498]
+
+### Fixed
+- Function call of dictionary extension method, `filterVoid()` [#480]
+
+[#480]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/480
+[#482]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/482
+[#498]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/498
+[Rewards-1.2.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/46?closed=1
+
 ## [Rewards-1.2.0] - 2020-08-11
 ### Added
 - Dependency to CheetahLoyaltyUtils 1.0.0 [#479]

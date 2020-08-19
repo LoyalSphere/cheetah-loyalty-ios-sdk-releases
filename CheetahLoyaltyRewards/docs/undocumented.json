@@ -205,28 +205,28 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
-      "line": 59,
+      "line": 64,
       "symbol": "CombinationRewardViewController.setupActionButton()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
-      "line": 69,
+      "line": 74,
       "symbol": "CombinationRewardViewController.setupPointsLabel()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
-      "line": 77,
+      "line": 82,
       "symbol": "CombinationRewardViewController.updateViews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
-      "line": 87,
+      "line": 95,
       "symbol": "CombinationRewardViewController.setupCollectionView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
