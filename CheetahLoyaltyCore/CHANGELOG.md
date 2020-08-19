@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-1.6.0] - 2020-08-19
+### Changed
+- `APIError` access level to public [#490]
+
+[#490]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/490
+[Core-1.6.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/49?closed=1
+
 ## [Core-1.5.0] - 2020-08-10
 ### Added
 - `Offer.OfferType` cases: [#460]

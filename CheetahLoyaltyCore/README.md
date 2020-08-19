@@ -33,7 +33,7 @@
 * Deployment Target: iOS 11.0
 * Xcode 11.x
 * Swift 5.1
-* `CheetahLoyaltyUtils` v1.0.0
+* `CheetahLoyaltyUtils` 1.0.0
 
 ## Installation
 

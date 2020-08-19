@@ -1,6 +1,13 @@
 {
   "warnings": [
     {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/API/APIError.swift",
+      "line": 35,
+      "symbol": "APIError.unknownError()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/API/APIResponse.swift",
       "line": 94,
       "symbol": "APIResponse.init(request:data:response:value:listInfo:)",

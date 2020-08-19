@@ -1217,6 +1217,20 @@ public enum GroupsAPI {
   public static func joinGroup(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func leaveGroup(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
 }
+public struct APIError : Swift.Decodable, Swift.Error {
+  public let code: Swift.Int
+  public let name: Swift.String
+  public let message: Swift.String
+  public init(from decoder: Swift.Decoder) throws
+}
+extension APIError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension APIError {
+  public static func unknownError() -> CheetahLoyaltyCore.APIError
+}
 public enum AuthenticationRequest : CheetahLoyaltyCore.URLRequestConvertible {
   case logIn(parameters: CheetahLoyaltyCore.Parameters?)
   case refreshToken(token: Swift.String)
