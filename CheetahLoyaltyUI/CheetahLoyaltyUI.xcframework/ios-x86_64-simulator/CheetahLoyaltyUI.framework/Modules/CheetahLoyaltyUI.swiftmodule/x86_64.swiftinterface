@@ -204,17 +204,17 @@ extension GrowingTextViewDelegate {
     get
     set
   }
-  open var placeholderFont: UIKit.UIFont {
-    get
-    set
+  @objc dynamic open var placeholderFont: UIKit.UIFont {
+    @objc get
+    @objc set
   }
-  public var textAlignment: UIKit.NSTextAlignment {
-    get
-    set
+  @objc dynamic public var textAlignment: UIKit.NSTextAlignment {
+    @objc get
+    @objc set
   }
-  open var placeholderColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var placeholderColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
   public var growingTextViewDelegate: CheetahLoyaltyUI.GrowingTextViewDelegate?
   @objc override dynamic open var inputView: UIKit.UIView? {
@@ -304,14 +304,6 @@ public protocol ImagePickerPresenterDelegate : AnyObject {
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-public enum ColorThemeButtonStyle {
-  case outline, solid
-  public static func == (a: CheetahLoyaltyUI.ColorThemeButtonStyle, b: CheetahLoyaltyUI.ColorThemeButtonStyle) -> Swift.Bool
-  public var hashValue: Swift.Int {
-    get
-  }
-  public func hash(into hasher: inout Swift.Hasher)
-}
 public protocol ColorTheme {
   var primaryColor: UIKit.UIColor { get }
   var secondaryColor: UIKit.UIColor { get }
@@ -322,15 +314,18 @@ public protocol ColorTheme {
   var errorColor: UIKit.UIColor { get }
   var textColor: UIKit.UIColor { get }
   var textInputColor: UIKit.UIColor { get }
+  var textInputBackgroundColor: UIKit.UIColor { get }
   var barItemColor: UIKit.UIColor { get }
   var buttonTintColor: UIKit.UIColor { get }
-  var buttonStyle: CheetahLoyaltyUI.ColorThemeButtonStyle { get }
 }
 extension ColorTheme {
   public var textColor: UIKit.UIColor {
     get
   }
   public var textInputColor: UIKit.UIColor {
+    get
+  }
+  public var textInputBackgroundColor: UIKit.UIColor {
     get
   }
   public var primaryVariantColor: UIKit.UIColor {
@@ -352,9 +347,6 @@ extension ColorTheme {
     get
   }
   public var buttonTintColor: UIKit.UIColor {
-    get
-  }
-  public var buttonStyle: CheetahLoyaltyUI.ColorThemeButtonStyle {
     get
   }
 }
@@ -524,6 +516,7 @@ open class MenuCollectionController : CheetahLoyaltyUI.BaseCollectionController<
   @objc deinit
 }
 public protocol SegmentedController {
+  var navigationItemTitle: Swift.String? { get }
   func numberOfSegments() -> Swift.Int
   func viewControllerForSegment(atIndex index: Swift.Int) -> UIKit.UIViewController?
   func titleForSegment(atIndex index: Swift.Int) -> Swift.String?
@@ -538,6 +531,7 @@ public protocol SegmentedController {
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   public init(segmentedController: CheetahLoyaltyUI.SegmentedController)
+  @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
   override open func setup()
   open func reloadData()
   open func reloadSegments()
@@ -641,41 +635,41 @@ extension UICollectionViewFlowLayout {
     get
     set
   }
-  open var titleFont: UIKit.UIFont {
-    get
-    set
+  @objc dynamic open var titleFont: UIKit.UIFont {
+    @objc get
+    @objc set
   }
   open var errorMessage: Swift.String? {
     get
     set
   }
-  open var textColor: UIKit.UIColor? {
-    get
-    set
+  @objc dynamic open var textColor: UIKit.UIColor? {
+    @objc get
+    @objc set
   }
-  open var titleColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var titleColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var selectedTitleColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var selectedTitleColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var lineColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var lineColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var selectedLineColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var selectedLineColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var errorColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var errorColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var disabledColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var disabledColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
   open var lineHeight: CoreGraphics.CGFloat {
     get
@@ -757,6 +751,7 @@ public protocol ColorThemePainter {
   func paintUISearchBar(using theme: CheetahLoyaltyUI.ColorTheme)
   func paintUITabBar(using theme: CheetahLoyaltyUI.ColorTheme)
   func paintFloatingTextFields(using theme: CheetahLoyaltyUI.ColorTheme)
+  func paintFloatingTextViews(using theme: CheetahLoyaltyUI.ColorTheme)
 }
 open class CheetahColorThemePainter : CheetahLoyaltyUI.ColorThemePainter {
   public init()
@@ -780,6 +775,7 @@ open class CheetahColorThemePainter : CheetahLoyaltyUI.ColorThemePainter {
   open func paintUISearchBar(using theme: CheetahLoyaltyUI.ColorTheme)
   open func paintUITabBar(using theme: CheetahLoyaltyUI.ColorTheme)
   open func paintFloatingTextFields(using theme: CheetahLoyaltyUI.ColorTheme)
+  public func paintFloatingTextViews(using theme: CheetahLoyaltyUI.ColorTheme)
   @objc deinit
 }
 public protocol MenuItemCellPresentable {
@@ -820,11 +816,11 @@ public protocol FloatingTextFieldWithIconDelegate {
     set
   }
   public var iconDelegate: CheetahLoyaltyUI.FloatingTextFieldWithIconDelegate?
-  open var iconColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var iconColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var selectedIconColor: UIKit.UIColor
+  @objc dynamic open var selectedIconColor: UIKit.UIColor
   public var iconPosition: CheetahLoyaltyUI.FloatingTextFieldWithIcon.IconPosition {
     get
     set
@@ -919,6 +915,9 @@ extension UIColor {
     get
   }
   public static var textInput: UIKit.UIColor {
+    get
+  }
+  public static var textInputBackground: UIKit.UIColor {
     get
   }
   public static var barItem: UIKit.UIColor {
@@ -1056,17 +1055,17 @@ public enum FloatingTextFieldInputType {
     get
     set
   }
-  open var titleFont: UIKit.UIFont {
-    get
-    set
+  @objc dynamic open var titleFont: UIKit.UIFont {
+    @objc get
+    @objc set
   }
   @objc override dynamic open var placeholder: Swift.String? {
     @objc get
     @objc set
   }
-  open var placeholderFont: UIKit.UIFont? {
-    get
-    set
+  @objc dynamic open var placeholderFont: UIKit.UIFont? {
+    @objc get
+    @objc set
   }
   @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
     @objc get
@@ -1089,33 +1088,33 @@ public enum FloatingTextFieldInputType {
     @objc get
     @objc set
   }
-  open var titleColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var titleColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var selectedTitleColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var selectedTitleColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var lineColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var lineColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var selectedLineColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var selectedLineColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var placeholderColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var placeholderColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var disabledColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var disabledColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var errorColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var errorColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
   open var lineHeight: CoreGraphics.CGFloat {
     get
@@ -1340,18 +1339,12 @@ extension TableRowCell : CheetahLoyaltyUI.Loadable {
 }
 public typealias ImageLoaderCompletion = ((Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
 public protocol ImageLoader {
-  static var imagePlaceholder: UIKit.UIImage? { get }
-  func loadImage(for imageView: UIKit.UIImageView, with urlString: Swift.String, completion: CheetahLoyaltyUI.ImageLoaderCompletion?)
-  func loadImage(for imageView: UIKit.UIImageView, with url: Foundation.URL, completion: CheetahLoyaltyUI.ImageLoaderCompletion?)
-}
-extension ImageLoader {
-  public func loadImage(for imageView: UIKit.UIImageView, with urlString: Swift.String, completion: CheetahLoyaltyUI.ImageLoaderCompletion? = nil)
+  var imagePlaceholder: UIKit.UIImage? { get }
+  func loadImage(for imageView: UIKit.UIImageView, with urlString: Swift.String, placeholder: UIKit.UIImage?, completion: CheetahLoyaltyUI.ImageLoaderCompletion?)
+  func loadImage(for imageView: UIKit.UIImageView, with url: Foundation.URL, placeholder: UIKit.UIImage?, completion: CheetahLoyaltyUI.ImageLoaderCompletion?)
 }
 public enum CheetahImageLoader {
   public static var `default`: CheetahLoyaltyUI.ImageLoader?
-}
-extension UIImageView {
-  public func setImage(from url: Foundation.URL, completion: CheetahLoyaltyUI.ImageLoaderCompletion? = nil)
 }
 public protocol CollectionController : CheetahLoyaltyUI.ContentController, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate, UIKit.UISearchBarDelegate {
   var collectionView: UIKit.UICollectionView? { get set }
@@ -1719,8 +1712,6 @@ public protocol LoadableViewController : UIKit.UIViewController, CheetahLoyaltyU
 }
 extension CheetahLoyaltyUI.ImagePickerPresenter.MediaType : Swift.Equatable {}
 extension CheetahLoyaltyUI.ImagePickerPresenter.MediaType : Swift.Hashable {}
-extension CheetahLoyaltyUI.ColorThemeButtonStyle : Swift.Equatable {}
-extension CheetahLoyaltyUI.ColorThemeButtonStyle : Swift.Hashable {}
 extension CheetahLoyaltyUI.AnalyticsLogger.LogKeys : Swift.Equatable {}
 extension CheetahLoyaltyUI.AnalyticsLogger.LogKeys : Swift.Hashable {}
 extension CheetahLoyaltyUI.AnalyticsLogger.LogKeys : Swift.RawRepresentable {}

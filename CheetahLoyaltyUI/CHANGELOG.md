@@ -6,6 +6,38 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-1.6.0] - 2020-08-19
+### Added
+- Image placeholder parameter in `ImageLoader` methods [#486], [#494]
+- `UIAppearance` conformance on custom properties of: [#489]
+	- `FloatingTextField`
+	- `FloatingTextFieldWithIcon`
+	- `FloatingTextView`
+	- `GrowingTextView`
+- Navigation item title property to segmented controller [#491], [#493]
+- `textInputBackgroundColor` property in `ColorTheme` [#492]
+- Floating text view painter method in `ColorThemePainter` [#492]
+- Floating text field background color set to `textInputBackgroundColor` in `CheetahColorThemePainter` [#492]
+
+
+### Changed
+- Set navigation bar and tab bar to be not translucent in `CheetahColorThemePainter` [#481]
+- `imagePlaceholder` of `ImageLoader` to an instance property [#494]
+
+### Removed
+- `ColorThemeButtonStyle` to be less restrictive in theming buttons [#488]
+- `UIImageView` extension method `setImage(from:, completion:)` [#486]
+
+[#481]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/481
+[#486]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/486
+[#488]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/488
+[#489]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/489
+[#491]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/491
+[#492]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/492
+[#493]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/493
+[#494]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/494
+[UI-1.6.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/47?closed=1
+
 ## [UI-1.5.0] - 2020-08-10
 ### Added
 - `NibViewController` back button customizability [#465]

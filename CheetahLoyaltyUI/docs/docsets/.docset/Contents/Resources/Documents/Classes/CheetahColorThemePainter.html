@@ -196,9 +196,6 @@
                 <a href="../Enums/CheetahImageLoader.html">CheetahImageLoader</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/ColorThemeButtonStyle.html">ColorThemeButtonStyle</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/FloatingTextFieldInputType.html">FloatingTextFieldInputType</a>
               </li>
               <li class="nav-group-task">
@@ -238,9 +235,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/UIImage.html">UIImage</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/UIImageView.html">UIImageView</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/UILabel.html">UILabel</a>
@@ -591,7 +585,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Paints the <code>barTintColor</code> using <code>primaryColor</code>, the <code>titleTextAttributes</code>&lsquo;s foreground color with <code>barItemColor</code> and, the <code>tintColor</code> with <code>barItemColor</code>.</p>
+                        <p>Paints the <code>barTintColor</code> using <code>primaryColor</code>, the <code>titleTextAttributes</code>&lsquo;s foreground color with <code>barItemColor</code> and, the <code>tintColor</code> with <code>barItemColor</code>.
+This also sets <code>isTranslucent</code> to false.</p>
 
                       </div>
                       <div class="declaration">
@@ -984,7 +979,8 @@ This also set the default <code>tintColor</code> to <code>textColor</code> and <
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Changes the <code>barTintColor</code> using <code>primaryColor</code>, <code>tintColor</code> to <code>secondaryColor</code> and <code>unselectedItemTintColor</code> using <code>textColor</code>.</p>
+                        <p>Paints the <code>barTintColor</code> using <code>primaryColor</code>, <code>tintColor</code> to <code>secondaryColor</code> and <code>unselectedItemTintColor</code> using <code>textColor</code>.
+This also sets <code>isTranslucent</code> to false.</p>
 
                       </div>
                       <div class="declaration">
@@ -1001,9 +997,9 @@ This also set the default <code>tintColor</code> to <code>textColor</code> and <
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16CheetahLoyaltyUI17ColorThemePainterP23paintFloatingTextFields5usingyAA0dE0_p_tF"></a>
+                    <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC23paintFloatingTextFields5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintFloatingTextFields(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI17ColorThemePainterP23paintFloatingTextFields5usingyAA0dE0_p_tF">paintFloatingTextFields(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC23paintFloatingTextFields5usingyAA0dE0_p_tF">paintFloatingTextFields(using:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1011,7 +1007,8 @@ This also set the default <code>tintColor</code> to <code>textColor</code> and <
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Paints the <code>textColor</code> using <code>textInputColor</code> and <code>backgroundColor</code> using <code>textInputBackgroundColor</code>.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -1024,12 +1021,39 @@ This also set the default <code>tintColor</code> to <code>textColor</code> and <
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC22paintFloatingTextViews5usingyAA0dE0_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/paintFloatingTextViews(using:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC22paintFloatingTextViews5usingyAA0dE0_p_tF">paintFloatingTextViews(using:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Paints the <code>textColor</code> using <code>textInputColor</code> and <code>backgroundColor</code> using <code>textInputBackgroundColor</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">paintFloatingTextViews</span><span class="p">(</span><span class="n">using</span> <span class="nv">theme</span><span class="p">:</span> <span class="kt"><a href="../Protocols/ColorTheme.html">ColorTheme</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-08-11)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-08-19)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

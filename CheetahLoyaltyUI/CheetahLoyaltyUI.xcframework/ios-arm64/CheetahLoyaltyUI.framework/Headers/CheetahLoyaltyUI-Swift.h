@@ -478,14 +478,24 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI35DynamicListCollectionViewFlowLayout")
 - (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class UIFont;
 @class UIColor;
 
 SWIFT_CLASS("_TtC16CheetahLoyaltyUI17FloatingTextField")
 @interface FloatingTextField : UITextField
+@property (nonatomic, strong) UIFont * _Nonnull titleFont;
 @property (nonatomic, copy) NSString * _Nullable placeholder;
+@property (nonatomic, strong) UIFont * _Nullable placeholderFont;
 @property (nonatomic) NSTextAlignment textAlignment;
 @property (nonatomic, copy) NSString * _Nullable text;
 @property (nonatomic, strong) UIColor * _Nullable textColor;
+@property (nonatomic, strong) UIColor * _Nonnull titleColor;
+@property (nonatomic, strong) UIColor * _Nonnull selectedTitleColor;
+@property (nonatomic, strong) UIColor * _Nonnull lineColor;
+@property (nonatomic, strong) UIColor * _Nonnull selectedLineColor;
+@property (nonatomic, strong) UIColor * _Nonnull placeholderColor;
+@property (nonatomic, strong) UIColor * _Nonnull disabledColor;
+@property (nonatomic, strong) UIColor * _Nonnull errorColor;
 @property (nonatomic, getter=isSecureTextEntry) BOOL secureTextEntry;
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
 @property (nonatomic, getter=isSelected) BOOL selected;
@@ -499,6 +509,8 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI17FloatingTextField")
 
 SWIFT_CLASS("_TtC16CheetahLoyaltyUI25FloatingTextFieldWithIcon")
 @interface FloatingTextFieldWithIcon : FloatingTextField
+@property (nonatomic, strong) UIColor * _Nonnull iconColor;
+@property (nonatomic, strong) UIColor * _Nonnull selectedIconColor;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (CGRect)textRectForBounds:(CGRect)bounds SWIFT_WARN_UNUSED_RESULT;
@@ -510,6 +522,9 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI25FloatingTextFieldWithIcon")
 
 SWIFT_CLASS("_TtC16CheetahLoyaltyUI15GrowingTextView")
 @interface GrowingTextView : UIScrollView
+@property (nonatomic, strong) UIFont * _Nonnull placeholderFont;
+@property (nonatomic) NSTextAlignment textAlignment;
+@property (nonatomic, strong) UIColor * _Nonnull placeholderColor;
 @property (nonatomic, strong) UIView * _Nullable inputView;
 @property (nonatomic, readonly) CGSize intrinsicContentSize;
 @property (nonatomic, readonly) BOOL isFirstResponder;
@@ -522,6 +537,14 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI15GrowingTextView")
 
 SWIFT_CLASS("_TtC16CheetahLoyaltyUI16FloatingTextView")
 @interface FloatingTextView : GrowingTextView
+@property (nonatomic, strong) UIFont * _Nonnull titleFont;
+@property (nonatomic, strong) UIColor * _Nullable textColor;
+@property (nonatomic, strong) UIColor * _Nonnull titleColor;
+@property (nonatomic, strong) UIColor * _Nonnull selectedTitleColor;
+@property (nonatomic, strong) UIColor * _Nonnull lineColor;
+@property (nonatomic, strong) UIColor * _Nonnull selectedLineColor;
+@property (nonatomic, strong) UIColor * _Nonnull errorColor;
+@property (nonatomic, strong) UIColor * _Nonnull disabledColor;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
@@ -686,6 +709,7 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI23SegmentedViewController")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidAppear:(BOOL)animated;
 @end
 
 
@@ -748,8 +772,6 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI19TableViewController")
 /// By default, this calls the refresh content of the table controller.
 - (void)refreshControlValueChanged:(UIRefreshControl * _Nonnull)sender;
 @end
-
-
 
 
 
