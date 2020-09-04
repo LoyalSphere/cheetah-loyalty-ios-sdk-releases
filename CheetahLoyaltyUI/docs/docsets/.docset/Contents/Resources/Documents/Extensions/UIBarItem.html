@@ -41,6 +41,9 @@
                 <a href="../Classes/BaseCollectionController.html">BaseCollectionController</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/BaseDetailController.html">BaseDetailController</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/BaseTableController.html">BaseTableController</a>
               </li>
               <li class="nav-group-task">
@@ -373,16 +376,10 @@
                 <a href="../Structs/CheetahColorTheme.html">CheetahColorTheme</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/CheetahDisabledButtonTextAppearance.html">CheetahDisabledButtonTextAppearance</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/CheetahFootnote.html">CheetahFootnote</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/CheetahHeadline.html">CheetahHeadline</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/CheetahHighlightedButtonTextAppearance.html">CheetahHighlightedButtonTextAppearance</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/CheetahLargeTitle.html">CheetahLargeTitle</a>
@@ -429,7 +426,7 @@
             <h1>UIBarItem</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">UIBarItem</span><span class="p">:</span> <span class="kt">TextDecorator</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">UIBarItem</span><span class="p">:</span> <span class="kt">BarItemTextDecorator</span></code></pre>
 
                 </div>
               </div>
@@ -441,9 +438,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16CheetahLoyaltyUI13TextDecoratorP03setD10AppearanceyyAA0dG0_pF"></a>
-                    <a name="//apple_ref/swift/Method/setTextAppearance(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI13TextDecoratorP03setD10AppearanceyyAA0dG0_pF">setTextAppearance(_:)</a>
+                    <a name="/s:16CheetahLoyaltyUI20BarItemTextDecoratorP03setF10Appearance_3foryAA0fI0_p_So14UIControlStateVtF"></a>
+                    <a name="//apple_ref/swift/Method/setTextAppearance(_:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI20BarItemTextDecoratorP03setF10Appearance_3foryAA0fI0_p_So14UIControlStateVtF">setTextAppearance(_:for:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -457,7 +454,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setTextAppearance</span><span class="p">(</span><span class="n">_</span> <span class="nv">textAppearance</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TextAppearance.html">TextAppearance</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setTextAppearance</span><span class="p">(</span><span class="n">_</span> <span class="nv">textAppearance</span><span class="p">:</span> <span class="kt"><a href="../Protocols/TextAppearance.html">TextAppearance</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">State</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -467,9 +464,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:16CheetahLoyaltyUI13TextDecoratorP03setD5StyleyyAA12ThemeManagerC0dG0OF"></a>
-                    <a name="//apple_ref/swift/Method/setTextStyle(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI13TextDecoratorP03setD5StyleyyAA12ThemeManagerC0dG0OF">setTextStyle(_:)</a>
+                    <a name="/s:16CheetahLoyaltyUI20BarItemTextDecoratorP03setF5Style_3foryAA12ThemeManagerC0fI0O_So14UIControlStateVtF"></a>
+                    <a name="//apple_ref/swift/Method/setTextStyle(_:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI20BarItemTextDecoratorP03setF5Style_3foryAA12ThemeManagerC0fI0O_So14UIControlStateVtF">setTextStyle(_:for:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -483,7 +480,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setTextStyle</span><span class="p">(</span><span class="n">_</span> <span class="nv">textStyle</span><span class="p">:</span> <span class="kt"><a href="../Classes/ThemeManager.html">ThemeManager</a></span><span class="o">.</span><span class="kt">TextStyle</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setTextStyle</span><span class="p">(</span><span class="n">_</span> <span class="nv">textStyle</span><span class="p">:</span> <span class="kt"><a href="../Classes/ThemeManager.html">ThemeManager</a></span><span class="o">.</span><span class="kt">TextStyle</span><span class="p">,</span> <span class="k">for</span> <span class="nv">state</span><span class="p">:</span> <span class="kt">UIControl</span><span class="o">.</span><span class="kt">State</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -495,7 +492,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-08-19)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-09-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

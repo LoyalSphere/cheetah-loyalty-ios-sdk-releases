@@ -6,6 +6,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-1.7.0] - 2020-09-04
+### Added
+- Accessibility for views without default accessibility [#504]
+- `BaseDetailController` base class for `DetailController` [#508]
+
+### Changed
+- Move `setupDetails` from `DetailViewController` to `DetailController` [#508]
+- Color sets and image assets naming convention [#510]
+
+### Fixed
+- Applying Text Appearance on elements with title text attributes [#509]
+
+### Removed
+- Text Appearance Text Color [#509]
+- Highlighted and disabled button text appearances [#511]
+
+[#511]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/511
+[#510]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/510
+[#509]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/509
+[#508]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/508
+[#504]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/504
+[UI-1.7.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/55?closed=1
+
 ## [UI-1.6.0] - 2020-08-19
 ### Added
 - Image placeholder parameter in `ImageLoader` methods [#486], [#494]

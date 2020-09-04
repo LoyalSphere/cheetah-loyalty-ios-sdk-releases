@@ -26,12 +26,9 @@ public protocol TextTheme {
   var textView: CheetahLoyaltyUI.TextAppearance { get }
   var textField: CheetahLoyaltyUI.TextAppearance { get }
   var normalButton: CheetahLoyaltyUI.TextAppearance { get }
-  var disabledButton: CheetahLoyaltyUI.TextAppearance { get }
-  var highlightedButton: CheetahLoyaltyUI.TextAppearance { get }
 }
 public protocol TextAppearance {
   var fontName: Swift.String { get }
-  var textColor: UIKit.UIColor { get }
   var textStyle: UIKit.UIFont.TextStyle? { get }
   var fontSize: CoreGraphics.CGFloat? { get }
 }
@@ -68,8 +65,8 @@ extension UITableViewCell {
   public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle)
 }
 extension UIBarItem {
-  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance)
-  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle)
+  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance, for state: UIKit.UIControl.State)
+  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle, for state: UIKit.UIControl.State)
 }
 extension UINavigationBar {
   public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance)
@@ -364,6 +361,20 @@ public protocol DetailController : CheetahLoyaltyUI.ContentController {
   func actionButtonPressed(_ actionButton: UIKit.UIButton)
   var detailProvider: CheetahLoyaltyUI.DetailPresentable? { get }
 }
+open class BaseDetailController : CheetahLoyaltyUI.DetailController {
+  open var detailProvider: CheetahLoyaltyUI.DetailPresentable? {
+    get
+    set
+  }
+  open var navigationItemTitle: Swift.String?
+  open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
+  open func actionButtonPressed(_ actionButton: UIKit.UIButton)
+  open func loadContent()
+  open func refreshContent()
+  public init()
+  open func setupDetails()
+  @objc deinit
+}
 @objc open class DetailViewController : CheetahLoyaltyUI.StatefulViewController {
   @objc @IBOutlet public var scrollView: UIKit.UIScrollView!
   @objc @IBOutlet public var contentView: UIKit.UIView!
@@ -394,7 +405,6 @@ public protocol DetailController : CheetahLoyaltyUI.ContentController {
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = nil, empty: CheetahLoyaltyUI.ReloadableViewController? = nil, error: CheetahLoyaltyUI.ReloadableViewController? = nil)
   public init(detailController: CheetahLoyaltyUI.DetailController, isRefreshable: Swift.Bool = true)
   override open func setup()
-  open func setupDetails()
   @objc open func actionButtonPressed(_ sender: UIKit.UIButton)
   @objc open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
   @objc deinit
@@ -875,8 +885,6 @@ open class ThemeManager {
     case textField
     case alertButton
     case normalButton
-    case disabledButton
-    case highlightedButton
     public var textAppearance: CheetahLoyaltyUI.TextAppearance {
       get
     }
@@ -1469,108 +1477,79 @@ public struct CheetahTextTheme : CheetahLoyaltyUI.TextTheme {
   public var textView: CheetahLoyaltyUI.TextAppearance
   public var textField: CheetahLoyaltyUI.TextAppearance
   public var normalButton: CheetahLoyaltyUI.TextAppearance
-  public var disabledButton: CheetahLoyaltyUI.TextAppearance
-  public var highlightedButton: CheetahLoyaltyUI.TextAppearance
 }
 public struct CheetahNormalButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahDisabledButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahHighlightedButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahAlertButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahTextViewTextAppearance : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahTextFieldTextAppearance : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahLargeTitle : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahTitle1 : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahTitle2 : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahTitle3 : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahHeadline : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahSubheadline : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahBody : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahCallout : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahFootnote : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahCaption1 : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
 public struct CheetahCaption2 : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
-  public var textColor: UIKit.UIColor
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
 }
