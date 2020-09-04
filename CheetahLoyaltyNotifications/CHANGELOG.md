@@ -6,9 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Notifications-1.2.2] - 2020-09-04
+### Changed
+- Dependency version requirements to CheetahLoyaltyCore 1.7.0 [#514]
+
+[#514]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/514
+[Notifications-1.2.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/58?closed=1
+
 ## [Notifications-1.2.1] - 2020-08-19
 ### Changed
-- Dependency version requirements to CheetahLoyaltyCore 1.5.0 [#496]
+- Dependency version requirements to CheetahLoyaltyCore 1.6.0 [#496]
 
 [#496]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/496
 [Notifications-1.2.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/51?closed=1
