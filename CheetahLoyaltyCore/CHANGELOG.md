@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-1.7.0] - 2020-09-04
+### Added
+- Inline documentation for registeredDeviceToken defaults key [#507]
+- `hasLaunchedOnce` Defaults Key [#507]
+- `deleteCredentialsIfNeeded` method that deletes the credentials in the keychain when the app has not yet launched at least once. [#507]
+
+[#507]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/507
+[Core-1.7.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/56?closed=1
+
 ## [Core-1.6.0] - 2020-08-19
 ### Changed
 - `APIError` access level to public [#490]

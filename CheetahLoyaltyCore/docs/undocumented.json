@@ -282,22 +282,29 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 69,
+      "line": 71,
       "symbol": "Configuration.DefaultsKeys.sendLocationAnonymously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 70,
+      "line": 72,
       "symbol": "Configuration.DefaultsKeys.lastActiveTrackingDate",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 71,
+      "line": 73,
       "symbol": "Configuration.DefaultsKeys.registeredDeviceToken",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
+      "line": 74,
+      "symbol": "Configuration.DefaultsKeys.hasLaunchedOnce",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },

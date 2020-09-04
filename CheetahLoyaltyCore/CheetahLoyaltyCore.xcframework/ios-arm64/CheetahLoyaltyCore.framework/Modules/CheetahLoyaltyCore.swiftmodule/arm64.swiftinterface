@@ -3124,6 +3124,7 @@ public class Configuration : Swift.Decodable {
     case sendLocationAnonymously
     case lastActiveTrackingDate
     case registeredDeviceToken
+    case hasLaunchedOnce
     public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
     public var rawValue: Swift.String {
@@ -3144,6 +3145,7 @@ public class API {
   public func getRefreshToken() -> Swift.String?
   public func setCredentials(_ accessToken: Swift.String, refreshToken: Swift.String? = nil)
   public func deleteCredentials()
+  public func deleteCredentialsIfNeeded()
   public func send<T>(_ request: CheetahLoyaltyCore.URLRequestConvertible, modelKeyPath: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<T>) where T : Swift.Decodable
   @objc deinit
 }
