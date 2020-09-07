@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-1.7.1] - 2020-09-07
+### Changed
+- `BaseDetailController` as a subclass of `NSObject` [#518]
+
+[#518]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/518
+[UI-1.7.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/60?closed=1
+
 ## [UI-1.7.0] - 2020-09-04
 ### Added
 - Accessibility for views without default accessibility [#504]

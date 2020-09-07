@@ -814,28 +814,28 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/DetailViewController/DetailViewController.swift",
-      "line": 159,
+      "line": 161,
       "symbol": "DetailViewController.init(nibName:bundle:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/DetailViewController/DetailViewController.swift",
-      "line": 163,
+      "line": 165,
       "symbol": "DetailViewController.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/DetailViewController/DetailViewController.swift",
-      "line": 205,
+      "line": 207,
       "symbol": "DetailViewController.actionButtonPressed(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/DetailViewController/DetailViewController.swift",
-      "line": 211,
+      "line": 213,
       "symbol": "DetailViewController.refreshControlValueChanged(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1122,14 +1122,14 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/RatingButton.swift",
-      "line": 34,
+      "line": 35,
       "symbol": "RatingButton.groupStateDidChange(by:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/RatingButton.swift",
-      "line": 41,
+      "line": 42,
       "symbol": "RatingButton.didTapButton()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

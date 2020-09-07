@@ -263,6 +263,12 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI21AppInfoViewController")
 @end
 
 
+SWIFT_CLASS("_TtC16CheetahLoyaltyUI20BaseDetailController")
+@interface BaseDetailController : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 
 /// A CollectionViewFlowLayout that resembles a carousel.

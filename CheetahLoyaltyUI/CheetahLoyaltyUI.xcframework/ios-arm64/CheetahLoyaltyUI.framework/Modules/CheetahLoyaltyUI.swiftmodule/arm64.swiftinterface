@@ -361,7 +361,7 @@ public protocol DetailController : CheetahLoyaltyUI.ContentController {
   func actionButtonPressed(_ actionButton: UIKit.UIButton)
   var detailProvider: CheetahLoyaltyUI.DetailPresentable? { get }
 }
-open class BaseDetailController : CheetahLoyaltyUI.DetailController {
+@objc open class BaseDetailController : ObjectiveC.NSObject, CheetahLoyaltyUI.DetailController {
   open var detailProvider: CheetahLoyaltyUI.DetailPresentable? {
     get
     set
@@ -371,7 +371,7 @@ open class BaseDetailController : CheetahLoyaltyUI.DetailController {
   open func actionButtonPressed(_ actionButton: UIKit.UIButton)
   open func loadContent()
   open func refreshContent()
-  public init()
+  @objc override dynamic public init()
   open func setupDetails()
   @objc deinit
 }
