@@ -22,6 +22,20 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RedemptionDetail/RedemptionDetailController.swift",
+      "line": 63,
+      "symbol": "RedemptionDetailController.actionButtonPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RedemptionDetail/RedemptionDetailController.swift",
+      "line": 67,
+      "symbol": "RedemptionDetailController.loadContent()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RedemptionDetail/RedemptionDetailViewController.swift",
       "line": 13,
       "symbol": "RedemptionDetailViewController",
@@ -37,14 +51,28 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
-      "line": 138,
+      "line": 76,
+      "symbol": "RewardDetailController.actionButtonPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
+      "line": 89,
+      "symbol": "RewardDetailController.loadContent()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
+      "line": 135,
       "symbol": "RewardDetailController.setupAwardClaimStatus()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
-      "line": 143,
+      "line": 140,
       "symbol": "RewardDetailController.rewardRedeemed()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -54,6 +82,13 @@
       "line": 12,
       "symbol": "RewardDetailViewController",
       "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailViewController.swift",
+      "line": 24,
+      "symbol": "RewardDetailViewController.setupOtherDetails()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {

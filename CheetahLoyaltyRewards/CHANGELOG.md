@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Rewards-1.2.2] - 2020-09-05
+### Changed
+- Changed dependency version requirements to CheetahLoyaltyCore 1.7.0 and CheetahLoyaltyUI 1.7.0 [#516]
+- Apply Changes to `DetailController` in Reward Detail [#516]
+
+[#516]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/516
+[Rewards-1.2.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/59?closed=1
+
 ## [Rewards-1.2.1] - 2020-08-19
 ### Added
 - Add accessibility labels for views that are not default accessibility elements [#482]

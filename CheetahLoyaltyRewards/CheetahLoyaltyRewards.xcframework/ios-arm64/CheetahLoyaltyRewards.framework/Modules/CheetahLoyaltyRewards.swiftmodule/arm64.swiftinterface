@@ -119,20 +119,17 @@ open class RedemptionDetailViewController : CheetahLoyaltyUI.DetailViewControlle
   override public init(detailController: CheetahLoyaltyUI.DetailController, isRefreshable: Swift.Bool = super)
   @objc deinit
 }
-open class RedemptionDetailController : CheetahLoyaltyUI.DetailController {
-  open var navigationItemTitle: Swift.String?
+open class RedemptionDetailController : CheetahLoyaltyUI.BaseDetailController {
   open var id: Swift.Int
   open var notes: Swift.String {
     get
   }
-  open var detailProvider: CheetahLoyaltyUI.DetailPresentable?
-  open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
   public init(id: Swift.Int)
-  open func actionButtonPressed(_ actionButton: UIKit.UIButton)
-  open func loadContent()
-  open func refreshContent()
+  override open func actionButtonPressed(_ actionButton: UIKit.UIButton)
+  override open func loadContent()
   open func setupActionButton()
   open func cancelReward()
+  override public init()
   @objc deinit
 }
 extension Reward.Response : CheetahLoyaltyUI.DetailPresentable {
@@ -161,8 +158,7 @@ extension Reward.Response : CheetahLoyaltyUI.DetailPresentable {
     get
   }
 }
-open class RewardDetailController : CheetahLoyaltyUI.DetailController {
-  open var navigationItemTitle: Swift.String?
+open class RewardDetailController : CheetahLoyaltyUI.BaseDetailController {
   open var awardID: Swift.Int?
   open var awardStatus: CheetahLoyaltyCore.Award.Status
   open var id: Swift.Int
@@ -175,17 +171,16 @@ open class RewardDetailController : CheetahLoyaltyUI.DetailController {
     set
   }
   open var responderFactory: CheetahLoyaltyRewards.RewardResponderFactory.Type
-  open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
-  open var detailProvider: CheetahLoyaltyUI.DetailPresentable?
   public init(id: Swift.Int, awardID: Swift.Int? = nil)
   @objc deinit
-  open func actionButtonPressed(_ actionButton: UIKit.UIButton)
-  open func loadContent()
-  open func refreshContent()
+  override open func setupDetails()
+  override open func actionButtonPressed(_ actionButton: UIKit.UIButton)
+  override open func loadContent()
   open func setupRewardRedeemedListener()
   open func setupRewardRespondableStatus()
   open func setupAwardClaimStatus()
   open func rewardRedeemed()
+  override public init()
 }
 extension Reward : CheetahLoyaltyUI.DetailPresentable {
   public var detailImage: UIKit.UIImage? {
@@ -214,7 +209,7 @@ extension Reward : CheetahLoyaltyUI.DetailPresentable {
   }
 }
 open class RewardDetailViewController : CheetahLoyaltyUI.DetailViewController, CheetahLoyaltyUI.SelectionButtonDelegate {
-  override open func setupDetails()
+  open func setupOtherDetails()
   open func didTap(_ selectionButton: CheetahLoyaltyUI.SelectionButton)
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
