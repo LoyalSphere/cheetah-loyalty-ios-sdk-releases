@@ -14,7 +14,7 @@
     <a title="OfferDetailController Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (65% documented)</p>
+        <p><a href="../index.html"> Docs</a> (67% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -108,7 +108,7 @@
             <h1>OfferDetailController</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">OfferDetailController</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">DetailController</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">OfferDetailController</span> <span class="p">:</span> <span class="kt">BaseDetailController</span></code></pre>
 
                 </div>
               </div>
@@ -129,87 +129,6 @@
                 </div>
               </div>
               <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:20CheetahLoyaltyOffers21OfferDetailControllerC19navigationItemTitleSSSgvp"></a>
-                    <a name="//apple_ref/swift/Property/navigationItemTitle" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20CheetahLoyaltyOffers21OfferDetailControllerC19navigationItemTitleSSSgvp">navigationItemTitle</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">navigationItemTitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:20CheetahLoyaltyOffers21OfferDetailControllerC012statefulViewF0Xevp"></a>
-                    <a name="//apple_ref/swift/Property/statefulViewController" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20CheetahLoyaltyOffers21OfferDetailControllerC012statefulViewF0Xevp">statefulViewController</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">statefulViewController</span><span class="p">:</span> <span class="kt">StatefulViewController</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:20CheetahLoyaltyOffers21OfferDetailControllerC14detailProviderXevp"></a>
-                    <a name="//apple_ref/swift/Property/detailProvider" class="dashAnchor"></a>
-                    <a class="token" href="#/s:20CheetahLoyaltyOffers21OfferDetailControllerC14detailProviderXevp">detailProvider</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">detailProvider</span><span class="p">:</span> <span class="kt">DetailPresentable</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -311,7 +230,7 @@
                       <div class="abstract">
                         <p>Boolean indicating if the offer is clippable</p>
 
-<p>By default this checks if the <code><a href="../Classes/OfferDetailController.html#/s:20CheetahLoyaltyOffers21OfferDetailControllerC14detailProviderXevp">detailProvider</a></code> is an <code>Offer</code> and its <code>type</code> property is <code>.coupon</code>.</p>
+<p>By default this checks if the <code>detailProvider</code> is an <code>Offer</code> and its <code>type</code> property is <code>.coupon</code>.</p>
 
                       </div>
                       <div class="declaration">
@@ -601,6 +520,43 @@ The read more button is shown when the offer is of type url and its url is not b
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahLoyaltyOffers21OfferDetailControllerC12setupContentyyF"></a>
+                    <a name="//apple_ref/swift/Method/setupContent()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahLoyaltyOffers21OfferDetailControllerC12setupContentyyF">setupContent()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setup the content for the offer detail</p>
+
+<p>This method is a consolidated call to the following in order:</p>
+
+<ul>
+<li><code>setupDetails</code></li>
+<li><code>setupClipRightBarButtonItem</code></li>
+<li><code>setupBarcodeIfNeeded</code></li>
+<li><code>setupActionButtons</code></li>
+<li>Set <code>state</code> of <code>statefulViewController</code> to <code>.content</code></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupContent</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -634,7 +590,7 @@ The read more button is shown when the offer is of type url and its url is not b
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">loadContent</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">loadContent</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -661,7 +617,7 @@ The read more button is shown when the offer is of type url and its url is not b
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">refreshContent</span><span class="p">()</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">refreshContent</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -703,7 +659,7 @@ The read more button is shown when the offer is of type url and its url is not b
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">actionButtonPressed</span><span class="p">(</span><span class="n">_</span> <span class="nv">actionButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">actionButtonPressed</span><span class="p">(</span><span class="n">_</span> <span class="nv">actionButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -767,9 +723,9 @@ The read more button is shown when the offer is of type url and its url is not b
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@CheetahLoyaltyOffers@objc(cs)OfferDetailController(im)clipButtonPressed:"></a>
+                    <a name="/s:20CheetahLoyaltyOffers21OfferDetailControllerC17clipButtonPressedyyypF"></a>
                     <a name="//apple_ref/swift/Method/clipButtonPressed(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@CheetahLoyaltyOffers@objc(cs)OfferDetailController(im)clipButtonPressed:">clipButtonPressed(_:)</a>
+                    <a class="token" href="#/s:20CheetahLoyaltyOffers21OfferDetailControllerC17clipButtonPressedyyypF">clipButtonPressed(_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -893,7 +849,7 @@ The read more button is shown when the offer is of type url and its url is not b
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-08-19)</p>
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-09-07)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

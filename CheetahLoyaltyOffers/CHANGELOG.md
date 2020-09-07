@@ -6,6 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Offers-1.2.0] - 2020-09-07
+### Added
+- Accessibility labels [#503]
+- `setupContent` method consolidating setup of the content of Offer Detail Controller [#506]
+- Check before auto scrolling and enqueue in main queue of Offer Carousel [#517]
+
+### Changed
+- Offer Detail Layout to use Scroll View Content Layout [#512]
+- Removed some height restrictions on Labels in Offer Detail Layout [#512]
+- Changed dependency version requirements to CheetahLoyaltyCore 1.7.0 and CheetahLoyaltyUI 1.7.1 [#519]
+
+[#506]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/506
+[#512]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/512
+[#517]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/517
+[#519]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/519
+[Offers-1.2.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/54?closed=1
+
 ## [Offers-1.1.0] - 2020-08-19
 ### Added
 - View controller parameter in share method of offer detail delegate [#483], [#499]

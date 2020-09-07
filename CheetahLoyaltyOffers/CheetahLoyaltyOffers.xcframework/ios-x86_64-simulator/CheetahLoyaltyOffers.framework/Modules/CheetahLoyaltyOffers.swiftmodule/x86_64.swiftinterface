@@ -72,13 +72,13 @@ open class OfferCarouselController : CheetahLoyaltyUI.CarouselCollectionControll
   open var delegate: CheetahLoyaltyOffers.OfferCarouselDelegate?
   open var detailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate?
   open var autoScrollTimeInterval: Foundation.TimeInterval
+  @objc deinit
   override open func loadContent()
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
   open func autoScroll()
   open func stopAutoScroll()
   @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
-  @objc deinit
 }
 public struct OfferCouponSegmentedController : CheetahLoyaltyUI.SegmentedController {
   public var navigationItemTitle: Swift.String?
@@ -113,7 +113,7 @@ open class OfferDetailViewController : CheetahLoyaltyUI.DetailViewController {
   override public init(detailController: CheetahLoyaltyUI.DetailController, isRefreshable: Swift.Bool = super)
   @objc deinit
 }
-@objc open class OfferResponseDetailController : CheetahLoyaltyOffers.OfferDetailController {
+open class OfferResponseDetailController : CheetahLoyaltyOffers.OfferDetailController {
   override open var isClippable: Swift.Bool {
     get
   }
@@ -130,10 +130,7 @@ public protocol OfferDetailDelegate : AnyObject {
   func open(url: Foundation.URL, of offer: CheetahLoyaltyCore.Offer, completion: (() -> Swift.Void)?)
   func setupBarcode(stackView: UIKit.UIStackView, imageView: UIKit.UIImageView, label: UIKit.UILabel, of offer: CheetahLoyaltyCore.Offer)
 }
-@objc open class OfferDetailController : ObjectiveC.NSObject, CheetahLoyaltyUI.DetailController {
-  open var navigationItemTitle: Swift.String?
-  open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
-  open var detailProvider: CheetahLoyaltyUI.DetailPresentable?
+open class OfferDetailController : CheetahLoyaltyUI.BaseDetailController {
   weak open var offerDetailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate?
   open var id: Swift.Int
   open var parameters: CheetahLoyaltyCore.Parameters
@@ -149,9 +146,10 @@ public protocol OfferDetailDelegate : AnyObject {
   open func setupClipRightBarButtonItem()
   open func setupBarcodeIfNeeded()
   open func setupActionButtons()
-  open func loadContent()
-  open func refreshContent()
-  open func actionButtonPressed(_ actionButton: UIKit.UIButton)
+  open func setupContent()
+  override open func loadContent()
+  override open func refreshContent()
+  override open func actionButtonPressed(_ actionButton: UIKit.UIButton)
   @objc open func readMoreButtonPressed(_ readMoreButton: UIKit.UIButton)
   @objc open func clipButtonPressed(_ sender: Any)
   open func isClippingNotification(_ notification: Foundation.Notification)
