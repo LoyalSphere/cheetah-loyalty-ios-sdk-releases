@@ -10,7 +10,7 @@
 * Deployment Target: iOS 11.0
 * Xcode 11.x
 * Swift 5.1
-* `CheetahLoyaltyUI` v1.5.0
+* `CheetahLoyaltyUI` v1.7.1
 * `CheetahLoyaltyOloCore` v1.1.0
 * `CheetahUtils` v1.0.0
 
