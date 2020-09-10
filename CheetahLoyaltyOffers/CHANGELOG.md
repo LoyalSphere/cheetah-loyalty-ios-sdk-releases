@@ -6,6 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Offers-1.3.0] - 2020-09-10
+### Added
+- Load parameters property for Offer Carousel [#522]
+- Update with result generic method in Offer Detail [#526]
+
+### Changed
+- Replace setupContent with overridden setupDetails in Offer Detail [#526]
+- Changed dependency version requirements to CheetahLoyaltyUI 1.7.2 [#526]
+
+### Fixed
+- Remove setting of page indicator tint to white in auto scroll of Offer Carousel [#521]
+
+[#521]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/521
+[#522]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/522
+[#526]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/526
+[Offers-1.3.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/62?closed=1
+
 ## [Offers-1.2.0] - 2020-09-07
 ### Added
 - Accessibility labels [#503]

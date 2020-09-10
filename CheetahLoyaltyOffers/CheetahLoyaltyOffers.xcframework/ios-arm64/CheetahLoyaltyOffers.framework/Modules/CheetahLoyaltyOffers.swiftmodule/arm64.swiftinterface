@@ -72,8 +72,10 @@ open class OfferCarouselController : CheetahLoyaltyUI.CarouselCollectionControll
   open var delegate: CheetahLoyaltyOffers.OfferCarouselDelegate?
   open var detailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate?
   open var autoScrollTimeInterval: Foundation.TimeInterval
+  open var loadParameters: CheetahLoyaltyCore.Parameters
   @objc deinit
   override open func loadContent()
+  open func updateWith(_ result: Swift.Result<CheetahLoyaltyCore.APIResponse<[CheetahLoyaltyCore.Offer]>, Swift.Error>)
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
   open func autoScroll()
   open func stopAutoScroll()
@@ -146,9 +148,10 @@ open class OfferDetailController : CheetahLoyaltyUI.BaseDetailController {
   open func setupClipRightBarButtonItem()
   open func setupBarcodeIfNeeded()
   open func setupActionButtons()
-  open func setupContent()
+  override open func setupDetails()
   override open func loadContent()
   override open func refreshContent()
+  open func updateWith<T>(_ result: Swift.Result<CheetahLoyaltyCore.APIResponse<T>, Swift.Error>)
   override open func actionButtonPressed(_ actionButton: UIKit.UIButton)
   @objc open func readMoreButtonPressed(_ readMoreButton: UIKit.UIButton)
   @objc open func clipButtonPressed(_ sender: Any)
