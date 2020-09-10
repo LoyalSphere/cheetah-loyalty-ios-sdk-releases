@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-1.7.2] - 2020-09-10
+### Changed
+- Remove setting of titles of Floating text fields and text views to uppercased [#523], [#525]
+
+### Fixed
+- Remove calling of `setupDetails` on setting of `detailProvider` in `BaseDetailController` [#524]
+
+[#525]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/525
+[#524]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/524
+[#523]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/523
+[UI-1.7.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/63?closed=1
+
 ## [UI-1.7.1] - 2020-09-07
 ### Changed
 - `BaseDetailController` as a subclass of `NSObject` [#518]

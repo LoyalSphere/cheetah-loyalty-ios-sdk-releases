@@ -362,10 +362,7 @@ public protocol DetailController : CheetahLoyaltyUI.ContentController {
   var detailProvider: CheetahLoyaltyUI.DetailPresentable? { get }
 }
 @objc open class BaseDetailController : ObjectiveC.NSObject, CheetahLoyaltyUI.DetailController {
-  open var detailProvider: CheetahLoyaltyUI.DetailPresentable? {
-    get
-    set
-  }
+  open var detailProvider: CheetahLoyaltyUI.DetailPresentable?
   open var navigationItemTitle: Swift.String?
   open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
   open func actionButtonPressed(_ actionButton: UIKit.UIButton)
