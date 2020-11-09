@@ -6,6 +6,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Utils-1.1.0] - 2020-11-04
+### Added
+- `UIImage` extension methods for compressing and scaling images [#539]
+
+### Changed
+- Built using Xcode 12 to support the iOS 14 SDK and Swift 5.3 [#555]
+
+### Removed
+- Time stamp and date formatting related directly to Core [#545], [#546]
+
+[#539]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/539
+[#545]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/545
+[#546]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/546
+[#555]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/555
+[Utils-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/67?closed=1
+
 ## [Utils-1.0.0] - 2020-08-10
 ### Added
 - Extension methods for:

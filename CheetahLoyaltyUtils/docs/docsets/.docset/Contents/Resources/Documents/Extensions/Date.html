@@ -80,6 +80,9 @@
               <li class="nav-group-task">
                 <a href="../Extensions/UIDevice.html">UIDevice</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -118,60 +121,6 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10Foundation4DateV19CheetahLoyaltyUtilsE0C15TimestampFormatSSvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/CheetahTimestampFormat" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10Foundation4DateV19CheetahLoyaltyUtilsE0C15TimestampFormatSSvpZ">CheetahTimestampFormat</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Time stamp format of the Cheetah Loyalty API</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">CheetahTimestampFormat</span><span class="p">:</span> <span class="kt">String</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10Foundation4DateV19CheetahLoyaltyUtilsE0cB6FormatSSvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/CheetahDateFormat" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10Foundation4DateV19CheetahLoyaltyUtilsE0cB6FormatSSvpZ">CheetahDateFormat</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Date format of the Cheetah Loyalty API</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">let</span> <span class="nv">CheetahDateFormat</span><span class="p">:</span> <span class="kt">String</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -221,106 +170,6 @@
                               <td>
                                 <div>
                                   <p>The format of the string-represented date</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The created <code>Date</code> object</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10Foundation4DateV19CheetahLoyaltyUtilsE8dateFrom15timestampStringACSgSS_tFZ"></a>
-                    <a name="//apple_ref/swift/Method/dateFrom(timestampString:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10Foundation4DateV19CheetahLoyaltyUtilsE8dateFrom15timestampStringACSgSS_tFZ">dateFrom(timestampString:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Static method that creates a <code>Date</code> object from a time stamp string</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">dateFrom</span><span class="p">(</span><span class="n"><a href="../Extensions/Date.html#/s:10Foundation4DateV19CheetahLoyaltyUtilsE15timestampStringSSvp">timestampString</a></span> <span class="nv">timestamp</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>timestamp</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The time stamp string</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The created <code>Date</code> object</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10Foundation4DateV19CheetahLoyaltyUtilsE8dateFrom15formattedStringACSgSS_tFZ"></a>
-                    <a name="//apple_ref/swift/Method/dateFrom(formattedString:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10Foundation4DateV19CheetahLoyaltyUtilsE8dateFrom15formattedStringACSgSS_tFZ">dateFrom(formattedString:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Static method that creates a <code>Date</code> object from a formatted string with the <code><a href="../Extensions/Date.html#/s:10Foundation4DateV19CheetahLoyaltyUtilsE0cB6FormatSSvpZ">Date.CheetahDateFormat</a></code> format</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">dateFrom</span><span class="p">(</span><span class="n">formattedString</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Date</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>string</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The formatted date string</p>
                                 </div>
                               </td>
                             </tr>
@@ -388,33 +237,6 @@
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:10Foundation4DateV19CheetahLoyaltyUtilsE15timestampStringSSvp"></a>
-                    <a name="//apple_ref/swift/Property/timestampString" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10Foundation4DateV19CheetahLoyaltyUtilsE15timestampStringSSvp">timestampString</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Instance method that creates the time stamp string from <code>Date</code> object using the <code><a href="../Extensions/Date.html#/s:10Foundation4DateV19CheetahLoyaltyUtilsE0C15TimestampFormatSSvpZ">Date.CheetahTimestampFormat</a></code> format</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">timestampString</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -600,7 +422,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-08-11)</p>
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-11-09)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
