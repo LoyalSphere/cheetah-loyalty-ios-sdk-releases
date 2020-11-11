@@ -6,6 +6,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-1.8.0] - 2020-11-05
+
+### Added
+- Text theme for alert view controller labels [#530]
+- Text view and text field `UIFont` static methods [#533]
+- Convenience method for setting text appearance of button [#533]
+- New `dynamicList` layout for iOS 13 and above [#542]
+
+### Changed
+- Expose `SelectionButton` properties to `UIAppearance` [#528]
+- Use content layout guide in `DetailViewController` [#528]
+- Labels in `DetailViewController` are now multiline [#529]
+- Hide labels that are blank in `DetailViewController [#529]
+- Rename `normalButton` text theme to `button` [#533]
+- Built using Xcode 12 to support the iOS 14 SDK and Swift 5.3 [#558]
+- Changed dependency version requirements to CheetahLoyaltyUtils 1.1.0 [#558]
+
+### Removed
+- `UIView.cornerRadius` computed variable to prevent conflict with native iOS SDK [#536]
+
+### Fixed
+- Setting of TextAppearance on UI elements with text attributes [#531]
+- Add trigger to pagination on will display of a loading cell in `ListCollectionController` [#541]
+
+[#528]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/528
+[#529]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/529
+[#530]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/530
+[#531]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/531
+[#533]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/533
+[#536]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/536
+[#541]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/541
+[#542]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/542
+[#558]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/558
+[UI-1.6.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/64?closed=1
+
 ## [UI-1.7.2] - 2020-09-10
 ### Changed
 - Remove setting of titles of Floating text fields and text views to uppercased [#523], [#525]

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyUI
 import AVFoundation
 @_exported import CheetahLoyaltyUI
@@ -22,10 +22,12 @@ public protocol TextTheme {
   var footnote: CheetahLoyaltyUI.TextAppearance { get }
   var caption1: CheetahLoyaltyUI.TextAppearance { get }
   var caption2: CheetahLoyaltyUI.TextAppearance { get }
-  var alertButton: CheetahLoyaltyUI.TextAppearance { get }
   var textView: CheetahLoyaltyUI.TextAppearance { get }
   var textField: CheetahLoyaltyUI.TextAppearance { get }
-  var normalButton: CheetahLoyaltyUI.TextAppearance { get }
+  var alertButton: CheetahLoyaltyUI.TextAppearance { get }
+  var alertTitle: CheetahLoyaltyUI.TextAppearance { get }
+  var alertMessage: CheetahLoyaltyUI.TextAppearance { get }
+  var button: CheetahLoyaltyUI.TextAppearance { get }
 }
 public protocol TextAppearance {
   var fontName: Swift.String { get }
@@ -45,7 +47,9 @@ extension NSMutableAttributedString {
   public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle)
 }
 extension UIButton {
+  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance, with title: Swift.String, for states: [UIKit.UIControl.State])
   public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance, with title: Swift.String, for state: UIKit.UIControl.State)
+  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle, with title: Swift.String, for states: [UIKit.UIControl.State])
   public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle, with title: Swift.String, for state: UIKit.UIControl.State)
 }
 extension UILabel {
@@ -72,7 +76,7 @@ extension UINavigationBar {
   public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance)
   public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle)
 }
-@objc open class LoadingAlertViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.AlertEmbeddableViewController {
+@objc @_inheritsConvenienceInitializers open class LoadingAlertViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.AlertEmbeddableViewController {
   @objc @IBOutlet weak public var activitityIndicatorView: UIKit.UIActivityIndicatorView!
   @objc @IBOutlet weak public var loadingLabel: UIKit.UILabel!
   public var delegate: CheetahLoyaltyUI.AlertEmbeddableViewControllerDelegate?
@@ -91,7 +95,7 @@ public protocol ListItemCellPresentable {
   var listTitle: Swift.String { get }
   func configureListCell(_ cell: CheetahLoyaltyUI.ListItemCell)
 }
-@objc open class ListItemCell : UIKit.UICollectionViewCell {
+@objc @_inheritsConvenienceInitializers open class ListItemCell : UIKit.UICollectionViewCell {
   @objc @IBOutlet public var containerView: UIKit.UIView!
   @objc @IBOutlet public var imageView: UIKit.UIImageView!
   @objc @IBOutlet public var contentStackView: UIKit.UIStackView!
@@ -100,9 +104,9 @@ public protocol ListItemCellPresentable {
   @objc @IBOutlet public var actionButton: UIKit.UIButton!
   @objc @IBOutlet public var activityIndicator: UIKit.UIActivityIndicatorView!
   public var loadMessage: Swift.String
+  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 extension ListItemCell : CheetahLoyaltyUI.Loadable {
   public func showLoading()
@@ -133,10 +137,10 @@ extension ListItemCell : CheetahLoyaltyUI.Loadable {
   override open func setup()
   @objc open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
   open func setupSearchBar()
-  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
 }
-@objc open class AppInfoViewController : CheetahLoyaltyUI.NibViewController {
+@objc @_inheritsConvenienceInitializers open class AppInfoViewController : CheetahLoyaltyUI.NibViewController {
   @objc @IBOutlet public var logoImageViewHeightConstraint: UIKit.NSLayoutConstraint!
   @objc @IBOutlet public var logoImageViewAspectRatioConstraint: UIKit.NSLayoutConstraint!
   @objc @IBOutlet public var logoImageViewTopSpaceConstraint: UIKit.NSLayoutConstraint!
@@ -164,7 +168,7 @@ extension ListItemCell : CheetahLoyaltyUI.Loadable {
   open func adjustContentConstraintsIfNeeded()
   @objc deinit
 }
-@objc open class WebViewController : CheetahLoyaltyUI.NibViewController, WebKit.WKNavigationDelegate {
+@objc @_inheritsConvenienceInitializers open class WebViewController : CheetahLoyaltyUI.NibViewController, WebKit.WKNavigationDelegate {
   @objc @IBOutlet public var webView: WebKit.WKWebView!
   open var url: Foundation.URL?
   open var webViewConfiguration: WebKit.WKWebViewConfiguration
@@ -192,7 +196,7 @@ public protocol GrowingTextViewDelegate {
 extension GrowingTextViewDelegate {
   public func willChangeHeight(_ textView: CheetahLoyaltyUI.GrowingTextView, height: CoreGraphics.CGFloat)
 }
-@objc open class GrowingTextView : UIKit.UIScrollView {
+@objc @_inheritsConvenienceInitializers open class GrowingTextView : UIKit.UIScrollView {
   open var placeholder: Swift.String {
     get
     set
@@ -270,10 +274,10 @@ public protocol ImagePickerPresenterDelegate : AnyObject {
   open func present(with mediaType: CheetahLoyaltyUI.ImagePickerPresenter.MediaType = .image, editable: Swift.Bool = false)
   @objc public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
   @objc public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
-@objc open class UpgradeCheckViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.AlertEmbeddableViewController {
+@objc @_inheritsConvenienceInitializers open class UpgradeCheckViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.AlertEmbeddableViewController {
   @objc @IBOutlet weak public var titleLabel: UIKit.UILabel!
   @objc @IBOutlet weak public var messageTextView: UIKit.UITextView!
   @objc @IBOutlet weak public var upgradeNowButton: UIKit.UIButton!
@@ -294,12 +298,12 @@ public protocol ImagePickerPresenterDelegate : AnyObject {
   open func goToAppStore()
   @objc deinit
 }
-@objc final public class CheetahAppWindow : UIKit.UIWindow {
+@objc @_inheritsConvenienceInitializers final public class CheetahAppWindow : UIKit.UIWindow {
+  @objc deinit
   @available(iOS 13.0, *)
   @objc override dynamic public init(windowScene: UIKit.UIWindowScene)
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 public protocol ColorTheme {
   var primaryColor: UIKit.UIColor { get }
@@ -361,7 +365,7 @@ public protocol DetailController : CheetahLoyaltyUI.ContentController {
   func actionButtonPressed(_ actionButton: UIKit.UIButton)
   var detailProvider: CheetahLoyaltyUI.DetailPresentable? { get }
 }
-@objc open class BaseDetailController : ObjectiveC.NSObject, CheetahLoyaltyUI.DetailController {
+@objc @_inheritsConvenienceInitializers open class BaseDetailController : ObjectiveC.NSObject, CheetahLoyaltyUI.DetailController {
   open var detailProvider: CheetahLoyaltyUI.DetailPresentable?
   open var navigationItemTitle: Swift.String?
   open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
@@ -372,7 +376,7 @@ public protocol DetailController : CheetahLoyaltyUI.ContentController {
   open func setupDetails()
   @objc deinit
 }
-@objc open class DetailViewController : CheetahLoyaltyUI.StatefulViewController {
+@objc @_inheritsConvenienceInitializers open class DetailViewController : CheetahLoyaltyUI.StatefulViewController {
   @objc @IBOutlet public var scrollView: UIKit.UIScrollView!
   @objc @IBOutlet public var contentView: UIKit.UIView!
   @objc @IBOutlet public var imageView: UIKit.UIImageView!
@@ -412,7 +416,7 @@ public protocol AlertEmbeddableViewControllerDelegate {
 public protocol AlertEmbeddableViewController : CheetahLoyaltyUI.NibViewController {
   var delegate: CheetahLoyaltyUI.AlertEmbeddableViewControllerDelegate? { get set }
 }
-@objc open class AlertViewController : CheetahLoyaltyUI.NibViewController {
+@objc @_inheritsConvenienceInitializers open class AlertViewController : CheetahLoyaltyUI.NibViewController {
   @objc @IBOutlet weak public var containerView: UIKit.UIView!
   public var containerViewCornerRadius: CoreGraphics.CGFloat
   public var isFullScreen: Swift.Bool {
@@ -451,11 +455,11 @@ public protocol Navigator : AnyObject {
 extension Navigator where Self : UIKit.UIViewController {
   public func navigate(to destinationViewController: UIKit.UIViewController, modally isModal: Swift.Bool = false, animated: Swift.Bool = true, completion: (() -> Swift.Void)? = nil)
 }
-@objc open class CountryCollectionViewCell : UIKit.UICollectionViewCell {
+@objc @_inheritsConvenienceInitializers open class CountryCollectionViewCell : UIKit.UICollectionViewCell {
   @objc @IBOutlet public var nameLabel: UIKit.UILabel!
+  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 public enum AnalyticsLogger {
   public enum LogKeys : Swift.String {
@@ -488,7 +492,7 @@ public enum BackButtonType {
   case image(image: UIKit.UIImage?)
   case iOSDefault
 }
-@objc open class NibViewController : UIKit.UIViewController {
+@objc @_inheritsConvenienceInitializers open class NibViewController : UIKit.UIViewController {
   public static var customBackButtonType: CheetahLoyaltyUI.BackButtonType
   public var customBackButtonAction: (() -> Swift.Void)?
   open class var nibName: Swift.String {
@@ -503,7 +507,7 @@ public enum BackButtonType {
   open func setupCustomBackButton()
   @objc deinit
 }
-open class MenuCollectionController : CheetahLoyaltyUI.BaseCollectionController<CheetahLoyaltyUI.MenuItemCellPresentable> {
+@_inheritsConvenienceInitializers open class MenuCollectionController : CheetahLoyaltyUI.BaseCollectionController<CheetahLoyaltyUI.MenuItemCellPresentable> {
   override open var collectionViewLayout: UIKit.UICollectionViewLayout {
     get
   }
@@ -518,9 +522,9 @@ open class MenuCollectionController : CheetahLoyaltyUI.BaseCollectionController<
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
   override open func loadContent()
   open func didPressLogoutButton(_ logOutButton: UIKit.UIButton)
+  @objc deinit
   @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
-  @objc deinit
 }
 public protocol SegmentedController {
   var navigationItemTitle: Swift.String? { get }
@@ -529,7 +533,7 @@ public protocol SegmentedController {
   func titleForSegment(atIndex index: Swift.Int) -> Swift.String?
   func didSelectSegment(atIndex index: Swift.Int, of segmentedViewController: CheetahLoyaltyUI.SegmentedViewController)
 }
-@objc open class SegmentedViewController : CheetahLoyaltyUI.NibViewController {
+@objc @_inheritsConvenienceInitializers open class SegmentedViewController : CheetahLoyaltyUI.NibViewController {
   @objc @IBOutlet open var segmentedControl: UIKit.UISegmentedControl!
   @objc @IBOutlet open var contentView: UIKit.UIView!
   open var segmentedController: CheetahLoyaltyUI.SegmentedController?
@@ -545,7 +549,7 @@ public protocol SegmentedController {
   open func selectSegment(atIndex index: Swift.Int)
   @objc deinit
 }
-open class DataProvider<ItemType> {
+@_hasMissingDesignatedInitializers open class DataProvider<ItemType> {
   open var items: [[ItemType]]
   open var lastIndexPath: Foundation.IndexPath? {
     get
@@ -565,14 +569,14 @@ open class DataProvider<ItemType> {
   open func removeAllItems()
   @objc deinit
 }
-@objc open class RadioButton : CheetahLoyaltyUI.CheckBox {
+@objc @_inheritsConvenienceInitializers open class RadioButton : CheetahLoyaltyUI.CheckBox {
   override open func initializeSelectionButton()
   override open func groupStateDidChange(by selectionButton: CheetahLoyaltyUI.SelectionButton)
+  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @objc deinit
 }
-@objc open class ListCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
+@objc @_inheritsConvenienceInitializers open class ListCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
   public var cellHeight: CoreGraphics.CGFloat
   @objc override dynamic public init()
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
@@ -585,7 +589,7 @@ extension UICollectionViewFlowLayout {
     get
   }
 }
-@objc open class CarouselCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
+@objc @_inheritsConvenienceInitializers open class CarouselCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
   @objc override dynamic public init()
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc override dynamic open func prepare()
@@ -597,7 +601,7 @@ extension UICollectionViewFlowLayout {
     get
   }
 }
-@objc open class DynamicListCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
+@objc @_inheritsConvenienceInitializers open class DynamicListCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
   @objc override dynamic public init()
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc override dynamic open func layoutAttributesForElements(in rect: CoreGraphics.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
@@ -634,10 +638,10 @@ extension UICollectionViewFlowLayout {
   override open func setup()
   open func setupSearchBar()
   @objc open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
-  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
 }
-@objc open class FloatingTextView : CheetahLoyaltyUI.GrowingTextView {
+@objc @_inheritsConvenienceInitializers open class FloatingTextView : CheetahLoyaltyUI.GrowingTextView {
   open var title: Swift.String? {
     get
     set
@@ -706,13 +710,13 @@ extension UICollectionViewFlowLayout {
   override open func handleTextChange()
   @objc deinit
 }
-@objc open class CheckBox : CheetahLoyaltyUI.SelectionButton {
+@objc @_inheritsConvenienceInitializers open class CheckBox : CheetahLoyaltyUI.SelectionButton {
   override open func initializeSelectionButton()
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
-@objc open class GenericAlertViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.AlertEmbeddableViewController {
+@objc @_inheritsConvenienceInitializers open class GenericAlertViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.AlertEmbeddableViewController {
   @objc @IBOutlet weak public var headingLabel: UIKit.UILabel!
   @objc @IBOutlet weak public var subheadingLabel: UIKit.UILabel!
   @objc @IBOutlet weak public var stackView: UIKit.UIStackView!
@@ -790,20 +794,20 @@ public protocol MenuItemCellPresentable {
   var name: Swift.String { get }
   func configureMenuCell(_ cell: CheetahLoyaltyUI.MenuItemCell)
 }
-@objc open class MenuItemCell : UIKit.UICollectionViewCell {
+@objc @_inheritsConvenienceInitializers open class MenuItemCell : UIKit.UICollectionViewCell {
   @objc @IBOutlet public var image: UIKit.UIImageView!
   @objc @IBOutlet public var name: UIKit.UILabel!
   @objc @IBOutlet public var nameContainerView: UIKit.UIView!
   @objc @IBOutlet public var menuStackView: UIKit.UIStackView!
+  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 public protocol FloatingTextFieldWithIconDelegate {
   func didTapIcon(textField: CheetahLoyaltyUI.FloatingTextFieldWithIcon)
   func didLongPressIcon(textField: CheetahLoyaltyUI.FloatingTextFieldWithIcon, gesture: UIKit.UILongPressGestureRecognizer)
 }
-@objc open class FloatingTextFieldWithIcon : CheetahLoyaltyUI.FloatingTextField {
+@objc @_inheritsConvenienceInitializers open class FloatingTextFieldWithIcon : CheetahLoyaltyUI.FloatingTextField {
   public enum IconPosition : Swift.Int {
     case left
     case right
@@ -860,7 +864,7 @@ public protocol FloatingTextFieldWithIconDelegate {
   @objc override dynamic open func layoutSubviews()
   @objc deinit
 }
-open class ThemeManager {
+@_hasMissingDesignatedInitializers open class ThemeManager {
   public static let shared: CheetahLoyaltyUI.ThemeManager
   open var color: CheetahLoyaltyUI.ColorTheme {
     get
@@ -881,7 +885,9 @@ open class ThemeManager {
     case textView
     case textField
     case alertButton
-    case normalButton
+    case alertTitle
+    case alertMessage
+    case button
     public var textAppearance: CheetahLoyaltyUI.TextAppearance {
       get
     }
@@ -945,10 +951,6 @@ extension UIColor {
 extension UIView {
   public func embed(subview: UIKit.UIView)
   public func isContainedWithin(_ other: UIKit.UIView) -> Swift.Bool
-  public var cornerRadius: CoreGraphics.CGFloat {
-    get
-    set
-  }
 }
 extension UIButton {
   public func setAttributedTitleString(_ title: Swift.String, for state: UIKit.UIControl.State)
@@ -1038,12 +1040,30 @@ extension UIFont {
   public static var caption2: UIKit.UIFont {
     get
   }
+  public static var textView: UIKit.UIFont {
+    get
+  }
+  public static var textField: UIKit.UIFont {
+    get
+  }
+  public static var alertButton: UIKit.UIFont {
+    get
+  }
+  public static var alertTitle: UIKit.UIFont {
+    get
+  }
+  public static var alertMessage: UIKit.UIFont {
+    get
+  }
+  public static var button: UIKit.UIFont {
+    get
+  }
 }
-@objc open class StateCollectionViewCell : UIKit.UICollectionViewCell {
+@objc @_inheritsConvenienceInitializers open class StateCollectionViewCell : UIKit.UICollectionViewCell {
   @objc @IBOutlet public var nameLabel: UIKit.UILabel!
+  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 public enum FloatingTextFieldInputType {
   case date(target: Swift.AnyObject, selector: ObjectiveC.Selector)
@@ -1055,7 +1075,7 @@ public enum FloatingTextFieldInputType {
   case domain(pickerView: UIKit.UIPickerView)
   case generic
 }
-@objc open class FloatingTextField : UIKit.UITextField {
+@objc @_inheritsConvenienceInitializers open class FloatingTextField : UIKit.UITextField {
   open var title: Swift.String? {
     get
     set
@@ -1172,20 +1192,20 @@ public protocol CarouselItemCellPresentable {
   var carouselTitle: Swift.String { get }
   func configureCarouselCell(_ cell: CheetahLoyaltyUI.CarouselItemCell)
 }
-@objc open class CarouselItemCell : UIKit.UICollectionViewCell {
+@objc @_inheritsConvenienceInitializers open class CarouselItemCell : UIKit.UICollectionViewCell {
   @objc @IBOutlet public var imageView: UIKit.UIImageView!
   @objc @IBOutlet public var containerView: UIKit.UIView!
   @objc @IBOutlet public var titleContainerView: UIKit.UIView!
   @objc @IBOutlet public var titleLabel: UIKit.UILabel!
   open var message: Swift.String
+  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 public protocol TableController : CheetahLoyaltyUI.ContentController, UIKit.UISearchBarDelegate, UIKit.UITableViewDataSource, UIKit.UITableViewDataSourcePrefetching, UIKit.UITableViewDelegate {
   var tableView: UIKit.UITableView? { get set }
 }
-open class BaseTableController<T> : ObjectiveC.NSObject, CheetahLoyaltyUI.TableController {
+@_inheritsConvenienceInitializers open class BaseTableController<T> : ObjectiveC.NSObject, CheetahLoyaltyUI.TableController {
   open var navigationItemTitle: Swift.String?
   open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
   open var tableViewController: CheetahLoyaltyUI.TableViewController? {
@@ -1263,7 +1283,7 @@ public protocol ContentController : AnyObject {
   func loadContent()
   func refreshContent()
 }
-@objc open class StatefulViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.Navigator {
+@objc @_inheritsConvenienceInitializers open class StatefulViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.Navigator {
   public enum State : Swift.Equatable {
     case content
     case empty(message: Swift.String, reloadHandler: (() -> Swift.Void)?)
@@ -1289,15 +1309,15 @@ public protocol ContentController : AnyObject {
   @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
   @objc deinit
 }
-open class StatesCollectionController : CheetahLoyaltyUI.CountriesCollectionController {
+@_inheritsConvenienceInitializers open class StatesCollectionController : CheetahLoyaltyUI.CountriesCollectionController {
   open var countryCode: Swift.String
   convenience public init(countryCode: Swift.String, collectionView: UIKit.UICollectionView? = nil)
   override open func registerComponents()
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
   override open func loadContent()
+  @objc deinit
   @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
-  @objc deinit
 }
 public protocol TableRowCellPresentable {
   var rowImage: UIKit.UIImage? { get }
@@ -1306,7 +1326,7 @@ public protocol TableRowCellPresentable {
   var rowTitle: Swift.String { get }
   func configureRowCell(_ cell: CheetahLoyaltyUI.TableRowCell)
 }
-@objc open class TableRowCell : UIKit.UITableViewCell {
+@objc @_inheritsConvenienceInitializers open class TableRowCell : UIKit.UITableViewCell {
   @objc @IBOutlet public var containerView: UIKit.UIView!
   @objc @IBOutlet public var contentImageView: UIKit.UIImageView!
   @objc @IBOutlet public var contentStackView: UIKit.UIStackView!
@@ -1315,16 +1335,16 @@ public protocol TableRowCellPresentable {
   @objc @IBOutlet public var actionButton: UIKit.UIButton!
   @objc @IBOutlet public var activityIndicator: UIKit.UIActivityIndicatorView!
   public var loadMessage: Swift.String
+  @objc deinit
   @available(iOS 3.0, *)
   @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 extension TableRowCell : CheetahLoyaltyUI.Loadable {
   public func showLoading()
   public func hideLoading()
 }
-@objc open class MenuViewController : CheetahLoyaltyUI.CollectionViewController {
+@objc @_inheritsConvenienceInitializers open class MenuViewController : CheetahLoyaltyUI.CollectionViewController {
   @objc @IBOutlet public var logOutButton: UIKit.UIButton!
   open var menuCollectionController: CheetahLoyaltyUI.MenuCollectionController? {
     get
@@ -1335,12 +1355,12 @@ extension TableRowCell : CheetahLoyaltyUI.Loadable {
   }
   convenience public init(items: [CheetahLoyaltyUI.MenuItemCellPresentable], selection: ((CheetahLoyaltyUI.MenuViewController?, CheetahLoyaltyUI.MenuItemCellPresentable) -> Swift.Void)?, logOut: ((CheetahLoyaltyUI.MenuViewController?) -> Swift.Void)?)
   open func setupLogoutButton()
+  @objc deinit
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   override public init(collectionController: CheetahLoyaltyUI.CollectionController?)
-  @objc deinit
 }
 public typealias ImageLoaderCompletion = ((Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
 public protocol ImageLoader {
@@ -1354,7 +1374,7 @@ public enum CheetahImageLoader {
 public protocol CollectionController : CheetahLoyaltyUI.ContentController, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate, UIKit.UISearchBarDelegate {
   var collectionView: UIKit.UICollectionView? { get set }
 }
-open class BaseCollectionController<T> : ObjectiveC.NSObject, CheetahLoyaltyUI.CollectionController {
+@_inheritsConvenienceInitializers open class BaseCollectionController<T> : ObjectiveC.NSObject, CheetahLoyaltyUI.CollectionController {
   open var navigationItemTitle: Swift.String?
   weak open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
   open var collectionViewController: CheetahLoyaltyUI.CollectionViewController? {
@@ -1406,7 +1426,7 @@ open class BaseCollectionController<T> : ObjectiveC.NSObject, CheetahLoyaltyUI.C
   @objc open func searchBar(_ searchBar: UIKit.UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Swift.Int)
   @objc deinit
 }
-open class ListCollectionController<T> : CheetahLoyaltyUI.BaseCollectionController<T>, UIKit.UICollectionViewDataSourcePrefetching {
+@_inheritsConvenienceInitializers open class ListCollectionController<T> : CheetahLoyaltyUI.BaseCollectionController<T>, UIKit.UICollectionViewDataSourcePrefetching {
   override open var collectionViewLayout: UIKit.UICollectionViewLayout {
     get
   }
@@ -1426,12 +1446,13 @@ open class ListCollectionController<T> : CheetahLoyaltyUI.BaseCollectionControll
   override open func refreshContent()
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
   @objc open func collectionView(_ collectionView: UIKit.UICollectionView, prefetchItemsAt indexPaths: [Foundation.IndexPath])
+  @objc deinit
   @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
-  @objc deinit
 }
-open class CarouselCollectionController<T> : CheetahLoyaltyUI.BaseCollectionController<T> {
+@_inheritsConvenienceInitializers open class CarouselCollectionController<T> : CheetahLoyaltyUI.BaseCollectionController<T> {
   override open var collectionViewLayout: UIKit.UICollectionViewLayout {
     get
   }
@@ -1449,9 +1470,9 @@ open class CarouselCollectionController<T> : CheetahLoyaltyUI.BaseCollectionCont
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
   @objc open func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
   @objc open func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @objc deinit
   @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
-  @objc deinit
 }
 public struct CheetahColorTheme : CheetahLoyaltyUI.ColorTheme {
   public let primaryColor: UIKit.UIColor
@@ -1470,12 +1491,14 @@ public struct CheetahTextTheme : CheetahLoyaltyUI.TextTheme {
   public var footnote: CheetahLoyaltyUI.TextAppearance
   public var caption1: CheetahLoyaltyUI.TextAppearance
   public var caption2: CheetahLoyaltyUI.TextAppearance
-  public var alertButton: CheetahLoyaltyUI.TextAppearance
   public var textView: CheetahLoyaltyUI.TextAppearance
   public var textField: CheetahLoyaltyUI.TextAppearance
-  public var normalButton: CheetahLoyaltyUI.TextAppearance
+  public var alertButton: CheetahLoyaltyUI.TextAppearance
+  public var alertTitle: CheetahLoyaltyUI.TextAppearance
+  public var alertMessage: CheetahLoyaltyUI.TextAppearance
+  public var button: CheetahLoyaltyUI.TextAppearance
 }
-public struct CheetahNormalButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
+public struct CheetahButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
   public var fontName: Swift.String
   public var textStyle: UIKit.UIFont.TextStyle?
   public var fontSize: CoreGraphics.CGFloat?
@@ -1556,7 +1579,7 @@ public protocol Reloadable {
 }
 public protocol ReloadableViewController : UIKit.UIViewController, CheetahLoyaltyUI.Reloadable {
 }
-@objc open class DefaultReloadViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.ReloadableViewController {
+@objc @_inheritsConvenienceInitializers open class DefaultReloadViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.ReloadableViewController {
   @objc @IBOutlet public var containerStackView: UIKit.UIStackView!
   @objc @IBOutlet public var messageLabel: UIKit.UILabel!
   @objc @IBOutlet public var retryButton: UIKit.UIButton!
@@ -1570,7 +1593,7 @@ public protocol ReloadableViewController : UIKit.UIViewController, CheetahLoyalt
   override open func setup()
   @objc deinit
 }
-open class CountriesCollectionController : CheetahLoyaltyUI.BaseCollectionController<CheetahLoyaltyUI.CountriesCollectionController.ItemTuple> {
+@_inheritsConvenienceInitializers open class CountriesCollectionController : CheetahLoyaltyUI.BaseCollectionController<CheetahLoyaltyUI.CountriesCollectionController.ItemTuple> {
   public static let defaultsKey: Swift.String
   public typealias ItemTuple = (name: Swift.String, code: Swift.String)
   override open var collectionViewLayout: UIKit.UICollectionViewLayout {
@@ -1586,28 +1609,28 @@ open class CountriesCollectionController : CheetahLoyaltyUI.BaseCollectionContro
   override public init(collectionView: UIKit.UICollectionView? = super)
   @objc deinit
 }
-@objc open class SelectionButton : UIKit.UIButton {
+@objc @_inheritsConvenienceInitializers open class SelectionButton : UIKit.UIButton {
   open var groupName: Swift.String
   @objc override dynamic open var isSelected: Swift.Bool {
     @objc get
     @objc set
   }
   open var delegate: CheetahLoyaltyUI.SelectionButtonDelegate?
-  open var titleColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var titleColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var selectedTitleColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var selectedTitleColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var imageColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var imageColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
-  open var selectedImageColor: UIKit.UIColor {
-    get
-    set
+  @objc dynamic open var selectedImageColor: UIKit.UIColor {
+    @objc get
+    @objc set
   }
   open var adjustsImageWithTitle: Swift.Bool
   open var shouldNotify: Swift.Bool
@@ -1641,7 +1664,7 @@ public protocol Loadable {
 }
 public protocol LoadableViewController : UIKit.UIViewController, CheetahLoyaltyUI.Loadable {
 }
-@objc open class DefaultLoadingViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.LoadableViewController {
+@objc @_inheritsConvenienceInitializers open class DefaultLoadingViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.LoadableViewController {
   @objc @IBOutlet public var activityIndicator: UIKit.UIActivityIndicatorView!
   @objc @IBOutlet public var loadingLabel: UIKit.UILabel!
   open var loadMessage: Swift.String
@@ -1655,16 +1678,16 @@ public protocol LoadableViewController : UIKit.UIViewController, CheetahLoyaltyU
   open func hideLoading()
   @objc deinit
 }
-@objc open class RatingButton : CheetahLoyaltyUI.SelectionButton {
+@objc @_inheritsConvenienceInitializers open class RatingButton : CheetahLoyaltyUI.SelectionButton {
   open var ratingIndex: Swift.Int
   override open func initializeSelectionButton()
   override open func groupStateDidChange(by selectionButton: CheetahLoyaltyUI.SelectionButton)
   @objc override open func didTapButton()
+  @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @objc deinit
 }
-@objc open class ScannerViewController : CheetahLoyaltyUI.NibViewController, AVFoundation.AVCaptureMetadataOutputObjectsDelegate {
+@objc @_inheritsConvenienceInitializers open class ScannerViewController : CheetahLoyaltyUI.NibViewController, AVFoundation.AVCaptureMetadataOutputObjectsDelegate {
   open var helpAction: (CheetahLoyaltyUI.ScannerViewController, UIKit.UIButton) -> Swift.Void
   open var captureSession: AVFoundation.AVCaptureSession?
   open var previewLayer: AVFoundation.AVCaptureVideoPreviewLayer?
