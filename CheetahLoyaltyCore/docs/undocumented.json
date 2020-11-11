@@ -2,9 +2,51 @@
   "warnings": [
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/API/APIError.swift",
-      "line": 35,
+      "line": 29,
+      "symbol": "APIError.init(code:message:name:additionalInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/API/APIError.swift",
+      "line": 38,
+      "symbol": "APIError.AdditionalDataCodingKeys",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/API/APIError.swift",
+      "line": 63,
+      "symbol": "KeyedDecodingContainer.decodeUnknownKeyValues(exclude:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/API/APIError.swift",
+      "line": 87,
       "symbol": "APIError.unknownError()",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/API/APIInterceptor.swift",
+      "line": 28,
+      "symbol": "RequestAdapter.clientInfo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/API/APIInterceptor.swift",
+      "line": 33,
+      "symbol": "RequestAdapter.adapted(request:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/API/APIInterceptor.swift",
+      "line": 103,
+      "symbol": "RequestRetrier.shouldRetry(_:with:and:dueTo:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -219,6 +261,20 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/API/URLParameterEncoding.swift",
+      "line": 56,
+      "symbol": "URLError.ParameterEncodingFailureReason",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/API/URLParameterEncoding.swift",
+      "line": 57,
+      "symbol": "URLError.ParameterEncodingFailureReason.localizedDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/API/URLParameterEncoding.swift",
       "line": 82,
       "symbol": "URLRequest.MultipartAttachment.init(name:fileName:url:data:mimeType:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
@@ -226,86 +282,93 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 55,
+      "line": 50,
       "symbol": "Configuration.CodingKeys.userAgentName",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 56,
+      "line": 51,
       "symbol": "Configuration.CodingKeys.clientId",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 57,
+      "line": 52,
       "symbol": "Configuration.CodingKeys.clientSecret",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 58,
+      "line": 53,
       "symbol": "Configuration.CodingKeys.clientUrl",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 59,
+      "line": 54,
       "symbol": "Configuration.CodingKeys.metric",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 60,
+      "line": 55,
       "symbol": "Configuration.CodingKeys.isGeofencingEnabled",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 61,
+      "line": 56,
       "symbol": "Configuration.CodingKeys.businessUnit",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 62,
+      "line": 57,
       "symbol": "Configuration.CodingKeys.isAccessTokenExternal",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 71,
+      "line": 66,
       "symbol": "Configuration.DefaultsKeys.sendLocationAnonymously",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 72,
+      "line": 67,
       "symbol": "Configuration.DefaultsKeys.lastActiveTrackingDate",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 73,
+      "line": 68,
       "symbol": "Configuration.DefaultsKeys.registeredDeviceToken",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
-      "line": 74,
+      "line": 69,
       "symbol": "Configuration.DefaultsKeys.hasLaunchedOnce",
       "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Configuration/Configuration.swift",
+      "line": 72,
+      "symbol": "Configuration.init(userAgentName:clientId:clientSecret:clientUrl:metric:businessUnit:isGeofencingEnabled:isAccessTokenExternal:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -2109,16 +2172,44 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Utils/NativeExtensions.swift",
-      "line": 55,
+      "line": 21,
+      "symbol": "Array.!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Utils/NativeExtensions.swift",
+      "line": 22,
+      "symbol": "Array.==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Utils/NativeExtensions.swift",
+      "line": 43,
       "symbol": "CoreNotification",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Utils/NativeExtensions.swift",
-      "line": 57,
+      "line": 45,
       "symbol": "CoreNotification.APIAccessTokenDidBecomeInvalid",
       "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Utils/NativeExtensions.swift",
+      "line": 89,
+      "symbol": "Dictionary.!=(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Utils/NativeExtensions.swift",
+      "line": 90,
+      "symbol": "Dictionary.==(_:_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     }
   ],

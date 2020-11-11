@@ -6,6 +6,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-1.8.0] - 2020-11-05
+
+### Added
+- `Configuration` public initializer [#537]
+- Clip and unclip offer response OfferAPI static methods [#540]
+- Server birthdate format constant [#543]
+- Date and timestamp conversions for the server API responses [#547], [#548]
+- Additional info dictionary to `APIError` [#557]
+
+### Changed
+- `Configuration.shared` to a variable [#537]
+- Changed dependency version requirements to CheetahLoyaltyUtils 1.1.0 [#547], [#548]
+- Built using Xcode 12 to support the iOS 14 SDK and Swift 5.3 [#556]
+
+### Remove
+- Unnecessary loading of bundle in initial value of `Configuration.shared` [#544]
+
+[#537]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/537
+[#540]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/540
+[#543]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/543
+[#544]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/544
+[#547]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/547
+[#548]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/548
+[#556]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/556
+[#557]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/557
+[Core-1.8.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/68?closed=1
+
 ## [Core-1.7.0] - 2020-09-04
 ### Added
 - Inline documentation for registeredDeviceToken defaults key [#507]

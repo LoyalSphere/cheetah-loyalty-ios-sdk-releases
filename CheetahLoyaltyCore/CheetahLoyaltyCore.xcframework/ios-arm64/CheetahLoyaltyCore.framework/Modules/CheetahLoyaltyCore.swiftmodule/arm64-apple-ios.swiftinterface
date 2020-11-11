@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyCore
 @_exported import CheetahLoyaltyCore
 import CheetahLoyaltyUtils
@@ -464,9 +464,9 @@ public struct Preference : Swift.Codable, Swift.Equatable {
   public func checkIfDomainsContain(string: Swift.String, isSelected: Swift.Bool) -> Swift.Bool
   public func hasSelected(domain: Swift.String) -> Swift.Bool
   public func isDomainUserDefined(_ domain: Swift.String) -> Swift.Bool
-  mutating public func toggleSelectionFor(domain: Swift.String)
-  mutating public func addUserDomain(_ domain: Swift.String)
-  mutating public func removeUserDomain(_ domain: Swift.String)
+  public mutating func toggleSelectionFor(domain: Swift.String)
+  public mutating func addUserDomain(_ domain: Swift.String)
+  public mutating func removeUserDomain(_ domain: Swift.String)
   public static func == (a: CheetahLoyaltyCore.Preference, b: CheetahLoyaltyCore.Preference) -> Swift.Bool
 }
 extension Preference {
@@ -698,11 +698,11 @@ public struct Poll : Swift.Codable, Swift.Equatable {
     public var total: Swift.Int
     public var highlight: Swift.Bool
     public init(label: Swift.String, percentage: Swift.Float, total: Swift.Int, highlight: Swift.Bool)
-    public static func == (a: CheetahLoyaltyCore.Poll.Result, b: CheetahLoyaltyCore.Poll.Result) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
+    public static func == (a: CheetahLoyaltyCore.Poll.Result, b: CheetahLoyaltyCore.Poll.Result) -> Swift.Bool
   }
-  public static func == (a: CheetahLoyaltyCore.Poll, b: CheetahLoyaltyCore.Poll) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
+  public static func == (a: CheetahLoyaltyCore.Poll, b: CheetahLoyaltyCore.Poll) -> Swift.Bool
 }
 extension Poll {
   public init(from decoder: Swift.Decoder) throws
@@ -1005,8 +1005,8 @@ public struct RespondableInfo : Swift.Codable, Swift.Equatable {
   public var message: Swift.String
   public var value: Swift.Bool
   public init(code: Swift.String, message: Swift.String, value: Swift.Bool)
-  public static func == (a: CheetahLoyaltyCore.RespondableInfo, b: CheetahLoyaltyCore.RespondableInfo) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
+  public static func == (a: CheetahLoyaltyCore.RespondableInfo, b: CheetahLoyaltyCore.RespondableInfo) -> Swift.Bool
 }
 extension RespondableInfo {
   public init(from decoder: Swift.Decoder) throws
@@ -1219,8 +1219,12 @@ public enum GroupsAPI {
 }
 public struct APIError : Swift.Decodable, Swift.Error {
   public let code: Swift.Int
-  public let name: Swift.String
   public let message: Swift.String
+  public let name: Swift.String
+  public let additionalInfo: [Swift.String : Any]
+  public init(code: Swift.Int, message: Swift.String, name: Swift.String, additionalInfo: [Swift.String : Any] = [:])
+}
+extension APIError {
   public init(from decoder: Swift.Decoder) throws
 }
 extension APIError : Foundation.LocalizedError {
@@ -1847,8 +1851,8 @@ public struct Reward : Swift.Codable, Swift.Equatable {
     public var attributes: [CheetahLoyaltyCore.Reward.Attribute]
     public var status: Swift.String
     public init(id: Swift.Int, name: Swift.String, desc: Swift.String, label: Swift.String, attributes: [CheetahLoyaltyCore.Reward.Attribute], status: Swift.String)
-    public static func == (a: CheetahLoyaltyCore.Reward.Class, b: CheetahLoyaltyCore.Reward.Class) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
+    public static func == (a: CheetahLoyaltyCore.Reward.Class, b: CheetahLoyaltyCore.Reward.Class) -> Swift.Bool
   }
   public struct Response : Swift.Codable, Swift.Equatable {
     public var id: Swift.Int
@@ -1930,8 +1934,8 @@ public struct Reward : Swift.Codable, Swift.Equatable {
     public var name: Swift.String
     public var options: [CheetahLoyaltyCore.Reward.AttributeOption]
     public init(id: Swift.Int, label: Swift.String, name: Swift.String, options: [CheetahLoyaltyCore.Reward.AttributeOption])
-    public static func == (a: CheetahLoyaltyCore.Reward.Attribute, b: CheetahLoyaltyCore.Reward.Attribute) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
+    public static func == (a: CheetahLoyaltyCore.Reward.Attribute, b: CheetahLoyaltyCore.Reward.Attribute) -> Swift.Bool
   }
   public struct AttributeCombination : Swift.Codable, Swift.Equatable {
     public var id: Swift.Int
@@ -1943,8 +1947,8 @@ public struct Reward : Swift.Codable, Swift.Equatable {
     public var values: [Swift.String]
     public var respondable: Swift.Bool
     public init(id: Swift.Int, sku: Swift.String, imageUrl: Swift.String, thumbnailUrl: Swift.String, metricName: Swift.String, metricAmount: Swift.String, values: [Swift.String], respondable: Swift.Bool)
-    public static func == (a: CheetahLoyaltyCore.Reward.AttributeCombination, b: CheetahLoyaltyCore.Reward.AttributeCombination) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
+    public static func == (a: CheetahLoyaltyCore.Reward.AttributeCombination, b: CheetahLoyaltyCore.Reward.AttributeCombination) -> Swift.Bool
   }
   public struct AttributeOption : Swift.Codable, Swift.Equatable {
     public var id: Swift.Int
@@ -1952,8 +1956,8 @@ public struct Reward : Swift.Codable, Swift.Equatable {
     public var label: Swift.String
     public var isDefault: Swift.Bool
     public init(id: Swift.Int, code: Swift.String, label: Swift.String, isDefault: Swift.Bool)
-    public static func == (a: CheetahLoyaltyCore.Reward.AttributeOption, b: CheetahLoyaltyCore.Reward.AttributeOption) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
+    public static func == (a: CheetahLoyaltyCore.Reward.AttributeOption, b: CheetahLoyaltyCore.Reward.AttributeOption) -> Swift.Bool
   }
   public static func == (a: CheetahLoyaltyCore.Reward, b: CheetahLoyaltyCore.Reward) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
@@ -2017,8 +2021,8 @@ public struct ContentPage : Swift.Codable, Swift.Equatable {
     public var fileName: Swift.String
     public var url: Swift.String
     public init(fileName: Swift.String, url: Swift.String)
-    public static func == (a: CheetahLoyaltyCore.ContentPage.StaticFile, b: CheetahLoyaltyCore.ContentPage.StaticFile) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
+    public static func == (a: CheetahLoyaltyCore.ContentPage.StaticFile, b: CheetahLoyaltyCore.ContentPage.StaticFile) -> Swift.Bool
   }
   public func encode(to encoder: Swift.Encoder) throws
   public static func == (a: CheetahLoyaltyCore.ContentPage, b: CheetahLoyaltyCore.ContentPage) -> Swift.Bool
@@ -2208,6 +2212,25 @@ public enum CoreNotification : CheetahLoyaltyUtils.CheetahNotification {
   }
   public func hash(into hasher: inout Swift.Hasher)
 }
+extension Date {
+  public static var cheetahBirthdateFormat: Swift.String {
+    get
+  }
+  public static var CheetahDateFormat: Swift.String {
+    get
+  }
+  public static var CheetahTimestampFormat: Swift.String {
+    get
+  }
+  public static func dateFrom(timestampString timestamp: Swift.String) -> Foundation.Date?
+  public static func dateFrom(formattedString string: Swift.String) -> Foundation.Date?
+  public var timestampString: Swift.String {
+    get
+  }
+}
+extension String {
+  public static func createPeriod(startDate: Swift.String, endDate: Swift.String) -> Swift.String
+}
 public struct Award : Swift.Codable, Swift.Equatable {
   public var id: Swift.Int
   public var status: CheetahLoyaltyCore.Award.Status
@@ -2327,8 +2350,8 @@ public struct GameChallengeResponseSetting : CheetahLoyaltyCore.ChallengeRespons
     public var requireLogin: Swift.Bool
     public var staticFiles: [CheetahLoyaltyCore.ContentPage.StaticFile]
     public init(id: Swift.Int, label: Swift.String, description: Swift.String, pageType: Swift.String, name: Swift.String, templateSetVersionId: Swift.Int, url: Swift.String, maskedUrl: Swift.String, requireLogin: Swift.Bool, staticFiles: [CheetahLoyaltyCore.ContentPage.StaticFile])
-    public static func == (a: CheetahLoyaltyCore.GameChallengeResponseSetting.Game, b: CheetahLoyaltyCore.GameChallengeResponseSetting.Game) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
+    public static func == (a: CheetahLoyaltyCore.GameChallengeResponseSetting.Game, b: CheetahLoyaltyCore.GameChallengeResponseSetting.Game) -> Swift.Bool
   }
   public static func == (a: CheetahLoyaltyCore.GameChallengeResponseSetting, b: CheetahLoyaltyCore.GameChallengeResponseSetting) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
@@ -2548,8 +2571,8 @@ public struct Group : Swift.Codable, Swift.Equatable {
   public var groupId: Swift.String
   public var name: Swift.String
   public init(id: Swift.Int, avatarUrl: Swift.String, displayName: Swift.String, groupClass: CheetahLoyaltyCore.GroupClass?, groupDescription: Swift.String, groupId: Swift.String, name: Swift.String)
-  public static func == (a: CheetahLoyaltyCore.Group, b: CheetahLoyaltyCore.Group) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
+  public static func == (a: CheetahLoyaltyCore.Group, b: CheetahLoyaltyCore.Group) -> Swift.Bool
 }
 extension Group {
   public init(from decoder: Swift.Decoder) throws
@@ -2558,8 +2581,8 @@ public struct GroupClass : Swift.Codable, Swift.Equatable {
   public var label: Swift.String
   public var name: Swift.String
   public init(label: Swift.String, name: Swift.String)
-  public static func == (a: CheetahLoyaltyCore.GroupClass, b: CheetahLoyaltyCore.GroupClass) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
+  public static func == (a: CheetahLoyaltyCore.GroupClass, b: CheetahLoyaltyCore.GroupClass) -> Swift.Bool
 }
 extension GroupClass {
   public init(from decoder: Swift.Decoder) throws
@@ -2650,14 +2673,14 @@ extension AnyCodable : Swift.ExpressibleByNilLiteral, Swift.ExpressibleByBoolean
   public init(arrayLiteral elements: Any...)
   public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
   public typealias StringLiteralType = Swift.String
-  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
-  public typealias UnicodeScalarLiteralType = Swift.String
   public typealias BooleanLiteralType = Swift.Bool
   public typealias IntegerLiteralType = Swift.Int
   public typealias FloatLiteralType = Swift.Double
   public typealias ArrayLiteralElement = Any
   public typealias Key = Swift.AnyHashable
   public typealias Value = Any
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
 }
 public struct OperatingDay : Swift.Codable, Swift.Equatable {
   public var operatingDay: Swift.String
@@ -2667,11 +2690,11 @@ public struct OperatingDay : Swift.Codable, Swift.Equatable {
     public var open: Swift.String
     public var close: Swift.String
     public init(open: Swift.String, close: Swift.String)
-    public static func == (a: CheetahLoyaltyCore.OperatingDay.Hours, b: CheetahLoyaltyCore.OperatingDay.Hours) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
+    public static func == (a: CheetahLoyaltyCore.OperatingDay.Hours, b: CheetahLoyaltyCore.OperatingDay.Hours) -> Swift.Bool
   }
-  public static func == (a: CheetahLoyaltyCore.OperatingDay, b: CheetahLoyaltyCore.OperatingDay) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
+  public static func == (a: CheetahLoyaltyCore.OperatingDay, b: CheetahLoyaltyCore.OperatingDay) -> Swift.Bool
 }
 public struct NearbyPlaces : Swift.Codable, Swift.Equatable {
   public var places: [CheetahLoyaltyCore.Place]
@@ -2726,8 +2749,8 @@ public struct Place : Swift.Codable, Swift.Equatable {
     public var imageUrl: Swift.String
     public var description: Swift.String
     public init(id: Swift.Int, name: Swift.String, label: Swift.String, thumbImageUrl: Swift.String, imageUrl: Swift.String, description: Swift.String)
-    public static func == (a: CheetahLoyaltyCore.Place.Category, b: CheetahLoyaltyCore.Place.Category) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
+    public static func == (a: CheetahLoyaltyCore.Place.Category, b: CheetahLoyaltyCore.Place.Category) -> Swift.Bool
   }
   public enum ClientEventType : Swift.String, Swift.Codable {
     case enter
@@ -2735,13 +2758,13 @@ public struct Place : Swift.Codable, Swift.Equatable {
     case dwell
     case none
     public typealias RawValue = Swift.String
-    public init?(rawValue: Swift.String)
     public var rawValue: Swift.String {
       get
     }
+    public init?(rawValue: Swift.String)
   }
-  public static func == (a: CheetahLoyaltyCore.Place, b: CheetahLoyaltyCore.Place) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
+  public static func == (a: CheetahLoyaltyCore.Place, b: CheetahLoyaltyCore.Place) -> Swift.Bool
 }
 extension OperatingDay.Hours {
   public init(from decoder: Swift.Decoder) throws
@@ -2799,7 +2822,7 @@ extension URLRequest {
   public typealias MultipartAttachments = [Foundation.URLRequest.MultipartAttachment]
   public init(url: CheetahLoyaltyCore.URLConvertible, method: CheetahLoyaltyCore.HTTPMethod, headers: CheetahLoyaltyCore.HTTPHeaders? = nil) throws
   public init(url: CheetahLoyaltyCore.URLConvertible, method: CheetahLoyaltyCore.HTTPMethod, headers: CheetahLoyaltyCore.HTTPHeaders? = nil, parameters: CheetahLoyaltyCore.Parameters?, multipartAttachments: Foundation.URLRequest.MultipartAttachments? = nil) throws
-  mutating public func encode(with parameters: CheetahLoyaltyCore.Parameters?) throws
+  public mutating func encode(with parameters: CheetahLoyaltyCore.Parameters?) throws
   public static func encode(_ urlRequest: inout Foundation.URLRequest, with parameters: CheetahLoyaltyCore.Parameters?) throws
 }
 extension URL {
@@ -2917,8 +2940,8 @@ public struct ARDefinition : Swift.Codable, Swift.Equatable {
   public var assetContentType: Swift.String
   public var assetUrl: Swift.String
   public init(type: Swift.String, trackerName: Swift.String, targetId: Swift.Int, targetType: Swift.String, targetHeading: Swift.String, assetContentType: Swift.String, assetUrl: Swift.String)
-  public static func == (a: CheetahLoyaltyCore.ARDefinition, b: CheetahLoyaltyCore.ARDefinition) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
+  public static func == (a: CheetahLoyaltyCore.ARDefinition, b: CheetahLoyaltyCore.ARDefinition) -> Swift.Bool
 }
 extension ARDefinition {
   public init(from decoder: Swift.Decoder) throws
@@ -3088,7 +3111,7 @@ public enum MessagesAPI {
   public static func dismissMessage(id: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
 }
 public class Configuration : Swift.Decodable {
-  public static let shared: CheetahLoyaltyCore.Configuration
+  public static var shared: CheetahLoyaltyCore.Configuration
   final public let userAgentName: Swift.String
   final public let clientId: Swift.String
   final public let clientSecret: Swift.String
@@ -3106,6 +3129,11 @@ public class Configuration : Swift.Decodable {
     case isGeofencingEnabled
     case businessUnit
     case isAccessTokenExternal
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
     public var stringValue: Swift.String {
       get
     }
@@ -3114,11 +3142,6 @@ public class Configuration : Swift.Decodable {
       get
     }
     public init?(intValue: Swift.Int)
-    public typealias RawValue = Swift.String
-    public init?(rawValue: Swift.String)
-    public var rawValue: Swift.String {
-      get
-    }
   }
   public enum DefaultsKeys : Swift.String {
     case sendLocationAnonymously
@@ -3131,12 +3154,13 @@ public class Configuration : Swift.Decodable {
       get
     }
   }
+  public init(userAgentName: Swift.String, clientId: Swift.String, clientSecret: Swift.String, clientUrl: Swift.String, metric: Swift.String, businessUnit: Swift.String, isGeofencingEnabled: Swift.Bool, isAccessTokenExternal: Swift.Bool)
   public static func getDefaultsValue(for key: CheetahLoyaltyCore.Configuration.DefaultsKeys) -> Any?
   public static func setDefaults(value: Any?, for key: CheetahLoyaltyCore.Configuration.DefaultsKeys)
   @objc deinit
   required public init(from decoder: Swift.Decoder) throws
 }
-public class API {
+@_hasMissingDesignatedInitializers public class API {
   public static let shared: CheetahLoyaltyCore.API
   public var session: Foundation.URLSession
   weak public var userLocation: CheetahLoyaltyCore.UserLocation?
@@ -3412,6 +3436,7 @@ extension CheetahLoyaltyCore.AuthenticationInfo.SettingsKeys : Swift.RawRepresen
 extension CheetahLoyaltyCore.Reward.RewardType : Swift.Equatable {}
 extension CheetahLoyaltyCore.Reward.RewardType : Swift.Hashable {}
 extension CheetahLoyaltyCore.Reward.RewardType : Swift.RawRepresentable {}
+extension CheetahLoyaltyCore.Reward.RedemptionOptions : Swift.Equatable {}
 extension CheetahLoyaltyCore.Reward.RedemptionOptions : Swift.Hashable {}
 extension CheetahLoyaltyCore.Reward.RedemptionOptions : Swift.RawRepresentable {}
 extension CheetahLoyaltyCore.Reward.Response.RedemptionStatus : Swift.Equatable {}
@@ -3434,6 +3459,7 @@ extension CheetahLoyaltyCore.UpdateProfileChallengeResponseSetting.SubType : Swi
 extension CheetahLoyaltyCore.ViewContentChallengeResponseSetting.Subtype : Swift.Equatable {}
 extension CheetahLoyaltyCore.ViewContentChallengeResponseSetting.Subtype : Swift.Hashable {}
 extension CheetahLoyaltyCore.ViewContentChallengeResponseSetting.Subtype : Swift.RawRepresentable {}
+extension CheetahLoyaltyCore.Place.ClientEventType : Swift.Equatable {}
 extension CheetahLoyaltyCore.Place.ClientEventType : Swift.Hashable {}
 extension CheetahLoyaltyCore.Place.ClientEventType : Swift.RawRepresentable {}
 extension CheetahLoyaltyCore.HTTPMethod : Swift.Equatable {}

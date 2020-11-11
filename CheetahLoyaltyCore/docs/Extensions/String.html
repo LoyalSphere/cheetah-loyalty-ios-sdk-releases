@@ -848,7 +848,25 @@
             <a href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CharacterSet.html">CharacterSet</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/KeyedDecodingContainer.html">KeyedDecodingContainer</a>
               </li>
             </ul>
           </li>
@@ -868,6 +886,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../Structs/APIError.html">APIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIError.html#/s:18CheetahLoyaltyCore8APIErrorV24AdditionalDataCodingKeysV">– AdditionalDataCodingKeys</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/CountriesStates.html">CountriesStates</a>
@@ -950,12 +971,83 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS18CheetahLoyaltyCoreE12createPeriod9startDate03endG0S2S_SStFZ"></a>
+                    <a name="//apple_ref/swift/Method/createPeriod(startDate:endDate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS18CheetahLoyaltyCoreE12createPeriod9startDate03endG0S2S_SStFZ">createPeriod(startDate:endDate:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a string period based on the given date strings.</p>
+
+<p>If both parameters or the <strong>startDate</strong> are invalid, this method will just throw an empty string. But if <strong>endDate</strong> is invalid this will instead used the word
+ Onwards.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This method uses <code><a href="../Extensions/Date.html#/s:10Foundation4DateV18CheetahLoyaltyCoreE0C15TimestampFormatSSvpZ">Date.CheetahTimestampFormat</a></code> for the date format and <code><a href="../Extensions/Date.html#/s:10Foundation4DateV18CheetahLoyaltyCoreE0cB6FormatSSvpZ">Date.CheetahDateFormat</a></code> for the resulting date format.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createPeriod</span><span class="p">(</span><span class="nv">startDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">endDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>startDate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The beginning of the period.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endDate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The end of the period.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A string period.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-09-04)</p>
+          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-11-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
