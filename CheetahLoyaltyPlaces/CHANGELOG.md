@@ -6,6 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Places-1.2.3] - 2020-11-06
+### Changed
+- Dependency version requirements to CheetahLoyaltyCore 1.8.0 [#550]
+- Built using Xcode 12 to support the iOS 14 SDK and Swift 5.3 [#562]
+
+[#550]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/550
+[#562]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/562
+[Places-1.2.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/69?closed=1
+
 ## [Places-1.2.2] - 2020-09-04
 ### Changed
 - Dependency version requirements to CheetahLoyaltyCore 1.7.0 [#513]

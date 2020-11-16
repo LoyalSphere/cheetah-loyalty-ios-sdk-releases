@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyPlaces
 import CheetahLoyaltyCore
 @_exported import CheetahLoyaltyPlaces
@@ -8,7 +8,7 @@ import CoreLocation
 import Foundation
 import Swift
 import UserNotifications
-@objc open class LocationManager : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class LocationManager : ObjectiveC.NSObject {
   public static let eventKey: Swift.String
   public enum Event {
     case didSetCurrentLocation(_: CoreLocation.CLLocation)
@@ -18,7 +18,7 @@ import UserNotifications
   }
   public var manager: CoreLocation.CLLocationManager! {
     get
-    }
+  }
   open var lastKnownLocation: CoreLocation.CLLocation? {
     get
   }
@@ -82,25 +82,25 @@ public protocol GeofenceClientEvents {
   func triggerClientEvent(in region: CoreLocation.CLRegion, event: CheetahLoyaltyCore.Place.ClientEventType)
   func sendLocalNotification(for offers: [CheetahLoyaltyCore.Offer], withTitle title: Swift.String, andInterval fireDateInterval: Foundation.TimeInterval, completion: ((Swift.Error?) -> Swift.Void)?)
 }
-@objc open class GeofenceClientEventsManager : ObjectiveC.NSObject, CheetahLoyaltyPlaces.GeofenceClientEvents {
+@objc @_inheritsConvenienceInitializers open class GeofenceClientEventsManager : ObjectiveC.NSObject, CheetahLoyaltyPlaces.GeofenceClientEvents {
   open func createClientEventRegions(for location: CoreLocation.CLLocation)
   open func triggerClientEvent(in region: CoreLocation.CLRegion, event: CheetahLoyaltyCore.Place.ClientEventType)
   public func sendLocalNotification(for offers: [CheetahLoyaltyCore.Offer], withTitle title: Swift.String, andInterval fireDateInterval: Foundation.TimeInterval, completion: ((Swift.Error?) -> Swift.Void)?)
   open func formParamsForNearbyPlaces(using location: CoreLocation.CLLocation) -> CheetahLoyaltyCore.Parameters
   open func computeRadius(placeDistance: Swift.Double?, placeRadius: Swift.Double?, defaultRadius: Swift.Int) -> Swift.Double
   open func getTitleFor(event: CheetahLoyaltyCore.Place.ClientEventType, placeName: Swift.String) -> Swift.String
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
-@objc open class GeofenceManager : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class GeofenceManager : ObjectiveC.NSObject {
   public var manager: CoreLocation.CLLocationManager! {
     get
-    }
+  }
   open var locationEventListener: ObjectiveC.NSObjectProtocol?
   public var clientEventsManager: CheetahLoyaltyPlaces.GeofenceClientEvents?
   public var lastKnownLocation: CoreLocation.CLLocation? {
     get
-    }
+  }
   public static let shared: CheetahLoyaltyPlaces.GeofenceManager
   open var isGeofencingEnabled: Swift.Bool {
     get
