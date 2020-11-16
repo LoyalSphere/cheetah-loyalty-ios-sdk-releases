@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyOffers
 import AVFoundation
 import CheetahLoyaltyCore
@@ -40,7 +40,7 @@ public enum OfferUIFactory {
   public static func responseList(detailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate? = nil) -> CheetahLoyaltyUI.CollectionViewController
   public static func segmentedCoupon(detailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate? = nil) -> CheetahLoyaltyUI.SegmentedViewController
 }
-open class OfferResponseListController : CheetahLoyaltyUI.ListCollectionController<CheetahLoyaltyCore.Offer.Response> {
+@_inheritsConvenienceInitializers open class OfferResponseListController : CheetahLoyaltyUI.ListCollectionController<CheetahLoyaltyCore.Offer.Response> {
   open var loadParameters: CheetahLoyaltyCore.Parameters
   open var detailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate?
   override open func loadContent()
@@ -56,22 +56,24 @@ open class OfferCouponListController : CheetahLoyaltyOffers.OfferListController 
   open var isClipping: Swift.Bool
   open func isClippingNotification(_ notification: Foundation.Notification)
   open func doneClippingNotification(_ notification: Foundation.Notification)
+  @objc override dynamic public init()
   @objc deinit
   override open func loadContent()
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
   override public init(collectionView: UIKit.UICollectionView? = super)
 }
-open class OfferCouponClippedListController : CheetahLoyaltyOffers.OfferCouponListController {
+@_inheritsConvenienceInitializers open class OfferCouponClippedListController : CheetahLoyaltyOffers.OfferCouponListController {
+  @objc override dynamic public init()
   override open func doneClippingNotification(_ notification: Foundation.Notification)
   @objc deinit
 }
 public protocol OfferCarouselDelegate {
   func offerCarouselContentDidLoad(_ controller: CheetahLoyaltyOffers.OfferCarouselController)
 }
-open class OfferCarouselController : CheetahLoyaltyUI.CarouselCollectionController<CheetahLoyaltyCore.Offer> {
+@_inheritsConvenienceInitializers open class OfferCarouselController : CheetahLoyaltyUI.CarouselCollectionController<CheetahLoyaltyCore.Offer> {
   open var delegate: CheetahLoyaltyOffers.OfferCarouselDelegate?
   open var detailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate?
-  open var autoScrollTimeInterval: Foundation.TimeInterval
+  open var autoScrollTimeInterval: Swift.Double
   open var loadParameters: CheetahLoyaltyCore.Parameters
   @objc deinit
   override open func loadContent()
@@ -91,7 +93,7 @@ public struct OfferCouponSegmentedController : CheetahLoyaltyUI.SegmentedControl
   public func titleForSegment(atIndex index: Swift.Int) -> Swift.String?
   public func didSelectSegment(atIndex index: Swift.Int, of segmentedViewController: CheetahLoyaltyUI.SegmentedViewController)
 }
-open class OfferListController : CheetahLoyaltyUI.ListCollectionController<CheetahLoyaltyCore.Offer> {
+@_inheritsConvenienceInitializers open class OfferListController : CheetahLoyaltyUI.ListCollectionController<CheetahLoyaltyCore.Offer> {
   open var loadParameters: CheetahLoyaltyCore.Parameters
   open var detailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate?
   override open func loadContent()
@@ -101,7 +103,7 @@ open class OfferListController : CheetahLoyaltyUI.ListCollectionController<Cheet
   override public init(collectionView: UIKit.UICollectionView? = super)
   @objc deinit
 }
-open class OfferDetailViewController : CheetahLoyaltyUI.DetailViewController {
+@_inheritsConvenienceInitializers open class OfferDetailViewController : CheetahLoyaltyUI.DetailViewController {
   @objc @IBOutlet weak public var buttonStackView: UIKit.UIStackView!
   @objc @IBOutlet weak public var readMoreButton: UIKit.UIButton!
   @objc @IBOutlet weak public var barcodeStackView: UIKit.UIStackView!
@@ -115,7 +117,7 @@ open class OfferDetailViewController : CheetahLoyaltyUI.DetailViewController {
   override public init(detailController: CheetahLoyaltyUI.DetailController, isRefreshable: Swift.Bool = super)
   @objc deinit
 }
-open class OfferResponseDetailController : CheetahLoyaltyOffers.OfferDetailController {
+@_inheritsConvenienceInitializers open class OfferResponseDetailController : CheetahLoyaltyOffers.OfferDetailController {
   override open var isClippable: Swift.Bool {
     get
   }

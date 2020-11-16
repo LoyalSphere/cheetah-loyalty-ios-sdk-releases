@@ -6,6 +6,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Offers-1.3.1] - 2020-11-06
+### Changed
+- Dependency version requirements to CheetahLoyaltyCore 1.8.0, CheetahLoyaltyUI 1.8.0, and CheetahLoyaltyUtils 1.1.0 [#554]
+- Built using Xcode 12 to support the iOS 14 SDK and Swift 5.3 [#561]
+
+### Fixed
+- `OfferCouponListController` and `OfferCouponClippedListController` init method visibility [#532]
+
+[#532]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/532
+[#554]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/554
+[#561]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/561
+[Offers-1.3.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/65?closed=1
+
 ## [Offers-1.3.0] - 2020-09-10
 ### Added
 - Load parameters property for Offer Carousel [#522]
