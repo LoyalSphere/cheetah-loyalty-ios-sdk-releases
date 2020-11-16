@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyNotifications
 import CheetahLoyaltyCore
 @_exported import CheetahLoyaltyNotifications
@@ -48,7 +48,7 @@ open class DefaultPushHandler : CheetahLoyaltyNotifications.PushHandler {
   open func handlePush(notificationType: CheetahLoyaltyNotifications.NotificationType, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
   @objc deinit
 }
-@objc open class RichPushService : UserNotifications.UNNotificationServiceExtension {
+@objc @_inheritsConvenienceInitializers open class RichPushService : UserNotifications.UNNotificationServiceExtension {
   public var contentHandler: ((UserNotifications.UNNotificationContent) -> Swift.Void)?
   public var bestAttemptContent: UserNotifications.UNMutableNotificationContent?
   @objc override dynamic open func didReceive(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
@@ -66,8 +66,8 @@ open class DefaultPushHandler : CheetahLoyaltyNotifications.PushHandler {
   open func setupContentPageCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
   open func createAction(_ action: CheetahLoyaltyNotifications.RichPushAction, title: Swift.String, isText: Swift.Bool = false, options: UserNotifications.UNNotificationActionOptions = []) -> UserNotifications.UNNotificationAction
   open func createCategory(_ category: CheetahLoyaltyNotifications.RichPushCategory, actions: [UserNotifications.UNNotificationAction], options: UserNotifications.UNNotificationCategoryOptions = []) -> UserNotifications.UNNotificationCategory
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 public enum NotificationType : Swift.String, Swift.CaseIterable {
   case award
@@ -168,6 +168,7 @@ open class DefaultRichPushHandler : CheetahLoyaltyNotifications.RichPushHandler 
   open func openUrl(_ url: Foundation.URL)
   @objc deinit
 }
+extension CheetahLoyaltyNotifications.NotificationType : Swift.Equatable {}
 extension CheetahLoyaltyNotifications.NotificationType : Swift.Hashable {}
 extension CheetahLoyaltyNotifications.NotificationType : Swift.RawRepresentable {}
 extension CheetahLoyaltyNotifications.RichPushCategory : Swift.Equatable {}
