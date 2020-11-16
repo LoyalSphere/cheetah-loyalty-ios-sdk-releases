@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Challenges-1.1.3] - 2020-11-06
+
+### Changed
+- Changed dependency version requirements to CheetahLoyaltyCore 1.8.0, CheetahLoyaltyUI 1.8.0, and CheetahLoyaltyUtils 1.1.0 [#549]
+- Use content layout guide in for scroll views [#534]
+- Built using Xcode 12 to support the iOS 14 SDK and Swift 5.3
+
+[#534]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/534
+[#549]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/549
+[Challenges-1.1.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/66?closed=1
+
 ## [Challenges-1.1.2] - 2020-09-04
 ### Added
 - Accessibility labels [#502]
