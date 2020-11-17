@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Olo-UI-1.1.2] - 2020-11-17
+### Updated
+- CheetahLoyaltyUI version to 1.8.0
+- CheetahLoyaltyUtils version to 1.1.0
+- CheetahLoyaltyOloCore version to 1.1.1
+
 ## [Olo-UI-1.1.1] - 2020-09-09
 ### Updated
 - CheetahLoyaltyUI version to 1.7.1
@@ -31,7 +37,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Added components for complete Ordering System
 
-[Olo-Core-1.1.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/3
-[Olo-Core-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/3
-[Olo-Core-1.0.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/2
-[Olo-Core-1.0.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/2
+[Olo-UI-1.1.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/4
+[Olo-UI-1.1.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/3
+[Olo-UI-1.1.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/3
+[Olo-UI-1.0.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/2
+[Olo-UI-1.0.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk/milestone/2
