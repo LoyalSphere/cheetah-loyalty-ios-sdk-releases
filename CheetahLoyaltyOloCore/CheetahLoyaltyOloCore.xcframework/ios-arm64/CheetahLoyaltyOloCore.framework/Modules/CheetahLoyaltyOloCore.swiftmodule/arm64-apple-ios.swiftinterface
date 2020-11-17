@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyOloCore
 @_exported import CheetahLoyaltyOloCore
 import CheetahLoyaltyUtils
@@ -461,7 +461,7 @@ public enum OrderAPI {
   public static func manualFireOrder(byReference reference: Swift.String, manualFire: CheetahLoyaltyOloCore.OrderParameter.ManualFire, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Order.ManualFireResult>)
   public static func manualFireOrder(byGuid guid: Swift.String, manualFire: CheetahLoyaltyOloCore.OrderParameter.ManualFire, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Order.ManualFireResult>)
 }
-public class API {
+@_hasMissingDesignatedInitializers public class API {
   public static let shared: CheetahLoyaltyOloCore.API
   public var session: Foundation.URLSession
   public func resetSession()
@@ -1522,7 +1522,7 @@ extension URLRequest {
   public typealias MultipartAttachments = [Foundation.URLRequest.MultipartAttachment]
   public init(url: CheetahLoyaltyOloCore.URLConvertible, method: CheetahLoyaltyOloCore.HTTPMethod, headers: CheetahLoyaltyOloCore.HTTPHeaders? = nil) throws
   public init(url: CheetahLoyaltyOloCore.URLConvertible, method: CheetahLoyaltyOloCore.HTTPMethod, headers: CheetahLoyaltyOloCore.HTTPHeaders? = nil, parameters: CheetahLoyaltyOloCore.Parameters?, multipartAttachments: Foundation.URLRequest.MultipartAttachments? = nil) throws
-  mutating public func encode(with parameters: CheetahLoyaltyOloCore.Parameters?) throws
+  public mutating func encode(with parameters: CheetahLoyaltyOloCore.Parameters?) throws
   public static func encode(_ urlRequest: inout Foundation.URLRequest, with parameters: CheetahLoyaltyOloCore.Parameters?) throws
 }
 extension URL {
@@ -1771,6 +1771,11 @@ public class Configuration : Swift.Decodable {
     case apiKey
     case providerSlug
     case logEnabled
+    public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
+    public var rawValue: Swift.String {
+      get
+    }
     public var stringValue: Swift.String {
       get
     }
@@ -1779,11 +1784,6 @@ public class Configuration : Swift.Decodable {
       get
     }
     public init?(intValue: Swift.Int)
-    public typealias RawValue = Swift.String
-    public init?(rawValue: Swift.String)
-    public var rawValue: Swift.String {
-      get
-    }
   }
   final public let clientUrl: Swift.String
   final public let apiVersion: Swift.String

@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Olo-Core-1.1.1] - 2020-11-17
+### Updated
+- Added CheetahLoyaltyUtils dependency to 1.1.0
+
 ## [Olo-Core-1.1.0] - 2020-08-11
 ### Updated
 - Set some of the parameter model's to public
