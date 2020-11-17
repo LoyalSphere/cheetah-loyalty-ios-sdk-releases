@@ -51,28 +51,28 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
-      "line": 76,
+      "line": 82,
       "symbol": "RewardDetailController.actionButtonPressed(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
-      "line": 89,
+      "line": 95,
       "symbol": "RewardDetailController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
-      "line": 135,
+      "line": 142,
       "symbol": "RewardDetailController.setupAwardClaimStatus()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
-      "line": 140,
+      "line": 147,
       "symbol": "RewardDetailController.rewardRedeemed()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -82,13 +82,6 @@
       "line": 12,
       "symbol": "RewardDetailViewController",
       "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailViewController.swift",
-      "line": 24,
-      "symbol": "RewardDetailViewController.setupOtherDetails()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {

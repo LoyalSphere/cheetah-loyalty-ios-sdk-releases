@@ -1,0 +1,412 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyRewards
+import CheetahLoyaltyCore
+@_exported import CheetahLoyaltyRewards
+import CheetahLoyaltyUI
+import CheetahLoyaltyUtils
+import Foundation
+import Swift
+import UIKit
+@_inheritsConvenienceInitializers open class MetricTransferRewardViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyRewards.RewardResponderDelegate {
+  open var responder: CheetahLoyaltyRewards.RewardResponder? {
+    get
+    set
+  }
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController
+  convenience public init(with reward: CheetahLoyaltyCore.Reward, awardId: Swift.Int? = nil)
+  override open func setup()
+  @objc open func sliderValueChanged(_ sender: UIKit.UISlider)
+  @objc open func actionButtonPressed(_ sender: UIKit.UIButton)
+  open func onFailure(with error: Swift.Error)
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>)
+  @objc deinit
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension Bundle {
+  public static var CheetahLoyaltyRewardsIdentifier: Swift.String {
+    get
+  }
+}
+public enum RewardsNotification : CheetahLoyaltyUtils.CheetahNotification {
+  case rewardUpdated
+  public var name: Swift.String {
+    get
+  }
+  public static func == (a: CheetahLoyaltyRewards.RewardsNotification, b: CheetahLoyaltyRewards.RewardsNotification) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public protocol RewardResponderFactory {
+  static func responder(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController?
+  static func badge(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func certificate(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func challenge(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func contest(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func coupon(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func couponCom(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func debit(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func dynamic(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func giftcard(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func metric(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func metricPurchase(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func metricTransfer(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func offer(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func product(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+}
+@_hasMissingDesignatedInitializers open class DefaultRewardResponderFactory : CheetahLoyaltyRewards.RewardResponderFactory {
+  open class func responder(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController?
+  open class func badge(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func certificate(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func challenge(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func contest(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func coupon(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func couponCom(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func debit(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func dynamic(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func giftcard(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func metric(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func metricPurchase(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func metricTransfer(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func offer(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func product(for reward: CheetahLoyaltyCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  @objc deinit
+}
+public protocol RewardResponderDelegate : AnyObject {
+  func onFailure(with error: Swift.Error)
+  func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>)
+}
+public protocol RewardResponder : AnyObject {
+  var reward: CheetahLoyaltyCore.Reward { get }
+  var awardId: Swift.Int? { get }
+  var delegate: CheetahLoyaltyRewards.RewardResponderDelegate? { get set }
+  var isResponding: Swift.Bool { get set }
+  func didRespond(with result: Swift.Result<CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>, Swift.Error>)
+  func redeem(address: [Swift.String : Any]?, and parameters: CheetahLoyaltyCore.Parameters?)
+}
+@objc open class BaseRewardResponder : ObjectiveC.NSObject, CheetahLoyaltyRewards.RewardResponder {
+  open var reward: CheetahLoyaltyCore.Reward
+  open var awardId: Swift.Int?
+  open var isResponding: Swift.Bool
+  weak open var delegate: CheetahLoyaltyRewards.RewardResponderDelegate?
+  public init(with reward: CheetahLoyaltyCore.Reward, awardId: Swift.Int? = nil, delegate: CheetahLoyaltyRewards.RewardResponderDelegate? = nil)
+  open func didRespond(with result: Swift.Result<CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>, Swift.Error>)
+  open func redeem(address: [Swift.String : Any]?, and parameters: CheetahLoyaltyCore.Parameters?)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers open class RedemptionDetailViewController : CheetahLoyaltyUI.DetailViewController {
+  @objc @IBOutlet weak open var messageLabel: UIKit.UILabel!
+  @objc @IBOutlet weak open var detailLabel: UIKit.UILabel!
+  @objc @IBOutlet weak open var notesLabel: UIKit.UILabel!
+  @objc @IBOutlet weak open var statusImageView: UIKit.UIImageView!
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController
+  open func setStatusImage(with image: UIKit.UIImage)
+  open func showRedemptionCancellingConfirmation()
+  open func redemptionCancelledSuccessfully(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.Response>)
+  open func redemptionCancelFailed(with error: Swift.Error)
+  @objc deinit
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
+  override public init(detailController: CheetahLoyaltyUI.DetailController, isRefreshable: Swift.Bool = super)
+}
+open class RedemptionDetailController : CheetahLoyaltyUI.BaseDetailController {
+  open var id: Swift.Int
+  open var notes: Swift.String {
+    get
+  }
+  public init(id: Swift.Int)
+  override open func actionButtonPressed(_ actionButton: UIKit.UIButton)
+  override open func loadContent()
+  open func setupActionButton()
+  open func cancelReward()
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension Reward.Response : CheetahLoyaltyUI.DetailPresentable {
+  public var detailImage: UIKit.UIImage? {
+    get
+  }
+  public var detailImageUrl: Swift.String {
+    get
+  }
+  public var detailHeading: Swift.String {
+    get
+  }
+  public var detailSubheading: Swift.String {
+    get
+  }
+  public var detailBody: Swift.String {
+    get
+  }
+  public var detailPoints: Swift.String {
+    get
+  }
+  public var detailPeriod: Swift.String {
+    get
+  }
+  public var detailActionButtonTitle: Swift.String {
+    get
+  }
+}
+open class RewardDetailController : CheetahLoyaltyUI.BaseDetailController {
+  open var awardID: Swift.Int?
+  open var awardStatus: CheetahLoyaltyCore.Award.Status
+  open var id: Swift.Int
+  open var params: [Swift.String : Any] {
+    get
+  }
+  open var rewardRedeemedListener: ObjectiveC.NSObjectProtocol?
+  open var isRedeemable: Swift.Bool {
+    get
+    set
+  }
+  open var responderFactory: CheetahLoyaltyRewards.RewardResponderFactory.Type
+  public init(id: Swift.Int, awardID: Swift.Int? = nil)
+  @objc deinit
+  override open func setupDetails()
+  override open func actionButtonPressed(_ actionButton: UIKit.UIButton)
+  override open func loadContent()
+  open func setupRewardRedeemedListener()
+  open func setupRewardRespondableStatus()
+  open func setupAwardClaimStatus()
+  open func rewardRedeemed()
+  @objc override dynamic public init()
+}
+extension Reward : CheetahLoyaltyUI.DetailPresentable {
+  public var detailImage: UIKit.UIImage? {
+    get
+  }
+  public var detailImageUrl: Swift.String {
+    get
+  }
+  public var detailHeading: Swift.String {
+    get
+  }
+  public var detailSubheading: Swift.String {
+    get
+  }
+  public var detailBody: Swift.String {
+    get
+  }
+  public var detailPoints: Swift.String {
+    get
+  }
+  public var detailPeriod: Swift.String {
+    get
+  }
+  public var detailActionButtonTitle: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers open class RewardDetailViewController : CheetahLoyaltyUI.DetailViewController, CheetahLoyaltyUI.SelectionButtonDelegate {
+  override open func setup()
+  open func didTap(_ selectionButton: CheetahLoyaltyUI.SelectionButton)
+  @objc deinit
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
+  override public init(detailController: CheetahLoyaltyUI.DetailController, isRefreshable: Swift.Bool = super)
+}
+@_inheritsConvenienceInitializers open class CertificateRewardViewController : CheetahLoyaltyRewards.GenericRewardViewController {
+  override open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol ChallengeNavigatorDelegate : AnyObject {
+  func navigate(to challenge: CheetahLoyaltyCore.Challenge)
+}
+@_inheritsConvenienceInitializers open class ChallengeRewardViewController : CheetahLoyaltyRewards.GenericRewardViewController {
+  weak open var navigatorDelegate: CheetahLoyaltyRewards.ChallengeNavigatorDelegate?
+  convenience public init(with reward: CheetahLoyaltyCore.Reward, awardId: Swift.Int? = nil, heading: Swift.String? = nil, defaultResponseMessage: Swift.String? = nil, navigatorDelegate: CheetahLoyaltyRewards.ChallengeNavigatorDelegate?, nibName: Swift.String = "GenericRewardViewController")
+  override open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers open class GenericRewardViewController : CheetahLoyaltyUI.GenericAlertViewController, CheetahLoyaltyRewards.RewardResponderDelegate {
+  @objc @IBOutlet weak public var containerStackView: UIKit.UIStackView!
+  @objc @IBOutlet weak public var activityIndicator: UIKit.UIActivityIndicatorView!
+  @objc @IBOutlet weak public var messageContainerView: UIKit.UIView!
+  open var responder: CheetahLoyaltyRewards.RewardResponder?
+  open var defaultResponseMessage: Swift.String
+  open var parameters: CheetahLoyaltyCore.Parameters?
+  convenience public init(with reward: CheetahLoyaltyCore.Reward, awardId: Swift.Int? = nil, heading: Swift.String? = nil, defaultResponseMessage: Swift.String? = nil, reloadCompletion: (() -> Swift.Void)? = nil, nibName: Swift.String = "GenericRewardViewController")
+  override open func setup()
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>)
+  open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol CombinationRewardDelegate : AnyObject {
+  func onSelectedCombinationUpdate(with values: [Swift.String])
+}
+@_inheritsConvenienceInitializers open class CombinationRewardCollectionController : CheetahLoyaltyUI.BaseCollectionController<CheetahLoyaltyCore.Reward.Attribute> {
+  weak open var delegate: CheetahLoyaltyRewards.CombinationRewardDelegate?
+  override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    get
+  }
+  override open func loadContent()
+  override open func registerComponents()
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc deinit
+  @objc override dynamic public init()
+  override public init(collectionView: UIKit.UICollectionView? = super)
+}
+@_inheritsConvenienceInitializers open class CombinationRewardViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyRewards.CombinationRewardDelegate {
+  @objc @IBOutlet public var actionButton: UIKit.UIButton!
+  @objc @IBOutlet public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet public var pointsLabel: UIKit.UILabel!
+  @objc @IBOutlet public var collectionViewContainer: UIKit.UIView!
+  convenience public init(with reward: CheetahLoyaltyCore.Reward, awardId: Swift.Int? = nil)
+  override open func setup()
+  open func setupImageView()
+  open func setupActionButton()
+  open func setupPointsLabel()
+  open func updateViews()
+  open func setupCollectionView()
+  public func onSelectedCombinationUpdate(with values: [Swift.String])
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers open class RequiredAttributesCollectionController : CheetahLoyaltyUI.BaseCollectionController<CheetahLoyaltyCore.Reward.Class>, UIKit.UICollectionViewDelegateFlowLayout {
+  override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    get
+  }
+  override open func loadContent()
+  override open func setupCollectionView()
+  override open func registerComponents()
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
+  @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc deinit
+  @objc override dynamic public init()
+  override public init(collectionView: UIKit.UICollectionView? = super)
+}
+@_inheritsConvenienceInitializers open class RequiredAttributesRewardViewController : CheetahLoyaltyUI.CollectionViewController, CheetahLoyaltyRewards.RewardResponderDelegate {
+  @objc @IBOutlet public var inStoreButton: UIKit.UIButton?
+  @objc @IBOutlet public var shipButton: UIKit.UIButton?
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController
+  convenience public init(with reward: CheetahLoyaltyCore.Reward, awardId: Swift.Int? = nil, collectionController: CheetahLoyaltyRewards.RequiredAttributesCollectionController? = RequiredAttributesCollectionController(), selectedCombination: Swift.Int? = nil)
+  override open func setup()
+  open func setupActionButtons()
+  open func enableActionButtons(_ enable: Swift.Bool)
+  open func close()
+  public func onFailure(with error: Swift.Error)
+  public func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(collectionController: CheetahLoyaltyUI.CollectionController?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class RewardAttributeCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet public var checkBox: CheetahLoyaltyUI.CheckBox!
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers open class RewardAttributeSectionHeader : UIKit.UICollectionViewCell {
+  @objc @IBOutlet public var headingLabel: UIKit.UILabel!
+  @objc @IBOutlet public var subheadingLabel: UIKit.UILabel!
+  @objc override dynamic open func awakeFromNib()
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@_hasMissingDesignatedInitializers open class ShipToAddressController : CheetahLoyaltyUI.ContentController, CheetahLoyaltyRewards.RewardResponderDelegate {
+  open var navigationItemTitle: Swift.String?
+  open var responder: CheetahLoyaltyRewards.RewardResponder?
+  open var member: CheetahLoyaltyCore.Member? {
+    get
+    set
+  }
+  open var parameters: CheetahLoyaltyCore.Parameters?
+  open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
+  convenience public init(with reward: CheetahLoyaltyCore.Reward, for member: CheetahLoyaltyCore.Member? = nil, awardId: Swift.Int? = nil, parameters: CheetahLoyaltyCore.Parameters? = nil)
+  open func loadContent()
+  open func redeem(address: [Swift.String : Any]?)
+  open func getMemberProfile()
+  open func refreshContent()
+  open func onFailure(with error: Swift.Error)
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers open class ShipToAddressViewController : CheetahLoyaltyUI.StatefulViewController, UIKit.UITextFieldDelegate, CheetahLoyaltyUI.SelectionButtonDelegate {
+  @objc @IBOutlet weak open var textFieldsStackView: UIKit.UIStackView!
+  @objc @IBOutlet weak open var firstNameTextField: CheetahLoyaltyUI.FloatingTextField!
+  @objc @IBOutlet weak open var lastNameTextField: CheetahLoyaltyUI.FloatingTextField!
+  @objc @IBOutlet weak open var streetAddressTextField: CheetahLoyaltyUI.FloatingTextField!
+  @objc @IBOutlet weak open var streetAddress2TextField: CheetahLoyaltyUI.FloatingTextField!
+  @objc @IBOutlet weak open var cityTextField: CheetahLoyaltyUI.FloatingTextField!
+  @objc @IBOutlet weak open var postalCodeTextField: CheetahLoyaltyUI.FloatingTextField!
+  @objc @IBOutlet weak open var countryCodeTextField: CheetahLoyaltyUI.FloatingTextField!
+  @objc @IBOutlet weak open var stateTextField: CheetahLoyaltyUI.FloatingTextField!
+  @objc @IBOutlet weak open var mobilePhoneTextField: CheetahLoyaltyUI.FloatingTextField!
+  @objc @IBOutlet weak open var useAddressCheckbox: CheetahLoyaltyUI.CheckBox!
+  @objc @IBOutlet weak open var saveAddressChecbox: CheetahLoyaltyUI.CheckBox!
+  @objc @IBOutlet weak open var actionButton: UIKit.UIButton!
+  open var loadingAlert: CheetahLoyaltyUI.AlertViewController
+  open var isCountryStateSearchEnabled: Swift.Bool
+  open var hasMissingTextFields: Swift.Bool {
+    get
+  }
+  open var countries: [CheetahLoyaltyCore.Country]
+  open var selectedCountry: CheetahLoyaltyCore.Country?
+  open var address: [Swift.String : Any] {
+    get
+  }
+  convenience public init(contentController: CheetahLoyaltyRewards.ShipToAddressController?)
+  override open func setup()
+  open func setupTextFieldsTitle()
+  open func setupTextFieldsAppearance()
+  open func setupTextFieldsDelegate()
+  open func setupTextFieldTexts()
+  open func setupCheckboxes()
+  open func setupActionButton()
+  open func redeemButtonPressed(_ sender: Any)
+  open func showErrorMessagesForMissingTextFieldsText()
+  open func setupLoadingViewForAward()
+  open func close()
+  open func onFailure(with error: Swift.Error)
+  open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>)
+  @objc open func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @objc open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  open func didTap(_ selectionButton: CheetahLoyaltyUI.SelectionButton)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
+  @objc deinit
+}
+extension CheetahLoyaltyRewards.RewardsNotification : Swift.Equatable {}
+extension CheetahLoyaltyRewards.RewardsNotification : Swift.Hashable {}

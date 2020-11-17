@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Rewards-1.2.3] - 2020-11-06
+### Changed
+- Rearrange sequence of setting up Reward and Redemption detail [#520]
+- Update scroll views to use content layout guide [#538]
+- Changed dependency version requirements to CheetahLoyaltyCore 1.8.0, CheetahLoyaltyUI 1.8.0, and CheetahLoyaltyUtils 1.1.0 [#552], [#553]
+- Built using Xcode 12 to support the iOS 14 SDK and Swift 5.3 [#563]
+
+[#520]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/520
+[#538]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/538
+[#552]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/552
+[#553]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/553
+[#563]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/563
+[Rewards-1.2.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/61?closed=1
+
 ## [Rewards-1.2.2] - 2020-09-05
 ### Changed
 - Changed dependency version requirements to CheetahLoyaltyCore 1.7.0 and CheetahLoyaltyUI 1.7.0 [#516]
