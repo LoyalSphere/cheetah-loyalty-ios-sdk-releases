@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-1.8.1] - 2021-01-12
+
+### Fixed
+- Access level of clip/unclip offer response api to public [#566]
+
+[#566]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/566
+[Core-1.8.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/73?closed=1
+
 ## [Core-1.8.0] - 2020-11-05
 
 ### Added
