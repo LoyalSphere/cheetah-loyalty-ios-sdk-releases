@@ -1100,6 +1100,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SegmentedViewController/SegmentedViewController.swift",
+      "line": 98,
+      "symbol": "SegmentedViewController.segmentedControlValueChanged(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/SelectionButtons/CheckBox.swift",
       "line": 15,
       "symbol": "CheckBox.initializeSelectionButton()",
@@ -1362,6 +1369,13 @@
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/StatefulViewController/ReloadableViewController.swift",
       "line": 64,
       "symbol": "DefaultReloadViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/StatefulViewController/ReloadableViewController.swift",
+      "line": 80,
+      "symbol": "DefaultReloadViewController.retryButtonPressed(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -3033,14 +3047,14 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/ColorThemePainter.swift",
-      "line": 79,
+      "line": 82,
       "symbol": "CheetahColorThemePainter",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/ColorThemePainter.swift",
-      "line": 81,
+      "line": 84,
       "symbol": "CheetahColorThemePainter.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

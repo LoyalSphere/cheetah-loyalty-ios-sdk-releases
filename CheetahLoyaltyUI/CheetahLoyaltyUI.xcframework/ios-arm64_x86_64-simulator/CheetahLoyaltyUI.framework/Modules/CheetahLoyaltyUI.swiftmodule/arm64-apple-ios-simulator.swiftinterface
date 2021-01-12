@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyUI
 import AVFoundation
 @_exported import CheetahLoyaltyUI
@@ -305,6 +305,11 @@ public protocol ImagePickerPresenterDelegate : AnyObject {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
+@objc @_inheritsConvenienceInitializers final public class CheetahAppBackgroundView : UIKit.UIView {
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
 public protocol ColorTheme {
   var primaryColor: UIKit.UIColor { get }
   var secondaryColor: UIKit.UIColor { get }
@@ -544,6 +549,7 @@ public protocol SegmentedController {
   public init(segmentedController: CheetahLoyaltyUI.SegmentedController)
   @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
   override open func setup()
+  @objc open func segmentedControlValueChanged(_ sender: UIKit.UISegmentedControl)
   open func reloadData()
   open func reloadSegments()
   open func selectSegment(atIndex index: Swift.Int)
@@ -613,6 +619,10 @@ extension UICollectionViewFlowLayout {
   public static var dynamicList: CheetahLoyaltyUI.DynamicListCollectionViewFlowLayout {
     get
   }
+}
+extension UICollectionViewLayout {
+  @available(iOS 13, *)
+  public static func dynamicList(estimatedHeight: CoreGraphics.CGFloat = 88, contentInsets: UIKit.NSDirectionalEdgeInsets = NSDirectionalEdgeInsets.zero) -> UIKit.UICollectionViewLayout
 }
 @objc open class TableViewController : CheetahLoyaltyUI.StatefulViewController {
   @objc @IBOutlet public var containerStackView: UIKit.UIStackView!
@@ -744,6 +754,7 @@ extension UIColor {
 public protocol ColorThemePainter {
   func apply(using theme: CheetahLoyaltyUI.ColorTheme)
   func extend(using theme: CheetahLoyaltyUI.ColorTheme)
+  func paintBackgroundView(using theme: CheetahLoyaltyUI.ColorTheme)
   func paintUILabel(using theme: CheetahLoyaltyUI.ColorTheme)
   func paintUIActivityIndicatorView(using theme: CheetahLoyaltyUI.ColorTheme)
   func paintUINavigationBar(using theme: CheetahLoyaltyUI.ColorTheme)
@@ -768,6 +779,7 @@ open class CheetahColorThemePainter : CheetahLoyaltyUI.ColorThemePainter {
   public init()
   open func apply(using theme: CheetahLoyaltyUI.ColorTheme)
   open func extend(using theme: CheetahLoyaltyUI.ColorTheme)
+  open func paintBackgroundView(using theme: CheetahLoyaltyUI.ColorTheme)
   open func paintUILabel(using theme: CheetahLoyaltyUI.ColorTheme)
   open func paintUIActivityIndicatorView(using theme: CheetahLoyaltyUI.ColorTheme)
   open func paintUINavigationBar(using theme: CheetahLoyaltyUI.ColorTheme)
@@ -786,7 +798,7 @@ open class CheetahColorThemePainter : CheetahLoyaltyUI.ColorThemePainter {
   open func paintUISearchBar(using theme: CheetahLoyaltyUI.ColorTheme)
   open func paintUITabBar(using theme: CheetahLoyaltyUI.ColorTheme)
   open func paintFloatingTextFields(using theme: CheetahLoyaltyUI.ColorTheme)
-  public func paintFloatingTextViews(using theme: CheetahLoyaltyUI.ColorTheme)
+  open func paintFloatingTextViews(using theme: CheetahLoyaltyUI.ColorTheme)
   @objc deinit
 }
 public protocol MenuItemCellPresentable {
@@ -1591,6 +1603,7 @@ public protocol ReloadableViewController : UIKit.UIViewController, CheetahLoyalt
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
   override open func setup()
+  @objc open func retryButtonPressed(_ sender: UIKit.UIButton)
   @objc deinit
 }
 @_inheritsConvenienceInitializers open class CountriesCollectionController : CheetahLoyaltyUI.BaseCollectionController<CheetahLoyaltyUI.CountriesCollectionController.ItemTuple> {

@@ -6,6 +6,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-1.9.0] - 2021-01-12
+
+### Added
+- Dark mode support using `CheetahAppBackgroundView` [#570]
+
+### Changed
+- `segmentedControlValueChanged` of `SegmentedViewController` to be a target method instead of an IBAction [#568]
+- `retryButtonPressed` of `DefaultReloadViewController` to be a target method instead of an IBAction [#569]
+
+### Fixed
+- Access level of the new dynamic list for iOS 13 and up to public [#564]
+- Access level of `paintFloatingTextViews` of `CheetahColorThemePainter`to open [#567]
+
+[#564]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/564
+[#567]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/567
+[#568]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/568
+[#569]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/569
+[#570]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/570
+[UI-1.9.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/71?closed=1
+
 ## [UI-1.8.0] - 2020-11-05
 
 ### Added
@@ -39,7 +59,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#541]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/541
 [#542]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/542
 [#558]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/558
-[UI-1.6.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/64?closed=1
+[UI-1.8.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/64?closed=1
 
 ## [UI-1.7.2] - 2020-09-10
 ### Changed
