@@ -134,29 +134,43 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferResponseDetailController.swift",
+      "line": 82,
+      "symbol": "OfferResponseDetailController.clipButtonPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferResponseDetailController.swift",
+      "line": 130,
+      "symbol": "Offer.Response.clipped",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferCouponListController.swift",
-      "line": 128,
+      "line": 146,
       "symbol": "OfferCouponListController.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferCouponListController.swift",
-      "line": 166,
+      "line": 184,
       "symbol": "OfferCouponListController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferCouponListController.swift",
-      "line": 182,
+      "line": 200,
       "symbol": "OfferCouponListController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferCouponListController.swift",
-      "line": 272,
+      "line": 292,
       "symbol": "OfferCouponClippedListController.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -177,14 +191,14 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferResponseListController.swift",
-      "line": 26,
+      "line": 33,
       "symbol": "OfferResponseListController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferResponseListController.swift",
-      "line": 41,
+      "line": 48,
       "symbol": "OfferResponseListController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

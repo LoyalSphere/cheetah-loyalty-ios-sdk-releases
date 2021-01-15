@@ -6,6 +6,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Offers-1.4.0] - 2021-01-15
+
+### Added
+- Clip multiple offers at one time [#565]
+- Offer response detail clipping [#571]
+- Dark mode support using `CheetahAppBackgroundView` [#574]
+
+### Changed
+- Dependency version requirements to CheetahLoyaltyCore 1.8.1, and CheetahLoyaltyUI 1.9.0 [#574]
+
+[#565]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/565
+[#571]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/571
+[#574]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/574
+[Offers-1.4.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/72?closed=1
+
 ## [Offers-1.3.1] - 2020-11-06
 ### Changed
 - Dependency version requirements to CheetahLoyaltyCore 1.8.0, CheetahLoyaltyUI 1.8.0, and CheetahLoyaltyUtils 1.1.0 [#554]
