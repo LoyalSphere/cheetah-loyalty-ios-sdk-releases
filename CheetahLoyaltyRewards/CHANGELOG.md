@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Rewards-1.3.0] - 2021-01-15
+
+### Added
+- Dark mode support using `CheetahAppBackgroundView` [#573]
+
+### Changed
+- Changed dependency version requirements to CheetahLoyaltyCore 1.8.1 and CheetahLoyaltyUI 1.9.0 [#573]
+
+[#573]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/573
+[Rewards-1.3.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/75?closed=1
+
 ## [Rewards-1.2.3] - 2020-11-06
 ### Changed
 - Rearrange sequence of setting up Reward and Redemption detail [#520]

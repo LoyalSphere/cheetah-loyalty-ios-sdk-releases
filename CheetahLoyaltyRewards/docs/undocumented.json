@@ -240,21 +240,21 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
-      "line": 74,
+      "line": 73,
       "symbol": "CombinationRewardViewController.setupPointsLabel()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
-      "line": 82,
+      "line": 81,
       "symbol": "CombinationRewardViewController.updateViews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
-      "line": 95,
+      "line": 94,
       "symbol": "CombinationRewardViewController.setupCollectionView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -317,14 +317,14 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesRewardViewController.swift",
-      "line": 64,
+      "line": 63,
       "symbol": "RequiredAttributesRewardViewController.enableActionButtons(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesRewardViewController.swift",
-      "line": 90,
+      "line": 89,
       "symbol": "RequiredAttributesRewardViewController.close()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

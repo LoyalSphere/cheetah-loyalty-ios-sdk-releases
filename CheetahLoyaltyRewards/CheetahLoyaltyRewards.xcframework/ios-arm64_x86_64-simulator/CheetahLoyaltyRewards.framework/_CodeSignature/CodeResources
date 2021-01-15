@@ -6,19 +6,19 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		5pYdjsAmu9vnHpvzWKcirN+HRBQ=
+		ncjCzyNmxHkGlG1t/fw7Ei+NN1A=
 		</data>
 		<key>CombinationRewardViewController.nib</key>
 		<data>
-		WNYrOcnJrFC5YXKlWn3qS9Kuhc4=
+		V2noHcv9hvlwn48OqfvOVlJwoYQ=
 		</data>
 		<key>GenericRewardViewController.nib</key>
 		<data>
-		ep4HdCwjJoTV7l4DywAx6oXpOh0=
+		hkrQKbT6zDcyBqvmgofuy0h3uTg=
 		</data>
 		<key>Headers/CheetahLoyaltyRewards-Swift.h</key>
 		<data>
-		XixUKI2K1P9rUrWweH6J5hsPzVk=
+		6Fb29RiaTYgYg5D1FWQucRwcVac=
 		</data>
 		<key>Headers/CheetahLoyaltyRewards.h</key>
 		<data>
@@ -26,59 +26,59 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uGOZqQWSZXTgjnYNvzzIvcwCgYc=
+		qCvRj1tENN2tHveGgSi7PR9LQdk=
 		</data>
 		<key>MetricTransferRewardViewController.nib</key>
 		<data>
-		9Xk6Wcrm6RUGRPghbHp5/0fBZYA=
+		mrQ6eqZMVj5eCvpsjvGE0sbEArY=
 		</data>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2Y1g1vJywM0VBbqc6/4OiLdhOmc=
+		Vv2bl5CjlmGjiVbwss1P+OBE30Q=
 		</data>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3IuJUuv4v5j9Hz4Lnu7k1hrNUoY=
+		vaZFEWVXOoQFaKYpJxN9b0CzR4c=
 		</data>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		m0cJez0LALsFlx3aynQXecErY2Y=
+		DEWmFk14Ex0BbKvprLqNFtiTJ3A=
 		</data>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		2Y1g1vJywM0VBbqc6/4OiLdhOmc=
+		Vv2bl5CjlmGjiVbwss1P+OBE30Q=
 		</data>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		3IuJUuv4v5j9Hz4Lnu7k1hrNUoY=
+		vaZFEWVXOoQFaKYpJxN9b0CzR4c=
 		</data>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		m0cJez0LALsFlx3aynQXecErY2Y=
+		DEWmFk14Ex0BbKvprLqNFtiTJ3A=
 		</data>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		PB6mQONw/ZnLGNavdsbeojEvgVo=
+		BryDKXWFa0UWZOcChrACeonWwz0=
 		</data>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		dAwyGL/NAwD/LVJAT4eDQfHmJv8=
+		jT+bSv+uTD6rnenBkrySYXGNhrk=
 		</data>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WObuXWIJmpNEMBrIC2Q4m7un8aQ=
+		eFyep6B7WQ95kqEaoQ4TSFUTPDU=
 		</data>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		PB6mQONw/ZnLGNavdsbeojEvgVo=
+		BryDKXWFa0UWZOcChrACeonWwz0=
 		</data>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		dAwyGL/NAwD/LVJAT4eDQfHmJv8=
+		jT+bSv+uTD6rnenBkrySYXGNhrk=
 		</data>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		WObuXWIJmpNEMBrIC2Q4m7un8aQ=
+		eFyep6B7WQ95kqEaoQ4TSFUTPDU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,35 +86,35 @@
 		</data>
 		<key>RedemptionDetailViewController.nib</key>
 		<data>
-		1/FM2f6RG5W3VqucNaXaYs1gfB0=
+		0GrYoKl/SMdor5Kw98tsHwVn3Fc=
 		</data>
 		<key>RequiredAttributesRewardViewController.nib</key>
 		<data>
-		JAwCYKPw8OnliJrBDdV17D1cFcE=
+		G9bst4wOAJIo/6kUljhA5tIFQcA=
 		</data>
 		<key>RewardAttributeCell.nib/objects-12.3+.nib</key>
 		<data>
-		5sGKHILgcCwszVZGssvNB7rhsvc=
+		gyzVBBtbVZ1bUjeHVZ/PDbiGpVA=
 		</data>
 		<key>RewardAttributeCell.nib/runtime.nib</key>
 		<data>
-		cNKHTkR0UZe3kg8yzHYUmDFigDk=
+		UMSiVvTWFpH0NF/haK0afj36CpA=
 		</data>
 		<key>RewardAttributeSectionHeader.nib/objects-12.3+.nib</key>
 		<data>
-		RG4hK4aZLaIzU0mwe/IUxAxWkeo=
+		SFXj4ydt5XPsuMkccRpVQUc1ibM=
 		</data>
 		<key>RewardAttributeSectionHeader.nib/runtime.nib</key>
 		<data>
-		VBCc/bEuAYerASE5ac0o7uj3mHE=
+		24OHhfpuXybej/I2s1bLK4dwVPM=
 		</data>
 		<key>RewardDetailViewController.nib</key>
 		<data>
-		nKql52/Q/fr/0iLGgRpWulw71pE=
+		thYChKy4glfbGkbO0NN7e7fNyFQ=
 		</data>
 		<key>ShipToAddressViewController.nib</key>
 		<data>
-		41VazguvSEbm/qdFe4KQwT+EzSc=
+		qab93IcOMC3KJNhZcRrryNfqiSM=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -132,28 +132,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MiGPrVQc69A2+Qr796jEdgYOWtMtrKbYO6aCNiBUyWM=
+			NWsfYAmtpsYL7E6V1kpqCwg1WeNJYZSAzpnYcBnsSuc=
 			</data>
 		</dict>
 		<key>CombinationRewardViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DgPVHYYGrlp4U7zbOSyNFccdrEeWOWLYA5O46iY9mkI=
+			H9KD8hzlgqW9+4oJPy8Tiypo29zHVSmyx0LMvySjUfo=
 			</data>
 		</dict>
 		<key>GenericRewardViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QMOUaXrViKgGBv0FlTDNTUlnNC3K29X0BOXaTsS6Qcs=
+			8BCwFjE7xZOrUHtSrV5JRbXuIZJ9StzhghAoKjbSUH4=
 			</data>
 		</dict>
 		<key>Headers/CheetahLoyaltyRewards-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBeEzx2fZfo7N/gZGbXE1WspFZ3zkzCbva/HoekRHN0=
+			1LEc+En+pdjViDPxy5ejxf3GsYdW6jLJvQCl+mWv+6Q=
 			</data>
 		</dict>
 		<key>Headers/CheetahLoyaltyRewards.h</key>
@@ -167,91 +167,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GDGPoU+iAH+d8q27UWKAEsJPjCGWCmtDcTFC8RnibWw=
+			Q1juHXeWXVytP4mDK3a31eywxHR1M5E5FlsezyeAetk=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q7sbc/TDh1vHgdaygET4Kmj5/bhelWZXNjOjay6TjUY=
+			GKMdJcfsAMEKt/mTXlyUGMU1KGpX+qi9JArPfJ9J0Io=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dZ+Pe2x5zCIl5Xz2H8+RjGBy/znlSKA/JpAVDZeTjgE=
+			xvHTZ0LKAySU3aGssHw/q0T2XEApb7pxBaAT7Voe/ZE=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AAZtsfYxY0OPy/qdmwmEKK6vhE1kfPxxoBypG+sydwg=
+			bHqcY1vOgY/3EcxtrKF76IoTszQSYLHmowEWRhRcDlY=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q7sbc/TDh1vHgdaygET4Kmj5/bhelWZXNjOjay6TjUY=
+			GKMdJcfsAMEKt/mTXlyUGMU1KGpX+qi9JArPfJ9J0Io=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dZ+Pe2x5zCIl5Xz2H8+RjGBy/znlSKA/JpAVDZeTjgE=
+			xvHTZ0LKAySU3aGssHw/q0T2XEApb7pxBaAT7Voe/ZE=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AAZtsfYxY0OPy/qdmwmEKK6vhE1kfPxxoBypG+sydwg=
+			bHqcY1vOgY/3EcxtrKF76IoTszQSYLHmowEWRhRcDlY=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r+TnLhrMpCVzgfgHgHBvU59fcW6/JB+1Vg+qUV2LxlQ=
+			QfZx2XGKJMJ+8c8mljAdNGmkf86hJfnqD9YsjEdYQWI=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Zp+K+JABBgZIn0aFqKEElJys2llBnGRLs4ZTUXUmDs=
+			HZcpKrkbO1Kl8O4ouIRU7fmmQpwIhQC6acgGpUy2bgE=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mRN37MOs9pOPQ6fwMOviHyaHr+rJ5OV8gb4tdO8h8U4=
+			oo3TocZ7gN2kNMWKlg7KhFrKzwKNKTpC6UK50cCOKao=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r+TnLhrMpCVzgfgHgHBvU59fcW6/JB+1Vg+qUV2LxlQ=
+			QfZx2XGKJMJ+8c8mljAdNGmkf86hJfnqD9YsjEdYQWI=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4Zp+K+JABBgZIn0aFqKEElJys2llBnGRLs4ZTUXUmDs=
+			HZcpKrkbO1Kl8O4ouIRU7fmmQpwIhQC6acgGpUy2bgE=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyRewards.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mRN37MOs9pOPQ6fwMOviHyaHr+rJ5OV8gb4tdO8h8U4=
+			oo3TocZ7gN2kNMWKlg7KhFrKzwKNKTpC6UK50cCOKao=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -265,56 +265,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y9VBX25WFHKS6XV4pdh30Zoca0cBC0EYwUTyHkSLMvo=
+			LTewJwgx1/p6bQPGzkc9G7RV4bSTcPTYUp8vKmvlX3U=
 			</data>
 		</dict>
 		<key>RequiredAttributesRewardViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BYu5trO8KgQ6UNxecqRYgHUD7iKAp1kNuF47GGzZH5E=
+			eyx4lqSL5uN3meEPQP4CCcYtggeSrV3NHlOMgfynq7Q=
 			</data>
 		</dict>
 		<key>RewardAttributeCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			00aOPWJUV0c+tiOGjc36HWt1alZfWzOKjwJ7lLW4QUc=
+			SYf6EzcPmcPOex2c9LbGT5ZCLsXfBjhMzVsQ5majW1Y=
 			</data>
 		</dict>
 		<key>RewardAttributeCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5JChAGUiSxmJj1/xzXstIxsm5BhjdaNZ36vJuG1M+AQ=
+			u7W7a/q+zHkmyh+d1oUpqeYodaT+qqBLVVLYGfMI4iI=
 			</data>
 		</dict>
 		<key>RewardAttributeSectionHeader.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bK4p8g3tD9CbRFwKiZIZ1PSEfkekbJYVQ/sxPVg4SLo=
+			kFaXY6cYHAS/aSfRNPgTQPo2yau/RmRsdyXELdJvyP4=
 			</data>
 		</dict>
 		<key>RewardAttributeSectionHeader.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r+qbqLn05L+P5bDfa8oM+paJUaSayALdGCTKlS0TKGA=
+			FKz7sGtEU+9GfhUTjPYKZuRhe4KAbmJdX8j7eZ3uIK4=
 			</data>
 		</dict>
 		<key>RewardDetailViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U5b7eLPAdrF/pQUD4EUU2aFTRJPlkTRzIArxS8GoN5M=
+			9BjH0bDxohH9V9kWwE06aL9URdPcbDCF460LqWkpk9I=
 			</data>
 		</dict>
 		<key>ShipToAddressViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aEX0DzMZFM7JXE8a+i/PavYaqOPdfWluACRAbLC532A=
+			hFbMK4yhWlL1o/zjhAnBRHYGEbzlsjvdyaDOIXLX3Pk=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>
