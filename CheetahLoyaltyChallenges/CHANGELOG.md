@@ -6,6 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Challenges-1.2.0] - 2021-01-15
+
+### Added
+- Dark mode support using `CheetahAppBackgroundView` [#572]
+
+### Changed
+- Text fields in meme type challenge to floating text fields on text fields [#576]
+- Dependency version requirements to CheetahLoyaltyCore 1.8.1, CheetahLoyaltyUI 1.9.0 [#572]
+
+### Fixed
+- Meme color picker background color [#575]
+
+[#572]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/572
+[#575]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/575
+[#576]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/576
+[Challenges-1.2.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/74?closed=1
+
 ## [Challenges-1.1.3] - 2020-11-06
 
 ### Changed
