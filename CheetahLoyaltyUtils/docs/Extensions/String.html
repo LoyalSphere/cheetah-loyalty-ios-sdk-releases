@@ -14,7 +14,7 @@
     <a title="String Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (98% documented)</p>
+        <p><a href="../index.html"> Docs</a> (87% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -31,7 +31,19 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/Localizer.html">Localizer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ParameterEncoding.html">ParameterEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLError.html">URLError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLError/ParameterEncodingFailureReason.html">– ParameterEncodingFailureReason</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/UtilsNotification.html">UtilsNotification</a>
@@ -46,6 +58,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/CharacterSet.html">CharacterSet</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/Data.html">Data</a>
@@ -75,6 +90,9 @@
                 <a href="../Extensions/NotificationCenter.html">NotificationCenter</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Extensions/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Extensions/String.html">String</a>
               </li>
               <li class="nav-group-task">
@@ -82,6 +100,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLRequest.html">URLRequest</a>
               </li>
             </ul>
           </li>
@@ -91,16 +115,48 @@
               <li class="nav-group-task">
                 <a href="../Protocols/CheetahNotification.html">CheetahNotification</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLConvertible.html">URLConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Structs/AnyCodable.html">AnyCodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyDecodable.html">AnyDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyEncodable.html">AnyEncodable</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/KeychainError.html">KeychainError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/KeychainItem.html">KeychainItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultipartAttachment.html">MultipartAttachment</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:19CheetahLoyaltyUtils11HTTPHeadersa">HTTPHeaders</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:19CheetahLoyaltyUtils20MultipartAttachmentsa">MultipartAttachments</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:19CheetahLoyaltyUtils10Parametersa">Parameters</a>
               </li>
             </ul>
           </li>
@@ -113,6 +169,7 @@
               <div class="declaration">
                 <div class="language">
                   <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">String</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">String</span><span class="p">:</span> <span class="kt"><a href="../Protocols/URLConvertible.html">URLConvertible</a></span></code></pre>
 
                 </div>
               </div>
@@ -144,6 +201,55 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">localized</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/URLConvertible"></a>
+                <a name="//apple_ref/swift/Section/URLConvertible" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/URLConvertible"></a>
+                  <h3 class="section-name"><p>URLConvertible</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS19CheetahLoyaltyUtilsE5asURL10Foundation0E0VyKF"></a>
+                    <a name="//apple_ref/swift/Method/asURL()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS19CheetahLoyaltyUtilsE5asURL10Foundation0E0VyKF">asURL()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a <code>URL</code> if the <code>String</code> can be used to initialize a <code>URL</code>, otherwise throws if an error was encountered.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    A <code>URLError.invalidURL</code> error.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">asURL</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">URL</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>URL</code> initialized with the <code>String</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -542,7 +648,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2020-11-09)</p>
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2021-01-26)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

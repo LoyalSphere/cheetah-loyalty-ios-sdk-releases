@@ -1,11 +1,94 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyUtils
 @_exported import CheetahLoyaltyUtils
 import Foundation
 import LocalAuthentication
+import MobileCoreServices
 import Swift
 import UIKit
+extension Result {
+  public var isSuccess: Swift.Bool {
+    get
+  }
+  public var isFailure: Swift.Bool {
+    get
+  }
+  public var value: Success? {
+    get
+  }
+  public var error: Swift.Error? {
+    get
+  }
+}
+extension Result : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Result : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public enum HTTPMethod : Swift.String {
+  case delete
+  case get
+  case patch
+  case post
+  case put
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public typealias HTTPHeaders = [Swift.String : Swift.String]
+public typealias Parameters = [Swift.String : Any]
+public struct MultipartAttachment : Swift.Equatable {
+  public let name: Swift.String
+  public let fileName: Swift.String?
+  public let url: Foundation.URL?
+  public let data: Foundation.Data?
+  public var mimeType: Swift.String?
+  public init(name: Swift.String, fileName: Swift.String? = nil, url: Foundation.URL? = nil, data: Foundation.Data? = nil, mimeType: Swift.String? = nil)
+  public static func == (a: CheetahLoyaltyUtils.MultipartAttachment, b: CheetahLoyaltyUtils.MultipartAttachment) -> Swift.Bool
+}
+public typealias MultipartAttachments = [CheetahLoyaltyUtils.MultipartAttachment]
+public enum ParameterEncoding {
+  case urlEncodedForm
+  case json
+  public static func == (a: CheetahLoyaltyUtils.ParameterEncoding, b: CheetahLoyaltyUtils.ParameterEncoding) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public enum URLError : Swift.Error {
+  public enum ParameterEncodingFailureReason {
+    case missingURL
+    case jsonEncodingFailed(error: Swift.Error)
+  }
+  case invalidURL(url: CheetahLoyaltyUtils.URLConvertible)
+  case parameterEncodingFailed(reason: CheetahLoyaltyUtils.URLError.ParameterEncodingFailureReason)
+}
+extension URLError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension URLRequest {
+  public init(url: CheetahLoyaltyUtils.URLConvertible, method: CheetahLoyaltyUtils.HTTPMethod, headers: CheetahLoyaltyUtils.HTTPHeaders? = nil) throws
+  public init(url: CheetahLoyaltyUtils.URLConvertible, method: CheetahLoyaltyUtils.HTTPMethod, headers: CheetahLoyaltyUtils.HTTPHeaders? = nil, parameters: CheetahLoyaltyUtils.Parameters?, multipartAttachments: CheetahLoyaltyUtils.MultipartAttachments? = nil, encoding: CheetahLoyaltyUtils.ParameterEncoding = .urlEncodedForm) throws
+  public mutating func encode(with parameters: CheetahLoyaltyUtils.Parameters?, encoding: CheetahLoyaltyUtils.ParameterEncoding = .urlEncodedForm) throws
+  public static func encode(_ urlRequest: inout Foundation.URLRequest, with parameters: CheetahLoyaltyUtils.Parameters?, encoding: CheetahLoyaltyUtils.ParameterEncoding = .urlEncodedForm) throws
+}
+extension URL {
+  public static let defaultBinaryMimeType: Swift.String
+  public var mimeType: Swift.String {
+    get
+  }
+}
 public protocol CheetahNotification {
   var name: Swift.String { get }
 }
@@ -28,6 +111,48 @@ public enum UtilsNotification : CheetahLoyaltyUtils.CheetahNotification {
 }
 extension KeyedDecodingContainer {
   public func decode<T>(forKey key: K, defaultValue: T) throws -> T where T : Swift.Decodable
+}
+public protocol URLRequestConvertible {
+  var path: Swift.String { get }
+  var method: CheetahLoyaltyUtils.HTTPMethod { get }
+  var parameters: CheetahLoyaltyUtils.Parameters? { get }
+  var headers: CheetahLoyaltyUtils.HTTPHeaders? { get }
+  var multipartAttachments: CheetahLoyaltyUtils.MultipartAttachments? { get }
+  var parameterEncoding: CheetahLoyaltyUtils.ParameterEncoding { get }
+  func asURLRequest(path updatePath: Swift.String?, headers additionalHeaders: CheetahLoyaltyUtils.HTTPHeaders, parameters additionalParameters: CheetahLoyaltyUtils.Parameters, attachments additionalAttachments: CheetahLoyaltyUtils.MultipartAttachments) throws -> Foundation.URLRequest
+}
+extension URLRequestConvertible {
+  public var headers: CheetahLoyaltyUtils.HTTPHeaders? {
+    get
+  }
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
+    get
+  }
+  public var multipartAttachments: CheetahLoyaltyUtils.MultipartAttachments? {
+    get
+  }
+  public var parameterEncoding: CheetahLoyaltyUtils.ParameterEncoding {
+    get
+  }
+  public func asURLRequest(path updatePath: Swift.String? = nil, headers additionalHeaders: CheetahLoyaltyUtils.HTTPHeaders = [:], parameters additionalParameters: CheetahLoyaltyUtils.Parameters = [:], attachments additionalAttachments: CheetahLoyaltyUtils.MultipartAttachments = []) throws -> Foundation.URLRequest
+}
+extension URLRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  public func asURLRequest() throws -> Foundation.URLRequest
+}
+public protocol URLConvertible {
+  func asURL() throws -> Foundation.URL
+}
+extension String : CheetahLoyaltyUtils.URLConvertible {
+  public func asURL() throws -> Foundation.URL
+}
+extension URL : CheetahLoyaltyUtils.URLConvertible {
+  public func asURL() throws -> Foundation.URL
 }
 extension Encodable {
   public var json: [Swift.String : Any] {
@@ -54,6 +179,42 @@ extension UIImage {
   public func compressedImage(compressRatio: CoreGraphics.CGFloat, maxCompressRatio: CoreGraphics.CGFloat = 0.1) -> UIKit.UIImage
   public func scaledDownImage(to size: CoreGraphics.CGSize) -> UIKit.UIImage?
 }
+public struct AnyEncodable : Swift.Encodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+extension AnyEncodable : Swift.Equatable {
+  public static func == (lhs: CheetahLoyaltyUtils.AnyEncodable, rhs: CheetahLoyaltyUtils.AnyEncodable) -> Swift.Bool
+}
+extension AnyEncodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AnyEncodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension AnyEncodable : Swift.ExpressibleByNilLiteral, Swift.ExpressibleByBooleanLiteral, Swift.ExpressibleByIntegerLiteral, Swift.ExpressibleByFloatLiteral, Swift.ExpressibleByStringLiteral, Swift.ExpressibleByArrayLiteral, Swift.ExpressibleByDictionaryLiteral {
+  public init(nilLiteral: ())
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
+  public typealias BooleanLiteralType = Swift.Bool
+  public typealias IntegerLiteralType = Swift.Int
+  public typealias FloatLiteralType = Swift.Double
+  public typealias StringLiteralType = Swift.String
+  public typealias ArrayLiteralElement = Any
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+}
 extension Array {
   public func appending(_ newElement: Element) -> [Element]
   public func removing(at index: Swift.Int) -> [Element]
@@ -66,6 +227,23 @@ extension Array where Element : Swift.Equatable {
   public mutating func move(_ item: Element, to newIndex: Swift.Array<Element>.Index)
   public mutating func moveToStart(item: Element)
   public mutating func moveToEnd(item: Element)
+}
+public struct AnyDecodable : Swift.Decodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+extension AnyDecodable : Swift.Equatable {
+  public static func == (lhs: CheetahLoyaltyUtils.AnyDecodable, rhs: CheetahLoyaltyUtils.AnyDecodable) -> Swift.Bool
+}
+extension AnyDecodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AnyDecodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
 }
 extension Bundle {
   public static var CheetahLoyaltyUtilsIdentifier: Swift.String {
@@ -129,6 +307,42 @@ extension JSONDecoder {
 extension DateFormatter {
   convenience public init(format: Swift.String? = nil, timeZone: Foundation.TimeZone? = .current, locale: Foundation.Locale? = Locale(identifier: "en_US_POSIX"))
 }
+public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+extension AnyCodable : Swift.Equatable {
+  public static func == (lhs: CheetahLoyaltyUtils.AnyCodable, rhs: CheetahLoyaltyUtils.AnyCodable) -> Swift.Bool
+}
+extension AnyCodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension AnyCodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension AnyCodable : Swift.ExpressibleByNilLiteral, Swift.ExpressibleByBooleanLiteral, Swift.ExpressibleByIntegerLiteral, Swift.ExpressibleByFloatLiteral, Swift.ExpressibleByStringLiteral, Swift.ExpressibleByArrayLiteral, Swift.ExpressibleByDictionaryLiteral {
+  public init(nilLiteral: ())
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
+  public typealias StringLiteralType = Swift.String
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+  public typealias Key = Swift.AnyHashable
+  public typealias Value = Any
+  public typealias ArrayLiteralElement = Any
+  public typealias FloatLiteralType = Swift.Double
+  public typealias IntegerLiteralType = Swift.Int
+  public typealias BooleanLiteralType = Swift.Bool
+}
 extension String {
   public var youtubeId: Swift.String? {
     get
@@ -168,5 +382,10 @@ extension UIDevice {
     get
   }
 }
+extension CheetahLoyaltyUtils.HTTPMethod : Swift.Equatable {}
+extension CheetahLoyaltyUtils.HTTPMethod : Swift.Hashable {}
+extension CheetahLoyaltyUtils.HTTPMethod : Swift.RawRepresentable {}
+extension CheetahLoyaltyUtils.ParameterEncoding : Swift.Equatable {}
+extension CheetahLoyaltyUtils.ParameterEncoding : Swift.Hashable {}
 extension CheetahLoyaltyUtils.UtilsNotification : Swift.Equatable {}
 extension CheetahLoyaltyUtils.UtilsNotification : Swift.Hashable {}

@@ -6,6 +6,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Utils-1.2.0] - 2021-01-26
+
+### Added
+- Utility components from Cheetah Loyalty Core [#578]:
+	- URL Parameter Encoding
+	- URL and URL Request Convertible
+	- Result Extensions
+	- Any Codable
+- Parameter Encoding Types [#578]
+
+### Changed
+- `MultipartAttachements` to be accessible outside of `URLRequest` [#578]
+
+[#578]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/578
+[Utils-1.2.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/76?closed=1
+
 ## [Utils-1.1.0] - 2020-11-04
 ### Added
 - `UIImage` extension methods for compressing and scaling images [#539]
