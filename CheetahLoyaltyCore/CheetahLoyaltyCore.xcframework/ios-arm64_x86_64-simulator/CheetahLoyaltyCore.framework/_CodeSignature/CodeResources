@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CheetahLoyaltyCore-Swift.h</key>
 		<data>
-		meC0QL7XIVmYECBLR8adNwMchIQ=
+		8SCFTrqlKYrfuFGowJGYJbL0HJ0=
 		</data>
 		<key>Headers/CheetahLoyaltyCore.h</key>
 		<data>
@@ -14,55 +14,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RoFlfq9WFpEoChp8dCE3wM6t2Qo=
+		NVjphqCkEyIiheOZGJn5QwpyK/M=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Ry8Iefss22nE5huvTJNRy1UJF9k=
+		TbfKg+g/3HqQE5jYbHsWxdltap4=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rZE/3iiKzXk1bW9kQ2O+51SHu+E=
+		K8vmUxUy8SR+8+G5A8Ck9FNj4fk=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MEXbI9CPl3clop9ev5dzoUOTO8w=
+		zAIiKWKf2UdlGqcVtll7lZyEFfo=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		Ry8Iefss22nE5huvTJNRy1UJF9k=
+		TbfKg+g/3HqQE5jYbHsWxdltap4=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		rZE/3iiKzXk1bW9kQ2O+51SHu+E=
+		K8vmUxUy8SR+8+G5A8Ck9FNj4fk=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		MEXbI9CPl3clop9ev5dzoUOTO8w=
+		zAIiKWKf2UdlGqcVtll7lZyEFfo=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ELu7g+CumlLVXiY4KkiV8weW194=
+		BZKwtkikA5x1xyUfXNdy/aNoAo4=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xs4thgT63mw/6xlXUsFUjt86Ocg=
+		3R8blhHndrqjnCeByBULS1rZdjU=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		V68Oq5i/aHDM/t4mfB4PwC3OjKk=
+		92knFh+S4z/IBbbPISBbabKcWhI=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		ELu7g+CumlLVXiY4KkiV8weW194=
+		BZKwtkikA5x1xyUfXNdy/aNoAo4=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		xs4thgT63mw/6xlXUsFUjt86Ocg=
+		3R8blhHndrqjnCeByBULS1rZdjU=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		V68Oq5i/aHDM/t4mfB4PwC3OjKk=
+		92knFh+S4z/IBbbPISBbabKcWhI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dgSLQYsAOVS/yIbc2N7muCePa+XNybxdN0QIJyYuINQ=
+			Sk5PVy1N2Og3srNKnikxL2CRn5lD8d4bT23INByzN/I=
 			</data>
 		</dict>
 		<key>Headers/CheetahLoyaltyCore.h</key>
@@ -93,84 +93,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pAp4+TLr1ElAdu7Kk4xW6qT1HTq/uTnb0qFhOdhKdb4=
+			4yC0gtlYkyBuAHm7bspESxBt//miaqbybrwnx3wk1d8=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aIsOOLRUHEiHtCWHUPyVU0oB6F7dIGTQX3Vvjjj1GaI=
+			Lt+EiW9reF8ZlM2Vs840lBSaxHQdNMgkbF7Yu9twHwI=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LYov9Yypp6Ya5X8eEAbnYsxbj43dwSdloua7p0wyt80=
+			NUcN3axL8WirZNsgCkIokWtD2ZYp9jVz2KVH7imnp/4=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pAp4+TLr1ElAdu7Kk4xW6qT1HTq/uTnb0qFhOdhKdb4=
+			4yC0gtlYkyBuAHm7bspESxBt//miaqbybrwnx3wk1d8=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aIsOOLRUHEiHtCWHUPyVU0oB6F7dIGTQX3Vvjjj1GaI=
+			Lt+EiW9reF8ZlM2Vs840lBSaxHQdNMgkbF7Yu9twHwI=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LYov9Yypp6Ya5X8eEAbnYsxbj43dwSdloua7p0wyt80=
+			NUcN3axL8WirZNsgCkIokWtD2ZYp9jVz2KVH7imnp/4=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7htPXKyNgAA+VIN8vYj5ebEt34XNDQpX2DCLZGtEg9A=
+			uaXlRldvbPDju6kzyC/F4wgXuMntyqEO1UQWB080suk=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JWfpULOFZBBT78H6VRlHMi7akCdiabT1PwMKdmRV5bA=
+			2tSzHj3nfQEaWh6lNkvabNm9xGEms2de0xe9gJovIJs=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WnG6cjiV/u+QKHPTHjaQEsvpeit/WzmGOlxiDLqyM3k=
+			KRrjXv1p4q8H1BW2k9SA0DDQZ1HBqFY3k8JlEUvWw3A=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7htPXKyNgAA+VIN8vYj5ebEt34XNDQpX2DCLZGtEg9A=
+			uaXlRldvbPDju6kzyC/F4wgXuMntyqEO1UQWB080suk=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JWfpULOFZBBT78H6VRlHMi7akCdiabT1PwMKdmRV5bA=
+			2tSzHj3nfQEaWh6lNkvabNm9xGEms2de0xe9gJovIJs=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WnG6cjiV/u+QKHPTHjaQEsvpeit/WzmGOlxiDLqyM3k=
+			KRrjXv1p4q8H1BW2k9SA0DDQZ1HBqFY3k8JlEUvWw3A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

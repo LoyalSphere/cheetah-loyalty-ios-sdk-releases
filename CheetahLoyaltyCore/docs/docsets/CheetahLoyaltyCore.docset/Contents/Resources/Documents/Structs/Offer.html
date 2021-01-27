@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Struct/Offer" class="dashAnchor"></a>
     <a title="Offer Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CheetahLoyaltyCore Docs</a></p>
+        <p><a href="../index.html">CheetahLoyaltyCore 0.1.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -53,9 +61,6 @@
                 <a href="../Structs/ListInfo.html">ListInfo</a>
               </li>
               <li class="nav-group-task">
-                <a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a>
               </li>
               <li class="nav-group-task">
@@ -63,9 +68,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ResponseError/ResponseSerializationFailureReason.html">– ResponseSerializationFailureReason</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Result.html">Result</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/UserLocation.html">UserLocation</a>
@@ -76,31 +78,7 @@
             <a href="../URL%20and%20URLRequest%20Convertibles.html">URL and URLRequest Convertibles</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/String.html">String</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URL.html">URL</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/URLConvertible.html">URLConvertible</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/URLError.html">URLError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/URLError/ParameterEncodingFailureReason.html">– ParameterEncodingFailureReason</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLRequest.html">URLRequest</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLRequest/MultipartAttachment.html">– MultipartAttachment</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a>
               </li>
             </ul>
           </li>
@@ -799,15 +777,6 @@
             <a href="../Other%20Objects.html">Other Objects</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/AnyCodable.html">AnyCodable</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/AnyDecodable.html">AnyDecodable</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/AnyEncodable.html">AnyEncodable</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/RespondableInfo.html">RespondableInfo</a>
               </li>
             </ul>
@@ -848,25 +817,10 @@
             <a href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Extensions/Array.html">Array</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Bundle.html">Bundle</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Extensions/CharacterSet.html">CharacterSet</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Data.html">Data</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Date.html">Date</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Dictionary.html">Dictionary</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/KeyedDecodingContainer.html">KeyedDecodingContainer</a>
               </li>
             </ul>
           </li>
@@ -888,9 +842,6 @@
                 <a href="../Structs/APIError.html">APIError</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/APIError.html#/s:18CheetahLoyaltyCore8APIErrorV24AdditionalDataCodingKeysV">– AdditionalDataCodingKeys</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/CountriesStates.html">CountriesStates</a>
               </li>
               <li class="nav-group-task">
@@ -910,14 +861,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Other%20Typealiases.html#/s:18CheetahLoyaltyCore11HTTPHeadersa">HTTPHeaders</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -926,6 +869,7 @@
             <h1>Offer</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Offer</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
                 </div>
@@ -1209,9 +1153,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18CheetahLoyaltyCore5OfferV9extraJSONSDySSAA10AnyCodableVGvp"></a>
+                    <a name="/s:18CheetahLoyaltyCore5OfferV9extraJSONSDySS0aB5Utils10AnyCodableVGvp"></a>
                     <a name="//apple_ref/swift/Property/extraJSON" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore5OfferV9extraJSONSDySSAA10AnyCodableVGvp">extraJSON</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore5OfferV9extraJSONSDySS0aB5Utils10AnyCodableVGvp">extraJSON</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1226,7 +1170,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">extraJSON</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt"><a href="../Structs/AnyCodable.html">AnyCodable</a></span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">extraJSON</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">AnyCodable</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -1560,9 +1504,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18CheetahLoyaltyCore5OfferV2id6action7barcode0G8Standard4body10categories7clipped15descriptionText7details7endDate9extraJSON7heading8imageUrl08internalU011isFavorited9responses05startP010subheading12targetObject06targetU009thumbnailU04type3urlACSi_S4SSayAC8CategoryVGSbS3SSDySSAA10AnyCodableVGS3SSbSayAC8ResponseVGS2SAC12TargetObjectVSgS2SAC0D4TypeOSStcfc"></a>
+                    <a name="/s:18CheetahLoyaltyCore5OfferV2id6action7barcode0G8Standard4body10categories7clipped15descriptionText7details7endDate9extraJSON7heading8imageUrl08internalU011isFavorited9responses05startP010subheading12targetObject06targetU009thumbnailU04type3urlACSi_S4SSayAC8CategoryVGSbS3SSDySS0aB5Utils10AnyCodableVGS3SSbSayAC8ResponseVGS2SAC12TargetObjectVSgS2SAC0D4TypeOSStcfc"></a>
                     <a name="//apple_ref/swift/Method/init(id:action:barcode:barcodeStandard:body:categories:clipped:descriptionText:details:endDate:extraJSON:heading:imageUrl:internalUrl:isFavorited:responses:startDate:subheading:targetObject:targetUrl:thumbnailUrl:type:url:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore5OfferV2id6action7barcode0G8Standard4body10categories7clipped15descriptionText7details7endDate9extraJSON7heading8imageUrl08internalU011isFavorited9responses05startP010subheading12targetObject06targetU009thumbnailU04type3urlACSi_S4SSayAC8CategoryVGSbS3SSDySSAA10AnyCodableVGS3SSbSayAC8ResponseVGS2SAC12TargetObjectVSgS2SAC0D4TypeOSStcfc">init(id:action:barcode:barcodeStandard:body:categories:clipped:descriptionText:details:endDate:extraJSON:heading:imageUrl:internalUrl:isFavorited:responses:startDate:subheading:targetObject:targetUrl:thumbnailUrl:type:url:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore5OfferV2id6action7barcode0G8Standard4body10categories7clipped15descriptionText7details7endDate9extraJSON7heading8imageUrl08internalU011isFavorited9responses05startP010subheading12targetObject06targetU009thumbnailU04type3urlACSi_S4SSayAC8CategoryVGSbS3SSDySS0aB5Utils10AnyCodableVGS3SSbSayAC8ResponseVGS2SAC12TargetObjectVSgS2SAC0D4TypeOSStcfc">init(id:<wbr>action:<wbr>barcode:<wbr>barcodeStandard:<wbr>body:<wbr>categories:<wbr>clipped:<wbr>descriptionText:<wbr>details:<wbr>endDate:<wbr>extraJSON:<wbr>heading:<wbr>imageUrl:<wbr>internalUrl:<wbr>isFavorited:<wbr>responses:<wbr>startDate:<wbr>subheading:<wbr>targetObject:<wbr>targetUrl:<wbr>thumbnailUrl:<wbr>type:<wbr>url:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1579,7 +1523,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">barcode</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">barcodeStandard</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
             <span class="nv">body</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">categories</span><span class="p">:</span> <span class="p">[</span><span class="kt">Offer</span><span class="o">.</span><span class="kt"><a href="../Structs/Offer/Category.html">Category</a></span><span class="p">],</span> <span class="nv">clipped</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">descriptionText</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-            <span class="nv">details</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">endDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">extraJSON</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt"><a href="../Structs/AnyCodable.html">AnyCodable</a></span><span class="p">],</span> <span class="nv">heading</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">imageUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">details</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">endDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">extraJSON</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">AnyCodable</span><span class="p">],</span> <span class="nv">heading</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">imageUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
             <span class="nv">internalUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">isFavorited</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">responses</span><span class="p">:</span> <span class="p">[</span><span class="kt">Offer</span><span class="o">.</span><span class="kt"><a href="../Structs/Offer/Response.html">Response</a></span><span class="p">],</span> <span class="nv">startDate</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
             <span class="nv">subheading</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">targetObject</span><span class="p">:</span> <span class="kt">Offer</span><span class="o">.</span><span class="kt"><a href="../Structs/Offer/TargetObject.html">TargetObject</a></span><span class="p">?,</span> <span class="nv">targetUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">thumbnailUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
             <span class="nv">type</span><span class="p">:</span> <span class="kt">Offer</span><span class="o">.</span><span class="kt"><a href="../Structs/Offer/OfferType.html">OfferType</a></span><span class="p">,</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
@@ -1751,7 +1695,7 @@
                     <code>
                     <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
                     <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:)</a>
+                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1777,7 +1721,7 @@
                     <code>
                     <a name="/s:SE6encode2toys7Encoder_p_tKF"></a>
                     <a name="//apple_ref/swift/Method/encode(to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SE6encode2toys7Encoder_p_tKF">encode(to:)</a>
+                    <a class="token" href="#/s:SE6encode2toys7Encoder_p_tKF">encode(to:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1803,8 +1747,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-27)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

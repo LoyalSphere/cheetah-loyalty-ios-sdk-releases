@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Struct/Challenge" class="dashAnchor"></a>
     <a title="Challenge Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CheetahLoyaltyCore Docs</a></p>
+        <p><a href="../index.html">CheetahLoyaltyCore 0.1.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -53,9 +61,6 @@
                 <a href="../Structs/ListInfo.html">ListInfo</a>
               </li>
               <li class="nav-group-task">
-                <a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a>
               </li>
               <li class="nav-group-task">
@@ -63,9 +68,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ResponseError/ResponseSerializationFailureReason.html">– ResponseSerializationFailureReason</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Result.html">Result</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/UserLocation.html">UserLocation</a>
@@ -76,31 +78,7 @@
             <a href="../URL%20and%20URLRequest%20Convertibles.html">URL and URLRequest Convertibles</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/String.html">String</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URL.html">URL</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/URLConvertible.html">URLConvertible</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/URLError.html">URLError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/URLError/ParameterEncodingFailureReason.html">– ParameterEncodingFailureReason</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLRequest.html">URLRequest</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLRequest/MultipartAttachment.html">– MultipartAttachment</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a>
               </li>
             </ul>
           </li>
@@ -799,15 +777,6 @@
             <a href="../Other%20Objects.html">Other Objects</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/AnyCodable.html">AnyCodable</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/AnyDecodable.html">AnyDecodable</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/AnyEncodable.html">AnyEncodable</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/RespondableInfo.html">RespondableInfo</a>
               </li>
             </ul>
@@ -848,25 +817,10 @@
             <a href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Extensions/Array.html">Array</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Bundle.html">Bundle</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Extensions/CharacterSet.html">CharacterSet</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Data.html">Data</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Date.html">Date</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Dictionary.html">Dictionary</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/KeyedDecodingContainer.html">KeyedDecodingContainer</a>
               </li>
             </ul>
           </li>
@@ -888,9 +842,6 @@
                 <a href="../Structs/APIError.html">APIError</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/APIError.html#/s:18CheetahLoyaltyCore8APIErrorV24AdditionalDataCodingKeysV">– AdditionalDataCodingKeys</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/CountriesStates.html">CountriesStates</a>
               </li>
               <li class="nav-group-task">
@@ -910,14 +861,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Other%20Typealiases.html#/s:18CheetahLoyaltyCore11HTTPHeadersa">HTTPHeaders</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -926,6 +869,7 @@
             <h1>Challenge</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Challenge</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
 <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">Challenge</span><span class="p">:</span> <span class="kt">Equatable</span></code></pre>
 
@@ -2078,7 +2022,7 @@ Contents of the response setting varies depending on the type of the challenge.<
                     <code>
                     <a name="/s:18CheetahLoyaltyCore9ChallengeV2id14acceptanceText0F3Url6action11awardAmount4body13businessValue7details9endPeriod7heading05imageH008internalH020isAcceptanceRequired0U9Favorited0U11Respondable4name6metric06metricK017metricDisplayName10metricName013originalImageH05polls7prizeId6prizes15respondableInfo15responseEndDate15responseMessage16responseSchedule15responseSetting17responseStartDate12responseType11showAsAlert05startQ06status10subheading7subject06targetH0010thumbImageH012trackingCode19triggerActivityTypeACSi_S11SS3bS6SSayAA4PollVGSiSayAA5PrizeVGAA0Y4InfoVSgS3SAA0D15ResponseSetting_pSgSSAC12ResponseTypeOSbS8Stcfc"></a>
                     <a name="//apple_ref/swift/Method/init(id:acceptanceText:acceptanceUrl:action:awardAmount:body:businessValue:details:endPeriod:heading:imageUrl:internalUrl:isAcceptanceRequired:isFavorited:isRespondable:name:metric:metricAmount:metricDisplayName:metricName:originalImageUrl:polls:prizeId:prizes:respondableInfo:responseEndDate:responseMessage:responseSchedule:responseSetting:responseStartDate:responseType:showAsAlert:startPeriod:status:subheading:subject:targetUrl:thumbImageUrl:trackingCode:triggerActivityType:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore9ChallengeV2id14acceptanceText0F3Url6action11awardAmount4body13businessValue7details9endPeriod7heading05imageH008internalH020isAcceptanceRequired0U9Favorited0U11Respondable4name6metric06metricK017metricDisplayName10metricName013originalImageH05polls7prizeId6prizes15respondableInfo15responseEndDate15responseMessage16responseSchedule15responseSetting17responseStartDate12responseType11showAsAlert05startQ06status10subheading7subject06targetH0010thumbImageH012trackingCode19triggerActivityTypeACSi_S11SS3bS6SSayAA4PollVGSiSayAA5PrizeVGAA0Y4InfoVSgS3SAA0D15ResponseSetting_pSgSSAC12ResponseTypeOSbS8Stcfc">init(id:acceptanceText:acceptanceUrl:action:awardAmount:body:businessValue:details:endPeriod:heading:imageUrl:internalUrl:isAcceptanceRequired:isFavorited:isRespondable:name:metric:metricAmount:metricDisplayName:metricName:originalImageUrl:polls:prizeId:prizes:respondableInfo:responseEndDate:responseMessage:responseSchedule:responseSetting:responseStartDate:responseType:showAsAlert:startPeriod:status:subheading:subject:targetUrl:thumbImageUrl:trackingCode:triggerActivityType:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore9ChallengeV2id14acceptanceText0F3Url6action11awardAmount4body13businessValue7details9endPeriod7heading05imageH008internalH020isAcceptanceRequired0U9Favorited0U11Respondable4name6metric06metricK017metricDisplayName10metricName013originalImageH05polls7prizeId6prizes15respondableInfo15responseEndDate15responseMessage16responseSchedule15responseSetting17responseStartDate12responseType11showAsAlert05startQ06status10subheading7subject06targetH0010thumbImageH012trackingCode19triggerActivityTypeACSi_S11SS3bS6SSayAA4PollVGSiSayAA5PrizeVGAA0Y4InfoVSgS3SAA0D15ResponseSetting_pSgSSAC12ResponseTypeOSbS8Stcfc">init(id:<wbr>acceptanceText:<wbr>acceptanceUrl:<wbr>action:<wbr>awardAmount:<wbr>body:<wbr>businessValue:<wbr>details:<wbr>endPeriod:<wbr>heading:<wbr>imageUrl:<wbr>internalUrl:<wbr>isAcceptanceRequired:<wbr>isFavorited:<wbr>isRespondable:<wbr>name:<wbr>metric:<wbr>metricAmount:<wbr>metricDisplayName:<wbr>metricName:<wbr>originalImageUrl:<wbr>polls:<wbr>prizeId:<wbr>prizes:<wbr>respondableInfo:<wbr>responseEndDate:<wbr>responseMessage:<wbr>responseSchedule:<wbr>responseSetting:<wbr>responseStartDate:<wbr>responseType:<wbr>showAsAlert:<wbr>startPeriod:<wbr>status:<wbr>subheading:<wbr>subject:<wbr>targetUrl:<wbr>thumbImageUrl:<wbr>trackingCode:<wbr>triggerActivityType:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2114,7 +2058,7 @@ Contents of the response setting varies depending on the type of the challenge.<
                     <code>
                     <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
                     <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:)</a>
+                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2140,7 +2084,7 @@ Contents of the response setting varies depending on the type of the challenge.<
                     <code>
                     <a name="/s:SE6encode2toys7Encoder_p_tKF"></a>
                     <a name="//apple_ref/swift/Method/encode(to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SE6encode2toys7Encoder_p_tKF">encode(to:)</a>
+                    <a class="token" href="#/s:SE6encode2toys7Encoder_p_tKF">encode(to:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2166,7 +2110,7 @@ Contents of the response setting varies depending on the type of the challenge.<
                     <code>
                     <a name="/s:SQ2eeoiySbx_xtFZ"></a>
                     <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:_:)</a>
+                    <a class="token" href="#/s:SQ2eeoiySbx_xtFZ">==(_:<wbr>_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2276,8 +2220,8 @@ Contents of the response setting varies depending on the type of the challenge.<
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-27)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

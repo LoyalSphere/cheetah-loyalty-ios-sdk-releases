@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Struct/Country" class="dashAnchor"></a>
     <a title="Country Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CheetahLoyaltyCore Docs</a></p>
+        <p><a href="../index.html">CheetahLoyaltyCore 0.1.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -53,9 +61,6 @@
                 <a href="../Structs/ListInfo.html">ListInfo</a>
               </li>
               <li class="nav-group-task">
-                <a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a>
               </li>
               <li class="nav-group-task">
@@ -63,9 +68,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ResponseError/ResponseSerializationFailureReason.html">– ResponseSerializationFailureReason</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Result.html">Result</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/UserLocation.html">UserLocation</a>
@@ -76,31 +78,7 @@
             <a href="../URL%20and%20URLRequest%20Convertibles.html">URL and URLRequest Convertibles</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/String.html">String</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URL.html">URL</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/URLConvertible.html">URLConvertible</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/URLError.html">URLError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/URLError/ParameterEncodingFailureReason.html">– ParameterEncodingFailureReason</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLRequest.html">URLRequest</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLRequest/MultipartAttachment.html">– MultipartAttachment</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a>
               </li>
             </ul>
           </li>
@@ -799,15 +777,6 @@
             <a href="../Other%20Objects.html">Other Objects</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/AnyCodable.html">AnyCodable</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/AnyDecodable.html">AnyDecodable</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/AnyEncodable.html">AnyEncodable</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/RespondableInfo.html">RespondableInfo</a>
               </li>
             </ul>
@@ -848,25 +817,10 @@
             <a href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Extensions/Array.html">Array</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Bundle.html">Bundle</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Extensions/CharacterSet.html">CharacterSet</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Data.html">Data</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Date.html">Date</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Dictionary.html">Dictionary</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/KeyedDecodingContainer.html">KeyedDecodingContainer</a>
               </li>
             </ul>
           </li>
@@ -888,9 +842,6 @@
                 <a href="../Structs/APIError.html">APIError</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/APIError.html#/s:18CheetahLoyaltyCore8APIErrorV24AdditionalDataCodingKeysV">– AdditionalDataCodingKeys</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/CountriesStates.html">CountriesStates</a>
               </li>
               <li class="nav-group-task">
@@ -910,14 +861,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Other%20Typealiases.html#/s:18CheetahLoyaltyCore11HTTPHeadersa">HTTPHeaders</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -926,6 +869,7 @@
             <h1>Country</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Country</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
 
                 </div>
@@ -1022,7 +966,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore7CountryV4name4code6statesACSS_SSSayAC5StateVGtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(name:code:states:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore7CountryV4name4code6statesACSS_SSSayAC5StateVGtcfc">init(name:code:states:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore7CountryV4name4code6statesACSS_SSSayAC5StateVGtcfc">init(name:<wbr>code:<wbr>states:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1077,7 +1021,7 @@
                     <code>
                     <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
                     <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:)</a>
+                    <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1103,8 +1047,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-27)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

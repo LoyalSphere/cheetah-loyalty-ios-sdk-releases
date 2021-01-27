@@ -6,6 +6,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-1.9.0] - 2021-01-26
+
+### Added
+- Reenter challenge with attachments API [#577]
+- Get challenge with location API [#580], [#581]
+
+### Changed
+- Requests dependencies with CheetahLoyaltyUtils [#579]
+- Request adapter to create full path of the request [#579]
+- Rename date extensions that has specific Cheetah formatting [#579]
+
+### Removed
+- Utility code from Core (transferred to CheetahLoyaltyUtils) [#579]:
+	- `AnyCodable`, `AnyDecodable`, and `AnyEncodable`
+	- URL and URLRequest Convertible 
+	- URL Parameter Encoding
+	- `Result` extensions
+
+[#577]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/577
+[#579]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/579
+[#580]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/580
+[#581]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/581
+[Core-1.9.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/77?closed=1
+
 ## [Core-1.8.1] - 2021-01-12
 
 ### Fixed
@@ -28,7 +52,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changed dependency version requirements to CheetahLoyaltyUtils 1.1.0 [#547], [#548]
 - Built using Xcode 12 to support the iOS 14 SDK and Swift 5.3 [#556]
 
-### Remove
+### Removed
 - Unnecessary loading of bundle in initial value of `Configuration.shared` [#544]
 
 [#537]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/537

@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Enum/RewardsAPI" class="dashAnchor"></a>
     <a title="RewardsAPI Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CheetahLoyaltyCore Docs</a></p>
+        <p><a href="../index.html">CheetahLoyaltyCore 0.1.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -53,9 +61,6 @@
                 <a href="../Structs/ListInfo.html">ListInfo</a>
               </li>
               <li class="nav-group-task">
-                <a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a>
               </li>
               <li class="nav-group-task">
@@ -63,9 +68,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ResponseError/ResponseSerializationFailureReason.html">– ResponseSerializationFailureReason</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Result.html">Result</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/UserLocation.html">UserLocation</a>
@@ -76,31 +78,7 @@
             <a href="../URL%20and%20URLRequest%20Convertibles.html">URL and URLRequest Convertibles</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/String.html">String</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URL.html">URL</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/URLConvertible.html">URLConvertible</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/URLError.html">URLError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/URLError/ParameterEncodingFailureReason.html">– ParameterEncodingFailureReason</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLRequest.html">URLRequest</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLRequest/MultipartAttachment.html">– MultipartAttachment</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a>
               </li>
             </ul>
           </li>
@@ -799,15 +777,6 @@
             <a href="../Other%20Objects.html">Other Objects</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/AnyCodable.html">AnyCodable</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/AnyDecodable.html">AnyDecodable</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/AnyEncodable.html">AnyEncodable</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/RespondableInfo.html">RespondableInfo</a>
               </li>
             </ul>
@@ -848,25 +817,10 @@
             <a href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Extensions/Array.html">Array</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Bundle.html">Bundle</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Extensions/CharacterSet.html">CharacterSet</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Data.html">Data</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Date.html">Date</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Dictionary.html">Dictionary</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/KeyedDecodingContainer.html">KeyedDecodingContainer</a>
               </li>
             </ul>
           </li>
@@ -888,9 +842,6 @@
                 <a href="../Structs/APIError.html">APIError</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/APIError.html#/s:18CheetahLoyaltyCore8APIErrorV24AdditionalDataCodingKeysV">– AdditionalDataCodingKeys</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/CountriesStates.html">CountriesStates</a>
               </li>
               <li class="nav-group-task">
@@ -910,14 +861,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Other%20Typealiases.html#/s:18CheetahLoyaltyCore11HTTPHeadersa">HTTPHeaders</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -926,6 +869,7 @@
             <h1>RewardsAPI</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">RewardsAPI</span></code></pre>
 
                 </div>
@@ -950,7 +894,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore10RewardsAPIO03getD04with13showFavorites10completionySDySSypGSg_Sbys6ResultOyAA11APIResponseVySayAA6RewardVGGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getRewards(with:showFavorites:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO03getD04with13showFavorites10completionySDySSypGSg_Sbys6ResultOyAA11APIResponseVySayAA6RewardVGGs5Error_pGcSgtFZ">getRewards(with:showFavorites:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO03getD04with13showFavorites10completionySDySSypGSg_Sbys6ResultOyAA11APIResponseVySayAA6RewardVGGs5Error_pGcSgtFZ">getRewards(with:<wbr>showFavorites:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -965,7 +909,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getRewards</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getRewards</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                               <span class="nv">showFavorites</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
                               <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Reward.html">Reward</a></span><span class="p">]</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
@@ -983,7 +927,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1022,7 +966,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore10RewardsAPIO9getReward4name4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVyAA0G0VGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getReward(name:with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO9getReward4name4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVyAA0G0VGs5Error_pGcSgtFZ">getReward(name:with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO9getReward4name4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVyAA0G0VGs5Error_pGcSgtFZ">getReward(name:<wbr>with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1038,7 +982,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getReward</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                             <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                             <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                              <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Reward.html">Reward</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1067,7 +1011,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1094,7 +1038,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore10RewardsAPIO9getReward2id4with10completionySi_SDySSypGSgys6ResultOyAA11APIResponseVyAA0G0VGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getReward(id:with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO9getReward2id4with10completionySi_SDySSypGSgys6ResultOyAA11APIResponseVyAA0G0VGs5Error_pGcSgtFZ">getReward(id:with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO9getReward2id4with10completionySi_SDySSypGSgys6ResultOyAA11APIResponseVyAA0G0VGs5Error_pGcSgtFZ">getReward(id:<wbr>with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1110,7 +1054,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getReward</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
-                             <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                             <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                              <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Reward.html">Reward</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1139,7 +1083,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1166,7 +1110,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore10RewardsAPIO14favoriteReward2id10completionySi_ys6ResultOyAA11APIResponseVySbGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/favoriteReward(id:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO14favoriteReward2id10completionySi_ys6ResultOyAA11APIResponseVySbGs5Error_pGcSgtFZ">favoriteReward(id:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO14favoriteReward2id10completionySi_ys6ResultOyAA11APIResponseVySbGs5Error_pGcSgtFZ">favoriteReward(id:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1224,7 +1168,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore10RewardsAPIO16unfavoriteReward2id10completionySi_ys6ResultOyAA11APIResponseVySbGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/unfavoriteReward(id:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO16unfavoriteReward2id10completionySi_ys6ResultOyAA11APIResponseVySbGs5Error_pGcSgtFZ">unfavoriteReward(id:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO16unfavoriteReward2id10completionySi_ys6ResultOyAA11APIResponseVySbGs5Error_pGcSgtFZ">unfavoriteReward(id:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1282,7 +1226,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore10RewardsAPIO12redeemReward2id7awardId7address10isResponse4with10completionySi_SiSgSDySSypGSgSbAMys6ResultOyAA11APIResponseVyAA0G0V0M4InfoVGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/redeemReward(id:awardId:address:isResponse:with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO12redeemReward2id7awardId7address10isResponse4with10completionySi_SiSgSDySSypGSgSbAMys6ResultOyAA11APIResponseVyAA0G0V0M4InfoVGs5Error_pGcSgtFZ">redeemReward(id:awardId:address:isResponse:with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO12redeemReward2id7awardId7address10isResponse4with10completionySi_SiSgSDySSypGSgSbAMys6ResultOyAA11APIResponseVyAA0G0V0M4InfoVGs5Error_pGcSgtFZ">redeemReward(id:<wbr>awardId:<wbr>address:<wbr>isResponse:<wbr>with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1301,7 +1245,7 @@
                                 <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?,</span>
                                 <span class="nv">address</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?,</span>
                                 <span class="nv">isResponse</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
-                                <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                 <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Reward.html">Reward</a></span><span class="o">.</span><span class="kt">ResponseInfo</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1366,7 +1310,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.
+                                  <p>The <code>Parameters</code> to apply.
 combination_id (optional): The combination of attributes id</p>
                                 </div>
                               </td>
@@ -1394,7 +1338,7 @@ combination_id (optional): The combination of attributes id</p>
                     <code>
                     <a name="/s:18CheetahLoyaltyCore10RewardsAPIO12redeemReward2id5nonce8currency5value10completionySi_S2SSdys6ResultOyAA11APIResponseVyAA0G0V12ResponseInfoVGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/redeemReward(id:nonce:currency:value:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO12redeemReward2id5nonce8currency5value10completionySi_S2SSdys6ResultOyAA11APIResponseVyAA0G0V12ResponseInfoVGs5Error_pGcSgtFZ">redeemReward(id:nonce:currency:value:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO12redeemReward2id5nonce8currency5value10completionySi_S2SSdys6ResultOyAA11APIResponseVyAA0G0V12ResponseInfoVGs5Error_pGcSgtFZ">redeemReward(id:<wbr>nonce:<wbr>currency:<wbr>value:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1505,7 +1449,7 @@ combination_id (optional): The combination of attributes id</p>
                     <code>
                     <a name="/s:18CheetahLoyaltyCore10RewardsAPIO9getAwards4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA5AwardVGGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getAwards(with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO9getAwards4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA5AwardVGGs5Error_pGcSgtFZ">getAwards(with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO9getAwards4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA5AwardVGGs5Error_pGcSgtFZ">getAwards(with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1520,7 +1464,7 @@ combination_id (optional): The combination of attributes id</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getAwards</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getAwards</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                              <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Award.html">Award</a></span><span class="p">]</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1537,7 +1481,7 @@ combination_id (optional): The combination of attributes id</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1564,7 +1508,7 @@ combination_id (optional): The combination of attributes id</p>
                     <code>
                     <a name="/s:18CheetahLoyaltyCore10RewardsAPIO8getAward2id4with10completionySi_SDySSypGSgys6ResultOyAA11APIResponseVyAA0G0VGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getAward(id:with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO8getAward2id4with10completionySi_SDySSypGSgys6ResultOyAA11APIResponseVyAA0G0VGs5Error_pGcSgtFZ">getAward(id:with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO8getAward2id4with10completionySi_SDySSypGSgys6ResultOyAA11APIResponseVyAA0G0VGs5Error_pGcSgtFZ">getAward(id:<wbr>with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1580,7 +1524,7 @@ combination_id (optional): The combination of attributes id</p>
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getAward</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
-                            <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                            <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                             <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Award.html">Award</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1609,7 +1553,7 @@ combination_id (optional): The combination of attributes id</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1649,7 +1593,7 @@ combination_id (optional): The combination of attributes id</p>
                     <code>
                     <a name="/s:18CheetahLoyaltyCore10RewardsAPIO14getRedemptions4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA6RewardV8ResponseVGGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getRedemptions(with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO14getRedemptions4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA6RewardV8ResponseVGGs5Error_pGcSgtFZ">getRedemptions(with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO14getRedemptions4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA6RewardV8ResponseVGGs5Error_pGcSgtFZ">getRedemptions(with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1664,7 +1608,7 @@ combination_id (optional): The combination of attributes id</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getRedemptions</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getRedemptions</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                   <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Reward.html">Reward</a></span><span class="o">.</span><span class="kt">Response</span><span class="p">]</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1681,7 +1625,7 @@ combination_id (optional): The combination of attributes id</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1708,7 +1652,7 @@ combination_id (optional): The combination of attributes id</p>
                     <code>
                     <a name="/s:18CheetahLoyaltyCore10RewardsAPIO13getRedemption4with10completionySi_ys6ResultOyAA11APIResponseVyAA6RewardV8ResponseVGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getRedemption(with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO13getRedemption4with10completionySi_ys6ResultOyAA11APIResponseVyAA6RewardV8ResponseVGs5Error_pGcSgtFZ">getRedemption(with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO13getRedemption4with10completionySi_ys6ResultOyAA11APIResponseVyAA6RewardV8ResponseVGs5Error_pGcSgtFZ">getRedemption(with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1754,7 +1698,7 @@ combination_id (optional): The combination of attributes id</p>
                     <code>
                     <a name="/s:18CheetahLoyaltyCore10RewardsAPIO16cancelRedemption2id10completionySi_ys6ResultOyAA11APIResponseVyAA6RewardV8ResponseVGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/cancelRedemption(id:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO16cancelRedemption2id10completionySi_ys6ResultOyAA11APIResponseVyAA6RewardV8ResponseVGs5Error_pGcSgtFZ">cancelRedemption(id:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore10RewardsAPIO16cancelRedemption2id10completionySi_ys6ResultOyAA11APIResponseVyAA6RewardV8ResponseVGs5Error_pGcSgtFZ">cancelRedemption(id:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1813,8 +1757,8 @@ combination_id (optional): The combination of attributes id</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-27)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

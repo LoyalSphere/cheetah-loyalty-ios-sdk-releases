@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Enum/PlacesAPI" class="dashAnchor"></a>
     <a title="PlacesAPI Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">CheetahLoyaltyCore Docs</a></p>
+        <p><a href="../index.html">CheetahLoyaltyCore 0.1.0 Docs</a></p>
         <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -53,9 +61,6 @@
                 <a href="../Structs/ListInfo.html">ListInfo</a>
               </li>
               <li class="nav-group-task">
-                <a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a>
               </li>
               <li class="nav-group-task">
@@ -63,9 +68,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ResponseError/ResponseSerializationFailureReason.html">– ResponseSerializationFailureReason</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Result.html">Result</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/UserLocation.html">UserLocation</a>
@@ -76,31 +78,7 @@
             <a href="../URL%20and%20URLRequest%20Convertibles.html">URL and URLRequest Convertibles</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/String.html">String</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URL.html">URL</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/URLConvertible.html">URLConvertible</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/URLError.html">URLError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/URLError/ParameterEncodingFailureReason.html">– ParameterEncodingFailureReason</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLRequest.html">URLRequest</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLRequest/MultipartAttachment.html">– MultipartAttachment</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a>
               </li>
             </ul>
           </li>
@@ -799,15 +777,6 @@
             <a href="../Other%20Objects.html">Other Objects</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/AnyCodable.html">AnyCodable</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/AnyDecodable.html">AnyDecodable</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/AnyEncodable.html">AnyEncodable</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/RespondableInfo.html">RespondableInfo</a>
               </li>
             </ul>
@@ -848,25 +817,10 @@
             <a href="../Other%20Extensions.html">Other Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Extensions/Array.html">Array</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Bundle.html">Bundle</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Extensions/CharacterSet.html">CharacterSet</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Data.html">Data</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Date.html">Date</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/Dictionary.html">Dictionary</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/KeyedDecodingContainer.html">KeyedDecodingContainer</a>
               </li>
             </ul>
           </li>
@@ -888,9 +842,6 @@
                 <a href="../Structs/APIError.html">APIError</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/APIError.html#/s:18CheetahLoyaltyCore8APIErrorV24AdditionalDataCodingKeysV">– AdditionalDataCodingKeys</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/CountriesStates.html">CountriesStates</a>
               </li>
               <li class="nav-group-task">
@@ -910,14 +861,6 @@
               </li>
             </ul>
           </li>
-          <li class="nav-group-name">
-            <a href="../Other%20Typealiases.html">Other Type Aliases</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Other%20Typealiases.html#/s:18CheetahLoyaltyCore11HTTPHeadersa">HTTPHeaders</a>
-              </li>
-            </ul>
-          </li>
         </ul>
       </nav>
       <article class="main-content">
@@ -926,6 +869,7 @@
             <h1>PlacesAPI</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">PlacesAPI</span></code></pre>
 
                 </div>
@@ -941,7 +885,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore9PlacesAPIO03getD04with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getPlaces(with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO03getD04with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ">getPlaces(with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO03getD04with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ">getPlaces(with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -956,7 +900,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPlaces</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?,</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPlaces</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?,</span>
                              <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Place.html">Place</a></span><span class="p">]</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -973,7 +917,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1000,7 +944,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore9PlacesAPIO03getD05query4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getPlaces(query:with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO03getD05query4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ">getPlaces(query:with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO03getD05query4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ">getPlaces(query:<wbr>with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1016,7 +960,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPlaces</span><span class="p">(</span><span class="nv">query</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                             <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?,</span>
+                             <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?,</span>
                              <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Place.html">Place</a></span><span class="p">]</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1045,7 +989,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1072,7 +1016,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore9PlacesAPIO03getD013integrationId4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getPlaces(integrationId:with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO03getD013integrationId4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ">getPlaces(integrationId:with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO03getD013integrationId4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ">getPlaces(integrationId:<wbr>with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1088,7 +1032,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPlaces</span><span class="p">(</span><span class="nv">integrationId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
-                             <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?,</span>
+                             <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?,</span>
                              <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Place.html">Place</a></span><span class="p">]</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1117,7 +1061,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1144,7 +1088,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore9PlacesAPIO03getD6Nearby11coordinates20onlyWithClientEvents4with10completionySd8latitude_Sd9longitudet_SbSDySSypGSgys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getPlacesNearby(coordinates:onlyWithClientEvents:with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO03getD6Nearby11coordinates20onlyWithClientEvents4with10completionySd8latitude_Sd9longitudet_SbSDySSypGSgys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ">getPlacesNearby(coordinates:onlyWithClientEvents:with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO03getD6Nearby11coordinates20onlyWithClientEvents4with10completionySd8latitude_Sd9longitudet_SbSDySSypGSgys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ">getPlacesNearby(coordinates:<wbr>onlyWithClientEvents:<wbr>with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1161,7 +1105,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPlacesNearby</span><span class="p">(</span><span class="nv">coordinates</span><span class="p">:</span> <span class="p">(</span><span class="nv">latitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">longitude</span><span class="p">:</span> <span class="kt">Double</span><span class="p">),</span>
                                    <span class="nv">onlyWithClientEvents</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
-                                   <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?,</span>
+                                   <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?,</span>
                                    <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Place.html">Place</a></span><span class="p">]</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1202,7 +1146,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1229,7 +1173,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore9PlacesAPIO03getD6Nearby7address20onlyWithClientEvents4with10completionySS_SbSDySSypGSgys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getPlacesNearby(address:onlyWithClientEvents:with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO03getD6Nearby7address20onlyWithClientEvents4with10completionySS_SbSDySSypGSgys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ">getPlacesNearby(address:onlyWithClientEvents:with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO03getD6Nearby7address20onlyWithClientEvents4with10completionySS_SbSDySSypGSgys6ResultOyAA11APIResponseVySayAA5PlaceVGGs5Error_pGcSgtFZ">getPlacesNearby(address:<wbr>onlyWithClientEvents:<wbr>with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1246,7 +1190,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPlacesNearby</span><span class="p">(</span><span class="nv">address</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
                                    <span class="nv">onlyWithClientEvents</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
-                                   <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?,</span>
+                                   <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?,</span>
                                    <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Place.html">Place</a></span><span class="p">]</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1287,7 +1231,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1314,7 +1258,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore9PlacesAPIO9getOffers7placeId15clientEventType4with10completionySi_AA5PlaceV06ClientkL0OSDySSypGSgys6ResultOyAA11APIResponseVySayAA5OfferVGGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getOffers(placeId:clientEventType:with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO9getOffers7placeId15clientEventType4with10completionySi_AA5PlaceV06ClientkL0OSDySSypGSgys6ResultOyAA11APIResponseVySayAA5OfferVGGs5Error_pGcSgtFZ">getOffers(placeId:clientEventType:with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO9getOffers7placeId15clientEventType4with10completionySi_AA5PlaceV06ClientkL0OSDySSypGSgys6ResultOyAA11APIResponseVySayAA5OfferVGGs5Error_pGcSgtFZ">getOffers(placeId:<wbr>clientEventType:<wbr>with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1331,7 +1275,7 @@
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getOffers</span><span class="p">(</span><span class="nv">placeId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
                              <span class="nv">clientEventType</span><span class="p">:</span> <span class="kt"><a href="../Structs/Place.html">Place</a></span><span class="o">.</span><span class="kt">ClientEventType</span><span class="p">,</span>
-                             <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?,</span>
+                             <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?,</span>
                              <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Offer.html">Offer</a></span><span class="p">]</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1372,7 +1316,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1399,7 +1343,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore9PlacesAPIO8getPlace2id4with10completionySi_SDySSypGSgys6ResultOyAA11APIResponseVyAA0G0VGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getPlace(id:with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO8getPlace2id4with10completionySi_SDySSypGSgys6ResultOyAA11APIResponseVyAA0G0VGs5Error_pGcSgtFZ">getPlace(id:with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO8getPlace2id4with10completionySi_SDySSypGSgys6ResultOyAA11APIResponseVyAA0G0VGs5Error_pGcSgtFZ">getPlace(id:<wbr>with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1415,7 +1359,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPlace</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
-                            <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?,</span>
+                            <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?,</span>
                             <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Place.html">Place</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1444,7 +1388,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1471,7 +1415,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore9PlacesAPIO18getPlaceCategories4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA0G0V8CategoryVGGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getPlaceCategories(with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO18getPlaceCategories4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA0G0V8CategoryVGGs5Error_pGcSgtFZ">getPlaceCategories(with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO18getPlaceCategories4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA0G0V8CategoryVGGs5Error_pGcSgtFZ">getPlaceCategories(with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1486,7 +1430,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPlaceCategories</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?,</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPlaceCategories</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?,</span>
                                       <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/Place.html">Place</a></span><span class="o">.</span><span class="kt">Category</span><span class="p">]</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1503,7 +1447,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1530,7 +1474,7 @@
                     <code>
                     <a name="/s:18CheetahLoyaltyCore9PlacesAPIO03getD6Nearby4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVyAA0gD0VGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/getPlacesNearby(with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO03getD6Nearby4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVyAA0gD0VGs5Error_pGcSgtFZ">getPlacesNearby(with:completion:)</a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore9PlacesAPIO03getD6Nearby4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVyAA0gD0VGs5Error_pGcSgtFZ">getPlacesNearby(with:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1545,7 +1489,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPlacesNearby</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></span><span class="p">?,</span>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getPlacesNearby</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?,</span>
                                    <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/NearbyPlaces.html">NearbyPlaces</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
@@ -1562,7 +1506,7 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>The <code><a href="../API.html#/s:18CheetahLoyaltyCore10Parametersa">Parameters</a></code> to apply.</p>
+                                  <p>The <code>Parameters</code> to apply.</p>
                                 </div>
                               </td>
                             </tr>
@@ -1589,8 +1533,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-27)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

@@ -4,7 +4,6 @@
 @_exported import CheetahLoyaltyCore
 import CheetahLoyaltyUtils
 import Foundation
-import MobileCoreServices
 import Swift
 import UIKit
 extension Challenge {
@@ -73,47 +72,56 @@ public struct Prize : Swift.Codable, Swift.Equatable {
 extension Prize {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum ChallengesRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getChallenges(parameters: CheetahLoyaltyCore.Parameters?)
-  case getFavedChallenges(parameters: CheetahLoyaltyCore.Parameters?)
-  case getAlertChallenges(parameters: CheetahLoyaltyCore.Parameters?)
-  case getChallenge(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
-  case getChallengeWithName(name: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
-  case getChallengeResponses(parameters: CheetahLoyaltyCore.Parameters?)
-  case getChallengeResponse(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
+public enum ChallengesRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getChallenges(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getFavedChallenges(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getAlertChallenges(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getChallenge(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getChallengeWithLocation(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?, location: (latitude: Swift.Double, longitude: Swift.Double))
+  case getChallengeWithName(name: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getChallengeResponses(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getChallengeResponse(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
   case favoriteChallenge(id: Swift.Int)
   case unfavoriteChallenge(id: Swift.Int)
-  case respondToChallenge(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
-  case respondToChallengeWithImage(id: Swift.Int, image: UIKit.UIImage, parameters: CheetahLoyaltyCore.Parameters?)
-  case respondToChallengeWithVideo(id: Swift.Int, videoUrl: Foundation.URL, parameters: CheetahLoyaltyCore.Parameters?)
-  case reEnterResponseToChallenge(id: Swift.Int, responseId: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
+  case respondToChallenge(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
+  case respondToChallengeWithImage(id: Swift.Int, image: UIKit.UIImage, parameters: CheetahLoyaltyUtils.Parameters?)
+  case respondToChallengeWithVideo(id: Swift.Int, videoUrl: Foundation.URL, parameters: CheetahLoyaltyUtils.Parameters?)
+  case reEnterResponseToChallenge(id: Swift.Int, responseId: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
+  case reEnterResponseToChallengeWithImage(id: Swift.Int, responseId: Swift.Int, image: UIKit.UIImage, parameters: CheetahLoyaltyUtils.Parameters?)
+  case reEnterResponseToChallengeWithVideo(id: Swift.Int, responseId: Swift.Int, videoUrl: Foundation.URL, parameters: CheetahLoyaltyUtils.Parameters?)
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var multipartAttachments: Foundation.URLRequest.MultipartAttachments? {
+  public var headers: CheetahLoyaltyUtils.HTTPHeaders? {
+    get
+  }
+  public var multipartAttachments: CheetahLoyaltyUtils.MultipartAttachments? {
     get
   }
 }
 public enum ChallengesAPI {
-  public static func getChallenges(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Challenge]> = nil)
-  public static func getFavedChallenges(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Challenge]> = nil)
-  public static func getAlertChallenges(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Challenge]> = nil)
-  public static func getChallenge(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge> = nil)
-  public static func getChallenge(name: Swift.String, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge> = nil)
-  public static func getChallengeResponses(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Challenge.Response]> = nil)
-  public static func getChallengeResponse(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge.Response> = nil)
+  public static func getChallenges(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Challenge]> = nil)
+  public static func getFavedChallenges(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Challenge]> = nil)
+  public static func getAlertChallenges(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Challenge]> = nil)
+  public static func getChallenge(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge> = nil)
+  public static func getChallengeWithLocation(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, location: (latitude: Swift.Double, longitude: Swift.Double), completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge> = nil)
+  public static func getChallenge(name: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge> = nil)
+  public static func getChallengeResponses(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Challenge.Response]> = nil)
+  public static func getChallengeResponse(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge.Response> = nil)
   public static func favoriteChallenge(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func unfavoriteChallenge(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
-  public static func respondToChallenge(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge.ResponseInfo> = nil)
-  public static func respondToChallengeWithImage(id: Swift.Int, image: UIKit.UIImage, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge.ResponseInfo> = nil)
-  public static func respondToChallengeWithVideo(id: Swift.Int, videoUrl: Foundation.URL, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge.ResponseInfo> = nil)
-  public static func reEnterResponseToChallenge(id: Swift.Int, responseId: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func respondToChallenge(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge.ResponseInfo> = nil)
+  public static func respondToChallengeWithImage(id: Swift.Int, image: UIKit.UIImage, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge.ResponseInfo> = nil)
+  public static func respondToChallengeWithVideo(id: Swift.Int, videoUrl: Foundation.URL, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Challenge.ResponseInfo> = nil)
+  public static func reEnterResponseToChallenge(id: Swift.Int, responseId: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func reEnterResponseToChallengeWithImage(id: Swift.Int, responseId: Swift.Int, image: UIKit.UIImage, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func reEnterResponseToChallengeWithVideo(id: Swift.Int, responseId: Swift.Int, videoUrl: Foundation.URL, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
 }
 public enum SurveyType : Swift.String, Swift.Codable, Swift.Equatable {
   case text
@@ -268,7 +276,7 @@ extension Receipt {
 extension Receipt.Item {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum ReferralsRequest : CheetahLoyaltyCore.URLRequestConvertible {
+public enum ReferralsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
   case generateReferralCode
   public var path: Swift.String {
     get
@@ -487,7 +495,7 @@ public struct Offer : Swift.Codable, Swift.Equatable {
   public var descriptionText: Swift.String
   public var details: Swift.String
   public var endDate: Swift.String
-  public var extraJSON: [Swift.String : CheetahLoyaltyCore.AnyCodable]
+  public var extraJSON: [Swift.String : CheetahLoyaltyUtils.AnyCodable]
   public var heading: Swift.String
   public var imageUrl: Swift.String
   public var internalUrl: Swift.String
@@ -500,7 +508,7 @@ public struct Offer : Swift.Codable, Swift.Equatable {
   public var thumbnailUrl: Swift.String
   public var type: CheetahLoyaltyCore.Offer.OfferType
   public var url: Swift.String
-  public init(id: Swift.Int, action: Swift.String, barcode: Swift.String, barcodeStandard: Swift.String, body: Swift.String, categories: [CheetahLoyaltyCore.Offer.Category], clipped: Swift.Bool, descriptionText: Swift.String, details: Swift.String, endDate: Swift.String, extraJSON: [Swift.String : CheetahLoyaltyCore.AnyCodable], heading: Swift.String, imageUrl: Swift.String, internalUrl: Swift.String, isFavorited: Swift.Bool, responses: [CheetahLoyaltyCore.Offer.Response], startDate: Swift.String, subheading: Swift.String, targetObject: CheetahLoyaltyCore.Offer.TargetObject?, targetUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahLoyaltyCore.Offer.OfferType, url: Swift.String)
+  public init(id: Swift.Int, action: Swift.String, barcode: Swift.String, barcodeStandard: Swift.String, body: Swift.String, categories: [CheetahLoyaltyCore.Offer.Category], clipped: Swift.Bool, descriptionText: Swift.String, details: Swift.String, endDate: Swift.String, extraJSON: [Swift.String : CheetahLoyaltyUtils.AnyCodable], heading: Swift.String, imageUrl: Swift.String, internalUrl: Swift.String, isFavorited: Swift.Bool, responses: [CheetahLoyaltyCore.Offer.Response], startDate: Swift.String, subheading: Swift.String, targetObject: CheetahLoyaltyCore.Offer.TargetObject?, targetUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahLoyaltyCore.Offer.OfferType, url: Swift.String)
   public enum OfferType : Swift.Codable, Swift.Equatable {
     case barcode
     case certificate
@@ -587,26 +595,26 @@ extension Offer.TargetObject {
 extension Offer.ResponseInfo {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum MembersRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getConnections(parameters: CheetahLoyaltyCore.Parameters?)
-  case getMembers(parameters: CheetahLoyaltyCore.Parameters?)
+public enum MembersRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getConnections(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getMembers(parameters: CheetahLoyaltyUtils.Parameters?)
   case acceptConnection(memberID: Swift.String)
   case connect(memberID: Swift.String, message: Swift.String)
   case get(memberID: Swift.String)
   case encrypt(memberAttribute: Swift.String)
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum MembersAPI {
-  public static func getConnections(with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Member]> = nil)
-  public static func getMembers(with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Member]> = nil)
+  public static func getConnections(with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Member]> = nil)
+  public static func getMembers(with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Member]> = nil)
   public static func acceptConnection(memberID: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func connect(memberID: Swift.String, message: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func get(memberID: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Member> = nil)
@@ -710,22 +718,22 @@ extension Poll {
 extension Poll.Result {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum DevicesRequest : CheetahLoyaltyCore.URLRequestConvertible {
+public enum DevicesRequest : CheetahLoyaltyUtils.URLRequestConvertible {
   case registerDevice(deviceToken: Swift.String, deviceID: Swift.String)
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum DevicesAPI {
   public static func registerDevice(deviceToken: Swift.String, deviceID: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
 }
-public enum ContentRequest : CheetahLoyaltyCore.URLRequestConvertible {
+public enum ContentRequest : CheetahLoyaltyUtils.URLRequestConvertible {
   case getContentTokens
   case getContentPages
   case getContentPage(internalName: Swift.String)
@@ -756,21 +764,21 @@ public struct Certificate : Swift.Codable, Swift.Equatable {
 extension Certificate {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum BadgesRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getBadges(parameters: CheetahLoyaltyCore.Parameters?)
-  case getEarnedBadges(parameters: CheetahLoyaltyCore.Parameters?)
-  case getEarnedBadge(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
+public enum BadgesRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getBadges(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getEarnedBadges(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getEarnedBadge(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum BadgesAPI {
-  public static func getBadges(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Badge]> = nil)
-  public static func getEarnedBadges(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Badge]> = nil)
-  public static func getEarnedBadge(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Badge> = nil)
+  public static func getBadges(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Badge]> = nil)
+  public static func getEarnedBadges(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Badge]> = nil)
+  public static func getEarnedBadge(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Badge> = nil)
 }
 public struct ContentToken : Swift.Codable, Swift.Equatable {
   public let token: [Swift.String : CheetahLoyaltyCore.ContentToken.Value]
@@ -854,21 +862,21 @@ extension Leaderboard {
 extension Leaderboard.Feed {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum GiftCardsRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getGiftCards(parameters: CheetahLoyaltyCore.Parameters?)
+public enum GiftCardsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getGiftCards(parameters: CheetahLoyaltyUtils.Parameters?)
   case getPaymentClientToken
-  case getTransactions(cardNumber: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
+  case getTransactions(cardNumber: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
   case add(cardNumber: Swift.String, pin: Swift.String)
   case purchaseGiftCard(nonce: Swift.String, amount: Swift.Double, giftCardClass: Swift.String)
   case topUp(cardNumber: Swift.String, nonce: Swift.String, amount: Swift.Double)
   case update(giftCard: CheetahLoyaltyCore.GiftCard)
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
@@ -878,107 +886,69 @@ public enum GiftCardsAPI {
   public static func topUp(cardNumber: Swift.String, nonce: Swift.String, with amount: Swift.Double, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func update(giftCard: CheetahLoyaltyCore.GiftCard, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func getPaymentClientToken(completion: CheetahLoyaltyCore.ResponseCompletion<Swift.String> = nil)
-  public static func getGiftCards(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.GiftCard]> = nil)
-  public static func getTransactions(cardNumber: Swift.String, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.GiftCard.Transaction]> = nil)
+  public static func getGiftCards(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.GiftCard]> = nil)
+  public static func getTransactions(cardNumber: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.GiftCard.Transaction]> = nil)
 }
-public enum ReceiptsRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getReceipts(parameters: CheetahLoyaltyCore.Parameters?)
-  case getReceipt(id: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
+public enum ReceiptsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getReceipts(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getReceipt(id: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
   case submitReceipt(image: UIKit.UIImage)
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var multipartAttachments: Foundation.URLRequest.MultipartAttachments? {
+  public var multipartAttachments: CheetahLoyaltyUtils.MultipartAttachments? {
     get
   }
 }
 public enum ReceiptsAPI {
-  public static func getReceipts(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Receipt]> = nil)
-  public static func getReceipt(id: Swift.String, with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Receipt> = nil)
+  public static func getReceipts(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Receipt]> = nil)
+  public static func getReceipt(id: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Receipt> = nil)
   public static func submitReceipt(image: UIKit.UIImage, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Receipt> = nil)
 }
-public enum HouseholdRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case createMember(parameters: CheetahLoyaltyCore.Parameters?)
-  case addMember(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
-  case removeMember(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
+public enum HouseholdRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case createMember(parameters: CheetahLoyaltyUtils.Parameters?)
+  case addMember(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
+  case removeMember(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum HouseholdAPI {
-  public static func createMember(with parameters: CheetahLoyaltyCore.Parameters, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
-  public static func addMember(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
-  public static func removeMember(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func createMember(with parameters: CheetahLoyaltyUtils.Parameters, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func addMember(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func removeMember(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
 }
-public enum FeedbacksRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case submitWithParam(parameters: CheetahLoyaltyCore.Parameters?)
+public enum FeedbacksRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case submitWithParam(parameters: CheetahLoyaltyUtils.Parameters?)
   case submitWithSubjectAndBody(subject: Swift.String, body: Swift.String)
   case getFeedbackCategories
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
 }
 public enum FeedbacksAPI {
-  public static func submitFeedback(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func submitFeedback(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func sendFeedback(subject: Swift.String, body: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func getFeedbackCategories(completion: CheetahLoyaltyCore.ResponseCompletion<[Swift.String : CheetahLoyaltyCore.FeedbackCategory]> = nil)
   public static func getFeedbackContent(completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.StaticFile> = nil)
-}
-public protocol URLRequestConvertible {
-  var path: Swift.String { get }
-  var method: CheetahLoyaltyCore.HTTPMethod { get }
-  var parameters: CheetahLoyaltyCore.Parameters? { get }
-  var headers: CheetahLoyaltyCore.HTTPHeaders? { get }
-  var multipartAttachments: Foundation.URLRequest.MultipartAttachments? { get }
-  func asURLRequest(headers additionalHeaders: CheetahLoyaltyCore.HTTPHeaders, parameters additionalParameters: CheetahLoyaltyCore.Parameters, attachments additionalAttachements: Foundation.URLRequest.MultipartAttachments) throws -> Foundation.URLRequest
-}
-extension URLRequestConvertible {
-  public var headers: CheetahLoyaltyCore.HTTPHeaders? {
-    get
-  }
-  public var path: Swift.String {
-    get
-  }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
-    get
-  }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
-    get
-  }
-  public var multipartAttachments: Foundation.URLRequest.MultipartAttachments? {
-    get
-  }
-  public func asURLRequest(headers additionalHeaders: CheetahLoyaltyCore.HTTPHeaders = [:], parameters additionalParameters: CheetahLoyaltyCore.Parameters = [:], attachments additionalAttachements: Foundation.URLRequest.MultipartAttachments = []) throws -> Foundation.URLRequest
-}
-extension URLRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  public func asURLRequest() throws -> Foundation.URLRequest
-}
-public protocol URLConvertible {
-  func asURL() throws -> Foundation.URL
-}
-extension String : CheetahLoyaltyCore.URLConvertible {
-  public func asURL() throws -> Foundation.URL
-}
-extension URL : CheetahLoyaltyCore.URLConvertible {
-  public func asURL() throws -> Foundation.URL
 }
 public struct UpgradeCheck : Swift.Codable, Swift.Equatable {
   public enum Action : Swift.String, Swift.Codable {
@@ -1040,20 +1010,20 @@ extension Activity {
 extension Activity.Detail {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum PlacesRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getPlacesWithParameters(parameters: CheetahLoyaltyCore.Parameters?)
-  case getPlacesWithQuery(query: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
-  case getPlacesNearbyCoordinates(latitude: Swift.Double, longitude: Swift.Double, onlyWithClientEvents: Swift.Bool, parameters: CheetahLoyaltyCore.Parameters?)
-  case getPlacesNearbyAddress(address: Swift.String, onlyWithClientEvents: Swift.Bool, parameters: CheetahLoyaltyCore.Parameters?)
+public enum PlacesRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getPlacesWithParameters(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getPlacesWithQuery(query: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getPlacesNearbyCoordinates(latitude: Swift.Double, longitude: Swift.Double, onlyWithClientEvents: Swift.Bool, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getPlacesNearbyAddress(address: Swift.String, onlyWithClientEvents: Swift.Bool, parameters: CheetahLoyaltyUtils.Parameters?)
   case getOffers(forPlaceId: Swift.Int, clientEventType: CheetahLoyaltyCore.Place.ClientEventType)
-  case getPlace(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
-  case getPlacesWithIntegrationID(integrationID: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
-  case getPlaceCategories(parameters: CheetahLoyaltyCore.Parameters?)
-  case getPlacesNearby(parameters: CheetahLoyaltyCore.Parameters?)
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  case getPlace(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getPlacesWithIntegrationID(integrationID: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getPlaceCategories(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getPlacesNearby(parameters: CheetahLoyaltyUtils.Parameters?)
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
   public var path: Swift.String {
@@ -1061,15 +1031,15 @@ public enum PlacesRequest : CheetahLoyaltyCore.URLRequestConvertible {
   }
 }
 public enum PlacesAPI {
-  public static func getPlaces(with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Place]> = nil)
-  public static func getPlaces(query: Swift.String, with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Place]> = nil)
-  public static func getPlaces(integrationId: Swift.String, with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Place]> = nil)
-  public static func getPlacesNearby(coordinates: (latitude: Swift.Double, longitude: Swift.Double), onlyWithClientEvents: Swift.Bool, with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Place]> = nil)
-  public static func getPlacesNearby(address: Swift.String, onlyWithClientEvents: Swift.Bool, with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Place]> = nil)
-  public static func getOffers(placeId: Swift.Int, clientEventType: CheetahLoyaltyCore.Place.ClientEventType, with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Offer]> = nil)
-  public static func getPlace(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Place> = nil)
-  public static func getPlaceCategories(with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Place.Category]> = nil)
-  public static func getPlacesNearby(with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.NearbyPlaces> = nil)
+  public static func getPlaces(with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Place]> = nil)
+  public static func getPlaces(query: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Place]> = nil)
+  public static func getPlaces(integrationId: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Place]> = nil)
+  public static func getPlacesNearby(coordinates: (latitude: Swift.Double, longitude: Swift.Double), onlyWithClientEvents: Swift.Bool, with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Place]> = nil)
+  public static func getPlacesNearby(address: Swift.String, onlyWithClientEvents: Swift.Bool, with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Place]> = nil)
+  public static func getOffers(placeId: Swift.Int, clientEventType: CheetahLoyaltyCore.Place.ClientEventType, with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Offer]> = nil)
+  public static func getPlace(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Place> = nil)
+  public static func getPlaceCategories(with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Place.Category]> = nil)
+  public static func getPlacesNearby(with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.NearbyPlaces> = nil)
 }
 public struct CountriesStates : Swift.Codable, Swift.Equatable {
   public var countries: [CheetahLoyaltyCore.Country]
@@ -1120,27 +1090,27 @@ public struct Code : Swift.Codable, Swift.Equatable {
 extension Code {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum ProductsRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getProducts(category: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
+public enum ProductsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getProducts(category: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
   case getCategories
-  case loadProductComponents(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
+  case loadProductComponents(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
   case prepareClientToken
-  case getOrders(parameters: CheetahLoyaltyCore.Parameters?)
-  case getOrder(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
+  case getOrders(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getOrder(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum ProductsAPI {
-  public static func getProducts(category: Swift.String, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Product]> = nil)
+  public static func getProducts(category: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Product]> = nil)
   public static func getCategories(completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Product.Category]> = nil)
-  public static func loadProductComponents(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Product> = nil)
+  public static func loadProductComponents(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Product> = nil)
   public static func prepareClientToken(completion: CheetahLoyaltyCore.ResponseCompletion<Swift.String> = nil)
-  public static func getOrders(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Order]> = nil)
-  public static func getOrder(with id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Order> = nil)
+  public static func getOrders(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Order]> = nil)
+  public static func getOrder(with id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Order> = nil)
 }
 public struct NewsFeed : Swift.Codable, Swift.Equatable {
   public var allowedToPost: Swift.Bool
@@ -1154,68 +1124,68 @@ public struct NewsFeed : Swift.Codable, Swift.Equatable {
 extension NewsFeed {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum EventsRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getEvents(parameters: CheetahLoyaltyCore.Parameters?)
-  case getEventById(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
-  case getEventByName(name: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
+public enum EventsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getEvents(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getEventById(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getEventByName(name: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
   case favoriteEvent(id: Swift.Int)
   case unfavoriteEvent(id: Swift.Int)
   case respondToEvent(id: Swift.Int, latitude: Swift.Double, longitude: Swift.Double)
-  case cancelEvent(eventResponseId: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
-  case getEventsDates(parameters: CheetahLoyaltyCore.Parameters?)
-  case getEventsResponses(parameters: CheetahLoyaltyCore.Parameters?)
-  case getEventResponse(id: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
-  case getCategories(parameters: CheetahLoyaltyCore.Parameters?)
+  case cancelEvent(eventResponseId: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getEventsDates(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getEventsResponses(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getEventResponse(id: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getCategories(parameters: CheetahLoyaltyUtils.Parameters?)
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var headers: CheetahLoyaltyCore.HTTPHeaders? {
+  public var headers: CheetahLoyaltyUtils.HTTPHeaders? {
     get
   }
 }
 public enum EventsAPI {
-  public static func getEvents(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Event]> = nil)
-  public static func getEvent(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Event> = nil)
-  public static func getEvent(name: Swift.String, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Event> = nil)
+  public static func getEvents(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Event]> = nil)
+  public static func getEvent(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Event> = nil)
+  public static func getEvent(name: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Event> = nil)
   public static func favoriteEvent(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func unfavoriteEvent(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func respondToEvent(id: Swift.Int, latitude: Swift.Double, longitude: Swift.Double, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Event.Response> = nil)
-  public static func cancelEvent(responseId: Swift.String, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Event.Response> = nil)
-  public static func getEventResponses(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Event.Response]> = nil)
-  public static func getEventResponse(id: Swift.String, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Event.Response> = nil)
-  public static func getCategories(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Event.Category]> = nil)
-  public static func getEventDates(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Event.Date]> = nil)
+  public static func cancelEvent(responseId: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Event.Response> = nil)
+  public static func getEventResponses(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Event.Response]> = nil)
+  public static func getEventResponse(id: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Event.Response> = nil)
+  public static func getCategories(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Event.Category]> = nil)
+  public static func getEventDates(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Event.Date]> = nil)
 }
-public enum GroupsRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getGroups(parameters: CheetahLoyaltyCore.Parameters?)
-  case getGroupsJoined(parameters: CheetahLoyaltyCore.Parameters?)
-  case getGroupsClasses(parameters: CheetahLoyaltyCore.Parameters?)
-  case getGroupMembersInGroupId(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
-  case joinGroup(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
-  case leaveGroup(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
+public enum GroupsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getGroups(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getGroupsJoined(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getGroupsClasses(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getGroupMembersInGroupId(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
+  case joinGroup(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
+  case leaveGroup(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum GroupsAPI {
-  public static func getGroups(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Group]> = nil)
-  public static func getGroupsJoined(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Group]> = nil)
-  public static func getGroupsClasses(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.GroupClass]> = nil)
-  public static func getGroupMembersInGroup(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Member]> = nil)
-  public static func joinGroup(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
-  public static func leaveGroup(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func getGroups(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Group]> = nil)
+  public static func getGroupsJoined(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Group]> = nil)
+  public static func getGroupsClasses(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.GroupClass]> = nil)
+  public static func getGroupMembersInGroup(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Member]> = nil)
+  public static func joinGroup(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func leaveGroup(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
 }
 public struct APIError : Swift.Decodable, Swift.Error {
   public let code: Swift.Int
@@ -1235,19 +1205,19 @@ extension APIError : Foundation.LocalizedError {
 extension APIError {
   public static func unknownError() -> CheetahLoyaltyCore.APIError
 }
-public enum AuthenticationRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case logIn(parameters: CheetahLoyaltyCore.Parameters?)
+public enum AuthenticationRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case logIn(parameters: CheetahLoyaltyUtils.Parameters?)
   case refreshToken(token: Swift.String)
-  case signUp(parameters: CheetahLoyaltyCore.Parameters?)
+  case signUp(parameters: CheetahLoyaltyUtils.Parameters?)
   case resendEmailConfirmation(email: Swift.String)
   case logOut(token: Swift.String)
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
 }
@@ -1273,14 +1243,14 @@ public enum AuthenticationAPI {
       get
     }
   }
-  public static func logIn(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AuthenticationInfo> = nil)
+  public static func logIn(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AuthenticationInfo> = nil)
   public static func logIn(email: Swift.String, password: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AuthenticationInfo> = nil)
   public static func logIn(phoneNumber: Swift.String, password: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AuthenticationInfo> = nil)
   public static func logIn(socialNetwork: CheetahLoyaltyCore.AuthenticationAPI.SocialLoginType, accessToken: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AuthenticationInfo> = nil)
   public static func refreshToken(refreshToken: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AuthenticationInfo> = nil)
-  public static func signUp(with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AuthenticationInfo> = nil)
+  public static func signUp(with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AuthenticationInfo> = nil)
   public static func resendEmailConfirmation(email: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.String> = nil)
-  public static func logOut(completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AnyCodable> = nil)
+  public static func logOut(completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyUtils.AnyCodable> = nil)
 }
 public struct Product : Swift.Codable, Swift.Equatable {
   public var id: Swift.Int
@@ -1378,23 +1348,23 @@ extension Product.Component {
 extension Product.Category {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum PreferencesRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getPreferences(parameters: CheetahLoyaltyCore.Parameters?)
+public enum PreferencesRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getPreferences(parameters: CheetahLoyaltyUtils.Parameters?)
   case addDomain(domain: Swift.String, preferenceName: Swift.String)
   case deleteDomain(domain: Swift.String, preferenceName: Swift.String)
   case selectDomains(domains: [Swift.String], preferenceName: Swift.String, isMultiSelect: Swift.Bool)
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum PreferencesAPI {
-  public static func getPreferences(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Preference]> = nil)
+  public static func getPreferences(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Preference]> = nil)
   public static func addDomain(domain: Swift.String, preferenceName: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func deleteDomain(domain: Swift.String, preferenceName: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func selectDomains(domains: [Swift.String], preferenceName: Swift.String, isMultiSelect: Swift.Bool, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
@@ -1473,22 +1443,22 @@ extension Order.Item {
 extension Order.Place {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum LeaderboardsRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getLeaderboards(parameters: CheetahLoyaltyCore.Parameters?)
+public enum LeaderboardsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getLeaderboards(parameters: CheetahLoyaltyUtils.Parameters?)
   case getLeaderboardForPage(page: Swift.Int)
-  case getLeaderboard(name: Swift.String, category: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
+  case getLeaderboard(name: Swift.String, category: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
   case getAroundMeLeaderboard(name: Swift.String, page: Swift.Int, size: Swift.Int, buffer: Swift.Int)
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum LeaderboardsAPI {
-  public static func getLeaderboards(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Leaderboard]> = nil)
+  public static func getLeaderboards(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Leaderboard]> = nil)
   public static func getLeaderboards(forPage page: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Leaderboard]> = nil)
-  public static func getLeaderboard(name: Swift.String, category: Swift.String, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Leaderboard]> = nil)
+  public static func getLeaderboard(name: Swift.String, category: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Leaderboard]> = nil)
   public static func getAroundMeLeaderboard(name: Swift.String, page: Swift.Int, size: Swift.Int, buffer: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Leaderboard.Feed> = nil)
 }
 public struct Coupon : Swift.Codable, Swift.Equatable {
@@ -1503,17 +1473,17 @@ public struct Coupon : Swift.Codable, Swift.Equatable {
 extension Coupon {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum MetaReferencesRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getStates(parameters: CheetahLoyaltyCore.Parameters?)
+public enum MetaReferencesRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getStates(parameters: CheetahLoyaltyUtils.Parameters?)
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum MetaReferencesAPI {
-  public static func getCountriesWithStates(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Country]> = nil)
+  public static func getCountriesWithStates(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Country]> = nil)
 }
 public struct Host : Swift.Codable, Swift.Equatable {
   public var id: Swift.Int
@@ -1635,45 +1605,45 @@ public struct StaticFile : Swift.Codable, Swift.Equatable {
 extension StaticFile {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum RewardsRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getRewards(parameters: CheetahLoyaltyCore.Parameters?, showFavorites: Swift.Bool)
-  case getReward(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
-  case getRewardWithName(name: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
+public enum RewardsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getRewards(parameters: CheetahLoyaltyUtils.Parameters?, showFavorites: Swift.Bool)
+  case getReward(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getRewardWithName(name: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
   case favoriteReward(id: Swift.Int)
   case unfavoriteReward(id: Swift.Int)
-  case redeemRewardWithAward(rewardId: Swift.Int, awardId: Swift.Int?, address: [Swift.String : Any]?, isResponse: Swift.Bool, parameters: CheetahLoyaltyCore.Parameters?)
+  case redeemRewardWithAward(rewardId: Swift.Int, awardId: Swift.Int?, address: [Swift.String : Any]?, isResponse: Swift.Bool, parameters: CheetahLoyaltyUtils.Parameters?)
   case redeemRewardWithNonce(rewardId: Swift.Int, nonce: Swift.String, currency: Swift.String, value: Swift.Double)
-  case getAwards(parameters: CheetahLoyaltyCore.Parameters?)
-  case getAward(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
-  case getRedemptions(parameters: CheetahLoyaltyCore.Parameters?)
+  case getAwards(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getAward(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getRedemptions(parameters: CheetahLoyaltyUtils.Parameters?)
   case getRedemption(id: Swift.Int)
   case cancelRedemption(id: Swift.Int)
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum RewardsAPI {
-  public static func getRewards(with parameters: CheetahLoyaltyCore.Parameters? = nil, showFavorites: Swift.Bool, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Reward]> = nil)
-  public static func getReward(name: Swift.String, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Reward> = nil)
-  public static func getReward(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Reward> = nil)
+  public static func getRewards(with parameters: CheetahLoyaltyUtils.Parameters? = nil, showFavorites: Swift.Bool, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Reward]> = nil)
+  public static func getReward(name: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Reward> = nil)
+  public static func getReward(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Reward> = nil)
   public static func favoriteReward(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func unfavoriteReward(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
-  public static func redeemReward(id: Swift.Int, awardId: Swift.Int?, address: [Swift.String : Any]?, isResponse: Swift.Bool, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Reward.ResponseInfo> = nil)
+  public static func redeemReward(id: Swift.Int, awardId: Swift.Int?, address: [Swift.String : Any]?, isResponse: Swift.Bool, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Reward.ResponseInfo> = nil)
   public static func redeemReward(id: Swift.Int, nonce: Swift.String, currency: Swift.String, value: Swift.Double, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Reward.ResponseInfo> = nil)
-  public static func getAwards(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Award]> = nil)
-  public static func getAward(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Award> = nil)
-  public static func getRedemptions(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Reward.Response]> = nil)
+  public static func getAwards(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Award]> = nil)
+  public static func getAward(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Award> = nil)
+  public static func getRedemptions(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Reward.Response]> = nil)
   public static func getRedemption(with id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Reward.Response> = nil)
   public static func cancelRedemption(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Reward.Response> = nil)
 }
 public struct AuthenticationInfo : Swift.Decodable, Swift.Equatable {
-  public typealias Settings = [Swift.String : CheetahLoyaltyCore.AnyDecodable]
+  public typealias Settings = [Swift.String : CheetahLoyaltyUtils.AnyDecodable]
   public let accessToken: Swift.String
   public let tokenType: Swift.String
   public let expiresIn: Swift.Double
@@ -1694,30 +1664,6 @@ public struct AuthenticationInfo : Swift.Decodable, Swift.Equatable {
 }
 extension AuthenticationInfo {
   public init(from decoder: Swift.Decoder) throws
-}
-extension Result {
-  public var isSuccess: Swift.Bool {
-    get
-  }
-  public var isFailure: Swift.Bool {
-    get
-  }
-  public var value: Success? {
-    get
-  }
-  public var error: Swift.Error? {
-    get
-  }
-}
-extension Result : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
-extension Result : Swift.CustomDebugStringConvertible {
-  public var debugDescription: Swift.String {
-    get
-  }
 }
 public typealias ResponseCompletion<T> = ((Swift.Result<CheetahLoyaltyCore.APIResponse<T>, Swift.Error>) -> Swift.Void)?
 public struct APIResponse<Value> {
@@ -1756,17 +1702,17 @@ extension ResponseError.ResponseSerializationFailureReason : Foundation.Localize
     get
   }
 }
-public enum UpgradeCheckRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getUpgradeCheck(parameters: CheetahLoyaltyCore.Parameters?)
+public enum UpgradeCheckRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getUpgradeCheck(parameters: CheetahLoyaltyUtils.Parameters?)
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum UpgradeCheckAPI {
-  public static func getUpgradeCheck(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.UpgradeCheck> = nil)
+  public static func getUpgradeCheck(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.UpgradeCheck> = nil)
 }
 public struct Reward : Swift.Codable, Swift.Equatable {
   public var id: Swift.Int
@@ -1800,7 +1746,7 @@ public struct Reward : Swift.Codable, Swift.Equatable {
   public var expirationInterval: Swift.Int?
   public var expirationPeriod: Swift.String
   public var respondableInfo: CheetahLoyaltyCore.RespondableInfo?
-  public var embedded: CheetahLoyaltyCore.AnyCodable?
+  public var embedded: CheetahLoyaltyUtils.AnyCodable?
   public var isAcceptanceRequired: Swift.Bool
   public var acceptanceText: Swift.String
   public var acceptanceUrl: Swift.String
@@ -1811,8 +1757,8 @@ public struct Reward : Swift.Codable, Swift.Equatable {
   public var hasRespondableCombination: Swift.Bool {
     get
   }
-  public var extraJSON: [Swift.String : CheetahLoyaltyCore.AnyCodable]
-  public init(id: Swift.Int, sku: Swift.String, heading: Swift.String, subHeading: Swift.String, body: Swift.String, details: Swift.String, metricDisplayName: Swift.String, imageUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahLoyaltyCore.Reward.RewardType, startDate: Swift.String, endDate: Swift.String, drawDate: Swift.String, attributes: [CheetahLoyaltyCore.Reward.Attribute], requiredAttributes: [CheetahLoyaltyCore.Reward.Class], combinations: [CheetahLoyaltyCore.Reward.AttributeCombination], selectedCombination: CheetahLoyaltyCore.Reward.AttributeCombination?, redemptionOptions: [CheetahLoyaltyCore.Reward.RedemptionOptions], points: Swift.String, responseCount: Swift.Int, isRespondable: Swift.Bool, isFavorited: Swift.Bool, addressRequired: Swift.Bool, isAwarded: Swift.Bool, paymentMethod: Swift.String, action: Swift.String, responseCurrencyAmount: Swift.String, responseCurrencyName: Swift.String, expirationInterval: Swift.Int?, expirationPeriod: Swift.String, respondableInfo: CheetahLoyaltyCore.RespondableInfo?, embedded: CheetahLoyaltyCore.AnyCodable?, isAcceptanceRequired: Swift.Bool, acceptanceText: Swift.String, acceptanceUrl: Swift.String, responseMessage: Swift.String, businessValue: Swift.String, maximumMetric: Swift.String, minimumMetric: Swift.String, extraJSON: [Swift.String : CheetahLoyaltyCore.AnyCodable])
+  public var extraJSON: [Swift.String : CheetahLoyaltyUtils.AnyCodable]
+  public init(id: Swift.Int, sku: Swift.String, heading: Swift.String, subHeading: Swift.String, body: Swift.String, details: Swift.String, metricDisplayName: Swift.String, imageUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahLoyaltyCore.Reward.RewardType, startDate: Swift.String, endDate: Swift.String, drawDate: Swift.String, attributes: [CheetahLoyaltyCore.Reward.Attribute], requiredAttributes: [CheetahLoyaltyCore.Reward.Class], combinations: [CheetahLoyaltyCore.Reward.AttributeCombination], selectedCombination: CheetahLoyaltyCore.Reward.AttributeCombination?, redemptionOptions: [CheetahLoyaltyCore.Reward.RedemptionOptions], points: Swift.String, responseCount: Swift.Int, isRespondable: Swift.Bool, isFavorited: Swift.Bool, addressRequired: Swift.Bool, isAwarded: Swift.Bool, paymentMethod: Swift.String, action: Swift.String, responseCurrencyAmount: Swift.String, responseCurrencyName: Swift.String, expirationInterval: Swift.Int?, expirationPeriod: Swift.String, respondableInfo: CheetahLoyaltyCore.RespondableInfo?, embedded: CheetahLoyaltyUtils.AnyCodable?, isAcceptanceRequired: Swift.Bool, acceptanceText: Swift.String, acceptanceUrl: Swift.String, responseMessage: Swift.String, businessValue: Swift.String, maximumMetric: Swift.String, minimumMetric: Swift.String, extraJSON: [Swift.String : CheetahLoyaltyUtils.AnyCodable])
   public enum RewardType : Swift.String, Swift.Codable {
     case badge
     case certificate
@@ -1876,8 +1822,8 @@ public struct Reward : Swift.Codable, Swift.Equatable {
     public var reward: CheetahLoyaltyCore.Reward?
     public var certificate: CheetahLoyaltyCore.Certificate?
     public var coupon: CheetahLoyaltyCore.Coupon?
-    public var notes: [CheetahLoyaltyCore.AnyCodable]
-    public init(id: Swift.Int, redemptionStatus: CheetahLoyaltyCore.Reward.Response.RedemptionStatus, memberName: Swift.String, memberId: Swift.String, redemptionAmount: Swift.String, metricName: Swift.String, redemptionUnit: Swift.String, metricDisplayName: Swift.String, metricAmount: Swift.String, sku: Swift.String, integrationId: Swift.String, shippingAddress: CheetahLoyaltyCore.Reward.Response.ShippingAddress?, imageUrl: Swift.String, thumbImageUrl: Swift.String, useStart: Swift.String, useEnd: Swift.String, createdAt: Swift.String, updatedAt: Swift.String, reward: CheetahLoyaltyCore.Reward?, certificate: CheetahLoyaltyCore.Certificate?, coupon: CheetahLoyaltyCore.Coupon?, notes: [CheetahLoyaltyCore.AnyCodable])
+    public var notes: [CheetahLoyaltyUtils.AnyCodable]
+    public init(id: Swift.Int, redemptionStatus: CheetahLoyaltyCore.Reward.Response.RedemptionStatus, memberName: Swift.String, memberId: Swift.String, redemptionAmount: Swift.String, metricName: Swift.String, redemptionUnit: Swift.String, metricDisplayName: Swift.String, metricAmount: Swift.String, sku: Swift.String, integrationId: Swift.String, shippingAddress: CheetahLoyaltyCore.Reward.Response.ShippingAddress?, imageUrl: Swift.String, thumbImageUrl: Swift.String, useStart: Swift.String, useEnd: Swift.String, createdAt: Swift.String, updatedAt: Swift.String, reward: CheetahLoyaltyCore.Reward?, certificate: CheetahLoyaltyCore.Certificate?, coupon: CheetahLoyaltyCore.Coupon?, notes: [CheetahLoyaltyUtils.AnyCodable])
     public enum RedemptionStatus : Swift.String, Swift.Codable {
       case pending
       case completed
@@ -1914,8 +1860,8 @@ public struct Reward : Swift.Codable, Swift.Equatable {
     public var responseMessage: Swift.String
     public var certificate: CheetahLoyaltyCore.Certificate?
     public var coupon: CheetahLoyaltyCore.Coupon?
-    public var embedded: CheetahLoyaltyCore.AnyCodable?
-    public init(responseId: Swift.Int, isRespondable: Swift.Bool, respondableInfo: CheetahLoyaltyCore.RespondableInfo?, responseMessage: Swift.String, certificate: CheetahLoyaltyCore.Certificate?, coupon: CheetahLoyaltyCore.Coupon?, embedded: CheetahLoyaltyCore.AnyCodable?)
+    public var embedded: CheetahLoyaltyUtils.AnyCodable?
+    public init(responseId: Swift.Int, isRespondable: Swift.Bool, respondableInfo: CheetahLoyaltyCore.RespondableInfo?, responseMessage: Swift.String, certificate: CheetahLoyaltyCore.Certificate?, coupon: CheetahLoyaltyCore.Coupon?, embedded: CheetahLoyaltyUtils.AnyCodable?)
     public static func == (a: CheetahLoyaltyCore.Reward.ResponseInfo, b: CheetahLoyaltyCore.Reward.ResponseInfo) -> Swift.Bool
   }
   public struct Category : Swift.Codable, Swift.Equatable {
@@ -2038,8 +1984,8 @@ public protocol MutableProfileAttribute {
   var label: Swift.String { get }
   var type: Swift.String { get }
   var domainList: [[Swift.String : Swift.String]] { get }
-  var value: CheetahLoyaltyCore.AnyCodable? { get set }
-  var defaultValue: CheetahLoyaltyCore.AnyCodable? { get set }
+  var value: CheetahLoyaltyUtils.AnyCodable? { get set }
+  var defaultValue: CheetahLoyaltyUtils.AnyCodable? { get set }
   var isHidden: Swift.Bool { get }
   var isReadOnly: Swift.Bool { get }
   var isOptional: Swift.Bool { get }
@@ -2054,8 +2000,8 @@ public struct ProfileAttribute : Swift.Codable, Swift.Equatable, CheetahLoyaltyC
   public var isHidden: Swift.Bool
   public var capitalized: Swift.Bool
   public var maxLength: Swift.Int
-  public var value: CheetahLoyaltyCore.AnyCodable?
-  public var defaultValue: CheetahLoyaltyCore.AnyCodable?
+  public var value: CheetahLoyaltyUtils.AnyCodable?
+  public var defaultValue: CheetahLoyaltyUtils.AnyCodable?
   public var domain: CheetahLoyaltyCore.ProfileAttribute.Domain?
   public var categories: [CheetahLoyaltyCore.ProfileAttribute.Category]
   public var domainList: [[Swift.String : Swift.String]] {
@@ -2064,7 +2010,7 @@ public struct ProfileAttribute : Swift.Codable, Swift.Equatable, CheetahLoyaltyC
   public var isOptional: Swift.Bool {
     get
   }
-  public init(name: Swift.String, label: Swift.String, type: Swift.String, description: Swift.String, isReadOnly: Swift.Bool, isRequired: Swift.Bool, isHidden: Swift.Bool, capitalized: Swift.Bool, maxLength: Swift.Int, value: CheetahLoyaltyCore.AnyCodable?, defaultValue: CheetahLoyaltyCore.AnyCodable?, domain: CheetahLoyaltyCore.ProfileAttribute.Domain?, categories: [CheetahLoyaltyCore.ProfileAttribute.Category])
+  public init(name: Swift.String, label: Swift.String, type: Swift.String, description: Swift.String, isReadOnly: Swift.Bool, isRequired: Swift.Bool, isHidden: Swift.Bool, capitalized: Swift.Bool, maxLength: Swift.Int, value: CheetahLoyaltyUtils.AnyCodable?, defaultValue: CheetahLoyaltyUtils.AnyCodable?, domain: CheetahLoyaltyCore.ProfileAttribute.Domain?, categories: [CheetahLoyaltyCore.ProfileAttribute.Category])
   public struct Domain : Swift.Codable, Swift.Equatable {
     public var list: [[Swift.String : Swift.String]]
     public init(list: [[Swift.String : Swift.String]])
@@ -2213,7 +2159,7 @@ public enum CoreNotification : CheetahLoyaltyUtils.CheetahNotification {
   public func hash(into hasher: inout Swift.Hasher)
 }
 extension Date {
-  public static var cheetahBirthdateFormat: Swift.String {
+  public static var CheetahBirthdateFormat: Swift.String {
     get
   }
   public static var CheetahDateFormat: Swift.String {
@@ -2222,14 +2168,14 @@ extension Date {
   public static var CheetahTimestampFormat: Swift.String {
     get
   }
-  public static func dateFrom(timestampString timestamp: Swift.String) -> Foundation.Date?
-  public static func dateFrom(formattedString string: Swift.String) -> Foundation.Date?
-  public var timestampString: Swift.String {
+  public static func cheetahDateFrom(timestampString timestamp: Swift.String) -> Foundation.Date?
+  public static func cheetahDateFrom(formattedString string: Swift.String) -> Foundation.Date?
+  public var cheetahTimestampString: Swift.String {
     get
   }
 }
 extension String {
-  public static func createPeriod(startDate: Swift.String, endDate: Swift.String) -> Swift.String
+  public static func createCheetahPeriod(startDate: Swift.String, endDate: Swift.String) -> Swift.String
 }
 public struct Award : Swift.Codable, Swift.Equatable {
   public var id: Swift.Int
@@ -2257,23 +2203,6 @@ public struct Award : Swift.Codable, Swift.Equatable {
 extension Award {
   public init(from decoder: Swift.Decoder) throws
 }
-public struct AnyDecodable : Swift.Decodable {
-  public let value: Any
-  public init<T>(_ value: T?)
-}
-extension AnyDecodable : Swift.Equatable {
-  public static func == (lhs: CheetahLoyaltyCore.AnyDecodable, rhs: CheetahLoyaltyCore.AnyDecodable) -> Swift.Bool
-}
-extension AnyDecodable : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
-extension AnyDecodable : Swift.CustomDebugStringConvertible {
-  public var debugDescription: Swift.String {
-    get
-  }
-}
 public struct Badge : Swift.Codable, Swift.Equatable {
   public var id: Swift.Int
   public var name: Swift.String
@@ -2295,16 +2224,16 @@ public struct Badge : Swift.Codable, Swift.Equatable {
 extension Badge {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum FriendsRequest : CheetahLoyaltyCore.URLRequestConvertible {
+public enum FriendsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
   case getFriends(leaderboard: Swift.String)
   case connectToFacebook(token: Swift.String)
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
@@ -2502,14 +2431,14 @@ public struct UpdateProfileChallengeResponseSetting : CheetahLoyaltyCore.Challen
     public var name: Swift.String
     public var label: Swift.String
     public var description: Swift.String
-    public var defaultValue: CheetahLoyaltyCore.AnyCodable?
+    public var defaultValue: CheetahLoyaltyUtils.AnyCodable?
     public var type: Swift.String
     public var isReadOnly: Swift.Bool
     public var expression: Swift.String
     public var timeToLive: Swift.String
-    public var value: CheetahLoyaltyCore.AnyCodable?
+    public var value: CheetahLoyaltyUtils.AnyCodable?
     public var isOptional: Swift.Bool
-    public init(name: Swift.String, label: Swift.String, description: Swift.String, defaultValue: CheetahLoyaltyCore.AnyCodable, type: Swift.String, isReadOnly: Swift.Bool, expression: Swift.String, timeToLive: Swift.String, value: CheetahLoyaltyCore.AnyCodable, isOptional: Swift.Bool)
+    public init(name: Swift.String, label: Swift.String, description: Swift.String, defaultValue: CheetahLoyaltyUtils.AnyCodable, type: Swift.String, isReadOnly: Swift.Bool, expression: Swift.String, timeToLive: Swift.String, value: CheetahLoyaltyUtils.AnyCodable, isOptional: Swift.Bool)
     public static func == (a: CheetahLoyaltyCore.UpdateProfileChallengeResponseSetting.Attribute, b: CheetahLoyaltyCore.UpdateProfileChallengeResponseSetting.Attribute) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
   }
@@ -2598,9 +2527,9 @@ public struct UserIdentity : Swift.Codable, Swift.Equatable {
 extension UserIdentity {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum NewsFeedRequest : CheetahLoyaltyCore.URLRequestConvertible {
+public enum NewsFeedRequest : CheetahLoyaltyUtils.URLRequestConvertible {
   case getNewsFeedFlags
-  case getPosts(parameters: CheetahLoyaltyCore.Parameters?)
+  case getPosts(parameters: CheetahLoyaltyUtils.Parameters?)
   case getPost(id: Swift.String)
   case addNewPost(body: Swift.String, assets: [Foundation.URL], feedName: Swift.String?)
   case deletePost(id: Swift.String)
@@ -2608,29 +2537,29 @@ public enum NewsFeedRequest : CheetahLoyaltyCore.URLRequestConvertible {
   case unlikePost(id: Swift.String)
   case flagPost(flag: Swift.String, id: Swift.String)
   case unflagPost(id: Swift.String)
-  case getComments(postId: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
+  case getComments(postId: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
   case addNewComment(body: Swift.String, postId: Swift.String)
   case deleteComment(commentId: Swift.String, postId: Swift.String)
   case likeComment(commentId: Swift.String, postId: Swift.String)
   case unlikeComment(commentId: Swift.String, postId: Swift.String)
   case flagComment(flag: Swift.String, commentId: Swift.String, postId: Swift.String)
   case unflagComment(commentId: Swift.String, postId: Swift.String)
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var multipartAttachments: Foundation.URLRequest.MultipartAttachments? {
+  public var multipartAttachments: CheetahLoyaltyUtils.MultipartAttachments? {
     get
   }
 }
 public enum NewsFeedAPI {
   public static func getFlags(completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Post.Flag]> = nil)
-  public static func getPosts(with parameters: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.NewsFeed> = nil)
+  public static func getPosts(with parameters: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.NewsFeed> = nil)
   public static func getPost(id: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Post> = nil)
   public static func addNewPost(body: Swift.String, assets: [Foundation.URL], feedName: Swift.String?, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Post> = nil)
   public static func deletePost(id: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
@@ -2638,49 +2567,13 @@ public enum NewsFeedAPI {
   public static func unlikePost(id: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func flagPost(flag: Swift.String, id: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func unflagPost(id: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
-  public static func getComments(postId: Swift.String, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Comment]> = nil)
+  public static func getComments(postId: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Comment]> = nil)
   public static func addNewComment(body: Swift.String, postId: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func deleteComment(withId id: Swift.String, postId: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func likeComment(id: Swift.String, postId: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func unlikeComment(id: Swift.String, postId: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func flagComment(id: Swift.String, postId: Swift.String, flag: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func unflagComment(id: Swift.String, postId: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
-}
-public struct AnyCodable : Swift.Codable {
-  public let value: Any
-  public init<T>(_ value: T?)
-}
-extension AnyCodable : Swift.Equatable {
-  public static func == (lhs: CheetahLoyaltyCore.AnyCodable, rhs: CheetahLoyaltyCore.AnyCodable) -> Swift.Bool
-}
-extension AnyCodable : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
-extension AnyCodable : Swift.CustomDebugStringConvertible {
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-extension AnyCodable : Swift.ExpressibleByNilLiteral, Swift.ExpressibleByBooleanLiteral, Swift.ExpressibleByIntegerLiteral, Swift.ExpressibleByFloatLiteral, Swift.ExpressibleByStringLiteral, Swift.ExpressibleByArrayLiteral, Swift.ExpressibleByDictionaryLiteral {
-  public init(nilLiteral: ())
-  public init(booleanLiteral value: Swift.Bool)
-  public init(integerLiteral value: Swift.Int)
-  public init(floatLiteral value: Swift.Double)
-  public init(extendedGraphemeClusterLiteral value: Swift.String)
-  public init(stringLiteral value: Swift.String)
-  public init(arrayLiteral elements: Any...)
-  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
-  public typealias StringLiteralType = Swift.String
-  public typealias BooleanLiteralType = Swift.Bool
-  public typealias IntegerLiteralType = Swift.Int
-  public typealias FloatLiteralType = Swift.Double
-  public typealias ArrayLiteralElement = Any
-  public typealias Key = Swift.AnyHashable
-  public typealias Value = Any
-  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
-  public typealias UnicodeScalarLiteralType = Swift.String
 }
 public struct OperatingDay : Swift.Codable, Swift.Equatable {
   public var operatingDay: Swift.String
@@ -2782,66 +2675,17 @@ extension NearbyPlaces {
 extension Place {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum HTTPMethod : Swift.String {
-  case delete
-  case get
-  case patch
-  case post
-  case put
-  public typealias RawValue = Swift.String
-  public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public typealias HTTPHeaders = [Swift.String : Swift.String]
-public typealias Parameters = [Swift.String : Any]
-public enum URLError : Swift.Error {
-  public enum ParameterEncodingFailureReason {
-    case missingURL
-    case jsonEncodingFailed(error: Swift.Error)
-  }
-  case invalidURL(url: CheetahLoyaltyCore.URLConvertible)
-  case parameterEncodingFailed(reason: CheetahLoyaltyCore.URLError.ParameterEncodingFailureReason)
-}
-extension URLError : Foundation.LocalizedError {
-  public var errorDescription: Swift.String? {
-    get
-  }
-}
-extension URLRequest {
-  public struct MultipartAttachment : Swift.Equatable {
-    public let name: Swift.String
-    public let fileName: Swift.String?
-    public let url: Foundation.URL?
-    public let data: Foundation.Data?
-    public var mimeType: Swift.String?
-    public init(name: Swift.String, fileName: Swift.String?, url: Foundation.URL?, data: Foundation.Data?, mimeType: Swift.String?)
-    public static func == (a: Foundation.URLRequest.MultipartAttachment, b: Foundation.URLRequest.MultipartAttachment) -> Swift.Bool
-  }
-  public typealias MultipartAttachments = [Foundation.URLRequest.MultipartAttachment]
-  public init(url: CheetahLoyaltyCore.URLConvertible, method: CheetahLoyaltyCore.HTTPMethod, headers: CheetahLoyaltyCore.HTTPHeaders? = nil) throws
-  public init(url: CheetahLoyaltyCore.URLConvertible, method: CheetahLoyaltyCore.HTTPMethod, headers: CheetahLoyaltyCore.HTTPHeaders? = nil, parameters: CheetahLoyaltyCore.Parameters?, multipartAttachments: Foundation.URLRequest.MultipartAttachments? = nil) throws
-  public mutating func encode(with parameters: CheetahLoyaltyCore.Parameters?) throws
-  public static func encode(_ urlRequest: inout Foundation.URLRequest, with parameters: CheetahLoyaltyCore.Parameters?) throws
-}
-extension URL {
-  public static let defaultBinaryMimeType: Swift.String
-  public var mimeType: Swift.String {
-    get
-  }
-}
-public enum CodesRequest : CheetahLoyaltyCore.URLRequestConvertible {
+public enum CodesRequest : CheetahLoyaltyUtils.URLRequestConvertible {
   case submit(barcode: Swift.String)
   case submitByCodeId(barcode: Swift.String, codeId: Swift.Int)
   case submitByCodeName(barcode: Swift.String, codeName: Swift.String)
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
@@ -3007,65 +2851,29 @@ extension GiftCard.Transaction {
 extension GiftCard.GiftCardType {
   public init(from decoder: Swift.Decoder) throws
 }
-public struct AnyEncodable : Swift.Encodable {
-  public let value: Any
-  public init<T>(_ value: T?)
-}
-extension AnyEncodable : Swift.Equatable {
-  public static func == (lhs: CheetahLoyaltyCore.AnyEncodable, rhs: CheetahLoyaltyCore.AnyEncodable) -> Swift.Bool
-}
-extension AnyEncodable : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
-extension AnyEncodable : Swift.CustomDebugStringConvertible {
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-extension AnyEncodable : Swift.ExpressibleByNilLiteral, Swift.ExpressibleByBooleanLiteral, Swift.ExpressibleByIntegerLiteral, Swift.ExpressibleByFloatLiteral, Swift.ExpressibleByStringLiteral, Swift.ExpressibleByArrayLiteral, Swift.ExpressibleByDictionaryLiteral {
-  public init(nilLiteral: ())
-  public init(booleanLiteral value: Swift.Bool)
-  public init(integerLiteral value: Swift.Int)
-  public init(floatLiteral value: Swift.Double)
-  public init(extendedGraphemeClusterLiteral value: Swift.String)
-  public init(stringLiteral value: Swift.String)
-  public init(arrayLiteral elements: Any...)
-  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
-  public typealias BooleanLiteralType = Swift.Bool
-  public typealias IntegerLiteralType = Swift.Int
-  public typealias FloatLiteralType = Swift.Double
-  public typealias StringLiteralType = Swift.String
-  public typealias ArrayLiteralElement = Any
-  public typealias Key = Swift.AnyHashable
-  public typealias Value = Any
-  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
-  public typealias UnicodeScalarLiteralType = Swift.String
-}
-public enum ProfileRequest : CheetahLoyaltyCore.URLRequestConvertible {
+public enum ProfileRequest : CheetahLoyaltyUtils.URLRequestConvertible {
   case changePassword(oldPassword: Swift.String, newPassword: Swift.String, confirmPassword: Swift.String)
   case connectProfile(token: Swift.String, provider: Swift.String)
   case disconnectProvider(provider: Swift.String)
   case getAccountSummary
   case getMemberProfile(memberID: Swift.String)
   case getProfile
-  case getProfileIdentities(parameters: CheetahLoyaltyCore.Parameters?)
+  case getProfileIdentities(parameters: CheetahLoyaltyUtils.Parameters?)
   case getProfileMetadata
   case submitReferralCode(code: Swift.String)
   case trackActiveUser
-  case updateProfile(parameters: CheetahLoyaltyCore.Parameters?)
+  case updateProfile(parameters: CheetahLoyaltyUtils.Parameters?)
   case updateAvatar(image: UIKit.UIImage)
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var multipartAttachments: Foundation.URLRequest.MultipartAttachments? {
+  public var multipartAttachments: CheetahLoyaltyUtils.MultipartAttachments? {
     get
   }
 }
@@ -3074,17 +2882,17 @@ public enum ProfileAPI {
   public static func connect(provider: Swift.String, token: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func disconnect(provider: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func getAccountSummary(completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AccountSummary> = nil)
-  public static func getMemberProfile(memberID: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AnyCodable> = nil)
-  public static func getProfile(completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AnyCodable> = nil)
-  public static func getProfileIdentities(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.UserIdentity]> = nil)
+  public static func getMemberProfile(memberID: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyUtils.AnyCodable> = nil)
+  public static func getProfile(completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyUtils.AnyCodable> = nil)
+  public static func getProfileIdentities(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.UserIdentity]> = nil)
   public static func getProfileMetadata(completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.ProfileAttribute]> = nil)
   public static func submit(referralCode: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func trackActiveUser(completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
-  public static func update(profileAttributes: CheetahLoyaltyCore.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func update(profileAttributes: CheetahLoyaltyUtils.Parameters?, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func update(avatar: UIKit.UIImage, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.String> = nil)
 }
-public enum MessagesRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getMessages(parameters: CheetahLoyaltyCore.Parameters?)
+public enum MessagesRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getMessages(parameters: CheetahLoyaltyUtils.Parameters?)
   case trackMessage(id: Swift.String, action: CheetahLoyaltyCore.MessagesRequest.TrackAction)
   case dismissMessage(id: Swift.String)
   public enum TrackAction : Swift.String {
@@ -3098,15 +2906,15 @@ public enum MessagesRequest : CheetahLoyaltyCore.URLRequestConvertible {
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum MessagesAPI {
-  public static func getMessages(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Message]> = nil)
+  public static func getMessages(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Message]> = nil)
   public static func trackMessage(id: Swift.String, action: CheetahLoyaltyCore.MessagesRequest.TrackAction = .opened, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func dismissMessage(id: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
 }
@@ -3170,7 +2978,7 @@ public class Configuration : Swift.Decodable {
   public func setCredentials(_ accessToken: Swift.String, refreshToken: Swift.String? = nil)
   public func deleteCredentials()
   public func deleteCredentialsIfNeeded()
-  public func send<T>(_ request: CheetahLoyaltyCore.URLRequestConvertible, modelKeyPath: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<T>) where T : Swift.Decodable
+  public func send<T>(_ request: CheetahLoyaltyUtils.URLRequestConvertible, modelKeyPath: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<T>) where T : Swift.Decodable
   @objc deinit
 }
 public struct Post : Swift.Codable, Swift.Equatable {
@@ -3216,7 +3024,7 @@ extension Post.Flag {
 extension Post.Owner {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum InfoRequest : CheetahLoyaltyCore.URLRequestConvertible {
+public enum InfoRequest : CheetahLoyaltyUtils.URLRequestConvertible {
   case getInfo
   public var path: Swift.String {
     get
@@ -3228,7 +3036,7 @@ public enum InfoRequest : CheetahLoyaltyCore.URLRequestConvertible {
   public func hash(into hasher: inout Swift.Hasher)
 }
 public enum InfoAPI {
-  public static func getInfo(completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.AnyCodable>)
+  public static func getInfo(completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyUtils.AnyCodable>)
 }
 public struct Member : Swift.Codable, Swift.Equatable {
   public var email: Swift.String
@@ -3320,38 +3128,38 @@ extension Member {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
-public enum PunchCardsRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getPunchCards(parameters: CheetahLoyaltyCore.Parameters?)
-  case getPunchCard(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
-  case getPunchCardWithName(name: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
-  case getTypeOfPunchCardWithName(name: Swift.String, parameters: CheetahLoyaltyCore.Parameters?)
+public enum PunchCardsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getPunchCards(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getPunchCard(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getPunchCardWithName(name: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getTypeOfPunchCardWithName(name: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum PunchCardsAPI {
-  public static func getPunchCards(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.PunchCard]> = nil)
-  public static func getPunchCard(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.PunchCard> = nil)
-  public static func getPunchCard(name: Swift.String, parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.PunchCard> = nil)
-  public static func getPunchCardType(name: Swift.String, parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.PunchCard.PunchCardType> = nil)
+  public static func getPunchCards(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.PunchCard]> = nil)
+  public static func getPunchCard(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.PunchCard> = nil)
+  public static func getPunchCard(name: Swift.String, parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.PunchCard> = nil)
+  public static func getPunchCardType(name: Swift.String, parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.PunchCard.PunchCardType> = nil)
 }
-public enum ActivitiesRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getActivities(parameters: CheetahLoyaltyCore.Parameters?)
+public enum ActivitiesRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getActivities(parameters: CheetahLoyaltyUtils.Parameters?)
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum ActivitiesAPI {
-  public static func getActivities(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Activity]> = nil)
+  public static func getActivities(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Activity]> = nil)
 }
 public struct FacebookFriend : Swift.Codable, Swift.Equatable {
   public var id: Swift.Int
@@ -3370,43 +3178,43 @@ public struct FacebookFriend : Swift.Codable, Swift.Equatable {
 extension FacebookFriend {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum OffersRequest : CheetahLoyaltyCore.URLRequestConvertible {
-  case getOffers(parameters: CheetahLoyaltyCore.Parameters?)
-  case getOffersWithResponses(parameters: CheetahLoyaltyCore.Parameters?)
-  case getFavedOffers(parameters: CheetahLoyaltyCore.Parameters?)
-  case getOffer(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
+public enum OffersRequest : CheetahLoyaltyUtils.URLRequestConvertible {
+  case getOffers(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getOffersWithResponses(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getFavedOffers(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getOffer(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
   case favoriteOffer(id: Swift.Int)
   case unfavoriteOffer(id: Swift.Int)
   case clipOffer(id: Swift.Int)
   case unclipOffer(id: Swift.Int)
   case respondToOffer(id: Swift.Int)
-  case getOfferResponses(parameters: CheetahLoyaltyCore.Parameters?)
-  case getOfferResponse(id: Swift.Int, parameters: CheetahLoyaltyCore.Parameters?)
+  case getOfferResponses(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getOfferResponse(id: Swift.Int, parameters: CheetahLoyaltyUtils.Parameters?)
   case clipOfferResponse(id: Swift.Int)
   case unclipOfferResponse(id: Swift.Int)
   case getOffersCategories
   public var path: Swift.String {
     get
   }
-  public var method: CheetahLoyaltyCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
-  public var parameters: CheetahLoyaltyCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
 }
 public enum OffersAPI {
-  public static func getOffers(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Offer]> = nil)
-  public static func getOffersWithResponses(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Offer]> = nil)
-  public static func getFavedOffers(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Offer]> = nil)
-  public static func getOffer(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Offer> = nil)
+  public static func getOffers(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Offer]> = nil)
+  public static func getOffersWithResponses(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Offer]> = nil)
+  public static func getFavedOffers(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Offer]> = nil)
+  public static func getOffer(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Offer> = nil)
   public static func favoriteOffer(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func unfavoriteOffer(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func clipOffer(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func unclipOffer(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func respondToOffer(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Offer.ResponseInfo> = nil)
-  public static func getOfferResponses(with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Offer.Response]> = nil)
-  public static func getOfferResponse(id: Swift.Int, with parameters: CheetahLoyaltyCore.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Offer.Response> = nil)
+  public static func getOfferResponses(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Offer.Response]> = nil)
+  public static func getOfferResponse(id: Swift.Int, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.Offer.Response> = nil)
   public static func clipOfferResponse(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func unclipOfferResponse(id: Swift.Int, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func getOffersCategories(completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.Offer.Category]> = nil)
@@ -3464,9 +3272,6 @@ extension CheetahLoyaltyCore.ViewContentChallengeResponseSetting.Subtype : Swift
 extension CheetahLoyaltyCore.Place.ClientEventType : Swift.Equatable {}
 extension CheetahLoyaltyCore.Place.ClientEventType : Swift.Hashable {}
 extension CheetahLoyaltyCore.Place.ClientEventType : Swift.RawRepresentable {}
-extension CheetahLoyaltyCore.HTTPMethod : Swift.Equatable {}
-extension CheetahLoyaltyCore.HTTPMethod : Swift.Hashable {}
-extension CheetahLoyaltyCore.HTTPMethod : Swift.RawRepresentable {}
 extension CheetahLoyaltyCore.Message.Action : Swift.Equatable {}
 extension CheetahLoyaltyCore.Message.Action : Swift.Hashable {}
 extension CheetahLoyaltyCore.Message.Action : Swift.RawRepresentable {}
