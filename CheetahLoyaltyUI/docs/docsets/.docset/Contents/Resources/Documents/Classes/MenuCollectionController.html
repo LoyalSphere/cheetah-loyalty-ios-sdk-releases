@@ -8,6 +8,9 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Class/MenuCollectionController" class="dashAnchor"></a>
@@ -16,6 +19,11 @@
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a></p>
         <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -213,9 +221,6 @@
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Extensions/Array.html">Array</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Bundle.html">Bundle</a>
               </li>
               <li class="nav-group-task">
@@ -274,9 +279,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/UIWindow.html">UIWindow</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/WKWebView.html">WKWebView</a>
               </li>
             </ul>
           </li>
@@ -438,6 +440,7 @@
             <h1>MenuCollectionController</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">MenuCollectionController</span> <span class="p">:</span> <span class="kt"><a href="../Classes/BaseCollectionController.html">BaseCollectionController</a></span><span class="o">&lt;</span><span class="kt"><a href="../Protocols/MenuItemCellPresentable.html">MenuItemCellPresentable</a></span><span class="o">&gt;</span></code></pre>
 
                 </div>
@@ -572,7 +575,7 @@ The associated type should conform to the <code><a href="../Protocols/MenuItemCe
                     <code>
                     <a name="/s:16CheetahLoyaltyUI24MenuCollectionControllerC5items14collectionViewACSayAA0D19ItemCellPresentable_pG_So012UICollectionI0CSgtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(items:collectionView:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI24MenuCollectionControllerC5items14collectionViewACSayAA0D19ItemCellPresentable_pG_So012UICollectionI0CSgtcfc">init(items:collectionView:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI24MenuCollectionControllerC5items14collectionViewACSayAA0D19ItemCellPresentable_pG_So012UICollectionI0CSgtcfc">init(items:<wbr>collectionView:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -673,7 +676,7 @@ The associated type should conform to the <code><a href="../Protocols/MenuItemCe
                     <code>
                     <a name="/s:16CheetahLoyaltyUI24MenuCollectionControllerC14collectionView_15didSelectItemAtySo012UICollectionH0C_10Foundation9IndexPathVtF"></a>
                     <a name="//apple_ref/swift/Method/collectionView(_:didSelectItemAt:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI24MenuCollectionControllerC14collectionView_15didSelectItemAtySo012UICollectionH0C_10Foundation9IndexPathVtF">collectionView(_:didSelectItemAt:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI24MenuCollectionControllerC14collectionView_15didSelectItemAtySo012UICollectionH0C_10Foundation9IndexPathVtF">collectionView(_:<wbr>didSelectItemAt:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -713,7 +716,7 @@ The associated type should conform to the <code><a href="../Protocols/MenuItemCe
                     <code>
                     <a name="/s:16CheetahLoyaltyUI24MenuCollectionControllerC14collectionView_13cellForItemAtSo012UICollectionH4CellCSo0mH0C_10Foundation9IndexPathVtF"></a>
                     <a name="//apple_ref/swift/Method/collectionView(_:cellForItemAt:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI24MenuCollectionControllerC14collectionView_13cellForItemAtSo012UICollectionH4CellCSo0mH0C_10Foundation9IndexPathVtF">collectionView(_:cellForItemAt:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI24MenuCollectionControllerC14collectionView_13cellForItemAtSo012UICollectionH4CellCSo0mH0C_10Foundation9IndexPathVtF">collectionView(_:<wbr>cellForItemAt:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -793,7 +796,7 @@ The associated type should conform to the <code><a href="../Protocols/MenuItemCe
                     <code>
                     <a name="/s:16CheetahLoyaltyUI24MenuCollectionControllerC20didPressLogoutButtonyySo8UIButtonCF"></a>
                     <a name="//apple_ref/swift/Method/didPressLogoutButton(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI24MenuCollectionControllerC20didPressLogoutButtonyySo8UIButtonCF">didPressLogoutButton(_:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI24MenuCollectionControllerC20didPressLogoutButtonyySo8UIButtonCF">didPressLogoutButton(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -839,8 +842,8 @@ The associated type should conform to the <code><a href="../Protocols/MenuItemCe
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-28)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

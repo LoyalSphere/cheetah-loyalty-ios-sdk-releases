@@ -6,7 +6,7 @@ The Cheetah Loyalty UI iOS SDK is a collection of UI components used for creatin
 * Deployment Target: iOS 11.0
 * Xcode 11.x
 * Swift 5.1
-* CheetahLoyaltyUtils 1.1.0
+* CheetahLoyaltyUtils 1.2.0
 
 ## Installation
 

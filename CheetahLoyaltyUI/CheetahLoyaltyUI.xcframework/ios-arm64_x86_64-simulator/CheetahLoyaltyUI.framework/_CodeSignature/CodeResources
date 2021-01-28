@@ -6,55 +6,55 @@
 	<dict>
 		<key>AlertViewController.nib</key>
 		<data>
-		YVRgIFXtpPxHQg97c9O4BJpn+Y4=
+		N7kClwedVkPqrKhLp/8lI/pJzbg=
 		</data>
 		<key>AppInfoViewController.nib/objects-13.0+.nib</key>
 		<data>
-		I8ddaf+u6R8vrI54+0SAiVkHeo0=
+		IPlASK4dMFGu5R2vUzK97aZ2bYs=
 		</data>
 		<key>AppInfoViewController.nib/runtime.nib</key>
 		<data>
-		S1ZGQff7q9JULedL0NZAUHcgk/k=
+		b80DwnBxt1s6zQ5wd4pNOcrlP0c=
 		</data>
 		<key>Assets.car</key>
 		<data>
-		i1RRVHaBYd3ymgEV1RkWmc9EXLQ=
+		k1K5eBpZ2Szbo37ypgTqKW1vIPQ=
 		</data>
 		<key>CarouselItemCell.nib/objects-12.3+.nib</key>
 		<data>
-		IF2xoEHHAKMHMrRAYGg6VVoRk1g=
+		PeU40OdPJFomNsgDpXZbpoelmQE=
 		</data>
 		<key>CarouselItemCell.nib/runtime.nib</key>
 		<data>
-		78KJEqBLmZ81QwBURmzHnmDK45c=
+		QrNAGbbppiucU7y4FKitQXo4zzE=
 		</data>
 		<key>CollectionViewController.nib</key>
 		<data>
-		fMEgJlskQ45XXsKYi1itnZFkNg0=
+		fDyz1H87uTXGdelfl5KbjTFE9AE=
 		</data>
 		<key>CountryCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		vIpUQyStu4FP83yE8VRGMlt1pww=
+		AaRaLC/dpfP5psybmdGb+1Xw05o=
 		</data>
 		<key>CountryCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		1rMN8zZugU3Vdz3tbuIrm7RYo5c=
+		hE5MhXB0vQJxcr4tYOuGbAQH+5w=
 		</data>
 		<key>DefaultLoadingViewController.nib</key>
 		<data>
-		Mo3hLoYQ7dld5fP8QRGHFBzSCUg=
+		qBno+IksdAtyvxSAONSW5c81Pjk=
 		</data>
 		<key>DefaultReloadViewController.nib</key>
 		<data>
-		DsvTZaeU2J+xJq4qJ4dJVutSQho=
+		yeuvywkvsUwkvawbFVPO0uP6Bzg=
 		</data>
 		<key>DetailViewController.nib</key>
 		<data>
-		wuZssvp8Tvy09xjUITjDsNlCgGs=
+		dERclvwI5i+KHd1lkIdwNQx3Z3I=
 		</data>
 		<key>GenericAlertViewController.nib</key>
 		<data>
-		eOuoOPYlBlNtjh8fJKZpFh3Ltxg=
+		wK3mwp5bvkC++fiU5dk2Zmg7Iwc=
 		</data>
 		<key>Headers/CheetahLoyaltyUI-Swift.h</key>
 		<data>
@@ -66,31 +66,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jTK4zmdXtmuJZiCeKtiq4kpzJeQ=
+		ocy6zOfoOqQKnCfZJKPbMlsb0dw=
 		</data>
 		<key>ListItemCell.nib/objects-12.3+.nib</key>
 		<data>
-		2hTqKOeL3OoZeSRTx1yInnoidXs=
+		ThrftzFUCGxkv2TQvbQLAwoo/XI=
 		</data>
 		<key>ListItemCell.nib/runtime.nib</key>
 		<data>
-		rqaVfhezKMGUF1S3vp9G1jZx/7o=
+		qciGWRRSTnl7GC0k/cBkVMogT9Q=
 		</data>
 		<key>LoadingAlertViewController.nib</key>
 		<data>
-		sHRZ603fElUkfKTuzB30DxAB6CI=
+		7zAJQ4p9xHHSo7PhuM/hr+1DzTA=
 		</data>
 		<key>MenuItemCell.nib/objects-12.3+.nib</key>
 		<data>
-		TPQ8bvH02UsctlExg3X1naWsZsA=
+		cLguVdEzpzHoYZ0Q+nPhGJVcTMQ=
 		</data>
 		<key>MenuItemCell.nib/runtime.nib</key>
 		<data>
-		qPdTEcIPFVmDO+hTU90cE/MjjA4=
+		aS3KcIQINXxGrLZgtXFuGYsLsuQ=
 		</data>
 		<key>MenuViewController.nib</key>
 		<data>
-		xdPKRVuqmEWAER2V+nireiPzhM8=
+		J0eBYxZY4gr9hZ0epnY8E1GfrHg=
 		</data>
 		<key>Modules/CheetahLoyaltyUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -146,39 +146,39 @@
 		</data>
 		<key>ScannerViewController.nib/objects-13.0+.nib</key>
 		<data>
-		cVkaL4CI+9ZazWJ5jA03sVrjZxY=
+		zJq+0khlJ0ZgUQ42NhArs/Qasz0=
 		</data>
 		<key>ScannerViewController.nib/runtime.nib</key>
 		<data>
-		gHXe/dvRP39gW87EvACynNTo9jQ=
+		GH7/DvA4Qz9+FC67mJ/SZ6SouwY=
 		</data>
 		<key>SegmentedViewController.nib</key>
 		<data>
-		YWYPqNyNre49mO263fIg4qJkqb8=
+		3xicPnK5151c2BPe1b+epRoUQGc=
 		</data>
 		<key>StateCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
-		sHXaOLZAVEulFTH+6kggQ5sKF/I=
+		2EHRfrSDvu7ZtBxMZh8g6EdsOKE=
 		</data>
 		<key>StateCollectionViewCell.nib/runtime.nib</key>
 		<data>
-		Vyz+AwZIe/468MeN5TjoYhE2GMs=
+		ZxPmWVXiNQBmWbdaYZZD4Z6BZGU=
 		</data>
 		<key>TableRowCell.nib</key>
 		<data>
-		/YDEaAbrAlvLmyCMG6L9LPP/nHM=
+		nvaDeYFMdZ1zZTGUi1KzxmTBzlI=
 		</data>
 		<key>TableViewController.nib</key>
 		<data>
-		hcK4AJxxdsCK3FYw9L45CVWZjF4=
+		BNPcKAvR2oX3poQ+7NNA8azP/1g=
 		</data>
 		<key>UpgradeCheckViewController.nib</key>
 		<data>
-		jFMLnuJzoIsHkxMXUd+pLQITZK4=
+		cLFXqvslCU39LVbaoGTOGI+hOJk=
 		</data>
 		<key>WebViewController.nib</key>
 		<data>
-		mt6n9KRL+4E6KWjEbjmVMC1UsaA=
+		hK87osTI7s5qhXgfI0/Wyvjc8Ng=
 		</data>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
@@ -204,91 +204,91 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2GlHuK9DLCuOWCaTFc02cvYuuNhnHugTbmrRLpEXITg=
+			XjtLcT+1LgekqZ9FrfawZ+j7xWNKMtP2hWkyS04So4E=
 			</data>
 		</dict>
 		<key>AppInfoViewController.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BRuWzBNOoBocE1z1rc1Uhu9axux4dGyEDMQX0ZXXDfE=
+			oAIAUsZFhXm19XT+xnTS0VJA1k4gMmbvc6wU7adDj8Q=
 			</data>
 		</dict>
 		<key>AppInfoViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TjmnsGu+tWCPtYUmdMIudZgw/cccs2zd4rXJh5GsqIs=
+			GUvjl+iTdpOJwdKh3+T51CkjyCxZsx30TVagS2btqug=
 			</data>
 		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NfEuore371e4QGVJlCLrxR/EfUMQginK7IknoC0ZSAY=
+			OUDoEmNoRBBpb0TPiYgT1jhTgj5y4imNTYybZviJNiY=
 			</data>
 		</dict>
 		<key>CarouselItemCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xf8u/RzfaZnoHUGm5xgEAP/tHP0rQls5886Ug7kSbAk=
+			vEM+4QVLXuHDEsivp+wxtoRCyQDx26M3nzcJ16MjKiw=
 			</data>
 		</dict>
 		<key>CarouselItemCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S6zAQ9X9iSrciwxKVLO9kA25znrHEL75zOYEDi+AsgE=
+			aym+tNY5TcJVfm2bCbS0MaJtocM2urqhsZSR9epP+jw=
 			</data>
 		</dict>
 		<key>CollectionViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8VInQd0CZSOcX/tYGLURJ8Jzxc/YPl2yebNUmQYVxw0=
+			M9piCoN7fbqnHImbB+RNrTBFMm9kXnv/KAHZvHNn1OU=
 			</data>
 		</dict>
 		<key>CountryCollectionViewCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ich8gnwahHEmOLis7GKTleJrgVN2CZo9PweQgQKo5/0=
+			iFjDB4H3gXdiBNsdY6LCgBuK/MAR3R35wPGaZM8krRU=
 			</data>
 		</dict>
 		<key>CountryCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M+VGqcq1fCuP9m8LJ7eh7DZ1grQtn5CxQuuRw0uxn5w=
+			MhV7Bgl22fY7BYHShkJxxyz97m1yws8F0rc0vSVsyec=
 			</data>
 		</dict>
 		<key>DefaultLoadingViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3JaV36tADBbu1qYFDIp7bbMsXo+X04U9PjiWp5u03JI=
+			wHHQaA/Aqo8VcYub0BdOsV7etgjr2gVvR36p4uTK6Y8=
 			</data>
 		</dict>
 		<key>DefaultReloadViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KV03iRWEuIctjGI3bQdCjVcvQPQ1ayDYMFl+DeDeu60=
+			NxZtykFwVs2ziBc8FtInCTtw2oVIRqcVmpM4cvV3c3E=
 			</data>
 		</dict>
 		<key>DetailViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jiI/6eU/hR0IzwauLh1xcU/nLLwckc1dqci3VDl2ODQ=
+			6RPUoUxBklRBosMyPp3m5XqatzhjwyMunglIhe4CBhA=
 			</data>
 		</dict>
 		<key>GenericAlertViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7nb4gM7EvfpltZChk/lLteyTOd00U8LTasb1CGFFPrk=
+			KjHNck+s+d7MdV9fX02iEr/130LPJY/7dz4V1x+k0X0=
 			</data>
 		</dict>
 		<key>Headers/CheetahLoyaltyUI-Swift.h</key>
@@ -309,42 +309,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tQ7lSugM3bMw2/1q25dLe0Y+2HfRidrqUklDh06gVK8=
+			XGaJkd71P8iIOHrVp6z3+n+SwdCxGUPcL6QWALfWGgU=
 			</data>
 		</dict>
 		<key>ListItemCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3XStZ+tx7oSpbDT43HrgL7Y4we7RrT5RgpX8++7vYVA=
+			W0m/le3c3W+ZP7DjCbBi5gfdsh4vCy1qXB91MdZjiSg=
 			</data>
 		</dict>
 		<key>LoadingAlertViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KNuggmUDN8Vvi6bnid4r5MG+NUtzBDukHCtJ2PnbN3E=
+			BU5DsAK9Ksny1palTqVGZpAxuCZZvd0Tt3ouyZSLPzs=
 			</data>
 		</dict>
 		<key>MenuItemCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XmVK5qdU6YCfNs2930yZj+2qjyGsMlnz63JDbWeyxn8=
+			PiFII7g83K6B53pSZr8MK0cAZesK+1udVk1CXn4KjS8=
 			</data>
 		</dict>
 		<key>MenuItemCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Gz6KFst5FfjLrS+kzROiZ1whgiQE3tV0ipoiiIGc64U=
+			zi4hUPCYZDI45cA+zEQgUpNOnBdX0O4/iIeZ2LS46ts=
 			</data>
 		</dict>
 		<key>MenuViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sU7FXyIChiPA/JUJVUlcFqLM+FY2Y0xmAcbt2VSaezc=
+			DcFB+hq1jkA9WR9Gj2tYTE7YtMgOrIO9NjUKA9KZKnY=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -442,63 +442,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PLd3WFw8pmT92SZX5+/d7LTgCYoZI1MoKNej1LG0sCk=
+			td3ivuC30hfM+K5Pixd/UAe6ktOM7NmSMQwAeNBIqQ4=
 			</data>
 		</dict>
 		<key>ScannerViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+RSCn6cAaQ59ZuYvxP3vlB2xrc6+g41sYmg6LabhMJ8=
+			lv3VBH2JW36PhRAU4zgpwMOPpOju4gAg5XweD7ys0QE=
 			</data>
 		</dict>
 		<key>SegmentedViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FX35FqIU+RLMJVo0LH5hwsdyrwfDwgCwzVCCL1sSAb4=
+			jG1TMKGXVayuAqolA43c1rXULLnIB74WNUVO4BaTgEk=
 			</data>
 		</dict>
 		<key>StateCollectionViewCell.nib/objects-12.3+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sndllj8g+GnR6/LSa5oMs6APy3AxJp/QQUu1kCOgX6g=
+			+RgaiNZNVxOKKIvyiUcOOIdOjHs4ONsW9Ilo+ACC+m4=
 			</data>
 		</dict>
 		<key>StateCollectionViewCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jg8egY4DhMAPD4BQKHX5iX5+5QIewb45BqYgRUODIOQ=
+			0XDz9Ndc5QBjqLLyE9acTGNEj5APcbg8CwlIn2nMnUM=
 			</data>
 		</dict>
 		<key>TableRowCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J0UJqX3oTitJqtb65n20DXY7qwPU3eZBkgwnuXdvg2g=
+			MpMjN4cDteIQ4TgZ11yefJccl7k+4XRtMqikLP0bp+0=
 			</data>
 		</dict>
 		<key>TableViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Nh4K0AVKt+8tThwfSpFY6Siy5bs4fuOF4zHgIdudSmM=
+			5Pvl0tY5OJ/NAXgv59KSfP1Gq5oJUAwJR6S6fUPV/T8=
 			</data>
 		</dict>
 		<key>UpgradeCheckViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4a3xV+PTMStSbhDdPzOmUdw+GioFZFVzYhXnWyV26ro=
+			D/CXIDPTrkxw9N77Titb+iY4UeZ6sssIfnPFha8uZa0=
 			</data>
 		</dict>
 		<key>WebViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XwkoB5i3V5W+2IxDl39aCs42qgqoK6s/RBXgU6NZdVc=
+			hsCndqP6I5iCc5OrGPJU/JbM0/vdtY57wWIUlKtPBdg=
 			</data>
 		</dict>
 		<key>en.lproj/Localizable.strings</key>

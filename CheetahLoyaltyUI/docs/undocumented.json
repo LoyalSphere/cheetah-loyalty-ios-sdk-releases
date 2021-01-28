@@ -778,13 +778,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CountriesStates/CountriesCollectionController.swift",
-      "line": 187,
-      "symbol": "Country.State",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/CountriesStates/CountryCollectionViewCell.swift",
       "line": 16,
       "symbol": "CountryCollectionViewCell.nameLabel",
@@ -2570,41 +2563,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/GrowingTextView/GrowingTextView.swift",
-      "line": 307,
-      "symbol": "GrowingTextView",
-      "symbol_kind": "source.lang.swift.decl.extension",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/GrowingTextView/GrowingTextView.swift",
-      "line": 311,
-      "symbol": "GrowingTextView.textDidChange()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/GrowingTextView/GrowingTextView.swift",
-      "line": 316,
-      "symbol": "GrowingTextView.didUpdateHeightDependencies()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/GrowingTextView/GrowingTextView.swift",
-      "line": 320,
-      "symbol": "GrowingTextView.didBecomeFirstResponder()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/TextInput/GrowingTextView/GrowingTextView.swift",
-      "line": 324,
-      "symbol": "GrowingTextView.didResignFirstResponder()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/CheetahTheme.swift",
       "line": 22,
       "symbol": "CheetahTextTheme",
@@ -3029,13 +2987,6 @@
       "line": 204,
       "symbol": "CheetahCaption2.fontSize",
       "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUI/CheetahLoyaltyUI/Theme/ColorThemeExtensions.swift",
-      "line": 25,
-      "symbol": "Array.reload()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {

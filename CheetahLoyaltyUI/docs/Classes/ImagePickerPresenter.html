@@ -8,6 +8,9 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Class/ImagePickerPresenter" class="dashAnchor"></a>
@@ -16,6 +19,11 @@
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a></p>
         <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -213,9 +221,6 @@
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Extensions/Array.html">Array</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Bundle.html">Bundle</a>
               </li>
               <li class="nav-group-task">
@@ -274,9 +279,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/UIWindow.html">UIWindow</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/WKWebView.html">WKWebView</a>
               </li>
             </ul>
           </li>
@@ -438,6 +440,7 @@
             <h1>ImagePickerPresenter</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ImagePickerPresenter</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">UIImagePickerControllerDelegate</span><span class="p">,</span> <span class="kt">UINavigationControllerDelegate</span></code></pre>
 
                 </div>
@@ -481,7 +484,7 @@
                     <code>
                     <a name="/s:16CheetahLoyaltyUI20ImagePickerPresenterC24presentingViewController8delegateACSo06UIViewI0C_AA0deF8Delegate_pSgtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(presentingViewController:delegate:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI20ImagePickerPresenterC24presentingViewController8delegateACSo06UIViewI0C_AA0deF8Delegate_pSgtcfc">init(presentingViewController:delegate:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI20ImagePickerPresenterC24presentingViewController8delegateACSo06UIViewI0C_AA0deF8Delegate_pSgtcfc">init(presentingViewController:<wbr>delegate:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -543,7 +546,7 @@
                     <code>
                     <a name="/s:16CheetahLoyaltyUI20ImagePickerPresenterC7present4with8editableyAC9MediaTypeO_SbtF"></a>
                     <a name="//apple_ref/swift/Method/present(with:editable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI20ImagePickerPresenterC7present4with8editableyAC9MediaTypeO_SbtF">present(with:editable:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI20ImagePickerPresenterC7present4with8editableyAC9MediaTypeO_SbtF">present(with:<wbr>editable:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -614,7 +617,7 @@
                     <code>
                     <a name="/c:@M@CheetahLoyaltyUI@objc(cs)ImagePickerPresenter(im)imagePickerControllerDidCancel:"></a>
                     <a name="//apple_ref/swift/Method/imagePickerControllerDidCancel(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@CheetahLoyaltyUI@objc(cs)ImagePickerPresenter(im)imagePickerControllerDidCancel:">imagePickerControllerDidCancel(_:)</a>
+                    <a class="token" href="#/c:@M@CheetahLoyaltyUI@objc(cs)ImagePickerPresenter(im)imagePickerControllerDidCancel:">imagePickerControllerDidCancel(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -641,7 +644,7 @@
                     <code>
                     <a name="/c:@M@CheetahLoyaltyUI@objc(cs)ImagePickerPresenter(im)imagePickerController:didFinishPickingMediaWithInfo:"></a>
                     <a name="//apple_ref/swift/Method/imagePickerController(_:didFinishPickingMediaWithInfo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@CheetahLoyaltyUI@objc(cs)ImagePickerPresenter(im)imagePickerController:didFinishPickingMediaWithInfo:">imagePickerController(_:didFinishPickingMediaWithInfo:)</a>
+                    <a class="token" href="#/c:@M@CheetahLoyaltyUI@objc(cs)ImagePickerPresenter(im)imagePickerController:didFinishPickingMediaWithInfo:">imagePickerController(_:<wbr>didFinishPickingMediaWithInfo:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -669,8 +672,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-28)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

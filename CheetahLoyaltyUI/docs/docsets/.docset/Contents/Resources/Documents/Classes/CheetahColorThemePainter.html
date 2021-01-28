@@ -8,6 +8,9 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Class/CheetahColorThemePainter" class="dashAnchor"></a>
@@ -16,6 +19,11 @@
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a></p>
         <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -213,9 +221,6 @@
             <a href="../Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Extensions/Array.html">Array</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Extensions/Bundle.html">Bundle</a>
               </li>
               <li class="nav-group-task">
@@ -274,9 +279,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/UIWindow.html">UIWindow</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/WKWebView.html">WKWebView</a>
               </li>
             </ul>
           </li>
@@ -438,6 +440,7 @@
             <h1>CheetahColorThemePainter</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">CheetahColorThemePainter</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ColorThemePainter.html">ColorThemePainter</a></span></code></pre>
 
                 </div>
@@ -480,7 +483,7 @@
                     <code>
                     <a name="/s:16CheetahLoyaltyUI17ColorThemePainterP5apply5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/apply(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI17ColorThemePainterP5apply5usingyAA0dE0_p_tF">apply(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI17ColorThemePainterP5apply5usingyAA0dE0_p_tF">apply(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -506,7 +509,7 @@
                     <code>
                     <a name="/s:16CheetahLoyaltyUI17ColorThemePainterP6extend5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/extend(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI17ColorThemePainterP6extend5usingyAA0dE0_p_tF">extend(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI17ColorThemePainterP6extend5usingyAA0dE0_p_tF">extend(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -532,7 +535,7 @@
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC19paintBackgroundView5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintBackgroundView(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC19paintBackgroundView5usingyAA0dE0_p_tF">paintBackgroundView(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC19paintBackgroundView5usingyAA0dE0_p_tF">paintBackgroundView(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -559,7 +562,7 @@
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC12paintUILabel5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUILabel(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC12paintUILabel5usingyAA0dE0_p_tF">paintUILabel(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC12paintUILabel5usingyAA0dE0_p_tF">paintUILabel(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -586,7 +589,7 @@
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC28paintUIActivityIndicatorView5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUIActivityIndicatorView(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC28paintUIActivityIndicatorView5usingyAA0dE0_p_tF">paintUIActivityIndicatorView(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC28paintUIActivityIndicatorView5usingyAA0dE0_p_tF">paintUIActivityIndicatorView(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -613,7 +616,7 @@
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC20paintUINavigationBar5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUINavigationBar(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC20paintUINavigationBar5usingyAA0dE0_p_tF">paintUINavigationBar(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC20paintUINavigationBar5usingyAA0dE0_p_tF">paintUINavigationBar(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -641,7 +644,7 @@ This also sets <code>isTranslucent</code> to false.</p>
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC18paintUIPageControl5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUIPageControl(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC18paintUIPageControl5usingyAA0dE0_p_tF">paintUIPageControl(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC18paintUIPageControl5usingyAA0dE0_p_tF">paintUIPageControl(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -668,7 +671,7 @@ This also sets <code>isTranslucent</code> to false.</p>
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC23paintUISegmentedControl5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUISegmentedControl(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC23paintUISegmentedControl5usingyAA0dE0_p_tF">paintUISegmentedControl(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC23paintUISegmentedControl5usingyAA0dE0_p_tF">paintUISegmentedControl(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -696,7 +699,7 @@ This also change the color of the text in selected state to textColor and primar
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC13paintUISlider5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUISlider(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC13paintUISlider5usingyAA0dE0_p_tF">paintUISlider(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC13paintUISlider5usingyAA0dE0_p_tF">paintUISlider(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -723,7 +726,7 @@ This also change the color of the text in selected state to textColor and primar
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC13paintUISwitch5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUISwitch(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC13paintUISwitch5usingyAA0dE0_p_tF">paintUISwitch(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC13paintUISwitch5usingyAA0dE0_p_tF">paintUISwitch(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -750,7 +753,7 @@ This also change the color of the text in selected state to textColor and primar
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC13paintUIButton5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUIButton(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC13paintUIButton5usingyAA0dE0_p_tF">paintUIButton(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC13paintUIButton5usingyAA0dE0_p_tF">paintUIButton(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -790,7 +793,7 @@ Both sets the title and tint color to <code>buttonTintColor</code>.</li>
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC20paintSelectionButton5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintSelectionButton(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC20paintSelectionButton5usingyAA0dE0_p_tF">paintSelectionButton(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC20paintSelectionButton5usingyAA0dE0_p_tF">paintSelectionButton(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -817,7 +820,7 @@ Both sets the title and tint color to <code>buttonTintColor</code>.</li>
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC14paintUIStepper5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUIStepper(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC14paintUIStepper5usingyAA0dE0_p_tF">paintUIStepper(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC14paintUIStepper5usingyAA0dE0_p_tF">paintUIStepper(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -845,7 +848,7 @@ This also set the default <code>tintColor</code> to <code>textColor</code> and <
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC19paintUIProgressView5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUIProgressView(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC19paintUIProgressView5usingyAA0dE0_p_tF">paintUIProgressView(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC19paintUIProgressView5usingyAA0dE0_p_tF">paintUIProgressView(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -872,7 +875,7 @@ This also set the default <code>tintColor</code> to <code>textColor</code> and <
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC16paintUITableView5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUITableView(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC16paintUITableView5usingyAA0dE0_p_tF">paintUITableView(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC16paintUITableView5usingyAA0dE0_p_tF">paintUITableView(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -899,7 +902,7 @@ This also set the default <code>tintColor</code> to <code>textColor</code> and <
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC20paintUITableViewCell5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUITableViewCell(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC20paintUITableViewCell5usingyAA0dE0_p_tF">paintUITableViewCell(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC20paintUITableViewCell5usingyAA0dE0_p_tF">paintUITableViewCell(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -926,7 +929,7 @@ This also set the default <code>tintColor</code> to <code>textColor</code> and <
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC21paintUIRefreshControl5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUIRefreshControl(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC21paintUIRefreshControl5usingyAA0dE0_p_tF">paintUIRefreshControl(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC21paintUIRefreshControl5usingyAA0dE0_p_tF">paintUIRefreshControl(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -953,7 +956,7 @@ This also set the default <code>tintColor</code> to <code>textColor</code> and <
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC14paintUIToolBar5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUIToolBar(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC14paintUIToolBar5usingyAA0dE0_p_tF">paintUIToolBar(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC14paintUIToolBar5usingyAA0dE0_p_tF">paintUIToolBar(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -980,7 +983,7 @@ This also set the default <code>tintColor</code> to <code>textColor</code> and <
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC16paintUISearchBar5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUISearchBar(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC16paintUISearchBar5usingyAA0dE0_p_tF">paintUISearchBar(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC16paintUISearchBar5usingyAA0dE0_p_tF">paintUISearchBar(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1007,7 +1010,7 @@ This also set the default <code>tintColor</code> to <code>textColor</code> and <
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC13paintUITabBar5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintUITabBar(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC13paintUITabBar5usingyAA0dE0_p_tF">paintUITabBar(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC13paintUITabBar5usingyAA0dE0_p_tF">paintUITabBar(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1035,7 +1038,7 @@ This also sets <code>isTranslucent</code> to false.</p>
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC23paintFloatingTextFields5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintFloatingTextFields(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC23paintFloatingTextFields5usingyAA0dE0_p_tF">paintFloatingTextFields(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC23paintFloatingTextFields5usingyAA0dE0_p_tF">paintFloatingTextFields(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1062,7 +1065,7 @@ This also sets <code>isTranslucent</code> to false.</p>
                     <code>
                     <a name="/s:16CheetahLoyaltyUI0A17ColorThemePainterC22paintFloatingTextViews5usingyAA0dE0_p_tF"></a>
                     <a name="//apple_ref/swift/Method/paintFloatingTextViews(using:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC22paintFloatingTextViews5usingyAA0dE0_p_tF">paintFloatingTextViews(using:)</a>
+                    <a class="token" href="#/s:16CheetahLoyaltyUI0A17ColorThemePainterC22paintFloatingTextViews5usingyAA0dE0_p_tF">paintFloatingTextViews(using:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1089,8 +1092,8 @@ This also sets <code>isTranslucent</code> to false.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-12)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-28)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
