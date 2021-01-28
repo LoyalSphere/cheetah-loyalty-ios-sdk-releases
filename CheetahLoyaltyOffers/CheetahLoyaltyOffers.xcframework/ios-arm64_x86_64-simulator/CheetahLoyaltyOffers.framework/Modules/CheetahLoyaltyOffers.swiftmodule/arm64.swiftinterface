@@ -41,7 +41,7 @@ public enum OfferUIFactory {
   public static func segmentedCoupon(detailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate? = nil) -> CheetahLoyaltyUI.SegmentedViewController
 }
 @_inheritsConvenienceInitializers open class OfferResponseListController : CheetahLoyaltyUI.ListCollectionController<CheetahLoyaltyCore.Offer.Response> {
-  open var loadParameters: CheetahLoyaltyCore.Parameters
+  open var loadParameters: CheetahLoyaltyUtils.Parameters
   open var detailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate?
   override open func loadContent()
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
@@ -74,7 +74,7 @@ public protocol OfferCarouselDelegate {
   open var delegate: CheetahLoyaltyOffers.OfferCarouselDelegate?
   open var detailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate?
   open var autoScrollTimeInterval: Swift.Double
-  open var loadParameters: CheetahLoyaltyCore.Parameters
+  open var loadParameters: CheetahLoyaltyUtils.Parameters
   @objc deinit
   override open func loadContent()
   open func updateWith(_ result: Swift.Result<CheetahLoyaltyCore.APIResponse<[CheetahLoyaltyCore.Offer]>, Swift.Error>)
@@ -94,7 +94,7 @@ public struct OfferCouponSegmentedController : CheetahLoyaltyUI.SegmentedControl
   public func didSelectSegment(atIndex index: Swift.Int, of segmentedViewController: CheetahLoyaltyUI.SegmentedViewController)
 }
 @_inheritsConvenienceInitializers open class OfferListController : CheetahLoyaltyUI.ListCollectionController<CheetahLoyaltyCore.Offer> {
-  open var loadParameters: CheetahLoyaltyCore.Parameters
+  open var loadParameters: CheetahLoyaltyUtils.Parameters
   open var detailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate?
   override open func loadContent()
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
@@ -139,7 +139,7 @@ public protocol OfferDetailDelegate : AnyObject {
 open class OfferDetailController : CheetahLoyaltyUI.BaseDetailController {
   weak open var offerDetailDelegate: CheetahLoyaltyOffers.OfferDetailDelegate?
   open var id: Swift.Int
-  open var parameters: CheetahLoyaltyCore.Parameters
+  open var parameters: CheetahLoyaltyUtils.Parameters
   open var isClippable: Swift.Bool {
     get
   }

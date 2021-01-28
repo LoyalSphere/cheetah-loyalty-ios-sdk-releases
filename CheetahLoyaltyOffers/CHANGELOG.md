@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Offers-1.4.1] - 2021-01-28
+
+### Changed
+- Dependency version requirements to CheetahLoyaltyCore 1.9.0, CheetahLoyaltyUI 1.9.1, and CheetahLoyaltyUtils 1.2.0 [#585]
+
+[#585]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/585
+[Offers-1.4.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/81?closed=1
+
 ## [Offers-1.4.0] - 2021-01-15
 
 ### Added
