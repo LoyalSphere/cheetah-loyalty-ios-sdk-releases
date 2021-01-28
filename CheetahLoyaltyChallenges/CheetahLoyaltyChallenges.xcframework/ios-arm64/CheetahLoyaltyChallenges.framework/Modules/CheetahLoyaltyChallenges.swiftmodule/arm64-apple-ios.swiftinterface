@@ -57,7 +57,7 @@ public protocol ProfileResponderDelegate {
 @_inheritsConvenienceInitializers open class ProfileChallengeViewController : CheetahLoyaltyUI.CollectionViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate {
   open var loadingAlert: CheetahLoyaltyUI.AlertViewController
   open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
-  open var answer: CheetahLoyaltyCore.Parameters?
+  open var answer: CheetahLoyaltyUtils.Parameters?
   convenience public init(challenge: CheetahLoyaltyCore.Challenge, collectionController: CheetahLoyaltyChallenges.ProfileChallengeController?, nibName: Swift.String = "CollectionViewController")
   override open func setup()
   open func setupSubmitButton()
@@ -83,7 +83,7 @@ public protocol ProfileResponderDelegate {
   open var responderViewController: CheetahLoyaltyChallenges.MultiQuestionChallengeViewController? {
     get
   }
-  open var surveyAnswers: [CheetahLoyaltyCore.Parameters] {
+  open var surveyAnswers: [CheetahLoyaltyUtils.Parameters] {
     get
   }
   open var isAnswersComplete: Swift.Bool {
@@ -207,7 +207,7 @@ public protocol ShareChallengeToSocialMediaDelegate {
 }
 @objc @_inheritsConvenienceInitializers open class SurveyResponderController : ObjectiveC.NSObject, CheetahLoyaltyUI.CollectionController {
   open var navigationItemTitle: Swift.String?
-  open var answer: CheetahLoyaltyCore.Parameters?
+  open var answer: CheetahLoyaltyUtils.Parameters?
   open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
   open var surveyChallengeViewController: CheetahLoyaltyChallenges.SurveyChallengeViewController? {
     get
@@ -292,9 +292,9 @@ public protocol ChallengeResponder : AnyObject {
   var delegate: CheetahLoyaltyChallenges.ChallengeResponderDelegate? { get set }
   var isResponding: Swift.Bool { get set }
   func didRespond(with result: Swift.Result<CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>, Swift.Error>)
-  func respond(with parameters: CheetahLoyaltyCore.Parameters?)
-  func respond(with image: UIKit.UIImage, and parameters: CheetahLoyaltyCore.Parameters?)
-  func respond(withVideo videoURL: Foundation.URL, and parameters: CheetahLoyaltyCore.Parameters?)
+  func respond(with parameters: CheetahLoyaltyUtils.Parameters?)
+  func respond(with image: UIKit.UIImage, and parameters: CheetahLoyaltyUtils.Parameters?)
+  func respond(withVideo videoURL: Foundation.URL, and parameters: CheetahLoyaltyUtils.Parameters?)
 }
 @objc open class BaseChallengeResponder : ObjectiveC.NSObject, CheetahLoyaltyChallenges.ChallengeResponder {
   open var challenge: CheetahLoyaltyCore.Challenge
@@ -302,9 +302,9 @@ public protocol ChallengeResponder : AnyObject {
   weak open var delegate: CheetahLoyaltyChallenges.ChallengeResponderDelegate?
   public init(with challenge: CheetahLoyaltyCore.Challenge, delegate: CheetahLoyaltyChallenges.ChallengeResponderDelegate? = nil)
   open func didRespond(with result: Swift.Result<CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>, Swift.Error>)
-  open func respond(with parameters: CheetahLoyaltyCore.Parameters?)
-  open func respond(with image: UIKit.UIImage, and parameters: CheetahLoyaltyCore.Parameters? = nil)
-  open func respond(withVideo videoURL: Foundation.URL, and parameters: CheetahLoyaltyCore.Parameters? = nil)
+  open func respond(with parameters: CheetahLoyaltyUtils.Parameters?)
+  open func respond(with image: UIKit.UIImage, and parameters: CheetahLoyaltyUtils.Parameters? = nil)
+  open func respond(withVideo videoURL: Foundation.URL, and parameters: CheetahLoyaltyUtils.Parameters? = nil)
   @objc override dynamic public init()
   @objc deinit
 }
