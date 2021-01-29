@@ -6,9 +6,9 @@ The Cheetah Loyalty Challenges iOS SDK contains a collection of components used 
 * Deployment Target: iOS 11.0
 * Xcode 11.x
 * Swift 5.1
-* `CheetahLoyaltyCore` v1.8.1
-* `CheetahLoyaltyUI` v1.9.0
-* `CheetahLoyaltyUtils` v1.1.0
+* `CheetahLoyaltyCore` v1.9.0
+* `CheetahLoyaltyUI` v1.9.1
+* `CheetahLoyaltyUtils` v1.2.0
 
 ## Installation
 

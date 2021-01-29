@@ -8,6 +8,9 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Protocol/RewardResponderFactory" class="dashAnchor"></a>
@@ -16,6 +19,11 @@
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a></p>
         <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -137,6 +145,7 @@
             <h1>RewardResponderFactory</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">RewardResponderFactory</span></code></pre>
 
                 </div>
@@ -152,7 +161,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP9responder3for4withSo16UIViewControllerCSg0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/responder(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP9responder3for4withSo16UIViewControllerCSg0aB4Core0D0V_SiSgtFZ">responder(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP9responder3for4withSo16UIViewControllerCSg0aB4Core0D0V_SiSgtFZ">responder(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -167,7 +176,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">responder</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span><span class="p">?</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">responder</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                      <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -179,7 +189,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP5badge3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/badge(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP5badge3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">badge(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP5badge3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">badge(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -194,7 +204,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">badge</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">badge</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                  <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -206,7 +217,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP11certificate3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/certificate(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP11certificate3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">certificate(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP11certificate3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">certificate(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -221,7 +232,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">certificate</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">certificate</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                        <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -233,7 +245,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP9challenge3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/challenge(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP9challenge3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">challenge(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP9challenge3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">challenge(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -248,7 +260,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">challenge</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">challenge</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                      <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -260,7 +273,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP7contest3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/contest(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP7contest3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">contest(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP7contest3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">contest(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -275,7 +288,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">contest</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">contest</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                    <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -287,7 +301,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP6coupon3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/coupon(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP6coupon3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">coupon(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP6coupon3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">coupon(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -302,7 +316,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">coupon</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">coupon</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                   <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -314,7 +329,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP9couponCom3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/couponCom(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP9couponCom3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">couponCom(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP9couponCom3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">couponCom(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -329,7 +344,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">couponCom</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">couponCom</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                      <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -341,7 +357,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP5debit3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/debit(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP5debit3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">debit(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP5debit3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">debit(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -356,7 +372,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">debit</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">debit</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                  <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -368,7 +385,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP7dynamic3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/dynamic(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP7dynamic3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">dynamic(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP7dynamic3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">dynamic(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -383,7 +400,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">dynamic</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">dynamic</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                    <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -395,7 +413,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP8giftcard3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/giftcard(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP8giftcard3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">giftcard(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP8giftcard3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">giftcard(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -410,7 +428,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">giftcard</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">giftcard</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                     <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -422,7 +441,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP6metric3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/metric(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP6metric3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">metric(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP6metric3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">metric(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -437,7 +456,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">metric</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">metric</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                   <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -449,7 +469,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP14metricPurchase3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/metricPurchase(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP14metricPurchase3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">metricPurchase(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP14metricPurchase3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">metricPurchase(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -464,7 +484,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">metricPurchase</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">metricPurchase</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                           <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -476,7 +497,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP14metricTransfer3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/metricTransfer(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP14metricTransfer3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">metricTransfer(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP14metricTransfer3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">metricTransfer(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -491,7 +512,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">metricTransfer</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">metricTransfer</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                           <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -503,7 +525,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP5offer3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/offer(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP5offer3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">offer(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP5offer3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">offer(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -518,7 +540,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">offer</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">offer</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                  <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -530,7 +553,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards22RewardResponderFactoryP7product3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/product(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP7product3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">product(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards22RewardResponderFactoryP7product3for4withSo16UIViewControllerC0aB4Core0D0V_SiSgtFZ">product(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -545,7 +568,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">product</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">product</span><span class="p">(</span><span class="k">for</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span>
+                    <span class="n">with</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span></code></pre>
 
                         </div>
                       </div>
@@ -557,8 +581,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-15)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

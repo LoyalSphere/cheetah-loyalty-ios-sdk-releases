@@ -8,6 +8,9 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Class/DefaultRewardResponderFactory" class="dashAnchor"></a>
@@ -16,6 +19,11 @@
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a></p>
         <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -137,6 +145,7 @@
             <h1>DefaultRewardResponderFactory</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">DefaultRewardResponderFactory</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/RewardResponderFactory.html">RewardResponderFactory</a></span></code></pre>
 
                 </div>
@@ -152,7 +161,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC9responder3for4withSo16UIViewControllerCSg0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/responder(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC9responder3for4withSo16UIViewControllerCSg0aB4Core0E0V_SiSgtFZ">responder(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC9responder3for4withSo16UIViewControllerCSg0aB4Core0E0V_SiSgtFZ">responder(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -179,7 +188,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC5badge3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/badge(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC5badge3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">badge(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC5badge3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">badge(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -207,7 +216,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC11certificate3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/certificate(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC11certificate3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">certificate(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC11certificate3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">certificate(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -235,7 +244,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC9challenge3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/challenge(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC9challenge3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">challenge(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC9challenge3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">challenge(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -263,7 +272,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC7contest3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/contest(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC7contest3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">contest(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC7contest3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">contest(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -291,7 +300,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC6coupon3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/coupon(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC6coupon3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">coupon(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC6coupon3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">coupon(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -319,7 +328,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC9couponCom3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/couponCom(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC9couponCom3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">couponCom(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC9couponCom3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">couponCom(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -347,7 +356,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC5debit3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/debit(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC5debit3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">debit(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC5debit3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">debit(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -375,7 +384,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC7dynamic3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/dynamic(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC7dynamic3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">dynamic(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC7dynamic3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">dynamic(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -403,7 +412,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC8giftcard3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/giftcard(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC8giftcard3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">giftcard(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC8giftcard3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">giftcard(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -431,7 +440,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC6metric3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/metric(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC6metric3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">metric(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC6metric3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">metric(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -459,7 +468,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC14metricPurchase3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/metricPurchase(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC14metricPurchase3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">metricPurchase(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC14metricPurchase3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">metricPurchase(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -487,7 +496,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC14metricTransfer3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/metricTransfer(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC14metricTransfer3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">metricTransfer(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC14metricTransfer3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">metricTransfer(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -515,7 +524,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC5offer3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/offer(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC5offer3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">offer(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC5offer3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">offer(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -543,7 +552,7 @@
                     <code>
                     <a name="/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC7product3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/product(for:with:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC7product3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">product(for:with:)</a>
+                    <a class="token" href="#/s:21CheetahLoyaltyRewards29DefaultRewardResponderFactoryC7product3for4withSo16UIViewControllerC0aB4Core0E0V_SiSgtFZ">product(for:<wbr>with:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -571,8 +580,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-15)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-01-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Rewards-1.3.1] - 2021-01-29
+
+### Changed
+- Changed dependency version requirements to CheetahLoyaltyCore 1.9.0, CheetahLoyaltyUI 1.9.1, and CheetahLoyaltyUtils 1.2.0 [#587]
+
+[#587]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/587
+[Rewards-1.3.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/83?closed=1
+
 ## [Rewards-1.3.0] - 2021-01-15
 
 ### Added

@@ -87,7 +87,7 @@ public protocol RewardResponder : AnyObject {
   var delegate: CheetahLoyaltyRewards.RewardResponderDelegate? { get set }
   var isResponding: Swift.Bool { get set }
   func didRespond(with result: Swift.Result<CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>, Swift.Error>)
-  func redeem(address: [Swift.String : Any]?, and parameters: CheetahLoyaltyCore.Parameters?)
+  func redeem(address: [Swift.String : Any]?, and parameters: CheetahLoyaltyUtils.Parameters?)
 }
 @objc open class BaseRewardResponder : ObjectiveC.NSObject, CheetahLoyaltyRewards.RewardResponder {
   open var reward: CheetahLoyaltyCore.Reward
@@ -96,7 +96,7 @@ public protocol RewardResponder : AnyObject {
   weak open var delegate: CheetahLoyaltyRewards.RewardResponderDelegate?
   public init(with reward: CheetahLoyaltyCore.Reward, awardId: Swift.Int? = nil, delegate: CheetahLoyaltyRewards.RewardResponderDelegate? = nil)
   open func didRespond(with result: Swift.Result<CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>, Swift.Error>)
-  open func redeem(address: [Swift.String : Any]?, and parameters: CheetahLoyaltyCore.Parameters?)
+  open func redeem(address: [Swift.String : Any]?, and parameters: CheetahLoyaltyUtils.Parameters?)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -245,7 +245,7 @@ public protocol ChallengeNavigatorDelegate : AnyObject {
   @objc @IBOutlet weak public var messageContainerView: UIKit.UIView!
   open var responder: CheetahLoyaltyRewards.RewardResponder?
   open var defaultResponseMessage: Swift.String
-  open var parameters: CheetahLoyaltyCore.Parameters?
+  open var parameters: CheetahLoyaltyUtils.Parameters?
   convenience public init(with reward: CheetahLoyaltyCore.Reward, awardId: Swift.Int? = nil, heading: Swift.String? = nil, defaultResponseMessage: Swift.String? = nil, reloadCompletion: (() -> Swift.Void)? = nil, nibName: Swift.String = "GenericRewardViewController")
   override open func setup()
   open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Reward.ResponseInfo>)
@@ -349,9 +349,9 @@ public protocol CombinationRewardDelegate : AnyObject {
     get
     set
   }
-  open var parameters: CheetahLoyaltyCore.Parameters?
+  open var parameters: CheetahLoyaltyUtils.Parameters?
   open var statefulViewController: CheetahLoyaltyUI.StatefulViewController?
-  convenience public init(with reward: CheetahLoyaltyCore.Reward, for member: CheetahLoyaltyCore.Member? = nil, awardId: Swift.Int? = nil, parameters: CheetahLoyaltyCore.Parameters? = nil)
+  convenience public init(with reward: CheetahLoyaltyCore.Reward, for member: CheetahLoyaltyCore.Member? = nil, awardId: Swift.Int? = nil, parameters: CheetahLoyaltyUtils.Parameters? = nil)
   open func loadContent()
   open func redeem(address: [Swift.String : Any]?)
   open func getMemberProfile()
