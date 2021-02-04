@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyChallenges
 @_exported import CheetahLoyaltyChallenges
 import CheetahLoyaltyCore
@@ -13,7 +13,7 @@ import WebKit
   @objc @IBOutlet public var containerStackView: UIKit.UIStackView!
   @objc @IBOutlet public var activityIndicator: UIKit.UIActivityIndicatorView!
   @objc @IBOutlet public var messageContainerView: UIKit.UIView!
-  convenience public init(with challenge: CheetahLoyaltyCore.Challenge)
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int? = nil)
   override open func setup()
   open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
   open func onFailure(with error: Swift.Error)
@@ -29,7 +29,7 @@ public protocol PreferenceChallengeCollectionController : CheetahLoyaltyUI.Colle
 @_inheritsConvenienceInitializers open class PreferenceChallengeViewController : CheetahLoyaltyUI.CollectionViewController, CheetahLoyaltyChallenges.ChallengeResponderDelegate {
   open var loadingAlert: CheetahLoyaltyUI.AlertViewController
   open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
-  convenience public init(challenge: CheetahLoyaltyCore.Challenge, preferenceListController: CheetahLoyaltyChallenges.PreferenceChallengeCollectionController, nibName: Swift.String = "CollectionViewController")
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int? = nil, preferenceListController: CheetahLoyaltyChallenges.PreferenceChallengeCollectionController, nibName: Swift.String = "CollectionViewController")
   override open func setup()
   open func setupSubmitButton()
   open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
@@ -58,7 +58,7 @@ public protocol ProfileResponderDelegate {
   open var loadingAlert: CheetahLoyaltyUI.AlertViewController
   open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
   open var answer: CheetahLoyaltyUtils.Parameters?
-  convenience public init(challenge: CheetahLoyaltyCore.Challenge, collectionController: CheetahLoyaltyChallenges.ProfileChallengeController?, nibName: Swift.String = "CollectionViewController")
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int? = nil, collectionController: CheetahLoyaltyChallenges.ProfileChallengeController?, nibName: Swift.String = "CollectionViewController")
   override open func setup()
   open func setupSubmitButton()
   open func answerIsSetFromAttributes(_ attributes: [CheetahLoyaltyCore.MutableProfileAttribute]) -> Swift.Bool
@@ -144,7 +144,7 @@ public protocol MemeColorPickerDelegate {
   open var loadingAlert: CheetahLoyaltyUI.AlertViewController
   @objc override dynamic open func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
   @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
-  convenience public init(challenge: CheetahLoyaltyCore.Challenge)
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int? = nil)
   override open func setup()
   open func updateSelectedCaption()
   open func selectCaption(label: UIKit.UILabel)
@@ -192,7 +192,7 @@ public protocol ShareChallengeToSocialMediaDelegate {
   override open class var nibName: Swift.String {
     get
   }
-  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responderController: CheetahLoyaltyChallenges.SurveyResponderController)
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int? = nil, responderController: CheetahLoyaltyChallenges.SurveyResponderController)
   override open func setup()
   open func setupTitle()
   open func onFailure(with error: Swift.Error)
@@ -308,6 +308,15 @@ public protocol ChallengeResponder : AnyObject {
   @objc override dynamic public init()
   @objc deinit
 }
+@objc open class ReEnterChallengeResponder : CheetahLoyaltyChallenges.BaseChallengeResponder {
+  open var responseId: Swift.Int
+  public init(with challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int, delegate: CheetahLoyaltyChallenges.ChallengeResponderDelegate? = nil)
+  override open func respond(with parameters: CheetahLoyaltyUtils.Parameters?)
+  override open func respond(with image: UIKit.UIImage, and parameters: CheetahLoyaltyUtils.Parameters? = nil)
+  override open func respond(withVideo videoURL: Foundation.URL, and parameters: CheetahLoyaltyUtils.Parameters? = nil)
+  override public init(with challenge: CheetahLoyaltyCore.Challenge, delegate: CheetahLoyaltyChallenges.ChallengeResponderDelegate? = super)
+  @objc deinit
+}
 public enum ChallengesNotification : CheetahLoyaltyUtils.CheetahNotification {
   case challengeUpdated
   public var name: Swift.String {
@@ -348,7 +357,7 @@ open class ViewPhotoChallengeController : CheetahLoyaltyChallenges.ViewContentCo
   open var uiImage: UIKit.UIImage?
   open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
   open var loadingAlert: CheetahLoyaltyUI.AlertViewController
-  convenience public init(with challenge: CheetahLoyaltyCore.Challenge)
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int? = nil)
   override open func setup()
   open func setupImageView()
   open func setupUploadLabel()
@@ -404,7 +413,7 @@ open class ViewPhotoChallengeController : CheetahLoyaltyChallenges.ViewContentCo
   open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
   open var loadingAlert: CheetahLoyaltyUI.AlertViewController
   open var userLocation: CheetahLoyaltyCore.UserLocation?
-  convenience public init(with challenge: CheetahLoyaltyCore.Challenge)
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int? = nil)
   override open func setup()
   open func refetchLatestChallenge()
   open func setupNearby(place: CheetahLoyaltyCore.Place)
@@ -452,7 +461,7 @@ public protocol ChallengeDetailController : CheetahLoyaltyUI.ContentController {
     get
     set
   }
-  convenience public init(challenge: CheetahLoyaltyCore.Challenge)
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int? = nil)
   override open func setup()
   open func setupPageControl()
   open func setupButtons()
@@ -470,7 +479,7 @@ public protocol ChallengeDetailController : CheetahLoyaltyUI.ContentController {
   open var prizeWon: CheetahLoyaltyCore.Prize?
   open var errorDescription: Swift.String
   open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
-  convenience public init(with challenge: CheetahLoyaltyCore.Challenge)
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int? = nil)
   override open func setup()
   open func setupView()
   open func loadURL(url: Foundation.URL)
@@ -562,7 +571,7 @@ public protocol ViewContentController : CheetahLoyaltyUI.ContentController {
     set
   }
   open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
-  convenience public init(challenge: CheetahLoyaltyCore.Challenge, viewContentController: CheetahLoyaltyChallenges.ViewContentController)
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int? = nil, viewContentController: CheetahLoyaltyChallenges.ViewContentController)
   override open func setup()
   open func setupTitle()
   open func onSuccess(with apiResponse: CheetahLoyaltyCore.APIResponse<CheetahLoyaltyCore.Challenge.ResponseInfo>)
@@ -597,7 +606,7 @@ public protocol ViewContentController : CheetahLoyaltyUI.ContentController {
   open var loadingAlert: CheetahLoyaltyUI.AlertViewController
   open var responder: CheetahLoyaltyChallenges.ChallengeResponder?
   open var player: AVFoundation.AVPlayer?
-  convenience public init(with challenge: CheetahLoyaltyCore.Challenge)
+  convenience public init(with challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int? = nil)
   override open func setup()
   @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
   open func setupTitle()
