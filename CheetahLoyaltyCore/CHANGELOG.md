@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-1.9.1] - 2021-02-04
+
+### Fixed
+- Reenter Challenge completion associated type and model key path [#588]
+
+[#588]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/588
+[Core-1.9.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/84?closed=1
+
 ## [Core-1.9.0] - 2021-01-26
 
 ### Added
