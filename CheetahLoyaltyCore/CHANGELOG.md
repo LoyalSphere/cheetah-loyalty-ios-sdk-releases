@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-1.9.2] - 2021-02-05
+
+### Fixed
+- Reenter Challenge Response Info [#590]
+
+[#590]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/590
+[Core-1.9.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/86?closed=1
+
 ## [Core-1.9.1] - 2021-02-04
 
 ### Fixed

@@ -471,7 +471,7 @@
     },
     {
       "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyCore/CheetahLoyaltyCore/Models/ChallengeResponse.swift",
-      "line": 176,
+      "line": 177,
       "symbol": "Challenge.MetricPrize.init(metric:point:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

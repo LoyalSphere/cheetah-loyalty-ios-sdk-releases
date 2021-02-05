@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7lcf7Hs8DgynoIxQYy+oGRG0bOw=
+		GZRUGMZbY636v6R4GDDX8hYCnBo=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DiZUlAojGb+cp/u/ZhS9ac/zLoo=
+		URg+RHkQ4l2Y+sCWas35qyNNbgk=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		DiZUlAojGb+cp/u/ZhS9ac/zLoo=
+		URg+RHkQ4l2Y+sCWas35qyNNbgk=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FOFhtDOA/cp5j7/PVkfbnP4Y3Vc=
+		XC81l84p6/QJNU/kHhT+D7gUTn8=
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		FOFhtDOA/cp5j7/PVkfbnP4Y3Vc=
+		XC81l84p6/QJNU/kHhT+D7gUTn8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Aw38LTBqS/yxaPR6uTOeDyHUqOxODFywpHxyuD0bAqQ=
+			pHBJQsp2ZBc5LT41mnYhsW4ia8Z3jP1SPLDrpwcxmFY=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/arm64.swiftdoc</key>
@@ -128,7 +128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Aw38LTBqS/yxaPR6uTOeDyHUqOxODFywpHxyuD0bAqQ=
+			pHBJQsp2ZBc5LT41mnYhsW4ia8Z3jP1SPLDrpwcxmFY=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -149,7 +149,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C9tAWnxIDgvv34J3JBsBjvwgVVpT84grXMOea+GmPSo=
+			WeB1zlDdxm0MIGQ4aXKhZBzRA1p/QJsAJOpF48Ve/co=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyCore.swiftmodule/x86_64.swiftdoc</key>
@@ -170,7 +170,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C9tAWnxIDgvv34J3JBsBjvwgVVpT84grXMOea+GmPSo=
+			WeB1zlDdxm0MIGQ4aXKhZBzRA1p/QJsAJOpF48Ve/co=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
