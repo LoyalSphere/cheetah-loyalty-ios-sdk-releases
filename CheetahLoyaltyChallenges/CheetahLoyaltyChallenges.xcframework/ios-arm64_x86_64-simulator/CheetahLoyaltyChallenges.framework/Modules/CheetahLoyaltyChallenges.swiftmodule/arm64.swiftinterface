@@ -245,7 +245,7 @@ public protocol ShareChallengeToSocialMediaDelegate {
   @objc deinit
 }
 extension SurveyChallengeViewController {
-  public static func surveyResponderFor(challenge: CheetahLoyaltyCore.Challenge) -> CheetahLoyaltyChallenges.SurveyChallengeViewController?
+  public static func surveyResponderFor(challenge: CheetahLoyaltyCore.Challenge, responseId: Swift.Int? = nil) -> CheetahLoyaltyChallenges.SurveyChallengeViewController?
 }
 public protocol SurveyRespondable : CheetahLoyaltyChallenges.SurveyDetailCellPresentable, CheetahLoyaltyChallenges.SurveyRespondCellPresentable {
 }

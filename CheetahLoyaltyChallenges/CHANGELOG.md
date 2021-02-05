@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Challenges-1.3.1] - 2021-02-05
+
+### Added
+- Missing response id to survey responder for challenge static method [#591]
+
+### Changed
+- Dependency version requirements to CheetahLoyaltyCore 1.9.2 [#592]
+
+[#591]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/589
+[#592]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/589
+[Challenges-1.3.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/87?closed=1
+
 ## [Challenges-1.3.0] - 2021-02-04
 
 ### Added
