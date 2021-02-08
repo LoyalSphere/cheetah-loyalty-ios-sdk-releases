@@ -9,14 +9,21 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Basket/BasketCollectionController.swift",
-      "line": 22,
+      "line": 33,
+      "symbol": "BasketCollectionController.refreshContent()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Basket/BasketCollectionController.swift",
+      "line": 64,
       "symbol": "BasketCollectionController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Basket/BasketCollectionController.swift",
-      "line": 75,
+      "line": 87,
       "symbol": "BasketCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -37,16 +44,51 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Basket/BasketItemCollectionViewCell.swift",
-      "line": 61,
+      "line": 60,
       "symbol": "BasketItemCollectionViewCell.awakeFromNib()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Basket/BasketItemCollectionViewCell.swift",
-      "line": 81,
+      "line": 80,
       "symbol": "BasketItemCollectionViewCell.setupGestureRecognizers()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Basket/BasketItemCollectionViewCell.swift",
+      "line": 89,
+      "symbol": "BasketItemCollectionViewCell.preferredLayoutAttributesFitting(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Basket/BasketItemUpdateTableController.swift",
+      "line": 14,
+      "symbol": "BasketItemUpdateTableController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Basket/BasketItemUpdateTableController.swift",
+      "line": 18,
+      "symbol": "BasketItemUpdateTableController.loadContent()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Basket/BasketItemUpdateTableController.swift",
+      "line": 53,
+      "symbol": "BasketItemUpdateTableController.setBasketNestedOptions(optionGroups:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Basket/BasketItemUpdateViewController.swift",
+      "line": 13,
+      "symbol": "BasketItemUpdateViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
@@ -59,7 +101,7 @@
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Basket/BasketViewController.swift",
       "line": 30,
-      "symbol": "BasketViewController.viewDidAppear(_:)",
+      "symbol": "BasketViewController.viewWillAppear(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -114,77 +156,77 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/DeliveryPreferences/DeliveryPreferencesController.swift",
-      "line": 73,
+      "line": 79,
       "symbol": "DeliveryPreferencesController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/DeliveryPreferences/DeliveryPreferencesController.swift",
-      "line": 96,
+      "line": 91,
       "symbol": "DeliveryPreferencesController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/DeliveryPreferences/DeliveryPreferencesController.swift",
-      "line": 100,
+      "line": 95,
       "symbol": "DeliveryPreferencesController.collectionView(_:numberOfItemsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/DeliveryPreferences/DeliveryPreferencesController.swift",
-      "line": 115,
+      "line": 112,
       "symbol": "DeliveryPreferencesController.collectionView(_:viewForSupplementaryElementOfKind:at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/DeliveryPreferences/DeliveryPreferencesController.swift",
-      "line": 134,
+      "line": 131,
       "symbol": "DeliveryPreferencesController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/DeliveryPreferences/DeliveryPreferencesController.swift",
-      "line": 191,
+      "line": 175,
       "symbol": "DeliveryPreferencesController.collectionView(_:layout:referenceSizeForHeaderInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/DeliveryPreferences/DeliveryPreferencesController.swift",
-      "line": 202,
+      "line": 186,
       "symbol": "DeliveryPreferencesController.collectionView(_:layout:sizeForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/DeliveryPreferences/DeliveryPreferencesController.swift",
-      "line": 216,
+      "line": 200,
       "symbol": "DeliveryPreferencesController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/DeliveryPreferences/DeliveryPreferencesController.swift",
-      "line": 232,
+      "line": 226,
       "symbol": "DeliveryPreferencesController.updateText(textField:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/DeliveryPreferences/DeliveryPreferencesController.swift",
-      "line": 236,
+      "line": 230,
       "symbol": "DeliveryPreferencesController.updateDate(textField:date:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/DeliveryPreferences/DeliveryPreferencesController.swift",
-      "line": 658,
+      "line": 758,
       "symbol": "DeliveryPreferencesViewController.viewDidAppear(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -214,6 +256,27 @@
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Generic/CheckBoxCollectionViewCell.swift",
       "line": 11,
       "symbol": "CheckBoxCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Generic/CheckBoxCollectionViewCell.swift",
+      "line": 16,
+      "symbol": "CheckBoxCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Generic/CheckBoxCollectionViewCell.swift",
+      "line": 21,
+      "symbol": "CheckBoxCollectionViewCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Generic/FooterButtonCollectionViewController.swift",
+      "line": 11,
+      "symbol": "FooterButtonCollectionViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
@@ -254,35 +317,49 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Generic/TextFieldCollectionViewCell.swift",
-      "line": 19,
+      "line": 20,
       "symbol": "TextFieldCollectionViewCell.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Generic/TextFieldCollectionViewCell.swift",
-      "line": 21,
+      "line": 22,
       "symbol": "TextFieldCollectionViewCell.dateDisplayFormat",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Generic/TextFieldCollectionViewCell.swift",
-      "line": 24,
+      "line": 25,
+      "symbol": "TextFieldCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Generic/TextFieldCollectionViewCell.swift",
+      "line": 30,
+      "symbol": "TextFieldCollectionViewCell.prepareForReuse()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Generic/TextFieldCollectionViewCell.swift",
+      "line": 35,
       "symbol": "TextFieldCollectionViewCell.setupAsTextField()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Generic/TextFieldCollectionViewCell.swift",
-      "line": 28,
+      "line": 39,
       "symbol": "TextFieldCollectionViewCell.setupAsDatePicker()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Generic/TextFieldCollectionViewCell.swift",
-      "line": 57,
+      "line": 68,
       "symbol": "TextFieldCollectionViewCell.textFieldShouldReturn(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -297,7 +374,7 @@
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/NativeExtensions.swift",
       "line": 48,
-      "symbol": "OLOUINotification.restaurantChanged",
+      "symbol": "OLOUINotification.basketChanged",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -305,6 +382,13 @@
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/NativeExtensions.swift",
       "line": 49,
       "symbol": "OLOUINotification.orderPlaced",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/NativeExtensions.swift",
+      "line": 50,
+      "symbol": "OLOUINotification.restaurantChanged",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -324,35 +408,35 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/OrderProgress/OrderProgressView.swift",
-      "line": 23,
+      "line": 29,
       "symbol": "OrderProgressView",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/OrderProgress/OrderProgressView.swift",
-      "line": 113,
+      "line": 119,
       "symbol": "OrderProgressView.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/OrderProgress/OrderProgressView.swift",
-      "line": 127,
+      "line": 133,
       "symbol": "OrderProgressView.setup()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/OrderProgress/OrderProgressView.swift",
-      "line": 146,
+      "line": 152,
       "symbol": "OloOrdering",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/OrderProgress/OrderProgressView.swift",
-      "line": 182,
+      "line": 188,
       "symbol": "OrderProgressCompletable",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
@@ -373,43 +457,22 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/OrderProgressSavedData.swift",
-      "line": 9,
+      "line": 11,
       "symbol": "OrderProgressSavedData",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/OrderProgressSavedData.swift",
-      "line": 16,
-      "symbol": "OrderProgressSavedData.restaurantId",
+      "line": 15,
+      "symbol": "OrderProgressSavedData.restaurant",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/OrderProgressSavedData.swift",
-      "line": 25,
-      "symbol": "OrderProgressSavedData.restaurantName",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/OrderProgressSavedData.swift",
-      "line": 37,
-      "symbol": "OrderProgressSavedData.restaurantStoreName",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/OrderProgressSavedData.swift",
-      "line": 49,
-      "symbol": "OrderProgressSavedData.basketId",
-      "symbol_kind": "source.lang.swift.decl.var.static",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/OrderProgressSavedData.swift",
-      "line": 61,
-      "symbol": "OrderProgressSavedData.supportsSpecialInstructions",
+      "line": 29,
+      "symbol": "OrderProgressSavedData.basket",
       "symbol_kind": "source.lang.swift.decl.var.static",
       "warning": "undocumented"
     },
@@ -443,28 +506,28 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Extra Views/BillingAccountCollectionViewCell.swift",
-      "line": 34,
+      "line": 36,
       "symbol": "BillingAccountCollectionViewCell.awakeFromNib()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Extra Views/BillingAccountCollectionViewCell.swift",
-      "line": 41,
+      "line": 51,
       "symbol": "BillingAccountCollectionViewCell.textField(_:shouldChangeCharactersIn:replacementString:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Extra Views/BillingAccountCollectionViewCell.swift",
-      "line": 60,
+      "line": 70,
       "symbol": "BillingAccountCollectionViewCell.textFieldDidEndEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Extra Views/BillingAccountCollectionViewCell.swift",
-      "line": 64,
+      "line": 74,
       "symbol": "BillingAccountCollectionViewCell.textFieldShouldReturn(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -492,14 +555,14 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Extra Views/CreditCardViewController.swift",
-      "line": 422,
+      "line": 423,
       "symbol": "CreditCardViewController.textFieldDidBeginEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Extra Views/CreditCardViewController.swift",
-      "line": 437,
+      "line": 438,
       "symbol": "CreditCardViewController.textFieldDidEndEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -527,7 +590,7 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Extra Views/OfferListCollectionController.swift",
-      "line": 57,
+      "line": 58,
       "symbol": "OfferListCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -555,56 +618,63 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCheckoutCollectionController.swift",
-      "line": 132,
+      "line": 90,
+      "symbol": "PaymentCheckoutCollectionController.addAccountButtonTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCheckoutCollectionController.swift",
+      "line": 124,
       "symbol": "PaymentCheckoutCollectionController.amountTextFieldDidEndEditing(_:parent:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCheckoutCollectionController.swift",
-      "line": 138,
+      "line": 130,
       "symbol": "PaymentCheckoutCollectionController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCheckoutCollectionController.swift",
-      "line": 143,
+      "line": 136,
       "symbol": "PaymentCheckoutCollectionController.refreshContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCheckoutCollectionController.swift",
-      "line": 161,
+      "line": 151,
       "symbol": "PaymentCheckoutCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCheckoutCollectionController.swift",
-      "line": 202,
+      "line": 176,
       "symbol": "PaymentCheckoutCollectionController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCheckoutCollectionController.swift",
-      "line": 223,
+      "line": 191,
       "symbol": "PaymentCheckoutCollectionController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCheckoutCollectionController.swift",
-      "line": 227,
+      "line": 196,
       "symbol": "PaymentCheckoutCollectionController.collectionView(_:numberOfItemsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCheckoutCollectionController.swift",
-      "line": 232,
+      "line": 201,
       "symbol": "PaymentCheckoutCollectionController.collectionView(_:layout:sizeForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -617,6 +687,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCheckoutCollectionViewController.swift",
+      "line": 58,
+      "symbol": "PaymentCheckoutCollectionViewController.addButtonTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCollectionActionViewCell.swift",
       "line": 19,
       "symbol": "PaymentCollectionActionViewCell.awakeFromNib()",
@@ -625,56 +702,56 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCollectionController.swift",
-      "line": 111,
+      "line": 106,
       "symbol": "PaymentCollectionController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCollectionController.swift",
-      "line": 135,
+      "line": 114,
       "symbol": "PaymentCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCollectionController.swift",
-      "line": 153,
+      "line": 133,
       "symbol": "PaymentCollectionController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCollectionController.swift",
-      "line": 165,
+      "line": 145,
       "symbol": "PaymentCollectionController.collectionView(_:viewForSupplementaryElementOfKind:at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCollectionController.swift",
-      "line": 184,
+      "line": 164,
       "symbol": "PaymentCollectionController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCollectionController.swift",
-      "line": 188,
+      "line": 170,
       "symbol": "PaymentCollectionController.collectionView(_:numberOfItemsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCollectionController.swift",
-      "line": 202,
+      "line": 184,
       "symbol": "PaymentCollectionController.collectionView(_:layout:sizeForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Payments/Main Views/PaymentCollectionController.swift",
-      "line": 221,
+      "line": 203,
       "symbol": "PaymentCollectionController.collectionView(_:layout:referenceSizeForHeaderInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -695,21 +772,21 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Categories/ProductCategoriesCollectionController.swift",
-      "line": 81,
+      "line": 80,
       "symbol": "ProductCategoriesCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Categories/ProductCategoriesCollectionController.swift",
-      "line": 114,
+      "line": 112,
       "symbol": "ProductCategoriesCollectionController.collectionView(_:layout:sizeForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Categories/ProductCategoriesCollectionController.swift",
-      "line": 121,
+      "line": 119,
       "symbol": "ProductCategoriesCollectionController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -723,7 +800,14 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Categories/ProductCategoriesViewController.swift",
-      "line": 77,
+      "line": 36,
+      "symbol": "ProductCategoriesViewController.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Categories/ProductCategoriesViewController.swift",
+      "line": 90,
       "symbol": "ProductCategoriesViewController.viewWillAppear(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -743,65 +827,65 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationCollectionController.swift",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationTableController.swift",
       "line": 14,
-      "symbol": "ProductCustomizationCollectionController",
+      "symbol": "ProductCustomizationTableController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationCollectionController.swift",
-      "line": 43,
-      "symbol": "ProductCustomizationCollectionController.loadContent()",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationTableController.swift",
+      "line": 27,
+      "symbol": "ProductCustomizationTableController.additionalSections",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationTableController.swift",
+      "line": 35,
+      "symbol": "ProductCustomizationTableController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationCollectionController.swift",
-      "line": 91,
-      "symbol": "ProductCustomizationCollectionController.collectionView(_:layout:sizeForItemAt:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationTableController.swift",
+      "line": 77,
+      "symbol": "ProductCustomizationTableController.tableView(_:numberOfRowsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationCollectionController.swift",
-      "line": 106,
-      "symbol": "ProductCustomizationCollectionController.collectionView(_:numberOfItemsInSection:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationTableController.swift",
+      "line": 85,
+      "symbol": "ProductCustomizationTableController.tableView(_:cellForRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationCollectionController.swift",
-      "line": 114,
-      "symbol": "ProductCustomizationCollectionController.collectionView(_:cellForItemAt:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationTableController.swift",
+      "line": 135,
+      "symbol": "ProductCustomizationTableController.tableView(_:viewForHeaderInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationCollectionController.swift",
-      "line": 163,
-      "symbol": "ProductCustomizationCollectionController.collectionView(_:viewForSupplementaryElementOfKind:at:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationTableController.swift",
+      "line": 151,
+      "symbol": "ProductCustomizationTableController.tableView(_:heightForHeaderInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationCollectionController.swift",
-      "line": 186,
-      "symbol": "ProductCustomizationCollectionController.collectionView(_:didSelectItemAt:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationTableController.swift",
+      "line": 158,
+      "symbol": "ProductCustomizationTableController.tableView(_:didSelectRowAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationCollectionController.swift",
-      "line": 213,
-      "symbol": "ProductCustomizationCollectionController.collectionView(_:layout:referenceSizeForHeaderInSection:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationCollectionController.swift",
-      "line": 318,
-      "symbol": "ProductCustomizationCollectionController.basketSelectedOptionsParameters()",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationTableController.swift",
+      "line": 179,
+      "symbol": "ProductCustomizationTableController.basketSelectedOptionsParameters()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -813,100 +897,135 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductDetailCollectionViewCell.swift",
-      "line": 12,
-      "symbol": "ProductDetailCollectionViewCell",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductInstructionsCollectionViewCell.swift",
-      "line": 12,
-      "symbol": "ProductInstructionsCollectionViewCell",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductInstructionsCollectionViewCell.swift",
-      "line": 19,
-      "symbol": "ProductInstructionsCollectionViewCell.awakeFromNib()",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationViewController.swift",
+      "line": 40,
+      "symbol": "ProductCustomizationViewController.viewDidLoad()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductInstructionsCollectionViewCell.swift",
-      "line": 27,
-      "symbol": "ProductInstructionsCollectionViewCell.textViewDidChange(_:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationViewController.swift",
+      "line": 48,
+      "symbol": "ProductCustomizationViewController.viewWillAppear(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductQuantityCollectionViewCell.swift",
-      "line": 12,
-      "symbol": "ProductQuantityCollectionViewCell",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductQuantityCollectionViewCell.swift",
-      "line": 31,
-      "symbol": "ProductQuantityCollectionViewCell.awakeFromNib()",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductCustomizationViewController.swift",
+      "line": 53,
+      "symbol": "ProductCustomizationViewController.viewDidAppear(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductQuantityCollectionViewCell.swift",
-      "line": 42,
-      "symbol": "ProductQuantityCollectionViewCell.addGestureRecognizers()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/FooterButtonCollectionViewController.swift",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductDetailCell.swift",
       "line": 11,
-      "symbol": "FooterButtonCollectionViewController",
+      "symbol": "ProductDetailCell",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionCollectionViewCell.swift",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductInstructionsCell.swift",
       "line": 11,
-      "symbol": "ProductOptionCollectionViewCell",
+      "symbol": "ProductInstructionsCell",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionCollectionViewCell.swift",
-      "line": 21,
-      "symbol": "ProductOptionCollectionViewCell.didSelectCheckBox",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductInstructionsCell.swift",
+      "line": 18,
+      "symbol": "ProductInstructionsCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductInstructionsCell.swift",
+      "line": 26,
+      "symbol": "ProductInstructionsCell.textViewDidChange(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductQuantityCell.swift",
+      "line": 10,
+      "symbol": "ProductQuantityCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductQuantityCell.swift",
+      "line": 29,
+      "symbol": "ProductQuantityCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/Customization/ProductQuantityCell.swift",
+      "line": 40,
+      "symbol": "ProductQuantityCell.addGestureRecognizers()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/FooterButtonTableViewController.swift",
+      "line": 11,
+      "symbol": "FooterButtonTableViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionCell.swift",
+      "line": 11,
+      "symbol": "ProductOptionCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionCell.swift",
+      "line": 22,
+      "symbol": "ProductOptionCell.didSelectCheckBox",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionCollectionViewCell.swift",
-      "line": 23,
-      "symbol": "ProductOptionCollectionViewCell.awakeFromNib()",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionCell.swift",
+      "line": 24,
+      "symbol": "ProductOptionCell.awakeFromNib()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionCollectionViewCell.swift",
-      "line": 32,
-      "symbol": "ProductOptionCollectionViewCell.didTap(_:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionCell.swift",
+      "line": 34,
+      "symbol": "ProductOptionCell.didTap(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionCollectionViewCell.swift",
-      "line": 37,
-      "symbol": "ProductOptionHeaderCollectionViewCell",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionCell.swift",
+      "line": 39,
+      "symbol": "ProductOptionHeaderCell",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionCollectionViewCell.swift",
-      "line": 44,
-      "symbol": "ProductOptionHeaderCollectionViewCell.awakeFromNib()",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionCell.swift",
+      "line": 46,
+      "symbol": "ProductOptionHeaderCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionHeaderView.swift",
+      "line": 11,
+      "symbol": "ProductOptionHeaderView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/OptionCells/ProductOptionHeaderView.swift",
+      "line": 18,
+      "symbol": "ProductOptionHeaderView.awakeFromNib()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -919,28 +1038,28 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductList/ProductCollectionController.swift",
-      "line": 34,
+      "line": 38,
       "symbol": "ProductCollectionController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductList/ProductCollectionController.swift",
-      "line": 52,
+      "line": 56,
       "symbol": "ProductCollectionController.collectionView(_:layout:sizeForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductList/ProductCollectionController.swift",
-      "line": 59,
+      "line": 63,
       "symbol": "ProductCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductList/ProductCollectionController.swift",
-      "line": 97,
+      "line": 100,
       "symbol": "ProductCollectionController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -960,72 +1079,156 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsCollectionController.swift",
-      "line": 13,
-      "symbol": "ProductOptionsCollectionController",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsCollectionController.swift",
-      "line": 81,
-      "symbol": "ProductOptionsCollectionController.numberOfSections(in:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationCollectionController.swift",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
       "line": 14,
-      "symbol": "ProductSubCustomizationCollectionController",
+      "symbol": "Product.OptionGroup.isOptionMandatory()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 24,
+      "symbol": "SelectedOption",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 25,
+      "symbol": "SelectedOption.optionId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 26,
+      "symbol": "SelectedOption.choices",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 27,
+      "symbol": "SelectedOption.nestedChoices",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 30,
+      "symbol": "ProductOptionsTableController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationCollectionController.swift",
-      "line": 25,
-      "symbol": "ProductSubCustomizationCollectionController.loadContent()",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 44,
+      "symbol": "ProductOptionsTableController.refreshContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationCollectionController.swift",
-      "line": 45,
-      "symbol": "ProductSubCustomizationCollectionController.collectionView(_:numberOfItemsInSection:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 76,
+      "symbol": "ProductOptionsTableController.removeFromUnselectedMandatoryFields(optionGroupId:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationCollectionController.swift",
-      "line": 50,
-      "symbol": "ProductSubCustomizationCollectionController.collectionView(_:cellForItemAt:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 82,
+      "symbol": "ProductOptionsTableController.appendToMandatoryFields(optionGroup:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationCollectionController.swift",
-      "line": 75,
-      "symbol": "ProductSubCustomizationCollectionController.collectionView(_:didSelectItemAt:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 116,
+      "symbol": "ProductOptionsTableController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationCollectionController.swift",
-      "line": 104,
-      "symbol": "ProductSubCustomizationCollectionController.collectionView(_:viewForSupplementaryElementOfKind:at:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 183,
+      "symbol": "ProductOptionsTableController.optionHasNestedOptionSelected(option:group:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationCollectionController.swift",
-      "line": 122,
-      "symbol": "ProductSubCustomizationCollectionController.collectionView(_:layout:sizeForItemAt:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 201,
+      "symbol": "ProductOptionsTableController.navigateToSubCustomization(option:group:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationCollectionController.swift",
-      "line": 133,
-      "symbol": "ProductSubCustomizationCollectionController.collectionView(_:layout:referenceSizeForHeaderInSection:)",
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 252,
+      "symbol": "ProductOptionsTableController.setupCellSubheading(_:option:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 273,
+      "symbol": "ProductOptionsTableController.setupOptionHeader(sectionHeader:optionGroup:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/ProductOptionsTableController.swift",
+      "line": 294,
+      "symbol": "ProductOptionsTableController.didSelectOption(_:optionGroup:tableView:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationTableController.swift",
+      "line": 14,
+      "symbol": "ProductSubCustomizationTableController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationTableController.swift",
+      "line": 21,
+      "symbol": "ProductSubCustomizationTableController.loadContent()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationTableController.swift",
+      "line": 57,
+      "symbol": "ProductSubCustomizationTableController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationTableController.swift",
+      "line": 62,
+      "symbol": "ProductSubCustomizationTableController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationTableController.swift",
+      "line": 73,
+      "symbol": "ProductSubCustomizationTableController.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationTableController.swift",
+      "line": 79,
+      "symbol": "ProductSubCustomizationTableController.tableView(_:viewForHeaderInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationTableController.swift",
+      "line": 89,
+      "symbol": "ProductSubCustomizationTableController.tableView(_:heightForHeaderInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -1044,6 +1247,202 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationViewController.swift",
+      "line": 45,
+      "symbol": "ProductSubCustomizationViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationViewController.swift",
+      "line": 50,
+      "symbol": "ProductSubCustomizationViewController.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Products/SubCustomization/ProductSubCustomizationViewController.swift",
+      "line": 56,
+      "symbol": "ProductSubCustomizationViewController.setupTitle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersDetailCollectionController.swift",
+      "line": 47,
+      "symbol": "RecentOrdersDetailCollectionController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersDetailCollectionController.swift",
+      "line": 95,
+      "symbol": "RecentOrdersDetailCollectionController.loadContent()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersDetailCollectionController.swift",
+      "line": 116,
+      "symbol": "RecentOrdersDetailCollectionController.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersDetailCollectionController.swift",
+      "line": 155,
+      "symbol": "RecentOrdersDetailCollectionController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersDetailCollectionController.swift",
+      "line": 159,
+      "symbol": "RecentOrdersDetailCollectionController.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersDetailCollectionController.swift",
+      "line": 177,
+      "symbol": "RecentOrdersDetailCollectionController.actionButtonTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersFooterCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "RecentOrdersFooterCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersFooterCollectionViewCell.swift",
+      "line": 21,
+      "symbol": "RecentOrdersFooterCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersFooterCollectionViewCell.swift",
+      "line": 43,
+      "symbol": "RecentOrdersFooterCollectionViewCell.preferredLayoutAttributesFitting(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersHeaderCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "RecentOrdersHeaderCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersHeaderCollectionViewCell.swift",
+      "line": 23,
+      "symbol": "RecentOrdersHeaderCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersHeaderCollectionViewCell.swift",
+      "line": 67,
+      "symbol": "RecentOrdersHeaderCollectionViewCell.preferredLayoutAttributesFitting(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersItemCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "RecentOrdersItemCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersItemCollectionViewCell.swift",
+      "line": 23,
+      "symbol": "RecentOrdersItemCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersItemCollectionViewCell.swift",
+      "line": 56,
+      "symbol": "RecentOrdersItemCollectionViewCell.preferredLayoutAttributesFitting(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersItemTotalCollectionViewCell.swift",
+      "line": 11,
+      "symbol": "RecentOrdersItemTotalCollectionViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersItemTotalCollectionViewCell.swift",
+      "line": 21,
+      "symbol": "RecentOrdersItemTotalCollectionViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/RecentOrdersItemTotalCollectionViewCell.swift",
+      "line": 51,
+      "symbol": "RecentOrdersItemTotalCollectionViewCell.preferredLayoutAttributesFitting(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/Detail/SaveAsFavoriteViewController.swift",
+      "line": 11,
+      "symbol": "SaveAsFavoriteViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/List/RecentOrdersListCell.swift",
+      "line": 11,
+      "symbol": "RecentOrdersListCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/List/RecentOrdersListCell.swift",
+      "line": 34,
+      "symbol": "RecentOrdersListCell.preferredLayoutAttributesFitting(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/List/RecentOrdersListCollectionController.swift",
+      "line": 19,
+      "symbol": "RecentOrdersListCollectionController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/List/RecentOrdersListCollectionController.swift",
+      "line": 45,
+      "symbol": "RecentOrdersListCollectionController.loadContent()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/List/RecentOrdersListCollectionController.swift",
+      "line": 50,
+      "symbol": "RecentOrdersListCollectionController.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/RecentOrders/List/RecentOrdersListCollectionController.swift",
+      "line": 63,
+      "symbol": "RecentOrdersListCollectionController.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCell.swift",
       "line": 12,
       "symbol": "RestaurantListCell",
@@ -1052,63 +1451,91 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCell.swift",
-      "line": 24,
+      "line": 27,
       "symbol": "RestaurantListCell.awakeFromNib()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCell.swift",
+      "line": 32,
+      "symbol": "RestaurantListCell.preferredLayoutAttributesFitting(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCollectionController.swift",
-      "line": 39,
+      "line": 18,
+      "symbol": "RestaurantsCollectionViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCollectionController.swift",
+      "line": 25,
+      "symbol": "CollectionViewController.init(nibName:collectionController:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCollectionController.swift",
+      "line": 33,
+      "symbol": "TableViewController.init(nibName:tableController:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCollectionController.swift",
+      "line": 40,
       "symbol": "RestaurantListCollectionController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCollectionController.swift",
-      "line": 80,
+      "line": 96,
       "symbol": "RestaurantListCollectionController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCollectionController.swift",
-      "line": 89,
+      "line": 105,
       "symbol": "RestaurantListCollectionController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCollectionController.swift",
-      "line": 115,
+      "line": 128,
       "symbol": "RestaurantListCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCollectionController.swift",
-      "line": 140,
+      "line": 149,
       "symbol": "RestaurantListCollectionController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCollectionController.swift",
-      "line": 144,
+      "line": 153,
       "symbol": "RestaurantListCollectionController.collectionView(_:numberOfItemsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCollectionController.swift",
-      "line": 148,
+      "line": 157,
       "symbol": "RestaurantListCollectionController.locationManager(_:didUpdateLocations:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/List/RestaurantListCollectionController.swift",
-      "line": 158,
+      "line": 167,
       "symbol": "RestaurantListCollectionController.locationManager(_:didFailWithError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -1122,28 +1549,28 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/Schedule/RestaurantScheduleCollectionController.swift",
-      "line": 76,
+      "line": 68,
       "symbol": "RestaurantScheduleCollectionController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/Schedule/RestaurantScheduleCollectionController.swift",
-      "line": 82,
+      "line": 76,
       "symbol": "RestaurantScheduleCollectionController.refreshContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/Schedule/RestaurantScheduleCollectionController.swift",
-      "line": 88,
+      "line": 81,
       "symbol": "RestaurantScheduleCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloUI/CheetahLoyaltyOloUI/Restaurant/Schedule/RestaurantScheduleCollectionController.swift",
-      "line": 103,
+      "line": 96,
       "symbol": "RestaurantScheduleCollectionController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"

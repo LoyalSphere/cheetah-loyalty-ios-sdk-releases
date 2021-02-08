@@ -6,6 +6,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Olo-UI-1.2.0] - 2020-02-08
+### Updated
+- CheetahLoyaltyUI version to 1.9.1
+- CheetahLoyaltyUtils version to 1.2.0
+- CheetahLoyaltyOloCore version to 1.1.2
+- Use TableControllers on Products Customization pages 
+- Enhance product customization validation
+- Payment  bugfixes
+- Support "Pay In Store" on Split Payments
+- Support scheduled time for all types of order services
+- Auto-resizing cells for Restaurants and Baskets
+- Saving of Restaurant and Basket objects on User Defaults
+- Basket transfer support
+- Removed demo images
+- Remove authentication on basket creation
+### Added
+- Recent Orders History
+
+
 ## [Olo-UI-1.1.2] - 2020-11-17
 ### Updated
 - CheetahLoyaltyUI version to 1.8.0

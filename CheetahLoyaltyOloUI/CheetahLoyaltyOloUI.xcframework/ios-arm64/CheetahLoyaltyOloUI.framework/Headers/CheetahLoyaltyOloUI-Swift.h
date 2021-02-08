@@ -239,9 +239,12 @@ SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI22CardCollectionViewCell")
 
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI26CheckBoxCollectionViewCell")
 @interface CheckBoxCollectionViewCell : UICollectionViewCell
+- (void)awakeFromNib;
+- (void)prepareForReuse;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI24HeaderCollectionViewCell")
@@ -296,56 +299,70 @@ SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI32PaymentDisplayCollectionViewCell")
 @end
 
 
-SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI31ProductDetailCollectionViewCell")
-@interface ProductDetailCollectionViewCell : UICollectionViewCell
+SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI17ProductDetailCell")
+@interface ProductDetailCell : UITableViewCell
 /// Heading label
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified headingLabel;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UITextView;
 
-SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI37ProductInstructionsCollectionViewCell")
-@interface ProductInstructionsCollectionViewCell : UICollectionViewCell <UITextViewDelegate>
+SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI23ProductInstructionsCell")
+@interface ProductInstructionsCell : UITableViewCell <UITextViewDelegate>
 /// Text view for the instructions
 @property (nonatomic, strong) IBOutlet UITextView * _Null_unspecified instructionsTextView;
 - (void)awakeFromNib;
 - (void)textViewDidChange:(UITextView * _Nonnull)textView;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class CheckBox;
 
-SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI31ProductOptionCollectionViewCell")
-@interface ProductOptionCollectionViewCell : UICollectionViewCell
+SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI17ProductOptionCell")
+@interface ProductOptionCell : UITableViewCell
 /// CheckBox for each options
 @property (nonatomic, strong) IBOutlet CheckBox * _Null_unspecified checkBox;
 /// Caret image for options with suboptions
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified caretImage;
+/// Label for the option name
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified headingLabel;
 /// Label for the additional cost and chosen sub option names
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified subheadingLabel;
 - (void)awakeFromNib;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI37ProductOptionHeaderCollectionViewCell")
-@interface ProductOptionHeaderCollectionViewCell : UICollectionViewCell
+SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI23ProductOptionHeaderCell")
+@interface ProductOptionHeaderCell : UITableViewCell
 /// Label for the heading
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified headingLabel;
 /// Label for the separator view
 @property (nonatomic, strong) IBOutlet UIView * _Null_unspecified separatorView;
 - (void)awakeFromNib;
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI33ProductQuantityCollectionViewCell")
-@interface ProductQuantityCollectionViewCell : UICollectionViewCell
+SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI23ProductOptionHeaderView")
+@interface ProductOptionHeaderView : UITableViewHeaderFooterView
+/// Label for the heading
+@property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified headingLabel;
+/// Label for the separator view
+@property (nonatomic, strong) IBOutlet UIView * _Null_unspecified separatorView;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithReuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI19ProductQuantityCell")
+@interface ProductQuantityCell : UITableViewCell
 /// Imageview for the minus sign
 @property (nonatomic, strong) IBOutlet UIImageView * _Null_unspecified minusImageView;
 /// Imageview for the add sign
@@ -353,19 +370,60 @@ SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI33ProductQuantityCollectionViewCell")
 /// Label for the quantity
 @property (nonatomic, strong) IBOutlet UILabel * _Null_unspecified quantityLabel;
 - (void)awakeFromNib;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UICollectionViewLayoutAttributes;
+
+SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI36RecentOrdersFooterCollectionViewCell")
+@interface RecentOrdersFooterCollectionViewCell : UICollectionViewCell
+- (void)awakeFromNib;
+- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI36RecentOrdersHeaderCollectionViewCell")
+@interface RecentOrdersHeaderCollectionViewCell : UICollectionViewCell
+- (void)awakeFromNib;
+- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI34RecentOrdersItemCollectionViewCell")
+@interface RecentOrdersItemCollectionViewCell : UICollectionViewCell
+- (void)awakeFromNib;
+- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI39RecentOrdersItemTotalCollectionViewCell")
+@interface RecentOrdersItemTotalCollectionViewCell : UICollectionViewCell
+- (void)awakeFromNib;
+- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
 SWIFT_CLASS("_TtC19CheetahLoyaltyOloUI27TextFieldCollectionViewCell")
 @interface TextFieldCollectionViewCell : UICollectionViewCell <UITextFieldDelegate>
+- (void)awakeFromNib;
+- (void)prepareForReuse;
 /// UITextFieldDelegate
 - (BOOL)textField:(UITextField * _Nonnull)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString * _Nonnull)string SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

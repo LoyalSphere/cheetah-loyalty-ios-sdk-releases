@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ProductOptionsTableController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ProductOptionsTableController" class="dashAnchor"></a>
+    <a title="ProductOptionsTableController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ProductOptionsTableController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BasketCollectionController.html">BasketCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BasketItemCollectionViewCell.html">BasketItemCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BasketItemUpdateTableController.html">BasketItemUpdateTableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BasketItemUpdateViewController.html">BasketItemUpdateViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BasketViewController.html">BasketViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BillingAccountCollectionViewCell.html">BillingAccountCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@CheetahLoyaltyOloUI@objc(cs)ButtonCollectionViewCell">ButtonCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CardCollectionViewCell.html">CardCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CheckBoxCollectionViewCell.html">CheckBoxCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CreditCardViewController.html">CreditCardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DeliveryAddressViewController.html">DeliveryAddressViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DeliveryPreferencesController.html">DeliveryPreferencesController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DeliveryPreferencesViewController.html">DeliveryPreferencesViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FooterButtonCollectionViewController.html">FooterButtonCollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FooterButtonTableViewController.html">FooterButtonTableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GiftCardViewController.html">GiftCardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@CheetahLoyaltyOloUI@objc(cs)HeaderCollectionViewCell">HeaderCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OfferListCollectionController.html">OfferListCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OrderProgressView.html">OrderProgressView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OrderProgressViewController.html">OrderProgressViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentCheckoutCollectionController.html">PaymentCheckoutCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentCheckoutCollectionViewController.html">PaymentCheckoutCollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentCollectionActionViewCell.html">PaymentCollectionActionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentCollectionController.html">PaymentCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentCollectionViewController.html">PaymentCollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PaymentDisplayCollectionViewCell.html">PaymentDisplayCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductCategoriesCollectionController.html">ProductCategoriesCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductCategoriesViewController.html">ProductCategoriesViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductCategoryCollectionViewCell.html">ProductCategoryCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductCollectionController.html">ProductCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductCollectionViewCell.html">ProductCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductCustomizationTableController.html">ProductCustomizationTableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductCustomizationViewController.html">ProductCustomizationViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductDetailCell.html">ProductDetailCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductInstructionsCell.html">ProductInstructionsCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductOptionCell.html">ProductOptionCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductOptionHeaderCell.html">ProductOptionHeaderCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductOptionHeaderView.html">ProductOptionHeaderView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductOptionsTableController.html">ProductOptionsTableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductQuantityCell.html">ProductQuantityCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductSubCustomizationTableController.html">ProductSubCustomizationTableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductSubCustomizationViewController.html">ProductSubCustomizationViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecentOrdersDetailCollectionController.html">RecentOrdersDetailCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecentOrdersFooterCollectionViewCell.html">RecentOrdersFooterCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecentOrdersHeaderCollectionViewCell.html">RecentOrdersHeaderCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecentOrdersItemCollectionViewCell.html">RecentOrdersItemCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecentOrdersItemTotalCollectionViewCell.html">RecentOrdersItemTotalCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecentOrdersListCell.html">RecentOrdersListCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RecentOrdersListCollectionController.html">RecentOrdersListCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RedeemCouponViewController.html">RedeemCouponViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RestaurantListCell.html">RestaurantListCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RestaurantListCollectionController.html">RestaurantListCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RestaurantScheduleCollectionController.html">RestaurantScheduleCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RestaurantScheduleViewController.html">RestaurantScheduleViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RestaurantsCollectionViewController.html">RestaurantsCollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SaveAsFavoriteViewController.html">SaveAsFavoriteViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TextFieldCollectionViewCell.html">TextFieldCollectionViewCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CreditCardScannerLoader.html">CreditCardScannerLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OLOUINotification.html">OLOUINotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OloOrdering.html">OloOrdering</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderProgressSavedData.html">OrderProgressSavedData</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/CollectionViewController.html">CollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Delivery.html">Delivery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Delivery/Address.html">– Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Product.html">Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Product/OptionGroup.html">– OptionGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/TableViewController.html">TableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableViewHeaderFooterView.html">UITableViewHeaderFooterView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BasketItemCollectionViewCellDelegate.html">BasketItemCollectionViewCellDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BillingAccountCellDelegate.html">BillingAccountCellDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CreditCardScanner.html">CreditCardScanner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OrderProgressCompletable.html">OrderProgressCompletable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OrderProgressViewDelegate.html">OrderProgressViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ProductOptionsViewControllerDelegate.html">ProductOptionsViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TextFieldCollectionViewCellDelegate.html">TextFieldCollectionViewCellDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:19CheetahLoyaltyOloUI8GiftCardV">GiftCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:19CheetahLoyaltyOloUI13OLOCreditCardV">OLOCreditCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SelectedOption.html">SelectedOption</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ProductOptionsTableController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ProductOptionsTableController</span><span class="p">:</span> <span class="kt">BaseTableController</span><span class="o">&lt;</span><span class="kt">Product</span><span class="o">.</span><span class="kt">OptionGroup</span><span class="o">&gt;</span><span class="p">,</span>
+                                               <span class="kt"><a href="../Protocols/ProductOptionsViewControllerDelegate.html">ProductOptionsViewControllerDelegate</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><p>Properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC08selectedF0SayAA14SelectedOptionVGvp"></a>
+                    <a name="//apple_ref/swift/Property/selectedOptions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC08selectedF0SayAA14SelectedOptionVGvp">selectedOptions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of SelectedOption objects</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">selectedOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/SelectedOption.html">SelectedOption</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC25unselectedMandatoryFieldsSaySiGvp"></a>
+                    <a name="//apple_ref/swift/Property/unselectedMandatoryFields" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC25unselectedMandatoryFieldsSaySiGvp">unselectedMandatoryFields</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An array of integer that tracks mandatory fields
+Will always trigger showing/hiding of footer button every after change in value</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">unselectedMandatoryFields</span><span class="p">:</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC14refreshContentyyF"></a>
+                    <a name="//apple_ref/swift/Method/refreshContent()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC14refreshContentyyF">refreshContent()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">refreshContent</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC05setupG4ViewyyF"></a>
+                    <a name="//apple_ref/swift/Method/setupTableView()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC05setupG4ViewyyF">setupTableView()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupTableView</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC24updateCollectionProvider4withySay0abC4Core0E0V11OptionGroupVG_tF"></a>
+                    <a name="//apple_ref/swift/Method/updateCollectionProvider(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC24updateCollectionProvider4withySay0abC4Core0E0V11OptionGroupVG_tF">updateCollectionProvider(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the collection View with new array of items
+This method will always remove previously added items and add new one</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">updateCollectionProvider</span><span class="p">(</span><span class="n">with</span> <span class="nv">newItems</span><span class="p">:</span> <span class="p">[</span><span class="kt">Product</span><span class="o">.</span><span class="kt">OptionGroup</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC18setMandatoryFieldsyyF"></a>
+                    <a name="//apple_ref/swift/Method/setMandatoryFields()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC18setMandatoryFieldsyyF">setMandatoryFields()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add new options ids on the mandatory fields array</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setMandatoryFields</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC35removeFromUnselectedMandatoryFields13optionGroupIdySi_tF"></a>
+                    <a name="//apple_ref/swift/Method/removeFromUnselectedMandatoryFields(optionGroupId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC35removeFromUnselectedMandatoryFields13optionGroupIdySi_tF">removeFromUnselectedMandatoryFields(optionGroupId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">removeFromUnselectedMandatoryFields</span><span class="p">(</span><span class="nv">optionGroupId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC23appendToMandatoryFields11optionGroupy0abC4Core0E0V06OptionN0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/appendToMandatoryFields(optionGroup:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC23appendToMandatoryFields11optionGroupy0abC4Core0E0V06OptionN0V_tF">appendToMandatoryFields(optionGroup:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">appendToMandatoryFields</span><span class="p">(</span><span class="nv">optionGroup</span><span class="p">:</span> <span class="kt">Product</span><span class="o">.</span><span class="kt">OptionGroup</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC18enableActionButtonyyF"></a>
+                    <a name="//apple_ref/swift/Method/enableActionButton()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC18enableActionButtonyyF">enableActionButton()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables action button if available</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">enableActionButton</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Collection%20View"></a>
+                <a name="//apple_ref/swift/Section/Collection View" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Collection%20View"></a>
+                  <h3 class="section-name"><p>Collection View</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC18registerComponentsyyF"></a>
+                    <a name="//apple_ref/swift/Method/registerComponents()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC18registerComponentsyyF">registerComponents()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register new collection view components</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">registerComponents</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC12totalSectionSiyF"></a>
+                    <a name="//apple_ref/swift/Method/totalSection()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC12totalSectionSiyF">totalSection()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the total section</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">totalSection</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC16numberOfSections2inSiSo11UITableViewC_tF"></a>
+                    <a name="//apple_ref/swift/Method/numberOfSections(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC16numberOfSections2inSiSo11UITableViewC_tF">numberOfSections(in:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">numberOfSections</span><span class="p">(</span><span class="k">in</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Selecting%20and%20Unselecting%20Options"></a>
+                <a name="//apple_ref/swift/Section/Selecting and Unselecting Options" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Selecting%20and%20Unselecting%20Options"></a>
+                  <h3 class="section-name"><p>Selecting and Unselecting Options</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC29optionHasNestedOptionSelected0I05groupSb0abC4Core0E0V0L0V_AI0L5GroupVtF"></a>
+                    <a name="//apple_ref/swift/Method/optionHasNestedOptionSelected(option:group:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC29optionHasNestedOptionSelected0I05groupSb0abC4Core0E0V0L0V_AI0L5GroupVtF">optionHasNestedOptionSelected(option:<wbr>group:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">optionHasNestedOptionSelected</span><span class="p">(</span><span class="nv">option</span><span class="p">:</span> <span class="kt">Product</span><span class="o">.</span><span class="kt">Option</span><span class="p">,</span> <span class="nv">group</span><span class="p">:</span> <span class="kt">Product</span><span class="o">.</span><span class="kt">OptionGroup</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ProductOptionsViewControllerDelegate"></a>
+                <a name="//apple_ref/swift/Section/ProductOptionsViewControllerDelegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/ProductOptionsViewControllerDelegate"></a>
+                  <h3 class="section-name"><p>ProductOptionsViewControllerDelegate</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI36ProductOptionsViewControllerDelegateP15didUpdateOption_4withy0abC4Core0E0V0L0V_SayAA08SelectedL0VGtF"></a>
+                    <a name="//apple_ref/swift/Method/didUpdateOption(_:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI36ProductOptionsViewControllerDelegateP15didUpdateOption_4withy0abC4Core0E0V0L0V_SayAA08SelectedL0VGtF">didUpdateOption(_:<wbr>with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">didUpdateOption</span><span class="p">(</span><span class="n">_</span> <span class="nv">option</span><span class="p">:</span> <span class="kt">Product</span><span class="o">.</span><span class="kt">Option</span><span class="p">,</span> <span class="n">with</span> <span class="nv">selectedOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/SelectedOption.html">SelectedOption</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC26navigateToSubCustomization6option5groupy0abC4Core0E0V6OptionV_AI0P5GroupVtF"></a>
+                    <a name="//apple_ref/swift/Method/navigateToSubCustomization(option:group:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC26navigateToSubCustomization6option5groupy0abC4Core0E0V6OptionV_AI0P5GroupVtF">navigateToSubCustomization(option:<wbr>group:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">navigateToSubCustomization</span><span class="p">(</span><span class="nv">option</span><span class="p">:</span> <span class="kt">Product</span><span class="o">.</span><span class="kt">Option</span><span class="p">,</span> <span class="nv">group</span><span class="p">:</span> <span class="kt">Product</span><span class="o">.</span><span class="kt">OptionGroup</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Setup%20Cells"></a>
+                <a name="//apple_ref/swift/Section/Setup Cells" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Setup%20Cells"></a>
+                  <h3 class="section-name"><p>Setup Cells</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC05setupE10OptionCell_9indexPath11optionGroupAA0ejK0CAH_10Foundation05IndexM0V0abC4Core0E0V0jO0VtF"></a>
+                    <a name="//apple_ref/swift/Method/setupProductOptionCell(_:indexPath:optionGroup:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC05setupE10OptionCell_9indexPath11optionGroupAA0ejK0CAH_10Foundation05IndexM0V0abC4Core0E0V0jO0VtF">setupProductOptionCell(_:<wbr>indexPath:<wbr>optionGroup:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set product option cell</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupProductOptionCell</span><span class="p">(</span><span class="n">_</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt"><a href="../Classes/ProductOptionCell.html">ProductOptionCell</a></span><span class="p">,</span>
+                                 <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">,</span>
+                                 <span class="nv">optionGroup</span><span class="p">:</span> <span class="kt">Product</span><span class="o">.</span><span class="kt">OptionGroup</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ProductOptionCell.html">ProductOptionCell</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC19setupCellSubheading_6optionyAA0e6OptionJ0C_0abC4Core0E0V0M0VtF"></a>
+                    <a name="//apple_ref/swift/Method/setupCellSubheading(_:option:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC19setupCellSubheading_6optionyAA0e6OptionJ0C_0abC4Core0E0V0M0VtF">setupCellSubheading(_:<wbr>option:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupCellSubheading</span><span class="p">(</span><span class="n">_</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt"><a href="../Classes/ProductOptionCell.html">ProductOptionCell</a></span><span class="p">,</span>
+                              <span class="nv">option</span><span class="p">:</span> <span class="kt">Product</span><span class="o">.</span><span class="kt">Option</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC17setupOptionHeader07sectionK011optionGroupAA0ejK4ViewCAH_0abC4Core0E0V0jN0VtF"></a>
+                    <a name="//apple_ref/swift/Method/setupOptionHeader(sectionHeader:optionGroup:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC17setupOptionHeader07sectionK011optionGroupAA0ejK4ViewCAH_0abC4Core0E0V0jN0VtF">setupOptionHeader(sectionHeader:<wbr>optionGroup:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupOptionHeader</span><span class="p">(</span><span class="nv">sectionHeader</span><span class="p">:</span> <span class="kt"><a href="../Classes/ProductOptionHeaderView.html">ProductOptionHeaderView</a></span><span class="p">,</span>
+                            <span class="nv">optionGroup</span><span class="p">:</span> <span class="kt">Product</span><span class="o">.</span><span class="kt">OptionGroup</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/ProductOptionHeaderView.html">ProductOptionHeaderView</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC15didSelectOption_11optionGroup9tableViewy10Foundation9IndexPathV_0abC4Core0E0V0kM0VSo07UITableO0CtF"></a>
+                    <a name="//apple_ref/swift/Method/didSelectOption(_:optionGroup:tableView:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC15didSelectOption_11optionGroup9tableViewy10Foundation9IndexPathV_0abC4Core0E0V0kM0VSo07UITableO0CtF">didSelectOption(_:<wbr>optionGroup:<wbr>tableView:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">didSelectOption</span><span class="p">(</span><span class="n">_</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">,</span> <span class="nv">optionGroup</span><span class="p">:</span> <span class="kt">Product</span><span class="o">.</span><span class="kt">OptionGroup</span><span class="p">,</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC018setDefaultSelectedF0yyF"></a>
+                    <a name="//apple_ref/swift/Method/setDefaultSelectedOptions()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahLoyaltyOloUI29ProductOptionsTableControllerC018setDefaultSelectedF0yyF">setDefaultSelectedOptions()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set default selected options on initial load
+This is not applicable for loading options from basket update</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setDefaultSelectedOptions</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-02-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -25,32 +25,21 @@ import UIKit
   override public init(collectionView: UIKit.UICollectionView? = super)
 }
 public enum OrderProgressSavedData {
-  public static var restaurantId: Swift.Int {
+  public static var restaurant: CheetahLoyaltyOloCore.Restaurant? {
     get
     set
   }
-  public static var restaurantName: Swift.String {
+  public static var basket: CheetahLoyaltyOloCore.Basket? {
     get
     set
   }
-  public static var restaurantStoreName: Swift.String {
-    get
-    set
-  }
-  public static var basketId: Swift.String {
-    get
-    set
-  }
-  public static var supportsSpecialInstructions: Swift.Bool {
-    get
-    set
-  }
+  public static func clearData()
 }
 @_inheritsConvenienceInitializers open class RedeemCouponViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.AlertEmbeddableViewController {
   @objc @IBOutlet weak public var headingLabel: UIKit.UILabel!
   @objc @IBOutlet weak public var couponCodeFloatingTextField: CheetahLoyaltyUI.FloatingTextField!
   @objc @IBOutlet weak public var applyCouponButton: UIKit.UIButton!
-  @objc @IBOutlet weak public var closeButton: UIKit.UIButton!
+  @objc @IBOutlet weak public var cancelButton: UIKit.UIButton!
   public var delegate: CheetahLoyaltyUI.AlertEmbeddableViewControllerDelegate?
   @objc override dynamic open func viewDidLoad()
   open func setupLabel()
@@ -62,12 +51,21 @@ public enum OrderProgressSavedData {
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
+@objc @_inheritsConvenienceInitializers open class RecentOrdersItemTotalCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
 public protocol BillingAccountCellDelegate {
   func billingAccountDeleted(_ cell: CheetahLoyaltyOloUI.BillingAccountCollectionViewCell)
   func amountTextFieldDidEndEditing(_ textField: UIKit.UITextField, parent cell: CheetahLoyaltyOloUI.BillingAccountCollectionViewCell)
 }
 @objc @_inheritsConvenienceInitializers open class BillingAccountCollectionViewCell : UIKit.UICollectionViewCell, UIKit.UITextFieldDelegate {
+  open var delegate: CheetahLoyaltyOloUI.BillingAccountCellDelegate?
   @objc override dynamic open func awakeFromNib()
+  open func setupCell()
   @objc open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
   @objc open func textFieldDidEndEditing(_ textField: UIKit.UITextField)
   @objc open func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
@@ -84,27 +82,73 @@ public protocol BillingAccountCellDelegate {
   override public init(collectionView: UIKit.UICollectionView? = super)
 }
 @objc @_inheritsConvenienceInitializers open class CheckBoxCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic open func prepareForReuse()
   @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@_inheritsConvenienceInitializers open class ProductOptionsCollectionController : CheetahLoyaltyUI.BaseCollectionController<CheetahLoyaltyOloCore.Product.OptionGroup>, UIKit.UICollectionViewDelegateFlowLayout {
+@objc @_inheritsConvenienceInitializers open class ProductInstructionsCell : UIKit.UITableViewCell, UIKit.UITextViewDelegate {
+  @objc @IBOutlet public var instructionsTextView: UIKit.UITextView!
+  open var didUpdateInstructions: ((Swift.String) -> Swift.Void)?
+  @objc override dynamic open func awakeFromNib()
+  @objc public func textViewDidChange(_ textView: UIKit.UITextView)
+  @objc deinit
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers open class ProductQuantityCell : UIKit.UITableViewCell {
+  @objc @IBOutlet public var minusImageView: UIKit.UIImageView!
+  @objc @IBOutlet public var addImageView: UIKit.UIImageView!
+  @objc @IBOutlet public var quantityLabel: UIKit.UILabel!
+  open var didUpdateQuantity: ((Swift.Int) -> Swift.Void)?
+  open var quantity: Swift.Int {
+    get
+    set
+  }
+  @objc override dynamic open func awakeFromNib()
+  open func addGestureRecognizers()
+  @objc deinit
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+extension Product.OptionGroup {
+  public func isOptionMandatory() -> Swift.Bool
+}
+public struct SelectedOption {
+  public var optionId: Swift.Int
+  public var choices: [CheetahLoyaltyOloCore.Product.Option]
+  public var nestedChoices: [Swift.Int : [CheetahLoyaltyOloUI.SelectedOption]]
+}
+@_inheritsConvenienceInitializers open class ProductOptionsTableController : CheetahLoyaltyUI.BaseTableController<CheetahLoyaltyOloCore.Product.OptionGroup>, CheetahLoyaltyOloUI.ProductOptionsViewControllerDelegate {
+  open var selectedOptions: [CheetahLoyaltyOloUI.SelectedOption]
   open var unselectedMandatoryFields: [Swift.Int] {
     get
     set
   }
-  open var collectionViewWidth: CoreGraphics.CGFloat {
-    get
-  }
-  open func updateCollection(with newItems: [CheetahLoyaltyOloCore.Product.OptionGroup])
+  override open func refreshContent()
+  override open func setupTableView()
+  open func updateCollectionProvider(with newItems: [CheetahLoyaltyOloCore.Product.OptionGroup])
   open func setMandatoryFields()
+  open func removeFromUnselectedMandatoryFields(optionGroupId: Swift.Int)
+  open func appendToMandatoryFields(optionGroup: CheetahLoyaltyOloCore.Product.OptionGroup)
   open func enableActionButton()
   override open func registerComponents()
   open func totalSection() -> Swift.Int
-  @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @objc override open func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  open func optionHasNestedOptionSelected(option: CheetahLoyaltyOloCore.Product.Option, group: CheetahLoyaltyOloCore.Product.OptionGroup) -> Swift.Bool
+  public func didUpdateOption(_ option: CheetahLoyaltyOloCore.Product.Option, with selectedOptions: [CheetahLoyaltyOloUI.SelectedOption])
+  open func navigateToSubCustomization(option: CheetahLoyaltyOloCore.Product.Option, group: CheetahLoyaltyOloCore.Product.OptionGroup)
+  open func setupProductOptionCell(_ cell: CheetahLoyaltyOloUI.ProductOptionCell, indexPath: Foundation.IndexPath, optionGroup: CheetahLoyaltyOloCore.Product.OptionGroup) -> CheetahLoyaltyOloUI.ProductOptionCell
+  open func setupCellSubheading(_ cell: CheetahLoyaltyOloUI.ProductOptionCell, option: CheetahLoyaltyOloCore.Product.Option)
+  open func setupOptionHeader(sectionHeader: CheetahLoyaltyOloUI.ProductOptionHeaderView, optionGroup: CheetahLoyaltyOloCore.Product.OptionGroup) -> CheetahLoyaltyOloUI.ProductOptionHeaderView
+  open func didSelectOption(_ indexPath: Foundation.IndexPath, optionGroup: CheetahLoyaltyOloCore.Product.OptionGroup, tableView: UIKit.UITableView)
+  open func setDefaultSelectedOptions()
   @objc deinit
   @objc override dynamic public init()
-  override public init(collectionView: UIKit.UICollectionView? = super)
+  override public init(tableView: UIKit.UITableView? = super)
 }
 @_inheritsConvenienceInitializers open class ProductCategoriesViewController : CheetahLoyaltyOloUI.FooterButtonCollectionViewController {
   @objc @IBOutlet public var storeSeparatorView: UIKit.UIView!
@@ -113,6 +157,7 @@ public protocol BillingAccountCellDelegate {
   @objc @IBOutlet public var caretRightImageView: UIKit.UIImageView!
   open var showCurrentRestaurant: Swift.Bool
   @objc deinit
+  @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
   override open func setup()
   @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
   @objc override dynamic public init()
@@ -122,13 +167,12 @@ public protocol BillingAccountCellDelegate {
   override public init(collectionController: CheetahLoyaltyUI.CollectionController?)
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
 }
-@objc @_inheritsConvenienceInitializers open class ProductInstructionsCollectionViewCell : UIKit.UICollectionViewCell, UIKit.UITextViewDelegate {
-  @objc @IBOutlet public var instructionsTextView: UIKit.UITextView!
-  open var didUpdateInstructions: ((Swift.String) -> Swift.Void)?
+@objc @_inheritsConvenienceInitializers open class ProductOptionHeaderView : UIKit.UITableViewHeaderFooterView {
+  @objc @IBOutlet public var headingLabel: UIKit.UILabel!
+  @objc @IBOutlet public var separatorView: UIKit.UIView!
   @objc override dynamic open func awakeFromNib()
-  @objc public func textViewDidChange(_ textView: UIKit.UITextView)
   @objc deinit
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc override dynamic public init(reuseIdentifier: Swift.String?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 @_inheritsConvenienceInitializers open class ProductCategoryCollectionViewCell : CheetahLoyaltyUI.ListItemCell {
@@ -143,6 +187,8 @@ public protocol BillingAccountCellDelegate {
   public func selected(view: CheetahLoyaltyOloUI.OrderProgressView)
   open func currentViewController() -> UIKit.UIViewController
   public func completeOrderStep()
+  public func resetCurrentStep()
+  public func resetAllOrderStep()
   @objc deinit
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
@@ -186,6 +232,27 @@ extension Delivery.Address {
   override public init(collectionController: CheetahLoyaltyUI.CollectionController?)
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
 }
+@_inheritsConvenienceInitializers open class FooterButtonTableViewController : CheetahLoyaltyUI.TableViewController, CheetahLoyaltyOloUI.OrderProgressCompletable {
+  @objc @IBOutlet public var actionButton: UIKit.UIButton!
+  override open func setup()
+  open func setupActionButton()
+  open func showActionButton(_ show: Swift.Bool)
+  open func enableActionButton(_ enable: Swift.Bool)
+  open func performAction()
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class ProductDetailCell : UIKit.UITableViewCell {
+  @objc @IBOutlet public var headingLabel: UIKit.UILabel!
+  @objc deinit
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
 @_inheritsConvenienceInitializers open class ProductCollectionViewCell : CheetahLoyaltyUI.ListItemCell {
   @objc override dynamic open func awakeFromNib()
   @objc deinit
@@ -205,10 +272,19 @@ public protocol TextFieldCollectionViewCellDelegate {
 @objc @_inheritsConvenienceInitializers open class TextFieldCollectionViewCell : UIKit.UICollectionViewCell, UIKit.UITextFieldDelegate {
   open var delegate: CheetahLoyaltyOloUI.TextFieldCollectionViewCellDelegate?
   final public let dateDisplayFormat: Swift.String
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic open func prepareForReuse()
   open func setupAsTextField()
   open func setupAsDatePicker()
   @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
   @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@_inheritsConvenienceInitializers open class RecentOrdersListCell : CheetahLoyaltyUI.ListItemCell {
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
   @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -221,7 +297,7 @@ public protocol TextFieldCollectionViewCellDelegate {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-public struct CreditCard {
+public struct OLOCreditCard {
 }
 @_inheritsConvenienceInitializers open class CreditCardViewController : CheetahLoyaltyUI.NibViewController, UIKit.UITextFieldDelegate {
   @objc @IBOutlet weak public var creditCardView: UIKit.UIView!
@@ -236,12 +312,13 @@ public struct CreditCard {
   @objc @IBOutlet weak public var cardExpirationFloatingTextField: CheetahLoyaltyUI.FloatingTextField!
   @objc @IBOutlet weak public var cvvFloatingTextField: CheetahLoyaltyUI.FloatingTextField!
   @objc @IBOutlet weak public var zipCodeFloatingTextField: CheetahLoyaltyUI.FloatingTextField!
-  @objc @IBOutlet weak public var checkBox: CheetahLoyaltyUI.CheckBox!
+  @objc @IBOutlet weak public var saveOnFileCheckBox: CheetahLoyaltyUI.CheckBox!
   @objc @IBOutlet weak public var addAndPayButton: UIKit.UIButton!
   @objc @IBOutlet weak public var addButton: UIKit.UIButton!
   open var amount: Swift.Double?
-  public var didTapActionButton: ((Swift.Int, CheetahLoyaltyOloUI.CreditCard) -> Swift.Void)?
-  convenience public init(amount: Swift.Double?)
+  open var saveOnFileSupported: Swift.Bool
+  open var didTapActionButton: ((Swift.Int, CheetahLoyaltyOloUI.OLOCreditCard) -> Swift.Void)?
+  convenience public init(amount: Swift.Double?, saveOnFileSupported: Swift.Bool)
   override open func setup()
   open func setupViews()
   open func setupLabels()
@@ -264,7 +341,7 @@ public struct CreditCard {
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 @_inheritsConvenienceInitializers open class RestaurantsCollectionViewController : CheetahLoyaltyUI.CollectionViewController, CheetahLoyaltyOloUI.OrderProgressCompletable {
-  convenience public init(nibName: Swift.String, collectionController: CheetahLoyaltyUI.CollectionController?)
+  @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
   @objc deinit
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
@@ -273,13 +350,20 @@ public struct CreditCard {
   override public init(collectionController: CheetahLoyaltyUI.CollectionController?)
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
 }
+extension CollectionViewController {
+  convenience public init(nibName: Swift.String, collectionController: CheetahLoyaltyUI.CollectionController?)
+}
+extension TableViewController {
+  convenience public init(nibName: Swift.String, tableController: CheetahLoyaltyUI.TableController?)
+}
 @_inheritsConvenienceInitializers open class RestaurantListCollectionController : CheetahLoyaltyUI.ListCollectionController<CheetahLoyaltyOloCore.Restaurant>, CoreLocation.CLLocationManagerDelegate {
-  open var selectedRestaurantId: Swift.Int?
-  open var selectedRadioButton: CheetahLoyaltyUI.RadioButton?
   open var loadNearbyRestaurantsOnly: Swift.Bool
   open var radiusMiles: Swift.Double
   open var locationManager: CoreLocation.CLLocationManager
   open var restaurantLimit: Swift.Int
+  override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    get
+  }
   convenience public init(loadNearbyRestaurantsOnly: Swift.Bool = false, radiusMiles: Swift.Double = 5.0, restaurantLimit: Swift.Int = 10)
   override open func setupCollectionView()
   override open func registerComponents()
@@ -290,86 +374,87 @@ public struct CreditCard {
   @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
   @objc open func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
-  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: Swift.Error)
+  @objc open func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: Swift.Error)
   @objc deinit
   @objc override dynamic public init()
   override public init(collectionView: UIKit.UICollectionView? = super)
 }
-public struct GiftCard {
-}
-@_inheritsConvenienceInitializers open class GiftCardViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.AlertEmbeddableViewController {
-  @objc @IBOutlet weak public var buttonStackView: UIKit.UIStackView!
-  @objc @IBOutlet weak public var checkBox: CheetahLoyaltyUI.CheckBox!
-  @objc @IBOutlet weak public var addAndPayButton: UIKit.UIButton!
-  @objc @IBOutlet weak public var addButton: UIKit.UIButton!
-  @objc @IBOutlet weak public var giftCardFloatingTextField: CheetahLoyaltyUI.FloatingTextField!
-  @objc @IBOutlet weak public var closeButton: UIKit.UIButton!
-  public var didTapActionButton: ((Swift.Int, CheetahLoyaltyOloUI.GiftCard) -> Swift.Void)?
-  open var amount: Swift.Double?
+@_inheritsConvenienceInitializers open class SaveAsFavoriteViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.AlertEmbeddableViewController {
   open var delegate: CheetahLoyaltyUI.AlertEmbeddableViewControllerDelegate?
-  convenience public init(amount: Swift.Double?)
+  public var didTapActionButton: ((Swift.String) -> Swift.Void)?
   override open func setup()
-  open func setupButtons()
-  open func setupCheckBox()
-  open func setupFloatingTextField()
   @objc deinit
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers open class ProductDetailCollectionViewCell : UIKit.UICollectionViewCell {
-  @objc @IBOutlet public var headingLabel: UIKit.UILabel!
+public struct GiftCard {
+}
+@_inheritsConvenienceInitializers open class GiftCardViewController : CheetahLoyaltyUI.NibViewController, CheetahLoyaltyUI.AlertEmbeddableViewController {
+  @objc @IBOutlet weak public var buttonStackView: UIKit.UIStackView!
+  @objc @IBOutlet weak public var saveOnFileContainerView: UIKit.UIView!
+  @objc @IBOutlet weak public var saveOnFileCheckBox: CheetahLoyaltyUI.CheckBox!
+  @objc @IBOutlet weak public var addAndPayButton: UIKit.UIButton!
+  @objc @IBOutlet weak public var addButton: UIKit.UIButton!
+  @objc @IBOutlet weak public var giftCardFloatingTextField: CheetahLoyaltyUI.FloatingTextField!
+  @objc @IBOutlet weak public var cancelButton: UIKit.UIButton!
+  open var didTapActionButton: ((Swift.Int, CheetahLoyaltyOloUI.GiftCard) -> Swift.Void)?
+  open var amount: Swift.Double?
+  open var delegate: CheetahLoyaltyUI.AlertEmbeddableViewControllerDelegate?
+  open var saveOnFileSupported: Swift.Bool
+  convenience public init(amount: Swift.Double?, saveOnFileSupported: Swift.Bool)
+  override open func setup()
   @objc deinit
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@_inheritsConvenienceInitializers open class ProductCustomizationCollectionController : CheetahLoyaltyOloUI.ProductOptionsCollectionController, CheetahLoyaltyOloUI.ProductOptionsViewControllerDelegate {
-  open var selectedOptions: [Swift.Int : [Swift.Int]]
-  open var selectedSubOptions: [Swift.Int : Any]
+@_inheritsConvenienceInitializers open class ProductCustomizationTableController : CheetahLoyaltyOloUI.ProductOptionsTableController {
   open var productQuantity: Swift.Int
   open var product: CheetahLoyaltyOloCore.Product?
   open var productId: Swift.Int!
-  open var isBasketUpdate: Swift.Bool
-  open var basketUpdateOptionIds: [Swift.Int]?
   open var specialInstructions: Swift.String
+  open var shouldSupportSpecialInstruction: Swift.Bool
   open var additionalSections: Swift.Int {
     get
   }
   override open func loadContent()
   override open func registerComponents()
   override open func totalSection() -> Swift.Int
-  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
-  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
-  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
-  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
-  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
-  @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreGraphics.CGSize
-  open func setupProducOptionCell(_ cell: CheetahLoyaltyOloUI.ProductOptionCollectionViewCell, indexPath: Foundation.IndexPath) -> CheetahLoyaltyOloUI.ProductOptionCollectionViewCell
+  @objc override open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc override open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc override open func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @objc override open func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @objc override open func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
   open func isOptionType(section: Swift.Int) -> Swift.Bool
-  public func didUpdateOption(_ option: CheetahLoyaltyOloCore.Product.Option, with subOptions: [Swift.Int : [CheetahLoyaltyOloCore.Product.Option]]?)
   open func basketSelectedOptionsParameters() -> Swift.String
-  open func setSelectedOptionsFromBasketUpdate()
-  open func setDefaultSelectedOptions()
   @objc deinit
   @objc override dynamic public init()
-  override public init(collectionView: UIKit.UICollectionView? = super)
+  override public init(tableView: UIKit.UITableView? = super)
 }
 public enum OLOUINotification : CheetahLoyaltyUtils.CheetahNotification {
-  case restaurantChanged
+  case basketChanged
   case orderPlaced
+  case restaurantChanged
   public var name: Swift.String {
     get
   }
+  public static let orderPlacedStatusKey: Swift.String
+  public static let orderPlacedViewControllerKey: Swift.String
   public static func == (a: CheetahLoyaltyOloUI.OLOUINotification, b: CheetahLoyaltyOloUI.OLOUINotification) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
   public func hash(into hasher: inout Swift.Hasher)
 }
+extension UITableViewHeaderFooterView {
+  open class func nibName() -> Swift.String
+  open class func nib() -> UIKit.UINib
+}
 @_inheritsConvenienceInitializers open class FooterButtonCollectionViewController : CheetahLoyaltyUI.CollectionViewController, CheetahLoyaltyOloUI.OrderProgressCompletable {
   @objc @IBOutlet public var actionButton: UIKit.UIButton!
-  convenience public init(nibName: Swift.String, collectionController: CheetahLoyaltyUI.CollectionController?)
   override open func setup()
   open func setupActionButton()
   open func showActionButton(_ show: Swift.Bool)
@@ -386,7 +471,8 @@ public enum OLOUINotification : CheetahLoyaltyUtils.CheetahNotification {
 @_inheritsConvenienceInitializers open class ProductCollectionController : CheetahLoyaltyUI.BaseCollectionController<CheetahLoyaltyOloCore.Product>, UIKit.UICollectionViewDelegateFlowLayout {
   open var imagePath: Swift.String?
   open var imageGroupName: Swift.String?
-  convenience public init(products: [CheetahLoyaltyOloCore.Product], imagePath: Swift.String?, imageGroupName: Swift.String? = nil)
+  open var category: CheetahLoyaltyOloCore.Product.Category?
+  convenience public init(category: CheetahLoyaltyOloCore.Product.Category, imagePath: Swift.String?, imageGroupName: Swift.String? = nil)
   override open func loadContent()
   override open var collectionViewLayout: UIKit.UICollectionViewLayout {
     get
@@ -406,12 +492,26 @@ public enum CreditCardScannerLoader {
   public static var scanner: CheetahLoyaltyOloUI.CreditCardScanner?
   public static var creditCardViewController: CheetahLoyaltyOloUI.CreditCardViewController?
 }
-@_inheritsConvenienceInitializers open class BasketCollectionController : CheetahLoyaltyUI.ListCollectionController<CheetahLoyaltyOloCore.Basket.Product>, CheetahLoyaltyOloUI.BasketItemCollectionViewCellDelegate {
-  open var basket: CheetahLoyaltyOloCore.Basket?
-  override open func loadContent()
+@_inheritsConvenienceInitializers open class RecentOrdersListCollectionController : CheetahLoyaltyUI.ListCollectionController<CheetahLoyaltyOloCore.Order.Status> {
   override open var collectionViewLayout: UIKit.UICollectionViewLayout {
     get
   }
+  override open func registerComponents()
+  override open func setupCollectionView()
+  override open func loadContent()
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @objc deinit
+  @objc override dynamic public init()
+  override public init(collectionView: UIKit.UICollectionView? = super)
+}
+@_inheritsConvenienceInitializers open class BasketCollectionController : CheetahLoyaltyUI.ListCollectionController<CheetahLoyaltyOloCore.Basket.Product>, CheetahLoyaltyOloUI.BasketItemCollectionViewCellDelegate {
+  open var basket: CheetahLoyaltyOloCore.Basket?
+  override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    get
+  }
+  override open func refreshContent()
+  override open func loadContent()
   override open func registerComponents()
   @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
   open func updateTotalCost()
@@ -440,6 +540,7 @@ public protocol BasketItemCollectionViewCellDelegate {
   }
   @objc override dynamic open func awakeFromNib()
   open func setupGestureRecognizers()
+  @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
   @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -448,7 +549,7 @@ public protocol BasketItemCollectionViewCellDelegate {
   @objc @IBOutlet public var totalCostLabel: UIKit.UILabel!
   @objc @IBOutlet public var footerSeparatorView: UIKit.UIView!
   override open func setup()
-  @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
   @objc deinit
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
@@ -457,11 +558,8 @@ public protocol BasketItemCollectionViewCellDelegate {
   override public init(collectionController: CheetahLoyaltyUI.CollectionController?)
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
 }
-@_inheritsConvenienceInitializers open class PaymentCollectionController : CheetahLoyaltyUI.ListCollectionController<Any>, UIKit.UICollectionViewDelegateFlowLayout {
-  open var basket: CheetahLoyaltyOloCore.Basket? {
-    get
-    set
-  }
+@_inheritsConvenienceInitializers open class PaymentCollectionController : CheetahLoyaltyUI.BaseCollectionController<Any>, UIKit.UICollectionViewDelegateFlowLayout {
+  open var basket: CheetahLoyaltyOloCore.Basket?
   open var paymentCheckoutCollectionController: CheetahLoyaltyOloUI.PaymentCheckoutCollectionController?
   open func actionButtonPressed()
   open func showAvailableOffersCellPressed()
@@ -495,14 +593,12 @@ public protocol BasketItemCollectionViewCellDelegate {
   open var totalAmount: Swift.Double {
     get
   }
-  open var creditCardViewController: CheetahLoyaltyOloUI.CreditCardViewController?
-  open var giftCardViewController: CheetahLoyaltyOloUI.GiftCardViewController?
-  public static let orderStatusKey: Swift.String
   override open var collectionViewLayout: UIKit.UICollectionViewLayout {
     get
   }
   open func didTap(_ selectionButton: CheetahLoyaltyUI.SelectionButton)
   open func actionButtonPressed(_ sender: Any)
+  open func addAccountButtonTapped(_ sender: UIKit.UIButton)
   open func billingAccountDeleted(_ cell: CheetahLoyaltyOloUI.BillingAccountCollectionViewCell)
   open func amountTextFieldDidEndEditing(_ textField: UIKit.UITextField, parent cell: CheetahLoyaltyOloUI.BillingAccountCollectionViewCell)
   override open func loadContent()
@@ -518,9 +614,17 @@ public protocol BasketItemCollectionViewCellDelegate {
   @objc deinit
 }
 @_inheritsConvenienceInitializers open class PaymentCheckoutCollectionViewController : CheetahLoyaltyUI.CollectionViewController {
-  convenience public init(nibName: Swift.String, collectionController: CheetahLoyaltyUI.CollectionController?)
+  @objc @IBOutlet weak public var totalAmountToBePaidStaticLabel: UIKit.UILabel!
+  @objc @IBOutlet weak public var totalAmountLabel: UIKit.UILabel!
+  @objc @IBOutlet weak public var paymentMethodView: UIKit.UIView!
+  @objc @IBOutlet weak public var paymentMethodStaticLabel: UIKit.UILabel!
+  @objc @IBOutlet weak public var splitPaymentStaticLabel: UIKit.UILabel!
+  @objc @IBOutlet weak public var splitPaymentMethodCheckbox: CheetahLoyaltyUI.CheckBox!
+  @objc @IBOutlet weak public var actionButton: UIKit.UIButton!
+  @objc @IBOutlet weak public var checkboxCollectionViewStackView: UIKit.UIStackView!
   override open func setup()
   open func actionButtonPressed(_ sender: Any)
+  @objc open func addButtonTapped(_ sender: UIKit.UIButton)
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -531,14 +635,15 @@ public protocol BasketItemCollectionViewCellDelegate {
 }
 @_inheritsConvenienceInitializers open class RestaurantListCell : CheetahLoyaltyUI.ListItemCell {
   @objc override dynamic open func awakeFromNib()
+  @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
   @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 @_inheritsConvenienceInitializers open class PaymentCollectionViewController : CheetahLoyaltyOloUI.FooterButtonCollectionViewController {
+  @objc deinit
   override open func setup()
   override open func performAction()
-  @objc deinit
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -547,7 +652,6 @@ public protocol BasketItemCollectionViewCellDelegate {
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
 }
 @_inheritsConvenienceInitializers open class RestaurantScheduleViewController : CheetahLoyaltyUI.CollectionViewController {
-  convenience public init(nibName: Swift.String, collectionController: CheetahLoyaltyUI.CollectionController?)
   override open func setup()
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
@@ -557,12 +661,23 @@ public protocol BasketItemCollectionViewCellDelegate {
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
+@_inheritsConvenienceInitializers open class RecentOrdersDetailCollectionController : CheetahLoyaltyUI.BaseCollectionController<Any> {
+  override open func setupCollectionView()
+  override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    get
+  }
+  override open func registerComponents()
+  override open func loadContent()
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @objc open func actionButtonTapped(_ sender: UIKit.UIButton)
+  @objc override dynamic public init()
+  override public init(collectionView: UIKit.UICollectionView? = super)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers open class RestaurantScheduleCollectionController : CheetahLoyaltyUI.ListCollectionController<CheetahLoyaltyOloCore.Restaurant.CalendarTimeRange> {
   open var calendars: [CheetahLoyaltyOloCore.Restaurant.Calendar]
-  open var restaurant: CheetahLoyaltyOloCore.Restaurant? {
-    get
-    set
-  }
   open var startDate: Swift.String {
     get
   }
@@ -589,26 +704,13 @@ public protocol BasketItemCollectionViewCellDelegate {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers open class ProductQuantityCollectionViewCell : UIKit.UICollectionViewCell {
-  @objc @IBOutlet public var minusImageView: UIKit.UIImageView!
-  @objc @IBOutlet public var addImageView: UIKit.UIImageView!
-  @objc @IBOutlet public var quantityLabel: UIKit.UILabel!
-  open var didUpdateQuantity: ((Swift.Int) -> Swift.Void)?
-  open var quantity: Swift.Int {
-    get
-    set
-  }
-  @objc override dynamic open func awakeFromNib()
-  open func addGestureRecognizers()
-  @objc deinit
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
-}
 public protocol OrderProgressViewDelegate {
   func selected(view: CheetahLoyaltyOloUI.OrderProgressView)
 }
 public protocol OrderProgressCompletable {
   func markOrderStepAsCompleted(parameters: [Swift.String : Any]?)
+  func resetsAllOrderStep()
+  func resetCurrentOrderStep()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class OrderProgressView : UIKit.UIView {
   @objc @IBOutlet public var leadingLineView: UIKit.UIView!
@@ -624,43 +726,74 @@ public enum OloOrdering {
 }
 extension OrderProgressCompletable where Self : UIKit.UIViewController {
   public func markOrderStepAsCompleted(parameters: [Swift.String : Any]?)
+  public func resetCurrentOrderStep()
+  public func resetsAllOrderStep()
 }
-@_inheritsConvenienceInitializers open class ProductCustomizationViewController : CheetahLoyaltyOloUI.FooterButtonCollectionViewController {
-  open var isBasketUpdate: Swift.Bool
-  open var basketProduct: CheetahLoyaltyOloCore.Basket.Product?
-  convenience public init(isBasketUpdate: Swift.Bool, product: CheetahLoyaltyOloCore.Product? = nil, basketProduct: CheetahLoyaltyOloCore.Basket.Product? = nil, basketUpdateOptionIds: [Swift.Int]? = nil, collectionController: CheetahLoyaltyOloUI.ProductCustomizationCollectionController? = ProductCustomizationCollectionController())
+@_inheritsConvenienceInitializers open class ProductCustomizationViewController : CheetahLoyaltyOloUI.FooterButtonTableViewController {
+  convenience public init(product: CheetahLoyaltyOloCore.Product, tableController: CheetahLoyaltyOloUI.ProductCustomizationTableController? = ProductCustomizationTableController())
+  @objc override dynamic open func viewDidLoad()
+  @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
   override open func setupActionButton()
   override open func performAction()
   open func showAddToCartError(_ error: Swift.Error)
   open func addToCart(_ selectedOptions: Swift.String, productId: Swift.Int, instructions: Swift.String, quantity: Swift.Int)
-  open func updateProductInBasket(_ parameter: CheetahLoyaltyOloCore.BasketParameter.Product!)
   open func addProductToBasket(_ parameter: CheetahLoyaltyOloCore.BasketParameter.Product!)
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  override public init(collectionController: CheetahLoyaltyUI.CollectionController?)
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
-@_inheritsConvenienceInitializers open class ProductSubCustomizationCollectionController : CheetahLoyaltyOloUI.ProductOptionsCollectionController {
-  open var option: CheetahLoyaltyOloCore.Product.Option!
-  open var selectedSubOptions: [Swift.Int : [CheetahLoyaltyOloCore.Product.Option]]
+@_inheritsConvenienceInitializers open class BasketItemUpdateViewController : CheetahLoyaltyOloUI.ProductCustomizationViewController {
+  open var basketProduct: CheetahLoyaltyOloCore.Basket.Product?
+  convenience public init(product: CheetahLoyaltyOloCore.Basket.Product, basketUpdateOptionIds: [Swift.Int]? = nil, tableController: CheetahLoyaltyOloUI.BasketItemUpdateTableController? = BasketItemUpdateTableController())
+  override open func setupActionButton()
+  open func updateProductInBasket(_ parameter: CheetahLoyaltyOloCore.BasketParameter.Product!)
+  override open func performAction()
+  @objc override dynamic public init()
+  override public init(nibName: Swift.String)
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers open class BasketItemUpdateTableController : CheetahLoyaltyOloUI.ProductCustomizationTableController {
   open var basketUpdateOptionIds: [Swift.Int]?
   override open func loadContent()
-  override open func registerComponents()
-  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
-  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
-  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
-  @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
-  @objc public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
-  @objc public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreGraphics.CGSize
   open func setSelectedOptionsFromBasketUpdate()
-  open func setDefaultSelectedOptions()
+  open func setBasketNestedOptions(optionGroups: [CheetahLoyaltyOloCore.Product.OptionGroup]) -> [CheetahLoyaltyOloUI.SelectedOption]
+  @objc override dynamic public init()
+  override public init(tableView: UIKit.UITableView? = super)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class RecentOrdersHeaderCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@_inheritsConvenienceInitializers open class ProductSubCustomizationTableController : CheetahLoyaltyOloUI.ProductOptionsTableController {
+  open var option: CheetahLoyaltyOloCore.Product.Option!
+  override open func loadContent()
+  @objc override open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @objc override open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @objc override open func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @objc override open func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @objc override open func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
   open func updateMandatoryFieldsFromPreSelectedOptions()
   @objc deinit
   @objc override dynamic public init()
-  override public init(collectionView: UIKit.UICollectionView? = super)
+  override public init(tableView: UIKit.UITableView? = super)
+}
+@objc @_inheritsConvenienceInitializers open class RecentOrdersFooterCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 @objc @_inheritsConvenienceInitializers open class PaymentDisplayCollectionViewCell : UIKit.UICollectionViewCell {
   @objc @IBOutlet weak public var headingLabel: UIKit.UILabel!
@@ -670,38 +803,50 @@ extension OrderProgressCompletable where Self : UIKit.UIViewController {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers open class ProductOptionCollectionViewCell : UIKit.UICollectionViewCell, CheetahLoyaltyUI.SelectionButtonDelegate {
-  @objc @IBOutlet public var checkBox: CheetahLoyaltyUI.CheckBox!
-  @objc @IBOutlet public var caretImage: UIKit.UIImageView!
-  @objc @IBOutlet public var subheadingLabel: UIKit.UILabel!
-  open var didSelectCheckBox: ((CheetahLoyaltyOloUI.ProductOptionCollectionViewCell) -> Swift.Void)?
+@objc @_inheritsConvenienceInitializers open class RecentOrdersItemCollectionViewCell : UIKit.UICollectionViewCell {
   @objc override dynamic open func awakeFromNib()
-  public func didTap(_ selectionButton: CheetahLoyaltyUI.SelectionButton)
+  @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
   @objc deinit
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc @_inheritsConvenienceInitializers open class ProductOptionHeaderCollectionViewCell : UIKit.UICollectionViewCell {
+@objc @_inheritsConvenienceInitializers open class ProductOptionCell : UIKit.UITableViewCell, CheetahLoyaltyUI.SelectionButtonDelegate {
+  @objc @IBOutlet public var checkBox: CheetahLoyaltyUI.CheckBox!
+  @objc @IBOutlet public var caretImage: UIKit.UIImageView!
+  @objc @IBOutlet public var headingLabel: UIKit.UILabel!
+  @objc @IBOutlet public var subheadingLabel: UIKit.UILabel!
+  open var didSelectCheckBox: ((CheetahLoyaltyOloUI.ProductOptionCell) -> Swift.Void)?
+  @objc override dynamic open func awakeFromNib()
+  public func didTap(_ selectionButton: CheetahLoyaltyUI.SelectionButton)
+  @objc deinit
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+@objc @_inheritsConvenienceInitializers open class ProductOptionHeaderCell : UIKit.UITableViewCell {
   @objc @IBOutlet public var headingLabel: UIKit.UILabel!
   @objc @IBOutlet public var separatorView: UIKit.UIView!
   @objc override dynamic open func awakeFromNib()
   @objc deinit
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 public protocol ProductOptionsViewControllerDelegate {
-  func didUpdateOption(_ option: CheetahLoyaltyOloCore.Product.Option, with subOptions: [Swift.Int : [CheetahLoyaltyOloCore.Product.Option]]?)
+  func didUpdateOption(_ option: CheetahLoyaltyOloCore.Product.Option, with selectedOptions: [CheetahLoyaltyOloUI.SelectedOption])
 }
-@_inheritsConvenienceInitializers open class ProductSubCustomizationViewController : CheetahLoyaltyOloUI.FooterButtonCollectionViewController {
+@_inheritsConvenienceInitializers open class ProductSubCustomizationViewController : CheetahLoyaltyOloUI.FooterButtonTableViewController {
   open var delegate: CheetahLoyaltyOloUI.ProductOptionsViewControllerDelegate?
-  convenience public init(option: CheetahLoyaltyOloCore.Product.Option, selectedSubOptions: [Swift.Int : [CheetahLoyaltyOloCore.Product.Option]]? = nil, basketUpdateOptionIds: [Swift.Int]? = nil, collectionController: CheetahLoyaltyOloUI.ProductSubCustomizationCollectionController? = ProductSubCustomizationCollectionController())
+  convenience public init(option: CheetahLoyaltyOloCore.Product.Option, selectedOptions: [CheetahLoyaltyOloUI.SelectedOption]? = nil, tableController: CheetahLoyaltyOloUI.ProductSubCustomizationTableController? = ProductSubCustomizationTableController())
+  @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  open func setupTitle()
   override open func setupActionButton()
   override open func performAction()
   @objc override dynamic public init()
   override public init(nibName: Swift.String)
   @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
-  override public init(collectionController: CheetahLoyaltyUI.CollectionController?)
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
   @objc deinit
 }
