@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HTTPMethod Enumeration Reference</title>
+    <title>OLOURLRequestConvertible Protocol Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Enum/HTTPMethod" class="dashAnchor"></a>
-    <a title="HTTPMethod Enumeration Reference"></a>
+    <a name="//apple_ref/swift/Protocol/OLOURLRequestConvertible" class="dashAnchor"></a>
+    <a title="OLOURLRequestConvertible Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html"> Docs</a></p>
@@ -30,7 +30,7 @@
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
         <img id="carat" src="../img/carat.png" />
-        HTTPMethod Enumeration Reference
+        OLOURLRequestConvertible Protocol Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -177,9 +177,6 @@
                 <a href="../Enums/FeedbackRequest.html">FeedbackRequest</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/Loyalty.html">Loyalty</a>
               </li>
               <li class="nav-group-task">
@@ -300,12 +297,6 @@
                 <a href="../Enums/TokenLocation.html">TokenLocation</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/URLError.html">URLError</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/URLError/ParameterEncodingFailureReason.html">– ParameterEncodingFailureReason</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/Upsell.html">Upsell</a>
               </li>
               <li class="nav-group-task">
@@ -352,28 +343,13 @@
               <li class="nav-group-task">
                 <a href="../Extensions/Result.html">Result</a>
               </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/String.html">String</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URL.html">URL</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLRequest.html">URLRequest</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/URLRequest/MultipartAttachment.html">– MultipartAttachment</a>
-              </li>
             </ul>
           </li>
           <li class="nav-group-name">
             <a href="../Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Protocols/URLConvertible.html">URLConvertible</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a>
+                <a href="../Protocols/OLOURLRequestConvertible.html">OLOURLRequestConvertible</a>
               </li>
             </ul>
           </li>
@@ -587,12 +563,6 @@
             <a href="../Typealiases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore11HTTPHeadersa">HTTPHeaders</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore10Parametersa">Parameters</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore18ResponseCompletiona">ResponseCompletion</a>
               </li>
             </ul>
@@ -602,15 +572,15 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>HTTPMethod</h1>
+            <h1>OLOURLRequestConvertible</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">HTTPMethod</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">OLOURLRequestConvertible</span> <span class="p">:</span> <span class="kt">URLRequestConvertible</span></code></pre>
 
                 </div>
               </div>
-            <p>HTTP methods specified in creating a <code>URLRequest</code>.</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -619,9 +589,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21CheetahLoyaltyOloCore10HTTPMethodO6deleteyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/delete" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10HTTPMethodO6deleteyA2CmF">delete</a>
+                    <a name="/s:21CheetahLoyaltyOloCore24OLOURLRequestConvertibleP13tokenLocationAA05TokenH0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/tokenLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore24OLOURLRequestConvertibleP13tokenLocationAA05TokenH0Ovp">tokenLocation</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -636,7 +606,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">delete</span> <span class="o">=</span> <span class="s">"DELETE"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tokenLocation</span><span class="p">:</span> <span class="kt"><a href="../Enums/TokenLocation.html">TokenLocation</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -646,10 +616,13 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21CheetahLoyaltyOloCore10HTTPMethodO3getyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/get" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10HTTPMethodO3getyA2CmF">get</a>
+                    <a name="/s:21CheetahLoyaltyOloCore24OLOURLRequestConvertiblePAAE17parameterEncoding0aB5Utils09ParameterH0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/parameterEncoding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore24OLOURLRequestConvertiblePAAE17parameterEncoding0aB5Utils09ParameterH0Ovp">parameterEncoding</a>
                     </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
@@ -663,7 +636,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="k">get</span> <span class="o">=</span> <span class="s">"GET"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">parameterEncoding</span><span class="p">:</span> <span class="kt">ParameterEncoding</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -673,10 +646,13 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21CheetahLoyaltyOloCore10HTTPMethodO5patchyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/patch" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10HTTPMethodO5patchyA2CmF">patch</a>
+                    <a name="/s:21CheetahLoyaltyOloCore24OLOURLRequestConvertiblePAAE12asURLRequest5token7headers10parameters11attachments10Foundation0H0VSS_SDyS2SGSDySSypGSay0aB5Utils19MultipartAttachmentVGtKF"></a>
+                    <a name="//apple_ref/swift/Method/asURLRequest(token:headers:parameters:attachments:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore24OLOURLRequestConvertiblePAAE12asURLRequest5token7headers10parameters11attachments10Foundation0H0VSS_SDyS2SGSDySSypGSay0aB5Utils19MultipartAttachmentVGtKF">asURLRequest(token:<wbr>headers:<wbr>parameters:<wbr>attachments:<wbr>)</a>
                     </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
@@ -690,61 +666,11 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">patch</span> <span class="o">=</span> <span class="s">"PATCH"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:21CheetahLoyaltyOloCore10HTTPMethodO4postyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/post" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10HTTPMethodO4postyA2CmF">post</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">post</span> <span class="o">=</span> <span class="s">"POST"</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:21CheetahLoyaltyOloCore10HTTPMethodO3putyA2CmF"></a>
-                    <a name="//apple_ref/swift/Element/put" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10HTTPMethodO3putyA2CmF">put</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">put</span> <span class="o">=</span> <span class="s">"PUT"</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">asURLRequest</span><span class="p">(</span><span class="nv">token</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">,</span>
+                         <span class="n">headers</span> <span class="nv">additionalHeaders</span><span class="p">:</span> <span class="kt">HTTPHeaders</span> <span class="o">=</span> <span class="p">[:],</span>
+                         <span class="n">parameters</span> <span class="nv">additionalParameters</span><span class="p">:</span> <span class="kt">Parameters</span> <span class="o">=</span> <span class="p">[:],</span>
+                         <span class="n">attachments</span> <span class="nv">additionalAttachements</span><span class="p">:</span> <span class="kt">MultipartAttachments</span> <span class="o">=</span> <span class="p">[])</span>
+    <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">URLRequest</span></code></pre>
 
                         </div>
                       </div>
@@ -756,7 +682,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2020-08-11)</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-02-08)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -4,7 +4,6 @@
 @_exported import CheetahLoyaltyOloCore
 import CheetahLoyaltyUtils
 import Foundation
-import MobileCoreServices
 import Swift
 import UIKit
 public enum Contact {
@@ -28,15 +27,18 @@ extension Contact.Detail {
 extension Contact.Option {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum FeedbackRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
+public enum FeedbackRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
   case submit(feedback: CheetahLoyaltyOloCore.Feedback)
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyOloCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var method: CheetahLoyaltyOloCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
+    get
+  }
+  public var tokenLocation: CheetahLoyaltyOloCore.TokenLocation {
     get
   }
 }
@@ -318,7 +320,7 @@ extension Product.OptionGroup {
 extension Product.OptionGroups {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum RestaurantRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
+public enum RestaurantRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
   case getRestaurants(includePrivate: Swift.Bool)
   case getNearbyRestaurants(coordinates: CheetahLoyaltyOloCore.CommonParameter.Coordinates, radius: Swift.Double, limit: Swift.Int)
   case getNearbyRestaurantsWithInHouseDelivery(coordinates: CheetahLoyaltyOloCore.CommonParameter.Coordinates, limit: Swift.Int)
@@ -334,10 +336,13 @@ public enum RestaurantRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyOloCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var method: CheetahLoyaltyOloCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
+    get
+  }
+  public var tokenLocation: CheetahLoyaltyOloCore.TokenLocation {
     get
   }
 }
@@ -431,7 +436,7 @@ extension User.ChangePassword {
 extension User.SingleSignOn {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum OrderRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
+public enum OrderRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
   case editOrder(guid: Swift.String)
   case cancelOrder(guid: Swift.String)
   case getOrderStatus(guid: Swift.String)
@@ -442,10 +447,10 @@ public enum OrderRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyOloCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var method: CheetahLoyaltyOloCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
   public var tokenLocation: CheetahLoyaltyOloCore.TokenLocation {
@@ -468,7 +473,7 @@ public enum OrderAPI {
   public func getAccessToken() -> Swift.String?
   public func setCredentials(_ accessToken: Swift.String)
   public func deleteCredentials()
-  public func send<T>(_ request: CheetahLoyaltyOloCore.URLRequestConvertible, modelKeyPath: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<T>) where T : Swift.Decodable
+  public func send<T>(_ request: CheetahLoyaltyOloCore.OLOURLRequestConvertible, modelKeyPath: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<T>) where T : Swift.Decodable
   @objc deinit
 }
 extension Result {
@@ -482,16 +487,6 @@ extension Result {
     get
   }
   public var error: Swift.Error? {
-    get
-  }
-}
-extension Result : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
-extension Result : Swift.CustomDebugStringConvertible {
-  public var debugDescription: Swift.String {
     get
   }
 }
@@ -610,10 +605,10 @@ public struct Restaurant : Swift.Codable {
   public var customFields: [CheetahLoyaltyOloCore.Restaurant.CustomField]
   public var labels: [CheetahLoyaltyOloCore.Restaurant.CustomLabel]
   public var metadata: [CheetahLoyaltyOloCore.MetadataItem]
-  public var supportedTimeModes: [Swift.String]
+  public var supportedTimeModes: [CheetahLoyaltyOloCore.Basket.TimeMode]
   public var attributes: [Swift.String]
   public var supportedCountries: [Swift.String]
-  public init(id: Swift.Int, name: Swift.String, brand: Swift.String, storeName: Swift.String, telephone: Swift.String, streetAddress: Swift.String, crossStreet: Swift.String, city: Swift.String, contextualPricing: CheetahLoyaltyOloCore.ContextualPricing?, state: Swift.String, zip: Swift.String, country: Swift.String, latitude: Swift.Double, longitude: Swift.Double, utcOffset: Swift.Float, url: Swift.String, mobileUrl: Swift.String, distance: Swift.Double, extRef: Swift.String, isAdvanceOnly: Swift.Bool, advanceOrderDays: Swift.Int, supportsCoupons: Swift.Bool, supportsLoyalty: Swift.Bool, supportedCardTypes: Swift.String, supportsManualFire: Swift.Bool, canDeliver: Swift.Bool, canPickup: Swift.Bool, supportsCurbSide: Swift.Bool, supportsDispatch: Swift.Bool, hasOloPass: Swift.Bool, deliveryArea: Swift.String, minimumDeliveryOrder: Swift.Double, minimumPickUpOrder: Swift.Double, maximumPayInStoreOrder: Swift.Double, deliveryFee: Swift.Double, deliveryFeetiers: [CheetahLoyaltyOloCore.Delivery.FeeTier], supportsTip: Swift.Bool, supportsSpecialInstructions: Swift.Bool, specialInstructionsMaxLength: Swift.Int, supportsGuestOrdering: Swift.Bool, requiresPhoneNumber: Swift.Bool, supportsOnlineOrdering: Swift.Bool, supportsNationalMenu: Swift.Bool, supportsFeedback: Swift.Bool, supportsSplitPayments: Swift.Bool, slug: Swift.String, isAvailable: Swift.Bool, supportsGroupOrders: Swift.Bool, supportsProductRecipientNames: Swift.Bool, supportsBasketTransfers: Swift.Bool, allowHandOffChoiceAtManualFire: Swift.Bool, productRecipientNameLabel: Swift.String, customerFacingMessage: Swift.String, availabilityMessage: Swift.String, supportsDriveThru: Swift.Bool, showCalories: Swift.Bool, acceptsOrdersUntilClosing: Swift.Bool, acceptsOrdersBeforeOpening: Swift.Bool, suggestedTipPercentage: Swift.Float, customFields: [CheetahLoyaltyOloCore.Restaurant.CustomField], labels: [CheetahLoyaltyOloCore.Restaurant.CustomLabel], metadata: [CheetahLoyaltyOloCore.MetadataItem], supportedTimeModes: [Swift.String], attributes: [Swift.String], supportedCountries: [Swift.String])
+  public init(id: Swift.Int, name: Swift.String, brand: Swift.String, storeName: Swift.String, telephone: Swift.String, streetAddress: Swift.String, crossStreet: Swift.String, city: Swift.String, contextualPricing: CheetahLoyaltyOloCore.ContextualPricing?, state: Swift.String, zip: Swift.String, country: Swift.String, latitude: Swift.Double, longitude: Swift.Double, utcOffset: Swift.Float, url: Swift.String, mobileUrl: Swift.String, distance: Swift.Double, extRef: Swift.String, isAdvanceOnly: Swift.Bool, advanceOrderDays: Swift.Int, supportsCoupons: Swift.Bool, supportsLoyalty: Swift.Bool, supportedCardTypes: Swift.String, supportsManualFire: Swift.Bool, canDeliver: Swift.Bool, canPickup: Swift.Bool, supportsCurbSide: Swift.Bool, supportsDispatch: Swift.Bool, hasOloPass: Swift.Bool, deliveryArea: Swift.String, minimumDeliveryOrder: Swift.Double, minimumPickUpOrder: Swift.Double, maximumPayInStoreOrder: Swift.Double, deliveryFee: Swift.Double, deliveryFeetiers: [CheetahLoyaltyOloCore.Delivery.FeeTier], supportsTip: Swift.Bool, supportsSpecialInstructions: Swift.Bool, specialInstructionsMaxLength: Swift.Int, supportsGuestOrdering: Swift.Bool, requiresPhoneNumber: Swift.Bool, supportsOnlineOrdering: Swift.Bool, supportsNationalMenu: Swift.Bool, supportsFeedback: Swift.Bool, supportsSplitPayments: Swift.Bool, slug: Swift.String, isAvailable: Swift.Bool, supportsGroupOrders: Swift.Bool, supportsProductRecipientNames: Swift.Bool, supportsBasketTransfers: Swift.Bool, allowHandOffChoiceAtManualFire: Swift.Bool, productRecipientNameLabel: Swift.String, customerFacingMessage: Swift.String, availabilityMessage: Swift.String, supportsDriveThru: Swift.Bool, showCalories: Swift.Bool, acceptsOrdersUntilClosing: Swift.Bool, acceptsOrdersBeforeOpening: Swift.Bool, suggestedTipPercentage: Swift.Float, customFields: [CheetahLoyaltyOloCore.Restaurant.CustomField], labels: [CheetahLoyaltyOloCore.Restaurant.CustomLabel], metadata: [CheetahLoyaltyOloCore.MetadataItem], supportedTimeModes: [CheetahLoyaltyOloCore.Basket.TimeMode], attributes: [Swift.String], supportedCountries: [Swift.String])
   public struct CustomField : Swift.Codable {
     public var id: Swift.Int
     public var label: Swift.String
@@ -872,8 +867,8 @@ public enum BasketParameter {
     public func encode(to encoder: Swift.Encoder) throws
   }
 }
-public enum BasketRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
-  case create(vendor: Swift.Int)
+public enum BasketRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
+  case create(vendor: Swift.Int, authToken: Swift.String)
   case createFromOrder(orderRef: Swift.Int?, orderId: Swift.String, ignoreUnavailableProducts: Swift.Bool)
   case createFromFave(faveId: Swift.Int, ignoreUnavailableProducts: Swift.Bool)
   case getBasket(id: Swift.String)
@@ -921,10 +916,10 @@ public enum BasketRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyOloCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var method: CheetahLoyaltyOloCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
   public var tokenLocation: CheetahLoyaltyOloCore.TokenLocation {
@@ -932,7 +927,7 @@ public enum BasketRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
   }
 }
 public enum BasketAPI {
-  public static func create(vendorId: Swift.Int, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
+  public static func create(vendorId: Swift.Int, authToken: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
   public static func createFromOrder(orderRef: Swift.Int? = nil, orderId: Swift.String, ignoreUnavailableProducts: Swift.Bool, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
   public static func createFromFave(faveId: Swift.Int, ignoreUnavailableProducts: Swift.Bool, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
   public static func getBasket(_ id: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
@@ -989,50 +984,16 @@ public enum TokenLocation {
   }
   public func hash(into hasher: inout Swift.Hasher)
 }
-public protocol URLRequestConvertible {
-  var path: Swift.String { get }
-  var method: CheetahLoyaltyOloCore.HTTPMethod { get }
-  var parameters: CheetahLoyaltyOloCore.Parameters? { get }
-  var headers: CheetahLoyaltyOloCore.HTTPHeaders? { get }
+public protocol OLOURLRequestConvertible : CheetahLoyaltyUtils.URLRequestConvertible {
   var tokenLocation: CheetahLoyaltyOloCore.TokenLocation { get }
-  var multipartAttachments: Foundation.URLRequest.MultipartAttachments? { get }
-  func asURLRequest(token: Swift.String, headers additionalHeaders: CheetahLoyaltyOloCore.HTTPHeaders, parameters additionalParameters: CheetahLoyaltyOloCore.Parameters, attachments additionalAttachements: Foundation.URLRequest.MultipartAttachments) throws -> Foundation.URLRequest
 }
-extension URLRequestConvertible {
-  public var headers: CheetahLoyaltyOloCore.HTTPHeaders? {
-    get
-  }
-  public var path: Swift.String {
-    get
-  }
-  public var method: CheetahLoyaltyOloCore.HTTPMethod {
-    get
-  }
-  public var parameters: CheetahLoyaltyOloCore.Parameters? {
-    get
-  }
-  public var tokenLocation: CheetahLoyaltyOloCore.TokenLocation {
-    get
-  }
-  public var multipartAttachments: Foundation.URLRequest.MultipartAttachments? {
-    get
-  }
-  public func asURLRequest(token: Swift.String = "", headers additionalHeaders: CheetahLoyaltyOloCore.HTTPHeaders = [:], parameters additionalParameters: CheetahLoyaltyOloCore.Parameters = [:], attachments additionalAttachements: Foundation.URLRequest.MultipartAttachments = []) throws -> Foundation.URLRequest
-}
-extension URLRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
-  public func asURLRequest() throws -> Foundation.URLRequest
-  public var tokenLocation: CheetahLoyaltyOloCore.TokenLocation {
+extension OLOURLRequestConvertible {
+  public var parameterEncoding: CheetahLoyaltyUtils.ParameterEncoding {
     get
   }
 }
-public protocol URLConvertible {
-  func asURL() throws -> Foundation.URL
-}
-extension String : CheetahLoyaltyOloCore.URLConvertible {
-  public func asURL() throws -> Foundation.URL
-}
-extension URL : CheetahLoyaltyOloCore.URLConvertible {
-  public func asURL() throws -> Foundation.URL
+extension OLOURLRequestConvertible {
+  public func asURLRequest(token: Swift.String = "", headers additionalHeaders: CheetahLoyaltyUtils.HTTPHeaders = [:], parameters additionalParameters: CheetahLoyaltyUtils.Parameters = [:], attachments additionalAttachements: CheetahLoyaltyUtils.MultipartAttachments = []) throws -> Foundation.URLRequest
 }
 public enum RestaurantParameter {
   public struct DeliveryCoverageCheck : Swift.Encodable {
@@ -1182,7 +1143,7 @@ extension Order.RecentOrders {
 extension Order.Status {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum UserRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
+public enum UserRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
   case create(newUser: CheetahLoyaltyOloCore.UserParameter.NewUser)
   case getOrCreate(userSSO: CheetahLoyaltyOloCore.User.SingleSignOn)
   case createFromOrder(guid: Swift.String, password: Swift.String, optin: Swift.String)
@@ -1227,10 +1188,10 @@ public enum UserRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyOloCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var method: CheetahLoyaltyOloCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
   public var tokenLocation: CheetahLoyaltyOloCore.TokenLocation {
@@ -1481,55 +1442,6 @@ extension Favorite.Location {
 }
 extension Favorite.UserFavoriteLocations {
   public init(from decoder: Swift.Decoder) throws
-}
-public enum HTTPMethod : Swift.String {
-  case delete
-  case get
-  case patch
-  case post
-  case put
-  public typealias RawValue = Swift.String
-  public init?(rawValue: Swift.String)
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public typealias HTTPHeaders = [Swift.String : Swift.String]
-public typealias Parameters = [Swift.String : Any]
-public enum URLError : Swift.Error {
-  public enum ParameterEncodingFailureReason {
-    case missingURL
-    case jsonEncodingFailed(error: Swift.Error)
-  }
-  case invalidURL(url: CheetahLoyaltyOloCore.URLConvertible)
-  case parameterEncodingFailed(reason: CheetahLoyaltyOloCore.URLError.ParameterEncodingFailureReason)
-}
-extension URLError : Foundation.LocalizedError {
-  public var errorDescription: Swift.String? {
-    get
-  }
-}
-extension URLRequest {
-  public struct MultipartAttachment : Swift.Equatable {
-    public let name: Swift.String
-    public let fileName: Swift.String?
-    public let url: Foundation.URL?
-    public let data: Foundation.Data?
-    public var mimeType: Swift.String?
-    public init(name: Swift.String, fileName: Swift.String?, url: Foundation.URL?, data: Foundation.Data?, mimeType: Swift.String?)
-    public static func == (a: Foundation.URLRequest.MultipartAttachment, b: Foundation.URLRequest.MultipartAttachment) -> Swift.Bool
-  }
-  public typealias MultipartAttachments = [Foundation.URLRequest.MultipartAttachment]
-  public init(url: CheetahLoyaltyOloCore.URLConvertible, method: CheetahLoyaltyOloCore.HTTPMethod, headers: CheetahLoyaltyOloCore.HTTPHeaders? = nil) throws
-  public init(url: CheetahLoyaltyOloCore.URLConvertible, method: CheetahLoyaltyOloCore.HTTPMethod, headers: CheetahLoyaltyOloCore.HTTPHeaders? = nil, parameters: CheetahLoyaltyOloCore.Parameters?, multipartAttachments: Foundation.URLRequest.MultipartAttachments? = nil) throws
-  public mutating func encode(with parameters: CheetahLoyaltyOloCore.Parameters?) throws
-  public static func encode(_ urlRequest: inout Foundation.URLRequest, with parameters: CheetahLoyaltyOloCore.Parameters?) throws
-}
-extension URL {
-  public static let defaultBinaryMimeType: Swift.String
-  public var mimeType: Swift.String {
-    get
-  }
 }
 public struct Basket : Swift.Codable {
   public var id: Swift.String
@@ -1863,7 +1775,7 @@ extension Menu.ItemLabel {
 extension Menu.ItemLabels {
   public init(from decoder: Swift.Decoder) throws
 }
-public enum ProductRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
+public enum ProductRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
   case getOptions(productId: Swift.Int)
   case getTopLevelOptions(productId: Swift.Int)
   case getNestedOption(optionId: Swift.Int)
@@ -1871,10 +1783,10 @@ public enum ProductRequest : CheetahLoyaltyOloCore.URLRequestConvertible {
   public var path: Swift.String {
     get
   }
-  public var parameters: CheetahLoyaltyOloCore.Parameters? {
+  public var parameters: CheetahLoyaltyUtils.Parameters? {
     get
   }
-  public var method: CheetahLoyaltyOloCore.HTTPMethod {
+  public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
   public var tokenLocation: CheetahLoyaltyOloCore.TokenLocation {
@@ -2113,9 +2025,6 @@ extension Loyalty.Vendors {
 }
 extension CheetahLoyaltyOloCore.TokenLocation : Swift.Equatable {}
 extension CheetahLoyaltyOloCore.TokenLocation : Swift.Hashable {}
-extension CheetahLoyaltyOloCore.HTTPMethod : Swift.Equatable {}
-extension CheetahLoyaltyOloCore.HTTPMethod : Swift.Hashable {}
-extension CheetahLoyaltyOloCore.HTTPMethod : Swift.RawRepresentable {}
 extension CheetahLoyaltyOloCore.Configuration.CodingKeys : Swift.Equatable {}
 extension CheetahLoyaltyOloCore.Configuration.CodingKeys : Swift.Hashable {}
 extension CheetahLoyaltyOloCore.Configuration.CodingKeys : Swift.RawRepresentable {}
