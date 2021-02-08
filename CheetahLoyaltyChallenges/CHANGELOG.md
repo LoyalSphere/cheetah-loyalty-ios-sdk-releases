@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Challenges-1.3.2] - 2021-02-08
+
+### Fixed
+- Sending of notification of challenge updated upon responding to a challenge [#593]
+
+[#593]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/593
+[Challenges-1.3.2]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/88?closed=1
+
 ## [Challenges-1.3.1] - 2021-02-05
 
 ### Added
@@ -14,8 +22,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Dependency version requirements to CheetahLoyaltyCore 1.9.2 [#592]
 
-[#591]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/589
-[#592]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/589
+[#591]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/591
+[#592]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/592
 [Challenges-1.3.1]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/87?closed=1
 
 ## [Challenges-1.3.0] - 2021-02-04
