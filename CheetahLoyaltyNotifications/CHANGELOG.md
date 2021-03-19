@@ -6,11 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Notifications-1.2.5] - 2021-03-19
+### Changed
+- Enable App Extension API Only Flag in Build Settings [#594]
+
+[#594]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/594
+[Notifications-1.2.4]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/89?closed=1
+
 ## [Notifications-1.2.4] - 2021-01-28
 ### Changed
 - Dependency version requirements to CheetahLoyaltyCore 1.9.0 and CheetahLoyaltyUtils 1.2.0 [#584]
 
-[#584]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/560
+[#584]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/584
 [Notifications-1.2.4]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/80?closed=1
 
 ## [Notifications-1.2.3] - 2020-11-06
