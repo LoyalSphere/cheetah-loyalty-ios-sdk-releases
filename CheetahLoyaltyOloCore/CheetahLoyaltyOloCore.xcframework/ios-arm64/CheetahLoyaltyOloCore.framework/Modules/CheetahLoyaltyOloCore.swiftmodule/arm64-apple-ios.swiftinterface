@@ -1,8 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyOloCore
 @_exported import CheetahLoyaltyOloCore
 import CheetahLoyaltyUtils
+import CoreLocation
 import Foundation
 import Swift
 import UIKit
@@ -520,6 +521,26 @@ public struct EmptyResponse : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
+public enum QualificationCriteria : Swift.Codable, Swift.Equatable {
+  case allOrders
+  case deliveryOnly
+  case cashOnly
+  case curbsidePickUpOnly
+  case driveThruOnly
+  case dineInOnly
+  case carryOutOnly
+  case timeWantedThreshold
+  case orderAmountThreshold
+  case productQuantityThreshold
+  case timeWantedAndProductQuantityThreshold
+  case others(value: Swift.String)
+  public var stringValue: Swift.String {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: CheetahLoyaltyOloCore.QualificationCriteria, b: CheetahLoyaltyOloCore.QualificationCriteria) -> Swift.Bool
+}
 public enum CalendarType : Swift.Codable, Swift.Equatable {
   case business
   case delivery
@@ -593,6 +614,7 @@ public struct Restaurant : Swift.Codable {
   public var supportsGroupOrders: Swift.Bool
   public var supportsProductRecipientNames: Swift.Bool
   public var supportsBasketTransfers: Swift.Bool
+  public var supportsDineIn: Swift.Bool
   public var allowHandOffChoiceAtManualFire: Swift.Bool
   public var productRecipientNameLabel: Swift.String
   public var customerFacingMessage: Swift.String
@@ -608,14 +630,14 @@ public struct Restaurant : Swift.Codable {
   public var supportedTimeModes: [CheetahLoyaltyOloCore.Basket.TimeMode]
   public var attributes: [Swift.String]
   public var supportedCountries: [Swift.String]
-  public init(id: Swift.Int, name: Swift.String, brand: Swift.String, storeName: Swift.String, telephone: Swift.String, streetAddress: Swift.String, crossStreet: Swift.String, city: Swift.String, contextualPricing: CheetahLoyaltyOloCore.ContextualPricing?, state: Swift.String, zip: Swift.String, country: Swift.String, latitude: Swift.Double, longitude: Swift.Double, utcOffset: Swift.Float, url: Swift.String, mobileUrl: Swift.String, distance: Swift.Double, extRef: Swift.String, isAdvanceOnly: Swift.Bool, advanceOrderDays: Swift.Int, supportsCoupons: Swift.Bool, supportsLoyalty: Swift.Bool, supportedCardTypes: Swift.String, supportsManualFire: Swift.Bool, canDeliver: Swift.Bool, canPickup: Swift.Bool, supportsCurbSide: Swift.Bool, supportsDispatch: Swift.Bool, hasOloPass: Swift.Bool, deliveryArea: Swift.String, minimumDeliveryOrder: Swift.Double, minimumPickUpOrder: Swift.Double, maximumPayInStoreOrder: Swift.Double, deliveryFee: Swift.Double, deliveryFeetiers: [CheetahLoyaltyOloCore.Delivery.FeeTier], supportsTip: Swift.Bool, supportsSpecialInstructions: Swift.Bool, specialInstructionsMaxLength: Swift.Int, supportsGuestOrdering: Swift.Bool, requiresPhoneNumber: Swift.Bool, supportsOnlineOrdering: Swift.Bool, supportsNationalMenu: Swift.Bool, supportsFeedback: Swift.Bool, supportsSplitPayments: Swift.Bool, slug: Swift.String, isAvailable: Swift.Bool, supportsGroupOrders: Swift.Bool, supportsProductRecipientNames: Swift.Bool, supportsBasketTransfers: Swift.Bool, allowHandOffChoiceAtManualFire: Swift.Bool, productRecipientNameLabel: Swift.String, customerFacingMessage: Swift.String, availabilityMessage: Swift.String, supportsDriveThru: Swift.Bool, showCalories: Swift.Bool, acceptsOrdersUntilClosing: Swift.Bool, acceptsOrdersBeforeOpening: Swift.Bool, suggestedTipPercentage: Swift.Float, customFields: [CheetahLoyaltyOloCore.Restaurant.CustomField], labels: [CheetahLoyaltyOloCore.Restaurant.CustomLabel], metadata: [CheetahLoyaltyOloCore.MetadataItem], supportedTimeModes: [CheetahLoyaltyOloCore.Basket.TimeMode], attributes: [Swift.String], supportedCountries: [Swift.String])
+  public init(id: Swift.Int, name: Swift.String, brand: Swift.String, storeName: Swift.String, telephone: Swift.String, streetAddress: Swift.String, crossStreet: Swift.String, city: Swift.String, contextualPricing: CheetahLoyaltyOloCore.ContextualPricing?, state: Swift.String, zip: Swift.String, country: Swift.String, latitude: Swift.Double, longitude: Swift.Double, utcOffset: Swift.Float, url: Swift.String, mobileUrl: Swift.String, distance: Swift.Double, extRef: Swift.String, isAdvanceOnly: Swift.Bool, advanceOrderDays: Swift.Int, supportsCoupons: Swift.Bool, supportsLoyalty: Swift.Bool, supportedCardTypes: Swift.String, supportsManualFire: Swift.Bool, canDeliver: Swift.Bool, canPickup: Swift.Bool, supportsCurbSide: Swift.Bool, supportsDispatch: Swift.Bool, hasOloPass: Swift.Bool, deliveryArea: Swift.String, minimumDeliveryOrder: Swift.Double, minimumPickUpOrder: Swift.Double, maximumPayInStoreOrder: Swift.Double, deliveryFee: Swift.Double, deliveryFeetiers: [CheetahLoyaltyOloCore.Delivery.FeeTier], supportsTip: Swift.Bool, supportsSpecialInstructions: Swift.Bool, specialInstructionsMaxLength: Swift.Int, supportsGuestOrdering: Swift.Bool, requiresPhoneNumber: Swift.Bool, supportsOnlineOrdering: Swift.Bool, supportsNationalMenu: Swift.Bool, supportsFeedback: Swift.Bool, supportsSplitPayments: Swift.Bool, slug: Swift.String, isAvailable: Swift.Bool, supportsGroupOrders: Swift.Bool, supportsProductRecipientNames: Swift.Bool, supportsBasketTransfers: Swift.Bool, supportsDineIn: Swift.Bool, allowHandOffChoiceAtManualFire: Swift.Bool, productRecipientNameLabel: Swift.String, customerFacingMessage: Swift.String, availabilityMessage: Swift.String, supportsDriveThru: Swift.Bool, showCalories: Swift.Bool, acceptsOrdersUntilClosing: Swift.Bool, acceptsOrdersBeforeOpening: Swift.Bool, suggestedTipPercentage: Swift.Float, customFields: [CheetahLoyaltyOloCore.Restaurant.CustomField], labels: [CheetahLoyaltyOloCore.Restaurant.CustomLabel], metadata: [CheetahLoyaltyOloCore.MetadataItem], supportedTimeModes: [CheetahLoyaltyOloCore.Basket.TimeMode], attributes: [Swift.String], supportedCountries: [Swift.String])
   public struct CustomField : Swift.Codable {
     public var id: Swift.Int
     public var label: Swift.String
     public var isRequired: Swift.Bool
     public var validationRegex: Swift.String
-    public var qualificationCriteria: Swift.String
-    public init(id: Swift.Int, label: Swift.String, isRequired: Swift.Bool, validationRegex: Swift.String, qualificationCriteria: Swift.String)
+    public var qualificationCriteria: CheetahLoyaltyOloCore.QualificationCriteria?
+    public init(id: Swift.Int, label: Swift.String, isRequired: Swift.Bool, validationRegex: Swift.String, qualificationCriteria: CheetahLoyaltyOloCore.QualificationCriteria?)
     public func encode(to encoder: Swift.Encoder) throws
   }
   public struct CustomLabel : Swift.Codable {
@@ -636,6 +658,8 @@ public struct Restaurant : Swift.Codable {
     public var endDate: Swift.String
     public var weekDay: Swift.String
     public init(startDate: Swift.String, endDate: Swift.String, weekDay: Swift.String)
+    public func formatForDisplay(dateFormat: Swift.String = "hh:mma", dayFormat: Swift.String = "EEEE") -> (weekDay: Swift.String, timeRange: Swift.String)?
+    public func formatAsDates(dateFormat: Swift.String = "yyyyMMdd HH:mm", dayFormat: Swift.String = "EEE") -> (startDate: Foundation.Date, endDate: Foundation.Date, weekDay: Foundation.Date)?
     public func encode(to encoder: Swift.Encoder) throws
   }
   public struct Calendars : Swift.Codable {
@@ -972,6 +996,16 @@ public enum BasketAPI {
   public static func validate(basketId: Swift.String, checkUpsell: Swift.Bool, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket.Validation>)
   public static func submitOrderWithSinglePayment(order: CheetahLoyaltyOloCore.BasketParameter.Order, basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Order.Status>)
   public static func submitOrderWithMultiplePayments(order: CheetahLoyaltyOloCore.BasketParameter.MultiplePaymentsOrder, basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Order.Status>)
+}
+extension Restaurant {
+  public var coordinates: CoreLocation.CLLocationCoordinate2D? {
+    get
+  }
+  public var supportedDeliveryModes: [CheetahLoyaltyOloCore.Delivery.Mode] {
+    get
+  }
+  public func getLabelForDeliveryMode(_ mode: CheetahLoyaltyOloCore.Delivery.Mode) -> CheetahLoyaltyOloCore.Restaurant.CustomLabel?
+  public func getConfirmationLabelForDeliveryMode(_ mode: CheetahLoyaltyOloCore.Delivery.Mode) -> CheetahLoyaltyOloCore.Restaurant.CustomLabel?
 }
 public enum TokenLocation {
   case path
@@ -1858,6 +1892,7 @@ public struct Delivery : Swift.Codable {
     case pickUp
     case dispatch
     case delivery
+    case dineIn
     case unspecified
     case undefined(value: Swift.String)
     public var stringValue: Swift.String {

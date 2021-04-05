@@ -4238,188 +4238,195 @@
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
       "line": 95,
-      "symbol": "Delivery.Mode.unspecified",
+      "symbol": "Delivery.Mode.dineIn",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
       "line": 96,
+      "symbol": "Delivery.Mode.unspecified",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
+      "line": 97,
       "symbol": "Delivery.Mode.undefined(value:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 98,
+      "line": 99,
       "symbol": "Delivery.Mode.stringValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 131,
+      "line": 134,
       "symbol": "Delivery.Addresses",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 132,
+      "line": 135,
       "symbol": "Delivery.Addresses.deliveryAddresses",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 138,
+      "line": 141,
       "symbol": "Delivery.Addresses.init(deliveryAddresses:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 145,
+      "line": 148,
       "symbol": "Delivery.FeeTier",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 146,
+      "line": 149,
       "symbol": "Delivery.FeeTier.feeType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 147,
+      "line": 150,
       "symbol": "Delivery.FeeTier.amount",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 148,
+      "line": 151,
       "symbol": "Delivery.FeeTier.subTotalMinimum",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 156,
+      "line": 159,
       "symbol": "Delivery.FeeTier.init(feeType:amount:subTotalMinimum:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 165,
+      "line": 168,
       "symbol": "Delivery.FeeType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 166,
+      "line": 169,
       "symbol": "Delivery.FeeType.subTotalPercent",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 167,
+      "line": 170,
       "symbol": "Delivery.FeeType.dispatchFee",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 168,
+      "line": 171,
       "symbol": "Delivery.FeeType.fixedFee",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 169,
+      "line": 172,
       "symbol": "Delivery.FeeType.undefined(value:)",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 171,
+      "line": 174,
       "symbol": "Delivery.FeeType.stringValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 198,
+      "line": 201,
       "symbol": "Delivery.CoverageResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 199,
+      "line": 202,
       "symbol": "Delivery.CoverageResponse.canDeliver",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 200,
+      "line": 203,
       "symbol": "Delivery.CoverageResponse.message",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 207,
+      "line": 210,
       "symbol": "Delivery.CoverageResponse.init(canDeliver:message:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 214,
+      "line": 217,
       "symbol": "Deliveries",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 221,
+      "line": 224,
       "symbol": "Delivery",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 232,
+      "line": 235,
       "symbol": "Delivery.Address",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 246,
+      "line": 249,
       "symbol": "Delivery.Addresses",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 253,
+      "line": 256,
       "symbol": "Delivery.FeeTier",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Delivery.swift",
-      "line": 262,
+      "line": 265,
       "symbol": "Delivery.CoverageResponse",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
@@ -7156,868 +7163,980 @@
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 11,
+      "symbol": "Restaurant",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
       "line": 13,
-      "symbol": "CalendarType",
+      "symbol": "QualificationCriteria",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
       "line": 14,
-      "symbol": "CalendarType.business",
+      "symbol": "QualificationCriteria.allOrders",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
       "line": 15,
-      "symbol": "CalendarType.delivery",
+      "symbol": "QualificationCriteria.deliveryOnly",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
       "line": 16,
-      "symbol": "CalendarType.carryOut",
+      "symbol": "QualificationCriteria.cashOnly",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
       "line": 17,
-      "symbol": "CalendarType.pickUpWindow",
+      "symbol": "QualificationCriteria.curbsidePickUpOnly",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
       "line": 18,
-      "symbol": "CalendarType.dineIn",
+      "symbol": "QualificationCriteria.driveThruOnly",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
       "line": 19,
-      "symbol": "CalendarType.curbSidePickUp",
+      "symbol": "QualificationCriteria.dineInOnly",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
       "line": 20,
-      "symbol": "CalendarType.driveThru",
+      "symbol": "QualificationCriteria.carryOutOnly",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
       "line": 21,
-      "symbol": "CalendarType.dispatch",
+      "symbol": "QualificationCriteria.timeWantedThreshold",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
       "line": 22,
-      "symbol": "CalendarType.others(value:)",
+      "symbol": "QualificationCriteria.orderAmountThreshold",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 23,
+      "symbol": "QualificationCriteria.productQuantityThreshold",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
       "line": 24,
+      "symbol": "QualificationCriteria.timeWantedAndProductQuantityThreshold",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 25,
+      "symbol": "QualificationCriteria.others(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 27,
+      "symbol": "QualificationCriteria.stringValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 68,
+      "symbol": "CalendarType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 69,
+      "symbol": "CalendarType.business",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 70,
+      "symbol": "CalendarType.delivery",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 71,
+      "symbol": "CalendarType.carryOut",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 72,
+      "symbol": "CalendarType.pickUpWindow",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 73,
+      "symbol": "CalendarType.dineIn",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 74,
+      "symbol": "CalendarType.curbSidePickUp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 75,
+      "symbol": "CalendarType.driveThru",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 76,
+      "symbol": "CalendarType.dispatch",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 77,
+      "symbol": "CalendarType.others(value:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 79,
       "symbol": "CalendarType.stringValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 61,
+      "line": 116,
       "symbol": "Restaurants",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 62,
+      "line": 117,
       "symbol": "Restaurants.restaurants",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 64,
+      "line": 119,
       "symbol": "Restaurants.init(restaurants:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 72,
+      "line": 127,
       "symbol": "Restaurant",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 73,
+      "line": 128,
       "symbol": "Restaurant.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 74,
+      "line": 129,
       "symbol": "Restaurant.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 75,
+      "line": 130,
       "symbol": "Restaurant.brand",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 76,
+      "line": 131,
       "symbol": "Restaurant.storeName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 77,
+      "line": 132,
       "symbol": "Restaurant.telephone",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 78,
+      "line": 133,
       "symbol": "Restaurant.streetAddress",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 79,
+      "line": 134,
       "symbol": "Restaurant.crossStreet",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 80,
+      "line": 135,
       "symbol": "Restaurant.city",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 81,
+      "line": 136,
       "symbol": "Restaurant.contextualPricing",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 82,
+      "line": 137,
       "symbol": "Restaurant.state",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 83,
+      "line": 138,
       "symbol": "Restaurant.zip",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 84,
+      "line": 139,
       "symbol": "Restaurant.country",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 85,
+      "line": 140,
       "symbol": "Restaurant.latitude",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 86,
+      "line": 141,
       "symbol": "Restaurant.longitude",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 87,
+      "line": 142,
       "symbol": "Restaurant.utcOffset",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 88,
+      "line": 143,
       "symbol": "Restaurant.url",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 89,
+      "line": 144,
       "symbol": "Restaurant.mobileUrl",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 90,
+      "line": 145,
       "symbol": "Restaurant.distance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 91,
+      "line": 146,
       "symbol": "Restaurant.extRef",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 92,
+      "line": 147,
       "symbol": "Restaurant.isAdvanceOnly",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 93,
+      "line": 148,
       "symbol": "Restaurant.advanceOrderDays",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 94,
+      "line": 149,
       "symbol": "Restaurant.supportsCoupons",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 95,
+      "line": 150,
       "symbol": "Restaurant.supportsLoyalty",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 96,
+      "line": 151,
       "symbol": "Restaurant.supportedCardTypes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 97,
+      "line": 152,
       "symbol": "Restaurant.supportsManualFire",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 98,
+      "line": 153,
       "symbol": "Restaurant.canDeliver",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 99,
+      "line": 154,
       "symbol": "Restaurant.canPickup",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 100,
+      "line": 155,
       "symbol": "Restaurant.supportsCurbSide",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 101,
+      "line": 156,
       "symbol": "Restaurant.supportsDispatch",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 102,
+      "line": 157,
       "symbol": "Restaurant.hasOloPass",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 103,
+      "line": 158,
       "symbol": "Restaurant.deliveryArea",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 104,
+      "line": 159,
       "symbol": "Restaurant.minimumDeliveryOrder",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 105,
+      "line": 160,
       "symbol": "Restaurant.minimumPickUpOrder",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 106,
+      "line": 161,
       "symbol": "Restaurant.maximumPayInStoreOrder",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 107,
+      "line": 162,
       "symbol": "Restaurant.deliveryFee",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 108,
+      "line": 163,
       "symbol": "Restaurant.deliveryFeetiers",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 109,
+      "line": 164,
       "symbol": "Restaurant.supportsTip",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 110,
+      "line": 165,
       "symbol": "Restaurant.supportsSpecialInstructions",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 111,
+      "line": 166,
       "symbol": "Restaurant.specialInstructionsMaxLength",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 112,
+      "line": 167,
       "symbol": "Restaurant.supportsGuestOrdering",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 113,
+      "line": 168,
       "symbol": "Restaurant.requiresPhoneNumber",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 114,
+      "line": 169,
       "symbol": "Restaurant.supportsOnlineOrdering",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 115,
+      "line": 170,
       "symbol": "Restaurant.supportsNationalMenu",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 116,
+      "line": 171,
       "symbol": "Restaurant.supportsFeedback",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 117,
+      "line": 172,
       "symbol": "Restaurant.supportsSplitPayments",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 118,
+      "line": 173,
       "symbol": "Restaurant.slug",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 119,
+      "line": 174,
       "symbol": "Restaurant.isAvailable",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 120,
+      "line": 175,
       "symbol": "Restaurant.supportsGroupOrders",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 121,
+      "line": 176,
       "symbol": "Restaurant.supportsProductRecipientNames",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 122,
+      "line": 177,
       "symbol": "Restaurant.supportsBasketTransfers",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 123,
+      "line": 178,
+      "symbol": "Restaurant.supportsDineIn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
+      "line": 179,
       "symbol": "Restaurant.allowHandOffChoiceAtManualFire",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 124,
+      "line": 180,
       "symbol": "Restaurant.productRecipientNameLabel",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 125,
+      "line": 181,
       "symbol": "Restaurant.customerFacingMessage",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 126,
+      "line": 182,
       "symbol": "Restaurant.availabilityMessage",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 127,
+      "line": 183,
       "symbol": "Restaurant.supportsDriveThru",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 128,
+      "line": 184,
       "symbol": "Restaurant.showCalories",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 129,
+      "line": 185,
       "symbol": "Restaurant.acceptsOrdersUntilClosing",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 130,
+      "line": 186,
       "symbol": "Restaurant.acceptsOrdersBeforeOpening",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 131,
+      "line": 187,
       "symbol": "Restaurant.suggestedTipPercentage",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 132,
+      "line": 188,
       "symbol": "Restaurant.customFields",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 133,
+      "line": 189,
       "symbol": "Restaurant.labels",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 134,
+      "line": 190,
       "symbol": "Restaurant.metadata",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 135,
+      "line": 191,
       "symbol": "Restaurant.supportedTimeModes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 136,
+      "line": 192,
       "symbol": "Restaurant.attributes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 137,
+      "line": 193,
       "symbol": "Restaurant.supportedCountries",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 208,
-      "symbol": "Restaurant.init(id:name:brand:storeName:telephone:streetAddress:crossStreet:city:contextualPricing:state:zip:country:latitude:longitude:utcOffset:url:mobileUrl:distance:extRef:isAdvanceOnly:advanceOrderDays:supportsCoupons:supportsLoyalty:supportedCardTypes:supportsManualFire:canDeliver:canPickup:supportsCurbSide:supportsDispatch:hasOloPass:deliveryArea:minimumDeliveryOrder:minimumPickUpOrder:maximumPayInStoreOrder:deliveryFee:deliveryFeetiers:supportsTip:supportsSpecialInstructions:specialInstructionsMaxLength:supportsGuestOrdering:requiresPhoneNumber:supportsOnlineOrdering:supportsNationalMenu:supportsFeedback:supportsSplitPayments:slug:isAvailable:supportsGroupOrders:supportsProductRecipientNames:supportsBasketTransfers:allowHandOffChoiceAtManualFire:productRecipientNameLabel:customerFacingMessage:availabilityMessage:supportsDriveThru:showCalories:acceptsOrdersUntilClosing:acceptsOrdersBeforeOpening:suggestedTipPercentage:customFields:labels:metadata:supportedTimeModes:attributes:supportedCountries:)",
+      "line": 265,
+      "symbol": "Restaurant.init(id:name:brand:storeName:telephone:streetAddress:crossStreet:city:contextualPricing:state:zip:country:latitude:longitude:utcOffset:url:mobileUrl:distance:extRef:isAdvanceOnly:advanceOrderDays:supportsCoupons:supportsLoyalty:supportedCardTypes:supportsManualFire:canDeliver:canPickup:supportsCurbSide:supportsDispatch:hasOloPass:deliveryArea:minimumDeliveryOrder:minimumPickUpOrder:maximumPayInStoreOrder:deliveryFee:deliveryFeetiers:supportsTip:supportsSpecialInstructions:specialInstructionsMaxLength:supportsGuestOrdering:requiresPhoneNumber:supportsOnlineOrdering:supportsNationalMenu:supportsFeedback:supportsSplitPayments:slug:isAvailable:supportsGroupOrders:supportsProductRecipientNames:supportsBasketTransfers:supportsDineIn:allowHandOffChoiceAtManualFire:productRecipientNameLabel:customerFacingMessage:availabilityMessage:supportsDriveThru:showCalories:acceptsOrdersUntilClosing:acceptsOrdersBeforeOpening:suggestedTipPercentage:customFields:labels:metadata:supportedTimeModes:attributes:supportedCountries:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 342,
+      "line": 401,
       "symbol": "Restaurant.CustomField",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 343,
+      "line": 402,
       "symbol": "Restaurant.CustomField.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 344,
+      "line": 403,
       "symbol": "Restaurant.CustomField.label",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 345,
+      "line": 404,
       "symbol": "Restaurant.CustomField.isRequired",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 346,
+      "line": 405,
       "symbol": "Restaurant.CustomField.validationRegex",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 347,
+      "line": 406,
       "symbol": "Restaurant.CustomField.qualificationCriteria",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 356,
+      "line": 415,
       "symbol": "Restaurant.CustomField.init(id:label:isRequired:validationRegex:qualificationCriteria:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 371,
+      "line": 430,
       "symbol": "Restaurant.CustomLabel",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 372,
+      "line": 431,
       "symbol": "Restaurant.CustomLabel.key",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 373,
+      "line": 432,
       "symbol": "Restaurant.CustomLabel.value",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 375,
+      "line": 434,
       "symbol": "Restaurant.CustomLabel.init(key:value:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 384,
+      "line": 443,
       "symbol": "Restaurant.Calendar",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 385,
+      "line": 444,
       "symbol": "Restaurant.Calendar.label",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 386,
+      "line": 445,
       "symbol": "Restaurant.Calendar.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 387,
+      "line": 446,
       "symbol": "Restaurant.Calendar.ranges",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 389,
+      "line": 448,
       "symbol": "Restaurant.Calendar.init(label:type:ranges:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 400,
+      "line": 459,
       "symbol": "Restaurant.CalendarTimeRange",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 401,
+      "line": 460,
       "symbol": "Restaurant.CalendarTimeRange.startDate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 402,
+      "line": 461,
       "symbol": "Restaurant.CalendarTimeRange.endDate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 403,
+      "line": 462,
       "symbol": "Restaurant.CalendarTimeRange.weekDay",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 411,
+      "line": 470,
       "symbol": "Restaurant.CalendarTimeRange.init(startDate:endDate:weekDay:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 422,
+      "line": 511,
       "symbol": "Restaurant.Calendars",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 423,
+      "line": 512,
       "symbol": "Restaurant.Calendars.calendar",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 425,
+      "line": 514,
       "symbol": "Restaurant.Calendars.init(calendar:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 432,
+      "line": 521,
       "symbol": "Restaurant.Disclaimer",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 433,
+      "line": 522,
       "symbol": "Restaurant.Disclaimer.code",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 434,
+      "line": 523,
       "symbol": "Restaurant.Disclaimer.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 435,
+      "line": 524,
       "symbol": "Restaurant.Disclaimer.disclaimer",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 436,
+      "line": 525,
       "symbol": "Restaurant.Disclaimer.images",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 438,
+      "line": 527,
       "symbol": "Restaurant.Disclaimer.init(code:name:disclaimer:images:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 451,
+      "line": 540,
       "symbol": "Restaurant.Disclaimers",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 452,
+      "line": 541,
       "symbol": "Restaurant.Disclaimers.imagePath",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 453,
+      "line": 542,
       "symbol": "Restaurant.Disclaimers.disclaimers",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 460,
+      "line": 549,
       "symbol": "Restaurant.Disclaimers.init(imagePath:disclaimers:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 468,
+      "line": 557,
       "symbol": "Restaurant.CustomField",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 479,
+      "line": 568,
       "symbol": "Restaurant",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 554,
+      "line": 644,
       "symbol": "Restaurants",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 562,
+      "line": 652,
       "symbol": "Restaurant.CustomLabel",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 570,
+      "line": 660,
       "symbol": "Restaurant.Calendar",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 579,
+      "line": 669,
       "symbol": "Restaurant.CalendarTimeRange",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 588,
+      "line": 678,
       "symbol": "Restaurant.Calendars",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 595,
+      "line": 685,
       "symbol": "Restaurant.Disclaimer",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
     },
     {
       "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Models/Responses/Restaurant.swift",
-      "line": 605,
+      "line": 695,
       "symbol": "Restaurant.Disclaimers",
       "symbol_kind": "source.lang.swift.decl.extension",
       "warning": "undocumented"
@@ -8622,6 +8741,34 @@
       "line": 61,
       "symbol": "Notification.Name.ResetPasswordRequired",
       "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/RestaurantExtension.swift",
+      "line": 13,
+      "symbol": "Restaurant.coordinates",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/RestaurantExtension.swift",
+      "line": 17,
+      "symbol": "Restaurant.supportedDeliveryModes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/RestaurantExtension.swift",
+      "line": 47,
+      "symbol": "Restaurant.getLabelForDeliveryMode(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jesselesquinas/cheetah-loyalty-ios-olo-sdk/CheetahLoyaltyOloCore/CheetahLoyaltyOloCore/Utils/RestaurantExtension.swift",
+      "line": 71,
+      "symbol": "Restaurant.getConfirmationLabelForDeliveryMode(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     }
   ],
