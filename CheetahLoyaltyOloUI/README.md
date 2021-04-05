@@ -11,7 +11,7 @@
 * Xcode 11.x
 * Swift 5.1
 * `CheetahLoyaltyUI` v1.9.1
-* `CheetahLoyaltyOloCore` v1.1.2
+* `CheetahLoyaltyOloCore` v1.1.3
 * `CheetahUtils` v1.2.0
 
 ## Installation
