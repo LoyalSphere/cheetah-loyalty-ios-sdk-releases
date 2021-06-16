@@ -54,6 +54,9 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums/ArrivalStatus.html">ArrivalStatus</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/BasketAPI.html">BasketAPI</a>
               </li>
               <li class="nav-group-task">
@@ -145,6 +148,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CommonParameter/Coordinates.html">– Coordinates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommonParameter/CalendarRange.html">– CalendarRange</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CommonParameter/Address.html">– Address</a>
@@ -417,6 +423,9 @@
                 <a href="../Structs/Basket/Product.html">– Product</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/Basket/PromotionType.html">– PromotionType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/ContextualPricing.html">ContextualPricing</a>
               </li>
               <li class="nav-group-task">
@@ -537,6 +546,21 @@
                 <a href="../Structs/Restaurant/Disclaimers.html">– Disclaimers</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/Restaurant/BrandLevelSettings.html">– BrandLevelSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/DeliveryMode.html">– DeliveryMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/LoginProvider.html">– LoginProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/PushNotification.html">– PushNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/TimeMode.html">– TimeMode</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Restaurants.html">Restaurants</a>
               </li>
               <li class="nav-group-task">
@@ -601,68 +625,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21CheetahLoyaltyOloCore13RestaurantAPIO14getRestaurants14includePrivate10completionySb_ys6ResultOyAA11APIResponseVyAA0H0VGs5Error_pGcSgtFZ"></a>
-                    <a name="//apple_ref/swift/Method/getRestaurants(includePrivate:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyOloCore13RestaurantAPIO14getRestaurants14includePrivate10completionySb_ys6ResultOyAA11APIResponseVyAA0H0VGs5Error_pGcSgtFZ">getRestaurants(includePrivate:<wbr>completion:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Returns all participating restaurant&rsquo;s configuration settings. By default this will only return public restaurants</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getRestaurants</span><span class="p">(</span><span class="nv">includePrivate</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
-                                  <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Restaurants.html">Restaurants</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>includePrivate</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>When set to true, the endpoint will include restaurants configured as both public and private</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>completion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The closure to be executed once the request has finished</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:21CheetahLoyaltyOloCore13RestaurantAPIO20getNearbyRestaurants11coordinates11radiusMiles5limit10completionyAA15CommonParameterO11CoordinatesV_SdSiys6ResultOyAA11APIResponseVyAA0I0VGs5Error_pGcSgtFZ"></a>
-                    <a name="//apple_ref/swift/Method/getNearbyRestaurants(coordinates:radiusMiles:limit:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyOloCore13RestaurantAPIO20getNearbyRestaurants11coordinates11radiusMiles5limit10completionyAA15CommonParameterO11CoordinatesV_SdSiys6ResultOyAA11APIResponseVyAA0I0VGs5Error_pGcSgtFZ">getNearbyRestaurants(coordinates:<wbr>radiusMiles:<wbr>limit:<wbr>completion:<wbr>)</a>
+                    <a name="/s:21CheetahLoyaltyOloCore13RestaurantAPIO20getNearbyRestaurants11coordinates13calendarRange11radiusMiles5limit10completionyAA15CommonParameterO11CoordinatesV_AK08CalendarL0VSgSdSiys6ResultOyAA11APIResponseVyAA0I0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getNearbyRestaurants(coordinates:calendarRange:radiusMiles:limit:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore13RestaurantAPIO20getNearbyRestaurants11coordinates13calendarRange11radiusMiles5limit10completionyAA15CommonParameterO11CoordinatesV_AK08CalendarL0VSgSdSiys6ResultOyAA11APIResponseVyAA0I0VGs5Error_pGcSgtFZ">getNearbyRestaurants(coordinates:<wbr>calendarRange:<wbr>radiusMiles:<wbr>limit:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -678,6 +643,7 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getNearbyRestaurants</span><span class="p">(</span><span class="nv">coordinates</span><span class="p">:</span> <span class="kt"><a href="../Enums/CommonParameter.html">CommonParameter</a></span><span class="o">.</span><span class="kt">Coordinates</span><span class="p">,</span>
+                                        <span class="nv">calendarRange</span><span class="p">:</span> <span class="kt"><a href="../Enums/CommonParameter.html">CommonParameter</a></span><span class="o">.</span><span class="kt">CalendarRange</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                         <span class="nv">radiusMiles</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
                                         <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
                                         <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Restaurants.html">Restaurants</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
@@ -745,9 +711,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21CheetahLoyaltyOloCore13RestaurantAPIO39getNearbyRestaurantsWithInHouseDelivery11coordinates5limit10completionyAA15CommonParameterO11CoordinatesV_Siys6ResultOyAA11APIResponseVyAA0I0VGs5Error_pGcSgtFZ"></a>
-                    <a name="//apple_ref/swift/Method/getNearbyRestaurantsWithInHouseDelivery(coordinates:limit:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyOloCore13RestaurantAPIO39getNearbyRestaurantsWithInHouseDelivery11coordinates5limit10completionyAA15CommonParameterO11CoordinatesV_Siys6ResultOyAA11APIResponseVyAA0I0VGs5Error_pGcSgtFZ">getNearbyRestaurantsWithInHouseDelivery(coordinates:<wbr>limit:<wbr>completion:<wbr>)</a>
+                    <a name="/s:21CheetahLoyaltyOloCore13RestaurantAPIO39getNearbyRestaurantsWithInHouseDelivery11coordinates13calendarRange5limit10completionyAA15CommonParameterO11CoordinatesV_AJ08CalendarP0VSgSiys6ResultOyAA11APIResponseVyAA0I0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getNearbyRestaurantsWithInHouseDelivery(coordinates:calendarRange:limit:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore13RestaurantAPIO39getNearbyRestaurantsWithInHouseDelivery11coordinates13calendarRange5limit10completionyAA15CommonParameterO11CoordinatesV_AJ08CalendarP0VSgSiys6ResultOyAA11APIResponseVyAA0I0VGs5Error_pGcSgtFZ">getNearbyRestaurantsWithInHouseDelivery(coordinates:<wbr>calendarRange:<wbr>limit:<wbr>completion:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -764,6 +730,7 @@ Restaurants that support Dispatch but not Delivery will not be returned by this 
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getNearbyRestaurantsWithInHouseDelivery</span><span class="p">(</span><span class="nv">coordinates</span><span class="p">:</span> <span class="kt"><a href="../Enums/CommonParameter.html">CommonParameter</a></span><span class="o">.</span><span class="kt">Coordinates</span><span class="p">,</span>
+                                                           <span class="nv">calendarRange</span><span class="p">:</span> <span class="kt"><a href="../Enums/CommonParameter.html">CommonParameter</a></span><span class="o">.</span><span class="kt">CalendarRange</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
                                                            <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
                                                            <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Restaurants.html">Restaurants</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
 
@@ -1395,12 +1362,39 @@ If the brand does not want to show unavailable products they will not show up he
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore13RestaurantAPIO21getBrandLevelSettings10completionyys6ResultOyAA11APIResponseVyAA0E0V0hiJ0VGs5Error_pGcSg_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getBrandLevelSettings(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore13RestaurantAPIO21getBrandLevelSettings10completionyys6ResultOyAA11APIResponseVyAA0E0V0hiJ0VGs5Error_pGcSg_tFZ">getBrandLevelSettings(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns brand level settings pertaining to advance order days, supported delivery modes, login providers and time modes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getBrandLevelSettings</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahLoyaltyOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Restaurant.html">Restaurant</a></span><span class="o">.</span><span class="kt">BrandLevelSettings</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-04-06)</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-06-16)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

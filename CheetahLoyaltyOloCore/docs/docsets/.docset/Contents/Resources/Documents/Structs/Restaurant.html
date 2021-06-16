@@ -54,6 +54,9 @@
             <a href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Enums/ArrivalStatus.html">ArrivalStatus</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/BasketAPI.html">BasketAPI</a>
               </li>
               <li class="nav-group-task">
@@ -145,6 +148,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CommonParameter/Coordinates.html">– Coordinates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommonParameter/CalendarRange.html">– CalendarRange</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CommonParameter/Address.html">– Address</a>
@@ -417,6 +423,9 @@
                 <a href="../Structs/Basket/Product.html">– Product</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/Basket/PromotionType.html">– PromotionType</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/ContextualPricing.html">ContextualPricing</a>
               </li>
               <li class="nav-group-task">
@@ -535,6 +544,21 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Restaurant/Disclaimers.html">– Disclaimers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/BrandLevelSettings.html">– BrandLevelSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/DeliveryMode.html">– DeliveryMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/LoginProvider.html">– LoginProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/PushNotification.html">– PushNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/TimeMode.html">– TimeMode</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Restaurants.html">Restaurants</a>
@@ -2310,7 +2334,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportedTimeModes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Basket.html">Basket</a></span><span class="o">.</span><span class="kt">TimeMode</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportedTimeModes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Basket.html">Basket</a></span><span class="o">.</span><span class="kt"><a href="../Structs/Restaurant/TimeMode.html">TimeMode</a></span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -2374,9 +2398,90 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV2id4name5brand9storeName9telephone13streetAddress11crossStreet4city17contextualPricing5state3zip7country8latitude9longitude9utcOffset3url9mobileUrl8distance6extRef13isAdvanceOnly16advanceOrderDays15supportsCoupons08supportsB018supportedCardTypes18supportsManualFire10canDeliver9canPickup16supportsCurbSide16supportsDispatch03hasC4Pass12deliveryArea20minimumDeliveryOrder18minimumPickUpOrder22maximumPayInStoreOrder11deliveryFee16deliveryFeetiers11supportsTip27supportsSpecialInstructions28specialInstructionsMaxLength21supportsGuestOrdering19requiresPhoneNumber22supportsOnlineOrdering20supportsNationalMenu16supportsFeedback21supportsSplitPayments4slug11isAvailable19supportsGroupOrders29supportsProductRecipientNames23supportsBasketTransfers14supportsDineIn30allowHandOffChoiceAtManualFire016productRecipientJ5Label21customerFacingMessage19availabilityMessage17supportsDriveThru12showCalories25acceptsOrdersUntilClosing26acceptsOrdersBeforeOpening22suggestedTipPercentage12customFields6labels8metadata18supportedTimeModes10attributes18supportedCountriesACSi_S7SAA010ContextualR0VSgS3SS2dSfS2SSdSSSbSiS2bSSS6bSSS4dSayAA8DeliveryV7FeeTierVGS2bSiS6bSSS6bS3SS4bSfSayAC11CustomFieldVGSayAC11CustomLabelVGSayAA12MetadataItemVGSayAA6BasketV8TimeModeOGSaySSGA64_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(id:name:brand:storeName:telephone:streetAddress:crossStreet:city:contextualPricing:state:zip:country:latitude:longitude:utcOffset:url:mobileUrl:distance:extRef:isAdvanceOnly:advanceOrderDays:supportsCoupons:supportsLoyalty:supportedCardTypes:supportsManualFire:canDeliver:canPickup:supportsCurbSide:supportsDispatch:hasOloPass:deliveryArea:minimumDeliveryOrder:minimumPickUpOrder:maximumPayInStoreOrder:deliveryFee:deliveryFeetiers:supportsTip:supportsSpecialInstructions:specialInstructionsMaxLength:supportsGuestOrdering:requiresPhoneNumber:supportsOnlineOrdering:supportsNationalMenu:supportsFeedback:supportsSplitPayments:slug:isAvailable:supportsGroupOrders:supportsProductRecipientNames:supportsBasketTransfers:supportsDineIn:allowHandOffChoiceAtManualFire:productRecipientNameLabel:customerFacingMessage:availabilityMessage:supportsDriveThru:showCalories:acceptsOrdersUntilClosing:acceptsOrdersBeforeOpening:suggestedTipPercentage:customFields:labels:metadata:supportedTimeModes:attributes:supportedCountries:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV2id4name5brand9storeName9telephone13streetAddress11crossStreet4city17contextualPricing5state3zip7country8latitude9longitude9utcOffset3url9mobileUrl8distance6extRef13isAdvanceOnly16advanceOrderDays15supportsCoupons08supportsB018supportedCardTypes18supportsManualFire10canDeliver9canPickup16supportsCurbSide16supportsDispatch03hasC4Pass12deliveryArea20minimumDeliveryOrder18minimumPickUpOrder22maximumPayInStoreOrder11deliveryFee16deliveryFeetiers11supportsTip27supportsSpecialInstructions28specialInstructionsMaxLength21supportsGuestOrdering19requiresPhoneNumber22supportsOnlineOrdering20supportsNationalMenu16supportsFeedback21supportsSplitPayments4slug11isAvailable19supportsGroupOrders29supportsProductRecipientNames23supportsBasketTransfers14supportsDineIn30allowHandOffChoiceAtManualFire016productRecipientJ5Label21customerFacingMessage19availabilityMessage17supportsDriveThru12showCalories25acceptsOrdersUntilClosing26acceptsOrdersBeforeOpening22suggestedTipPercentage12customFields6labels8metadata18supportedTimeModes10attributes18supportedCountriesACSi_S7SAA010ContextualR0VSgS3SS2dSfS2SSdSSSbSiS2bSSS6bSSS4dSayAA8DeliveryV7FeeTierVGS2bSiS6bSSS6bS3SS4bSfSayAC11CustomFieldVGSayAC11CustomLabelVGSayAA12MetadataItemVGSayAA6BasketV8TimeModeOGSaySSGA64_tcfc">init(id:<wbr>name:<wbr>brand:<wbr>storeName:<wbr>telephone:<wbr>streetAddress:<wbr>crossStreet:<wbr>city:<wbr>contextualPricing:<wbr>state:<wbr>zip:<wbr>country:<wbr>latitude:<wbr>longitude:<wbr>utcOffset:<wbr>url:<wbr>mobileUrl:<wbr>distance:<wbr>extRef:<wbr>isAdvanceOnly:<wbr>advanceOrderDays:<wbr>supportsCoupons:<wbr>supportsLoyalty:<wbr>supportedCardTypes:<wbr>supportsManualFire:<wbr>canDeliver:<wbr>canPickup:<wbr>supportsCurbSide:<wbr>supportsDispatch:<wbr>hasOloPass:<wbr>deliveryArea:<wbr>minimumDeliveryOrder:<wbr>minimumPickUpOrder:<wbr>maximumPayInStoreOrder:<wbr>deliveryFee:<wbr>deliveryFeetiers:<wbr>supportsTip:<wbr>supportsSpecialInstructions:<wbr>specialInstructionsMaxLength:<wbr>supportsGuestOrdering:<wbr>requiresPhoneNumber:<wbr>supportsOnlineOrdering:<wbr>supportsNationalMenu:<wbr>supportsFeedback:<wbr>supportsSplitPayments:<wbr>slug:<wbr>isAvailable:<wbr>supportsGroupOrders:<wbr>supportsProductRecipientNames:<wbr>supportsBasketTransfers:<wbr>supportsDineIn:<wbr>allowHandOffChoiceAtManualFire:<wbr>productRecipientNameLabel:<wbr>customerFacingMessage:<wbr>availabilityMessage:<wbr>supportsDriveThru:<wbr>showCalories:<wbr>acceptsOrdersUntilClosing:<wbr>acceptsOrdersBeforeOpening:<wbr>suggestedTipPercentage:<wbr>customFields:<wbr>labels:<wbr>metadata:<wbr>supportedTimeModes:<wbr>attributes:<wbr>supportedCountries:<wbr>)</a>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV15isCurrentlyOpenSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isCurrentlyOpen" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV15isCurrentlyOpenSbvp">isCurrentlyOpen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isCurrentlyOpen</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV35supportedArrivalMessageHandoffModesSaySSGvp"></a>
+                    <a name="//apple_ref/swift/Property/supportedArrivalMessageHandoffModes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV35supportedArrivalMessageHandoffModesSaySSGvp">supportedArrivalMessageHandoffModes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">supportedArrivalMessageHandoffModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV9calendarsSayAC9CalendarsVGvp"></a>
+                    <a name="//apple_ref/swift/Property/calendars" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV9calendarsSayAC9CalendarsVGvp">calendars</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">calendars</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Restaurant/Calendars.html">Calendars</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV2id4name5brand9storeName9telephone13streetAddress11crossStreet4city17contextualPricing5state3zip7country8latitude9longitude9utcOffset3url9mobileUrl8distance6extRef13isAdvanceOnly16advanceOrderDays15supportsCoupons08supportsB018supportedCardTypes18supportsManualFire10canDeliver9canPickup16supportsCurbSide16supportsDispatch03hasC4Pass12deliveryArea20minimumDeliveryOrder18minimumPickUpOrder22maximumPayInStoreOrder11deliveryFee16deliveryFeetiers11supportsTip27supportsSpecialInstructions28specialInstructionsMaxLength21supportsGuestOrdering19requiresPhoneNumber22supportsOnlineOrdering20supportsNationalMenu16supportsFeedback21supportsSplitPayments4slug11isAvailable19supportsGroupOrders29supportsProductRecipientNames23supportsBasketTransfers14supportsDineIn30allowHandOffChoiceAtManualFire016productRecipientJ5Label21customerFacingMessage19availabilityMessage17supportsDriveThru12showCalories25acceptsOrdersUntilClosing26acceptsOrdersBeforeOpening22suggestedTipPercentage12customFields6labels8metadata18supportedTimeModes10attributes18supportedCountries15isCurrentlyOpen35supportedArrivalMessageHandoffModes9calendarsACSi_S7SAA010ContextualR0VSgS3SS2dSfS2SSdSSSbSiS2bSSS6bSSS4dSayAA8DeliveryV7FeeTierVGS2bSiS6bSSS6bS3SS4bSfSayAC11CustomFieldVGSayAC11CustomLabelVGSayAA12MetadataItemVGSayAA6BasketV8TimeModeOGSaySSGA67_SbA67_SayAC9CalendarsVGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(id:name:brand:storeName:telephone:streetAddress:crossStreet:city:contextualPricing:state:zip:country:latitude:longitude:utcOffset:url:mobileUrl:distance:extRef:isAdvanceOnly:advanceOrderDays:supportsCoupons:supportsLoyalty:supportedCardTypes:supportsManualFire:canDeliver:canPickup:supportsCurbSide:supportsDispatch:hasOloPass:deliveryArea:minimumDeliveryOrder:minimumPickUpOrder:maximumPayInStoreOrder:deliveryFee:deliveryFeetiers:supportsTip:supportsSpecialInstructions:specialInstructionsMaxLength:supportsGuestOrdering:requiresPhoneNumber:supportsOnlineOrdering:supportsNationalMenu:supportsFeedback:supportsSplitPayments:slug:isAvailable:supportsGroupOrders:supportsProductRecipientNames:supportsBasketTransfers:supportsDineIn:allowHandOffChoiceAtManualFire:productRecipientNameLabel:customerFacingMessage:availabilityMessage:supportsDriveThru:showCalories:acceptsOrdersUntilClosing:acceptsOrdersBeforeOpening:suggestedTipPercentage:customFields:labels:metadata:supportedTimeModes:attributes:supportedCountries:isCurrentlyOpen:supportedArrivalMessageHandoffModes:calendars:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV2id4name5brand9storeName9telephone13streetAddress11crossStreet4city17contextualPricing5state3zip7country8latitude9longitude9utcOffset3url9mobileUrl8distance6extRef13isAdvanceOnly16advanceOrderDays15supportsCoupons08supportsB018supportedCardTypes18supportsManualFire10canDeliver9canPickup16supportsCurbSide16supportsDispatch03hasC4Pass12deliveryArea20minimumDeliveryOrder18minimumPickUpOrder22maximumPayInStoreOrder11deliveryFee16deliveryFeetiers11supportsTip27supportsSpecialInstructions28specialInstructionsMaxLength21supportsGuestOrdering19requiresPhoneNumber22supportsOnlineOrdering20supportsNationalMenu16supportsFeedback21supportsSplitPayments4slug11isAvailable19supportsGroupOrders29supportsProductRecipientNames23supportsBasketTransfers14supportsDineIn30allowHandOffChoiceAtManualFire016productRecipientJ5Label21customerFacingMessage19availabilityMessage17supportsDriveThru12showCalories25acceptsOrdersUntilClosing26acceptsOrdersBeforeOpening22suggestedTipPercentage12customFields6labels8metadata18supportedTimeModes10attributes18supportedCountries15isCurrentlyOpen35supportedArrivalMessageHandoffModes9calendarsACSi_S7SAA010ContextualR0VSgS3SS2dSfS2SSdSSSbSiS2bSSS6bSSS4dSayAA8DeliveryV7FeeTierVGS2bSiS6bSSS6bS3SS4bSfSayAC11CustomFieldVGSayAC11CustomLabelVGSayAA12MetadataItemVGSayAA6BasketV8TimeModeOGSaySSGA67_SbA67_SayAC9CalendarsVGtcfc">init(id:<wbr>name:<wbr>brand:<wbr>storeName:<wbr>telephone:<wbr>streetAddress:<wbr>crossStreet:<wbr>city:<wbr>contextualPricing:<wbr>state:<wbr>zip:<wbr>country:<wbr>latitude:<wbr>longitude:<wbr>utcOffset:<wbr>url:<wbr>mobileUrl:<wbr>distance:<wbr>extRef:<wbr>isAdvanceOnly:<wbr>advanceOrderDays:<wbr>supportsCoupons:<wbr>supportsLoyalty:<wbr>supportedCardTypes:<wbr>supportsManualFire:<wbr>canDeliver:<wbr>canPickup:<wbr>supportsCurbSide:<wbr>supportsDispatch:<wbr>hasOloPass:<wbr>deliveryArea:<wbr>minimumDeliveryOrder:<wbr>minimumPickUpOrder:<wbr>maximumPayInStoreOrder:<wbr>deliveryFee:<wbr>deliveryFeetiers:<wbr>supportsTip:<wbr>supportsSpecialInstructions:<wbr>specialInstructionsMaxLength:<wbr>supportsGuestOrdering:<wbr>requiresPhoneNumber:<wbr>supportsOnlineOrdering:<wbr>supportsNationalMenu:<wbr>supportsFeedback:<wbr>supportsSplitPayments:<wbr>slug:<wbr>isAvailable:<wbr>supportsGroupOrders:<wbr>supportsProductRecipientNames:<wbr>supportsBasketTransfers:<wbr>supportsDineIn:<wbr>allowHandOffChoiceAtManualFire:<wbr>productRecipientNameLabel:<wbr>customerFacingMessage:<wbr>availabilityMessage:<wbr>supportsDriveThru:<wbr>showCalories:<wbr>acceptsOrdersUntilClosing:<wbr>acceptsOrdersBeforeOpening:<wbr>suggestedTipPercentage:<wbr>customFields:<wbr>labels:<wbr>metadata:<wbr>supportedTimeModes:<wbr>attributes:<wbr>supportedCountries:<wbr>isCurrentlyOpen:<wbr>supportedArrivalMessageHandoffModes:<wbr>calendars:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2454,9 +2559,12 @@
             <span class="nv">customFields</span><span class="p">:</span> <span class="p">[</span><span class="kt">Restaurant</span><span class="o">.</span><span class="kt"><a href="../Structs/Restaurant/CustomField.html">CustomField</a></span><span class="p">],</span>
             <span class="nv">labels</span><span class="p">:</span> <span class="p">[</span><span class="kt">Restaurant</span><span class="o">.</span><span class="kt"><a href="../Structs/Restaurant/CustomLabel.html">CustomLabel</a></span><span class="p">],</span>
             <span class="nv">metadata</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/MetadataItem.html">MetadataItem</a></span><span class="p">],</span>
-            <span class="nv">supportedTimeModes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Basket.html">Basket</a></span><span class="o">.</span><span class="kt">TimeMode</span><span class="p">],</span>
+            <span class="nv">supportedTimeModes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Basket.html">Basket</a></span><span class="o">.</span><span class="kt"><a href="../Structs/Restaurant/TimeMode.html">TimeMode</a></span><span class="p">],</span>
             <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span>
-            <span class="nv">supportedCountries</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+            <span class="nv">supportedCountries</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span>
+            <span class="nv">isCurrentlyOpen</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">supportedArrivalMessageHandoffModes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">],</span>
+            <span class="nv">calendars</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/Restaurant/Calendars.html">Calendars</a></span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
@@ -2754,6 +2862,211 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
+                <a name="/Restaurant.BrandLevelSettings"></a>
+                <a name="//apple_ref/swift/Section/Restaurant.BrandLevelSettings" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant.BrandLevelSettings"></a>
+                  <h3 class="section-name"><p>Restaurant.BrandLevelSettings</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV18BrandLevelSettingsV"></a>
+                    <a name="//apple_ref/swift/Struct/BrandLevelSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV18BrandLevelSettingsV">BrandLevelSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Restaurant/BrandLevelSettings.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">BrandLevelSettings</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Restaurant.Deliverymode"></a>
+                <a name="//apple_ref/swift/Section/Restaurant.Deliverymode" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant.Deliverymode"></a>
+                  <h3 class="section-name"><p>Restaurant.Deliverymode</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV12DeliveryModeV"></a>
+                    <a name="//apple_ref/swift/Struct/DeliveryMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV12DeliveryModeV">DeliveryMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Restaurant/DeliveryMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">DeliveryMode</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Restaurant.Loginprovider"></a>
+                <a name="//apple_ref/swift/Section/Restaurant.Loginprovider" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant.Loginprovider"></a>
+                  <h3 class="section-name"><p>Restaurant.Loginprovider</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV13LoginProviderV"></a>
+                    <a name="//apple_ref/swift/Struct/LoginProvider" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV13LoginProviderV">LoginProvider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Restaurant/LoginProvider.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">LoginProvider</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Restaurant.Pushnotification"></a>
+                <a name="//apple_ref/swift/Section/Restaurant.Pushnotification" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant.Pushnotification"></a>
+                  <h3 class="section-name"><p>Restaurant.Pushnotification</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV16PushNotificationV"></a>
+                    <a name="//apple_ref/swift/Struct/PushNotification" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV16PushNotificationV">PushNotification</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Restaurant/PushNotification.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PushNotification</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Restaurant.Timemode"></a>
+                <a name="//apple_ref/swift/Section/Restaurant.Timemode" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Restaurant.Timemode"></a>
+                  <h3 class="section-name"><p>Restaurant.Timemode</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahLoyaltyOloCore10RestaurantV8TimeModeV"></a>
+                    <a name="//apple_ref/swift/Struct/TimeMode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahLoyaltyOloCore10RestaurantV8TimeModeV">TimeMode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Restaurant/TimeMode.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TimeMode</span> <span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
                 <a name="/Restaurant"></a>
                 <a name="//apple_ref/swift/Section/Restaurant" class="dashAnchor"></a>
                 <div class="section-name-container">
@@ -2902,7 +3215,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-04-06)</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-06-16)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

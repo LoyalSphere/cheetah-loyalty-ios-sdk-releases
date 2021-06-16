@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Olo-Core-1.2.0] - 2021-06-16
+### Updated
+- Update models to match current version of Olo Developer Documentation
+
 ## [Olo-Core-1.1.3] - 2021-05-06
 ### Added
 - Support for Dine In Delivery Mode

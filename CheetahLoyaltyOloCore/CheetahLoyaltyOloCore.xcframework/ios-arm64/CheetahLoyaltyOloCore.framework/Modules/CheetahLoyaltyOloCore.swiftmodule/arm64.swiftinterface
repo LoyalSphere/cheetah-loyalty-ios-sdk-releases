@@ -18,7 +18,8 @@ public enum Contact {
     public var upsell: Swift.String
     public var emailReceipts: Swift.String
     public var followUps: Swift.String
-    public init(optIn: Swift.String, upsell: Swift.String, emailReceipts: Swift.String, followUps: Swift.String)
+    public var marketingSMS: Swift.String
+    public init(optIn: Swift.String, upsell: Swift.String, emailReceipts: Swift.String, followUps: Swift.String, marketingSMS: Swift.String)
     public func encode(to encoder: Swift.Encoder) throws
   }
 }
@@ -51,6 +52,13 @@ public enum CommonParameter {
     public var latitude: Swift.Double
     public var longitude: Swift.Double
     public init(latitude: Swift.Double, longitude: Swift.Double)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct CalendarRange : Swift.Codable {
+    public var calendarStart: Swift.String
+    public var calendarEnd: Swift.String
+    public init(calendarStart: Swift.String, calendarEnd: Swift.String)
+    public init(from decoder: Swift.Decoder) throws
     public func encode(to encoder: Swift.Encoder) throws
   }
   public struct Address : Swift.Codable {
@@ -293,7 +301,8 @@ public struct Product : Swift.Codable {
     public var availability: CheetahLoyaltyOloCore.Menu.ItemAvailability?
     public var metadata: [CheetahLoyaltyOloCore.MetadataItem]
     public var explanationText: Swift.String
-    public init(id: Swift.Int, chainModifierId: Swift.Int, description: Swift.String, isMandatory: Swift.Bool, options: [CheetahLoyaltyOloCore.Product.Option], parentChoiceId: Swift.String, minSelects: Swift.String, maxSelects: Swift.String, minAggregateQuantity: Swift.String, maxAggregateQuantity: Swift.String, minChoiceQuantity: Swift.String, maxChoiceQuantity: Swift.String, supportsChoiceQuantities: Swift.Bool, choiceQuantityIncrement: Swift.String, availability: CheetahLoyaltyOloCore.Menu.ItemAvailability?, metadata: [CheetahLoyaltyOloCore.MetadataItem], explanationText: Swift.String)
+    public var hideChoiceCost: Swift.Bool
+    public init(id: Swift.Int, chainModifierId: Swift.Int, description: Swift.String, isMandatory: Swift.Bool, options: [CheetahLoyaltyOloCore.Product.Option], parentChoiceId: Swift.String, minSelects: Swift.String, maxSelects: Swift.String, minAggregateQuantity: Swift.String, maxAggregateQuantity: Swift.String, minChoiceQuantity: Swift.String, maxChoiceQuantity: Swift.String, supportsChoiceQuantities: Swift.Bool, choiceQuantityIncrement: Swift.String, availability: CheetahLoyaltyOloCore.Menu.ItemAvailability?, metadata: [CheetahLoyaltyOloCore.MetadataItem], explanationText: Swift.String, hideChoiceCost: Swift.Bool)
     public func encode(to encoder: Swift.Encoder) throws
   }
   public struct OptionGroups : Swift.Codable {
@@ -322,9 +331,8 @@ extension Product.OptionGroups {
   public init(from decoder: Swift.Decoder) throws
 }
 public enum RestaurantRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
-  case getRestaurants(includePrivate: Swift.Bool)
-  case getNearbyRestaurants(coordinates: CheetahLoyaltyOloCore.CommonParameter.Coordinates, radius: Swift.Double, limit: Swift.Int)
-  case getNearbyRestaurantsWithInHouseDelivery(coordinates: CheetahLoyaltyOloCore.CommonParameter.Coordinates, limit: Swift.Int)
+  case getNearbyRestaurants(coordinates: CheetahLoyaltyOloCore.CommonParameter.Coordinates, calendarRange: CheetahLoyaltyOloCore.CommonParameter.CalendarRange?, radius: Swift.Double, limit: Swift.Int)
+  case getNearbyRestaurantsWithInHouseDelivery(coordinates: CheetahLoyaltyOloCore.CommonParameter.Coordinates, calendarRange: CheetahLoyaltyOloCore.CommonParameter.CalendarRange?, limit: Swift.Int)
   case getRestaurantsByTelephone(telephone: Swift.String)
   case getRestaurant(restaurantId: Swift.Int)
   case getRestaurantByReference(storeNumber: Swift.String)
@@ -334,6 +342,7 @@ public enum RestaurantRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
   case getCalendars(restaurantId: Swift.Int, fromDate: Swift.String, toDate: Swift.String)
   case getDisclaimers(restaurantId: Swift.Int)
   case checkRestaurantDelivery(restaurantId: Swift.Int, coverageCheck: CheetahLoyaltyOloCore.RestaurantParameter.DeliveryCoverageCheck)
+  case getBrandLevelSettings
   public var path: Swift.String {
     get
   }
@@ -348,9 +357,8 @@ public enum RestaurantRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
   }
 }
 public enum RestaurantAPI {
-  public static func getRestaurants(includePrivate: Swift.Bool = false, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Restaurants>)
-  public static func getNearbyRestaurants(coordinates: CheetahLoyaltyOloCore.CommonParameter.Coordinates, radiusMiles: Swift.Double, limit: Swift.Int, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Restaurants>)
-  public static func getNearbyRestaurantsWithInHouseDelivery(coordinates: CheetahLoyaltyOloCore.CommonParameter.Coordinates, limit: Swift.Int, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Restaurants>)
+  public static func getNearbyRestaurants(coordinates: CheetahLoyaltyOloCore.CommonParameter.Coordinates, calendarRange: CheetahLoyaltyOloCore.CommonParameter.CalendarRange? = nil, radiusMiles: Swift.Double, limit: Swift.Int, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Restaurants>)
+  public static func getNearbyRestaurantsWithInHouseDelivery(coordinates: CheetahLoyaltyOloCore.CommonParameter.Coordinates, calendarRange: CheetahLoyaltyOloCore.CommonParameter.CalendarRange? = nil, limit: Swift.Int, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Restaurants>)
   public static func getRestaurants(byTelephone telephone: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Restaurants>)
   public static func getRestaurant(restaurantId: Swift.Int, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Restaurant>)
   public static func getRestaurant(storeNumber: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Restaurant>)
@@ -360,6 +368,7 @@ public enum RestaurantAPI {
   public static func getEightySixedItems(restaurantId: Swift.Int, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.EightySixed.Items>)
   public static func getCalendars(restaurantId: Swift.Int, fromDate: Swift.String, toDate: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Restaurant.Calendars>)
   public static func getDisclaimers(restaurantId: Swift.Int, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Restaurant.Disclaimers>)
+  public static func getBrandLevelSettings(completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Restaurant.BrandLevelSettings>)
 }
 public struct User : Swift.Codable {
   public var authToken: Swift.String
@@ -367,7 +376,8 @@ public struct User : Swift.Codable {
   public var lastName: Swift.String
   public var cardSuffix: Swift.String
   public var emailAddress: Swift.String
-  public init(authToken: Swift.String, firstName: Swift.String, lastName: Swift.String, cardSuffix: Swift.String, emailAddress: Swift.String)
+  public var contactNumber: Swift.String
+  public init(authToken: Swift.String, firstName: Swift.String, lastName: Swift.String, cardSuffix: Swift.String, emailAddress: Swift.String, contactNumber: Swift.String)
   public struct Exists : Swift.Codable {
     public var providers: [Swift.String]
     public var userId: Swift.String
@@ -379,7 +389,8 @@ public struct User : Swift.Codable {
     public var emailAddress: Swift.String
     public var firstName: Swift.String
     public var lastName: Swift.String
-    public init(authToken: Swift.String, emailAddress: Swift.String, firstName: Swift.String, lastName: Swift.String)
+    public var cardSuffix: Swift.String
+    public init(authToken: Swift.String, emailAddress: Swift.String, firstName: Swift.String, lastName: Swift.String, cardSuffix: Swift.String)
     public func encode(to encoder: Swift.Encoder) throws
   }
   public struct New : Swift.Codable {
@@ -411,7 +422,11 @@ public struct User : Swift.Codable {
     public var contactNumber: Swift.String
     public var basketId: Swift.String
     public var authToken: Swift.String
-    public init(provider: Swift.String, providerToken: Swift.String, providerUserId: Swift.String, contactNumber: Swift.String, basketId: Swift.String, authToken: Swift.String)
+    public var firstName: Swift.String
+    public var lastName: Swift.String
+    public var email: Swift.String
+    public var refreshToken: Swift.String
+    public init(provider: Swift.String, providerToken: Swift.String, providerUserId: Swift.String, contactNumber: Swift.String, basketId: Swift.String, authToken: Swift.String, firstName: Swift.String, lastName: Swift.String, email: Swift.String, refreshToken: Swift.String)
     public func encode(to encoder: Swift.Encoder) throws
   }
   public func encode(to encoder: Swift.Encoder) throws
@@ -445,6 +460,7 @@ public enum OrderRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
   case getOrderDeliveryStatus(guid: Swift.String)
   case manualFireOrderByReference(reference: Swift.String, manualFire: CheetahLoyaltyOloCore.OrderParameter.ManualFire)
   case manualFireOrder(guid: Swift.String, manualFire: CheetahLoyaltyOloCore.OrderParameter.ManualFire)
+  case notifyCustomerArrived(guid: Swift.String, message: Swift.String)
   public var path: Swift.String {
     get
   }
@@ -466,6 +482,7 @@ public enum OrderAPI {
   public static func getOrderDeliveryStatus(orderGuid guid: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Deliveries>)
   public static func manualFireOrder(byReference reference: Swift.String, manualFire: CheetahLoyaltyOloCore.OrderParameter.ManualFire, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Order.ManualFireResult>)
   public static func manualFireOrder(byGuid guid: Swift.String, manualFire: CheetahLoyaltyOloCore.OrderParameter.ManualFire, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Order.ManualFireResult>)
+  public static func notifyCustomerArrived(guid: Swift.String, message: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Order.Status>)
 }
 @_hasMissingDesignatedInitializers public class API {
   public static let shared: CheetahLoyaltyOloCore.API
@@ -630,7 +647,10 @@ public struct Restaurant : Swift.Codable {
   public var supportedTimeModes: [CheetahLoyaltyOloCore.Basket.TimeMode]
   public var attributes: [Swift.String]
   public var supportedCountries: [Swift.String]
-  public init(id: Swift.Int, name: Swift.String, brand: Swift.String, storeName: Swift.String, telephone: Swift.String, streetAddress: Swift.String, crossStreet: Swift.String, city: Swift.String, contextualPricing: CheetahLoyaltyOloCore.ContextualPricing?, state: Swift.String, zip: Swift.String, country: Swift.String, latitude: Swift.Double, longitude: Swift.Double, utcOffset: Swift.Float, url: Swift.String, mobileUrl: Swift.String, distance: Swift.Double, extRef: Swift.String, isAdvanceOnly: Swift.Bool, advanceOrderDays: Swift.Int, supportsCoupons: Swift.Bool, supportsLoyalty: Swift.Bool, supportedCardTypes: Swift.String, supportsManualFire: Swift.Bool, canDeliver: Swift.Bool, canPickup: Swift.Bool, supportsCurbSide: Swift.Bool, supportsDispatch: Swift.Bool, hasOloPass: Swift.Bool, deliveryArea: Swift.String, minimumDeliveryOrder: Swift.Double, minimumPickUpOrder: Swift.Double, maximumPayInStoreOrder: Swift.Double, deliveryFee: Swift.Double, deliveryFeetiers: [CheetahLoyaltyOloCore.Delivery.FeeTier], supportsTip: Swift.Bool, supportsSpecialInstructions: Swift.Bool, specialInstructionsMaxLength: Swift.Int, supportsGuestOrdering: Swift.Bool, requiresPhoneNumber: Swift.Bool, supportsOnlineOrdering: Swift.Bool, supportsNationalMenu: Swift.Bool, supportsFeedback: Swift.Bool, supportsSplitPayments: Swift.Bool, slug: Swift.String, isAvailable: Swift.Bool, supportsGroupOrders: Swift.Bool, supportsProductRecipientNames: Swift.Bool, supportsBasketTransfers: Swift.Bool, supportsDineIn: Swift.Bool, allowHandOffChoiceAtManualFire: Swift.Bool, productRecipientNameLabel: Swift.String, customerFacingMessage: Swift.String, availabilityMessage: Swift.String, supportsDriveThru: Swift.Bool, showCalories: Swift.Bool, acceptsOrdersUntilClosing: Swift.Bool, acceptsOrdersBeforeOpening: Swift.Bool, suggestedTipPercentage: Swift.Float, customFields: [CheetahLoyaltyOloCore.Restaurant.CustomField], labels: [CheetahLoyaltyOloCore.Restaurant.CustomLabel], metadata: [CheetahLoyaltyOloCore.MetadataItem], supportedTimeModes: [CheetahLoyaltyOloCore.Basket.TimeMode], attributes: [Swift.String], supportedCountries: [Swift.String])
+  public var isCurrentlyOpen: Swift.Bool
+  public var supportedArrivalMessageHandoffModes: [Swift.String]
+  public var calendars: [CheetahLoyaltyOloCore.Restaurant.Calendars]
+  public init(id: Swift.Int, name: Swift.String, brand: Swift.String, storeName: Swift.String, telephone: Swift.String, streetAddress: Swift.String, crossStreet: Swift.String, city: Swift.String, contextualPricing: CheetahLoyaltyOloCore.ContextualPricing?, state: Swift.String, zip: Swift.String, country: Swift.String, latitude: Swift.Double, longitude: Swift.Double, utcOffset: Swift.Float, url: Swift.String, mobileUrl: Swift.String, distance: Swift.Double, extRef: Swift.String, isAdvanceOnly: Swift.Bool, advanceOrderDays: Swift.Int, supportsCoupons: Swift.Bool, supportsLoyalty: Swift.Bool, supportedCardTypes: Swift.String, supportsManualFire: Swift.Bool, canDeliver: Swift.Bool, canPickup: Swift.Bool, supportsCurbSide: Swift.Bool, supportsDispatch: Swift.Bool, hasOloPass: Swift.Bool, deliveryArea: Swift.String, minimumDeliveryOrder: Swift.Double, minimumPickUpOrder: Swift.Double, maximumPayInStoreOrder: Swift.Double, deliveryFee: Swift.Double, deliveryFeetiers: [CheetahLoyaltyOloCore.Delivery.FeeTier], supportsTip: Swift.Bool, supportsSpecialInstructions: Swift.Bool, specialInstructionsMaxLength: Swift.Int, supportsGuestOrdering: Swift.Bool, requiresPhoneNumber: Swift.Bool, supportsOnlineOrdering: Swift.Bool, supportsNationalMenu: Swift.Bool, supportsFeedback: Swift.Bool, supportsSplitPayments: Swift.Bool, slug: Swift.String, isAvailable: Swift.Bool, supportsGroupOrders: Swift.Bool, supportsProductRecipientNames: Swift.Bool, supportsBasketTransfers: Swift.Bool, supportsDineIn: Swift.Bool, allowHandOffChoiceAtManualFire: Swift.Bool, productRecipientNameLabel: Swift.String, customerFacingMessage: Swift.String, availabilityMessage: Swift.String, supportsDriveThru: Swift.Bool, showCalories: Swift.Bool, acceptsOrdersUntilClosing: Swift.Bool, acceptsOrdersBeforeOpening: Swift.Bool, suggestedTipPercentage: Swift.Float, customFields: [CheetahLoyaltyOloCore.Restaurant.CustomField], labels: [CheetahLoyaltyOloCore.Restaurant.CustomLabel], metadata: [CheetahLoyaltyOloCore.MetadataItem], supportedTimeModes: [CheetahLoyaltyOloCore.Basket.TimeMode], attributes: [Swift.String], supportedCountries: [Swift.String], isCurrentlyOpen: Swift.Bool, supportedArrivalMessageHandoffModes: [Swift.String], calendars: [CheetahLoyaltyOloCore.Restaurant.Calendars])
   public struct CustomField : Swift.Codable {
     public var id: Swift.Int
     public var label: Swift.String
@@ -681,6 +701,45 @@ public struct Restaurant : Swift.Codable {
     public init(imagePath: Swift.String, disclaimers: [CheetahLoyaltyOloCore.Restaurant.Disclaimer])
     public func encode(to encoder: Swift.Encoder) throws
   }
+  public struct BrandLevelSettings : Swift.Codable {
+    public var advanceOrderDays: Swift.Int
+    public var deliveryInstructionsMaxLength: Swift.Int
+    public var deliveryModes: [CheetahLoyaltyOloCore.Restaurant.DeliveryMode]
+    public var loginProviders: [CheetahLoyaltyOloCore.Restaurant.LoginProvider]
+    public var pushNotifications: CheetahLoyaltyOloCore.Restaurant.PushNotification
+    public var timeModes: [CheetahLoyaltyOloCore.Restaurant.TimeMode]
+    public init(advanceOrderDays: Swift.Int, deliveryInstructionsMaxLength: Swift.Int, deliveryModes: [CheetahLoyaltyOloCore.Restaurant.DeliveryMode], loginProviders: [CheetahLoyaltyOloCore.Restaurant.LoginProvider], pushNotifications: CheetahLoyaltyOloCore.Restaurant.PushNotification, timeModes: [CheetahLoyaltyOloCore.Restaurant.TimeMode])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct DeliveryMode : Swift.Codable {
+    public var isDefault: Swift.Bool
+    public var label: Swift.String
+    public var timeModes: [Swift.String]
+    public var type: Swift.String
+    public init(isDefault: Swift.Bool, label: Swift.String, timeModes: [Swift.String], type: Swift.String)
+    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct LoginProvider : Swift.Codable {
+    public var name: Swift.String
+    public var provider: Swift.String
+    public var type: Swift.String
+    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct PushNotification : Swift.Codable {
+    public var androidSenderId: Swift.String
+    public var platforms: [Swift.String]
+    public init(androidSenderId: Swift.String, platforms: [Swift.String])
+    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct TimeMode : Swift.Codable {
+    public var label: Swift.String
+    public var type: Swift.String
+    public init(from decoder: Swift.Decoder) throws
+    public func encode(to encoder: Swift.Encoder) throws
+  }
   public func encode(to encoder: Swift.Encoder) throws
 }
 extension Restaurant.CustomField {
@@ -708,6 +767,9 @@ extension Restaurant.Disclaimer {
   public init(from decoder: Swift.Decoder) throws
 }
 extension Restaurant.Disclaimers {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension Restaurant.BrandLevelSettings {
   public init(from decoder: Swift.Decoder) throws
 }
 public enum OrderParameter {
@@ -852,7 +914,8 @@ public enum BasketParameter {
     public var prepaidDescription: Swift.String?
     public var customData: [CheetahLoyaltyOloCore.BasketParameter.OrderCustomData]?
     public var guestOptIn: Swift.Bool
-    public init(billingMethod: CheetahLoyaltyOloCore.BasketParameter.BillingMethod, billingAccountId: Swift.Int? = nil, billingSchemeId: Swift.String? = nil, billingFields: [CheetahLoyaltyOloCore.BasketParameter.BillingField]? = nil, userType: CheetahLoyaltyOloCore.BasketParameter.UserType, firstName: Swift.String? = nil, lastName: Swift.String? = nil, emailAddress: Swift.String? = nil, contactNumber: Swift.String? = nil, reference: Swift.String? = nil, cardNumber: Swift.String? = nil, expiryYear: Swift.Int? = nil, expiryMonth: Swift.Int? = nil, cvv: Swift.String? = nil, streetAddress: Swift.String? = nil, streetAddress2: Swift.String? = nil, city: Swift.String? = nil, state: Swift.String? = nil, zip: Swift.String? = nil, country: Swift.String? = nil, saveOnFile: Swift.String? = nil, orderRef: Swift.String? = nil, prepaidTransactionId: Swift.String? = nil, prepaidDescription: Swift.String? = nil, customData: [CheetahLoyaltyOloCore.BasketParameter.OrderCustomData]? = nil, guestOptIn: Swift.Bool)
+    public var receivingUser: CheetahLoyaltyOloCore.User?
+    public init(billingMethod: CheetahLoyaltyOloCore.BasketParameter.BillingMethod, billingAccountId: Swift.Int? = nil, billingSchemeId: Swift.String? = nil, billingFields: [CheetahLoyaltyOloCore.BasketParameter.BillingField]? = nil, userType: CheetahLoyaltyOloCore.BasketParameter.UserType, firstName: Swift.String? = nil, lastName: Swift.String? = nil, emailAddress: Swift.String? = nil, contactNumber: Swift.String? = nil, reference: Swift.String? = nil, cardNumber: Swift.String? = nil, expiryYear: Swift.Int? = nil, expiryMonth: Swift.Int? = nil, cvv: Swift.String? = nil, streetAddress: Swift.String? = nil, streetAddress2: Swift.String? = nil, city: Swift.String? = nil, state: Swift.String? = nil, zip: Swift.String? = nil, country: Swift.String? = nil, saveOnFile: Swift.String? = nil, orderRef: Swift.String? = nil, prepaidTransactionId: Swift.String? = nil, prepaidDescription: Swift.String? = nil, customData: [CheetahLoyaltyOloCore.BasketParameter.OrderCustomData]? = nil, guestOptIn: Swift.Bool, receivingUser: CheetahLoyaltyOloCore.User? = nil)
     public func encode(to encoder: Swift.Encoder) throws
   }
   public struct BillingAccount : Swift.Encodable {
@@ -900,6 +963,7 @@ public enum BasketRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
   case createGroupOrder(restaurantId: Swift.Int, basketId: Swift.String?, deadline: Swift.String, note: Swift.String?)
   case sendGroupOrderInvites(groupOrderId: Swift.String, emailAddress: [Swift.String])
   case getGroupOrder(id: Swift.String)
+  case getGroupOrderForGuest(id: Swift.String, basketId: Swift.String)
   case addProduct(basketId: Swift.String, product: CheetahLoyaltyOloCore.BasketParameter.Product)
   case addProductByChainId(basketId: Swift.String, product: CheetahLoyaltyOloCore.BasketParameter.ChainProduct)
   case deleteProduct(basketId: Swift.String, basketProductId: Swift.Int)
@@ -912,7 +976,9 @@ public enum BasketRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
   case addUpsellItems(basketId: Swift.String, upsellItems: [CheetahLoyaltyOloCore.BasketParameter.UpsellItem])
   case setTip(amount: Swift.Double, basketId: Swift.String)
   case deleteCoupons(basketId: Swift.String)
-  case applyCoupon(couponCode: Swift.String, basketId: Swift.String)
+  case deleteCouponOrCompCode(basketId: Swift.String, promotionType: CheetahLoyaltyOloCore.Basket.PromotionType)
+  case applyCoupon(couponCode: Swift.String, basketId: Swift.String, couponType: Swift.String?, compAmount: Swift.Double?)
+  case applyCouponOrCompCode(code: Swift.String, basketId: Swift.String, promotionType: CheetahLoyaltyOloCore.Basket.PromotionType, secondarycode: Swift.String)
   case getLoyaltySchemes(basketId: Swift.String, checkBalance: Swift.Bool, checkRewards: Swift.Bool)
   case addUserMembership(basketId: Swift.String, loyaltyScheme: CheetahLoyaltyOloCore.BasketParameter.LoyaltyScheme)
   case getLoyaltyRewards(basketId: Swift.String, membershipId: Swift.Int)
@@ -937,6 +1003,7 @@ public enum BasketRequest : CheetahLoyaltyOloCore.OLOURLRequestConvertible {
   case validate(basketId: Swift.String, checkUpsell: Swift.Bool)
   case submitOrderWithSinglePayment(basketId: Swift.String, order: CheetahLoyaltyOloCore.BasketParameter.Order)
   case submitOrderWithMultiplePayments(basketId: Swift.String, order: CheetahLoyaltyOloCore.BasketParameter.MultiplePaymentsOrder)
+  case requestCCSFPaymentToken(basketId: Swift.String)
   public var path: Swift.String {
     get
   }
@@ -959,6 +1026,7 @@ public enum BasketAPI {
   public static func createGroupOrder(restaurantId: Swift.Int, basketId: Swift.String? = nil, deadline: Swift.String, note: Swift.String? = nil, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Order.Group>)
   public static func sendGroupOrderInvites(groupOrderId: Swift.String, emailAddress: [Swift.String], completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.EmptyResponse>)
   public static func getGroupOrder(_ id: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Order.Group>)
+  public static func getGroupOrderForGuest(_ id: Swift.String, basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Order.Group>)
   public static func addProduct(_ product: CheetahLoyaltyOloCore.BasketParameter.Product, toBasketId basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
   public static func addProductByChainId(_ product: CheetahLoyaltyOloCore.BasketParameter.ChainProduct, toBasketId basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
   public static func deleteProduct(withId productId: Swift.Int, fromBasketId basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
@@ -971,7 +1039,9 @@ public enum BasketAPI {
   public static func addUpsellItems(_ items: [CheetahLoyaltyOloCore.BasketParameter.UpsellItem], basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
   public static func setTip(_ amount: Swift.Double, toBasketWithId id: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
   public static func deleteCoupons(basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
-  public static func applyCoupon(couponCode: Swift.String, toBasketId basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
+  public static func deleteCouponOrCompCode(basketId: Swift.String, promotionType: CheetahLoyaltyOloCore.Basket.PromotionType, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
+  public static func applyCoupon(couponCode: Swift.String, toBasketId basketId: Swift.String, couponType: Swift.String?, compAmount: Swift.Double?, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
+  public static func applyCouponOrCompCode(code: Swift.String, toBasketId basketId: Swift.String, promotionType: CheetahLoyaltyOloCore.Basket.PromotionType, secondaryCode: Swift.String = "", completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket>)
   public static func getLoyaltySchemes(basketId: Swift.String, checkBalance: Swift.Bool, checkRewards: Swift.Bool, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Loyalty.Schemes>)
   public static func addUserMembership(loyaltyScheme: CheetahLoyaltyOloCore.BasketParameter.LoyaltyScheme, toBasketId basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Loyalty.Schemes>)
   public static func getLoyaltyRewards(membershipId: Swift.Int, basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Loyalty.Rewards>)
@@ -996,6 +1066,7 @@ public enum BasketAPI {
   public static func validate(basketId: Swift.String, checkUpsell: Swift.Bool, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Basket.Validation>)
   public static func submitOrderWithSinglePayment(order: CheetahLoyaltyOloCore.BasketParameter.Order, basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Order.Status>)
   public static func submitOrderWithMultiplePayments(order: CheetahLoyaltyOloCore.BasketParameter.MultiplePaymentsOrder, basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<CheetahLoyaltyOloCore.Order.Status>)
+  public static func requestCCSFPaymentToken(basketId: Swift.String, completion: CheetahLoyaltyOloCore.ResponseCompletion<Swift.String>)
 }
 extension Restaurant {
   public var coordinates: CoreLocation.CLLocationCoordinate2D? {
@@ -1055,6 +1126,18 @@ public enum OrderStatus : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
   public static func == (a: CheetahLoyaltyOloCore.OrderStatus, b: CheetahLoyaltyOloCore.OrderStatus) -> Swift.Bool
+}
+public enum ArrivalStatus : Swift.Codable, Swift.Equatable {
+  case orderPlaced
+  case arrived
+  case pickedUp
+  case undefined(value: Swift.String)
+  public var stringValue: Swift.String {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: CheetahLoyaltyOloCore.ArrivalStatus, b: CheetahLoyaltyOloCore.ArrivalStatus) -> Swift.Bool
 }
 public enum Order {
   public struct Group : Swift.Codable {
@@ -1125,6 +1208,7 @@ public enum Order {
     public var totalFees: Swift.Double
     public var total: Swift.Double
     public var timeMode: CheetahLoyaltyOloCore.Basket.TimeMode?
+    public var tip: Swift.Double
     public var mode: Swift.String
     public var billingAccountId: Swift.String
     public var billingAccountIds: [Swift.String]
@@ -1142,11 +1226,11 @@ public enum Order {
     public var vendorExtRef: Swift.String
     public var deliveryMode: CheetahLoyaltyOloCore.Delivery.Mode?
     public var customerHandOffCharge: Swift.Double
-    public var arrivalStatus: Swift.String
+    public var arrivalStatus: CheetahLoyaltyOloCore.ArrivalStatus?
     public var hasOloPass: Swift.Bool
     public var products: [CheetahLoyaltyOloCore.Order.Product]
     public var unavailableProducts: [CheetahLoyaltyOloCore.Order.Product]
-    public init(id: Swift.String, oloId: Swift.String, vendorId: Swift.Int, status: CheetahLoyaltyOloCore.OrderStatus?, subTotal: Swift.Double, salesTax: Swift.Double, taxes: [CheetahLoyaltyOloCore.Basket.TaxResult], fees: [CheetahLoyaltyOloCore.Order.Fee], totalFees: Swift.Double, total: Swift.Double, timeMode: CheetahLoyaltyOloCore.Basket.TimeMode?, mode: Swift.String, billingAccountId: Swift.String, billingAccountIds: [Swift.String], contextualPricing: CheetahLoyaltyOloCore.ContextualPricing?, deliveryAddress: CheetahLoyaltyOloCore.Delivery.Address?, customFields: [CheetahLoyaltyOloCore.Basket.CustomField], posReferenceResponse: Swift.String, isEditable: Swift.Bool, discount: Swift.Double, discounts: [CheetahLoyaltyOloCore.Basket.Discount], orderRef: Swift.String, timePlaced: Swift.String, readyTime: Swift.String, vendorName: Swift.String, vendorExtRef: Swift.String, deliveryMode: CheetahLoyaltyOloCore.Delivery.Mode?, customerHandOffCharge: Swift.Double, arrivalStatus: Swift.String, hasOloPass: Swift.Bool, products: [CheetahLoyaltyOloCore.Order.Product], unavailableProducts: [CheetahLoyaltyOloCore.Order.Product])
+    public init(id: Swift.String, oloId: Swift.String, vendorId: Swift.Int, status: CheetahLoyaltyOloCore.OrderStatus?, subTotal: Swift.Double, salesTax: Swift.Double, taxes: [CheetahLoyaltyOloCore.Basket.TaxResult], fees: [CheetahLoyaltyOloCore.Order.Fee], totalFees: Swift.Double, total: Swift.Double, timeMode: CheetahLoyaltyOloCore.Basket.TimeMode?, tip: Swift.Double, mode: Swift.String, billingAccountId: Swift.String, billingAccountIds: [Swift.String], contextualPricing: CheetahLoyaltyOloCore.ContextualPricing?, deliveryAddress: CheetahLoyaltyOloCore.Delivery.Address?, customFields: [CheetahLoyaltyOloCore.Basket.CustomField], posReferenceResponse: Swift.String, isEditable: Swift.Bool, discount: Swift.Double, discounts: [CheetahLoyaltyOloCore.Basket.Discount], orderRef: Swift.String, timePlaced: Swift.String, readyTime: Swift.String, vendorName: Swift.String, vendorExtRef: Swift.String, deliveryMode: CheetahLoyaltyOloCore.Delivery.Mode?, customerHandOffCharge: Swift.Double, arrivalStatus: CheetahLoyaltyOloCore.ArrivalStatus?, hasOloPass: Swift.Bool, products: [CheetahLoyaltyOloCore.Order.Product], unavailableProducts: [CheetahLoyaltyOloCore.Order.Product])
     public func encode(to encoder: Swift.Encoder) throws
   }
 }
@@ -1416,11 +1500,10 @@ public struct Favorite : Swift.Codable {
   public var name: Swift.String
   public var vendorId: Swift.Int
   public var vendorName: Swift.String
-  public var isDisabled: Swift.Bool
   public var isOnline: Swift.Bool
   public var isDefault: Swift.Bool
   public var products: [CheetahLoyaltyOloCore.Favorite.Product]
-  public init(id: Swift.Int, name: Swift.String, vendorId: Swift.Int, vendorName: Swift.String, isDisabled: Swift.Bool, isOnline: Swift.Bool, isDefault: Swift.Bool, products: [CheetahLoyaltyOloCore.Favorite.Product])
+  public init(id: Swift.Int, name: Swift.String, vendorId: Swift.Int, vendorName: Swift.String, isOnline: Swift.Bool, isDefault: Swift.Bool, products: [CheetahLoyaltyOloCore.Favorite.Product])
   public struct Product : Swift.Codable {
     public var productId: Swift.Int
     public var name: Swift.String
@@ -1536,12 +1619,13 @@ public struct Basket : Swift.Codable {
     public init(description: Swift.String, amount: Swift.Double)
     public func encode(to encoder: Swift.Encoder) throws
   }
-  public struct Fee : Swift.Codable {
+  public struct Fee : Swift.Codable, Swift.Equatable {
     public var amount: Swift.Double
     public var description: Swift.String
     public var note: Swift.String
     public init(amount: Swift.Double, description: Swift.String, note: Swift.String)
     public func encode(to encoder: Swift.Encoder) throws
+    public static func == (a: CheetahLoyaltyOloCore.Basket.Fee, b: CheetahLoyaltyOloCore.Basket.Fee) -> Swift.Bool
   }
   public struct CustomField : Swift.Codable {
     public var id: Swift.Int
@@ -1596,12 +1680,14 @@ public struct Basket : Swift.Codable {
     public var tax: Swift.Double
     public var taxes: [CheetahLoyaltyOloCore.Basket.TaxResult]
     public var customerHandOffCharge: Swift.Double
+    public var fees: [CheetahLoyaltyOloCore.Basket.Fee]
     public var subTotal: Swift.Double
     public var total: Swift.Double
     public var readyTime: Swift.String
+    public var totalFees: Swift.Double
     public var posReferenceResponse: Swift.String
     public var upsellGroups: [CheetahLoyaltyOloCore.Upsell.Group]
-    public init(basketId: Swift.String, contextualPricing: CheetahLoyaltyOloCore.ContextualPricing?, tax: Swift.Double, taxes: [CheetahLoyaltyOloCore.Basket.TaxResult], customerHandOffCharge: Swift.Double, subTotal: Swift.Double, total: Swift.Double, readyTime: Swift.String, posReferenceResponse: Swift.String, upsellGroups: [CheetahLoyaltyOloCore.Upsell.Group])
+    public init(basketId: Swift.String, contextualPricing: CheetahLoyaltyOloCore.ContextualPricing?, tax: Swift.Double, taxes: [CheetahLoyaltyOloCore.Basket.TaxResult], customerHandOffCharge: Swift.Double, fees: [CheetahLoyaltyOloCore.Basket.Fee], subTotal: Swift.Double, total: Swift.Double, readyTime: Swift.String, totalFees: Swift.Double, posReferenceResponse: Swift.String, upsellGroups: [CheetahLoyaltyOloCore.Upsell.Group])
     public func encode(to encoder: Swift.Encoder) throws
   }
   public struct TaxResult : Swift.Codable {
@@ -1661,6 +1747,17 @@ public struct Basket : Swift.Codable {
     public var choices: [CheetahLoyaltyOloCore.Basket.Choice]
     public init(id: Swift.Int, productId: Swift.Int, name: Swift.String, quantity: Swift.Int, baseCost: Swift.Double, totalCost: Swift.Double, specialInstructions: Swift.String, customData: Swift.String, recipient: Swift.String, choices: [CheetahLoyaltyOloCore.Basket.Choice])
     public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum PromotionType : Swift.Codable, Swift.Equatable {
+    case coupon
+    case compCode
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahLoyaltyOloCore.Basket.PromotionType, b: CheetahLoyaltyOloCore.Basket.PromotionType) -> Swift.Bool
   }
   public func encode(to encoder: Swift.Encoder) throws
 }
