@@ -437,7 +437,6 @@ public protocol TextFieldCollectionViewCellDelegate {
   override public init(controller: CheetahLoyaltyUI.ContentController?, loading: CheetahLoyaltyUI.LoadableViewController? = super, empty: CheetahLoyaltyUI.ReloadableViewController? = super, error: CheetahLoyaltyUI.ReloadableViewController? = super)
 }
 @_inheritsConvenienceInitializers open class RestaurantListCollectionController : CheetahLoyaltyUI.ListCollectionController<CheetahLoyaltyOloCore.Restaurant>, CoreLocation.CLLocationManagerDelegate {
-  open var loadNearbyRestaurantsOnly: Swift.Bool
   open var radiusMiles: Swift.Double
   open var locationManager: CoreLocation.CLLocationManager
   open var restaurantLimit: Swift.Int
@@ -445,7 +444,7 @@ public protocol TextFieldCollectionViewCellDelegate {
   override open var collectionViewLayout: UIKit.UICollectionViewLayout {
     get
   }
-  convenience public init(loadNearbyRestaurantsOnly: Swift.Bool = false, radiusMiles: Swift.Double = 5.0, restaurantLimit: Swift.Int = 10)
+  convenience public init(radiusMiles: Swift.Double = 5.0, restaurantLimit: Swift.Int = 10)
   override open func setupCollectionView()
   override open func registerComponents()
   override open func loadContent()
@@ -476,15 +475,17 @@ public protocol TextFieldCollectionViewCellDelegate {
   @objc @IBOutlet weak public var saveOnFileCheckBox: CheetahLoyaltyUI.CheckBox!
   @objc @IBOutlet weak public var addAndPayButton: UIKit.UIButton!
   @objc @IBOutlet weak public var addButton: UIKit.UIButton!
-  @objc @IBOutlet weak public var giftCardFloatingTextField: CheetahLoyaltyUI.FloatingTextField!
+  @objc @IBOutlet weak public var giftCardNumberFloatingTextField: CheetahLoyaltyUI.FloatingTextField!
+  @objc @IBOutlet weak public var giftCardPinFloatingTextField: CheetahLoyaltyUI.FloatingTextField!
   @objc @IBOutlet weak public var cancelButton: UIKit.UIButton!
   @objc @IBOutlet weak public var footnoteLabel: UIKit.UILabel!
   open var didTapActionButton: ((Swift.Int, CheetahLoyaltyOloUI.GiftCard) -> Swift.Void)?
   open var amount: Swift.Double?
   open var delegate: CheetahLoyaltyUI.AlertEmbeddableViewControllerDelegate?
   open var saveOnFileSupported: Swift.Bool
+  open var isPinRequired: Swift.Bool
   open var editGiftCard: CheetahLoyaltyOloUI.GiftCard?
-  convenience public init(amount: Swift.Double?, saveOnFileSupported: Swift.Bool)
+  convenience public init(amount: Swift.Double?, saveOnFileSupported: Swift.Bool, isPinRequired: Swift.Bool = false)
   override open func setup()
   open func didTap(_ selectionButton: CheetahLoyaltyUI.SelectionButton)
   @objc deinit
