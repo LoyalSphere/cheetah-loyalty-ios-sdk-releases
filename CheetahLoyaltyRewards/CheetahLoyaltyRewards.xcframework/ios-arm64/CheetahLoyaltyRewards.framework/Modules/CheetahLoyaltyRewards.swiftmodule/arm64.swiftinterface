@@ -131,32 +131,6 @@ open class RedemptionDetailController : CheetahLoyaltyUI.BaseDetailController {
   @objc deinit
   @objc override dynamic public init()
 }
-extension Reward.Response : CheetahLoyaltyUI.DetailPresentable {
-  public var detailImage: UIKit.UIImage? {
-    get
-  }
-  public var detailImageUrl: Swift.String {
-    get
-  }
-  public var detailHeading: Swift.String {
-    get
-  }
-  public var detailSubheading: Swift.String {
-    get
-  }
-  public var detailBody: Swift.String {
-    get
-  }
-  public var detailPoints: Swift.String {
-    get
-  }
-  public var detailPeriod: Swift.String {
-    get
-  }
-  public var detailActionButtonTitle: Swift.String {
-    get
-  }
-}
 open class RewardDetailController : CheetahLoyaltyUI.BaseDetailController {
   open var awardID: Swift.Int?
   open var awardStatus: CheetahLoyaltyCore.Award.Status
@@ -180,32 +154,6 @@ open class RewardDetailController : CheetahLoyaltyUI.BaseDetailController {
   open func setupAwardClaimStatus()
   open func rewardRedeemed()
   @objc override dynamic public init()
-}
-extension Reward : CheetahLoyaltyUI.DetailPresentable {
-  public var detailImage: UIKit.UIImage? {
-    get
-  }
-  public var detailImageUrl: Swift.String {
-    get
-  }
-  public var detailHeading: Swift.String {
-    get
-  }
-  public var detailSubheading: Swift.String {
-    get
-  }
-  public var detailBody: Swift.String {
-    get
-  }
-  public var detailPoints: Swift.String {
-    get
-  }
-  public var detailPeriod: Swift.String {
-    get
-  }
-  public var detailActionButtonTitle: Swift.String {
-    get
-  }
 }
 @_inheritsConvenienceInitializers open class RewardDetailViewController : CheetahLoyaltyUI.DetailViewController, CheetahLoyaltyUI.SelectionButtonDelegate {
   override open func setup()

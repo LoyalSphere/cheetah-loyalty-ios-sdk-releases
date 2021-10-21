@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Rewards-1.3.3] - 2021-10-21Z
+### Changed
+- Move `Reward` and `Reward.Response` conformance to `DetailPresentable` into Tests [#615]
+
+[#615]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/615
+[Rewards-1.3.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/98?closed=1
+
 ## [Rewards-1.3.2] - 2021-10-15Z
 ### Changed
 - Swiftlint configuration to support update and M1 Macs [#613]
