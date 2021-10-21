@@ -6,6 +6,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-1.10.0] - 2021-10-12Z
+### Added
+- `Activity` attributes: [#596], [#606]
+	- `location`
+	- `parentId`
+	- `placeId`
+	- `memberId`
+- `GiftCardsAPI` methods: [#601]
+	- `getGiftCard`
+	- `getGiftCardClasses`
+	- `link`
+	- `unlink`
+- Reachability error returned on do not retry requests when not connected to a network [#605]
+
+### Changed
+- Swiftlint configuration to support update and M1 Macs [#600]
+- Rename `GiftCardType` to `GiftCardClass` [#601]
+- Changed dependency version requirements to CheetahLoyaltyUtils 1.3.0 [#605]
+
+### Removed
+- `GiftCardsAPI` method `add` [#601]
+
+### Fixed
+- `Offer` attribute `responses` coding key [#597], [#606]
+
+[#596]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/596
+[#597]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/597
+[#600]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/600
+[#601]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/601
+[#605]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/605
+[#606]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/606
+[Core-1.10.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/92?closed=1
+
 ## [Core-1.9.2] - 2021-02-05
 
 ### Fixed

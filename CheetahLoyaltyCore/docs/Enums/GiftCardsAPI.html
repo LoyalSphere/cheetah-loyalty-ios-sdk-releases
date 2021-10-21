@@ -18,18 +18,18 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">CheetahLoyaltyCore 0.1.0 Docs</a></p>
-        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
-        <p class="header-right">
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
           </form>
-        </p>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">CheetahLoyaltyCore Reference</a>
-        <img id="carat" src="../img/carat.png" />
+        <img id="carat" src="../img/carat.png" alt=""/>
         GiftCardsAPI Enumeration Reference
       </p>
     </div>
@@ -382,7 +382,7 @@
                 <a href="../Structs/GiftCard/Transaction.html">– Transaction</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/GiftCard/GiftCardType.html">– GiftCardType</a>
+                <a href="../Structs/GiftCard/GiftCardClass.html">– GiftCardClass</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/GiftCardsAPI.html">GiftCardsAPI</a>
@@ -883,64 +883,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18CheetahLoyaltyCore12GiftCardsAPIO3add10cardNumber4with10completionySS_SSys6ResultOyAA11APIResponseVySbGs5Error_pGcSgtFZ"></a>
-                    <a name="//apple_ref/swift/Method/add(cardNumber:with:completion:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore12GiftCardsAPIO3add10cardNumber4with10completionySS_SSys6ResultOyAA11APIResponseVySbGs5Error_pGcSgtFZ">add(cardNumber:<wbr>with:<wbr>completion:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Sends a request to link a gift card to the user.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="nv">cardNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">pin</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>pin</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The PIN of the gift card.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>completion</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The closure to be executed once the request has finished.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:18CheetahLoyaltyCore12GiftCardsAPIO08purchaseD4Card5nonce4with04giftH5Class10completionySS_SdSSys6ResultOyAA11APIResponseVyAA0dH0VGs5Error_pGcSgtFZ"></a>
                     <a name="//apple_ref/swift/Method/purchaseGiftCard(nonce:with:giftCardClass:completion:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:18CheetahLoyaltyCore12GiftCardsAPIO08purchaseD4Card5nonce4with04giftH5Class10completionySS_SdSSys6ResultOyAA11APIResponseVyAA0dH0VGs5Error_pGcSgtFZ">purchaseGiftCard(nonce:<wbr>with:<wbr>giftCardClass:<wbr>completion:<wbr>)</a>
@@ -1337,16 +1279,295 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore12GiftCardsAPIO03getD4Card10cardNumber4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVyAA0dH0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getGiftCard(cardNumber:with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore12GiftCardsAPIO03getD4Card10cardNumber4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVyAA0dH0VGs5Error_pGcSgtFZ">getGiftCard(cardNumber:<wbr>with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a request to get a gift card.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getGiftCard</span><span class="p">(</span><span class="nv">cardNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/GiftCard.html">GiftCard</a></span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The gift card number to get.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Parameters</code> to apply.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore12GiftCardsAPIO03getD11CardClasses4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA0dH0V0dH5ClassVGGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getGiftCardClasses(with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore12GiftCardsAPIO03getD11CardClasses4with10completionySDySSypGSg_ys6ResultOyAA11APIResponseVySayAA0dH0V0dH5ClassVGGs5Error_pGcSgtFZ">getGiftCardClasses(with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a request to get the list of gift cards classes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getGiftCardClasses</span><span class="p">(</span><span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="p">[</span><span class="kt"><a href="../Structs/GiftCard.html">GiftCard</a></span><span class="o">.</span><span class="kt">GiftCardClass</span><span class="p">]</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Parameters</code> to apply.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore12GiftCardsAPIO4link10cardNumber4withAF10completionySS_SSSDySSypGSgys6ResultOyAA11APIResponseVySbGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/link(cardNumber:with:with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore12GiftCardsAPIO4link10cardNumber4withAF10completionySS_SSSDySSypGSgys6ResultOyAA11APIResponseVySbGs5Error_pGcSgtFZ">link(cardNumber:<wbr>with:<wbr>with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a request to link a gift card to the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">link</span><span class="p">(</span><span class="nv">cardNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">pin</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The gift card number to link.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pin</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The PIN of the gift card.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Parameters</code> to apply.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore12GiftCardsAPIO6unlink10cardNumber4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVySbGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/unlink(cardNumber:with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore12GiftCardsAPIO6unlink10cardNumber4with10completionySS_SDySSypGSgys6ResultOyAA11APIResponseVySbGs5Error_pGcSgtFZ">unlink(cardNumber:<wbr>with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sends a request to unlink a gift card to the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">unlink</span><span class="p">(</span><span class="nv">cardNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../API.html#/s:18CheetahLoyaltyCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt">Bool</span><span class="o">&gt;</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cardNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The gift card number to unlink.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Parameters</code> to apply.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-02-05)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-10-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>

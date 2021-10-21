@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahLoyaltyCore
 @_exported import CheetahLoyaltyCore
 import CheetahLoyaltyUtils
@@ -864,12 +864,15 @@ extension Leaderboard.Feed {
 }
 public enum GiftCardsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
   case getGiftCards(parameters: CheetahLoyaltyUtils.Parameters?)
+  case getGiftCard(cardNumber: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
+  case getGiftCardClasses(parameters: CheetahLoyaltyUtils.Parameters?)
   case getPaymentClientToken
   case getTransactions(cardNumber: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
-  case add(cardNumber: Swift.String, pin: Swift.String)
   case purchaseGiftCard(nonce: Swift.String, amount: Swift.Double, giftCardClass: Swift.String)
   case topUp(cardNumber: Swift.String, nonce: Swift.String, amount: Swift.Double)
   case update(giftCard: CheetahLoyaltyCore.GiftCard)
+  case link(cardNumber: Swift.String, pin: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
+  case unlink(cardNumber: Swift.String, parameters: CheetahLoyaltyUtils.Parameters?)
   public var method: CheetahLoyaltyUtils.HTTPMethod {
     get
   }
@@ -881,13 +884,16 @@ public enum GiftCardsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
   }
 }
 public enum GiftCardsAPI {
-  public static func add(cardNumber: Swift.String, with pin: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func purchaseGiftCard(nonce: Swift.String, with amount: Swift.Double, giftCardClass: Swift.String, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.GiftCard> = nil)
   public static func topUp(cardNumber: Swift.String, nonce: Swift.String, with amount: Swift.Double, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func update(giftCard: CheetahLoyaltyCore.GiftCard, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
   public static func getPaymentClientToken(completion: CheetahLoyaltyCore.ResponseCompletion<Swift.String> = nil)
   public static func getGiftCards(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.GiftCard]> = nil)
   public static func getTransactions(cardNumber: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.GiftCard.Transaction]> = nil)
+  public static func getGiftCard(cardNumber: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<CheetahLoyaltyCore.GiftCard> = nil)
+  public static func getGiftCardClasses(with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<[CheetahLoyaltyCore.GiftCard.GiftCardClass]> = nil)
+  public static func link(cardNumber: Swift.String, with pin: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func unlink(cardNumber: Swift.String, with parameters: CheetahLoyaltyUtils.Parameters? = nil, completion: CheetahLoyaltyCore.ResponseCompletion<Swift.Bool> = nil)
 }
 public enum ReceiptsRequest : CheetahLoyaltyUtils.URLRequestConvertible {
   case getReceipts(parameters: CheetahLoyaltyUtils.Parameters?)
@@ -996,8 +1002,12 @@ public struct Activity : Swift.Codable, Swift.Equatable {
     public var integrationId: Swift.String
     public var responseType: Swift.String
     public var responseId: Swift.Int?
-    public init(context: Swift.String, integrationId: Swift.String, responseType: Swift.String, responseId: Swift.Int?)
-    public init(context: Swift.String, integrationId: Swift.String)
+    public var location: Swift.String
+    public var parentId: Swift.Int
+    public var placeId: Swift.Int
+    public var memberId: Swift.String
+    public init(context: Swift.String, integrationId: Swift.String, responseType: Swift.String, responseId: Swift.Int?, location: Swift.String, parentId: Swift.Int, placeId: Swift.Int, memberId: Swift.String)
+    public init(context: Swift.String, integrationId: Swift.String, location: Swift.String, parentId: Swift.Int, placeId: Swift.Int, memberId: Swift.String)
     public func encode(to encoder: Swift.Encoder) throws
     public static func == (a: CheetahLoyaltyCore.Activity.Detail, b: CheetahLoyaltyCore.Activity.Detail) -> Swift.Bool
   }
@@ -1204,6 +1214,7 @@ extension APIError : Foundation.LocalizedError {
 }
 extension APIError {
   public static func unknownError() -> CheetahLoyaltyCore.APIError
+  public static func reachabilityError() -> CheetahLoyaltyCore.APIError
 }
 public enum AuthenticationRequest : CheetahLoyaltyUtils.URLRequestConvertible {
   case logIn(parameters: CheetahLoyaltyUtils.Parameters?)
@@ -2803,8 +2814,8 @@ public struct GiftCard : Swift.Codable, Swift.Equatable {
   public var reloadAmount: Swift.String
   public var paymentMethodNonce: Swift.String
   public var autoReload: Swift.Bool
-  public var cardType: CheetahLoyaltyCore.GiftCard.GiftCardType?
-  public init(id: Swift.Int, cardNumber: Swift.String, pin: Swift.String, name: Swift.String, desc: Swift.String, balance: Swift.String, usageStartDate: Swift.String, usageEndDate: Swift.String, reloadThreshold: Swift.String, reloadAmount: Swift.String, paymentMethodNonce: Swift.String, autoReload: Swift.Bool, cardType: CheetahLoyaltyCore.GiftCard.GiftCardType?)
+  public var giftCardClass: CheetahLoyaltyCore.GiftCard.GiftCardClass?
+  public init(id: Swift.Int, cardNumber: Swift.String, pin: Swift.String, name: Swift.String, desc: Swift.String, balance: Swift.String, usageStartDate: Swift.String, usageEndDate: Swift.String, reloadThreshold: Swift.String, reloadAmount: Swift.String, paymentMethodNonce: Swift.String, autoReload: Swift.Bool, cardType: CheetahLoyaltyCore.GiftCard.GiftCardClass?)
   public enum TransactionType : Swift.String, Swift.Codable {
     case debit
     case credit
@@ -2829,15 +2840,16 @@ public struct GiftCard : Swift.Codable, Swift.Equatable {
     public func encode(to encoder: Swift.Encoder) throws
     public static func == (a: CheetahLoyaltyCore.GiftCard.Transaction, b: CheetahLoyaltyCore.GiftCard.Transaction) -> Swift.Bool
   }
-  public struct GiftCardType : Swift.Codable, Swift.Equatable {
+  public struct GiftCardClass : Swift.Codable, Swift.Equatable {
     public var id: Swift.Int
     public var label: Swift.String
+    public var name: Swift.String
     public var imageUrl: Swift.String
     public var thumbImageUrl: Swift.String
     public var originalImageUrl: Swift.String
-    public init(id: Swift.Int, label: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String)
+    public init(id: Swift.Int, label: Swift.String, name: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String)
     public func encode(to encoder: Swift.Encoder) throws
-    public static func == (a: CheetahLoyaltyCore.GiftCard.GiftCardType, b: CheetahLoyaltyCore.GiftCard.GiftCardType) -> Swift.Bool
+    public static func == (a: CheetahLoyaltyCore.GiftCard.GiftCardClass, b: CheetahLoyaltyCore.GiftCard.GiftCardClass) -> Swift.Bool
   }
   public func encode(to encoder: Swift.Encoder) throws
   public static func == (a: CheetahLoyaltyCore.GiftCard, b: CheetahLoyaltyCore.GiftCard) -> Swift.Bool
@@ -2848,7 +2860,7 @@ extension GiftCard {
 extension GiftCard.Transaction {
   public init(from decoder: Swift.Decoder) throws
 }
-extension GiftCard.GiftCardType {
+extension GiftCard.GiftCardClass {
   public init(from decoder: Swift.Decoder) throws
 }
 public enum ProfileRequest : CheetahLoyaltyUtils.URLRequestConvertible {

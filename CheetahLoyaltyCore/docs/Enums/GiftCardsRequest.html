@@ -18,18 +18,18 @@
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">CheetahLoyaltyCore 0.1.0 Docs</a></p>
-        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
-        <p class="header-right">
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
           <form role="search" action="../search.json">
             <input type="text" placeholder="Search documentation" data-typeahead>
           </form>
-        </p>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">CheetahLoyaltyCore Reference</a>
-        <img id="carat" src="../img/carat.png" />
+        <img id="carat" src="../img/carat.png" alt=""/>
         GiftCardsRequest Enumeration Reference
       </p>
     </div>
@@ -382,7 +382,7 @@
                 <a href="../Structs/GiftCard/Transaction.html">– Transaction</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/GiftCard/GiftCardType.html">– GiftCardType</a>
+                <a href="../Structs/GiftCard/GiftCardClass.html">– GiftCardClass</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/GiftCardsAPI.html">GiftCardsAPI</a>
@@ -910,6 +910,60 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:18CheetahLoyaltyCore16GiftCardsRequestO03getD4CardyACSS_SDySSypGSgtcACmF"></a>
+                    <a name="//apple_ref/swift/Element/getGiftCard(cardNumber:parameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore16GiftCardsRequestO03getD4CardyACSS_SDySSypGSgtcACmF">getGiftCard(cardNumber:<wbr>parameters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get Gift Card by card number with optional <code>Parameters</code>..</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">getGiftCard</span><span class="p">(</span><span class="nv">cardNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore16GiftCardsRequestO03getD11CardClassesyACSDySSypGSg_tcACmF"></a>
+                    <a name="//apple_ref/swift/Element/getGiftCardClasses(parameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore16GiftCardsRequestO03getD11CardClassesyACSDySSypGSg_tcACmF">getGiftCardClasses(parameters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get gift card classes with optional <code>Parameters</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">getGiftCardClasses</span><span class="p">(</span><span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:18CheetahLoyaltyCore16GiftCardsRequestO21getPaymentClientTokenyA2CmF"></a>
                     <a name="//apple_ref/swift/Element/getPaymentClientToken" class="dashAnchor"></a>
                     <a class="token" href="#/s:18CheetahLoyaltyCore16GiftCardsRequestO21getPaymentClientTokenyA2CmF">getPaymentClientToken</a>
@@ -955,33 +1009,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">getTransactions</span><span class="p">(</span><span class="nv">cardNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:18CheetahLoyaltyCore16GiftCardsRequestO3addyACSS_SStcACmF"></a>
-                    <a name="//apple_ref/swift/Element/add(cardNumber:pin:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahLoyaltyCore16GiftCardsRequestO3addyACSS_SStcACmF">add(cardNumber:<wbr>pin:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Add card number with pin.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">add</span><span class="p">(</span><span class="nv">cardNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">pin</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1072,6 +1099,60 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:18CheetahLoyaltyCore16GiftCardsRequestO4linkyACSS_SSSDySSypGSgtcACmF"></a>
+                    <a name="//apple_ref/swift/Element/link(cardNumber:pin:parameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore16GiftCardsRequestO4linkyACSS_SSSDySSypGSgtcACmF">link(cardNumber:<wbr>pin:<wbr>parameters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Link a gift card with the given card number and pin to the user account with optional <code>Parameters</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">link</span><span class="p">(</span><span class="nv">cardNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">pin</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahLoyaltyCore16GiftCardsRequestO6unlinkyACSS_SDySSypGSgtcACmF"></a>
+                    <a name="//apple_ref/swift/Element/unlink(cardNumber:parameters:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahLoyaltyCore16GiftCardsRequestO6unlinkyACSS_SDySSypGSgtcACmF">unlink(cardNumber:<wbr>parameters:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unlink a gift card with the given card number from the user account with optional <code>Parameters</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">unlink</span><span class="p">(</span><span class="nv">cardNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt">Parameters</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:19CheetahLoyaltyUtils21URLRequestConvertibleP6methodAA10HTTPMethodOvp"></a>
                     <a name="//apple_ref/swift/Property/method" class="dashAnchor"></a>
                     <a class="token" href="#/s:19CheetahLoyaltyUtils21URLRequestConvertibleP6methodAA10HTTPMethodOvp">method</a>
@@ -1152,11 +1233,10 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-02-05)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2021-10-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>
