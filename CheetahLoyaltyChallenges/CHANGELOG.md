@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Challenges-1.3.3] - 2021-10-15Z
+### Changed
+- Swiftlint configuration to support update and M1 Macs [#609]
+- Dependency version requirements to CheetahLoyaltyCore 1.10.0, CheetahLoyaltyUI 1.10.0, and CheetahLoyaltyUtils 1.3.0 [#609]
+
+### Fixed
+- Incorrect Unit Tests [#610]
+
+[#609]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/609
+[#610]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/610
+[Challenges-1.3.3]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/94?closed=1
+
 ## [Challenges-1.3.2] - 2021-02-08
 
 ### Fixed
