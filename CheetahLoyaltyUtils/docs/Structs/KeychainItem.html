@@ -8,19 +8,27 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Struct/KeychainItem" class="dashAnchor"></a>
     <a title="KeychainItem Structure Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (87% documented)</p>
+        <p><a href="../index.html"> Docs</a> (90% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
-        <img id="carat" src="../img/carat.png" />
+        <img id="carat" src="../img/carat.png" alt=""/>
         KeychainItem Structure Reference
       </p>
     </div>
@@ -38,6 +46,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ParameterEncoding.html">ParameterEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Reachability.html">Reachability</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/URLError.html">URLError</a>
@@ -58,9 +69,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/Bundle.html">Bundle</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/CharacterSet.html">CharacterSet</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/Data.html">Data</a>
@@ -168,6 +176,7 @@
             <h1>KeychainItem</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KeychainItem</span></code></pre>
 
                 </div>
@@ -239,7 +248,7 @@
                     <code>
                     <a name="/s:19CheetahLoyaltyUtils12KeychainItemV11serviceName7accountACSS_SStcfc"></a>
                     <a name="//apple_ref/swift/Method/init(serviceName:account:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV11serviceName7accountACSS_SStcfc">init(serviceName:account:)</a>
+                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV11serviceName7accountACSS_SStcfc">init(serviceName:<wbr>account:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -328,7 +337,7 @@
                     <code>
                     <a name="/s:19CheetahLoyaltyUtils12KeychainItemV4read7context7message10Foundation4DataVSgSo9LAContextCSg_SSSgtKF"></a>
                     <a name="//apple_ref/swift/Method/read(context:message:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV4read7context7message10Foundation4DataVSgSo9LAContextCSg_SSSgtKF">read(context:message:)</a>
+                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV4read7context7message10Foundation4DataVSgSo9LAContextCSg_SSSgtKF">read(context:<wbr>message:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -395,7 +404,7 @@
                     <code>
                     <a name="/s:19CheetahLoyaltyUtils12KeychainItemV12readPassword7context7messageSSSgSo9LAContextCSg_AGtKF"></a>
                     <a name="//apple_ref/swift/Method/readPassword(context:message:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV12readPassword7context7messageSSSgSo9LAContextCSg_AGtKF">readPassword(context:message:)</a>
+                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV12readPassword7context7messageSSSgSo9LAContextCSg_AGtKF">readPassword(context:<wbr>message:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -462,7 +471,7 @@
                     <code>
                     <a name="/s:19CheetahLoyaltyUtils12KeychainItemV8readJSON7context7messageSDySSypGSgSo9LAContextCSg_SSSgtKF"></a>
                     <a name="//apple_ref/swift/Method/readJSON(context:message:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV8readJSON7context7messageSDySSypGSgSo9LAContextCSg_SSSgtKF">readJSON(context:message:)</a>
+                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV8readJSON7context7messageSDySSypGSgSo9LAContextCSg_SSSgtKF">readJSON(context:<wbr>message:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -529,7 +538,7 @@
                     <code>
                     <a name="/s:19CheetahLoyaltyUtils12KeychainItemV5write4data4with7contexty10Foundation4DataV_So19SecAccessControlRefaSgSo9LAContextCSgtKF"></a>
                     <a name="//apple_ref/swift/Method/write(data:with:context:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV5write4data4with7contexty10Foundation4DataV_So19SecAccessControlRefaSgSo9LAContextCSgtKF">write(data:with:context:)</a>
+                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV5write4data4with7contexty10Foundation4DataV_So19SecAccessControlRefaSgSo9LAContextCSgtKF">write(data:<wbr>with:<wbr>context:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -604,7 +613,7 @@
                     <code>
                     <a name="/s:19CheetahLoyaltyUtils12KeychainItemV13writePassword_4with7contextySS_So19SecAccessControlRefaSgSo9LAContextCSgtKF"></a>
                     <a name="//apple_ref/swift/Method/writePassword(_:with:context:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV13writePassword_4with7contextySS_So19SecAccessControlRefaSgSo9LAContextCSgtKF">writePassword(_:with:context:)</a>
+                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV13writePassword_4with7contextySS_So19SecAccessControlRefaSgSo9LAContextCSgtKF">writePassword(_:<wbr>with:<wbr>context:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -679,7 +688,7 @@
                     <code>
                     <a name="/s:19CheetahLoyaltyUtils12KeychainItemV5write4json4with7contextySDySSypG_So19SecAccessControlRefaSgSo9LAContextCSgtKF"></a>
                     <a name="//apple_ref/swift/Method/write(json:with:context:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV5write4json4with7contextySDySSypG_So19SecAccessControlRefaSgSo9LAContextCSgtKF">write(json:with:context:)</a>
+                    <a class="token" href="#/s:19CheetahLoyaltyUtils12KeychainItemV5write4json4with7contextySDySSypG_So19SecAccessControlRefaSgSo9LAContextCSgtKF">write(json:<wbr>with:<wbr>context:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -819,11 +828,10 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2021-01-26)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2021-10-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>

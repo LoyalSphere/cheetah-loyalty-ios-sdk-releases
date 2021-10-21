@@ -6,8 +6,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [Utils-1.2.0] - 2021-01-26
+## [Utils-1.3.0] - 2021-09-24Z
+### Added
+- Reachability enum with static method to check if device is connected to a network [#598]
 
+### Changed
+- Updated Swiftlint integration [#599]
+
+[#598]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/598
+[#599]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/599
+[Utils-1.3.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/91?closed=1
+
+## [Utils-1.2.0] - 2021-01-26
 ### Added
 - Utility components from Cheetah Loyalty Core [#578]:
 	- URL Parameter Encoding

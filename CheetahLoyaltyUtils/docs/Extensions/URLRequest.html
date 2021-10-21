@@ -8,19 +8,27 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/swift/Extension/URLRequest" class="dashAnchor"></a>
     <a title="URLRequest Extension Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (87% documented)</p>
+        <p><a href="../index.html"> Docs</a> (90% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
       </div>
     </header>
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html"> Reference</a>
-        <img id="carat" src="../img/carat.png" />
+        <img id="carat" src="../img/carat.png" alt=""/>
         URLRequest Extension Reference
       </p>
     </div>
@@ -38,6 +46,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ParameterEncoding.html">ParameterEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Reachability.html">Reachability</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/URLError.html">URLError</a>
@@ -58,9 +69,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/Bundle.html">Bundle</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Extensions/CharacterSet.html">CharacterSet</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Extensions/Data.html">Data</a>
@@ -168,6 +176,7 @@
             <h1>URLRequest</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">URLRequest</span><span class="p">:</span> <span class="kt"><a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a></span></code></pre>
 
                 </div>
@@ -212,7 +221,7 @@
                 <a name="//apple_ref/swift/Section/URLRequest extension" class="dashAnchor"></a>
                 <div class="section-name-container">
                   <a class="section-name-link" href="#/URLRequest%20extension"></a>
-                  <h3 class="section-name"><p>URLRequest extension</p>
+                  <h3 class="section-name"><span>URLRequest extension</span>
 </h3>
                 </div>
               </div>
@@ -222,7 +231,7 @@
                     <code>
                     <a name="/s:10Foundation10URLRequestV19CheetahLoyaltyUtilsE3url6method7headersAcD14URLConvertible_p_AD10HTTPMethodOSDyS2SGSgtKcfc"></a>
                     <a name="//apple_ref/swift/Method/init(url:method:headers:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10Foundation10URLRequestV19CheetahLoyaltyUtilsE3url6method7headersAcD14URLConvertible_p_AD10HTTPMethodOSDyS2SGSgtKcfc">init(url:method:headers:)</a>
+                    <a class="token" href="#/s:10Foundation10URLRequestV19CheetahLoyaltyUtilsE3url6method7headersAcD14URLConvertible_p_AD10HTTPMethodOSDyS2SGSgtKcfc">init(url:<wbr>method:<wbr>headers:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -297,7 +306,7 @@
                     <code>
                     <a name="/s:10Foundation10URLRequestV19CheetahLoyaltyUtilsE3url6method7headers10parameters20multipartAttachments8encodingAcD14URLConvertible_p_AD10HTTPMethodOSDyS2SGSgSDySSypGSgSayAD19MultipartAttachmentVGSgAD17ParameterEncodingOtKcfc"></a>
                     <a name="//apple_ref/swift/Method/init(url:method:headers:parameters:multipartAttachments:encoding:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10Foundation10URLRequestV19CheetahLoyaltyUtilsE3url6method7headers10parameters20multipartAttachments8encodingAcD14URLConvertible_p_AD10HTTPMethodOSDyS2SGSgSDySSypGSgSayAD19MultipartAttachmentVGSgAD17ParameterEncodingOtKcfc">init(url:method:headers:parameters:multipartAttachments:encoding:)</a>
+                    <a class="token" href="#/s:10Foundation10URLRequestV19CheetahLoyaltyUtilsE3url6method7headers10parameters20multipartAttachments8encodingAcD14URLConvertible_p_AD10HTTPMethodOSDyS2SGSgSDySSypGSgSayAD19MultipartAttachmentVGSgAD17ParameterEncodingOtKcfc">init(url:<wbr>method:<wbr>headers:<wbr>parameters:<wbr>multipartAttachments:<wbr>encoding:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -413,7 +422,7 @@
                     <code>
                     <a name="/s:10Foundation10URLRequestV19CheetahLoyaltyUtilsE6encode4with8encodingySDySSypGSg_AD17ParameterEncodingOtKF"></a>
                     <a name="//apple_ref/swift/Method/encode(with:encoding:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10Foundation10URLRequestV19CheetahLoyaltyUtilsE6encode4with8encodingySDySSypGSg_AD17ParameterEncodingOtKF">encode(with:encoding:)</a>
+                    <a class="token" href="#/s:10Foundation10URLRequestV19CheetahLoyaltyUtilsE6encode4with8encodingySDySSypGSg_AD17ParameterEncodingOtKF">encode(with:<wbr>encoding:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -477,7 +486,7 @@
                     <code>
                     <a name="/s:10Foundation10URLRequestV19CheetahLoyaltyUtilsE6encode_4with8encodingyACz_SDySSypGSgAD17ParameterEncodingOtKFZ"></a>
                     <a name="//apple_ref/swift/Method/encode(_:with:encoding:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:10Foundation10URLRequestV19CheetahLoyaltyUtilsE6encode_4with8encodingyACz_SDySSypGSgAD17ParameterEncodingOtKFZ">encode(_:with:encoding:)</a>
+                    <a class="token" href="#/s:10Foundation10URLRequestV19CheetahLoyaltyUtilsE6encode_4with8encodingyACz_SDySSypGSgAD17ParameterEncodingOtKFZ">encode(_:<wbr>with:<wbr>encoding:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -554,11 +563,10 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2021-01-26)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2021-10-21)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
     </div>
   </body>
-</div>
 </html>

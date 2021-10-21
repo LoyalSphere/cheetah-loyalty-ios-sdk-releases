@@ -1,12 +1,145 @@
 {
   "warnings": [
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Localizer.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/AnyCodable/AnyCodable.swift",
+      "line": 18,
+      "symbol": "AnyCodable.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/AnyCodable/AnyCodable.swift",
+      "line": 20,
+      "symbol": "AnyCodable.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/AnyCodable/AnyDecodable.swift",
+      "line": 32,
+      "symbol": "AnyDecodable.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/AnyCodable/AnyDecodable.swift",
+      "line": 34,
+      "symbol": "AnyDecodable.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/AnyCodable/AnyDecodable.swift",
+      "line": 47,
+      "symbol": "_AnyDecodable.init(from:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/AnyCodable/AnyEncodable.swift",
+      "line": 31,
+      "symbol": "AnyEncodable.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/AnyCodable/AnyEncodable.swift",
+      "line": 33,
+      "symbol": "AnyEncodable.init(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/AnyCodable/AnyEncodable.swift",
+      "line": 48,
+      "symbol": "_AnyEncodable.encode(to:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Localizer.swift",
       "line": 18,
       "symbol": "Localizer",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Networking/URL+URLRequestConvertible.swift",
+      "line": 25,
+      "symbol": "URLRequestConvertible.parameterEncoding",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Networking/URL+URLRequestConvertible.swift",
+      "line": 65,
+      "symbol": "URLRequestConvertible.parameterEncoding",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Networking/URLParameterEncoding.swift",
+      "line": 15,
+      "symbol": "HTTPMethod.delete",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Networking/URLParameterEncoding.swift",
+      "line": 16,
+      "symbol": "HTTPMethod.get",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Networking/URLParameterEncoding.swift",
+      "line": 17,
+      "symbol": "HTTPMethod.patch",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Networking/URLParameterEncoding.swift",
+      "line": 18,
+      "symbol": "HTTPMethod.post",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Networking/URLParameterEncoding.swift",
+      "line": 19,
+      "symbol": "HTTPMethod.put",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Networking/URLParameterEncoding.swift",
+      "line": 44,
+      "symbol": "MultipartAttachment.init(name:fileName:url:data:mimeType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Networking/URLParameterEncoding.swift",
+      "line": 69,
+      "symbol": "URLError.ParameterEncodingFailureReason",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Networking/URLParameterEncoding.swift",
+      "line": 70,
+      "symbol": "URLError.ParameterEncodingFailureReason.missingURL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils/CheetahLoyaltyUtils/Networking/URLParameterEncoding.swift",
+      "line": 71,
+      "symbol": "URLError.ParameterEncodingFailureReason.jsonEncodingFailed(error:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils"
+  "source_directory": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyUtils"
 }

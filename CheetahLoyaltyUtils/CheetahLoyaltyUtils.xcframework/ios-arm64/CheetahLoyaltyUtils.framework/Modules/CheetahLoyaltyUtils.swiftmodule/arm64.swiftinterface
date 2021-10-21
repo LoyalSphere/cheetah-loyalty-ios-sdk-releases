@@ -6,6 +6,7 @@ import Foundation
 import LocalAuthentication
 import MobileCoreServices
 import Swift
+import SystemConfiguration
 import UIKit
 extension Result {
   public var isSuccess: Swift.Bool {
@@ -306,6 +307,9 @@ extension JSONDecoder {
 }
 extension DateFormatter {
   convenience public init(format: Swift.String? = nil, timeZone: Foundation.TimeZone? = .current, locale: Foundation.Locale? = Locale(identifier: "en_US_POSIX"))
+}
+public enum Reachability {
+  public static func isConnectedToNetwork() -> Swift.Bool
 }
 public struct AnyCodable : Swift.Codable {
   public let value: Any
