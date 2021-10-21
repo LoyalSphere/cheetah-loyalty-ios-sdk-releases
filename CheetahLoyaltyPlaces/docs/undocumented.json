@@ -1,61 +1,61 @@
 {
   "warnings": [
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/GeofenceClientEventsManager.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/GeofenceClientEventsManager.swift",
       "line": 16,
       "symbol": "GeofenceClientEvents.createClientEventRegions(for:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/GeofenceClientEventsManager.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/GeofenceClientEventsManager.swift",
       "line": 17,
       "symbol": "GeofenceClientEvents.triggerClientEvent(in:event:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/GeofenceClientEventsManager.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/GeofenceClientEventsManager.swift",
       "line": 18,
       "symbol": "GeofenceClientEvents.sendLocalNotification(for:withTitle:andInterval:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/LocationManager.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/LocationManager.swift",
       "line": 189,
       "symbol": "LocationManager.locationManager(_:didChangeAuthorization:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/LocationManager.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/LocationManager.swift",
       "line": 194,
       "symbol": "LocationManager.locationManager(_:didUpdateLocations:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/LocationManager.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/Managers/LocationManager.swift",
       "line": 201,
       "symbol": "LocationManager.locationManager(_:didFailWithError:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/NativeExtensions.swift",
       "line": 19,
       "symbol": "PlacesNotification",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces/CheetahLoyaltyPlaces/NativeExtensions.swift",
       "line": 21,
       "symbol": "PlacesNotification.locationManagerEvents",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces"
+  "source_directory": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyPlaces"
 }
