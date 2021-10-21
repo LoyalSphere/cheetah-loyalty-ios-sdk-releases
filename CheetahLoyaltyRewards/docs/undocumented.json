@@ -1,726 +1,726 @@
 {
   "warnings": [
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/Extensions/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/Extensions/NativeExtensions.swift",
       "line": 19,
       "symbol": "RewardsNotification",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/Extensions/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/Extensions/NativeExtensions.swift",
       "line": 21,
       "symbol": "RewardsNotification.rewardUpdated",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RedemptionDetail/RedemptionDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RedemptionDetail/RedemptionDetailController.swift",
       "line": 13,
       "symbol": "RedemptionDetailController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RedemptionDetail/RedemptionDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RedemptionDetail/RedemptionDetailController.swift",
       "line": 63,
       "symbol": "RedemptionDetailController.actionButtonPressed(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RedemptionDetail/RedemptionDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RedemptionDetail/RedemptionDetailController.swift",
       "line": 67,
       "symbol": "RedemptionDetailController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RedemptionDetail/RedemptionDetailViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RedemptionDetail/RedemptionDetailViewController.swift",
       "line": 13,
       "symbol": "RedemptionDetailViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
       "line": 13,
       "symbol": "RewardDetailController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
       "line": 82,
       "symbol": "RewardDetailController.actionButtonPressed(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
       "line": 95,
       "symbol": "RewardDetailController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
       "line": 142,
       "symbol": "RewardDetailController.setupAwardClaimStatus()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailController.swift",
       "line": 147,
       "symbol": "RewardDetailController.rewardRedeemed()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardDetail/RewardDetailViewController.swift",
       "line": 12,
       "symbol": "RewardDetailViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Certificate/CertificateRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Certificate/CertificateRewardViewController.swift",
       "line": 13,
       "symbol": "CertificateRewardViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Certificate/CertificateRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Certificate/CertificateRewardViewController.swift",
       "line": 15,
       "symbol": "CertificateRewardViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Challenge/ChallengeRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Challenge/ChallengeRewardViewController.swift",
       "line": 19,
       "symbol": "ChallengeRewardViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Challenge/ChallengeRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Challenge/ChallengeRewardViewController.swift",
       "line": 21,
       "symbol": "ChallengeRewardViewController.navigatorDelegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Challenge/ChallengeRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Challenge/ChallengeRewardViewController.swift",
       "line": 23,
       "symbol": "ChallengeRewardViewController.init(with:awardId:heading:defaultResponseMessage:navigatorDelegate:nibName:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Challenge/ChallengeRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Challenge/ChallengeRewardViewController.swift",
       "line": 45,
       "symbol": "ChallengeRewardViewController.onSuccess(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Generic/GenericRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/Generic/GenericRewardViewController.swift",
       "line": 38,
       "symbol": "GenericRewardViewController.init(with:awardId:heading:defaultResponseMessage:reloadCompletion:nibName:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/MetricTransfer/MetricTransferRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/MetricTransfer/MetricTransferRewardViewController.swift",
       "line": 13,
       "symbol": "MetricTransferRewardViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/MetricTransfer/MetricTransferRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/MetricTransfer/MetricTransferRewardViewController.swift",
       "line": 37,
       "symbol": "MetricTransferRewardViewController.init(with:awardId:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/MetricTransfer/MetricTransferRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/MetricTransfer/MetricTransferRewardViewController.swift",
       "line": 75,
       "symbol": "MetricTransferRewardViewController.sliderValueChanged(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/MetricTransfer/MetricTransferRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/MetricTransfer/MetricTransferRewardViewController.swift",
       "line": 82,
       "symbol": "MetricTransferRewardViewController.actionButtonPressed(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
       "line": 12,
       "symbol": "CombinationRewardDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
       "line": 17,
       "symbol": "CombinationRewardCollectionController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
       "line": 33,
       "symbol": "CombinationRewardCollectionController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
       "line": 44,
       "symbol": "CombinationRewardCollectionController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
       "line": 56,
       "symbol": "CombinationRewardCollectionController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
       "line": 63,
       "symbol": "CombinationRewardCollectionController.collectionView(_:viewForSupplementaryElementOfKind:at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
       "line": 85,
       "symbol": "CombinationRewardCollectionController.collectionView(_:numberOfItemsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardCollectionController.swift",
       "line": 93,
       "symbol": "CombinationRewardCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
       "line": 13,
       "symbol": "CombinationRewardViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
       "line": 53,
       "symbol": "CombinationRewardViewController.setupImageView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
       "line": 64,
       "symbol": "CombinationRewardViewController.setupActionButton()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
       "line": 73,
       "symbol": "CombinationRewardViewController.setupPointsLabel()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
       "line": 81,
       "symbol": "CombinationRewardViewController.updateViews()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/CombinationRewardViewController.swift",
       "line": 94,
       "symbol": "CombinationRewardViewController.setupCollectionView()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
       "line": 12,
       "symbol": "RequiredAttributesCollectionController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
       "line": 31,
       "symbol": "RequiredAttributesCollectionController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
       "line": 50,
       "symbol": "RequiredAttributesCollectionController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
       "line": 69,
       "symbol": "RequiredAttributesCollectionController.collectionView(_:viewForSupplementaryElementOfKind:at:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
       "line": 100,
       "symbol": "RequiredAttributesCollectionController.numberOfSections(in:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
       "line": 104,
       "symbol": "RequiredAttributesCollectionController.collectionView(_:numberOfItemsInSection:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesCollectionController.swift",
       "line": 111,
       "symbol": "RequiredAttributesCollectionController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesRewardViewController.swift",
       "line": 13,
       "symbol": "RequiredAttributesRewardViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesRewardViewController.swift",
       "line": 63,
       "symbol": "RequiredAttributesRewardViewController.enableActionButtons(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesRewardViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RequiredAttributesRewardViewController.swift",
       "line": 89,
       "symbol": "RequiredAttributesRewardViewController.close()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RewardAttributeSectionHeader.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/RewardAttributeSectionHeader.swift",
       "line": 21,
       "symbol": "RewardAttributeSectionHeader.awakeFromNib()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressController.swift",
       "line": 13,
       "symbol": "ShipToAddressController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressViewController.swift",
       "line": 13,
       "symbol": "ShipToAddressViewController",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressViewController.swift",
       "line": 289,
       "symbol": "ShipToAddressViewController.setupLoadingViewForAward()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressViewController.swift",
       "line": 297,
       "symbol": "ShipToAddressViewController.close()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressViewController.swift",
       "line": 336,
       "symbol": "ShipToAddressViewController.textFieldShouldBeginEditing(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressViewController.swift",
       "line": 346,
       "symbol": "ShipToAddressViewController.textField(_:shouldChangeCharactersIn:replacementString:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressViewController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/PhysicalRewards/ShipToAddress/ShipToAddressViewController.swift",
       "line": 360,
       "symbol": "ShipToAddressViewController.didTap(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 12,
       "symbol": "RewardResponderDelegate",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 19,
       "symbol": "RewardResponder",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 21,
       "symbol": "RewardResponder.reward",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 22,
       "symbol": "RewardResponder.awardId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 23,
       "symbol": "RewardResponder.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 24,
       "symbol": "RewardResponder.isResponding",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 26,
       "symbol": "RewardResponder.didRespond(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 27,
       "symbol": "RewardResponder.redeem(address:and:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 31,
       "symbol": "BaseRewardResponder",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 34,
       "symbol": "BaseRewardResponder.reward",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 35,
       "symbol": "BaseRewardResponder.awardId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 36,
       "symbol": "BaseRewardResponder.isResponding",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 37,
       "symbol": "BaseRewardResponder.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 40,
       "symbol": "BaseRewardResponder.init(with:awardId:delegate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 49,
       "symbol": "BaseRewardResponder.didRespond(with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponder.swift",
       "line": 62,
       "symbol": "BaseRewardResponder.redeem(address:and:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 13,
       "symbol": "RewardResponderFactory",
       "symbol_kind": "source.lang.swift.decl.protocol",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 15,
       "symbol": "RewardResponderFactory.responder(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 18,
       "symbol": "RewardResponderFactory.badge(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 20,
       "symbol": "RewardResponderFactory.certificate(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 22,
       "symbol": "RewardResponderFactory.challenge(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 24,
       "symbol": "RewardResponderFactory.contest(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 26,
       "symbol": "RewardResponderFactory.coupon(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 28,
       "symbol": "RewardResponderFactory.couponCom(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 30,
       "symbol": "RewardResponderFactory.debit(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 32,
       "symbol": "RewardResponderFactory.dynamic(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 34,
       "symbol": "RewardResponderFactory.giftcard(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 36,
       "symbol": "RewardResponderFactory.metric(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 38,
       "symbol": "RewardResponderFactory.metricPurchase(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 40,
       "symbol": "RewardResponderFactory.metricTransfer(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 42,
       "symbol": "RewardResponderFactory.offer(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 44,
       "symbol": "RewardResponderFactory.product(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 48,
       "symbol": "DefaultRewardResponderFactory",
       "symbol_kind": "source.lang.swift.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 50,
       "symbol": "DefaultRewardResponderFactory.responder(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 83,
       "symbol": "DefaultRewardResponderFactory.badge(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 89,
       "symbol": "DefaultRewardResponderFactory.certificate(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 95,
       "symbol": "DefaultRewardResponderFactory.challenge(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 103,
       "symbol": "DefaultRewardResponderFactory.contest(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 112,
       "symbol": "DefaultRewardResponderFactory.coupon(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 118,
       "symbol": "DefaultRewardResponderFactory.couponCom(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 124,
       "symbol": "DefaultRewardResponderFactory.debit(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 130,
       "symbol": "DefaultRewardResponderFactory.dynamic(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 136,
       "symbol": "DefaultRewardResponderFactory.giftcard(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 142,
       "symbol": "DefaultRewardResponderFactory.metric(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 148,
       "symbol": "DefaultRewardResponderFactory.metricPurchase(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 154,
       "symbol": "DefaultRewardResponderFactory.metricTransfer(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 159,
       "symbol": "DefaultRewardResponderFactory.offer(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards/CheetahLoyaltyRewards/RewardResponder/RewardResponderFactory.swift",
       "line": 165,
       "symbol": "DefaultRewardResponderFactory.product(for:with:)",
       "symbol_kind": "source.lang.swift.decl.function.method.class",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards"
+  "source_directory": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyRewards"
 }
