@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Notifications-1.2.6] - 2021-10-14Z
+### Changed
+- Swiftlint configuration to support update and M1 Macs [#607]
+- Dependency version requirements to CheetahLoyaltyCore 1.10.0 and CheetahLoyaltyUtils 1.3.0 [#607]
+- Handle push notification id as String [#608]
+
+[#607]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/607
+[#608]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/608
+[Notifications-1.2.6]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/93?closed=1
+
 ## [Notifications-1.2.5] - 2021-03-19
 ### Changed
 - Enable App Extension API Only Flag in Build Settings [#594]

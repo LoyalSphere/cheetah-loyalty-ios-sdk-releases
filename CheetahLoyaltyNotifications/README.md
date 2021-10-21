@@ -6,8 +6,8 @@ The Cheetah Loyalty Notifications iOS SDK contains a collection of classes, meth
 * Deployment Target: iOS 11.0
 * Xcode 11.x
 * Swift 5.1
-* `CheetahLoyaltyCore` v1.9.0
-* `CheetahLoyaltyUtils` v1.2.0
+* `CheetahLoyaltyCore` v1.10.0
+* `CheetahLoyaltyUtils` v1.3.0
 
 ## Installation
 
