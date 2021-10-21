@@ -219,6 +219,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC16CheetahLoyaltyUI17NibViewController")
 @interface NibViewController : UIViewController
 - (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
 /// Returns a newly initialized nib view controller with the nib file named the same as its class name in the bundle retruned by the <code>bundle(forFileName:)</code> extension method of <code>Bundle</code>.
 /// <em>A subclass can implement a superclass designated initializer as a subclass convenience initializer</em> as stated in the Automatic Initializer Inheritance of the <em>Swift Language Guide</em>
 /// seealso:
@@ -676,7 +677,6 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI18MenuViewController")
 
 
 
-
 /// A subclass of <code>CheckBox</code> that serves as a radio button
 /// that has an event listener/emitter to other radio buttons
 /// within the same group
@@ -793,7 +793,6 @@ SWIFT_CLASS("_TtC16CheetahLoyaltyUI19TableViewController")
 /// By default, this calls the refresh content of the table controller.
 - (void)refreshControlValueChanged:(UIRefreshControl * _Nonnull)sender;
 @end
-
 
 
 

@@ -6,6 +6,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-1.10.0] - 2021-10-12Z
+
+### Changed
+- Theming revamp [#595]
+	- Add color assets for default value of property of theme color for easier overriding in app side
+	- Update `TextAppearance` from protocol to struct
+	- Set font of `titleLabel` of button instead of attributed string
+- Swiftlint configuration to support update and M1 Macs [#602], [#603]
+- Transfer `screenName` variable from `StatefulViewController` to `NibViewController` [#604]
+- Transfer `logScreen` call in `StatefulViewController` into `viewDidAppear` of `NibViewController` [#604]
+- Changed dependency version requirements to CheetahLoyaltyUtils 1.3.0
+
+### Fixed
+- Incorrect Unit Tests [#603]
+
+[#595]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/595
+[#602]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/602
+[#603]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/603
+[#604]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/604
+[UI-1.10.0]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/milestone/90?closed=1
+
 ## [UI-1.9.1] - 2021-01-28
 
 ### Changed

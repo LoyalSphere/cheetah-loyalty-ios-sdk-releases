@@ -29,10 +29,11 @@ public protocol TextTheme {
   var alertMessage: CheetahLoyaltyUI.TextAppearance { get }
   var button: CheetahLoyaltyUI.TextAppearance { get }
 }
-public protocol TextAppearance {
-  var fontName: Swift.String { get }
-  var textStyle: UIKit.UIFont.TextStyle? { get }
-  var fontSize: CoreGraphics.CGFloat? { get }
+public struct TextAppearance {
+  public var fontName: Swift.String
+  public var textStyle: UIKit.UIFont.TextStyle?
+  public var fontSize: CoreGraphics.CGFloat?
+  public init(fontName: Swift.String, textStyle: UIKit.UIFont.TextStyle? = nil, fontSize: CoreGraphics.CGFloat? = nil)
 }
 extension TextAppearance {
   public var font: UIKit.UIFont {
@@ -42,31 +43,25 @@ extension TextAppearance {
     get
   }
 }
-extension NSMutableAttributedString {
-  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance)
-  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle)
-}
 extension UIButton {
-  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance, with title: Swift.String, for states: [UIKit.UIControl.State])
-  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance, with title: Swift.String, for state: UIKit.UIControl.State)
-  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle, with title: Swift.String, for states: [UIKit.UIControl.State])
-  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle, with title: Swift.String, for state: UIKit.UIControl.State)
+  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance, with title: Swift.String, for state: UIKit.UIControl.State, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle, with title: Swift.String, for state: UIKit.UIControl.State, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
 }
 extension UILabel {
-  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance)
-  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle)
+  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
 }
 extension UITextField {
-  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance)
-  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle)
+  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
 }
 extension UITextView {
-  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance)
-  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle)
+  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
 }
 extension UITableViewCell {
-  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance)
-  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle)
+  public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+  public func setTextStyle(_ textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
 }
 extension UIBarItem {
   public func setTextAppearance(_ textAppearance: CheetahLoyaltyUI.TextAppearance, for state: UIKit.UIControl.State)
@@ -500,10 +495,12 @@ public enum BackButtonType {
 @objc @_inheritsConvenienceInitializers open class NibViewController : UIKit.UIViewController {
   public static var customBackButtonType: CheetahLoyaltyUI.BackButtonType
   public var customBackButtonAction: (() -> Swift.Void)?
+  open var screenName: Swift.String
   open class var nibName: Swift.String {
     get
   }
   @objc override dynamic open func viewDidLoad()
+  @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
   open func setup()
   @objc dynamic public init()
   public init(nibName: Swift.String)
@@ -746,11 +743,6 @@ extension UICollectionViewLayout {
   open func setupStackAxis()
   @objc deinit
 }
-extension UIColor {
-  public var isLight: Swift.Bool {
-    get
-  }
-}
 public protocol ColorThemePainter {
   func apply(using theme: CheetahLoyaltyUI.ColorTheme)
   func extend(using theme: CheetahLoyaltyUI.ColorTheme)
@@ -910,7 +902,7 @@ public protocol FloatingTextFieldWithIconDelegate {
     public func hash(into hasher: inout Swift.Hasher)
   }
   open func applyColor(theme: CheetahLoyaltyUI.ColorTheme = ThemeManager.shared.color, with painter: CheetahLoyaltyUI.ColorThemePainter = CheetahColorThemePainter())
-  public static func setTextAppearance(for views: [UIKit.UIView], using textAppearance: CheetahLoyaltyUI.TextAppearance)
+  public static func setTextAppearance(for views: [UIKit.UIView], using textAppearance: CheetahLoyaltyUI.TextAppearance, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
   public static func setTextStyle(for views: [UIKit.UIView], using textStyle: CheetahLoyaltyUI.ThemeManager.TextStyle)
   @objc deinit
 }
@@ -1307,7 +1299,6 @@ public protocol ContentController : AnyObject {
   open var emptyViewController: CheetahLoyaltyUI.ReloadableViewController
   open var errorViewController: CheetahLoyaltyUI.ReloadableViewController
   open var loadingViewController: CheetahLoyaltyUI.LoadableViewController
-  open var screenName: Swift.String
   open var state: CheetahLoyaltyUI.StatefulViewController.State {
     get
     set
@@ -1509,81 +1500,6 @@ public struct CheetahTextTheme : CheetahLoyaltyUI.TextTheme {
   public var alertTitle: CheetahLoyaltyUI.TextAppearance
   public var alertMessage: CheetahLoyaltyUI.TextAppearance
   public var button: CheetahLoyaltyUI.TextAppearance
-}
-public struct CheetahButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahAlertButtonTextAppearance : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahTextViewTextAppearance : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahTextFieldTextAppearance : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahLargeTitle : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahTitle1 : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahTitle2 : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahTitle3 : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahHeadline : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahSubheadline : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahBody : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahCallout : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahFootnote : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahCaption1 : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
-}
-public struct CheetahCaption2 : CheetahLoyaltyUI.TextAppearance {
-  public var fontName: Swift.String
-  public var textStyle: UIKit.UIFont.TextStyle?
-  public var fontSize: CoreGraphics.CGFloat?
 }
 public protocol Reloadable {
   var reload: (() -> Swift.Void)? { get set }
