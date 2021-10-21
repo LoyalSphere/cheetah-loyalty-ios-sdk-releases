@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		1tIdeb4r7V0X0XViWcdRvKdYelQ=
+		8YrC4JSCA+PlSKE2LhzSzrtRD9I=
 		</data>
 		<key>Headers/CheetahLoyaltyOffers-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		x3VUWk+d9asj8xDMAjuhnejb8T8=
+		KiqyTBBA9xTYGjQVutzQ/TEeF6U=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/CheetahLoyaltyOffers.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		YhPr1yqEsDsbkxGc8qLIL37tv3s=
+		oia3vH2mSKARQKz8320Udq+9SRs=
 		</data>
 		<key>Modules/CheetahLoyaltyOffers.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/CheetahLoyaltyOffers.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		YhPr1yqEsDsbkxGc8qLIL37tv3s=
+		oia3vH2mSKARQKz8320Udq+9SRs=
 		</data>
 		<key>Modules/CheetahLoyaltyOffers.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/CheetahLoyaltyOffers.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sryScL9pVCBWm0PT3xdZ0FuRtg8=
+		RtA7AFzcuhXXKj7jna+dTfub3aA=
 		</data>
 		<key>Modules/CheetahLoyaltyOffers.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/CheetahLoyaltyOffers.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		sryScL9pVCBWm0PT3xdZ0FuRtg8=
+		RtA7AFzcuhXXKj7jna+dTfub3aA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>OfferDetailViewController.nib</key>
 		<data>
-		lMLIwNHZXgp6S/5057sc/9uHGNs=
+		Xv3wkdHnHnWIK6cTnpJEVwPGUPY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -87,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZKmujZTfgGm1GoFP0Id6B49BL4KA5M8WWrVXWtkCVR0=
+			B6VMpENbpHNEc/bJt7QyQXXYk1HXH2w98888Kzx9kKQ=
 			</data>
 		</dict>
 		<key>Headers/CheetahLoyaltyOffers-Swift.h</key>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aL9PQqzimUKI5+qPc/CmdIXa1sFqDfcMS9ipsvGQFiM=
+			sSxchUR3WBIxueBgWdeUjspWBlhh0yNx/DC+K8tue/s=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyOffers.swiftmodule/arm64.swiftdoc</key>
@@ -150,7 +150,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aL9PQqzimUKI5+qPc/CmdIXa1sFqDfcMS9ipsvGQFiM=
+			sSxchUR3WBIxueBgWdeUjspWBlhh0yNx/DC+K8tue/s=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyOffers.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -171,7 +171,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jfvi6Q11gXH6L+AOVsHvqn93GxQ3MrxjMJDaXcxKDgk=
+			h5pAD44oMZsYRD3NMFc1/vr0M1lXUEh4pB2Xrjv+3io=
 			</data>
 		</dict>
 		<key>Modules/CheetahLoyaltyOffers.swiftmodule/x86_64.swiftdoc</key>
@@ -192,7 +192,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jfvi6Q11gXH6L+AOVsHvqn93GxQ3MrxjMJDaXcxKDgk=
+			h5pAD44oMZsYRD3NMFc1/vr0M1lXUEh4pB2Xrjv+3io=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -206,7 +206,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4AhdiNPjTWGZRLa1SXuw67IFos+GWqZWp4flmIBC4f4=
+			vILcdqyIaA8nKimhXwLCjWcZvA+9RMILFlhefAKJhjs=
 			</data>
 		</dict>
 	</dict>

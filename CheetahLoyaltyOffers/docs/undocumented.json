@@ -1,208 +1,208 @@
 {
   "warnings": [
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
       "line": 12,
       "symbol": "OffersNotification",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
       "line": 13,
       "symbol": "OffersNotification.offerDoneClipping",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
       "line": 14,
       "symbol": "OffersNotification.offerIsClipping",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
       "line": 15,
       "symbol": "OffersNotification.offerResponseDoneClipping",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
       "line": 16,
       "symbol": "OffersNotification.offerResponseIsClipping",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
       "line": 33,
       "symbol": "Notification.CheetahLoyaltyOffers",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
       "line": 34,
       "symbol": "Notification.CheetahLoyaltyOffers.offerDoneClipping()",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
       "line": 37,
       "symbol": "Notification.CheetahLoyaltyOffers.offerIsClipping()",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
       "line": 40,
       "symbol": "Notification.CheetahLoyaltyOffers.offerResponseDoneClipping()",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Extensions/NativeExtensions.swift",
       "line": 43,
       "symbol": "Notification.CheetahLoyaltyOffers.offerResponseIsClipping()",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Carousel/OfferCarouselController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Carousel/OfferCarouselController.swift",
       "line": 41,
       "symbol": "OfferCarouselController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Carousel/OfferCarouselController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Carousel/OfferCarouselController.swift",
       "line": 78,
       "symbol": "OfferCarouselController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferDetailController.swift",
       "line": 211,
       "symbol": "OfferDetailController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferDetailController.swift",
       "line": 220,
       "symbol": "OfferDetailController.refreshContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferDetailController.swift",
       "line": 262,
       "symbol": "OfferDetailController.readMoreButtonPressed(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferDetailController.swift",
       "line": 277,
       "symbol": "OfferDetailController.clipButtonPressed(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferResponseDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferResponseDetailController.swift",
       "line": 30,
       "symbol": "OfferResponseDetailController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferResponseDetailController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Detail/OfferResponseDetailController.swift",
       "line": 82,
       "symbol": "OfferResponseDetailController.clipButtonPressed(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferCouponListController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferCouponListController.swift",
       "line": 146,
       "symbol": "OfferCouponListController.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferCouponListController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferCouponListController.swift",
       "line": 184,
       "symbol": "OfferCouponListController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferCouponListController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferCouponListController.swift",
       "line": 200,
       "symbol": "OfferCouponListController.collectionView(_:cellForItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferCouponListController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferCouponListController.swift",
       "line": 292,
       "symbol": "OfferCouponClippedListController.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferListController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferListController.swift",
       "line": 25,
       "symbol": "OfferListController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferListController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferListController.swift",
       "line": 40,
       "symbol": "OfferListController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferResponseListController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferResponseListController.swift",
       "line": 34,
       "symbol": "OfferResponseListController.loadContent()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferResponseListController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer List/OfferResponseListController.swift",
       "line": 49,
       "symbol": "OfferResponseListController.collectionView(_:didSelectItemAt:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Segmented/OfferCouponSegmentedController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Segmented/OfferCouponSegmentedController.swift",
       "line": 17,
       "symbol": "OfferCouponSegmentedController.segments",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Segmented/OfferCouponSegmentedController.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/Offer Segmented/OfferCouponSegmentedController.swift",
       "line": 20,
       "symbol": "OfferCouponSegmentedController.init(detailDelegate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/OfferUIFactory.swift",
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers/CheetahLoyaltyOffers/OfferUIFactory.swift",
       "line": 89,
       "symbol": "OfferUIFactory.segmentedCoupon(detailDelegate:)",
       "symbol_kind": "source.lang.swift.decl.function.method.static",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/julius_vitug/Developer/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers"
+  "source_directory": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahLoyaltyOffers"
 }
