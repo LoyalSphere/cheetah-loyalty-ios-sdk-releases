@@ -1,0 +1,11 @@
+framework module CheetahDigitalCore {
+  umbrella header "CheetahDigitalCore.h"
+
+  export *
+  module * { export * }
+}
+
+module CheetahDigitalCore.Swift {
+    header "CheetahDigitalCore-Swift.h"
+    requires objc
+}

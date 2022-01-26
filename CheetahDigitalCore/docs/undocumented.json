@@ -1,0 +1,2042 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/APIError.swift",
+      "line": 30,
+      "symbol": "APIError.init(code:message:name:additionalInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/APIError.swift",
+      "line": 88,
+      "symbol": "APIError.unknownError()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/APIError.swift",
+      "line": 92,
+      "symbol": "APIError.reachabilityError()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/APIResponse.swift",
+      "line": 32,
+      "symbol": "APIResponse.init(request:data:response:value:listInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/APIResponse.swift",
+      "line": 65,
+      "symbol": "ListInfo.init(totalEntries:totalPages:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 62,
+      "symbol": "AuthenticationAPI.SocialLoginType.apple",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 62,
+      "symbol": "AuthenticationAPI.SocialLoginType.facebook",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 62,
+      "symbol": "AuthenticationAPI.SocialLoginType.google",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 62,
+      "symbol": "AuthenticationAPI.SocialLoginType.linkedin",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 62,
+      "symbol": "AuthenticationAPI.SocialLoginType.twitter",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 67,
+      "symbol": "AuthenticationAPI.SignUpParameterKeys.code",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 67,
+      "symbol": "AuthenticationAPI.SignUpParameterKeys.email",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 67,
+      "symbol": "AuthenticationAPI.SignUpParameterKeys.password",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 68,
+      "symbol": "AuthenticationAPI.SignUpParameterKeys.passwordConfirmation",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 69,
+      "symbol": "AuthenticationAPI.SignUpParameterKeys.firstName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 70,
+      "symbol": "AuthenticationAPI.SignUpParameterKeys.lastName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 71,
+      "symbol": "AuthenticationAPI.SignUpParameterKeys.mobilePhone",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/AuthenticationAPI.swift",
+      "line": 72,
+      "symbol": "AuthenticationAPI.SignUpParameterKeys.cardId",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/ChallengesAPI.swift",
+      "line": 332,
+      "symbol": "ChallengesAPI.reEnterResponseToChallengeWithImage(id:responseId:image:with:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/ChallengesAPI.swift",
+      "line": 346,
+      "symbol": "ChallengesAPI.reEnterResponseToChallengeWithVideo(id:responseId:videoUrl:with:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/MessagesAPI.swift",
+      "line": 20,
+      "symbol": "MessagesRequest.TrackAction",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/MessagesAPI.swift",
+      "line": 21,
+      "symbol": "MessagesRequest.TrackAction.delivered",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/MessagesAPI.swift",
+      "line": 21,
+      "symbol": "MessagesRequest.TrackAction.opened",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/MetaReferencesAPI.swift",
+      "line": 12,
+      "symbol": "MetaReferencesRequest",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/MetaReferencesAPI.swift",
+      "line": 14,
+      "symbol": "MetaReferencesRequest.getStates(parameters:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/MetaReferencesAPI.swift",
+      "line": 29,
+      "symbol": "MetaReferencesAPI",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/API/MetaReferencesAPI.swift",
+      "line": 31,
+      "symbol": "MetaReferencesAPI.getCountriesWithStates(with:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 50,
+      "symbol": "Configuration.CodingKeys.userAgentName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 51,
+      "symbol": "Configuration.CodingKeys.clientId",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 52,
+      "symbol": "Configuration.CodingKeys.clientSecret",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 53,
+      "symbol": "Configuration.CodingKeys.clientUrl",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 54,
+      "symbol": "Configuration.CodingKeys.metric",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 55,
+      "symbol": "Configuration.CodingKeys.isGeofencingEnabled",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 56,
+      "symbol": "Configuration.CodingKeys.businessUnit",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 57,
+      "symbol": "Configuration.CodingKeys.isAccessTokenExternal",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 66,
+      "symbol": "Configuration.DefaultsKeys.sendLocationAnonymously",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 67,
+      "symbol": "Configuration.DefaultsKeys.lastActiveTrackingDate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 68,
+      "symbol": "Configuration.DefaultsKeys.registeredDeviceToken",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 69,
+      "symbol": "Configuration.DefaultsKeys.hasLaunchedOnce",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Configuration/Configuration.swift",
+      "line": 72,
+      "symbol": "Configuration.init(userAgentName:clientId:clientSecret:clientUrl:metric:businessUnit:isGeofencingEnabled:isAccessTokenExternal:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ARDefinition.swift",
+      "line": 36,
+      "symbol": "ARDefinition.init(type:trackerName:targetId:targetType:targetHeading:assetContentType:assetUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Activity.swift",
+      "line": 40,
+      "symbol": "Activity.init(activityTimeStamp:details:label:metricAmount:metricLabel:metricName:typeLabel:typeName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Activity.swift",
+      "line": 91,
+      "symbol": "Activity.Detail.init(context:integrationId:responseType:responseId:location:parentId:placeId:memberId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/AuthenticationInfo.swift",
+      "line": 37,
+      "symbol": "AuthenticationInfo.init(accessToken:tokenType:expiresIn:refreshToken:createdAt:settings:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Award.swift",
+      "line": 41,
+      "symbol": "Award.Status.claimed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Award.swift",
+      "line": 42,
+      "symbol": "Award.Status.cancelled",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Award.swift",
+      "line": 43,
+      "symbol": "Award.Status.awarded",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Award.swift",
+      "line": 47,
+      "symbol": "Award.init(id:status:type:startDate:endDate:dateClaimed:dateAwarded:reward:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Badge.swift",
+      "line": 57,
+      "symbol": "Badge.init(id:name:label:type:description:status:startPeriod:endPeriod:expirationInterval:expirationIntervalPeriod:paymentType:responseCurrencyAmount:responseCurrencyName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Certificate.swift",
+      "line": 29,
+      "symbol": "Certificate.init(id:code:displayText:endDate:startDate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 17,
+      "symbol": "Challenge.ResponseType.augmentedReality",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 18,
+      "symbol": "Challenge.ResponseType.checkIn",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 19,
+      "symbol": "Challenge.ResponseType.game",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 20,
+      "symbol": "Challenge.ResponseType.generic",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 21,
+      "symbol": "Challenge.ResponseType.joinGroup",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 22,
+      "symbol": "Challenge.ResponseType.meme",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 23,
+      "symbol": "Challenge.ResponseType.multiQuestion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 24,
+      "symbol": "Challenge.ResponseType.photo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 25,
+      "symbol": "Challenge.ResponseType.referral",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 26,
+      "symbol": "Challenge.ResponseType.socialMedia",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 27,
+      "symbol": "Challenge.ResponseType.survey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 28,
+      "symbol": "Challenge.ResponseType.updateAvatar",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 29,
+      "symbol": "Challenge.ResponseType.updateProfile",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 30,
+      "symbol": "Challenge.ResponseType.video",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 31,
+      "symbol": "Challenge.ResponseType.viewContent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Challenge.swift",
+      "line": 167,
+      "symbol": "Challenge.init(id:acceptanceText:acceptanceUrl:action:awardAmount:body:businessValue:details:endPeriod:heading:imageUrl:internalUrl:isAcceptanceRequired:isFavorited:isRespondable:name:metric:metricAmount:metricDisplayName:metricName:originalImageUrl:polls:prizeId:prizes:respondableInfo:responseEndDate:responseMessage:responseSchedule:responseSetting:responseStartDate:responseType:showAsAlert:startPeriod:status:subheading:subject:targetUrl:thumbImageUrl:trackingCode:triggerActivityType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponse.swift",
+      "line": 38,
+      "symbol": "Challenge.Response.init(id:attachmentUrl:response:status:dateCreated:challenge:prizes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponse.swift",
+      "line": 107,
+      "symbol": "Challenge.ResponseInfo.init(response:isRespondable:respondableInfo:responseMessage:secondaryPrize:prizeId:prize:prizeInstances:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponse.swift",
+      "line": 177,
+      "symbol": "Challenge.MetricPrize.init(metric:point:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 25,
+      "symbol": "ARChallengeResponseSetting.init(trackerUrl:definitions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 54,
+      "symbol": "CheckInChallengeResponseSetting.init(nearest:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 85,
+      "symbol": "GameChallengeResponseSetting.init(subtype:blob:htmlGame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 127,
+      "symbol": "GameChallengeResponseSetting.Game.init(id:label:description:pageType:name:templateSetVersionId:url:maskedUrl:requireLogin:staticFiles:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 201,
+      "symbol": "GenericChallengeResponseSetting.init(type:blob:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 232,
+      "symbol": "JoinGroupChallengeResponseSetting.init(groups:maxNumberOfGroup:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 260,
+      "symbol": "MultiQuestionChallengeResponseSetting.init(definitions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 349,
+      "symbol": "MemeChallengeResponseSetting.Subtype.overImage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 350,
+      "symbol": "MemeChallengeResponseSetting.Subtype.separateFromImage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 356,
+      "symbol": "MemeChallengeResponseSetting.init(subtype:imageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 384,
+      "symbol": "PhotoChallengeResponseSetting.init(resolution:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 429,
+      "symbol": "ReferralChallengeResponseSetting.init(platforms:subject:body:banner:url:imageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 503,
+      "symbol": "SocialMediaChallengeResponseSetting.init(subtype:url:platforms:contentType:facebookPostTitle:facebookPostBody:facebookUrlDisplayName:twitterPostBody:suggestedImageUrl:account:hashtags:text:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 562,
+      "symbol": "SurveyChallengeResponseSetting.QuestionType.numeric",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 563,
+      "symbol": "SurveyChallengeResponseSetting.QuestionType.multipleChoice",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 564,
+      "symbol": "SurveyChallengeResponseSetting.QuestionType.photo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 565,
+      "symbol": "SurveyChallengeResponseSetting.QuestionType.rating",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 566,
+      "symbol": "SurveyChallengeResponseSetting.QuestionType.text",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 591,
+      "symbol": "SurveyChallengeResponseSetting.init(allowComments:imageUrl:maxCharCount:options:question:questionType:surveyOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 632,
+      "symbol": "UpdateProfileChallengeResponseSetting.SubType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 633,
+      "symbol": "UpdateProfileChallengeResponseSetting.SubType.memberAttribute",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 634,
+      "symbol": "UpdateProfileChallengeResponseSetting.SubType.memberPreference",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 643,
+      "symbol": "UpdateProfileChallengeResponseSetting.init(subtype:attributes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 669,
+      "symbol": "UpdateProfileChallengeResponseSetting.Attribute.expression",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 671,
+      "symbol": "UpdateProfileChallengeResponseSetting.Attribute.timeToLive",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 680,
+      "symbol": "UpdateProfileChallengeResponseSetting.Attribute.init(name:label:description:defaultValue:type:isReadOnly:expression:timeToLive:value:isOptional:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 714,
+      "symbol": "UpdateProfileChallengeAttribute",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 795,
+      "symbol": "VideoChallengeResponseSetting.maxVideoSize",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 797,
+      "symbol": "VideoChallengeResponseSetting.init(videoSizeLimit:maxVideoSize:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 834,
+      "symbol": "ViewContentChallengeResponseSetting.imageUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 836,
+      "symbol": "ViewContentChallengeResponseSetting.Subtype",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 837,
+      "symbol": "ViewContentChallengeResponseSetting.Subtype.photo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 838,
+      "symbol": "ViewContentChallengeResponseSetting.Subtype.url",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 839,
+      "symbol": "ViewContentChallengeResponseSetting.Subtype.youtube",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 840,
+      "symbol": "ViewContentChallengeResponseSetting.Subtype.media",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ChallengeResponseSetting.swift",
+      "line": 843,
+      "symbol": "ViewContentChallengeResponseSetting.init(subtype:caption:url:imageUrl:surveySetting:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Code.swift",
+      "line": 48,
+      "symbol": "Code.init(id:metricAmount:metricName:respondable:response:responseMessage:rewardId:rewardName:secondaryMetricAmount:secondaryMetricName:status:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Comment.swift",
+      "line": 49,
+      "symbol": "Comment.init(id:commenter:createdAt:flagged:isCommenter:isLiked:isVisible:likeCount:message:originalLikeCount:updatedAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Comment.swift",
+      "line": 108,
+      "symbol": "Commenter.init(avatarUrl:memberId:name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ContentPage.swift",
+      "line": 91,
+      "symbol": "ContentPage.init(id:label:description:pageType:name:templateSetVersionId:url:maskedUrl:requireLogin:staticFiles:heading:subheading:body:details:imageUrl:thumbImageUrl:originalImageUrl:subject:action:headingColor:color:bgColor:headingBgColor:image1Bg:layoutId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ContentPage.swift",
+      "line": 161,
+      "symbol": "ContentPage.StaticFile.init(fileName:url:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ContentToken.swift",
+      "line": 18,
+      "symbol": "ContentToken.init(token:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/ContentToken.swift",
+      "line": 42,
+      "symbol": "ContentToken.Value.init(type:variable:value:applyTo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/CountriesStates.swift",
+      "line": 22,
+      "symbol": "CountriesStates.init(countries:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/CountriesStates.swift",
+      "line": 68,
+      "symbol": "Country.init(name:code:states:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/CountriesStates.swift",
+      "line": 86,
+      "symbol": "Country.State.init(label:code:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Coupon.swift",
+      "line": 27,
+      "symbol": "Coupon.init(id:code:barcode:barcodeStandard:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Event.swift",
+      "line": 21,
+      "symbol": "Host.init(id:profile:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Event.swift",
+      "line": 38,
+      "symbol": "Host.Profile.init(firstName:lastName:email:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Event.swift",
+      "line": 172,
+      "symbol": "Event.init(id:label:name:metricAmount:metricName:description:place:location:startAt:endAt:timezone:isRecurring:recurringSchedule:responseStartDate:responseEndDate:favorited:heading:subHeading:body:details:imageUrl:thumbImageUrl:originalImageUrl:subject:action:headingColor:color:bgColor:headingBgColor:layoutId:createdAt:updatedAt:surveyId:isRespondable:respondableInfo:hosts:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Event.swift",
+      "line": 283,
+      "symbol": "Event.Category.init(id:label:name:key:description:imageUrl:thumbnailUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Event.swift",
+      "line": 311,
+      "symbol": "Event.Date.init(date:events:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Event.swift",
+      "line": 351,
+      "symbol": "Event.Response.init(id:status:dateCreated:dateUpdated:outcome:metricName:metricAmount:event:isRespondable:respondableInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/FacebookFriend.swift",
+      "line": 43,
+      "symbol": "FacebookFriend.init(id:memberId:firstName:lastName:displayName:avatarUrl:rank:points:highlight:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/FeedbackItem.swift",
+      "line": 17,
+      "symbol": "FeedbackItem.FeedbackType.header",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/FeedbackItem.swift",
+      "line": 18,
+      "symbol": "FeedbackItem.FeedbackType.field",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/FeedbackItem.swift",
+      "line": 19,
+      "symbol": "FeedbackItem.FeedbackType.text",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/FeedbackItem.swift",
+      "line": 20,
+      "symbol": "FeedbackItem.FeedbackType.submit",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/FeedbackItem.swift",
+      "line": 42,
+      "symbol": "FeedbackItem.init(id:labelText:descriptionText:type:paramName:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/FeedbackItem.swift",
+      "line": 62,
+      "symbol": "FeedbackCategory.init(label:recipients:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/GiftCard.swift",
+      "line": 55,
+      "symbol": "GiftCard.init(id:cardNumber:pin:name:desc:balance:usageStartDate:usageEndDate:reloadThreshold:reloadAmount:paymentMethodNonce:autoReload:cardType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/GiftCard.swift",
+      "line": 91,
+      "symbol": "GiftCard.TransactionType.debit",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/GiftCard.swift",
+      "line": 92,
+      "symbol": "GiftCard.TransactionType.credit",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/GiftCard.swift",
+      "line": 93,
+      "symbol": "GiftCard.TransactionType.unlink",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/GiftCard.swift",
+      "line": 94,
+      "symbol": "GiftCard.TransactionType.link",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/GiftCard.swift",
+      "line": 95,
+      "symbol": "GiftCard.TransactionType.deactivate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/GiftCard.swift",
+      "line": 96,
+      "symbol": "GiftCard.TransactionType.activate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/GiftCard.swift",
+      "line": 97,
+      "symbol": "GiftCard.TransactionType.start",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/GiftCard.swift",
+      "line": 119,
+      "symbol": "GiftCard.Transaction.init(id:type:createdAt:desc:amount:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/GiftCard.swift",
+      "line": 160,
+      "symbol": "GiftCard.GiftCardClass.init(id:label:name:imageUrl:thumbImageUrl:originalImageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Group.swift",
+      "line": 37,
+      "symbol": "Group.init(id:avatarUrl:displayName:groupClass:groupDescription:groupId:name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Group.swift",
+      "line": 81,
+      "symbol": "GroupClass.init(label:name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Leaderboard.swift",
+      "line": 37,
+      "symbol": "Leaderboard.init(id:label:name:imageUrl:description:metric:metricDisplayName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Leaderboard.swift",
+      "line": 75,
+      "symbol": "Leaderboard.Feed.init(label:name:imageUrl:leaders:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Member.swift",
+      "line": 229,
+      "symbol": "Member.init(email:firstName:lastName:mailingStreet:mailingCity:mailingState:mailingPostalCode:mailingCountry:birthdate:mobilePhone:memberSince:memberId:receiveEmailOffers:receiveSmsOffers:receiveMobileAppOffers:receiveMailOffers:receiveEstatementOffers:currentTier:expirationDate:tierInProgression:referrerId:integrationId:gender:maritalStatus:education:income:hasChildren:employment:ethnicity:housing:testMember:isVisitor:cardId:receiveNewsFeedLikeNotification:receiveNewsFeedCommentNotification:company:grade:highSchool:highSchoolLocation:age:anniversary:securityAcountBalance:receivePersonalizedOffers:receiveStatements:lastVisitDate:hasDevice:parentMemberId:gpa:customerOptinProfiling:customerOptinMarketing:aboutMe:referralCode:betaAllowed:recentScore:frequencyScore:monetaryScore:recentValue:placeIntegrationId:migrated:myTable:isEmployee:regionIntegrationId:preferredPhoneBrands:channel:localCode:avatarUrl:placeLabel:satisfaction:interests:connectionStatus:message:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Member.swift",
+      "line": 322,
+      "symbol": "Member.ConnectionStatus.connected",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Member.swift",
+      "line": 323,
+      "symbol": "Member.ConnectionStatus.requested",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Member.swift",
+      "line": 324,
+      "symbol": "Member.ConnectionStatus.received",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Member.swift",
+      "line": 325,
+      "symbol": "Member.ConnectionStatus.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 34,
+      "symbol": "Message.init(id:title:text:desc:dateSent:attachment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 59,
+      "symbol": "Message.Attachment.init(id:type:thumbnailUrl:imageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 77,
+      "symbol": "Message.Attachment.AttachmentType.award",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 78,
+      "symbol": "Message.Attachment.AttachmentType.challenge",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 79,
+      "symbol": "Message.Attachment.AttachmentType.contentPage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 80,
+      "symbol": "Message.Attachment.AttachmentType.event",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 81,
+      "symbol": "Message.Attachment.AttachmentType.offer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 82,
+      "symbol": "Message.Attachment.AttachmentType.post",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 83,
+      "symbol": "Message.Attachment.AttachmentType.reward",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 84,
+      "symbol": "Message.Attachment.AttachmentType.custom(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 86,
+      "symbol": "Message.Attachment.AttachmentType.stringValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 123,
+      "symbol": "Message.Action.delivered",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Message.swift",
+      "line": 124,
+      "symbol": "Message.Action.opened",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Newsfeed.swift",
+      "line": 28,
+      "symbol": "NewsFeed.init(allowedToPost:allowedToComment:pinned:posts:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 85,
+      "symbol": "Offer.init(id:action:barcode:barcodeStandard:body:categories:clipped:descriptionText:details:endDate:extraJSON:heading:imageUrl:internalUrl:isFavorited:responses:startDate:subheading:targetObject:targetUrl:thumbnailUrl:type:url:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 164,
+      "symbol": "Offer.OfferType.barcode",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 165,
+      "symbol": "Offer.OfferType.certificate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 166,
+      "symbol": "Offer.OfferType.coupon",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 167,
+      "symbol": "Offer.OfferType.details",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 168,
+      "symbol": "Offer.OfferType.noAction",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 169,
+      "symbol": "Offer.OfferType.stellar",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 170,
+      "symbol": "Offer.OfferType.url",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 171,
+      "symbol": "Offer.OfferType.custom(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 173,
+      "symbol": "Offer.OfferType.stringValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 233,
+      "symbol": "Offer.Response.init(id:certificate:coupon:offer:processingStatus:respondable:usageEndDate:usageStartDate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 278,
+      "symbol": "Offer.Category.init(imageUrl:key:label:thumbImageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 297,
+      "symbol": "Offer.TargetObject.targetType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 298,
+      "symbol": "Offer.TargetObject.responseType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 299,
+      "symbol": "Offer.TargetObject.startPeriod",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 300,
+      "symbol": "Offer.TargetObject.endPeriod",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 301,
+      "symbol": "Offer.TargetObject.metric",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 302,
+      "symbol": "Offer.TargetObject.metricName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 303,
+      "symbol": "Offer.TargetObject.metricAmount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 304,
+      "symbol": "Offer.TargetObject.metricDisplayName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 305,
+      "symbol": "Offer.TargetObject.respondable",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 306,
+      "symbol": "Offer.TargetObject.heading",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 307,
+      "symbol": "Offer.TargetObject.body",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 308,
+      "symbol": "Offer.TargetObject.details",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 309,
+      "symbol": "Offer.TargetObject.subheading",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 310,
+      "symbol": "Offer.TargetObject.imageUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 311,
+      "symbol": "Offer.TargetObject.thumbImageUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 314,
+      "symbol": "Offer.TargetObject.init(targetType:responseType:startPeriod:endPeriod:metric:metricName:metricAmount:metricDisplayName:respondable:heading:body:details:subheading:imageUrl:thumbImageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Offer.swift",
+      "line": 367,
+      "symbol": "Offer.ResponseInfo.init(id:certificate:coupon:respondable:respondableInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Order.swift",
+      "line": 97,
+      "symbol": "Order.init(id:transactionType:orderedAt:preferredReceiveAt:sourceName:orderStatus:integrationId:placeIntegrationId:terminalName:transactionId:businessDate:metricName:metricAmount:currency:eligibleSubtotal:subtotal:overallDiscount:tipAmount:serviceCharge:tax:totalAmount:createdAt:updatedAt:itemCount:items:overallItemCount:place:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Order.swift",
+      "line": 227,
+      "symbol": "Order.Item.init(id:kind:subkind:sku:upc:category:name:description:lineNumber:linkedLineNumber:depth:discountable:basePrice:weight:quantity:amount:discount:netPrice:createdAt:updatedAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Order.swift",
+      "line": 297,
+      "symbol": "Order.Place.init(id:name:label:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Place.swift",
+      "line": 21,
+      "symbol": "OperatingDay.init(operatingDay:hours:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Place.swift",
+      "line": 35,
+      "symbol": "OperatingDay.Hours.init(open:close:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Place.swift",
+      "line": 69,
+      "symbol": "NearbyPlaces.init(places:radius:centerpoint:listInfo:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Place.swift",
+      "line": 192,
+      "symbol": "Place.init(id:label:name:integrationId:url:placeId:address:countryCode:country:state:county:city:zipCode:latitude:longitude:timezone:utcOffset:owner:email:phone:thumbImageUrl:originalImageUrl:operatingHours:operatingHoursDetailed:status:categories:radius:radiusUnit:dwell:extraInfo:clientEventTypes:links:isFavorite:distance:distanceUnit:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Place.swift",
+      "line": 261,
+      "symbol": "Place.Category.init(id:name:label:thumbImageUrl:imageUrl:description:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Place.swift",
+      "line": 284,
+      "symbol": "Place.ClientEventType.enter",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Place.swift",
+      "line": 285,
+      "symbol": "Place.ClientEventType.exit",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Place.swift",
+      "line": 286,
+      "symbol": "Place.ClientEventType.dwell",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Place.swift",
+      "line": 287,
+      "symbol": "Place.ClientEventType.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Poll.swift",
+      "line": 24,
+      "symbol": "Poll.init(question:results:highestPercentage:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Poll.swift",
+      "line": 45,
+      "symbol": "Poll.Result.init(label:percentage:total:highlight:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Post.swift",
+      "line": 58,
+      "symbol": "Post.init(id:attachmentThumbs:attachmentUrls:body:commentCount:createdAt:flagged:internalUrl:isLiked:isOwner:isPinned:likeCount:owner:targetUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Post.swift",
+      "line": 107,
+      "symbol": "Post.Owner.init(avatarUrl:memberId:name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Post.swift",
+      "line": 129,
+      "symbol": "Post.Flag.init(key:label:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Preference.swift",
+      "line": 69,
+      "symbol": "Preference.init(id:name:label:desc:domains:detailedDomains:selectedDomain:userDomains:addedDomains:isUnbounded:isMultiSelect:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Preference.swift",
+      "line": 121,
+      "symbol": "Preference.Domain.init(id:value:label:imageUrl:thumbImageUrl:originalImageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Prize.swift",
+      "line": 40,
+      "symbol": "Prize.init(id:label:imageUrl:thumbImageUrl:internalName:prizeType:prize:prizeInstances:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Product.swift",
+      "line": 70,
+      "symbol": "Product.init(id:sku:metricAmount:metricName:metricDisplayName:startDate:endDate:heading:subheading:body:details:imageUrl:thumbImageUrl:productComponents:productAttributes:productConfiguration:orderQuantity:specialInstructions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Product.swift",
+      "line": 129,
+      "symbol": "Product.Attribute.init(id:label:selectedOption:attributeOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Product.swift",
+      "line": 155,
+      "symbol": "Product.AttributeOption.init(id:label:isDefault:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Product.swift",
+      "line": 189,
+      "symbol": "Product.Configuration.init(id:attributeCombination:metricName:metricAmount:thumbImageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Product.swift",
+      "line": 259,
+      "symbol": "Product.Component.init(id:sku:metricAmount:metricName:metricDisplayName:startDate:endDate:heading:subheading:body:details:imageUrl:thumbImageUrl:attributes:productComponents:selected:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Product.swift",
+      "line": 310,
+      "symbol": "Product.Category.init(key:label:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Profile.swift",
+      "line": 85,
+      "symbol": "ProfileAttribute.init(name:label:type:description:isReadOnly:isRequired:isHidden:capitalized:maxLength:value:defaultValue:domain:categories:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Profile.swift",
+      "line": 115,
+      "symbol": "ProfileAttribute.Domain.list",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Profile.swift",
+      "line": 117,
+      "symbol": "ProfileAttribute.Domain.init(list:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Profile.swift",
+      "line": 131,
+      "symbol": "ProfileAttribute.Category.init(key:label:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Profile.swift",
+      "line": 156,
+      "symbol": "AccountSummary.init(tier:member:metrics:memberBadges:permissions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Profile.swift",
+      "line": 195,
+      "symbol": "AccountSummary.Member.init(memberId:firstName:lastName:memberSince:referred:visitor:localeCode:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Profile.swift",
+      "line": 248,
+      "symbol": "AccountSummary.Metric.init(label:balance:lifeTime:last12mos:ytd:last30d:mtd:today:redeemTotal:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Profile.swift",
+      "line": 296,
+      "symbol": "AccountSummary.MemberBadge.init(id:label:type:grantedAt:expiresAt:expired:count:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Profile.swift",
+      "line": 337,
+      "symbol": "AccountSummary.TierInfo.init(currentTier:tierInProgression:primaryMetricName:metrics:expressionExists:tiers:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Profile.swift",
+      "line": 369,
+      "symbol": "AccountSummary.CurrentTier.init(name:label:expirationDate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Profile.swift",
+      "line": 400,
+      "symbol": "AccountSummary.Tier.init(id:name:label:description:metricThresholds:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Profile.swift",
+      "line": 424,
+      "symbol": "AccountSummary.MetricThreshold.init(points:spend:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/PunchCard.swift",
+      "line": 108,
+      "symbol": "PunchCard.init(id:name:label:status:description:requiredPunches:effectivityStart:effectivityEnd:usageStartDate:usageEndDate:usageSchedule:heading:subheading:body:details:imageUrl:thumbImageUrl:originalImageUrl:subject:action:headingColor:color:bgColor:headingBgColor:image1Bg:layoutId:punches:startDate:expiration:punchDetail:punchCardType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/PunchCard.swift",
+      "line": 202,
+      "symbol": "PunchCard.Detail.init(name:punches:punchedDate:label:imageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/PunchCard.swift",
+      "line": 326,
+      "symbol": "PunchCard.PunchCardType.init(id:label:name:description:requiredPunches:created:publishedAt:status:expirationType:effectivityStart:effectivityEnd:responseStartDate:responseEndDate:responseSchedule:respondable:respondableInfo:heading:subheading:body:details:imageUrl:thumbImageUrl:originalImageUrl:subject:action:headingColor:color:bgColor:headingBgColor:image1Bg:layoutId:punches:rewards:locations:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/PunchCard.swift",
+      "line": 444,
+      "symbol": "PunchCard.Punch.init(id:label:name:sequence:maxAllowed:imageUrl:punches:isPunched:type:index:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/PunchCard.swift",
+      "line": 499,
+      "symbol": "PunchCard.Reward.init(id:punches:prizeName:prizeDescription:prizeId:prizeType:metricName:metricAmount:upgradeTier:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/PunchCard.swift",
+      "line": 548,
+      "symbol": "PunchCard.Place.init(id:name:label:placeId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Receipt.swift",
+      "line": 73,
+      "symbol": "Receipt.init(id:createdAt:updatedAt:createdBy:lastUpdatedBy:receiptUrl:orNumber:orDate:vendor:status:outcome:amountPaid:metricAmount:activitySubmitted:metricName:uploadedVia:processingType:comment:receiptItems:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Receipt.swift",
+      "line": 161,
+      "symbol": "Receipt.Item.init(id:codeId:scannedCode:scannedCodeDescription:scannedCodeLabel:amount:submissionType:createdAt:updatedAt:metricName:metricAmount:comment:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/RespondableInfo.swift",
+      "line": 24,
+      "symbol": "RespondableInfo.init(code:message:value:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 141,
+      "symbol": "Reward.init(id:sku:heading:subHeading:body:details:metricDisplayName:imageUrl:thumbnailUrl:type:startDate:endDate:drawDate:attributes:requiredAttributes:combinations:selectedCombination:redemptionOptions:points:responseCount:isRespondable:isFavorited:addressRequired:isAwarded:paymentMethod:action:responseCurrencyAmount:responseCurrencyName:expirationInterval:expirationPeriod:respondableInfo:embedded:isAcceptanceRequired:acceptanceText:acceptanceUrl:responseMessage:businessValue:maximumMetric:minimumMetric:extraJSON:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 240,
+      "symbol": "Reward.RewardType.badge",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 241,
+      "symbol": "Reward.RewardType.certificate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 242,
+      "symbol": "Reward.RewardType.challenge",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 243,
+      "symbol": "Reward.RewardType.contest",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 244,
+      "symbol": "Reward.RewardType.coupon",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 245,
+      "symbol": "Reward.RewardType.debit",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 246,
+      "symbol": "Reward.RewardType.couponCom",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 247,
+      "symbol": "Reward.RewardType.giftcard",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 248,
+      "symbol": "Reward.RewardType.metric",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 249,
+      "symbol": "Reward.RewardType.metricPurchase",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 250,
+      "symbol": "Reward.RewardType.metricTransfer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 251,
+      "symbol": "Reward.RewardType.offer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 252,
+      "symbol": "Reward.RewardType.product",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 253,
+      "symbol": "Reward.RewardType.dynamic",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 258,
+      "symbol": "Reward.RedemptionOptions.inStore",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 259,
+      "symbol": "Reward.RedemptionOptions.ship",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 284,
+      "symbol": "Reward.Class.init(id:name:desc:label:attributes:status:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 375,
+      "symbol": "Reward.Response.init(id:redemptionStatus:memberName:memberId:redemptionAmount:metricName:redemptionUnit:metricDisplayName:metricAmount:sku:integrationId:shippingAddress:imageUrl:thumbImageUrl:useStart:useEnd:createdAt:updatedAt:reward:certificate:coupon:notes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 432,
+      "symbol": "Reward.Response.RedemptionStatus.pending",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 433,
+      "symbol": "Reward.Response.RedemptionStatus.completed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 434,
+      "symbol": "Reward.Response.RedemptionStatus.cancelled",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 435,
+      "symbol": "Reward.Response.RedemptionStatus.processing",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 436,
+      "symbol": "Reward.Response.RedemptionStatus.errored",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 477,
+      "symbol": "Reward.Response.ShippingAddress.init(id:streetAddress:city:zipCode:state:countryCode:createdAt:updatedAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 523,
+      "symbol": "Reward.ResponseInfo.init(responseId:isRespondable:respondableInfo:responseMessage:certificate:coupon:embedded:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 558,
+      "symbol": "Reward.Category.init(id:imageUrl:key:label:thumbImageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 591,
+      "symbol": "Reward.Attribute.init(id:label:name:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 635,
+      "symbol": "Reward.AttributeCombination.init(id:sku:imageUrl:thumbnailUrl:metricName:metricAmount:values:respondable:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Reward.swift",
+      "line": 675,
+      "symbol": "Reward.AttributeOption.init(id:code:label:isDefault:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/StaticFile.swift",
+      "line": 27,
+      "symbol": "StaticFile.init(label:name:description:filePath:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 15,
+      "symbol": "SurveyType.text",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 16,
+      "symbol": "SurveyType.rating",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 17,
+      "symbol": "SurveyType.multipleChoice",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 76,
+      "symbol": "TextSurvey.init(id:imageUrl:originalImageUrl:question:surveyDescription:thumbImageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 89,
+      "symbol": "TextSurvey.init(dictionary:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 175,
+      "symbol": "RatingSurvey.init(id:imageUrl:maxText:maxValue:minText:minValue:originalImageUrl:question:surveyDescription:thumbImageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 193,
+      "symbol": "RatingSurvey.init(dictionary:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 249,
+      "symbol": "MultipleChoiceSurvey.ListType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 250,
+      "symbol": "MultipleChoiceSurvey.ListType.checkBox",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 251,
+      "symbol": "MultipleChoiceSurvey.ListType.radio",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 261,
+      "symbol": "MultipleChoiceSurvey.maxAnswers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 290,
+      "symbol": "MultipleChoiceSurvey.init(id:imageUrl:listType:maxAnswers:options:originalImageUrl:question:surveyDescription:thumbImageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 307,
+      "symbol": "MultipleChoiceSurvey.init(dictionary:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 397,
+      "symbol": "MultipleChoiceSurvey.Option.init(id:imageUrl:isOther:label:originalImageUrl:thumbImageUrl:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/Survey.swift",
+      "line": 419,
+      "symbol": "MultipleChoiceSurvey.Option.init(dictionary:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/UpgradeCheck.swift",
+      "line": 17,
+      "symbol": "UpgradeCheck.Action.none",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/UpgradeCheck.swift",
+      "line": 18,
+      "symbol": "UpgradeCheck.Action.requiredUpgrade",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/UpgradeCheck.swift",
+      "line": 19,
+      "symbol": "UpgradeCheck.Action.suggestedUpgrade",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/UpgradeCheck.swift",
+      "line": 28,
+      "symbol": "UpgradeCheck.init(upgradeAction:downloadLink:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Models/User.swift",
+      "line": 24,
+      "symbol": "UserIdentity.init(uid:provider:displayName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Utils/NativeExtensions.swift",
+      "line": 19,
+      "symbol": "CoreNotification",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore/CheetahDigitalCore/Utils/NativeExtensions.swift",
+      "line": 21,
+      "symbol": "CoreNotification.APIAccessTokenDidBecomeInvalid",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalCore"
+}

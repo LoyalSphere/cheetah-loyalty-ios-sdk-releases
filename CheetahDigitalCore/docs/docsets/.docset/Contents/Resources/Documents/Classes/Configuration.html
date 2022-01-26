@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Configuration Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Configuration" class="dashAnchor"></a>
+    <a title="Configuration Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        Configuration Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../API.html">API</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/API.html">API</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIResponse.html">APIResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration/DefaultsKeys.html">– DefaultsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONDecoder.html">JSONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ListInfo.html">ListInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../API.html#/s:18CheetahDigitalCore18ResponseCompletiona">ResponseCompletion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ResponseError.html">ResponseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ResponseError/ResponseSerializationFailureReason.html">– ResponseSerializationFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UserLocation.html">UserLocation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../URL%20and%20URLRequest%20Convertibles.html">URL and URLRequest Convertibles</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Activities.html">Activities</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ActivitiesAPI.html">ActivitiesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ActivitiesRequest.html">ActivitiesRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Activity.html">Activity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Activity/Detail.html">– Detail</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Authentication.html">Authentication</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthenticationAPI.html">AuthenticationAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AuthenticationAPI/SocialLoginType.html">– SocialLoginType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AuthenticationAPI/SignUpParameterKeys.html">– SignUpParameterKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AuthenticationInfo.html">AuthenticationInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AuthenticationInfo/SettingsKeys.html">– SettingsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AuthenticationRequest.html">AuthenticationRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Badges.html">Badges</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Badge.html">Badge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BadgesAPI.html">BadgesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BadgesRequest.html">BadgesRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Challenges.html">Challenges</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Challenge.html">Challenge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Challenge/ResponseType.html">– ResponseType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Challenge/Response.html">– Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Challenge/ResponseInfo.html">– ResponseInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Challenge/MetricPrize.html">– MetricPrize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ChallengesAPI.html">ChallengesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ChallengesRequest.html">ChallengesRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultipleChoiceSurvey.html">MultipleChoiceSurvey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultipleChoiceSurvey/ListType.html">– ListType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultipleChoiceSurvey/Option.html">– Option</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Poll.html">Poll</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Poll/Result.html">– Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Prize.html">Prize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RatingSurvey.html">RatingSurvey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Challenges.html#/s:18CheetahDigitalCore14SecondaryPrizeP">SecondaryPrize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Survey.html">Survey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/SurveyType.html">SurveyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TextSurvey.html">TextSurvey</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Challenge%20Response%20Settings.html">Challenge Response Settings</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ARChallengeResponseSetting.html">ARChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ARDefinition.html">ARDefinition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Challenge%20Response%20Settings.html#/s:18CheetahDigitalCore24ChallengeResponseSettingP">ChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CheckInChallengeResponseSetting.html">CheckInChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GameChallengeResponseSetting.html">GameChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GameChallengeResponseSetting/Game.html">– Game</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GenericChallengeResponseSetting.html">GenericChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JoinGroupChallengeResponseSetting.html">JoinGroupChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MemeChallengeResponseSetting.html">MemeChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MemeChallengeResponseSetting/Subtype.html">– Subtype</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultiQuestionChallengeResponseSetting.html">MultiQuestionChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PhotoChallengeResponseSetting.html">PhotoChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ReferralChallengeResponseSetting.html">ReferralChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SocialMediaChallengeResponseSetting.html">SocialMediaChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SurveyChallengeResponseSetting.html">SurveyChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SurveyChallengeResponseSetting/QuestionType.html">– QuestionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UpdateProfileChallengeResponseSetting.html">UpdateProfileChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UpdateProfileChallengeResponseSetting/SubType.html">– SubType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UpdateProfileChallengeResponseSetting/Attribute.html">– Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VideoChallengeResponseSetting.html">VideoChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ViewContentChallengeResponseSetting.html">ViewContentChallengeResponseSetting</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ViewContentChallengeResponseSetting/Subtype.html">– Subtype</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Codes.html">Codes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Code.html">Code</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CodesAPI.html">CodesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CodesRequest.html">CodesRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Content.html">Content</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ContentAPI.html">ContentAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentPage.html">ContentPage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentPage/StaticFile.html">– StaticFile</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ContentRequest.html">ContentRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentToken.html">ContentToken</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentToken/Value.html">– Value</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StaticFile.html">StaticFile</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Events.html">Events</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Event/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Event/Date.html">– Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Event/Response.html">– Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventsAPI.html">EventsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventsRequest.html">EventsRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Host.html">Host</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Host/Profile.html">– Profile</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Feedbacks.html">Feedbacks</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/FeedbackCategory.html">FeedbackCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FeedbackItem.html">FeedbackItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/FeedbackItem/FeedbackType.html">– FeedbackType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeedbacksAPI.html">FeedbacksAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeedbacksRequest.html">FeedbacksRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Friends.html">Friends</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/FacebookFriend.html">FacebookFriend</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FriendsAPI.html">FriendsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FriendsRequest.html">FriendsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Gift%20Cards.html">Gift Cards</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/GiftCard.html">GiftCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GiftCard/TransactionType.html">– TransactionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GiftCard/Transaction.html">– Transaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GiftCard/GiftCardClass.html">– GiftCardClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GiftCardsAPI.html">GiftCardsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GiftCardsRequest.html">GiftCardsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Groups.html">Groups</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Group.html">Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GroupClass.html">GroupClass</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GroupsAPI.html">GroupsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GroupsRequest.html">GroupsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Household.html">Household</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HouseholdAPI.html">HouseholdAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HouseholdRequest.html">HouseholdRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Leaderboards.html">Leaderboards</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Leaderboard.html">Leaderboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Leaderboard/Feed.html">– Feed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LeaderboardsAPI.html">LeaderboardsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LeaderboardsRequest.html">LeaderboardsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Members.html">Members</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Member.html">Member</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Member/ConnectionStatus.html">– ConnectionStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MembersAPI.html">MembersAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MembersRequest.html">MembersRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Messages.html">Messages</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Message.html">Message</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Message/Attachment.html">– Attachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Message/Action.html">– Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MessagesAPI.html">MessagesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MessagesRequest.html">MessagesRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MessagesRequest/TrackAction.html">– TrackAction</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../News%20Feed.html">News Feed</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Comment.html">Comment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Commenter.html">Commenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NewsFeed.html">NewsFeed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NewsFeedAPI.html">NewsFeedAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NewsFeedRequest.html">NewsFeedRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Post.html">Post</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Post/Owner.html">– Owner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Post/Flag.html">– Flag</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Offers.html">Offers</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Offer.html">Offer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Offer/OfferType.html">– OfferType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Offer/Response.html">– Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Offer/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Offer/TargetObject.html">– TargetObject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Offer/ResponseInfo.html">– ResponseInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OffersAPI.html">OffersAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OffersRequest.html">OffersRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Places.html">Places</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/OperatingDay.html">OperatingDay</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OperatingDay/Hours.html">– Hours</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Place.html">Place</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Place/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Place/ClientEventType.html">– ClientEventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlacesAPI.html">PlacesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PlacesRequest.html">PlacesRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Preferences.html">Preferences</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Preference.html">Preference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Preference/Domain.html">– Domain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PreferencesAPI.html">PreferencesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PreferencesRequest.html">PreferencesRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Products.html">Products</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Order.html">Order</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Order/Item.html">– Item</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Order/Place.html">– Place</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product.html">Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Attribute.html">– Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/AttributeOption.html">– AttributeOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Configuration.html">– Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Component.html">– Component</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductsAPI.html">ProductsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductsRequest.html">ProductsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Profile.html">Profile</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary.html">AccountSummary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/Member.html">– Member</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/Metric.html">– Metric</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/MemberBadge.html">– MemberBadge</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/TierInfo.html">– TierInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/CurrentTier.html">– CurrentTier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/Tier.html">– Tier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/MetricThreshold.html">– MetricThreshold</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProfileAPI.html">ProfileAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProfileAttribute.html">ProfileAttribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProfileAttribute/Domain.html">– Domain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ProfileAttribute/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProfileRequest.html">ProfileRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UserIdentity.html">UserIdentity</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Punch%20Cards.html">Punch Cards</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/PunchCard.html">PunchCard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PunchCard/Detail.html">– Detail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PunchCard/PunchCardType.html">– PunchCardType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PunchCard/Punch.html">– Punch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PunchCard/Reward.html">– Reward</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PunchCard/Place.html">– Place</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PunchCardsAPI.html">PunchCardsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PunchCardsRequest.html">PunchCardsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Receipts.html">Receipts</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Receipt.html">Receipt</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Receipt/Item.html">– Item</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ReceiptsAPI.html">ReceiptsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ReceiptsRequest.html">ReceiptsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Referrals.html">Referrals</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ReferralsAPI.html">ReferralsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ReferralsRequest.html">ReferralsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Rewards.html">Rewards</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Award.html">Award</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Award/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Certificate.html">Certificate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Coupon.html">Coupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward.html">Reward</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/RewardType.html">– RewardType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/RedemptionOptions.html">– RedemptionOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/Class.html">– Class</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/Response.html">– Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/ResponseInfo.html">– ResponseInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/Attribute.html">– Attribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/AttributeCombination.html">– AttributeCombination</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reward/AttributeOption.html">– AttributeOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RewardsAPI.html">RewardsAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RewardsRequest.html">RewardsRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Objects.html">Other Objects</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/RespondableInfo.html">RespondableInfo</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Enums.html">Other Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/CoreNotification.html">CoreNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DevicesAPI.html">DevicesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DevicesRequest.html">DevicesRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InfoAPI.html">InfoAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InfoRequest.html">InfoRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MetaReferencesAPI.html">MetaReferencesAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MetaReferencesRequest.html">MetaReferencesRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UpgradeCheckAPI.html">UpgradeCheckAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UpgradeCheckRequest.html">UpgradeCheckRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Extensions.html">Other Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Protocols.html">Other Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MutableProfileAttribute.html">MutableProfileAttribute</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Protocols.html#/s:18CheetahDigitalCore31UpdateProfileChallengeAttributeP">UpdateProfileChallengeAttribute</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/APIError.html">APIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CountriesStates.html">CountriesStates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Country.html">Country</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Country/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NearbyPlaces.html">NearbyPlaces</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UpgradeCheck.html">UpgradeCheck</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UpgradeCheck/Action.html">– Action</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Configuration</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Configuration</span> <span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents the configuration to be used for the Cheetah Loyalty Framework</p>
+
+<p>This loads configuration values from the <code>CheetahDigital-Info.plist</code> file from the main bundle.
+A missing or incomplete <code>CheetahDigital-Info.plist</code> file will cause a precondition failure.
+The list of property keys is defined in <code><a href="../Classes/Configuration/CodingKeys.html">Configuration.CodingKeys</a></code>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC6sharedACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC6sharedACvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The shared instance of <code>Configuration</code> which contains the configuration values from the <code>CheetahDigital-Info.plist</code> file from the main bundle.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    A missing or incomplete <code>CheetahDigital-Info.plist</code> file will cause a precondition failure.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">Configuration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC13userAgentNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/userAgentName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC13userAgentNameSSvp">userAgentName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The user agent name for the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">userAgentName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC8clientIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/clientId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC8clientIdSSvp">clientId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The API KEY for the Loyalty API</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">clientId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC12clientSecretSSvp"></a>
+                    <a name="//apple_ref/swift/Property/clientSecret" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC12clientSecretSSvp">clientSecret</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The API SECRET KEY for the Loyalty API</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">clientSecret</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC9clientUrlSSvp"></a>
+                    <a name="//apple_ref/swift/Property/clientUrl" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC9clientUrlSSvp">clientUrl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The URL of the Loyalty API gateway</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">clientUrl</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC6metricSSvp"></a>
+                    <a name="//apple_ref/swift/Property/metric" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC6metricSSvp">metric</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The API metric</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">metric</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC19isGeofencingEnabledSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isGeofencingEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC19isGeofencingEnabledSbvp">isGeofencingEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean flag that indicates whether geofencing is enabled</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">isGeofencingEnabled</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC12businessUnitSSvp"></a>
+                    <a name="//apple_ref/swift/Property/businessUnit" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC12businessUnitSSvp">businessUnit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>String indicating the business unit</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">businessUnit</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC21isAccessTokenExternalSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isAccessTokenExternal" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC21isAccessTokenExternalSbvp">isAccessTokenExternal</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean flag that indicates whether the access token is from an external source</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">isAccessTokenExternal</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC10CodingKeysO"></a>
+                    <a name="//apple_ref/swift/Enum/CodingKeys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC10CodingKeysO">CodingKeys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enumeration of configuration properties used for entity mapping.</p>
+
+                        <a href="../Classes/Configuration/CodingKeys.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">CodingKeys</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="kt">CodingKey</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC12DefaultsKeysO"></a>
+                    <a name="//apple_ref/swift/Enum/DefaultsKeys" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC12DefaultsKeysO">DefaultsKeys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Keys used for values stored in the standard <code>UserDefaults</code>.</p>
+
+<ul>
+<li>sendLocationAnonymously:  Key to store a <code>Bool</code> indicating if the user should send their location anonymously.</li>
+<li>lastActiveTrackingDate:   Key to store the <code>Date</code> of when the user was last tracked active.</li>
+<li>registeredDeviceToken: Key to store the <code>String</code> of the registered device token for push notification.</li>
+<li>hasLaunchedOnce: Key to store a <code>Bool</code> indicating if the app has launched at least once. This is cleared on uninstallation of the app.</li>
+</ul>
+
+                        <a href="../Classes/Configuration/DefaultsKeys.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">DefaultsKeys</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC13userAgentName8clientId0H6Secret0H3Url6metric12businessUnit19isGeofencingEnabled0O19AccessTokenExternalACSS_S5SS2btcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(userAgentName:clientId:clientSecret:clientUrl:metric:businessUnit:isGeofencingEnabled:isAccessTokenExternal:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC13userAgentName8clientId0H6Secret0H3Url6metric12businessUnit19isGeofencingEnabled0O19AccessTokenExternalACSS_S5SS2btcfc">init(userAgentName:<wbr>clientId:<wbr>clientSecret:<wbr>clientUrl:<wbr>metric:<wbr>businessUnit:<wbr>isGeofencingEnabled:<wbr>isAccessTokenExternal:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">userAgentName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">clientId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">clientSecret</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">clientUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">metric</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">businessUnit</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+            <span class="nv">isGeofencingEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+            <span class="nv">isAccessTokenExternal</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC16getDefaultsValue3forypSgAC0F4KeysO_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getDefaultsValue(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC16getDefaultsValue3forypSgAC0F4KeysO_tFZ">getDefaultsValue(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets the value for a <code><a href="../Classes/Configuration/DefaultsKeys.html">DefaultsKeys</a></code> from the standard <code>UserDefaults</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getDefaultsValue</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/Configuration/DefaultsKeys.html">DefaultsKeys</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key as <code><a href="../Classes/Configuration/DefaultsKeys.html">DefaultsKeys</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The value corresponding to the key as <code>Any</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:18CheetahDigitalCore13ConfigurationC11setDefaults5value3foryypSg_AC0F4KeysOtFZ"></a>
+                    <a name="//apple_ref/swift/Method/setDefaults(value:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore13ConfigurationC11setDefaults5value3foryypSg_AC0F4KeysOtFZ">setDefaults(value:<wbr>for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the value for a <code><a href="../Classes/Configuration/DefaultsKeys.html">DefaultsKeys</a></code> to the standard <code>UserDefaults</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">setDefaults</span><span class="p">(</span><span class="nv">value</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?,</span> <span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Classes/Configuration/DefaultsKeys.html">DefaultsKeys</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The value to be set in the standard <code>UserDefaults</code>.
+   If the value is nil, it removes the currently set object for the key from the standard <code>UserDefaults</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The key as <code><a href="../Classes/Configuration/DefaultsKeys.html">DefaultsKeys</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2022-01-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,3309 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahDigitalCore
+@_exported import CheetahDigitalCore
+import CheetahDigitalUtils
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+extension CheetahDigitalCore.Challenge {
+  public struct Response : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var attachmentUrl: Swift.String
+    public var response: Swift.String
+    public var status: Swift.String
+    public var dateCreated: Swift.String
+    public var challenge: CheetahDigitalCore.Challenge?
+    public var prizes: [CheetahDigitalCore.Prize]
+    public init(id: Swift.Int, attachmentUrl: Swift.String, response: Swift.String, status: Swift.String, dateCreated: Swift.String, challenge: CheetahDigitalCore.Challenge?, prizes: [CheetahDigitalCore.Prize])
+    public static func == (a: CheetahDigitalCore.Challenge.Response, b: CheetahDigitalCore.Challenge.Response) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+extension CheetahDigitalCore.Challenge.Response {
+  public init(from decoder: Swift.Decoder) throws
+  public init(id: Swift.Int, status: Swift.String)
+}
+public protocol SecondaryPrize : Swift.Decodable, Swift.Encodable {
+}
+extension CheetahDigitalCore.Reward : CheetahDigitalCore.SecondaryPrize {
+}
+extension CheetahDigitalCore.Challenge {
+  public struct ResponseInfo : Swift.Codable, Swift.Equatable {
+    public var response: CheetahDigitalCore.Challenge.Response?
+    public var isRespondable: Swift.Bool
+    public var respondableInfo: CheetahDigitalCore.RespondableInfo?
+    public var responseMessage: Swift.String
+    public var secondaryPrize: CheetahDigitalCore.SecondaryPrize?
+    public var prizeId: Swift.Int
+    public var prize: Swift.String
+    public var prizeInstances: Swift.Int
+    public init(response: CheetahDigitalCore.Challenge.Response?, isRespondable: Swift.Bool, respondableInfo: CheetahDigitalCore.RespondableInfo?, responseMessage: Swift.String, secondaryPrize: CheetahDigitalCore.SecondaryPrize?, prizeId: Swift.Int, prize: Swift.String, prizeInstances: Swift.Int)
+    public static func == (lhs: CheetahDigitalCore.Challenge.ResponseInfo, rhs: CheetahDigitalCore.Challenge.ResponseInfo) -> Swift.Bool
+  }
+  public struct MetricPrize : CheetahDigitalCore.SecondaryPrize, Swift.Equatable {
+    public var metric: Swift.String
+    public var point: Swift.String
+    public init(metric: Swift.String, point: Swift.String)
+    public static func == (a: CheetahDigitalCore.Challenge.MetricPrize, b: CheetahDigitalCore.Challenge.MetricPrize) -> Swift.Bool
+  }
+}
+extension CheetahDigitalCore.Challenge.ResponseInfo {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Challenge.MetricPrize {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct Prize : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var label: Swift.String
+  public var imageUrl: Swift.String
+  public var thumbImageUrl: Swift.String
+  public var internalName: Swift.String
+  public var prizeType: Swift.String
+  public var prize: Swift.String
+  public var prizeInstances: Swift.Int
+  public init(id: Swift.Int, label: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, internalName: Swift.String, prizeType: Swift.String, prize: Swift.String, prizeInstances: Swift.Int)
+  public static func == (a: CheetahDigitalCore.Prize, b: CheetahDigitalCore.Prize) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Prize {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum ChallengesRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getChallenges(parameters: CheetahDigitalUtils.Parameters?)
+  case getFavedChallenges(parameters: CheetahDigitalUtils.Parameters?)
+  case getAlertChallenges(parameters: CheetahDigitalUtils.Parameters?)
+  case getChallenge(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case getChallengeWithLocation(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?, location: (latitude: Swift.Double, longitude: Swift.Double))
+  case getChallengeWithName(name: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case getChallengeResponses(parameters: CheetahDigitalUtils.Parameters?)
+  case getChallengeResponse(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case favoriteChallenge(id: Swift.Int)
+  case unfavoriteChallenge(id: Swift.Int)
+  case respondToChallenge(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case respondToChallengeWithImage(id: Swift.Int, image: UIKit.UIImage, parameters: CheetahDigitalUtils.Parameters?)
+  case respondToChallengeWithVideo(id: Swift.Int, videoUrl: Foundation.URL, parameters: CheetahDigitalUtils.Parameters?)
+  case reEnterResponseToChallenge(id: Swift.Int, responseId: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case reEnterResponseToChallengeWithImage(id: Swift.Int, responseId: Swift.Int, image: UIKit.UIImage, parameters: CheetahDigitalUtils.Parameters?)
+  case reEnterResponseToChallengeWithVideo(id: Swift.Int, responseId: Swift.Int, videoUrl: Foundation.URL, parameters: CheetahDigitalUtils.Parameters?)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var headers: CheetahDigitalUtils.HTTPHeaders? {
+    get
+  }
+  public var multipartAttachments: CheetahDigitalUtils.MultipartAttachments? {
+    get
+  }
+}
+public enum ChallengesAPI {
+  public static func getChallenges(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Challenge]> = nil)
+  public static func getFavedChallenges(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Challenge]> = nil)
+  public static func getAlertChallenges(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Challenge]> = nil)
+  public static func getChallenge(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Challenge> = nil)
+  public static func getChallengeWithLocation(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, location: (latitude: Swift.Double, longitude: Swift.Double), completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Challenge> = nil)
+  public static func getChallenge(name: Swift.String, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Challenge> = nil)
+  public static func getChallengeResponses(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Challenge.Response]> = nil)
+  public static func getChallengeResponse(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Challenge.Response> = nil)
+  public static func favoriteChallenge(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func unfavoriteChallenge(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func respondToChallenge(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Challenge.ResponseInfo> = nil)
+  public static func respondToChallengeWithImage(id: Swift.Int, image: UIKit.UIImage, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Challenge.ResponseInfo> = nil)
+  public static func respondToChallengeWithVideo(id: Swift.Int, videoUrl: Foundation.URL, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Challenge.ResponseInfo> = nil)
+  public static func reEnterResponseToChallenge(id: Swift.Int, responseId: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Challenge.ResponseInfo> = nil)
+  public static func reEnterResponseToChallengeWithImage(id: Swift.Int, responseId: Swift.Int, image: UIKit.UIImage, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Challenge.ResponseInfo> = nil)
+  public static func reEnterResponseToChallengeWithVideo(id: Swift.Int, responseId: Swift.Int, videoUrl: Foundation.URL, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Challenge.ResponseInfo> = nil)
+}
+public enum SurveyType : Swift.String, Swift.Codable, Swift.Equatable {
+  case text
+  case rating
+  case multipleChoice
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol Survey : Swift.Decodable, Swift.Encodable {
+  var id: Swift.Int { get set }
+  var imageUrl: Swift.String { get set }
+  var originalImageUrl: Swift.String { get set }
+  var question: Swift.String { get set }
+  var surveyDescription: Swift.String { get set }
+  var surveyType: CheetahDigitalCore.SurveyType { get }
+  var thumbImageUrl: Swift.String { get set }
+}
+public struct TextSurvey : CheetahDigitalCore.Survey, Swift.Equatable {
+  public var id: Swift.Int
+  public var imageUrl: Swift.String
+  public var originalImageUrl: Swift.String
+  public var question: Swift.String
+  public var surveyDescription: Swift.String
+  public var surveyType: CheetahDigitalCore.SurveyType {
+    get
+  }
+  public var thumbImageUrl: Swift.String
+  public init(id: Swift.Int, imageUrl: Swift.String, originalImageUrl: Swift.String, question: Swift.String, surveyDescription: Swift.String, thumbImageUrl: Swift.String)
+  public static func == (a: CheetahDigitalCore.TextSurvey, b: CheetahDigitalCore.TextSurvey) -> Swift.Bool
+}
+extension CheetahDigitalCore.TextSurvey {
+  public init(dictionary: [Swift.String : Any])
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct RatingSurvey : CheetahDigitalCore.Survey, Swift.Equatable {
+  public var id: Swift.Int
+  public var imageUrl: Swift.String
+  public var maxText: Swift.String
+  public var maxValue: Swift.Int
+  public var minText: Swift.String
+  public var minValue: Swift.Int
+  public var originalImageUrl: Swift.String
+  public var question: Swift.String
+  public var surveyDescription: Swift.String
+  public var surveyType: CheetahDigitalCore.SurveyType {
+    get
+  }
+  public var thumbImageUrl: Swift.String
+  public init(id: Swift.Int, imageUrl: Swift.String, maxText: Swift.String, maxValue: Swift.Int, minText: Swift.String, minValue: Swift.Int, originalImageUrl: Swift.String, question: Swift.String, surveyDescription: Swift.String, thumbImageUrl: Swift.String)
+  public static func == (a: CheetahDigitalCore.RatingSurvey, b: CheetahDigitalCore.RatingSurvey) -> Swift.Bool
+}
+extension CheetahDigitalCore.RatingSurvey {
+  public init(dictionary: [Swift.String : Any])
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct MultipleChoiceSurvey : CheetahDigitalCore.Survey, Swift.Equatable {
+  public enum ListType : Swift.String, Swift.Codable {
+    case checkBox
+    case radio
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var id: Swift.Int
+  public var imageUrl: Swift.String
+  public var listType: CheetahDigitalCore.MultipleChoiceSurvey.ListType
+  public var maxAnswers: Swift.Int
+  public var options: [CheetahDigitalCore.MultipleChoiceSurvey.Option]
+  public var originalImageUrl: Swift.String
+  public var question: Swift.String
+  public var surveyDescription: Swift.String
+  public var surveyType: CheetahDigitalCore.SurveyType {
+    get
+  }
+  public var thumbImageUrl: Swift.String
+  public init(id: Swift.Int, imageUrl: Swift.String, listType: CheetahDigitalCore.MultipleChoiceSurvey.ListType, maxAnswers: Swift.Int, options: [CheetahDigitalCore.MultipleChoiceSurvey.Option], originalImageUrl: Swift.String, question: Swift.String, surveyDescription: Swift.String, thumbImageUrl: Swift.String)
+  public static func == (a: CheetahDigitalCore.MultipleChoiceSurvey, b: CheetahDigitalCore.MultipleChoiceSurvey) -> Swift.Bool
+}
+extension CheetahDigitalCore.MultipleChoiceSurvey {
+  public init(dictionary: [Swift.String : Any])
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.MultipleChoiceSurvey {
+  public struct Option : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var imageUrl: Swift.String
+    public var isOther: Swift.Bool
+    public var label: Swift.String
+    public var originalImageUrl: Swift.String
+    public var thumbImageUrl: Swift.String
+    public init(id: Swift.Int, imageUrl: Swift.String, isOther: Swift.Bool, label: Swift.String, originalImageUrl: Swift.String, thumbImageUrl: Swift.String)
+    public static func == (a: CheetahDigitalCore.MultipleChoiceSurvey.Option, b: CheetahDigitalCore.MultipleChoiceSurvey.Option) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+extension CheetahDigitalCore.MultipleChoiceSurvey.Option {
+  public init(dictionary: [Swift.String : Any])
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Receipt : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var createdAt: Swift.String
+  public var updatedAt: Swift.String
+  public var createdBy: Swift.String
+  public var lastUpdatedBy: Swift.String
+  public var receiptUrl: Swift.String
+  public var orNumber: Swift.String
+  public var orDate: Swift.String
+  public var vendor: Swift.String
+  public var status: Swift.String
+  public var outcome: Swift.String
+  public var amountPaid: Swift.String
+  public var metricAmount: Swift.String
+  public var activitySubmitted: Swift.Bool
+  public var metricName: Swift.String
+  public var uploadedVia: Swift.String
+  public var processingType: Swift.String
+  public var comment: Swift.String
+  public var receiptItems: [CheetahDigitalCore.Receipt.Item]
+  public init(id: Swift.Int, createdAt: Swift.String, updatedAt: Swift.String, createdBy: Swift.String, lastUpdatedBy: Swift.String, receiptUrl: Swift.String, orNumber: Swift.String, orDate: Swift.String, vendor: Swift.String, status: Swift.String, outcome: Swift.String, amountPaid: Swift.String, metricAmount: Swift.String, activitySubmitted: Swift.Bool, metricName: Swift.String, uploadedVia: Swift.String, processingType: Swift.String, comment: Swift.String, receiptItems: [CheetahDigitalCore.Receipt.Item])
+  public struct Item : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var codeId: Swift.Int
+    public var scannedCode: Swift.String
+    public var scannedCodeDescription: Swift.String
+    public var scannedCodeLabel: Swift.String
+    public var amount: Swift.String
+    public var submissionType: Swift.String
+    public var createdAt: Swift.String
+    public var updatedAt: Swift.String
+    public var metricName: Swift.String
+    public var metricAmount: Swift.String
+    public var comment: Swift.String
+    public init(id: Swift.Int, codeId: Swift.Int, scannedCode: Swift.String, scannedCodeDescription: Swift.String, scannedCodeLabel: Swift.String, amount: Swift.String, submissionType: Swift.String, createdAt: Swift.String, updatedAt: Swift.String, metricName: Swift.String, metricAmount: Swift.String, comment: Swift.String)
+    public static func == (a: CheetahDigitalCore.Receipt.Item, b: CheetahDigitalCore.Receipt.Item) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.Receipt, b: CheetahDigitalCore.Receipt) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Receipt {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Receipt.Item {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum ReferralsRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case generateReferralCode
+  public var path: Swift.String {
+    get
+  }
+  public static func == (a: CheetahDigitalCore.ReferralsRequest, b: CheetahDigitalCore.ReferralsRequest) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ReferralsAPI {
+  public static func generateReferralCode(completion: CheetahDigitalCore.ResponseCompletion<[[Swift.String : Swift.String]]> = nil)
+  public static func submitReferralCode(_ referralCode: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func getReferralContentToken(completion: CheetahDigitalCore.ResponseCompletion<[Swift.String : CheetahDigitalCore.ContentToken.Value]> = nil)
+}
+public struct PunchCard : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var name: Swift.String
+  public var label: Swift.String
+  public var status: Swift.String
+  public var description: Swift.String
+  public var requiredPunches: Swift.Int
+  public var effectivityStart: Swift.String
+  public var effectivityEnd: Swift.String
+  public var usageStartDate: Swift.String
+  public var usageEndDate: Swift.String
+  public var usageSchedule: Swift.String
+  public var heading: Swift.String
+  public var subheading: Swift.String
+  public var body: Swift.String
+  public var details: Swift.String
+  public var imageUrl: Swift.String
+  public var thumbImageUrl: Swift.String
+  public var originalImageUrl: Swift.String
+  public var subject: Swift.String
+  public var action: Swift.String
+  public var headingColor: Swift.String
+  public var color: Swift.String
+  public var bgColor: Swift.String
+  public var headingBgColor: Swift.String
+  public var image1Bg: Swift.String
+  public var layoutId: Swift.String
+  public var punches: Swift.Int
+  public var startDate: Swift.String
+  public var expiration: Swift.String
+  public var punchDetail: [CheetahDigitalCore.PunchCard.Detail]
+  public var punchCardType: CheetahDigitalCore.PunchCard.PunchCardType?
+  public init(id: Swift.Int, name: Swift.String, label: Swift.String, status: Swift.String, description: Swift.String, requiredPunches: Swift.Int, effectivityStart: Swift.String, effectivityEnd: Swift.String, usageStartDate: Swift.String, usageEndDate: Swift.String, usageSchedule: Swift.String, heading: Swift.String, subheading: Swift.String, body: Swift.String, details: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String, subject: Swift.String, action: Swift.String, headingColor: Swift.String, color: Swift.String, bgColor: Swift.String, headingBgColor: Swift.String, image1Bg: Swift.String, layoutId: Swift.String, punches: Swift.Int, startDate: Swift.String, expiration: Swift.String, punchDetail: [CheetahDigitalCore.PunchCard.Detail], punchCardType: CheetahDigitalCore.PunchCard.PunchCardType?)
+  public struct Detail : Swift.Codable, Swift.Equatable {
+    public var name: Swift.String
+    public var punches: Swift.Int
+    public var punchedDate: Swift.String
+    public var label: Swift.String
+    public var imageUrl: Swift.String
+    public init(name: Swift.String, punches: Swift.Int, punchedDate: Swift.String, label: Swift.String, imageUrl: Swift.String)
+    public static func == (a: CheetahDigitalCore.PunchCard.Detail, b: CheetahDigitalCore.PunchCard.Detail) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct PunchCardType : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var name: Swift.String
+    public var description: Swift.String
+    public var requiredPunches: Swift.Int
+    public var created: Swift.String
+    public var publishedAt: Swift.String
+    public var status: Swift.String
+    public var expirationType: Swift.String
+    public var effectivityStart: Swift.String
+    public var effectivityEnd: Swift.String
+    public var responseStartDate: Swift.String
+    public var responseEndDate: Swift.String
+    public var responseSchedule: Swift.String
+    public var respondable: Swift.Bool
+    public var respondableInfo: CheetahDigitalCore.RespondableInfo?
+    public var heading: Swift.String
+    public var subheading: Swift.String
+    public var body: Swift.String
+    public var details: Swift.String
+    public var imageUrl: Swift.String
+    public var thumbImageUrl: Swift.String
+    public var originalImageUrl: Swift.String
+    public var subject: Swift.String
+    public var action: Swift.String
+    public var headingColor: Swift.String
+    public var color: Swift.String
+    public var bgColor: Swift.String
+    public var headingBgColor: Swift.String
+    public var image1Bg: Swift.String
+    public var layoutId: Swift.String
+    public var punches: [CheetahDigitalCore.PunchCard.Punch]
+    public var rewards: [CheetahDigitalCore.PunchCard.Reward]
+    public var locations: [CheetahDigitalCore.PunchCard.Place]
+    public init(id: Swift.Int, label: Swift.String, name: Swift.String, description: Swift.String, requiredPunches: Swift.Int, created: Swift.String, publishedAt: Swift.String, status: Swift.String, expirationType: Swift.String, effectivityStart: Swift.String, effectivityEnd: Swift.String, responseStartDate: Swift.String, responseEndDate: Swift.String, responseSchedule: Swift.String, respondable: Swift.Bool, respondableInfo: CheetahDigitalCore.RespondableInfo?, heading: Swift.String, subheading: Swift.String, body: Swift.String, details: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String, subject: Swift.String, action: Swift.String, headingColor: Swift.String, color: Swift.String, bgColor: Swift.String, headingBgColor: Swift.String, image1Bg: Swift.String, layoutId: Swift.String, punches: [CheetahDigitalCore.PunchCard.Punch], rewards: [CheetahDigitalCore.PunchCard.Reward], locations: [CheetahDigitalCore.PunchCard.Place])
+    public static func == (a: CheetahDigitalCore.PunchCard.PunchCardType, b: CheetahDigitalCore.PunchCard.PunchCardType) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Punch : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var name: Swift.String
+    public var sequence: Swift.String
+    public var maxAllowed: Swift.Int
+    public var imageUrl: Swift.String
+    public var punches: Swift.Int
+    public var isPunched: Swift.Bool
+    public var type: Swift.String
+    public var index: Swift.Int
+    public init(id: Swift.Int, label: Swift.String, name: Swift.String, sequence: Swift.String, maxAllowed: Swift.Int, imageUrl: Swift.String, punches: Swift.Int, isPunched: Swift.Bool, type: Swift.String, index: Swift.Int)
+    public static func == (a: CheetahDigitalCore.PunchCard.Punch, b: CheetahDigitalCore.PunchCard.Punch) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Reward : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var punches: Swift.Int
+    public var prizeName: Swift.String
+    public var prizeDescription: Swift.String
+    public var prizeId: Swift.Int
+    public var prizeType: Swift.String
+    public var metricName: Swift.String
+    public var metricAmount: Swift.String
+    public var upgradeTier: Swift.Bool
+    public init(id: Swift.Int, punches: Swift.Int, prizeName: Swift.String, prizeDescription: Swift.String, prizeId: Swift.Int, prizeType: Swift.String, metricName: Swift.String, metricAmount: Swift.String, upgradeTier: Swift.Bool)
+    public static func == (a: CheetahDigitalCore.PunchCard.Reward, b: CheetahDigitalCore.PunchCard.Reward) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Place : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var name: Swift.String
+    public var label: Swift.String
+    public var placeId: Swift.String
+    public init(id: Swift.Int, name: Swift.String, label: Swift.String, placeId: Swift.String)
+    public static func == (a: CheetahDigitalCore.PunchCard.Place, b: CheetahDigitalCore.PunchCard.Place) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.PunchCard, b: CheetahDigitalCore.PunchCard) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.PunchCard {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.PunchCard.Detail {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.PunchCard.PunchCardType {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.PunchCard.Punch {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.PunchCard.Reward {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.PunchCard.Place {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Preference : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var name: Swift.String
+  public var label: Swift.String
+  public var desc: Swift.String
+  public var domains: [Swift.String]
+  public var detailedDomains: [CheetahDigitalCore.Preference.Domain]
+  public var selectedDomain: [Swift.String]
+  public var userDomains: [Swift.String]
+  public var addedDomains: [Swift.String]
+  public var isUnbounded: Swift.Bool
+  public var isMultiSelect: Swift.Bool
+  public var isToggle: Swift.Bool {
+    get
+  }
+  public var hasNoOption: Swift.Bool {
+    get
+  }
+  public var hasYesOption: Swift.Bool {
+    get
+  }
+  public var hasSelectedYes: Swift.Bool {
+    get
+  }
+  public init(id: Swift.Int, name: Swift.String, label: Swift.String, desc: Swift.String, domains: [Swift.String], detailedDomains: [CheetahDigitalCore.Preference.Domain], selectedDomain: [Swift.String], userDomains: [Swift.String], addedDomains: [Swift.String], isUnbounded: Swift.Bool, isMultiSelect: Swift.Bool)
+  public struct Domain : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var value: Swift.String
+    public var label: Swift.String
+    public var imageUrl: Swift.String
+    public var thumbImageUrl: Swift.String
+    public var originalImageUrl: Swift.String
+    public init(id: Swift.Int, value: Swift.String, label: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String)
+    public static func == (a: CheetahDigitalCore.Preference.Domain, b: CheetahDigitalCore.Preference.Domain) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public func checkIfDomainsContain(string: Swift.String, isSelected: Swift.Bool) -> Swift.Bool
+  public func hasSelected(domain: Swift.String) -> Swift.Bool
+  public func isDomainUserDefined(_ domain: Swift.String) -> Swift.Bool
+  public mutating func toggleSelectionFor(domain: Swift.String)
+  public mutating func addUserDomain(_ domain: Swift.String)
+  public mutating func removeUserDomain(_ domain: Swift.String)
+  public static func == (a: CheetahDigitalCore.Preference, b: CheetahDigitalCore.Preference) -> Swift.Bool
+}
+extension CheetahDigitalCore.Preference {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Preference.Domain {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Offer : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var action: Swift.String
+  public var barcode: Swift.String
+  public var barcodeStandard: Swift.String
+  public var body: Swift.String
+  public var categories: [CheetahDigitalCore.Offer.Category]
+  public var clipped: Swift.Bool
+  public var descriptionText: Swift.String
+  public var details: Swift.String
+  public var endDate: Swift.String
+  public var extraJSON: [Swift.String : CheetahDigitalUtils.AnyCodable]
+  public var heading: Swift.String
+  public var imageUrl: Swift.String
+  public var internalUrl: Swift.String
+  public var isFavorited: Swift.Bool
+  public var responses: [CheetahDigitalCore.Offer.Response]
+  public var startDate: Swift.String
+  public var subheading: Swift.String
+  public var targetObject: CheetahDigitalCore.Offer.TargetObject?
+  public var targetUrl: Swift.String
+  public var thumbnailUrl: Swift.String
+  public var type: CheetahDigitalCore.Offer.OfferType
+  public var url: Swift.String
+  public init(id: Swift.Int, action: Swift.String, barcode: Swift.String, barcodeStandard: Swift.String, body: Swift.String, categories: [CheetahDigitalCore.Offer.Category], clipped: Swift.Bool, descriptionText: Swift.String, details: Swift.String, endDate: Swift.String, extraJSON: [Swift.String : CheetahDigitalUtils.AnyCodable], heading: Swift.String, imageUrl: Swift.String, internalUrl: Swift.String, isFavorited: Swift.Bool, responses: [CheetahDigitalCore.Offer.Response], startDate: Swift.String, subheading: Swift.String, targetObject: CheetahDigitalCore.Offer.TargetObject?, targetUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahDigitalCore.Offer.OfferType, url: Swift.String)
+  public enum OfferType : Swift.Codable, Swift.Equatable {
+    case barcode
+    case certificate
+    case coupon
+    case details
+    case noAction
+    case stellar
+    case url
+    case custom(Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahDigitalCore.Offer.OfferType, b: CheetahDigitalCore.Offer.OfferType) -> Swift.Bool
+  }
+  public struct Response : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var certificate: CheetahDigitalCore.Certificate?
+    public var coupon: CheetahDigitalCore.Coupon?
+    public var offer: CheetahDigitalCore.Offer?
+    public var processingStatus: Swift.String
+    public var respondable: Swift.Bool
+    public var usageEndDate: Swift.String
+    public var usageStartDate: Swift.String
+    public init(id: Swift.Int, certificate: CheetahDigitalCore.Certificate?, coupon: CheetahDigitalCore.Coupon?, offer: CheetahDigitalCore.Offer?, processingStatus: Swift.String, respondable: Swift.Bool, usageEndDate: Swift.String, usageStartDate: Swift.String)
+    public static func == (a: CheetahDigitalCore.Offer.Response, b: CheetahDigitalCore.Offer.Response) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Category : Swift.Codable, Swift.Equatable {
+    public var imageUrl: Swift.String
+    public var key: Swift.String
+    public var label: Swift.String
+    public var thumbImageUrl: Swift.String
+    public init(imageUrl: Swift.String, key: Swift.String, label: Swift.String, thumbImageUrl: Swift.String)
+    public static func == (a: CheetahDigitalCore.Offer.Category, b: CheetahDigitalCore.Offer.Category) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct TargetObject : Swift.Codable, Swift.Equatable {
+    public var targetType: Swift.String
+    public var responseType: Swift.String
+    public var startPeriod: Swift.String
+    public var endPeriod: Swift.String
+    public var metric: Swift.String
+    public var metricName: Swift.String
+    public var metricAmount: Swift.String
+    public var metricDisplayName: Swift.String
+    public var respondable: Swift.Bool
+    public var heading: Swift.String
+    public var body: Swift.String
+    public var details: Swift.String
+    public var subheading: Swift.String
+    public var imageUrl: Swift.String
+    public var thumbImageUrl: Swift.String
+    public init(targetType: Swift.String, responseType: Swift.String, startPeriod: Swift.String, endPeriod: Swift.String, metric: Swift.String, metricName: Swift.String, metricAmount: Swift.String, metricDisplayName: Swift.String, respondable: Swift.Bool, heading: Swift.String, body: Swift.String, details: Swift.String, subheading: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String)
+    public static func == (a: CheetahDigitalCore.Offer.TargetObject, b: CheetahDigitalCore.Offer.TargetObject) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ResponseInfo : Swift.Codable, Swift.Equatable {
+    public let id: Swift.Int
+    public var certificate: CheetahDigitalCore.Certificate?
+    public var coupon: CheetahDigitalCore.Coupon?
+    public let respondable: Swift.Bool
+    public let respondableInfo: CheetahDigitalCore.RespondableInfo?
+    public init(id: Swift.Int, certificate: CheetahDigitalCore.Certificate?, coupon: CheetahDigitalCore.Coupon?, respondable: Swift.Bool, respondableInfo: CheetahDigitalCore.RespondableInfo?)
+    public static func == (a: CheetahDigitalCore.Offer.ResponseInfo, b: CheetahDigitalCore.Offer.ResponseInfo) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.Offer, b: CheetahDigitalCore.Offer) -> Swift.Bool
+}
+extension CheetahDigitalCore.Offer {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Offer.Response {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Offer.Category {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Offer.TargetObject {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Offer.ResponseInfo {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum MembersRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getConnections(parameters: CheetahDigitalUtils.Parameters?)
+  case getMembers(parameters: CheetahDigitalUtils.Parameters?)
+  case acceptConnection(memberID: Swift.String)
+  case connect(memberID: Swift.String, message: Swift.String)
+  case get(memberID: Swift.String)
+  case encrypt(memberAttribute: Swift.String)
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum MembersAPI {
+  public static func getConnections(with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Member]> = nil)
+  public static func getMembers(with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Member]> = nil)
+  public static func acceptConnection(memberID: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func connect(memberID: Swift.String, message: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func get(memberID: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Member> = nil)
+  public static func encrypt(memberAttribute: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+}
+public struct Challenge : Swift.Codable {
+  public enum ResponseType : Swift.String, Swift.Codable {
+    case augmentedReality
+    case checkIn
+    case game
+    case generic
+    case joinGroup
+    case meme
+    case multiQuestion
+    case photo
+    case referral
+    case socialMedia
+    case survey
+    case updateAvatar
+    case updateProfile
+    case video
+    case viewContent
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var id: Swift.Int
+  public var acceptanceText: Swift.String
+  public var acceptanceUrl: Swift.String
+  public var action: Swift.String
+  public var awardAmount: Swift.String
+  public var body: Swift.String
+  public var businessValue: Swift.String
+  public var details: Swift.String
+  public var endPeriod: Swift.String
+  public var heading: Swift.String
+  public var imageUrl: Swift.String
+  public var internalUrl: Swift.String
+  public var isAcceptanceRequired: Swift.Bool
+  public var isFavorited: Swift.Bool
+  public var isRespondable: Swift.Bool
+  public var name: Swift.String
+  public var metric: Swift.String
+  public var metricAmount: Swift.String
+  public var metricDisplayName: Swift.String
+  public var metricName: Swift.String
+  public var originalImageUrl: Swift.String
+  public var polls: [CheetahDigitalCore.Poll]
+  public var prizeId: Swift.Int
+  public var prizes: [CheetahDigitalCore.Prize]
+  public var prizesJsonString: Swift.String {
+    get
+  }
+  public var respondableInfo: CheetahDigitalCore.RespondableInfo?
+  public var responseEndDate: Swift.String
+  public var responseMessage: Swift.String
+  public var responseSchedule: Swift.String
+  public var responseSetting: CheetahDigitalCore.ChallengeResponseSetting?
+  public var responseStartDate: Swift.String
+  public var responseType: CheetahDigitalCore.Challenge.ResponseType
+  public var showAsAlert: Swift.Bool
+  public var startPeriod: Swift.String
+  public var status: Swift.String
+  public var subheading: Swift.String
+  public var subject: Swift.String
+  public var targetUrl: Swift.String
+  public var thumbImageUrl: Swift.String
+  public var trackingCode: Swift.String
+  public var triggerActivityType: Swift.String
+  public init(id: Swift.Int, acceptanceText: Swift.String, acceptanceUrl: Swift.String, action: Swift.String, awardAmount: Swift.String, body: Swift.String, businessValue: Swift.String, details: Swift.String, endPeriod: Swift.String, heading: Swift.String, imageUrl: Swift.String, internalUrl: Swift.String, isAcceptanceRequired: Swift.Bool, isFavorited: Swift.Bool, isRespondable: Swift.Bool, name: Swift.String, metric: Swift.String, metricAmount: Swift.String, metricDisplayName: Swift.String, metricName: Swift.String, originalImageUrl: Swift.String, polls: [CheetahDigitalCore.Poll], prizeId: Swift.Int, prizes: [CheetahDigitalCore.Prize], respondableInfo: CheetahDigitalCore.RespondableInfo?, responseEndDate: Swift.String, responseMessage: Swift.String, responseSchedule: Swift.String, responseSetting: CheetahDigitalCore.ChallengeResponseSetting?, responseStartDate: Swift.String, responseType: CheetahDigitalCore.Challenge.ResponseType, showAsAlert: Swift.Bool, startPeriod: Swift.String, status: Swift.String, subheading: Swift.String, subject: Swift.String, targetUrl: Swift.String, thumbImageUrl: Swift.String, trackingCode: Swift.String, triggerActivityType: Swift.String)
+}
+extension CheetahDigitalCore.Challenge {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Challenge : Swift.Equatable {
+  public static func == (lhs: CheetahDigitalCore.Challenge, rhs: CheetahDigitalCore.Challenge) -> Swift.Bool
+}
+public struct Poll : Swift.Codable, Swift.Equatable {
+  public var question: Swift.String
+  public var results: [CheetahDigitalCore.Poll.Result]
+  public var highestPercentage: Swift.Float
+  public init(question: Swift.String, results: [CheetahDigitalCore.Poll.Result], highestPercentage: Swift.Float)
+  public struct Result : Swift.Codable, Swift.Equatable {
+    public var label: Swift.String
+    public var percentage: Swift.Float
+    public var total: Swift.Int
+    public var highlight: Swift.Bool
+    public init(label: Swift.String, percentage: Swift.Float, total: Swift.Int, highlight: Swift.Bool)
+    public static func == (a: CheetahDigitalCore.Poll.Result, b: CheetahDigitalCore.Poll.Result) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.Poll, b: CheetahDigitalCore.Poll) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Poll {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Poll.Result {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum DevicesRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case registerDevice(deviceToken: Swift.String, deviceID: Swift.String)
+  case deregisterDevice(deviceToken: Swift.String, deviceID: Swift.String)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum DevicesAPI {
+  public static func registerDevice(deviceToken: Swift.String, deviceID: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func deregisterDevice(deviceToken: Swift.String, deviceID: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+}
+public enum ContentRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getContentTokens
+  case getContentPages
+  case getContentPage(internalName: Swift.String)
+  case getContentPageWith(id: Swift.Int)
+  case getStaticFiles
+  case getStaticFile(fileName: Swift.String)
+  public var path: Swift.String {
+    get
+  }
+}
+public enum ContentAPI {
+  public static func getContentPages(completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.ContentPage]> = nil)
+  public static func getContentPage(name: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.ContentPage> = nil)
+  public static func getContentPage(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.ContentPage> = nil)
+  public static func getStaticFiles(completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.StaticFile]> = nil)
+  public static func getStaticFile(name: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.StaticFile> = nil)
+}
+public struct Certificate : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var code: Swift.String
+  public var displayText: Swift.String
+  public var endDate: Swift.String
+  public var startDate: Swift.String
+  public init(id: Swift.Int, code: Swift.String, displayText: Swift.String, endDate: Swift.String, startDate: Swift.String)
+  public static func == (a: CheetahDigitalCore.Certificate, b: CheetahDigitalCore.Certificate) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Certificate {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum BadgesRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getBadges(parameters: CheetahDigitalUtils.Parameters?)
+  case getEarnedBadges(parameters: CheetahDigitalUtils.Parameters?)
+  case getEarnedBadge(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum BadgesAPI {
+  public static func getBadges(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Badge]> = nil)
+  public static func getEarnedBadges(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Badge]> = nil)
+  public static func getEarnedBadge(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Badge> = nil)
+}
+public struct ContentToken : Swift.Codable, Swift.Equatable {
+  public let token: [Swift.String : CheetahDigitalCore.ContentToken.Value]
+  public init(token: [Swift.String : CheetahDigitalCore.ContentToken.Value])
+  public struct Value : Swift.Codable, Swift.Equatable {
+    public let type: Swift.String
+    public let variable: Swift.String
+    public let value: Swift.String
+    public let applyTo: Swift.String
+    public init(type: Swift.String, variable: Swift.String, value: Swift.String, applyTo: Swift.String)
+    public static func == (a: CheetahDigitalCore.ContentToken.Value, b: CheetahDigitalCore.ContentToken.Value) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.ContentToken, b: CheetahDigitalCore.ContentToken) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.ContentToken {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.ContentToken.Value {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension Foundation.JSONDecoder {
+  public func decodeWithListInfo<T>(_ type: T.Type, from data: Foundation.Data, keyPath: Swift.String) throws -> (model: T, listInfo: CheetahDigitalCore.ListInfo?) where T : Swift.Decodable
+}
+public struct FeedbackItem : Swift.Equatable {
+  public enum FeedbackType : Swift.Int, Swift.Equatable {
+    case header
+    case field
+    case text
+    case submit
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public var id: Swift.Int
+  public var labelText: Swift.String
+  public var descriptionText: Swift.String
+  public var type: CheetahDigitalCore.FeedbackItem.FeedbackType
+  public var paramName: Swift.String
+  public var value: Swift.String
+  public init(id: Swift.Int, labelText: Swift.String, descriptionText: Swift.String, type: CheetahDigitalCore.FeedbackItem.FeedbackType, paramName: Swift.String, value: Swift.String)
+  public static func == (a: CheetahDigitalCore.FeedbackItem, b: CheetahDigitalCore.FeedbackItem) -> Swift.Bool
+}
+public struct FeedbackCategory : Swift.Codable, Swift.Equatable {
+  public var label: Swift.String
+  public var recipients: Swift.String
+  public init(label: Swift.String, recipients: Swift.String)
+  public static func == (a: CheetahDigitalCore.FeedbackCategory, b: CheetahDigitalCore.FeedbackCategory) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.FeedbackCategory {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Leaderboard : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var label: Swift.String
+  public var name: Swift.String
+  public var imageUrl: Swift.String
+  public var description: Swift.String
+  public var metric: Swift.String
+  public var metricDisplayName: Swift.String
+  public init(id: Swift.Int, label: Swift.String, name: Swift.String, imageUrl: Swift.String, description: Swift.String, metric: Swift.String, metricDisplayName: Swift.String)
+  public struct Feed : Swift.Codable, Swift.Equatable {
+    public var label: Swift.String
+    public var name: Swift.String
+    public var imageUrl: Swift.String
+    public var leaders: [CheetahDigitalCore.Leaderboard]
+    public init(label: Swift.String, name: Swift.String, imageUrl: Swift.String, leaders: [CheetahDigitalCore.Leaderboard])
+    public static func == (a: CheetahDigitalCore.Leaderboard.Feed, b: CheetahDigitalCore.Leaderboard.Feed) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.Leaderboard, b: CheetahDigitalCore.Leaderboard) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Leaderboard {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Leaderboard.Feed {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum GiftCardsRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getGiftCards(parameters: CheetahDigitalUtils.Parameters?)
+  case getGiftCard(cardNumber: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case getGiftCardClasses(parameters: CheetahDigitalUtils.Parameters?)
+  case getPaymentClientToken
+  case getTransactions(cardNumber: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case purchaseGiftCard(nonce: Swift.String, amount: Swift.Double, giftCardClass: Swift.String)
+  case topUp(cardNumber: Swift.String, nonce: Swift.String, amount: Swift.Double)
+  case update(giftCard: CheetahDigitalCore.GiftCard)
+  case link(cardNumber: Swift.String, pin: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case unlink(cardNumber: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum GiftCardsAPI {
+  public static func purchaseGiftCard(nonce: Swift.String, with amount: Swift.Double, giftCardClass: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.GiftCard> = nil)
+  public static func topUp(cardNumber: Swift.String, nonce: Swift.String, with amount: Swift.Double, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func update(giftCard: CheetahDigitalCore.GiftCard, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func getPaymentClientToken(completion: CheetahDigitalCore.ResponseCompletion<Swift.String> = nil)
+  public static func getGiftCards(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.GiftCard]> = nil)
+  public static func getTransactions(cardNumber: Swift.String, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.GiftCard.Transaction]> = nil)
+  public static func getGiftCard(cardNumber: Swift.String, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.GiftCard> = nil)
+  public static func getGiftCardClasses(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.GiftCard.GiftCardClass]> = nil)
+  public static func link(cardNumber: Swift.String, with pin: Swift.String, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func unlink(cardNumber: Swift.String, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+}
+public enum ReceiptsRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getReceipts(parameters: CheetahDigitalUtils.Parameters?)
+  case getReceipt(id: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case submitReceipt(image: UIKit.UIImage)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var multipartAttachments: CheetahDigitalUtils.MultipartAttachments? {
+    get
+  }
+}
+public enum ReceiptsAPI {
+  public static func getReceipts(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Receipt]> = nil)
+  public static func getReceipt(id: Swift.String, with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Receipt> = nil)
+  public static func submitReceipt(image: UIKit.UIImage, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Receipt> = nil)
+}
+public enum HouseholdRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case createMember(parameters: CheetahDigitalUtils.Parameters?)
+  case addMember(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case removeMember(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum HouseholdAPI {
+  public static func createMember(with parameters: CheetahDigitalUtils.Parameters, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func addMember(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func removeMember(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+}
+public enum FeedbacksRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case submitWithParam(parameters: CheetahDigitalUtils.Parameters?)
+  case submitWithSubjectAndBody(subject: Swift.String, body: Swift.String)
+  case getFeedbackCategories
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+}
+public enum FeedbacksAPI {
+  public static func submitFeedback(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func sendFeedback(subject: Swift.String, body: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func getFeedbackCategories(completion: CheetahDigitalCore.ResponseCompletion<[Swift.String : CheetahDigitalCore.FeedbackCategory]> = nil)
+  public static func getFeedbackContent(completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.StaticFile> = nil)
+}
+public struct UpgradeCheck : Swift.Codable, Swift.Equatable {
+  public enum Action : Swift.String, Swift.Codable {
+    case none
+    case requiredUpgrade
+    case suggestedUpgrade
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var upgradeAction: CheetahDigitalCore.UpgradeCheck.Action
+  public var downloadLink: Swift.String
+  public init(upgradeAction: CheetahDigitalCore.UpgradeCheck.Action, downloadLink: Swift.String)
+  public static func == (a: CheetahDigitalCore.UpgradeCheck, b: CheetahDigitalCore.UpgradeCheck) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.UpgradeCheck {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RespondableInfo : Swift.Codable, Swift.Equatable {
+  public var code: Swift.String
+  public var message: Swift.String
+  public var value: Swift.Bool
+  public init(code: Swift.String, message: Swift.String, value: Swift.Bool)
+  public static func == (a: CheetahDigitalCore.RespondableInfo, b: CheetahDigitalCore.RespondableInfo) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.RespondableInfo {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Activity : Swift.Codable, Swift.Equatable {
+  public var activityTimeStamp: Swift.String
+  public var details: CheetahDigitalCore.Activity.Detail?
+  public var label: Swift.String
+  public var metricAmount: Swift.String
+  public var metricLabel: Swift.String
+  public var metricName: Swift.String
+  public var typeLabel: Swift.String
+  public var typeName: Swift.String
+  public init(activityTimeStamp: Swift.String, details: CheetahDigitalCore.Activity.Detail?, label: Swift.String, metricAmount: Swift.String, metricLabel: Swift.String, metricName: Swift.String, typeLabel: Swift.String, typeName: Swift.String)
+  public struct Detail : Swift.Codable, Swift.Equatable {
+    public var context: Swift.String
+    public var integrationId: Swift.String
+    public var responseType: Swift.String
+    public var responseId: Swift.Int?
+    public var location: Swift.String
+    public var parentId: Swift.Int
+    public var placeId: Swift.Int
+    public var memberId: Swift.String
+    public init(context: Swift.String, integrationId: Swift.String, responseType: Swift.String, responseId: Swift.Int?, location: Swift.String, parentId: Swift.Int, placeId: Swift.Int, memberId: Swift.String)
+    public init(context: Swift.String, integrationId: Swift.String, location: Swift.String, parentId: Swift.Int, placeId: Swift.Int, memberId: Swift.String)
+    public static func == (a: CheetahDigitalCore.Activity.Detail, b: CheetahDigitalCore.Activity.Detail) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.Activity, b: CheetahDigitalCore.Activity) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Activity {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Activity.Detail {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum PlacesRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getPlacesWithParameters(parameters: CheetahDigitalUtils.Parameters?)
+  case getPlacesWithQuery(query: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case getPlacesNearbyCoordinates(latitude: Swift.Double, longitude: Swift.Double, onlyWithClientEvents: Swift.Bool, parameters: CheetahDigitalUtils.Parameters?)
+  case getPlacesNearbyAddress(address: Swift.String, onlyWithClientEvents: Swift.Bool, parameters: CheetahDigitalUtils.Parameters?)
+  case getOffers(forPlaceId: Swift.Int, clientEventType: CheetahDigitalCore.Place.ClientEventType)
+  case getPlace(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case getPlacesWithIntegrationID(integrationID: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case getPlaceCategories(parameters: CheetahDigitalUtils.Parameters?)
+  case getPlacesNearby(parameters: CheetahDigitalUtils.Parameters?)
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var path: Swift.String {
+    get
+  }
+}
+public enum PlacesAPI {
+  public static func getPlaces(with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Place]> = nil)
+  public static func getPlaces(query: Swift.String, with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Place]> = nil)
+  public static func getPlaces(integrationId: Swift.String, with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Place]> = nil)
+  public static func getPlacesNearby(coordinates: (latitude: Swift.Double, longitude: Swift.Double), onlyWithClientEvents: Swift.Bool, with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Place]> = nil)
+  public static func getPlacesNearby(address: Swift.String, onlyWithClientEvents: Swift.Bool, with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Place]> = nil)
+  public static func getOffers(placeId: Swift.Int, clientEventType: CheetahDigitalCore.Place.ClientEventType, with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Offer]> = nil)
+  public static func getPlace(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Place> = nil)
+  public static func getPlaceCategories(with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Place.Category]> = nil)
+  public static func getPlacesNearby(with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.NearbyPlaces> = nil)
+}
+public struct CountriesStates : Swift.Codable, Swift.Equatable {
+  public var countries: [CheetahDigitalCore.Country]
+  public init(countries: [CheetahDigitalCore.Country])
+  public static func == (a: CheetahDigitalCore.CountriesStates, b: CheetahDigitalCore.CountriesStates) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.CountriesStates {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Country : Swift.Codable, Swift.Equatable {
+  public var name: Swift.String
+  public var code: Swift.String
+  public var states: [CheetahDigitalCore.Country.State]
+  public init(name: Swift.String, code: Swift.String, states: [CheetahDigitalCore.Country.State])
+  public struct State : Swift.Codable, Swift.Equatable {
+    public var label: Swift.String
+    public var code: Swift.String
+    public init(label: Swift.String, code: Swift.String)
+    public static func == (a: CheetahDigitalCore.Country.State, b: CheetahDigitalCore.Country.State) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.Country, b: CheetahDigitalCore.Country) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Country {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Country.State {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Code : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var metricAmount: Swift.Double
+  public var metricName: Swift.String
+  public var respondable: Swift.Bool
+  public var response: Swift.String
+  public var responseMessage: Swift.String
+  public var rewardId: Swift.Int?
+  public var rewardName: Swift.String
+  public var secondaryMetricAmount: Swift.Double
+  public var secondaryMetricName: Swift.String
+  public var status: Swift.String
+  public init(id: Swift.Int, metricAmount: Swift.Double, metricName: Swift.String, respondable: Swift.Bool, response: Swift.String, responseMessage: Swift.String, rewardId: Swift.Int?, rewardName: Swift.String, secondaryMetricAmount: Swift.Double, secondaryMetricName: Swift.String, status: Swift.String)
+  public static func == (a: CheetahDigitalCore.Code, b: CheetahDigitalCore.Code) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Code {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum ProductsRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getProducts(category: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case getCategories
+  case loadProductComponents(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case prepareClientToken
+  case getOrders(parameters: CheetahDigitalUtils.Parameters?)
+  case getOrder(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum ProductsAPI {
+  public static func getProducts(category: Swift.String, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Product]> = nil)
+  public static func getCategories(completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Product.Category]> = nil)
+  public static func loadProductComponents(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Product> = nil)
+  public static func prepareClientToken(completion: CheetahDigitalCore.ResponseCompletion<Swift.String> = nil)
+  public static func getOrders(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Order]> = nil)
+  public static func getOrder(with id: Swift.Int, parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Order> = nil)
+}
+public struct NewsFeed : Swift.Codable, Swift.Equatable {
+  public var allowedToPost: Swift.Bool
+  public var allowedToComment: Swift.Bool
+  public var pinned: CheetahDigitalCore.Post?
+  public var posts: [CheetahDigitalCore.Post]
+  public init(allowedToPost: Swift.Bool, allowedToComment: Swift.Bool, pinned: CheetahDigitalCore.Post?, posts: [CheetahDigitalCore.Post])
+  public static func == (a: CheetahDigitalCore.NewsFeed, b: CheetahDigitalCore.NewsFeed) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.NewsFeed {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum EventsRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getEvents(parameters: CheetahDigitalUtils.Parameters?)
+  case getEventById(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case getEventByName(name: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case favoriteEvent(id: Swift.Int)
+  case unfavoriteEvent(id: Swift.Int)
+  case respondToEvent(id: Swift.Int, latitude: Swift.Double, longitude: Swift.Double)
+  case cancelEvent(eventResponseId: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case getEventsDates(parameters: CheetahDigitalUtils.Parameters?)
+  case getEventsResponses(parameters: CheetahDigitalUtils.Parameters?)
+  case getEventResponse(id: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case getCategories(parameters: CheetahDigitalUtils.Parameters?)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var headers: CheetahDigitalUtils.HTTPHeaders? {
+    get
+  }
+}
+public enum EventsAPI {
+  public static func getEvents(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Event]> = nil)
+  public static func getEvent(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Event> = nil)
+  public static func getEvent(name: Swift.String, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Event> = nil)
+  public static func favoriteEvent(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func unfavoriteEvent(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func respondToEvent(id: Swift.Int, latitude: Swift.Double, longitude: Swift.Double, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Event.Response> = nil)
+  public static func cancelEvent(responseId: Swift.String, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Event.Response> = nil)
+  public static func getEventResponses(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Event.Response]> = nil)
+  public static func getEventResponse(id: Swift.String, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Event.Response> = nil)
+  public static func getCategories(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Event.Category]> = nil)
+  public static func getEventDates(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Event.Date]> = nil)
+}
+public enum GroupsRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getGroups(parameters: CheetahDigitalUtils.Parameters?)
+  case getGroupsJoined(parameters: CheetahDigitalUtils.Parameters?)
+  case getGroupsClasses(parameters: CheetahDigitalUtils.Parameters?)
+  case getGroupMembersInGroupId(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case joinGroup(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case leaveGroup(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum GroupsAPI {
+  public static func getGroups(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Group]> = nil)
+  public static func getGroupsJoined(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Group]> = nil)
+  public static func getGroupsClasses(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.GroupClass]> = nil)
+  public static func getGroupMembersInGroup(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Member]> = nil)
+  public static func joinGroup(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func leaveGroup(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+}
+public struct APIError : Swift.Decodable, Swift.Error {
+  public let code: Swift.Int
+  public let message: Swift.String
+  public let name: Swift.String
+  public let additionalInfo: [Swift.String : Any]
+  public init(code: Swift.Int, message: Swift.String, name: Swift.String, additionalInfo: [Swift.String : Any] = [:])
+}
+extension CheetahDigitalCore.APIError {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.APIError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension CheetahDigitalCore.APIError {
+  public static func unknownError() -> CheetahDigitalCore.APIError
+  public static func reachabilityError() -> CheetahDigitalCore.APIError
+}
+public enum AuthenticationRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case logIn(parameters: CheetahDigitalUtils.Parameters?)
+  case refreshToken(token: Swift.String)
+  case signUp(parameters: CheetahDigitalUtils.Parameters?)
+  case resendEmailConfirmation(email: Swift.String)
+  case logOut(token: Swift.String)
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+}
+public enum AuthenticationAPI {
+  public enum SocialLoginType : Swift.String {
+    case apple, facebook, google, twitter, linkedin
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum SignUpParameterKeys : Swift.String {
+    case email, password, code
+    case passwordConfirmation
+    case firstName
+    case lastName
+    case mobilePhone
+    case cardId
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static func logIn(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.AuthenticationInfo> = nil)
+  public static func logIn(email: Swift.String, password: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.AuthenticationInfo> = nil)
+  public static func logIn(phoneNumber: Swift.String, password: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.AuthenticationInfo> = nil)
+  public static func logIn(socialNetwork: CheetahDigitalCore.AuthenticationAPI.SocialLoginType, accessToken: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.AuthenticationInfo> = nil)
+  public static func refreshToken(refreshToken: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.AuthenticationInfo> = nil)
+  public static func signUp(with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.AuthenticationInfo> = nil)
+  public static func resendEmailConfirmation(email: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.String> = nil)
+  public static func logOut(completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalUtils.AnyCodable> = nil)
+}
+public struct Product : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var sku: Swift.String
+  public var metricAmount: Swift.String
+  public var metricName: Swift.String
+  public var metricDisplayName: Swift.String
+  public var startDate: Swift.String
+  public var endDate: Swift.String
+  public var heading: Swift.String
+  public var subheading: Swift.String
+  public var body: Swift.String
+  public var details: Swift.String
+  public var imageUrl: Swift.String
+  public var thumbImageUrl: Swift.String
+  public var productComponents: [CheetahDigitalCore.Product.Component]
+  public var productAttributes: [CheetahDigitalCore.Product.Attribute]
+  public var productConfiguration: [CheetahDigitalCore.Product.Configuration]
+  public var orderQuantity: Swift.Int
+  public var specialInstructions: Swift.String
+  public init(id: Swift.Int, sku: Swift.String, metricAmount: Swift.String, metricName: Swift.String, metricDisplayName: Swift.String, startDate: Swift.String, endDate: Swift.String, heading: Swift.String, subheading: Swift.String, body: Swift.String, details: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, productComponents: [CheetahDigitalCore.Product.Component], productAttributes: [CheetahDigitalCore.Product.Attribute], productConfiguration: [CheetahDigitalCore.Product.Configuration], orderQuantity: Swift.Int, specialInstructions: Swift.String)
+  public struct Attribute : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var selectedOption: CheetahDigitalCore.Product.AttributeOption?
+    public var attributeOptions: [CheetahDigitalCore.Product.AttributeOption]
+    public init(id: Swift.Int, label: Swift.String, selectedOption: CheetahDigitalCore.Product.AttributeOption?, attributeOptions: [CheetahDigitalCore.Product.AttributeOption])
+    public static func == (a: CheetahDigitalCore.Product.Attribute, b: CheetahDigitalCore.Product.Attribute) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct AttributeOption : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var isDefault: Swift.Bool
+    public init(id: Swift.Int, label: Swift.String, isDefault: Swift.Bool)
+    public static func == (a: CheetahDigitalCore.Product.AttributeOption, b: CheetahDigitalCore.Product.AttributeOption) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Configuration : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var attributeCombination: [Swift.String]
+    public var metricName: Swift.String
+    public var metricAmount: Swift.String
+    public var thumbImageUrl: Swift.String
+    public init(id: Swift.Int, attributeCombination: [Swift.String], metricName: Swift.String, metricAmount: Swift.String, thumbImageUrl: Swift.String)
+    public static func == (a: CheetahDigitalCore.Product.Configuration, b: CheetahDigitalCore.Product.Configuration) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Component : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var sku: Swift.String
+    public var metricAmount: Swift.String
+    public var metricName: Swift.String
+    public var metricDisplayName: Swift.String
+    public var startDate: Swift.String
+    public var endDate: Swift.String
+    public var heading: Swift.String
+    public var subheading: Swift.String
+    public var body: Swift.String
+    public var details: Swift.String
+    public var imageUrl: Swift.String
+    public var thumbImageUrl: Swift.String
+    public var attributes: [CheetahDigitalCore.Product.Attribute]
+    public var productComponents: [CheetahDigitalCore.Product.Component]
+    public var selected: Swift.Bool
+    public init(id: Swift.Int, sku: Swift.String, metricAmount: Swift.String, metricName: Swift.String, metricDisplayName: Swift.String, startDate: Swift.String, endDate: Swift.String, heading: Swift.String, subheading: Swift.String, body: Swift.String, details: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, attributes: [CheetahDigitalCore.Product.Attribute], productComponents: [CheetahDigitalCore.Product.Component], selected: Swift.Bool)
+    public static func == (a: CheetahDigitalCore.Product.Component, b: CheetahDigitalCore.Product.Component) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Category : Swift.Codable, Swift.Equatable {
+    public var key: Swift.String
+    public var label: Swift.String
+    public init(key: Swift.String, label: Swift.String)
+    public static func == (a: CheetahDigitalCore.Product.Category, b: CheetahDigitalCore.Product.Category) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.Product, b: CheetahDigitalCore.Product) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Product {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Product.AttributeOption {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Product.Attribute {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Product.Configuration {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Product.Component {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Product.Category {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum PreferencesRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getPreferences(parameters: CheetahDigitalUtils.Parameters?)
+  case addDomain(domain: Swift.String, preferenceName: Swift.String)
+  case deleteDomain(domain: Swift.String, preferenceName: Swift.String)
+  case selectDomains(domains: [Swift.String], preferenceName: Swift.String, isMultiSelect: Swift.Bool)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum PreferencesAPI {
+  public static func getPreferences(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Preference]> = nil)
+  public static func addDomain(domain: Swift.String, preferenceName: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func deleteDomain(domain: Swift.String, preferenceName: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func selectDomains(domains: [Swift.String], preferenceName: Swift.String, isMultiSelect: Swift.Bool, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+}
+public struct Order : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var transactionType: Swift.String
+  public var orderedAt: Swift.String
+  public var preferredReceiveAt: Swift.String
+  public var sourceName: Swift.String
+  public var orderStatus: Swift.String
+  public var integrationId: Swift.String
+  public var placeIntegrationId: Swift.String
+  public var terminalName: Swift.String
+  public var transactionId: Swift.String
+  public var businessDate: Swift.String
+  public var metricName: Swift.String
+  public var metricAmount: Swift.String
+  public var currency: Swift.String
+  public var eligibleSubtotal: Swift.String
+  public var subtotal: Swift.String
+  public var overallDiscount: Swift.String
+  public var tipAmount: Swift.String
+  public var serviceCharge: Swift.String
+  public var tax: Swift.String
+  public var totalAmount: Swift.String
+  public var createdAt: Swift.String
+  public var updatedAt: Swift.String
+  public var itemCount: Swift.Int
+  public var items: [CheetahDigitalCore.Order.Item]
+  public var overallItemCount: Swift.Int
+  public var place: CheetahDigitalCore.Order.Place?
+  public init(id: Swift.Int, transactionType: Swift.String, orderedAt: Swift.String, preferredReceiveAt: Swift.String, sourceName: Swift.String, orderStatus: Swift.String, integrationId: Swift.String, placeIntegrationId: Swift.String, terminalName: Swift.String, transactionId: Swift.String, businessDate: Swift.String, metricName: Swift.String, metricAmount: Swift.String, currency: Swift.String, eligibleSubtotal: Swift.String, subtotal: Swift.String, overallDiscount: Swift.String, tipAmount: Swift.String, serviceCharge: Swift.String, tax: Swift.String, totalAmount: Swift.String, createdAt: Swift.String, updatedAt: Swift.String, itemCount: Swift.Int, items: [CheetahDigitalCore.Order.Item], overallItemCount: Swift.Int, place: CheetahDigitalCore.Order.Place?)
+  public struct Item : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var kind: Swift.String
+    public var subkind: Swift.String
+    public var sku: Swift.String
+    public var upc: Swift.String
+    public var category: [Swift.String]
+    public var name: Swift.String
+    public var description: Swift.String
+    public var lineNumber: Swift.String
+    public var linkedLineNumber: Swift.String
+    public var depth: Swift.Int
+    public var discountable: Swift.Bool
+    public var basePrice: Swift.String
+    public var weight: Swift.String
+    public var quantity: Swift.String
+    public var amount: Swift.String
+    public var discount: Swift.String
+    public var netPrice: Swift.String
+    public var createdAt: Swift.String
+    public var updatedAt: Swift.String
+    public init(id: Swift.Int, kind: Swift.String, subkind: Swift.String, sku: Swift.String, upc: Swift.String, category: [Swift.String], name: Swift.String, description: Swift.String, lineNumber: Swift.String, linkedLineNumber: Swift.String, depth: Swift.Int, discountable: Swift.Bool, basePrice: Swift.String, weight: Swift.String, quantity: Swift.String, amount: Swift.String, discount: Swift.String, netPrice: Swift.String, createdAt: Swift.String, updatedAt: Swift.String)
+    public static func == (a: CheetahDigitalCore.Order.Item, b: CheetahDigitalCore.Order.Item) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Place : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var name: Swift.String
+    public var label: Swift.String
+    public init(id: Swift.Int, name: Swift.String, label: Swift.String)
+    public static func == (a: CheetahDigitalCore.Order.Place, b: CheetahDigitalCore.Order.Place) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.Order, b: CheetahDigitalCore.Order) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Order {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Order.Item {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Order.Place {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum LeaderboardsRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getLeaderboards(parameters: CheetahDigitalUtils.Parameters?)
+  case getLeaderboardForPage(page: Swift.Int)
+  case getLeaderboard(name: Swift.String, category: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case getAroundMeLeaderboard(name: Swift.String, page: Swift.Int, size: Swift.Int, buffer: Swift.Int)
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum LeaderboardsAPI {
+  public static func getLeaderboards(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Leaderboard]> = nil)
+  public static func getLeaderboards(forPage page: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Leaderboard]> = nil)
+  public static func getLeaderboard(name: Swift.String, category: Swift.String, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Leaderboard]> = nil)
+  public static func getAroundMeLeaderboard(name: Swift.String, page: Swift.Int, size: Swift.Int, buffer: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Leaderboard.Feed> = nil)
+}
+public struct Coupon : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var code: Swift.String
+  public var barcode: Swift.String
+  public var barcodeStandard: Swift.String
+  public init(id: Swift.Int, code: Swift.String, barcode: Swift.String, barcodeStandard: Swift.String)
+  public static func == (a: CheetahDigitalCore.Coupon, b: CheetahDigitalCore.Coupon) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Coupon {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum MetaReferencesRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getStates(parameters: CheetahDigitalUtils.Parameters?)
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum MetaReferencesAPI {
+  public static func getCountriesWithStates(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Country]> = nil)
+}
+public struct Host : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var profile: CheetahDigitalCore.Host.Profile?
+  public init(id: Swift.Int, profile: CheetahDigitalCore.Host.Profile?)
+  public struct Profile : Swift.Codable, Swift.Equatable {
+    public var firstName: Swift.String
+    public var lastName: Swift.String
+    public var email: Swift.String
+    public init(firstName: Swift.String, lastName: Swift.String, email: Swift.String)
+    public static func == (a: CheetahDigitalCore.Host.Profile, b: CheetahDigitalCore.Host.Profile) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.Host, b: CheetahDigitalCore.Host) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct Event : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var label: Swift.String
+  public var name: Swift.String
+  public var metricAmount: Swift.String
+  public var metricName: Swift.String
+  public var description: Swift.String
+  public var place: CheetahDigitalCore.Place?
+  public var location: Swift.String
+  public var startAt: Swift.String
+  public var endAt: Swift.String
+  public var timezone: Swift.String
+  public var isRecurring: Swift.Bool
+  public var recurringSchedule: Swift.String
+  public var responseStartDate: Swift.String
+  public var responseEndDate: Swift.String
+  public var favorited: Swift.Bool
+  public var heading: Swift.String
+  public var subHeading: Swift.String
+  public var body: Swift.String
+  public var details: Swift.String
+  public var imageUrl: Swift.String
+  public var thumbImageUrl: Swift.String
+  public var originalImageUrl: Swift.String
+  public var subject: Swift.String
+  public var action: Swift.String
+  public var headingColor: Swift.String
+  public var color: Swift.String
+  public var bgColor: Swift.String
+  public var headingBgColor: Swift.String
+  public var layoutId: Swift.String
+  public var createdAt: Swift.String
+  public var updatedAt: Swift.String
+  public var surveyId: Swift.Int
+  public var isRespondable: Swift.Bool
+  public var respondableInfo: CheetahDigitalCore.RespondableInfo?
+  public var hosts: [CheetahDigitalCore.Host]
+  public init(id: Swift.Int, label: Swift.String, name: Swift.String, metricAmount: Swift.String, metricName: Swift.String, description: Swift.String, place: CheetahDigitalCore.Place?, location: Swift.String, startAt: Swift.String, endAt: Swift.String, timezone: Swift.String, isRecurring: Swift.Bool, recurringSchedule: Swift.String, responseStartDate: Swift.String, responseEndDate: Swift.String, favorited: Swift.Bool, heading: Swift.String, subHeading: Swift.String, body: Swift.String, details: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String, subject: Swift.String, action: Swift.String, headingColor: Swift.String, color: Swift.String, bgColor: Swift.String, headingBgColor: Swift.String, layoutId: Swift.String, createdAt: Swift.String, updatedAt: Swift.String, surveyId: Swift.Int, isRespondable: Swift.Bool, respondableInfo: CheetahDigitalCore.RespondableInfo?, hosts: [CheetahDigitalCore.Host])
+  public struct Category : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var name: Swift.String
+    public var key: Swift.String
+    public var description: Swift.String
+    public var imageUrl: Swift.String
+    public var thumbnailUrl: Swift.String
+    public init(id: Swift.Int, label: Swift.String, name: Swift.String, key: Swift.String, description: Swift.String, imageUrl: Swift.String, thumbnailUrl: Swift.String)
+    public static func == (a: CheetahDigitalCore.Event.Category, b: CheetahDigitalCore.Event.Category) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Date : Swift.Codable, Swift.Equatable {
+    public var date: Swift.String
+    public var events: [CheetahDigitalCore.Event]
+    public init(date: Swift.String, events: [CheetahDigitalCore.Event])
+    public static func == (a: CheetahDigitalCore.Event.Date, b: CheetahDigitalCore.Event.Date) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Response : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var status: Swift.String
+    public var dateCreated: Swift.String
+    public var dateUpdated: Swift.String
+    public var outcome: Swift.String
+    public var metricName: Swift.String
+    public var metricAmount: Swift.String
+    public var event: CheetahDigitalCore.Event?
+    public var isRespondable: Swift.Bool
+    public var respondableInfo: CheetahDigitalCore.RespondableInfo?
+    public init(id: Swift.Int, status: Swift.String, dateCreated: Swift.String, dateUpdated: Swift.String, outcome: Swift.String, metricName: Swift.String, metricAmount: Swift.String, event: CheetahDigitalCore.Event?, isRespondable: Swift.Bool, respondableInfo: CheetahDigitalCore.RespondableInfo?)
+    public static func == (a: CheetahDigitalCore.Event.Response, b: CheetahDigitalCore.Event.Response) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.Event, b: CheetahDigitalCore.Event) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Host.Profile {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Host {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Event {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Event.Category {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Event.Date {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Event.Response {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct StaticFile : Swift.Codable, Swift.Equatable {
+  public let label: Swift.String
+  public let name: Swift.String
+  public let description: Swift.String
+  public let filePath: Swift.String
+  public init(label: Swift.String, name: Swift.String, description: Swift.String, filePath: Swift.String)
+  public static func == (a: CheetahDigitalCore.StaticFile, b: CheetahDigitalCore.StaticFile) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.StaticFile {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum RewardsRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getRewards(parameters: CheetahDigitalUtils.Parameters?, showFavorites: Swift.Bool)
+  case getReward(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case getRewardWithName(name: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case favoriteReward(id: Swift.Int)
+  case unfavoriteReward(id: Swift.Int)
+  case redeemRewardWithAward(rewardId: Swift.Int, awardId: Swift.Int?, address: [Swift.String : Any]?, isResponse: Swift.Bool, parameters: CheetahDigitalUtils.Parameters?)
+  case redeemRewardWithNonce(rewardId: Swift.Int, nonce: Swift.String, currency: Swift.String, value: Swift.Double)
+  case getAwards(parameters: CheetahDigitalUtils.Parameters?)
+  case getAward(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case getRedemptions(parameters: CheetahDigitalUtils.Parameters?)
+  case getRedemption(id: Swift.Int)
+  case cancelRedemption(id: Swift.Int)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum RewardsAPI {
+  public static func getRewards(with parameters: CheetahDigitalUtils.Parameters? = nil, showFavorites: Swift.Bool, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Reward]> = nil)
+  public static func getReward(name: Swift.String, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Reward> = nil)
+  public static func getReward(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Reward> = nil)
+  public static func favoriteReward(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func unfavoriteReward(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func redeemReward(id: Swift.Int, awardId: Swift.Int?, address: [Swift.String : Any]?, isResponse: Swift.Bool, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Reward.ResponseInfo> = nil)
+  public static func redeemReward(id: Swift.Int, nonce: Swift.String, currency: Swift.String, value: Swift.Double, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Reward.ResponseInfo> = nil)
+  public static func getAwards(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Award]> = nil)
+  public static func getAward(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Award> = nil)
+  public static func getRedemptions(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Reward.Response]> = nil)
+  public static func getRedemption(with id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Reward.Response> = nil)
+  public static func cancelRedemption(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Reward.Response> = nil)
+}
+public struct AuthenticationInfo : Swift.Decodable, Swift.Equatable {
+  public typealias Settings = [Swift.String : CheetahDigitalUtils.AnyDecodable]
+  public let accessToken: Swift.String
+  public let tokenType: Swift.String
+  public let expiresIn: Swift.Double
+  public let refreshToken: Swift.String
+  public let createdAt: Foundation.TimeInterval
+  public let settings: CheetahDigitalCore.AuthenticationInfo.Settings
+  public init(accessToken: Swift.String, tokenType: Swift.String, expiresIn: Swift.Double, refreshToken: Swift.String, createdAt: Foundation.TimeInterval, settings: CheetahDigitalCore.AuthenticationInfo.Settings)
+  public enum SettingsKeys : Swift.String {
+    case sendLocationAnonymously
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public func getSettingValue(for key: CheetahDigitalCore.AuthenticationInfo.SettingsKeys) -> Any?
+  public static func == (a: CheetahDigitalCore.AuthenticationInfo, b: CheetahDigitalCore.AuthenticationInfo) -> Swift.Bool
+}
+extension CheetahDigitalCore.AuthenticationInfo {
+  public init(from decoder: Swift.Decoder) throws
+}
+public typealias ResponseCompletion<T> = ((Swift.Result<CheetahDigitalCore.APIResponse<T>, Swift.Error>) -> Swift.Void)?
+public struct APIResponse<Value> {
+  public let request: Foundation.URLRequest?
+  public let data: Foundation.Data?
+  public let response: Foundation.HTTPURLResponse?
+  public let value: Value
+  public let listInfo: CheetahDigitalCore.ListInfo?
+  public init(request: Foundation.URLRequest?, data: Foundation.Data?, response: Foundation.HTTPURLResponse?, value: Value, listInfo: CheetahDigitalCore.ListInfo?)
+}
+extension CheetahDigitalCore.APIResponse {
+  public init(request: Foundation.URLRequest?, data: Foundation.Data?, response: Foundation.HTTPURLResponse?, value: Value)
+}
+public struct ListInfo : Swift.Codable, Swift.Equatable {
+  public let totalEntries: Swift.Int
+  public let totalPages: Swift.Int
+  public init(totalEntries: Swift.Int, totalPages: Swift.Int)
+  public static func == (a: CheetahDigitalCore.ListInfo, b: CheetahDigitalCore.ListInfo) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum ResponseError : Swift.Error {
+  public enum ResponseSerializationFailureReason {
+    case inputDataNilOrZeroLength
+    case decodingFailed(error: Swift.Error)
+  }
+  case responseSerializationFailed(reason: CheetahDigitalCore.ResponseError.ResponseSerializationFailureReason)
+}
+extension CheetahDigitalCore.ResponseError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension CheetahDigitalCore.ResponseError.ResponseSerializationFailureReason : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public enum UpgradeCheckRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getUpgradeCheck(parameters: CheetahDigitalUtils.Parameters?)
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum UpgradeCheckAPI {
+  public static func getUpgradeCheck(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.UpgradeCheck> = nil)
+}
+public struct Reward : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var sku: Swift.String
+  public var heading: Swift.String
+  public var subHeading: Swift.String
+  public var body: Swift.String
+  public var details: Swift.String
+  public var metricDisplayName: Swift.String
+  public var imageUrl: Swift.String
+  public var thumbnailUrl: Swift.String
+  public var type: CheetahDigitalCore.Reward.RewardType
+  public var startDate: Swift.String
+  public var endDate: Swift.String
+  public var drawDate: Swift.String
+  public var attributes: [CheetahDigitalCore.Reward.Attribute]
+  public var requiredAttributes: [CheetahDigitalCore.Reward.Class]
+  public var combinations: [CheetahDigitalCore.Reward.AttributeCombination]
+  public var selectedCombination: CheetahDigitalCore.Reward.AttributeCombination?
+  public var redemptionOptions: [CheetahDigitalCore.Reward.RedemptionOptions]
+  public var points: Swift.String
+  public var responseCount: Swift.Int
+  public var isRespondable: Swift.Bool
+  public var isFavorited: Swift.Bool
+  public var addressRequired: Swift.Bool
+  public var isAwarded: Swift.Bool
+  public var paymentMethod: Swift.String
+  public var action: Swift.String
+  public var responseCurrencyAmount: Swift.String
+  public var responseCurrencyName: Swift.String
+  public var expirationInterval: Swift.Int?
+  public var expirationPeriod: Swift.String
+  public var respondableInfo: CheetahDigitalCore.RespondableInfo?
+  public var embedded: CheetahDigitalUtils.AnyCodable?
+  public var isAcceptanceRequired: Swift.Bool
+  public var acceptanceText: Swift.String
+  public var acceptanceUrl: Swift.String
+  public var responseMessage: Swift.String
+  public var businessValue: Swift.String
+  public var maximumMetric: Swift.String
+  public var minimumMetric: Swift.String
+  public var hasRespondableCombination: Swift.Bool {
+    get
+  }
+  public var extraJSON: [Swift.String : CheetahDigitalUtils.AnyCodable]
+  public init(id: Swift.Int, sku: Swift.String, heading: Swift.String, subHeading: Swift.String, body: Swift.String, details: Swift.String, metricDisplayName: Swift.String, imageUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahDigitalCore.Reward.RewardType, startDate: Swift.String, endDate: Swift.String, drawDate: Swift.String, attributes: [CheetahDigitalCore.Reward.Attribute], requiredAttributes: [CheetahDigitalCore.Reward.Class], combinations: [CheetahDigitalCore.Reward.AttributeCombination], selectedCombination: CheetahDigitalCore.Reward.AttributeCombination?, redemptionOptions: [CheetahDigitalCore.Reward.RedemptionOptions], points: Swift.String, responseCount: Swift.Int, isRespondable: Swift.Bool, isFavorited: Swift.Bool, addressRequired: Swift.Bool, isAwarded: Swift.Bool, paymentMethod: Swift.String, action: Swift.String, responseCurrencyAmount: Swift.String, responseCurrencyName: Swift.String, expirationInterval: Swift.Int?, expirationPeriod: Swift.String, respondableInfo: CheetahDigitalCore.RespondableInfo?, embedded: CheetahDigitalUtils.AnyCodable?, isAcceptanceRequired: Swift.Bool, acceptanceText: Swift.String, acceptanceUrl: Swift.String, responseMessage: Swift.String, businessValue: Swift.String, maximumMetric: Swift.String, minimumMetric: Swift.String, extraJSON: [Swift.String : CheetahDigitalUtils.AnyCodable])
+  public enum RewardType : Swift.String, Swift.Codable {
+    case badge
+    case certificate
+    case challenge
+    case contest
+    case coupon
+    case debit
+    case couponCom
+    case giftcard
+    case metric
+    case metricPurchase
+    case metricTransfer
+    case offer
+    case product
+    case dynamic
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum RedemptionOptions : Swift.String, Swift.Codable {
+    case inStore
+    case ship
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct Class : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var name: Swift.String
+    public var desc: Swift.String
+    public var label: Swift.String
+    public var attributes: [CheetahDigitalCore.Reward.Attribute]
+    public var status: Swift.String
+    public init(id: Swift.Int, name: Swift.String, desc: Swift.String, label: Swift.String, attributes: [CheetahDigitalCore.Reward.Attribute], status: Swift.String)
+    public static func == (a: CheetahDigitalCore.Reward.Class, b: CheetahDigitalCore.Reward.Class) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Response : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var redemptionStatus: CheetahDigitalCore.Reward.Response.RedemptionStatus
+    public var memberName: Swift.String
+    public var memberId: Swift.String
+    public var redemptionAmount: Swift.String
+    public var metricName: Swift.String
+    public var redemptionUnit: Swift.String
+    public var metricDisplayName: Swift.String
+    public var metricAmount: Swift.String
+    public var sku: Swift.String
+    public var integrationId: Swift.String
+    public var shippingAddress: CheetahDigitalCore.Reward.Response.ShippingAddress?
+    public var imageUrl: Swift.String
+    public var thumbImageUrl: Swift.String
+    public var useStart: Swift.String
+    public var useEnd: Swift.String
+    public var createdAt: Swift.String
+    public var updatedAt: Swift.String
+    public var reward: CheetahDigitalCore.Reward?
+    public var certificate: CheetahDigitalCore.Certificate?
+    public var coupon: CheetahDigitalCore.Coupon?
+    public var notes: [CheetahDigitalUtils.AnyCodable]
+    public init(id: Swift.Int, redemptionStatus: CheetahDigitalCore.Reward.Response.RedemptionStatus, memberName: Swift.String, memberId: Swift.String, redemptionAmount: Swift.String, metricName: Swift.String, redemptionUnit: Swift.String, metricDisplayName: Swift.String, metricAmount: Swift.String, sku: Swift.String, integrationId: Swift.String, shippingAddress: CheetahDigitalCore.Reward.Response.ShippingAddress?, imageUrl: Swift.String, thumbImageUrl: Swift.String, useStart: Swift.String, useEnd: Swift.String, createdAt: Swift.String, updatedAt: Swift.String, reward: CheetahDigitalCore.Reward?, certificate: CheetahDigitalCore.Certificate?, coupon: CheetahDigitalCore.Coupon?, notes: [CheetahDigitalUtils.AnyCodable])
+    public enum RedemptionStatus : Swift.String, Swift.Codable {
+      case pending
+      case completed
+      case cancelled
+      case processing
+      case errored
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public struct ShippingAddress : Swift.Codable, Swift.Equatable {
+      public var id: Swift.Int
+      public var streetAddress: Swift.String
+      public var city: Swift.String
+      public var zipCode: Swift.String
+      public var state: Swift.String
+      public var countryCode: Swift.String
+      public var createdAt: Swift.String
+      public var updatedAt: Swift.String
+      public init(id: Swift.Int, streetAddress: Swift.String, city: Swift.String, zipCode: Swift.String, state: Swift.String, countryCode: Swift.String, createdAt: Swift.String, updatedAt: Swift.String)
+      public static func == (a: CheetahDigitalCore.Reward.Response.ShippingAddress, b: CheetahDigitalCore.Reward.Response.ShippingAddress) -> Swift.Bool
+      public func encode(to encoder: Swift.Encoder) throws
+      public init(from decoder: Swift.Decoder) throws
+    }
+    public static func == (a: CheetahDigitalCore.Reward.Response, b: CheetahDigitalCore.Reward.Response) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ResponseInfo : Swift.Codable, Swift.Equatable {
+    public var responseId: Swift.Int
+    public var isRespondable: Swift.Bool
+    public var respondableInfo: CheetahDigitalCore.RespondableInfo?
+    public var responseMessage: Swift.String
+    public var certificate: CheetahDigitalCore.Certificate?
+    public var coupon: CheetahDigitalCore.Coupon?
+    public var embedded: CheetahDigitalUtils.AnyCodable?
+    public init(responseId: Swift.Int, isRespondable: Swift.Bool, respondableInfo: CheetahDigitalCore.RespondableInfo?, responseMessage: Swift.String, certificate: CheetahDigitalCore.Certificate?, coupon: CheetahDigitalCore.Coupon?, embedded: CheetahDigitalUtils.AnyCodable?)
+    public static func == (a: CheetahDigitalCore.Reward.ResponseInfo, b: CheetahDigitalCore.Reward.ResponseInfo) -> Swift.Bool
+  }
+  public struct Category : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var imageUrl: Swift.String
+    public var key: Swift.String
+    public var label: Swift.String
+    public var thumbImageUrl: Swift.String
+    public init(id: Swift.Int, imageUrl: Swift.String, key: Swift.String, label: Swift.String, thumbImageUrl: Swift.String)
+    public static func == (a: CheetahDigitalCore.Reward.Category, b: CheetahDigitalCore.Reward.Category) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Attribute : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var name: Swift.String
+    public var options: [CheetahDigitalCore.Reward.AttributeOption]
+    public init(id: Swift.Int, label: Swift.String, name: Swift.String, options: [CheetahDigitalCore.Reward.AttributeOption])
+    public static func == (a: CheetahDigitalCore.Reward.Attribute, b: CheetahDigitalCore.Reward.Attribute) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct AttributeCombination : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var sku: Swift.String
+    public var imageUrl: Swift.String
+    public var thumbnailUrl: Swift.String
+    public var metricName: Swift.String
+    public var metricAmount: Swift.String
+    public var values: [Swift.String]
+    public var respondable: Swift.Bool
+    public init(id: Swift.Int, sku: Swift.String, imageUrl: Swift.String, thumbnailUrl: Swift.String, metricName: Swift.String, metricAmount: Swift.String, values: [Swift.String], respondable: Swift.Bool)
+    public static func == (a: CheetahDigitalCore.Reward.AttributeCombination, b: CheetahDigitalCore.Reward.AttributeCombination) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct AttributeOption : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var code: Swift.String
+    public var label: Swift.String
+    public var isDefault: Swift.Bool
+    public init(id: Swift.Int, code: Swift.String, label: Swift.String, isDefault: Swift.Bool)
+    public static func == (a: CheetahDigitalCore.Reward.AttributeOption, b: CheetahDigitalCore.Reward.AttributeOption) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.Reward, b: CheetahDigitalCore.Reward) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Reward {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Reward.Class {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Reward.Response {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Reward.ResponseInfo {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Reward.Category {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Reward.Attribute {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Reward.AttributeCombination {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Reward.AttributeOption {
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol UserLocation : AnyObject {
+  var coordinates: (latitude: Swift.Double, longitude: Swift.Double)? { get }
+}
+public struct ContentPage : Swift.Codable, Swift.Equatable {
+  public let id: Swift.Int
+  public let label: Swift.String
+  public let description: Swift.String
+  public let pageType: Swift.String
+  public let name: Swift.String
+  public let templateSetVersionId: Swift.Int
+  public let url: Swift.String
+  public let maskedUrl: Swift.String
+  public let requireLogin: Swift.Bool
+  public let staticFiles: [CheetahDigitalCore.ContentPage.StaticFile]
+  public let heading: Swift.String
+  public let subheading: Swift.String
+  public let body: Swift.String
+  public let details: Swift.String
+  public let imageUrl: Swift.String
+  public let thumbImageUrl: Swift.String
+  public let originalImageUrl: Swift.String
+  public let subject: Swift.String
+  public let action: Swift.String
+  public let headingColor: Swift.String
+  public let color: Swift.String
+  public let bgColor: Swift.String
+  public let headingBgColor: Swift.String
+  public let image1Bg: Swift.String
+  public let layoutId: Swift.String
+  public init(id: Swift.Int, label: Swift.String, description: Swift.String, pageType: Swift.String, name: Swift.String, templateSetVersionId: Swift.Int, url: Swift.String, maskedUrl: Swift.String, requireLogin: Swift.Bool, staticFiles: [CheetahDigitalCore.ContentPage.StaticFile], heading: Swift.String, subheading: Swift.String, body: Swift.String, details: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String, subject: Swift.String, action: Swift.String, headingColor: Swift.String, color: Swift.String, bgColor: Swift.String, headingBgColor: Swift.String, image1Bg: Swift.String, layoutId: Swift.String)
+  public struct StaticFile : Swift.Codable, Swift.Equatable {
+    public var fileName: Swift.String
+    public var url: Swift.String
+    public init(fileName: Swift.String, url: Swift.String)
+    public static func == (a: CheetahDigitalCore.ContentPage.StaticFile, b: CheetahDigitalCore.ContentPage.StaticFile) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.ContentPage, b: CheetahDigitalCore.ContentPage) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.ContentPage {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.ContentPage.StaticFile {
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol MutableProfileAttribute {
+  var name: Swift.String { get }
+  var label: Swift.String { get }
+  var type: Swift.String { get }
+  var domainList: [[Swift.String : Swift.String]] { get }
+  var value: CheetahDigitalUtils.AnyCodable? { get set }
+  var defaultValue: CheetahDigitalUtils.AnyCodable? { get set }
+  var isHidden: Swift.Bool { get }
+  var isReadOnly: Swift.Bool { get }
+  var isOptional: Swift.Bool { get }
+}
+public struct ProfileAttribute : Swift.Codable, Swift.Equatable, CheetahDigitalCore.MutableProfileAttribute {
+  public var name: Swift.String
+  public var label: Swift.String
+  public var type: Swift.String
+  public var description: Swift.String
+  public var isReadOnly: Swift.Bool
+  public var isRequired: Swift.Bool
+  public var isHidden: Swift.Bool
+  public var capitalized: Swift.Bool
+  public var maxLength: Swift.Int
+  public var value: CheetahDigitalUtils.AnyCodable?
+  public var defaultValue: CheetahDigitalUtils.AnyCodable?
+  public var domain: CheetahDigitalCore.ProfileAttribute.Domain?
+  public var categories: [CheetahDigitalCore.ProfileAttribute.Category]
+  public var domainList: [[Swift.String : Swift.String]] {
+    get
+  }
+  public var isOptional: Swift.Bool {
+    get
+  }
+  public init(name: Swift.String, label: Swift.String, type: Swift.String, description: Swift.String, isReadOnly: Swift.Bool, isRequired: Swift.Bool, isHidden: Swift.Bool, capitalized: Swift.Bool, maxLength: Swift.Int, value: CheetahDigitalUtils.AnyCodable?, defaultValue: CheetahDigitalUtils.AnyCodable?, domain: CheetahDigitalCore.ProfileAttribute.Domain?, categories: [CheetahDigitalCore.ProfileAttribute.Category])
+  public struct Domain : Swift.Codable, Swift.Equatable {
+    public var list: [[Swift.String : Swift.String]]
+    public init(list: [[Swift.String : Swift.String]])
+    public static func == (a: CheetahDigitalCore.ProfileAttribute.Domain, b: CheetahDigitalCore.ProfileAttribute.Domain) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Category : Swift.Codable, Swift.Equatable {
+    public var key: Swift.String
+    public var label: Swift.String
+    public init(key: Swift.String, label: Swift.String)
+    public static func == (a: CheetahDigitalCore.ProfileAttribute.Category, b: CheetahDigitalCore.ProfileAttribute.Category) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.ProfileAttribute, b: CheetahDigitalCore.ProfileAttribute) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct AccountSummary : Swift.Codable, Swift.Equatable {
+  public var tier: CheetahDigitalCore.AccountSummary.TierInfo?
+  public var member: CheetahDigitalCore.AccountSummary.Member?
+  public var metrics: [Swift.String : CheetahDigitalCore.AccountSummary.Metric]
+  public var memberBadges: [CheetahDigitalCore.AccountSummary.MemberBadge]
+  public var permissions: [Swift.String : Swift.String]
+  public init(tier: CheetahDigitalCore.AccountSummary.TierInfo?, member: CheetahDigitalCore.AccountSummary.Member?, metrics: [Swift.String : CheetahDigitalCore.AccountSummary.Metric], memberBadges: [CheetahDigitalCore.AccountSummary.MemberBadge], permissions: [Swift.String : Swift.String])
+  public struct Member : Swift.Codable, Swift.Equatable {
+    public var memberId: Swift.String
+    public var firstName: Swift.String
+    public var lastName: Swift.String
+    public var memberSince: Swift.String
+    public var referred: Swift.Bool
+    public var visitor: Swift.Bool
+    public var localeCode: Swift.String
+    public init(memberId: Swift.String, firstName: Swift.String, lastName: Swift.String, memberSince: Swift.String, referred: Swift.Bool, visitor: Swift.Bool, localeCode: Swift.String)
+    public static func == (a: CheetahDigitalCore.AccountSummary.Member, b: CheetahDigitalCore.AccountSummary.Member) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Metric : Swift.Codable, Swift.Equatable {
+    public var label: Swift.String
+    public var balance: Swift.String
+    public var lifeTime: Swift.String
+    public var last12mos: Swift.String
+    public var ytd: Swift.String
+    public var last30d: Swift.String
+    public var mtd: Swift.String
+    public var today: Swift.String
+    public var redeemTotal: Swift.String
+    public init(label: Swift.String, balance: Swift.String, lifeTime: Swift.String, last12mos: Swift.String, ytd: Swift.String, last30d: Swift.String, mtd: Swift.String, today: Swift.String, redeemTotal: Swift.String)
+    public static func == (a: CheetahDigitalCore.AccountSummary.Metric, b: CheetahDigitalCore.AccountSummary.Metric) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct MemberBadge : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var type: Swift.String
+    public var grantedAt: Swift.String
+    public var expiresAt: Swift.String
+    public var expired: Swift.Bool
+    public var count: Swift.Int
+    public init(id: Swift.Int, label: Swift.String, type: Swift.String, grantedAt: Swift.String, expiresAt: Swift.String, expired: Swift.Bool, count: Swift.Int)
+    public static func == (a: CheetahDigitalCore.AccountSummary.MemberBadge, b: CheetahDigitalCore.AccountSummary.MemberBadge) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct TierInfo : Swift.Codable, Swift.Equatable {
+    public var currentTier: CheetahDigitalCore.AccountSummary.CurrentTier?
+    public var tierInProgression: Swift.String
+    public var primaryMetricName: Swift.String
+    public var metrics: [Swift.String]
+    public var expressionExists: Swift.Bool
+    public var tiers: [CheetahDigitalCore.AccountSummary.Tier]
+    public init(currentTier: CheetahDigitalCore.AccountSummary.CurrentTier?, tierInProgression: Swift.String, primaryMetricName: Swift.String, metrics: [Swift.String], expressionExists: Swift.Bool, tiers: [CheetahDigitalCore.AccountSummary.Tier])
+    public static func == (a: CheetahDigitalCore.AccountSummary.TierInfo, b: CheetahDigitalCore.AccountSummary.TierInfo) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct CurrentTier : Swift.Codable, Swift.Equatable {
+    public var name: Swift.String
+    public var label: Swift.String
+    public var expirationDate: Swift.String
+    public init(name: Swift.String, label: Swift.String, expirationDate: Swift.String)
+    public static func == (a: CheetahDigitalCore.AccountSummary.CurrentTier, b: CheetahDigitalCore.AccountSummary.CurrentTier) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Tier : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var name: Swift.String
+    public var label: Swift.String
+    public var description: Swift.String
+    public var metricThresholds: CheetahDigitalCore.AccountSummary.MetricThreshold?
+    public init(id: Swift.Int, name: Swift.String, label: Swift.String, description: Swift.String, metricThresholds: CheetahDigitalCore.AccountSummary.MetricThreshold?)
+    public static func == (a: CheetahDigitalCore.AccountSummary.Tier, b: CheetahDigitalCore.AccountSummary.Tier) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct MetricThreshold : Swift.Codable, Swift.Equatable {
+    public var points: Swift.Int
+    public var spend: Swift.Int
+    public init(points: Swift.Int, spend: Swift.Int)
+    public static func == (a: CheetahDigitalCore.AccountSummary.MetricThreshold, b: CheetahDigitalCore.AccountSummary.MetricThreshold) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.AccountSummary, b: CheetahDigitalCore.AccountSummary) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.ProfileAttribute {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.ProfileAttribute.Domain {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.AccountSummary {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.AccountSummary.Member {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.AccountSummary.Metric {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.AccountSummary.MemberBadge {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.AccountSummary.TierInfo {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.AccountSummary.CurrentTier {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.AccountSummary.Tier {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.AccountSummary.MetricThreshold {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension Foundation.Bundle {
+  public static var CheetahDigitalCoreIdentifier: Swift.String {
+    get
+  }
+}
+public enum CoreNotification : CheetahDigitalUtils.CheetahNotification {
+  case APIAccessTokenDidBecomeInvalid
+  public var name: Swift.String {
+    get
+  }
+  public static func == (a: CheetahDigitalCore.CoreNotification, b: CheetahDigitalCore.CoreNotification) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Foundation.Date {
+  public static var CheetahBirthdateFormat: Swift.String {
+    get
+  }
+  public static var CheetahDateFormat: Swift.String {
+    get
+  }
+  public static var CheetahTimestampFormat: Swift.String {
+    get
+  }
+  public static func cheetahDateFrom(timestampString timestamp: Swift.String) -> Foundation.Date?
+  public static func cheetahDateFrom(formattedString string: Swift.String) -> Foundation.Date?
+  public var cheetahTimestampString: Swift.String {
+    get
+  }
+}
+extension Swift.String {
+  public static func createCheetahPeriod(startDate: Swift.String, endDate: Swift.String) -> Swift.String
+}
+public struct Award : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var status: CheetahDigitalCore.Award.Status
+  public var type: Swift.String
+  public var startDate: Swift.String
+  public var endDate: Swift.String
+  public var dateClaimed: Swift.String
+  public var dateAwarded: Swift.String
+  public var reward: CheetahDigitalCore.Reward?
+  public enum Status : Swift.String, Swift.Codable {
+    case claimed
+    case cancelled
+    case awarded
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(id: Swift.Int, status: CheetahDigitalCore.Award.Status, type: Swift.String, startDate: Swift.String, endDate: Swift.String, dateClaimed: Swift.String, dateAwarded: Swift.String, reward: CheetahDigitalCore.Reward?)
+  public static func == (a: CheetahDigitalCore.Award, b: CheetahDigitalCore.Award) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Award {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Badge : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var name: Swift.String
+  public var label: Swift.String
+  public var type: Swift.String
+  public var description: Swift.String
+  public var status: Swift.String
+  public var startPeriod: Swift.String
+  public var endPeriod: Swift.String
+  public var expirationInterval: Swift.Int
+  public var expirationIntervalPeriod: Swift.String
+  public var paymentType: Swift.String
+  public var responseCurrencyAmount: Swift.String
+  public var responseCurrencyName: Swift.String
+  public init(id: Swift.Int, name: Swift.String, label: Swift.String, type: Swift.String, description: Swift.String, status: Swift.String, startPeriod: Swift.String, endPeriod: Swift.String, expirationInterval: Swift.Int, expirationIntervalPeriod: Swift.String, paymentType: Swift.String, responseCurrencyAmount: Swift.String, responseCurrencyName: Swift.String)
+  public static func == (a: CheetahDigitalCore.Badge, b: CheetahDigitalCore.Badge) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Badge {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum FriendsRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getFriends(leaderboard: Swift.String)
+  case connectToFacebook(token: Swift.String)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum FriendsAPI {
+  public static func getFriends(leaderboard: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.FacebookFriend]> = nil)
+  public static func connectToFriends(facebookAuthToken token: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+}
+public protocol ChallengeResponseSetting : Swift.Decodable, Swift.Encodable {
+}
+public struct ARChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting, Swift.Equatable {
+  public var trackerUrl: Swift.String
+  public var definitions: [CheetahDigitalCore.ARDefinition]
+  public init(trackerUrl: Swift.String, definitions: [CheetahDigitalCore.ARDefinition])
+  public static func == (a: CheetahDigitalCore.ARChallengeResponseSetting, b: CheetahDigitalCore.ARChallengeResponseSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.ARChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CheckInChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting, Swift.Equatable {
+  public var nearest: CheetahDigitalCore.Place?
+  public init(nearest: CheetahDigitalCore.Place?)
+  public static func == (a: CheetahDigitalCore.CheckInChallengeResponseSetting, b: CheetahDigitalCore.CheckInChallengeResponseSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.CheckInChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GameChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting, Swift.Equatable {
+  public var subtype: Swift.String
+  public var blob: Swift.String
+  public var htmlGame: CheetahDigitalCore.GameChallengeResponseSetting.Game?
+  public init(subtype: Swift.String, blob: Swift.String, htmlGame: CheetahDigitalCore.GameChallengeResponseSetting.Game?)
+  public struct Game : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var description: Swift.String
+    public var pageType: Swift.String
+    public var name: Swift.String
+    public var templateSetVersionId: Swift.Int
+    public var url: Swift.String
+    public var maskedUrl: Swift.String
+    public var requireLogin: Swift.Bool
+    public var staticFiles: [CheetahDigitalCore.ContentPage.StaticFile]
+    public init(id: Swift.Int, label: Swift.String, description: Swift.String, pageType: Swift.String, name: Swift.String, templateSetVersionId: Swift.Int, url: Swift.String, maskedUrl: Swift.String, requireLogin: Swift.Bool, staticFiles: [CheetahDigitalCore.ContentPage.StaticFile])
+    public static func == (a: CheetahDigitalCore.GameChallengeResponseSetting.Game, b: CheetahDigitalCore.GameChallengeResponseSetting.Game) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.GameChallengeResponseSetting, b: CheetahDigitalCore.GameChallengeResponseSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.GameChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.GameChallengeResponseSetting.Game {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GenericChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting, Swift.Equatable {
+  public var type: Swift.String
+  public var blob: Swift.String
+  public init(type: Swift.String, blob: Swift.String)
+  public static func == (a: CheetahDigitalCore.GenericChallengeResponseSetting, b: CheetahDigitalCore.GenericChallengeResponseSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.GenericChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct JoinGroupChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting, Swift.Equatable {
+  public var groups: [CheetahDigitalCore.Group]
+  public var maxNumberOfGroup: Swift.Int
+  public init(groups: [CheetahDigitalCore.Group], maxNumberOfGroup: Swift.Int)
+  public static func == (a: CheetahDigitalCore.JoinGroupChallengeResponseSetting, b: CheetahDigitalCore.JoinGroupChallengeResponseSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.JoinGroupChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct MultiQuestionChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting {
+  public var definitions: [CheetahDigitalCore.Survey]
+  public init(definitions: [CheetahDigitalCore.Survey])
+}
+extension CheetahDigitalCore.MultiQuestionChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.MultiQuestionChallengeResponseSetting : Swift.Equatable {
+  public static func == (lhs: CheetahDigitalCore.MultiQuestionChallengeResponseSetting, rhs: CheetahDigitalCore.MultiQuestionChallengeResponseSetting) -> Swift.Bool
+}
+public struct MemeChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting, Swift.Equatable {
+  public var subtype: CheetahDigitalCore.MemeChallengeResponseSetting.Subtype
+  public enum Subtype : Swift.String, Swift.Codable {
+    case overImage
+    case separateFromImage
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var imageUrl: Swift.String
+  public init(subtype: CheetahDigitalCore.MemeChallengeResponseSetting.Subtype, imageUrl: Swift.String)
+  public static func == (a: CheetahDigitalCore.MemeChallengeResponseSetting, b: CheetahDigitalCore.MemeChallengeResponseSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.MemeChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct PhotoChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting, Swift.Equatable {
+  public var resolution: Swift.String
+  public init(resolution: Swift.String)
+  public static func == (a: CheetahDigitalCore.PhotoChallengeResponseSetting, b: CheetahDigitalCore.PhotoChallengeResponseSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.PhotoChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ReferralChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting, Swift.Equatable {
+  public var platforms: [Swift.String]
+  public var subject: Swift.String
+  public var body: Swift.String
+  public var banner: Swift.String
+  public var url: Swift.String
+  public var imageUrl: Swift.String
+  public var shareableText: Swift.String {
+    get
+  }
+  public init(platforms: [Swift.String], subject: Swift.String, body: Swift.String, banner: Swift.String, url: Swift.String, imageUrl: Swift.String)
+  public static func == (a: CheetahDigitalCore.ReferralChallengeResponseSetting, b: CheetahDigitalCore.ReferralChallengeResponseSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.ReferralChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SocialMediaChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting, Swift.Equatable {
+  public var subtype: Swift.String
+  public var url: Swift.String
+  public var platforms: [Swift.String]
+  public var contentType: Swift.String
+  public var facebookPostTitle: Swift.String
+  public var facebookPostBody: Swift.String
+  public var facebookUrlDisplayName: Swift.String
+  public var twitterPostBody: Swift.String
+  public var suggestedImageUrl: Swift.String
+  public var account: Swift.String
+  public var hashtags: [Swift.String]
+  public var text: Swift.String
+  public init(subtype: Swift.String, url: Swift.String, platforms: [Swift.String], contentType: Swift.String, facebookPostTitle: Swift.String, facebookPostBody: Swift.String, facebookUrlDisplayName: Swift.String, twitterPostBody: Swift.String, suggestedImageUrl: Swift.String, account: Swift.String, hashtags: [Swift.String], text: Swift.String)
+  public static func == (a: CheetahDigitalCore.SocialMediaChallengeResponseSetting, b: CheetahDigitalCore.SocialMediaChallengeResponseSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.SocialMediaChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SurveyChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting, Swift.Equatable {
+  public enum QuestionType : Swift.String, Swift.Codable {
+    case numeric
+    case multipleChoice
+    case photo
+    case rating
+    case text
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var allowComments: Swift.Bool
+  public var imageUrl: Swift.String
+  public var maxCharCount: Swift.Int
+  public var options: [Swift.String]
+  public var question: Swift.String
+  public var questionType: CheetahDigitalCore.SurveyChallengeResponseSetting.QuestionType
+  public var surveyOptions: [Swift.String]
+  public init(allowComments: Swift.Bool, imageUrl: Swift.String, maxCharCount: Swift.Int, options: [Swift.String], question: Swift.String, questionType: CheetahDigitalCore.SurveyChallengeResponseSetting.QuestionType, surveyOptions: [Swift.String])
+  public static func == (a: CheetahDigitalCore.SurveyChallengeResponseSetting, b: CheetahDigitalCore.SurveyChallengeResponseSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.SurveyChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct UpdateProfileChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting {
+  public enum SubType : Swift.String, Swift.Codable {
+    case memberAttribute
+    case memberPreference
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var subtype: CheetahDigitalCore.UpdateProfileChallengeResponseSetting.SubType
+  public var attributes: [CheetahDigitalCore.UpdateProfileChallengeAttribute]
+  public init(subtype: CheetahDigitalCore.UpdateProfileChallengeResponseSetting.SubType, attributes: [CheetahDigitalCore.UpdateProfileChallengeAttribute])
+  public struct Attribute : CheetahDigitalCore.UpdateProfileChallengeAttribute, Swift.Equatable {
+    public var name: Swift.String
+    public var label: Swift.String
+    public var description: Swift.String
+    public var defaultValue: CheetahDigitalUtils.AnyCodable?
+    public var type: Swift.String
+    public var isReadOnly: Swift.Bool
+    public var expression: Swift.String
+    public var timeToLive: Swift.String
+    public var value: CheetahDigitalUtils.AnyCodable?
+    public var isOptional: Swift.Bool
+    public init(name: Swift.String, label: Swift.String, description: Swift.String, defaultValue: CheetahDigitalUtils.AnyCodable, type: Swift.String, isReadOnly: Swift.Bool, expression: Swift.String, timeToLive: Swift.String, value: CheetahDigitalUtils.AnyCodable, isOptional: Swift.Bool)
+    public static func == (a: CheetahDigitalCore.UpdateProfileChallengeResponseSetting.Attribute, b: CheetahDigitalCore.UpdateProfileChallengeResponseSetting.Attribute) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+public protocol UpdateProfileChallengeAttribute : Swift.Decodable, Swift.Encodable {
+}
+extension CheetahDigitalCore.Preference : CheetahDigitalCore.UpdateProfileChallengeAttribute {
+}
+extension CheetahDigitalCore.UpdateProfileChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.UpdateProfileChallengeResponseSetting : Swift.Equatable {
+  public static func == (lhs: CheetahDigitalCore.UpdateProfileChallengeResponseSetting, rhs: CheetahDigitalCore.UpdateProfileChallengeResponseSetting) -> Swift.Bool
+}
+extension CheetahDigitalCore.UpdateProfileChallengeResponseSetting.Attribute {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct VideoChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting, Swift.Equatable {
+  public var videoSizeLimit: Swift.String
+  public var maxVideoSize: Swift.Int
+  public init(videoSizeLimit: Swift.String, maxVideoSize: Swift.Int)
+  public static func == (a: CheetahDigitalCore.VideoChallengeResponseSetting, b: CheetahDigitalCore.VideoChallengeResponseSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.VideoChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ViewContentChallengeResponseSetting : CheetahDigitalCore.ChallengeResponseSetting, Swift.Equatable {
+  public var subtype: CheetahDigitalCore.ViewContentChallengeResponseSetting.Subtype
+  public var caption: Swift.String
+  public var url: Swift.String
+  public var surveySetting: CheetahDigitalCore.SurveyChallengeResponseSetting?
+  public var imageUrl: Swift.String?
+  public enum Subtype : Swift.String, Swift.Codable {
+    case photo
+    case url
+    case youtube
+    case media
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(subtype: CheetahDigitalCore.ViewContentChallengeResponseSetting.Subtype, caption: Swift.String, url: Swift.String, imageUrl: Swift.String, surveySetting: CheetahDigitalCore.SurveyChallengeResponseSetting?)
+  public static func == (a: CheetahDigitalCore.ViewContentChallengeResponseSetting, b: CheetahDigitalCore.ViewContentChallengeResponseSetting) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.ViewContentChallengeResponseSetting {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Group : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var avatarUrl: Swift.String
+  public var displayName: Swift.String
+  public var groupClass: CheetahDigitalCore.GroupClass?
+  public var groupDescription: Swift.String
+  public var groupId: Swift.String
+  public var name: Swift.String
+  public init(id: Swift.Int, avatarUrl: Swift.String, displayName: Swift.String, groupClass: CheetahDigitalCore.GroupClass?, groupDescription: Swift.String, groupId: Swift.String, name: Swift.String)
+  public static func == (a: CheetahDigitalCore.Group, b: CheetahDigitalCore.Group) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Group {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GroupClass : Swift.Codable, Swift.Equatable {
+  public var label: Swift.String
+  public var name: Swift.String
+  public init(label: Swift.String, name: Swift.String)
+  public static func == (a: CheetahDigitalCore.GroupClass, b: CheetahDigitalCore.GroupClass) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.GroupClass {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct UserIdentity : Swift.Codable, Swift.Equatable {
+  public var uid: Swift.String
+  public var provider: Swift.String
+  public var displayName: Swift.String
+  public init(uid: Swift.String, provider: Swift.String, displayName: Swift.String)
+  public static func == (a: CheetahDigitalCore.UserIdentity, b: CheetahDigitalCore.UserIdentity) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.UserIdentity {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum NewsFeedRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getNewsFeedFlags
+  case getPosts(parameters: CheetahDigitalUtils.Parameters?)
+  case getPost(id: Swift.String)
+  case addNewPost(body: Swift.String, assets: [Foundation.URL], feedName: Swift.String?)
+  case deletePost(id: Swift.String)
+  case likePost(id: Swift.String)
+  case unlikePost(id: Swift.String)
+  case flagPost(flag: Swift.String, id: Swift.String)
+  case unflagPost(id: Swift.String)
+  case getComments(postId: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case addNewComment(body: Swift.String, postId: Swift.String)
+  case deleteComment(commentId: Swift.String, postId: Swift.String)
+  case likeComment(commentId: Swift.String, postId: Swift.String)
+  case unlikeComment(commentId: Swift.String, postId: Swift.String)
+  case flagComment(flag: Swift.String, commentId: Swift.String, postId: Swift.String)
+  case unflagComment(commentId: Swift.String, postId: Swift.String)
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var multipartAttachments: CheetahDigitalUtils.MultipartAttachments? {
+    get
+  }
+}
+public enum NewsFeedAPI {
+  public static func getFlags(completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Post.Flag]> = nil)
+  public static func getPosts(with parameters: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.NewsFeed> = nil)
+  public static func getPost(id: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Post> = nil)
+  public static func addNewPost(body: Swift.String, assets: [Foundation.URL], feedName: Swift.String?, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Post> = nil)
+  public static func deletePost(id: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func likePost(id: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func unlikePost(id: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func flagPost(flag: Swift.String, id: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func unflagPost(id: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func getComments(postId: Swift.String, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Comment]> = nil)
+  public static func addNewComment(body: Swift.String, postId: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func deleteComment(withId id: Swift.String, postId: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func likeComment(id: Swift.String, postId: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func unlikeComment(id: Swift.String, postId: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func flagComment(id: Swift.String, postId: Swift.String, flag: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func unflagComment(id: Swift.String, postId: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+}
+public struct OperatingDay : Swift.Codable, Swift.Equatable {
+  public var operatingDay: Swift.String
+  public var hours: [CheetahDigitalCore.OperatingDay.Hours]
+  public init(operatingDay: Swift.String, hours: [CheetahDigitalCore.OperatingDay.Hours])
+  public struct Hours : Swift.Codable, Swift.Equatable {
+    public var open: Swift.String
+    public var close: Swift.String
+    public init(open: Swift.String, close: Swift.String)
+    public static func == (a: CheetahDigitalCore.OperatingDay.Hours, b: CheetahDigitalCore.OperatingDay.Hours) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.OperatingDay, b: CheetahDigitalCore.OperatingDay) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct NearbyPlaces : Swift.Codable, Swift.Equatable {
+  public var places: [CheetahDigitalCore.Place]
+  public var radius: Swift.Int
+  public var centerpoint: [Swift.Double]
+  public var listInfo: CheetahDigitalCore.ListInfo?
+  public init(places: [CheetahDigitalCore.Place], radius: Swift.Int, centerpoint: [Swift.Double], listInfo: CheetahDigitalCore.ListInfo?)
+  public static func == (a: CheetahDigitalCore.NearbyPlaces, b: CheetahDigitalCore.NearbyPlaces) -> Swift.Bool
+}
+public struct Place : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var label: Swift.String
+  public var name: Swift.String
+  public var integrationId: Swift.String
+  public var url: Swift.String
+  public var placeId: Swift.String
+  public var address: Swift.String
+  public var countryCode: Swift.String
+  public var country: Swift.String
+  public var state: Swift.String
+  public var county: Swift.String
+  public var city: Swift.String
+  public var zipCode: Swift.String
+  public var latitude: Swift.String
+  public var longitude: Swift.String
+  public var timezone: Swift.String
+  public var utcOffset: Swift.String
+  public var owner: Swift.String
+  public var email: Swift.String
+  public var phone: Swift.String
+  public var thumbImageUrl: Swift.String
+  public var originalImageUrl: Swift.String
+  public var operatingHours: Swift.String
+  public var operatingHoursDetailed: [CheetahDigitalCore.OperatingDay]
+  public var status: Swift.String
+  public var categories: [CheetahDigitalCore.Place.Category]
+  public var radius: Swift.Double
+  public var radiusUnit: Swift.String
+  public var dwell: Swift.Int
+  public var extraInfo: [Swift.String : Swift.String?]
+  public var clientEventTypes: [CheetahDigitalCore.Place.ClientEventType]
+  public var links: [Swift.String : Swift.String?]
+  public var isFavorite: Swift.Bool
+  public var distance: Swift.Double
+  public var distanceUnit: Swift.String
+  public init(id: Swift.Int, label: Swift.String, name: Swift.String, integrationId: Swift.String, url: Swift.String, placeId: Swift.String, address: Swift.String, countryCode: Swift.String, country: Swift.String, state: Swift.String, county: Swift.String, city: Swift.String, zipCode: Swift.String, latitude: Swift.String, longitude: Swift.String, timezone: Swift.String, utcOffset: Swift.String, owner: Swift.String, email: Swift.String, phone: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String, operatingHours: Swift.String, operatingHoursDetailed: [CheetahDigitalCore.OperatingDay], status: Swift.String, categories: [CheetahDigitalCore.Place.Category], radius: Swift.Double, radiusUnit: Swift.String, dwell: Swift.Int, extraInfo: [Swift.String : Swift.String?], clientEventTypes: [CheetahDigitalCore.Place.ClientEventType], links: [Swift.String : Swift.String?], isFavorite: Swift.Bool, distance: Swift.Double, distanceUnit: Swift.String)
+  public struct Category : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var name: Swift.String
+    public var label: Swift.String
+    public var thumbImageUrl: Swift.String
+    public var imageUrl: Swift.String
+    public var description: Swift.String
+    public init(id: Swift.Int, name: Swift.String, label: Swift.String, thumbImageUrl: Swift.String, imageUrl: Swift.String, description: Swift.String)
+    public static func == (a: CheetahDigitalCore.Place.Category, b: CheetahDigitalCore.Place.Category) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum ClientEventType : Swift.String, Swift.Codable {
+    case enter
+    case exit
+    case dwell
+    case none
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static func == (a: CheetahDigitalCore.Place, b: CheetahDigitalCore.Place) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.OperatingDay.Hours {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.OperatingDay {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Place.Category {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.NearbyPlaces {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Place {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum CodesRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case submit(barcode: Swift.String)
+  case submitByCodeId(barcode: Swift.String, codeId: Swift.Int)
+  case submitByCodeName(barcode: Swift.String, codeName: Swift.String)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum CodesAPI {
+  public static func submitBarcode(_ barcode: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Code> = nil)
+  public static func submitBarcode(_ barcode: Swift.String, codeId: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Code> = nil)
+  public static func submitBarcode(_ barcode: Swift.String, codeName: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Code> = nil)
+}
+public struct Message : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var title: Swift.String
+  public var text: Swift.String
+  public var desc: Swift.String
+  public var dateSent: Swift.String
+  public var attachment: CheetahDigitalCore.Message.Attachment?
+  public init(id: Swift.Int, title: Swift.String, text: Swift.String, desc: Swift.String, dateSent: Swift.String, attachment: CheetahDigitalCore.Message.Attachment?)
+  public struct Attachment : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var type: CheetahDigitalCore.Message.Attachment.AttachmentType
+    public var thumbnailUrl: Swift.String
+    public var imageUrl: Swift.String
+    public init(id: Swift.Int, type: CheetahDigitalCore.Message.Attachment.AttachmentType, thumbnailUrl: Swift.String, imageUrl: Swift.String)
+    public enum AttachmentType : Swift.Codable, Swift.Equatable {
+      case award
+      case challenge
+      case contentPage
+      case event
+      case offer
+      case post
+      case reward
+      case custom(Swift.String)
+      public var stringValue: Swift.String {
+        get
+      }
+      public func encode(to encoder: Swift.Encoder) throws
+      public init(from decoder: Swift.Decoder) throws
+      public static func == (a: CheetahDigitalCore.Message.Attachment.AttachmentType, b: CheetahDigitalCore.Message.Attachment.AttachmentType) -> Swift.Bool
+    }
+    public static func == (a: CheetahDigitalCore.Message.Attachment, b: CheetahDigitalCore.Message.Attachment) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum Action : Swift.String {
+    case delivered
+    case opened
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static func == (a: CheetahDigitalCore.Message, b: CheetahDigitalCore.Message) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Message {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Message.Attachment {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Comment : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var commenter: CheetahDigitalCore.Commenter?
+  public var createdAt: Swift.String
+  public var flagged: Swift.String
+  public var isCommenter: Swift.Bool
+  public var isLiked: Swift.Bool
+  public var isVisible: Swift.Bool
+  public var likeCount: Swift.Int
+  public var message: Swift.String
+  public var originalLikeCount: Swift.Int
+  public var updatedAt: Swift.String
+  public init(id: Swift.Int, commenter: CheetahDigitalCore.Commenter?, createdAt: Swift.String, flagged: Swift.String, isCommenter: Swift.Bool, isLiked: Swift.Bool, isVisible: Swift.Bool, likeCount: Swift.Int, message: Swift.String, originalLikeCount: Swift.Int, updatedAt: Swift.String)
+  public static func == (a: CheetahDigitalCore.Comment, b: CheetahDigitalCore.Comment) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Comment {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Commenter : Swift.Codable, Swift.Equatable {
+  public var avatarUrl: Swift.String
+  public var memberId: Swift.String
+  public var name: Swift.String
+  public init(avatarUrl: Swift.String, memberId: Swift.String, name: Swift.String)
+  public static func == (a: CheetahDigitalCore.Commenter, b: CheetahDigitalCore.Commenter) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Commenter {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ARDefinition : Swift.Codable, Swift.Equatable {
+  public var type: Swift.String
+  public var trackerName: Swift.String
+  public var targetId: Swift.Int
+  public var targetType: Swift.String
+  public var targetHeading: Swift.String
+  public var assetContentType: Swift.String
+  public var assetUrl: Swift.String
+  public init(type: Swift.String, trackerName: Swift.String, targetId: Swift.Int, targetType: Swift.String, targetHeading: Swift.String, assetContentType: Swift.String, assetUrl: Swift.String)
+  public static func == (a: CheetahDigitalCore.ARDefinition, b: CheetahDigitalCore.ARDefinition) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.ARDefinition {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GiftCard : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var cardNumber: Swift.String
+  public var pin: Swift.String
+  public var name: Swift.String
+  public var desc: Swift.String
+  public var balance: Swift.String
+  public var usageStartDate: Swift.String
+  public var usageEndDate: Swift.String
+  public var reloadThreshold: Swift.String
+  public var reloadAmount: Swift.String
+  public var paymentMethodNonce: Swift.String
+  public var autoReload: Swift.Bool
+  public var giftCardClass: CheetahDigitalCore.GiftCard.GiftCardClass?
+  public init(id: Swift.Int, cardNumber: Swift.String, pin: Swift.String, name: Swift.String, desc: Swift.String, balance: Swift.String, usageStartDate: Swift.String, usageEndDate: Swift.String, reloadThreshold: Swift.String, reloadAmount: Swift.String, paymentMethodNonce: Swift.String, autoReload: Swift.Bool, cardType: CheetahDigitalCore.GiftCard.GiftCardClass?)
+  public enum TransactionType : Swift.String, Swift.Codable {
+    case debit
+    case credit
+    case unlink
+    case link
+    case deactivate
+    case activate
+    case start
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public struct Transaction : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var type: CheetahDigitalCore.GiftCard.TransactionType
+    public var createdAt: Swift.String
+    public var desc: Swift.String
+    public var amount: Swift.String
+    public init(id: Swift.Int, type: CheetahDigitalCore.GiftCard.TransactionType, createdAt: Swift.String, desc: Swift.String, amount: Swift.String)
+    public static func == (a: CheetahDigitalCore.GiftCard.Transaction, b: CheetahDigitalCore.GiftCard.Transaction) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct GiftCardClass : Swift.Codable, Swift.Equatable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var name: Swift.String
+    public var imageUrl: Swift.String
+    public var thumbImageUrl: Swift.String
+    public var originalImageUrl: Swift.String
+    public init(id: Swift.Int, label: Swift.String, name: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String)
+    public static func == (a: CheetahDigitalCore.GiftCard.GiftCardClass, b: CheetahDigitalCore.GiftCard.GiftCardClass) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.GiftCard, b: CheetahDigitalCore.GiftCard) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.GiftCard {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.GiftCard.Transaction {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.GiftCard.GiftCardClass {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum ProfileRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case changePassword(oldPassword: Swift.String, newPassword: Swift.String, confirmPassword: Swift.String)
+  case connectProfile(token: Swift.String, provider: Swift.String)
+  case disconnectProvider(provider: Swift.String)
+  case getAccountSummary
+  case getMemberProfile(memberID: Swift.String)
+  case getProfile
+  case getProfileIdentities(parameters: CheetahDigitalUtils.Parameters?)
+  case getProfileMetadata
+  case submitReferralCode(code: Swift.String)
+  case trackActiveUser
+  case updateProfile(parameters: CheetahDigitalUtils.Parameters?)
+  case updateAvatar(image: UIKit.UIImage)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var multipartAttachments: CheetahDigitalUtils.MultipartAttachments? {
+    get
+  }
+}
+public enum ProfileAPI {
+  public static func change(password oldPassword: Swift.String, to newPassword: Swift.String, with confirmPassword: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func connect(provider: Swift.String, token: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func disconnect(provider: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func getAccountSummary(completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.AccountSummary> = nil)
+  public static func getMemberProfile(memberID: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalUtils.AnyCodable> = nil)
+  public static func getProfile(completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalUtils.AnyCodable> = nil)
+  public static func getProfileIdentities(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.UserIdentity]> = nil)
+  public static func getProfileMetadata(completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.ProfileAttribute]> = nil)
+  public static func submit(referralCode: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func trackActiveUser(completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func update(profileAttributes: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func update(avatar: UIKit.UIImage, completion: CheetahDigitalCore.ResponseCompletion<Swift.String> = nil)
+}
+public enum MessagesRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getMessages(parameters: CheetahDigitalUtils.Parameters?)
+  case trackMessage(id: Swift.String, action: CheetahDigitalCore.MessagesRequest.TrackAction)
+  case dismissMessage(id: Swift.String)
+  public enum TrackAction : Swift.String {
+    case delivered, opened
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum MessagesAPI {
+  public static func getMessages(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Message]> = nil)
+  public static func trackMessage(id: Swift.String, action: CheetahDigitalCore.MessagesRequest.TrackAction = .opened, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func dismissMessage(id: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+}
+public class Configuration : Swift.Decodable {
+  public static var shared: CheetahDigitalCore.Configuration
+  final public let userAgentName: Swift.String
+  final public let clientId: Swift.String
+  final public let clientSecret: Swift.String
+  final public let clientUrl: Swift.String
+  final public let metric: Swift.String
+  final public let isGeofencingEnabled: Swift.Bool
+  final public let businessUnit: Swift.String
+  final public let isAccessTokenExternal: Swift.Bool
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case userAgentName
+    case clientId
+    case clientSecret
+    case clientUrl
+    case metric
+    case isGeofencingEnabled
+    case businessUnit
+    case isAccessTokenExternal
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public enum DefaultsKeys : Swift.String {
+    case sendLocationAnonymously
+    case lastActiveTrackingDate
+    case registeredDeviceToken
+    case hasLaunchedOnce
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(userAgentName: Swift.String, clientId: Swift.String, clientSecret: Swift.String, clientUrl: Swift.String, metric: Swift.String, businessUnit: Swift.String, isGeofencingEnabled: Swift.Bool, isAccessTokenExternal: Swift.Bool)
+  public static func getDefaultsValue(for key: CheetahDigitalCore.Configuration.DefaultsKeys) -> Any?
+  public static func setDefaults(value: Any?, for key: CheetahDigitalCore.Configuration.DefaultsKeys)
+  @objc deinit
+  required public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class API {
+  public static let shared: CheetahDigitalCore.API
+  public var session: Foundation.URLSession
+  weak public var userLocation: CheetahDigitalCore.UserLocation?
+  public func resetSession()
+  public func getAccessToken() -> Swift.String?
+  public func getRefreshToken() -> Swift.String?
+  public func setCredentials(_ accessToken: Swift.String, refreshToken: Swift.String? = nil)
+  public func deleteCredentials()
+  public func deleteCredentialsIfNeeded()
+  public func send<T>(_ request: CheetahDigitalUtils.URLRequestConvertible, modelKeyPath: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<T>) where T : Swift.Decodable
+  @objc deinit
+}
+public struct Post : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var attachmentThumbs: [Swift.String]
+  public var attachmentUrls: [Swift.String]
+  public var body: Swift.String
+  public var commentCount: Swift.Int
+  public var createdAt: Swift.String
+  public var flagged: Swift.String
+  public var internalUrl: Swift.String
+  public var isLiked: Swift.Bool
+  public var isOwner: Swift.Bool
+  public var isPinned: Swift.Bool
+  public var likeCount: Swift.Int
+  public var owner: CheetahDigitalCore.Post.Owner?
+  public var targetUrl: Swift.String
+  public init(id: Swift.Int, attachmentThumbs: [Swift.String], attachmentUrls: [Swift.String], body: Swift.String, commentCount: Swift.Int, createdAt: Swift.String, flagged: Swift.String, internalUrl: Swift.String, isLiked: Swift.Bool, isOwner: Swift.Bool, isPinned: Swift.Bool, likeCount: Swift.Int, owner: CheetahDigitalCore.Post.Owner?, targetUrl: Swift.String)
+  public struct Owner : Swift.Codable, Swift.Equatable {
+    public var avatarUrl: Swift.String
+    public var memberId: Swift.String
+    public var name: Swift.String
+    public init(avatarUrl: Swift.String, memberId: Swift.String, name: Swift.String)
+    public static func == (a: CheetahDigitalCore.Post.Owner, b: CheetahDigitalCore.Post.Owner) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Flag : Swift.Codable, Swift.Equatable {
+    public var key: Swift.String
+    public var label: Swift.String
+    public init(key: Swift.String, label: Swift.String)
+    public static func == (a: CheetahDigitalCore.Post.Flag, b: CheetahDigitalCore.Post.Flag) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public static func == (a: CheetahDigitalCore.Post, b: CheetahDigitalCore.Post) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.Post {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Post.Flag {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Post.Owner {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum InfoRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getInfo
+  public var path: Swift.String {
+    get
+  }
+  public static func == (a: CheetahDigitalCore.InfoRequest, b: CheetahDigitalCore.InfoRequest) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum InfoAPI {
+  public static func getInfo(completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalUtils.AnyCodable>)
+}
+public struct Member : Swift.Codable, Swift.Equatable {
+  public var email: Swift.String
+  public var firstName: Swift.String
+  public var lastName: Swift.String
+  public var mailingStreet: Swift.String
+  public var mailingCity: Swift.String
+  public var mailingState: Swift.String
+  public var mailingPostalCode: Swift.String
+  public var mailingCountry: Swift.String
+  public var birthdate: Swift.String
+  public var mobilePhone: Swift.String
+  public var memberSince: Swift.String
+  public var memberId: Swift.String
+  public var receiveEmailOffers: Swift.Bool
+  public var receiveSmsOffers: Swift.Bool
+  public var receiveMobileAppOffers: Swift.Bool
+  public var receiveMailOffers: Swift.Bool
+  public var receiveEstatementOffers: Swift.Bool
+  public var currentTier: Swift.String
+  public var expirationDate: Swift.String
+  public var tierInProgression: Swift.String
+  public var referrerId: Swift.String
+  public var integrationId: Swift.String
+  public var gender: Swift.String
+  public var maritalStatus: Swift.String
+  public var education: Swift.String
+  public var income: Swift.String
+  public var hasChildren: Swift.Bool
+  public var employment: Swift.String
+  public var ethnicity: Swift.String
+  public var housing: Swift.String
+  public var testMember: Swift.Bool
+  public var isVisitor: Swift.Bool
+  public var cardId: Swift.String
+  public var receiveNewsFeedLikeNotification: Swift.Bool
+  public var receiveNewsFeedCommentNotification: Swift.Bool
+  public var company: Swift.String
+  public var grade: Swift.String
+  public var highSchool: Swift.String
+  public var highSchoolLocation: Swift.String
+  public var age: Swift.Int
+  public var anniversary: Swift.String
+  public var securityAcountBalance: Swift.Int
+  public var receivePersonalizedOffers: Swift.Bool
+  public var receiveStatements: Swift.String
+  public var lastVisitDate: Swift.String
+  public var hasDevice: Swift.Bool
+  public var parentMemberId: Swift.String
+  public var gpa: Swift.Int
+  public var customerOptinProfiling: Swift.Bool
+  public var customerOptinMarketing: Swift.Bool
+  public var aboutMe: Swift.String
+  public var referralCode: [Swift.String]
+  public var betaAllowed: Swift.Bool
+  public var recentScore: Swift.Int
+  public var frequencyScore: Swift.Int
+  public var monetaryScore: Swift.Int
+  public var recentValue: Swift.Int
+  public var placeIntegrationId: Swift.String
+  public var migrated: Swift.String
+  public var myTable: Swift.String
+  public var isEmployee: Swift.Bool
+  public var regionIntegrationId: Swift.String
+  public var preferredPhoneBrands: Swift.String
+  public var channel: Swift.String
+  public var localCode: Swift.String
+  public var avatarUrl: Swift.String
+  public var placeLabel: Swift.String
+  public var satisfaction: Swift.Int
+  public var interests: [Swift.String]
+  public var connectionStatus: CheetahDigitalCore.Member.ConnectionStatus
+  public var message: Swift.String
+  public init(email: Swift.String, firstName: Swift.String, lastName: Swift.String, mailingStreet: Swift.String, mailingCity: Swift.String, mailingState: Swift.String, mailingPostalCode: Swift.String, mailingCountry: Swift.String, birthdate: Swift.String, mobilePhone: Swift.String, memberSince: Swift.String, memberId: Swift.String, receiveEmailOffers: Swift.Bool, receiveSmsOffers: Swift.Bool, receiveMobileAppOffers: Swift.Bool, receiveMailOffers: Swift.Bool, receiveEstatementOffers: Swift.Bool, currentTier: Swift.String, expirationDate: Swift.String, tierInProgression: Swift.String, referrerId: Swift.String, integrationId: Swift.String, gender: Swift.String, maritalStatus: Swift.String, education: Swift.String, income: Swift.String, hasChildren: Swift.Bool, employment: Swift.String, ethnicity: Swift.String, housing: Swift.String, testMember: Swift.Bool, isVisitor: Swift.Bool, cardId: Swift.String, receiveNewsFeedLikeNotification: Swift.Bool, receiveNewsFeedCommentNotification: Swift.Bool, company: Swift.String, grade: Swift.String, highSchool: Swift.String, highSchoolLocation: Swift.String, age: Swift.Int, anniversary: Swift.String, securityAcountBalance: Swift.Int, receivePersonalizedOffers: Swift.Bool, receiveStatements: Swift.String, lastVisitDate: Swift.String, hasDevice: Swift.Bool, parentMemberId: Swift.String, gpa: Swift.Int, customerOptinProfiling: Swift.Bool, customerOptinMarketing: Swift.Bool, aboutMe: Swift.String, referralCode: [Swift.String], betaAllowed: Swift.Bool, recentScore: Swift.Int, frequencyScore: Swift.Int, monetaryScore: Swift.Int, recentValue: Swift.Int, placeIntegrationId: Swift.String, migrated: Swift.String, myTable: Swift.String, isEmployee: Swift.Bool, regionIntegrationId: Swift.String, preferredPhoneBrands: Swift.String, channel: Swift.String, localCode: Swift.String, avatarUrl: Swift.String, placeLabel: Swift.String, satisfaction: Swift.Int, interests: [Swift.String], connectionStatus: CheetahDigitalCore.Member.ConnectionStatus, message: Swift.String)
+  public enum ConnectionStatus : Swift.String, Swift.Codable {
+    case connected
+    case requested
+    case received
+    case none
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static func == (a: CheetahDigitalCore.Member, b: CheetahDigitalCore.Member) -> Swift.Bool
+}
+extension CheetahDigitalCore.Member {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public enum PunchCardsRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getPunchCards(parameters: CheetahDigitalUtils.Parameters?)
+  case getPunchCard(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case getPunchCardWithName(name: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  case getTypeOfPunchCardWithName(name: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum PunchCardsAPI {
+  public static func getPunchCards(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.PunchCard]> = nil)
+  public static func getPunchCard(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.PunchCard> = nil)
+  public static func getPunchCard(name: Swift.String, parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.PunchCard> = nil)
+  public static func getPunchCardType(name: Swift.String, parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.PunchCard.PunchCardType> = nil)
+}
+public enum ActivitiesRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getActivities(parameters: CheetahDigitalUtils.Parameters?)
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum ActivitiesAPI {
+  public static func getActivities(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Activity]> = nil)
+}
+public struct FacebookFriend : Swift.Codable, Swift.Equatable {
+  public var id: Swift.Int
+  public var memberId: Swift.String
+  public var firstName: Swift.String
+  public var lastName: Swift.String
+  public var displayName: Swift.String
+  public var avatarUrl: Swift.String
+  public var rank: Swift.Int
+  public var points: Swift.Int
+  public var highlight: Swift.Bool
+  public init(id: Swift.Int, memberId: Swift.String, firstName: Swift.String, lastName: Swift.String, displayName: Swift.String, avatarUrl: Swift.String, rank: Swift.Int, points: Swift.Int, highlight: Swift.Bool)
+  public static func == (a: CheetahDigitalCore.FacebookFriend, b: CheetahDigitalCore.FacebookFriend) -> Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalCore.FacebookFriend {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum OffersRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getOffers(parameters: CheetahDigitalUtils.Parameters?)
+  case getOffersWithResponses(parameters: CheetahDigitalUtils.Parameters?)
+  case getFavedOffers(parameters: CheetahDigitalUtils.Parameters?)
+  case getOffer(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case favoriteOffer(id: Swift.Int)
+  case unfavoriteOffer(id: Swift.Int)
+  case clipOffer(id: Swift.Int)
+  case unclipOffer(id: Swift.Int)
+  case respondToOffer(id: Swift.Int)
+  case getOfferResponses(parameters: CheetahDigitalUtils.Parameters?)
+  case getOfferResponse(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case clipOfferResponse(id: Swift.Int)
+  case unclipOfferResponse(id: Swift.Int)
+  case getOffersCategories
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum OffersAPI {
+  public static func getOffers(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Offer]> = nil)
+  public static func getOffersWithResponses(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Offer]> = nil)
+  public static func getFavedOffers(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Offer]> = nil)
+  public static func getOffer(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Offer> = nil)
+  public static func favoriteOffer(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func unfavoriteOffer(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func clipOffer(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func unclipOffer(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func respondToOffer(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Offer.ResponseInfo> = nil)
+  public static func getOfferResponses(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Offer.Response]> = nil)
+  public static func getOfferResponse(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Offer.Response> = nil)
+  public static func clipOfferResponse(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func unclipOfferResponse(id: Swift.Int, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func getOffersCategories(completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Offer.Category]> = nil)
+}
+extension CheetahDigitalCore.SurveyType : Swift.Hashable {}
+extension CheetahDigitalCore.SurveyType : Swift.RawRepresentable {}
+extension CheetahDigitalCore.MultipleChoiceSurvey.ListType : Swift.Equatable {}
+extension CheetahDigitalCore.MultipleChoiceSurvey.ListType : Swift.Hashable {}
+extension CheetahDigitalCore.MultipleChoiceSurvey.ListType : Swift.RawRepresentable {}
+extension CheetahDigitalCore.ReferralsRequest : Swift.Equatable {}
+extension CheetahDigitalCore.ReferralsRequest : Swift.Hashable {}
+extension CheetahDigitalCore.Challenge.ResponseType : Swift.Equatable {}
+extension CheetahDigitalCore.Challenge.ResponseType : Swift.Hashable {}
+extension CheetahDigitalCore.Challenge.ResponseType : Swift.RawRepresentable {}
+extension CheetahDigitalCore.FeedbackItem.FeedbackType : Swift.Hashable {}
+extension CheetahDigitalCore.FeedbackItem.FeedbackType : Swift.RawRepresentable {}
+extension CheetahDigitalCore.UpgradeCheck.Action : Swift.Equatable {}
+extension CheetahDigitalCore.UpgradeCheck.Action : Swift.Hashable {}
+extension CheetahDigitalCore.UpgradeCheck.Action : Swift.RawRepresentable {}
+extension CheetahDigitalCore.AuthenticationAPI.SocialLoginType : Swift.Equatable {}
+extension CheetahDigitalCore.AuthenticationAPI.SocialLoginType : Swift.Hashable {}
+extension CheetahDigitalCore.AuthenticationAPI.SocialLoginType : Swift.RawRepresentable {}
+extension CheetahDigitalCore.AuthenticationAPI.SignUpParameterKeys : Swift.Equatable {}
+extension CheetahDigitalCore.AuthenticationAPI.SignUpParameterKeys : Swift.Hashable {}
+extension CheetahDigitalCore.AuthenticationAPI.SignUpParameterKeys : Swift.RawRepresentable {}
+extension CheetahDigitalCore.AuthenticationInfo.SettingsKeys : Swift.Equatable {}
+extension CheetahDigitalCore.AuthenticationInfo.SettingsKeys : Swift.Hashable {}
+extension CheetahDigitalCore.AuthenticationInfo.SettingsKeys : Swift.RawRepresentable {}
+extension CheetahDigitalCore.Reward.RewardType : Swift.Equatable {}
+extension CheetahDigitalCore.Reward.RewardType : Swift.Hashable {}
+extension CheetahDigitalCore.Reward.RewardType : Swift.RawRepresentable {}
+extension CheetahDigitalCore.Reward.RedemptionOptions : Swift.Equatable {}
+extension CheetahDigitalCore.Reward.RedemptionOptions : Swift.Hashable {}
+extension CheetahDigitalCore.Reward.RedemptionOptions : Swift.RawRepresentable {}
+extension CheetahDigitalCore.Reward.Response.RedemptionStatus : Swift.Equatable {}
+extension CheetahDigitalCore.Reward.Response.RedemptionStatus : Swift.Hashable {}
+extension CheetahDigitalCore.Reward.Response.RedemptionStatus : Swift.RawRepresentable {}
+extension CheetahDigitalCore.CoreNotification : Swift.Equatable {}
+extension CheetahDigitalCore.CoreNotification : Swift.Hashable {}
+extension CheetahDigitalCore.Award.Status : Swift.Equatable {}
+extension CheetahDigitalCore.Award.Status : Swift.Hashable {}
+extension CheetahDigitalCore.Award.Status : Swift.RawRepresentable {}
+extension CheetahDigitalCore.MemeChallengeResponseSetting.Subtype : Swift.Equatable {}
+extension CheetahDigitalCore.MemeChallengeResponseSetting.Subtype : Swift.Hashable {}
+extension CheetahDigitalCore.MemeChallengeResponseSetting.Subtype : Swift.RawRepresentable {}
+extension CheetahDigitalCore.SurveyChallengeResponseSetting.QuestionType : Swift.Equatable {}
+extension CheetahDigitalCore.SurveyChallengeResponseSetting.QuestionType : Swift.Hashable {}
+extension CheetahDigitalCore.SurveyChallengeResponseSetting.QuestionType : Swift.RawRepresentable {}
+extension CheetahDigitalCore.UpdateProfileChallengeResponseSetting.SubType : Swift.Equatable {}
+extension CheetahDigitalCore.UpdateProfileChallengeResponseSetting.SubType : Swift.Hashable {}
+extension CheetahDigitalCore.UpdateProfileChallengeResponseSetting.SubType : Swift.RawRepresentable {}
+extension CheetahDigitalCore.ViewContentChallengeResponseSetting.Subtype : Swift.Equatable {}
+extension CheetahDigitalCore.ViewContentChallengeResponseSetting.Subtype : Swift.Hashable {}
+extension CheetahDigitalCore.ViewContentChallengeResponseSetting.Subtype : Swift.RawRepresentable {}
+extension CheetahDigitalCore.Place.ClientEventType : Swift.Equatable {}
+extension CheetahDigitalCore.Place.ClientEventType : Swift.Hashable {}
+extension CheetahDigitalCore.Place.ClientEventType : Swift.RawRepresentable {}
+extension CheetahDigitalCore.Message.Action : Swift.Equatable {}
+extension CheetahDigitalCore.Message.Action : Swift.Hashable {}
+extension CheetahDigitalCore.Message.Action : Swift.RawRepresentable {}
+extension CheetahDigitalCore.GiftCard.TransactionType : Swift.Equatable {}
+extension CheetahDigitalCore.GiftCard.TransactionType : Swift.Hashable {}
+extension CheetahDigitalCore.GiftCard.TransactionType : Swift.RawRepresentable {}
+extension CheetahDigitalCore.MessagesRequest.TrackAction : Swift.Equatable {}
+extension CheetahDigitalCore.MessagesRequest.TrackAction : Swift.Hashable {}
+extension CheetahDigitalCore.MessagesRequest.TrackAction : Swift.RawRepresentable {}
+extension CheetahDigitalCore.Configuration.CodingKeys : Swift.Equatable {}
+extension CheetahDigitalCore.Configuration.CodingKeys : Swift.Hashable {}
+extension CheetahDigitalCore.Configuration.CodingKeys : Swift.RawRepresentable {}
+extension CheetahDigitalCore.Configuration.DefaultsKeys : Swift.Equatable {}
+extension CheetahDigitalCore.Configuration.DefaultsKeys : Swift.Hashable {}
+extension CheetahDigitalCore.Configuration.DefaultsKeys : Swift.RawRepresentable {}
+extension CheetahDigitalCore.InfoRequest : Swift.Equatable {}
+extension CheetahDigitalCore.InfoRequest : Swift.Hashable {}
+extension CheetahDigitalCore.Member.ConnectionStatus : Swift.Equatable {}
+extension CheetahDigitalCore.Member.ConnectionStatus : Swift.Hashable {}
+extension CheetahDigitalCore.Member.ConnectionStatus : Swift.RawRepresentable {}
