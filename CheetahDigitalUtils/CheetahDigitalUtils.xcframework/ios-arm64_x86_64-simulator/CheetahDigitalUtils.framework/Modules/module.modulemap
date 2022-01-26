@@ -1,0 +1,11 @@
+framework module CheetahDigitalUtils {
+  umbrella header "CheetahDigitalUtils.h"
+
+  export *
+  module * { export * }
+}
+
+module CheetahDigitalUtils.Swift {
+    header "CheetahDigitalUtils-Swift.h"
+    requires objc
+}

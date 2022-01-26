@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KeychainItem Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/KeychainItem" class="dashAnchor"></a>
+    <a title="KeychainItem Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (90% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        KeychainItem Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Localizer.html">Localizer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ParameterEncoding.html">ParameterEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Reachability.html">Reachability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLError.html">URLError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLError/ParameterEncodingFailureReason.html">– ParameterEncodingFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UtilsNotification.html">UtilsNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DateFormatter.html">DateFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONDecoder.html">JSONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/KeyedDecodingContainer.html">KeyedDecodingContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NotificationCenter.html">NotificationCenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIDevice.html">UIDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLRequest.html">URLRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CheetahNotification.html">CheetahNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLConvertible.html">URLConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AnyCodable.html">AnyCodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyDecodable.html">AnyDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyEncodable.html">AnyEncodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeychainError.html">KeychainError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeychainItem.html">KeychainItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultipartAttachment.html">MultipartAttachment</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:19CheetahDigitalUtils11HTTPHeadersa">HTTPHeaders</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:19CheetahDigitalUtils20MultipartAttachmentsa">MultipartAttachments</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:19CheetahDigitalUtils10Parametersa">Parameters</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>KeychainItem</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">KeychainItem</span></code></pre>
+
+                </div>
+              </div>
+            <p>A struct representation of a generic password item in the keychain.</p>
+
+<p>The keychain query uses generic password for the item&rsquo;s class, the <code>serviceName</code> property for the item&rsquo;s service, and the <code>account</code> property for the item&rsquo;s account name.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils12KeychainItemV11serviceNameSSvp"></a>
+                    <a name="//apple_ref/swift/Property/serviceName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils12KeychainItemV11serviceNameSSvp">serviceName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>String indicating the item&rsquo;s service name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">serviceName</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils12KeychainItemV7accountSSvp"></a>
+                    <a name="//apple_ref/swift/Property/account" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils12KeychainItemV7accountSSvp">account</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>String indicating the item&rsquo;s account name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">account</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils12KeychainItemV11serviceName7accountACSS_SStcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(serviceName:account:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils12KeychainItemV11serviceName7accountACSS_SStcfc">init(serviceName:<wbr>account:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>KeychainItem</code> instance with the specified service name and account.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">serviceName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">account</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>serviceName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The item&rsquo;s service name.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>account</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The item&rsquo;s account name.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils12KeychainItemV30accessControlWithUserPrescenceSo09SecAccessG3RefaSgvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/accessControlWithUserPrescence" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils12KeychainItemV30accessControlWithUserPrescenceSo09SecAccessG3RefaSgvpZ">accessControlWithUserPrescence</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An access control object specifying that the keychain can only be accessed when the device is unlocked and constrain access to an item with either biometry or passcode.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">accessControlWithUserPrescence</span><span class="p">:</span> <span class="kt">SecAccessControl</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A SecAccessControl object specified with <code>kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly</code> as its protection type and <code>userPresence</code> as its flag.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils12KeychainItemV4read7context7message10Foundation4DataVSgSo9LAContextCSg_SSSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/read(context:message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils12KeychainItemV4read7context7message10Foundation4DataVSgSo9LAContextCSg_SSSgtKF">read(context:<wbr>message:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reads the keychain item and returns the data.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../Structs/KeychainError.html">KeychainError</a></code> thrown while trying to read the keychain item value.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">read</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">LAContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Data</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The local authentication context.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of the operation for which the app is attempting to authenticate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The keychain item data.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils12KeychainItemV12readPassword7context7messageSSSgSo9LAContextCSg_AGtKF"></a>
+                    <a name="//apple_ref/swift/Method/readPassword(context:message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils12KeychainItemV12readPassword7context7messageSSSgSo9LAContextCSg_AGtKF">readPassword(context:<wbr>message:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reads the keychain item password and returns the string.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../Structs/KeychainError.html">KeychainError</a></code> thrown while trying to read the keychain item value.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">readPassword</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">LAContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The local authentication context.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of the operation for which the app is attempting to authenticate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The keychain item password string.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils12KeychainItemV8readJSON7context7messageSDySSypGSgSo9LAContextCSg_SSSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/readJSON(context:message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils12KeychainItemV8readJSON7context7messageSDySSypGSgSo9LAContextCSg_SSSgtKF">readJSON(context:<wbr>message:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reads the keychain item and returns the json serialized object.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../Structs/KeychainError.html">KeychainError</a></code> thrown while trying to read the keychain item value.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">readJSON</span><span class="p">(</span><span class="nv">context</span><span class="p">:</span> <span class="kt">LAContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The local authentication context.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of the operation for which the app is attempting to authenticate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The keychain item as a json serialized object distionary.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils12KeychainItemV5write4data4with7contexty10Foundation4DataV_So19SecAccessControlRefaSgSo9LAContextCSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/write(data:with:context:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils12KeychainItemV5write4data4with7contexty10Foundation4DataV_So19SecAccessControlRefaSgSo9LAContextCSgtKF">write(data:<wbr>with:<wbr>context:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Writes data in the keychain item.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../Structs/KeychainError.html">KeychainError</a></code> thrown while trying to write the keychain item value.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">write</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="n">with</span> <span class="nv">access</span><span class="p">:</span> <span class="kt">SecAccessControl</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">LAContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The data to be written in the keychain item.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>access</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The access control object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The local authentication context.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils12KeychainItemV13writePassword_4with7contextySS_So19SecAccessControlRefaSgSo9LAContextCSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/writePassword(_:with:context:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils12KeychainItemV13writePassword_4with7contextySS_So19SecAccessControlRefaSgSo9LAContextCSgtKF">writePassword(_:<wbr>with:<wbr>context:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Writes a password string in the keychain.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../Structs/KeychainError.html">KeychainError</a></code> thrown while trying to write the keychain item value.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">writePassword</span><span class="p">(</span><span class="n">_</span> <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">access</span><span class="p">:</span> <span class="kt">SecAccessControl</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">LAContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>password</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The password string to be written in the keychain item.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>access</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The access control object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The local authentication context.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils12KeychainItemV5write4json4with7contextySDySSypG_So19SecAccessControlRefaSgSo9LAContextCSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/write(json:with:context:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils12KeychainItemV5write4json4with7contextySDySSypG_So19SecAccessControlRefaSgSo9LAContextCSgtKF">write(json:<wbr>with:<wbr>context:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Writes a json object in the keychain.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../Structs/KeychainError.html">KeychainError</a></code> thrown while trying to write the keychain item value.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">write</span><span class="p">(</span><span class="nv">json</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">with</span> <span class="nv">access</span><span class="p">:</span> <span class="kt">SecAccessControl</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">context</span><span class="p">:</span> <span class="kt">LAContext</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>json</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The json object dictionary to be written in the keychain item.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>access</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The access control object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>context</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The local authentication context.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils12KeychainItemV6deleteyyKF"></a>
+                    <a name="//apple_ref/swift/Method/delete()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils12KeychainItemV6deleteyyKF">delete()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes the keychain item value in the keychain.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <code><a href="../Structs/KeychainError.html">KeychainError</a></code> thrown while trying to delete the keychain item value.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">delete</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils12KeychainItemV13keychainQuerySDySSypGyF"></a>
+                    <a name="//apple_ref/swift/Method/keychainQuery()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils12KeychainItemV13keychainQuerySDySSypGyF">keychainQuery()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a dictionary containing the query for the keychain item.</p>
+
+<p>The query uses generic password for the item&rsquo;s class, the <code><a href="../Structs/KeychainItem.html#/s:19CheetahDigitalUtils12KeychainItemV11serviceNameSSvp">serviceName</a></code> property for the item&rsquo;s service, and the <code><a href="../Structs/KeychainItem.html#/s:19CheetahDigitalUtils12KeychainItemV7accountSSvp">account</a></code> property for the item&rsquo;s account name.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">keychainQuery</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A dictionary containing the query for the keychain item.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2022-01-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

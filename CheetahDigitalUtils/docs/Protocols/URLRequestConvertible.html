@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>URLRequestConvertible Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/URLRequestConvertible" class="dashAnchor"></a>
+    <a title="URLRequestConvertible Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (90% documented)</p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        URLRequestConvertible Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Localizer.html">Localizer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ParameterEncoding.html">ParameterEncoding</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Reachability.html">Reachability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLError.html">URLError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLError/ParameterEncodingFailureReason.html">– ParameterEncodingFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UtilsNotification.html">UtilsNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Array.html">Array</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Data.html">Data</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DateFormatter.html">DateFormatter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Dictionary.html">Dictionary</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/JSONDecoder.html">JSONDecoder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/KeyedDecodingContainer.html">KeyedDecodingContainer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NotificationCenter.html">NotificationCenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIDevice.html">UIDevice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URL.html">URL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/URLRequest.html">URLRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/CheetahNotification.html">CheetahNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLConvertible.html">URLConvertible</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLRequestConvertible.html">URLRequestConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/AnyCodable.html">AnyCodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyDecodable.html">AnyDecodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AnyEncodable.html">AnyEncodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeychainError.html">KeychainError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeychainItem.html">KeychainItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MultipartAttachment.html">MultipartAttachment</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:19CheetahDigitalUtils11HTTPHeadersa">HTTPHeaders</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:19CheetahDigitalUtils20MultipartAttachmentsa">MultipartAttachments</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:19CheetahDigitalUtils10Parametersa">Parameters</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>URLRequestConvertible</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">URLRequestConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>Represents a type which could be converted to a <code>URLRequest</code> with specified components.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils21URLRequestConvertibleP4pathSSvp"></a>
+                    <a name="//apple_ref/swift/Property/path" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils21URLRequestConvertibleP4pathSSvp">path</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>URL path for the request as String. Returns an empty string as default.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils21URLRequestConvertibleP6methodAA10HTTPMethodOvp"></a>
+                    <a name="//apple_ref/swift/Property/method" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils21URLRequestConvertibleP6methodAA10HTTPMethodOvp">method</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The HTTP request method as an <code><a href="../Enums/HTTPMethod.html">HTTPMethod</a></code> String enumeration. Returns <code>get</code> case as default.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">method</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPMethod.html">HTTPMethod</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils21URLRequestConvertibleP10parametersSDySSypGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/parameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils21URLRequestConvertibleP10parametersSDySSypGSgvp">parameters</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request parameters as <code><a href="../Typealiases.html#/s:19CheetahDigitalUtils10Parametersa">Parameters</a></code>. Returns nil as default.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">parameters</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:19CheetahDigitalUtils10Parametersa">Parameters</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils21URLRequestConvertibleP7headersSDyS2SGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/headers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils21URLRequestConvertibleP7headersSDyS2SGSgvp">headers</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The request HTTP header fields. Returns nil as default.</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">headers</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:19CheetahDigitalUtils11HTTPHeadersa">HTTPHeaders</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils21URLRequestConvertibleP20multipartAttachmentsSayAA19MultipartAttachmentVGSgvp"></a>
+                    <a name="//apple_ref/swift/Property/multipartAttachments" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils21URLRequestConvertibleP20multipartAttachmentsSayAA19MultipartAttachmentVGSgvp">multipartAttachments</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The attachments for a multipart form data request</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">multipartAttachments</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:19CheetahDigitalUtils20MultipartAttachmentsa">MultipartAttachments</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils21URLRequestConvertibleP17parameterEncodingAA09ParameterG0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/parameterEncoding" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils21URLRequestConvertibleP17parameterEncodingAA09ParameterG0Ovp">parameterEncoding</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">parameterEncoding</span><span class="p">:</span> <span class="kt"><a href="../Enums/ParameterEncoding.html">ParameterEncoding</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19CheetahDigitalUtils21URLRequestConvertibleP02asD04path7headers10parameters11attachments10Foundation0D0VSSSg_SDyS2SGSDySSypGSayAA19MultipartAttachmentVGtKF"></a>
+                    <a name="//apple_ref/swift/Method/asURLRequest(path:headers:parameters:attachments:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19CheetahDigitalUtils21URLRequestConvertibleP02asD04path7headers10parameters11attachments10Foundation0D0VSSSg_SDyS2SGSDySSypGSayAA19MultipartAttachmentVGtKF">asURLRequest(path:<wbr>headers:<wbr>parameters:<wbr>attachments:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Default implementation
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a <code>URLRequest</code> or throws if an error was encountered.</p>
+
+<p>Additional header fields, parameters and/or multipart attachments can be passed to the method to be added on converting to a <code>URLRequest</code> object.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error thrown when the convertion fails.
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    The default implementation creates the <code>URLRequest</code> using the component properties.
+
+</div>
+
+                      </div>
+                      <h4>Default Implementation</h4>
+                      <div class="default_impl abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">asURLRequest</span><span class="p">(</span><span class="n"><a href="../Protocols/URLRequestConvertible.html#/s:19CheetahDigitalUtils21URLRequestConvertibleP4pathSSvp">path</a></span> <span class="nv">updatePath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span>
+                  <span class="n"><a href="../Protocols/URLRequestConvertible.html#/s:19CheetahDigitalUtils21URLRequestConvertibleP7headersSDyS2SGSgvp">headers</a></span> <span class="nv">additionalHeaders</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:19CheetahDigitalUtils11HTTPHeadersa">HTTPHeaders</a></span><span class="p">,</span>
+                  <span class="n"><a href="../Protocols/URLRequestConvertible.html#/s:19CheetahDigitalUtils21URLRequestConvertibleP10parametersSDySSypGSgvp">parameters</a></span> <span class="nv">additionalParameters</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:19CheetahDigitalUtils10Parametersa">Parameters</a></span><span class="p">,</span>
+                  <span class="n">attachments</span> <span class="nv">additionalAttachments</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:19CheetahDigitalUtils20MultipartAttachmentsa">MultipartAttachments</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">URLRequest</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An optional string used to override the url path upon converting to a <code>URLRequest</code> object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>headers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Additional HTTP headers to add upon converting to a <code>URLRequest</code> object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Addtional parameters to add upon converting to a <code>URLRequest</code> object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>attachments</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Addtional multipart attachements to add upon converting to a <code>URLRequest</code> object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>URLRequest</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2022-01-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
