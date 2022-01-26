@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RichPushService Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/RichPushService" class="dashAnchor"></a>
+    <a title="RichPushService Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        RichPushService Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultEMSOpenHandler.html">DefaultEMSOpenHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultNotificationHelper.html">DefaultNotificationHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultPushHandler.html">DefaultPushHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultRichPushHandler.html">DefaultRichPushHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RichPushService.html">RichPushService</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/NotificationType.html">NotificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RichPushAction.html">RichPushAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RichPushCategory.html">RichPushCategory</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UNNotificationAttachment.html">UNNotificationAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UNUserNotificationCenter.html">UNUserNotificationCenter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSOpenHandler.html">EMSOpenHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NotificationHelper.html">NotificationHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PushHandler.html">PushHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RichPushHandler.html">RichPushHandler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RichPushService</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">RichPushService</span> <span class="p">:</span> <span class="kt">UNNotificationServiceExtension</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC14contentHandlerySo21UNNotificationContentCcSgvp"></a>
+                    <a name="//apple_ref/swift/Property/contentHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC14contentHandlerySo21UNNotificationContentCcSgvp">contentHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Completion block that should always be called regardless if the modification succeeded or failed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">contentHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">UNNotificationContent</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC18bestAttemptContentSo021UNMutableNotificationI0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/bestAttemptContent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC18bestAttemptContentSo021UNMutableNotificationI0CSgvp">bestAttemptContent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The raw version of the received <code>UNMutableNotificationContent</code>, this will be used if any modification fails</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">bestAttemptContent</span><span class="p">:</span> <span class="kt">UNMutableNotificationContent</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@CheetahDigitalNotifications@objc(cs)RichPushService(im)didReceiveNotificationRequest:withContentHandler:"></a>
+                    <a name="//apple_ref/swift/Method/didReceive(_:withContentHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@CheetahDigitalNotifications@objc(cs)RichPushService(im)didReceiveNotificationRequest:withContentHandler:">didReceive(_:<wbr>withContentHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">didReceive</span><span class="p">(</span><span class="n">_</span> <span class="nv">request</span><span class="p">:</span> <span class="kt">UNNotificationRequest</span><span class="p">,</span>
+                              <span class="n">withContentHandler</span> <span class="nv">contentHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">UNNotificationContent</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@CheetahDigitalNotifications@objc(cs)RichPushService(im)serviceExtensionTimeWillExpire"></a>
+                    <a name="//apple_ref/swift/Method/serviceExtensionTimeWillExpire()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@CheetahDigitalNotifications@objc(cs)RichPushService(im)serviceExtensionTimeWillExpire">serviceExtensionTimeWillExpire()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">serviceExtensionTimeWillExpire</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Image"></a>
+                <a name="//apple_ref/swift/Section/Image" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Image"></a>
+                  <h3 class="section-name"><span>Image</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC19addImageIfNecessary7content8userInfoySo28UNMutableNotificationContentC_SDySSypGtF"></a>
+                    <a name="//apple_ref/swift/Method/addImageIfNecessary(content:userInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC19addImageIfNecessary7content8userInfoySo28UNMutableNotificationContentC_SDySSypGtF">addImageIfNecessary(content:<wbr>userInfo:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds an image as an attachment to the passed <code>UNMutableNotificationContent</code>
+if the notification&rsquo;s payload includes an <code>&quot;image_url&quot;</code> and has valid value</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">addImageIfNecessary</span><span class="p">(</span><span class="nv">content</span><span class="p">:</span> <span class="kt">UNMutableNotificationContent</span><span class="p">,</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>content</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>UNMutableNotificationContent</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The whole push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Categories"></a>
+                <a name="//apple_ref/swift/Section/Categories" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Categories"></a>
+                  <h3 class="section-name"><span>Categories</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC23createSupportedCategoryySo014UNNotificationI0CSgSDySSypGF"></a>
+                    <a name="//apple_ref/swift/Method/createSupportedCategory(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC23createSupportedCategoryySo014UNNotificationI0CSgSDySSypGF">createSupportedCategory(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code>UNNotificationCategory</code> with its supported <code>UNNotificationAction</code>(s) depending on the notification&rsquo;s payload.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">createSupportedCategory</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationCategory</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The whole push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC21setupPostLikeCategoryySo014UNNotificationJ0CSDySSypGF"></a>
+                    <a name="//apple_ref/swift/Method/setupPostLikeCategory(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC21setupPostLikeCategoryySo014UNNotificationJ0CSDySSypGF">setupPostLikeCategory(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code><a href="../Enums/RichPushCategory.html#/s:27CheetahDigitalNotifications16RichPushCategoryO8postLikeyA2CmF">RichPushCategory.postLike</a></code> category and sets  its supported actions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupPostLikeCategory</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationCategory</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The whole push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC28setupPostLikeCommentCategoryySo014UNNotificationK0CSDySSypGF"></a>
+                    <a name="//apple_ref/swift/Method/setupPostLikeCommentCategory(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC28setupPostLikeCommentCategoryySo014UNNotificationK0CSDySSypGF">setupPostLikeCommentCategory(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code><a href="../Enums/RichPushCategory.html#/s:27CheetahDigitalNotifications16RichPushCategoryO15postLikeCommentyA2CmF">RichPushCategory.postLikeComment</a></code> category and sets  its supported actions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupPostLikeCommentCategory</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationCategory</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The whole push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC22setupChallengeCategoryySo014UNNotificationI0CSDySSypGF"></a>
+                    <a name="//apple_ref/swift/Method/setupChallengeCategory(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC22setupChallengeCategoryySo014UNNotificationI0CSDySSypGF">setupChallengeCategory(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code><a href="../Enums/RichPushCategory.html#/s:27CheetahDigitalNotifications16RichPushCategoryO9challengeyA2CmF">RichPushCategory.challenge</a></code> category and sets  its supported actions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupChallengeCategory</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationCategory</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The whole push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC22setupOfferLinkCategoryySo014UNNotificationJ0CSDySSypGF"></a>
+                    <a name="//apple_ref/swift/Method/setupOfferLinkCategory(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC22setupOfferLinkCategoryySo014UNNotificationJ0CSDySSypGF">setupOfferLinkCategory(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code><a href="../Enums/RichPushCategory.html#/s:27CheetahDigitalNotifications16RichPushCategoryO9offerLinkyA2CmF">RichPushCategory.offerLink</a></code> category and sets  its supported actions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupOfferLinkCategory</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationCategory</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The whole push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC24setupOfferCouponCategoryySo014UNNotificationJ0CSDySSypGF"></a>
+                    <a name="//apple_ref/swift/Method/setupOfferCouponCategory(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC24setupOfferCouponCategoryySo014UNNotificationJ0CSDySSypGF">setupOfferCouponCategory(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code><a href="../Enums/RichPushCategory.html#/s:27CheetahDigitalNotifications16RichPushCategoryO11offerCouponyA2CmF">RichPushCategory.offerCoupon</a></code> category and sets  its supported actions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupOfferCouponCategory</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationCategory</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The whole push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC29setupOfferCertificateCategoryySo014UNNotificationJ0CSDySSypGF"></a>
+                    <a name="//apple_ref/swift/Method/setupOfferCertificateCategory(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC29setupOfferCertificateCategoryySo014UNNotificationJ0CSDySSypGF">setupOfferCertificateCategory(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code><a href="../Enums/RichPushCategory.html#/s:27CheetahDigitalNotifications16RichPushCategoryO16offerCertificateyA2CmF">RichPushCategory.offerCertificate</a></code> category and sets  its supported actions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupOfferCertificateCategory</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationCategory</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The whole push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC22setupOfferClipCategoryySo014UNNotificationJ0CSDySSypGF"></a>
+                    <a name="//apple_ref/swift/Method/setupOfferClipCategory(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC22setupOfferClipCategoryySo014UNNotificationJ0CSDySSypGF">setupOfferClipCategory(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code><a href="../Enums/RichPushCategory.html#/s:27CheetahDigitalNotifications16RichPushCategoryO9offerClipyA2CmF">RichPushCategory.offerClip</a></code> category and sets  its supported actions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupOfferClipCategory</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationCategory</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The whole push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC26setupEventFavoriteCategoryySo014UNNotificationJ0CSDySSypGF"></a>
+                    <a name="//apple_ref/swift/Method/setupEventFavoriteCategory(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC26setupEventFavoriteCategoryySo014UNNotificationJ0CSDySSypGF">setupEventFavoriteCategory(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code><a href="../Enums/RichPushCategory.html#/s:27CheetahDigitalNotifications16RichPushCategoryO13eventFavoriteyA2CmF">RichPushCategory.eventFavorite</a></code> category and sets  its supported actions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupEventFavoriteCategory</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationCategory</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The whole push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC24setupContentPageCategoryySo014UNNotificationJ0CSDySSypGF"></a>
+                    <a name="//apple_ref/swift/Method/setupContentPageCategory(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC24setupContentPageCategoryySo014UNNotificationJ0CSDySSypGF">setupContentPageCategory(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a <code><a href="../Enums/RichPushCategory.html#/s:27CheetahDigitalNotifications16RichPushCategoryO11contentPageyA2CmF">RichPushCategory.contentPage</a></code> category and sets  its supported actions</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupContentPageCategory</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationCategory</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The whole push notification payload</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Builders"></a>
+                <a name="//apple_ref/swift/Section/Builders" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Builders"></a>
+                  <h3 class="section-name"><span>Builders</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC12createAction_5title6isText7optionsSo014UNNotificationH0CAA0deH0O_SSSbSo0mH7OptionsVtF"></a>
+                    <a name="//apple_ref/swift/Method/createAction(_:title:isText:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC12createAction_5title6isText7optionsSo014UNNotificationH0CAA0deH0O_SSSbSo0mH7OptionsVtF">createAction(_:<wbr>title:<wbr>isText:<wbr>options:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Builder method that creates an instance of <code>UNNotificationAction</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">createAction</span><span class="p">(</span><span class="n">_</span> <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Enums/RichPushAction.html">RichPushAction</a></span><span class="p">,</span>
+                       <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                       <span class="nv">isText</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+                       <span class="nv">options</span><span class="p">:</span> <span class="kt">UNNotificationActionOptions</span> <span class="o">=</span> <span class="p">[])</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationAction</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>action</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/RichPushAction.html">RichPushAction</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Text to be displayed on the action button</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isText</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Boolean flag if action is expecting a text input from the user</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>UNNotificationActionOptions</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:27CheetahDigitalNotifications15RichPushServiceC14createCategory_7actions7optionsSo014UNNotificationH0CAA0deH0O_SaySo0K6ActionCGSo0kH7OptionsVtF"></a>
+                    <a name="//apple_ref/swift/Method/createCategory(_:actions:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:27CheetahDigitalNotifications15RichPushServiceC14createCategory_7actions7optionsSo014UNNotificationH0CAA0deH0O_SaySo0K6ActionCGSo0kH7OptionsVtF">createCategory(_:<wbr>actions:<wbr>options:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Builder method that creates an instance of <code>UNNotificationCategory</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">createCategory</span><span class="p">(</span><span class="n">_</span> <span class="nv">category</span><span class="p">:</span> <span class="kt"><a href="../Enums/RichPushCategory.html">RichPushCategory</a></span><span class="p">,</span>
+                         <span class="nv">actions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UNNotificationAction</span><span class="p">],</span>
+                         <span class="nv">options</span><span class="p">:</span> <span class="kt">UNNotificationCategoryOptions</span> <span class="o">=</span> <span class="p">[])</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationCategory</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>category</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/RichPushCategory.html">RichPushCategory</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>actions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List of supported <code>UNNotificationAction</code> of the category</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2022-01-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

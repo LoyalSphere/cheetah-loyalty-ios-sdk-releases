@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UNNotificationAttachment Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/UNNotificationAttachment" class="dashAnchor"></a>
+    <a title="UNNotificationAttachment Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        UNNotificationAttachment Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultEMSOpenHandler.html">DefaultEMSOpenHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultNotificationHelper.html">DefaultNotificationHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultPushHandler.html">DefaultPushHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultRichPushHandler.html">DefaultRichPushHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RichPushService.html">RichPushService</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/NotificationType.html">NotificationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RichPushAction.html">RichPushAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RichPushCategory.html">RichPushCategory</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UNNotificationAttachment.html">UNNotificationAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UNUserNotificationCenter.html">UNUserNotificationCenter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/EMSOpenHandler.html">EMSOpenHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NotificationHelper.html">NotificationHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PushHandler.html">PushHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RichPushHandler.html">RichPushHandler</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UNNotificationAttachment</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">UNNotificationAttachment</span></code></pre>
+
+                </div>
+              </div>
+            <p>Creates an attachment for the data at URL with an optional options dictionary.
+URL must be a file URL. Returns nil if the data at URL is not supported.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So24UNNotificationAttachmentC27CheetahDigitalNotificationsE10identifier4data7optionsABSS_10Foundation4DataVSDySo8NSObjectCyXlGSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(identifier:data:options:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So24UNNotificationAttachmentC27CheetahDigitalNotificationsE10identifier4data7optionsABSS_10Foundation4DataVSDySo8NSObjectCyXlGSgtKcfc">init(identifier:<wbr>data:<wbr>options:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience init for <code>UNNotificationAttachment</code> that accepts an image <code>Data</code>,
+saves the image on a temporary directory on the device,
+then returns a <code>UNNotificationAttachment</code> with the said image.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">,</span> <span class="nv">options</span><span class="p">:</span> <span class="p">[</span><span class="kt">NSObject</span> <span class="p">:</span> <span class="kt">AnyObject</span><span class="p">]?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>identifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Filename that will be used when storing the image</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Image data</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>options</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary of options related for the file that will be created</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The created <code>UNNotificationAttachment</code> with an image.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2022-01-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

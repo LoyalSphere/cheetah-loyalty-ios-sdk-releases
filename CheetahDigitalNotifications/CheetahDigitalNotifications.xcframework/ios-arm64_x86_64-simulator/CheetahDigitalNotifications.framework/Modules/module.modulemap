@@ -1,0 +1,4 @@
+framework module CheetahDigitalNotifications {
+  header "CheetahDigitalNotifications-Swift.h"
+  requires objc
+}

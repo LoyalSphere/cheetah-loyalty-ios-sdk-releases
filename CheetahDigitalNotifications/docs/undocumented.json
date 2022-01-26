@@ -1,0 +1,278 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 16,
+      "symbol": "NotificationType.award",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 17,
+      "symbol": "NotificationType.challenge",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 18,
+      "symbol": "NotificationType.clientEvents",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 19,
+      "symbol": "NotificationType.contentPage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 20,
+      "symbol": "NotificationType.event",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 21,
+      "symbol": "NotificationType.member",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 22,
+      "symbol": "NotificationType.offer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 23,
+      "symbol": "NotificationType.offerResponse",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 24,
+      "symbol": "NotificationType.post",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 25,
+      "symbol": "NotificationType.reward",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 33,
+      "symbol": "RichPushCategory.postLike",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 34,
+      "symbol": "RichPushCategory.postLikeComment",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 35,
+      "symbol": "RichPushCategory.challenge",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 36,
+      "symbol": "RichPushCategory.offerLink",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 37,
+      "symbol": "RichPushCategory.offerCoupon",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 38,
+      "symbol": "RichPushCategory.offerCertificate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 39,
+      "symbol": "RichPushCategory.offerClip",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 40,
+      "symbol": "RichPushCategory.eventFavorite",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 41,
+      "symbol": "RichPushCategory.contentPage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 51,
+      "symbol": "RichPushAction.likePost",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 52,
+      "symbol": "RichPushAction.commentPost",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 53,
+      "symbol": "RichPushAction.openChallenge",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 54,
+      "symbol": "RichPushAction.openOfferLink",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 55,
+      "symbol": "RichPushAction.openCoupon",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 56,
+      "symbol": "RichPushAction.openCertificate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 57,
+      "symbol": "RichPushAction.clipOffer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 58,
+      "symbol": "RichPushAction.favoriteEvent",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/Constants.swift",
+      "line": 59,
+      "symbol": "RichPushAction.openContentPage",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/DefaultNotificationHelper.swift",
+      "line": 32,
+      "symbol": "DefaultNotificationHelper.init(pushHandler:richPushHandler:emsOpenHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/DefaultPushHandler.swift",
+      "line": 15,
+      "symbol": "DefaultPushHandler.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/DefaultRichPushHandler.swift",
+      "line": 16,
+      "symbol": "DefaultRichPushHandler.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/EMSOpenHandler.swift",
+      "line": 14,
+      "symbol": "EMSOpenHandler.handleEmsOpen(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/EMSOpenHandler.swift",
+      "line": 16,
+      "symbol": "EMSOpenHandler.handleOpen(emsOpenURL:data:response:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/EMSOpenHandler.swift",
+      "line": 18,
+      "symbol": "EMSOpenHandler.handleClick(emsOpenURL:data:response:error:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/EMSOpenHandler.swift",
+      "line": 24,
+      "symbol": "DefaultEMSOpenHandler.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/NotificationHelper.swift",
+      "line": 14,
+      "symbol": "NotificationHelper",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/RichPushService.swift",
+      "line": 13,
+      "symbol": "RichPushService",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/RichPushService.swift",
+      "line": 21,
+      "symbol": "RichPushService.didReceive(_:withContentHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications/CheetahLoyaltyNotifications/RichPushService.swift",
+      "line": 43,
+      "symbol": "RichPushService.serviceExtensionTimeWillExpire()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/jvitug-cd/Projects/cheetah-loyalty-ios-sdk/CheetahDigitalNotifications"
+}

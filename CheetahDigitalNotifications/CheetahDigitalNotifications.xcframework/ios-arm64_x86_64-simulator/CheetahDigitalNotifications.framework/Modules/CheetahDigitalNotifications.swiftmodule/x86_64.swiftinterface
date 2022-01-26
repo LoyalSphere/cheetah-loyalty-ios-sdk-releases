@@ -1,0 +1,193 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahDigitalNotifications
+import CheetahDigitalCore
+import CheetahDigitalUtils
+import Foundation
+import Swift
+import UIKit
+import UserNotifications
+import _Concurrency
+public protocol RichPushHandler : AnyObject {
+  func handleLikePost(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleCommentPost(userInfo: [Swift.String : Any], text: Swift.String, completionHandler: @escaping () -> Swift.Void)
+  func handleOpenChallenge(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleOpenOfferLink(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleOpenCoupon(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleOpenCertificate(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleClipOffer(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleFavoriteEvent(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handleOpenContentPage(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func showChallengeResponder(_ challenge: CheetahDigitalCore.Challenge)
+  func showOfferResponseDetail(_ response: CheetahDigitalCore.Offer.ResponseInfo)
+  func showMessage(_ message: Swift.String)
+  func handleRichPushResponse(actionIdentifier: Swift.String, notificationType: CheetahDigitalNotifications.NotificationType, text: Swift.String?, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func openUrl(_ url: Foundation.URL)
+}
+public protocol NotificationHelper {
+  var pushHandler: CheetahDigitalNotifications.PushHandler { get }
+  var richPushHandler: CheetahDigitalNotifications.RichPushHandler { get }
+  var emsOpenHandler: CheetahDigitalNotifications.EMSOpenHandler { get }
+  var deviceId: Swift.String { get }
+  func requestAuthorization(options: UserNotifications.UNAuthorizationOptions, completion: @escaping (_ granted: Swift.Bool, _ error: Swift.Error?) -> Swift.Void)
+  func sendDeviceTokenToServerIfNeeded(_ deviceToken: Foundation.Data)
+  func trackMessage(id: Swift.Int)
+  func handleNotificationResponse(_ response: UserNotifications.UNNotificationResponse, completionHandler: @escaping () -> Swift.Void)
+}
+extension UserNotifications.UNNotificationAttachment {
+  convenience public init(identifier: Swift.String, data: Foundation.Data, options: [ObjectiveC.NSObject : Swift.AnyObject]? = nil) throws
+}
+extension UserNotifications.UNUserNotificationCenter {
+  public static func scheduleLocalNotification(content: UserNotifications.UNMutableNotificationContent, trigger: UserNotifications.UNNotificationTrigger?, completion: ((Swift.Error?) -> Swift.Void)? = nil)
+}
+open class DefaultPushHandler : CheetahDigitalNotifications.PushHandler {
+  public init()
+  open func handleClientEvents(_ offers: [Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleContentPageWithName(_ name: Swift.String, completionHandler: @escaping () -> Swift.Void)
+  open func handleNotificationWithoutType(completionHandler: @escaping () -> Swift.Void)
+  open func handleObjectWithId(_ id: Swift.Int, notificationType: CheetahDigitalNotifications.NotificationType, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handlePush(notificationType: CheetahDigitalNotifications.NotificationType, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers open class RichPushService : UserNotifications.UNNotificationServiceExtension {
+  public var contentHandler: ((UserNotifications.UNNotificationContent) -> Swift.Void)?
+  public var bestAttemptContent: UserNotifications.UNMutableNotificationContent?
+  @objc override dynamic open func didReceive(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
+  @objc override dynamic open func serviceExtensionTimeWillExpire()
+  open func addImageIfNecessary(content: UserNotifications.UNMutableNotificationContent, userInfo: [Swift.String : Any])
+  open func createSupportedCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory?
+  open func setupPostLikeCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupPostLikeCommentCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupChallengeCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupOfferLinkCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupOfferCouponCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupOfferCertificateCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupOfferClipCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupEventFavoriteCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func setupContentPageCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
+  open func createAction(_ action: CheetahDigitalNotifications.RichPushAction, title: Swift.String, isText: Swift.Bool = false, options: UserNotifications.UNNotificationActionOptions = []) -> UserNotifications.UNNotificationAction
+  open func createCategory(_ category: CheetahDigitalNotifications.RichPushCategory, actions: [UserNotifications.UNNotificationAction], options: UserNotifications.UNNotificationCategoryOptions = []) -> UserNotifications.UNNotificationCategory
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum NotificationType : Swift.String, Swift.CaseIterable {
+  case award
+  case challenge
+  case clientEvents
+  case contentPage
+  case event
+  case member
+  case offer
+  case offerResponse
+  case post
+  case reward
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [CheetahDigitalNotifications.NotificationType]
+  public typealias RawValue = Swift.String
+  public static var allCases: [CheetahDigitalNotifications.NotificationType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum RichPushCategory : Swift.String, Swift.CaseIterable {
+  case postLike
+  case postLikeComment
+  case challenge
+  case offerLink
+  case offerCoupon
+  case offerCertificate
+  case offerClip
+  case eventFavorite
+  case contentPage
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [CheetahDigitalNotifications.RichPushCategory]
+  public typealias RawValue = Swift.String
+  public static var allCases: [CheetahDigitalNotifications.RichPushCategory] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum RichPushAction : Swift.String, Swift.CaseIterable {
+  case likePost
+  case commentPost
+  case openChallenge
+  case openOfferLink
+  case openCoupon
+  case openCertificate
+  case clipOffer
+  case favoriteEvent
+  case openContentPage
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [CheetahDigitalNotifications.RichPushAction]
+  public typealias RawValue = Swift.String
+  public static var allCases: [CheetahDigitalNotifications.RichPushAction] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol PushHandler {
+  func handleClientEvents(_ offers: [Any], completionHandler: @escaping () -> Swift.Void)
+  func handleContentPageWithName(_ name: Swift.String, completionHandler: @escaping () -> Swift.Void)
+  func handleNotificationWithoutType(completionHandler: @escaping () -> Swift.Void)
+  func handleObjectWithId(_ id: Swift.Int, notificationType: CheetahDigitalNotifications.NotificationType, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  func handlePush(notificationType: CheetahDigitalNotifications.NotificationType, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+}
+open class DefaultNotificationHelper : CheetahDigitalNotifications.NotificationHelper {
+  public var pushHandler: CheetahDigitalNotifications.PushHandler
+  public var richPushHandler: CheetahDigitalNotifications.RichPushHandler
+  public var emsOpenHandler: CheetahDigitalNotifications.EMSOpenHandler
+  open var deviceId: Swift.String {
+    get
+  }
+  required public init(pushHandler: CheetahDigitalNotifications.PushHandler, richPushHandler: CheetahDigitalNotifications.RichPushHandler, emsOpenHandler: CheetahDigitalNotifications.EMSOpenHandler)
+  open func sendDeviceTokenToServerIfNeeded(_ deviceToken: Foundation.Data)
+  open func requestAuthorization(options: UserNotifications.UNAuthorizationOptions = [.alert, .sound, .badge], completion: @escaping (_ granted: Swift.Bool, _ error: Swift.Error?) -> Swift.Void)
+  open func trackMessage(id: Swift.Int)
+  open func handleNotificationResponse(_ response: UserNotifications.UNNotificationResponse, completionHandler: @escaping () -> Swift.Void)
+  @objc deinit
+}
+public protocol EMSOpenHandler {
+  func handleEmsOpen(_ emsOpen: Swift.String)
+  func handleOpen(emsOpenURL: Foundation.URL, data: Foundation.Data?, response: Foundation.URLResponse?, error: Swift.Error?)
+  func handleClick(emsOpenURL: Foundation.URL, data: Foundation.Data?, response: Foundation.URLResponse?, error: Swift.Error?)
+}
+open class DefaultEMSOpenHandler : CheetahDigitalNotifications.EMSOpenHandler {
+  public init()
+  open func handleEmsOpen(_ emsOpen: Swift.String)
+  open func handleOpen(emsOpenURL: Foundation.URL, data: Foundation.Data?, response: Foundation.URLResponse?, error: Swift.Error?)
+  open func handleClick(emsOpenURL: Foundation.URL, data: Foundation.Data?, response: Foundation.URLResponse?, error: Swift.Error?)
+  @objc deinit
+}
+open class DefaultRichPushHandler : CheetahDigitalNotifications.RichPushHandler {
+  public init()
+  open func handleLikePost(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleCommentPost(userInfo: [Swift.String : Any], text: Swift.String, completionHandler: @escaping () -> Swift.Void)
+  open func handleOpenChallenge(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleOpenOfferLink(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleOpenCoupon(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleOpenCertificate(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleClipOffer(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleFavoriteEvent(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleOpenContentPage(userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func handleRichPushResponse(actionIdentifier: Swift.String, notificationType: CheetahDigitalNotifications.NotificationType, text: Swift.String?, userInfo: [Swift.String : Any], completionHandler: @escaping () -> Swift.Void)
+  open func showChallengeResponder(_ challenge: CheetahDigitalCore.Challenge)
+  open func showOfferResponseDetail(_ response: CheetahDigitalCore.Offer.ResponseInfo)
+  open func showMessage(_ message: Swift.String)
+  open func openUrl(_ url: Foundation.URL)
+  @objc deinit
+}
+extension CheetahDigitalNotifications.NotificationType : Swift.Equatable {}
+extension CheetahDigitalNotifications.NotificationType : Swift.Hashable {}
+extension CheetahDigitalNotifications.NotificationType : Swift.RawRepresentable {}
+extension CheetahDigitalNotifications.RichPushCategory : Swift.Equatable {}
+extension CheetahDigitalNotifications.RichPushCategory : Swift.Hashable {}
+extension CheetahDigitalNotifications.RichPushCategory : Swift.RawRepresentable {}
+extension CheetahDigitalNotifications.RichPushAction : Swift.Equatable {}
+extension CheetahDigitalNotifications.RichPushAction : Swift.Hashable {}
+extension CheetahDigitalNotifications.RichPushAction : Swift.RawRepresentable {}
