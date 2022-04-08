@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahDigitalCore
 @_exported import CheetahDigitalCore
 import CheetahDigitalUtils
@@ -320,12 +320,12 @@ public struct PunchCard : Swift.Codable, Swift.Equatable {
   public var headingBgColor: Swift.String
   public var image1Bg: Swift.String
   public var layoutId: Swift.String
-  public var punches: Swift.Int
+  public var punches: [CheetahDigitalCore.PunchCard.Punch]
   public var startDate: Swift.String
   public var expiration: Swift.String
   public var punchDetail: [CheetahDigitalCore.PunchCard.Detail]
   public var punchCardType: CheetahDigitalCore.PunchCard.PunchCardType?
-  public init(id: Swift.Int, name: Swift.String, label: Swift.String, status: Swift.String, description: Swift.String, requiredPunches: Swift.Int, effectivityStart: Swift.String, effectivityEnd: Swift.String, usageStartDate: Swift.String, usageEndDate: Swift.String, usageSchedule: Swift.String, heading: Swift.String, subheading: Swift.String, body: Swift.String, details: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String, subject: Swift.String, action: Swift.String, headingColor: Swift.String, color: Swift.String, bgColor: Swift.String, headingBgColor: Swift.String, image1Bg: Swift.String, layoutId: Swift.String, punches: Swift.Int, startDate: Swift.String, expiration: Swift.String, punchDetail: [CheetahDigitalCore.PunchCard.Detail], punchCardType: CheetahDigitalCore.PunchCard.PunchCardType?)
+  public init(id: Swift.Int, name: Swift.String, label: Swift.String, status: Swift.String, description: Swift.String, requiredPunches: Swift.Int, effectivityStart: Swift.String, effectivityEnd: Swift.String, usageStartDate: Swift.String, usageEndDate: Swift.String, usageSchedule: Swift.String, heading: Swift.String, subheading: Swift.String, body: Swift.String, details: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String, subject: Swift.String, action: Swift.String, headingColor: Swift.String, color: Swift.String, bgColor: Swift.String, headingBgColor: Swift.String, image1Bg: Swift.String, layoutId: Swift.String, punches: [CheetahDigitalCore.PunchCard.Punch], startDate: Swift.String, expiration: Swift.String, punchDetail: [CheetahDigitalCore.PunchCard.Detail], punchCardType: CheetahDigitalCore.PunchCard.PunchCardType?)
   public struct Detail : Swift.Codable, Swift.Equatable {
     public var name: Swift.String
     public var punches: Swift.Int
@@ -499,6 +499,7 @@ public struct Offer : Swift.Codable, Swift.Equatable {
   public var extraJSON: [Swift.String : CheetahDigitalUtils.AnyCodable]
   public var heading: Swift.String
   public var imageUrl: Swift.String
+  public var integrationId: Swift.String
   public var internalUrl: Swift.String
   public var isFavorited: Swift.Bool
   public var responses: [CheetahDigitalCore.Offer.Response]
@@ -509,7 +510,7 @@ public struct Offer : Swift.Codable, Swift.Equatable {
   public var thumbnailUrl: Swift.String
   public var type: CheetahDigitalCore.Offer.OfferType
   public var url: Swift.String
-  public init(id: Swift.Int, action: Swift.String, barcode: Swift.String, barcodeStandard: Swift.String, body: Swift.String, categories: [CheetahDigitalCore.Offer.Category], clipped: Swift.Bool, descriptionText: Swift.String, details: Swift.String, endDate: Swift.String, extraJSON: [Swift.String : CheetahDigitalUtils.AnyCodable], heading: Swift.String, imageUrl: Swift.String, internalUrl: Swift.String, isFavorited: Swift.Bool, responses: [CheetahDigitalCore.Offer.Response], startDate: Swift.String, subheading: Swift.String, targetObject: CheetahDigitalCore.Offer.TargetObject?, targetUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahDigitalCore.Offer.OfferType, url: Swift.String)
+  public init(id: Swift.Int, action: Swift.String, barcode: Swift.String, barcodeStandard: Swift.String, body: Swift.String, categories: [CheetahDigitalCore.Offer.Category], clipped: Swift.Bool, descriptionText: Swift.String, details: Swift.String, endDate: Swift.String, extraJSON: [Swift.String : CheetahDigitalUtils.AnyCodable], heading: Swift.String, imageUrl: Swift.String, integrationId: Swift.String, internalUrl: Swift.String, isFavorited: Swift.Bool, responses: [CheetahDigitalCore.Offer.Response], startDate: Swift.String, subheading: Swift.String, targetObject: CheetahDigitalCore.Offer.TargetObject?, targetUrl: Swift.String, thumbnailUrl: Swift.String, type: CheetahDigitalCore.Offer.OfferType, url: Swift.String)
   public enum OfferType : Swift.Codable, Swift.Equatable {
     case barcode
     case certificate
@@ -2222,6 +2223,9 @@ public struct Badge : Swift.Codable, Swift.Equatable {
   public var name: Swift.String
   public var label: Swift.String
   public var type: Swift.String
+  public var levels: CheetahDigitalCore.CustomLevel?
+  public var imageUrl: Swift.String
+  public var earned: Swift.Bool
   public var description: Swift.String
   public var status: Swift.String
   public var startPeriod: Swift.String
@@ -2231,11 +2235,32 @@ public struct Badge : Swift.Codable, Swift.Equatable {
   public var paymentType: Swift.String
   public var responseCurrencyAmount: Swift.String
   public var responseCurrencyName: Swift.String
-  public init(id: Swift.Int, name: Swift.String, label: Swift.String, type: Swift.String, description: Swift.String, status: Swift.String, startPeriod: Swift.String, endPeriod: Swift.String, expirationInterval: Swift.Int, expirationIntervalPeriod: Swift.String, paymentType: Swift.String, responseCurrencyAmount: Swift.String, responseCurrencyName: Swift.String)
+  public init(id: Swift.Int, name: Swift.String, label: Swift.String, type: Swift.String, levels: CheetahDigitalCore.CustomLevel?, imageUrl: Swift.String, earned: Swift.Bool, description: Swift.String, status: Swift.String, startPeriod: Swift.String, endPeriod: Swift.String, expirationInterval: Swift.Int, expirationIntervalPeriod: Swift.String, paymentType: Swift.String, responseCurrencyAmount: Swift.String, responseCurrencyName: Swift.String)
+  public struct Level : Swift.Codable, Swift.Equatable {
+    public var level: Swift.Int
+    public var earned: Swift.Bool
+    public var name: Swift.String
+    public var label: Swift.String
+    public var description: Swift.String
+    public var imageUrl: Swift.String
+    public init(level: Swift.Int, earned: Swift.Bool, name: Swift.String, label: Swift.String, description: Swift.String, imageUrl: Swift.String)
+    public static func == (a: CheetahDigitalCore.Badge.Level, b: CheetahDigitalCore.Badge.Level) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
   public static func == (a: CheetahDigitalCore.Badge, b: CheetahDigitalCore.Badge) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
 }
+public enum CustomLevel : Swift.Codable, Swift.Equatable {
+  case intLevels(Swift.Int)
+  case objectLevels([CheetahDigitalCore.Badge.Level])
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  public static func == (a: CheetahDigitalCore.CustomLevel, b: CheetahDigitalCore.CustomLevel) -> Swift.Bool
+}
 extension CheetahDigitalCore.Badge {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Badge.Level {
   public init(from decoder: Swift.Decoder) throws
 }
 public enum FriendsRequest : CheetahDigitalUtils.URLRequestConvertible {
@@ -2869,9 +2894,13 @@ extension CheetahDigitalCore.GiftCard.GiftCardClass {
 public enum ProfileRequest : CheetahDigitalUtils.URLRequestConvertible {
   case changePassword(oldPassword: Swift.String, newPassword: Swift.String, confirmPassword: Swift.String)
   case connectProfile(token: Swift.String, provider: Swift.String)
+  case deleteAccountUsingToken
+  case deleteAccountUsingPassword(password: Swift.String)
+  case deleteAccountUsingCode(code: Swift.String)
   case disconnectProvider(provider: Swift.String)
   case getAccountSummary
   case getMemberProfile(memberID: Swift.String)
+  case requestOtp
   case getProfile
   case getProfileIdentities(parameters: CheetahDigitalUtils.Parameters?)
   case getProfileMetadata
@@ -2905,6 +2934,10 @@ public enum ProfileAPI {
   public static func trackActiveUser(completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
   public static func update(profileAttributes: CheetahDigitalUtils.Parameters?, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
   public static func update(avatar: UIKit.UIImage, completion: CheetahDigitalCore.ResponseCompletion<Swift.String> = nil)
+  public static func deleteAccountUsingAccessToken(completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func deleteAccountUsingPassword(password: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func deleteAccountUsingCode(code: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func requestOtp(completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
 }
 public enum MessagesRequest : CheetahDigitalUtils.URLRequestConvertible {
   case getMessages(parameters: CheetahDigitalUtils.Parameters?)

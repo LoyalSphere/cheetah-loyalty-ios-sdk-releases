@@ -6,6 +6,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-2.1.0] - 2022-04-08
+### Added
+- `Badges` attributes: [#620]
+    - `levels`
+    - `imageUrl`
+    - `earned`
+- `Offer` attribute: [#619]
+    - `integrationId`
+- `ProfileAPI` methods: [#622]
+    - `deleteAccountUsingToken`
+    - `deleteAccountUsingPassword`
+    - `deleteAccountUsingCode`
+    - `requestOtp`
+
+### Changed
+- `PunchCard`'s `punches` property type to `[PunchCard.Punch]` [#621]
+
+### Fixed
+- Reachability error not returned when not connected to internet [#623]
+
+[#619]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/619
+[#620]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/620
+[#621]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/621
+[#622]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/622
+[#623]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/623
+
 ## [Core-2.0.0] - 2022-01-21
 ### Added
 - Deregister device API [#616]
