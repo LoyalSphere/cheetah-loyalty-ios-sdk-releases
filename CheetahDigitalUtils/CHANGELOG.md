@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Utils-2.1.0] - 2022-04-18
+### Changed
+- Built using Xcode 13.3.
+
+
 ## [Utils-2.0.0] - 2022-01-21
 ### Changed
 - Rename project and package name to `CheetahDigitalUtils`
