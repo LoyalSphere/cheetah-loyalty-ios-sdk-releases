@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		zD20MosDVbn9FIlpsEszQTWvEyo=
+		mE8j3aFP3R3N5urWYvEfqqGpDbU=
 		</data>
 		<key>CarouselItemCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Headers/CheetahDigitalUI-Swift.h</key>
 		<data>
-		DoVJ4G/GK0PDmT2A8GUY1ds+0rI=
+		jhZDnN8jVZykCwMqVjaueK7wqMg=
 		</data>
 		<key>Headers/CheetahLoyaltyUI.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gb0fVauPsnAAAxldgh5kx+5X4Xs=
+		7V1RgMSDxmgl0pfMxcFkM/P8XwE=
 		</data>
 		<key>ListItemCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -94,51 +94,27 @@
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		iuxz6I/ncjqzwa9AzUQPwXEanZ8=
+		5Sp4ukFAdRBzM6T3W7esnkGXr9w=
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tZ6PfHKkQ3W/b9MqCdh8n9565vw=
+		LhT70Fnb0O6qv2gTzKgg+trMhn8=
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1k7bgcz0jIEqKwbx1OI1xHUqy3k=
-		</data>
-		<key>Modules/CheetahDigitalUI.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		iuxz6I/ncjqzwa9AzUQPwXEanZ8=
-		</data>
-		<key>Modules/CheetahDigitalUI.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		tZ6PfHKkQ3W/b9MqCdh8n9565vw=
-		</data>
-		<key>Modules/CheetahDigitalUI.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		1k7bgcz0jIEqKwbx1OI1xHUqy3k=
+		JPpAdaFhaxZOfat1rmUYhLiXGvA=
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		+pHROtakMWPEDlZOAtkmwfWZRas=
+		UdRbrVAVhpocjsFqDNSG6V4DOTY=
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		O6+aKdf+zbJEoAgWMgkVt+7Af+M=
+		48nC2y0KHMckf/lmS1yEzy4aJFc=
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MFbe/n3J1C9bfrgsSbExYORKLp8=
-		</data>
-		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		+pHROtakMWPEDlZOAtkmwfWZRas=
-		</data>
-		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		O6+aKdf+zbJEoAgWMgkVt+7Af+M=
-		</data>
-		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		MFbe/n3J1C9bfrgsSbExYORKLp8=
+		R499DNuqELSoNwVEBly4GFQdCko=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -225,7 +201,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			42miChusyqLQDrwNYO09KsUIbkW+2xRTunhAXPQwOJM=
+			YdL/h2UxnXXavDvrQPXOERXx+cGh1XulgA5wew96Uxk=
 			</data>
 		</dict>
 		<key>CarouselItemCell.nib/objects-12.3+.nib</key>
@@ -295,7 +271,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3o6nMRegm6B5vhQRrIi0u2gkk3ypiFy0BQz103N5hmY=
+			k01DgxV8CbQ8oo5luqseA507kIybZY9y/lJiKQuQ0Oo=
 			</data>
 		</dict>
 		<key>Headers/CheetahLoyaltyUI.h</key>
@@ -351,84 +327,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r/R8MF+Stylfyw4ELy/Wbga55qCCiZEHKEUqesejKlM=
+			KggP1515cO/tDqKLS9PozhsGVsMKusZ85qoCO6teq+4=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			96yxJtByVl7sNkmMIfisE+kpXC1MqNyKVuyyJCDTWCo=
+			5IyJ4a8PO9pvmCRjF3jw8saCmM0XfqljGasm5wBU37k=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XSgf4+1qAKCdIA05knrbRT6kytVf++f/aiarGwIZbkQ=
-			</data>
-		</dict>
-		<key>Modules/CheetahDigitalUI.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			r/R8MF+Stylfyw4ELy/Wbga55qCCiZEHKEUqesejKlM=
-			</data>
-		</dict>
-		<key>Modules/CheetahDigitalUI.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			96yxJtByVl7sNkmMIfisE+kpXC1MqNyKVuyyJCDTWCo=
-			</data>
-		</dict>
-		<key>Modules/CheetahDigitalUI.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XSgf4+1qAKCdIA05knrbRT6kytVf++f/aiarGwIZbkQ=
+			eAOFbP6xRAOnIL6d45H6tSI4uIyPFnkXhFonoPOmfaU=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YNO3AfxwMYAiGW3/qKWKxn3634NMj/+JYDSpX3Lnn3w=
+			67cFfVg3+2DfNIdNHyAbLvwm8i/9ifTFWMTQSlJWMtA=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G755XpCKrMf4rAYdirE4X9WR+AN5aSAXX4C+gkd4hKE=
+			k3sXnyv7kdrLEbtQNZUqyITh0jvwgcRpNPqNUDOxntI=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Y9tFa+cdOFYeOkdl9nGWKlghOtodVDkjrd7PVvXJmoA=
-			</data>
-		</dict>
-		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			YNO3AfxwMYAiGW3/qKWKxn3634NMj/+JYDSpX3Lnn3w=
-			</data>
-		</dict>
-		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			G755XpCKrMf4rAYdirE4X9WR+AN5aSAXX4C+gkd4hKE=
-			</data>
-		</dict>
-		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Y9tFa+cdOFYeOkdl9nGWKlghOtodVDkjrd7PVvXJmoA=
+			rqW+06WqLcaLi2a78Nh5el0wH2Bv05svwPWgPHCtzLw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

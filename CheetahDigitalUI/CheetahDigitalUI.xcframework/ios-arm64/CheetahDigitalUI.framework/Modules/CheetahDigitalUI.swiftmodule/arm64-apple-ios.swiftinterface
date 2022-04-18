@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahDigitalUI
 import AVFoundation
 import CheetahDigitalUtils
@@ -1608,7 +1608,7 @@ public protocol LoadableViewController : UIKit.UIViewController, CheetahDigitalU
   @_Concurrency.MainActor(unsafe) open var ratingIndex: Swift.Int
   @_Concurrency.MainActor(unsafe) override open func initializeSelectionButton()
   @_Concurrency.MainActor(unsafe) override open func groupStateDidChange(by selectionButton: CheetahDigitalUI.SelectionButton)
-  @objc @_Concurrency.MainActor(unsafe) override open func didTapButton()
+  @_Concurrency.MainActor(unsafe) @objc override open func didTapButton()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
