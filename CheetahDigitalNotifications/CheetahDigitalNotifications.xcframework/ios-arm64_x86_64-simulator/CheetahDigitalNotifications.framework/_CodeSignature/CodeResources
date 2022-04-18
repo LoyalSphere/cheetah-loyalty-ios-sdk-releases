@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CheetahDigitalNotifications-Swift.h</key>
 		<data>
-		YKSsXC0E4IM/CZn7cQekFaNRLbs=
+		sng+a9Try3CDQIMdXzzphRjmZ48=
 		</data>
 		<key>Headers/CheetahLoyaltyNotifications.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rlRX/PAkNCfuLVtcXNHfg2FWWzo=
+		qkdOiCKO0RwU2R5bOnQNT3mOfSk=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
@@ -22,51 +22,27 @@
 		</data>
 		<key>Modules/CheetahDigitalNotifications.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		6N4n9PcyCBBTR5DzxrhKq3LNrtY=
+		j/7PpU9ltNufiidnhv4KsydlfzM=
 		</data>
 		<key>Modules/CheetahDigitalNotifications.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PY09YY6EUb47PNVdbURM8aCIWk8=
+		LHGG6P8DjzehweDqIyPeJVmCHJs=
 		</data>
 		<key>Modules/CheetahDigitalNotifications.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		o1hm+6aZbtZwvFZFxzdcDqWrJi8=
-		</data>
-		<key>Modules/CheetahDigitalNotifications.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		6N4n9PcyCBBTR5DzxrhKq3LNrtY=
-		</data>
-		<key>Modules/CheetahDigitalNotifications.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		PY09YY6EUb47PNVdbURM8aCIWk8=
-		</data>
-		<key>Modules/CheetahDigitalNotifications.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		o1hm+6aZbtZwvFZFxzdcDqWrJi8=
+		+9b3YsBAd8hy0L/IJfhRw7nU2Fg=
 		</data>
 		<key>Modules/CheetahDigitalNotifications.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		HSvPSdhPlj6h7swFV+CokDCJE3A=
+		39ZJfhh/bocF9Tt3b7UwsrFFySs=
 		</data>
 		<key>Modules/CheetahDigitalNotifications.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fvXpEHG4qhaQtdBcgknosnBCNQ8=
+		GhjrFU5/Pk/1+QnSYefXboYQkHk=
 		</data>
 		<key>Modules/CheetahDigitalNotifications.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/WmhSI8op/NnhRTPdE7au/VZmqg=
-		</data>
-		<key>Modules/CheetahDigitalNotifications.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		HSvPSdhPlj6h7swFV+CokDCJE3A=
-		</data>
-		<key>Modules/CheetahDigitalNotifications.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		fvXpEHG4qhaQtdBcgknosnBCNQ8=
-		</data>
-		<key>Modules/CheetahDigitalNotifications.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		/WmhSI8op/NnhRTPdE7au/VZmqg=
+		Q7+PJvOf4NwFeoBRjNrqJwPU/yQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/I2aq/H2nruDNE9T8qowJ8ge9m4rkabumdFEITGYcGk=
+			vevf+BL6YTGLQX53qdauUoo6jmDfOzmlsTrB8qe4dw8=
 			</data>
 		</dict>
 		<key>Headers/CheetahLoyaltyNotifications.h</key>
@@ -100,84 +76,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Vianq8bS+YehcQoZUDJEK6gQocZnwElfmI3hzEuqtg=
+			pg+bw2APso5U86zPtahOVqQRsMIxgk2tsVVZKDZiFvY=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalNotifications.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NYi2dApfdKQ5hPdx9fZ4YixTnzLG0u0DSHBhZtFRMLU=
+			QeSBkZ93wRCTkXOlKvm1QVJSmgaC6Sux/G3e2INyT/k=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalNotifications.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/X308KUWNmLFyrSmJgIMmttaARCS7d4T62yIAMtZU10=
-			</data>
-		</dict>
-		<key>Modules/CheetahDigitalNotifications.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3Vianq8bS+YehcQoZUDJEK6gQocZnwElfmI3hzEuqtg=
-			</data>
-		</dict>
-		<key>Modules/CheetahDigitalNotifications.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NYi2dApfdKQ5hPdx9fZ4YixTnzLG0u0DSHBhZtFRMLU=
-			</data>
-		</dict>
-		<key>Modules/CheetahDigitalNotifications.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/X308KUWNmLFyrSmJgIMmttaARCS7d4T62yIAMtZU10=
+			6ajfKPeqCRYbZTF9lwPVCHQj/frNUVPVWXfrS1xvuZk=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalNotifications.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			va0P/M9AZs5x/u+Ep3dXxTrcrIl6FuSZJfKC3kENSbw=
+			NrA3KSqaHsCs3kQ96srmmWIVSzd6wxZ4AJR1laUJ9/Q=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalNotifications.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eiuNvusN9s3R3oJxHF2gon8FY3tPxMB9nVOgnLJl4vo=
+			jDxXZEb8WIjmQHYDQAUL3mIrpR9zWIo/UQRUzI3bFOc=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalNotifications.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p7wnahqZI04pcLjYOqkUdqjFXaFLGsqYOnD3Mzyl0Og=
-			</data>
-		</dict>
-		<key>Modules/CheetahDigitalNotifications.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			va0P/M9AZs5x/u+Ep3dXxTrcrIl6FuSZJfKC3kENSbw=
-			</data>
-		</dict>
-		<key>Modules/CheetahDigitalNotifications.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			eiuNvusN9s3R3oJxHF2gon8FY3tPxMB9nVOgnLJl4vo=
-			</data>
-		</dict>
-		<key>Modules/CheetahDigitalNotifications.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			p7wnahqZI04pcLjYOqkUdqjFXaFLGsqYOnD3Mzyl0Og=
+			QXACPvYqZdp1MO5TFKjDbKFEUCX3Iv3TXo8Oa6zZXrY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
