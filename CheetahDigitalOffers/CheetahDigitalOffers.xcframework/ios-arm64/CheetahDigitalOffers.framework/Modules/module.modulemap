@@ -1,0 +1,4 @@
+framework module CheetahDigitalOffers {
+  header "CheetahDigitalOffers-Swift.h"
+  requires objc
+}

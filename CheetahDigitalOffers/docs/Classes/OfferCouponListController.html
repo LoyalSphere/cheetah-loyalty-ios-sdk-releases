@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OfferCouponListController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/OfferCouponListController" class="dashAnchor"></a>
+    <a title="OfferCouponListController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        OfferCouponListController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/OfferCarouselController.html">OfferCarouselController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OfferCouponClippedListController.html">OfferCouponClippedListController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OfferCouponListController.html">OfferCouponListController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OfferDetailController.html">OfferDetailController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OfferDetailViewController.html">OfferDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OfferListController.html">OfferListController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OfferResponseDetailController.html">OfferResponseDetailController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OfferResponseListController.html">OfferResponseListController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/OfferUIFactory.html">OfferUIFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OffersNotification.html">OffersNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/CheetahDigitalOffers.html">– CheetahDigitalOffers</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/OfferCarouselDelegate.html">OfferCarouselDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OfferDetailDelegate.html">OfferDetailDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OfferDetailPresentable.html">OfferDetailPresentable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/OfferCouponSegmentedController.html">OfferCouponSegmentedController</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>OfferCouponListController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">OfferCouponListController</span> <span class="p">:</span> <span class="kt"><a href="../Classes/OfferListController.html">OfferListController</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>An <code><a href="../Classes/OfferListController.html">OfferListController</a></code> subclass that loads offers of type coupon.</p>
+
+<p>This class also enables clipping of offers of type coupon by default.</p>
+
+<p>The <code>loadParameters</code>default value:</p>
+<pre class="highlight swift"><code><span class="p">[</span><span class="s">"layout"</span><span class="p">:</span> <span class="s">"mobile_list"</span><span class="p">,</span>
+<span class="s">"include_clipped"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="s">"include_responses"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="s">"show_clipped"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="s">"result_with_categories"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="s">"offer_with_responses"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+<span class="s">"display_processing_statuses"</span><span class="p">:</span> <span class="s">"pending,clipped"</span><span class="p">,</span>
+<span class="s">"has_processing_status"</span><span class="p">:</span> <span class="s">"pending,clipped"</span><span class="p">,</span>
+<span class="s">"has_usable"</span><span class="p">:</span> <span class="kc">true</span><span class="p">]</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><span>Properties</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalOffers25OfferCouponListControllerC16clippingObserverSo8NSObject_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/clippingObserver" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalOffers25OfferCouponListControllerC16clippingObserverSo8NSObject_pSgvp">clippingObserver</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The offer clipping notification observer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">clippingObserver</span><span class="p">:</span> <span class="kt">NSObjectProtocol</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalOffers25OfferCouponListControllerC20doneClippingObserverSo8NSObject_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/doneClippingObserver" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalOffers25OfferCouponListControllerC20doneClippingObserverSo8NSObject_pSgvp">doneClippingObserver</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The offer done clipping notification observer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">doneClippingObserver</span><span class="p">:</span> <span class="kt">NSObjectProtocol</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalOffers25OfferCouponListControllerC18clippingIndexPathsSay10Foundation0I4PathVGvp"></a>
+                    <a name="//apple_ref/swift/Property/clippingIndexPaths" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalOffers25OfferCouponListControllerC18clippingIndexPathsSay10Foundation0I4PathVGvp">clippingIndexPaths</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Array of index paths of offers being clipped</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">clippingIndexPaths</span><span class="p">:</span> <span class="p">[</span><span class="kt">IndexPath</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Actions"></a>
+                <a name="//apple_ref/swift/Section/Actions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Actions"></a>
+                  <h3 class="section-name"><span>Actions</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalOffers25OfferCouponListControllerC22isClippingNotificationyy10Foundation0J0VF"></a>
+                    <a name="//apple_ref/swift/Method/isClippingNotification(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalOffers25OfferCouponListControllerC22isClippingNotificationyy10Foundation0J0VF">isClippingNotification(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The action done when an offer is clipping notification is observed.</p>
+
+<p>This replaces the clip buttons with activity indicators to be able to clip/unclip an offer one at a time.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">isClippingNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>notificaton</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The offer is clipping notification posted.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalOffers25OfferCouponListControllerC24doneClippingNotificationyy10Foundation0J0VF"></a>
+                    <a name="//apple_ref/swift/Method/doneClippingNotification(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalOffers25OfferCouponListControllerC24doneClippingNotificationyy10Foundation0J0VF">doneClippingNotification(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The action done when an offer done clipping notification is observed.</p>
+
+<p>This replaces the clip buttons back on clip buttons replaces as activity indicators.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">doneClippingNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">Notification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>notificaton</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The offer done clipping notification posted.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ListCollectionController"></a>
+                <a name="//apple_ref/swift/Section/ListCollectionController" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/ListCollectionController"></a>
+                  <h3 class="section-name"><span>ListCollectionController</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalOffers25OfferCouponListControllerCACycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalOffers25OfferCouponListControllerCACycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ContentLoader"></a>
+                <a name="//apple_ref/swift/Section/ContentLoader" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/ContentLoader"></a>
+                  <h3 class="section-name"><span>ContentLoader</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalOffers25OfferCouponListControllerC11loadContentyyF"></a>
+                    <a name="//apple_ref/swift/Method/loadContent()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalOffers25OfferCouponListControllerC11loadContentyyF">loadContent()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">loadContent</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UICollectionViewDataSource"></a>
+                <a name="//apple_ref/swift/Section/UICollectionViewDataSource" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/UICollectionViewDataSource"></a>
+                  <h3 class="section-name"><span>UICollectionViewDataSource</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalOffers25OfferCouponListControllerC14collectionView_13cellForItemAtSo012UICollectionI4CellCSo0nI0C_10Foundation9IndexPathVtF"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:cellForItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalOffers25OfferCouponListControllerC14collectionView_13cellForItemAtSo012UICollectionI4CellCSo0nI0C_10Foundation9IndexPathVtF">collectionView(_:<wbr>cellForItemAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">cellForItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UICollectionViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2022-04-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
