@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-2.2.0] - 2022-04-18
+### Changed
+- Built using Xcode 13.3.
+
 ## [Core-2.1.0] - 2022-04-08
 ### Added
 - `Badges` attributes: [#620]
