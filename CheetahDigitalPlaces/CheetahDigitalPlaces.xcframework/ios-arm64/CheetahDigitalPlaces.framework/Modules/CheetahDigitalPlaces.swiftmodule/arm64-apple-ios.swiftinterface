@@ -1,0 +1,125 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahDigitalPlaces
+import CheetahDigitalCore
+import CheetahDigitalUtils
+import CoreLocation
+import Foundation
+import Swift
+import UserNotifications
+import _Concurrency
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class LocationManager : ObjectiveC.NSObject {
+  public static let eventKey: Swift.String
+  public enum Event {
+    case didSetCurrentLocation(_: CoreLocation.CLLocation)
+    case didFailUpdatingLocation(_: Swift.Error)
+    case userDidGrantLocationPermission(_: Swift.Bool)
+    case unknownAuthorizationStatusReceived(_: CoreLocation.CLAuthorizationStatus)
+  }
+  public var manager: CoreLocation.CLLocationManager! {
+    get
+  }
+  open var lastKnownLocation: CoreLocation.CLLocation? {
+    get
+  }
+  open var isAuthorized: Swift.Bool {
+    get
+  }
+  open func isLocationValid(_ location: CoreLocation.CLLocation) -> Swift.Bool
+  open var isLocationServicesEnabled: Swift.Bool {
+    get
+  }
+  public static let shared: CheetahDigitalPlaces.LocationManager
+  open func startReceivingLocationUpdates()
+  open func stopReceivingLocationUpdates()
+  open func checkAndRequestAuthorizationIfNeeded()
+  open func handleAuthorizationStatus(_ status: CoreLocation.CLAuthorizationStatus)
+  open func isStatusAllowed(_ status: CoreLocation.CLAuthorizationStatus) -> Swift.Bool
+  open func broadcastEvent(_ event: CheetahDigitalPlaces.LocationManager.Event)
+  @objc deinit
+}
+extension CheetahDigitalPlaces.LocationManager : CoreLocation.CLLocationManagerDelegate {
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: Swift.Error)
+}
+public protocol GeofencePlace {
+  var placeId: Swift.String { get }
+  var radius: Swift.Double { get }
+  var coordinates: CoreLocation.CLLocationCoordinate2D? { get }
+  var notifyOnEntry: Swift.Bool { get }
+  var notifyOnExit: Swift.Bool { get }
+}
+extension CheetahDigitalCore.Place : CheetahDigitalPlaces.GeofencePlace {
+  public var coordinates: CoreLocation.CLLocationCoordinate2D? {
+    get
+  }
+  public var notifyOnEntry: Swift.Bool {
+    get
+  }
+  public var notifyOnExit: Swift.Bool {
+    get
+  }
+}
+extension Foundation.Bundle {
+  public static var CheetahDigitalPlacesIdentifier: Swift.String {
+    get
+  }
+}
+public enum PlacesNotification : CheetahDigitalUtils.CheetahNotification {
+  case locationManagerEvents
+  public var name: Swift.String {
+    get
+  }
+  public static func == (a: CheetahDigitalPlaces.PlacesNotification, b: CheetahDigitalPlaces.PlacesNotification) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol GeofenceClientEvents {
+  func createClientEventRegions(for location: CoreLocation.CLLocation)
+  func triggerClientEvent(in region: CoreLocation.CLRegion, event: CheetahDigitalCore.Place.ClientEventType)
+  func sendLocalNotification(for offers: [CheetahDigitalCore.Offer], withTitle title: Swift.String, andInterval fireDateInterval: Foundation.TimeInterval, completion: ((Swift.Error?) -> Swift.Void)?)
+}
+@objc @_inheritsConvenienceInitializers open class GeofenceClientEventsManager : ObjectiveC.NSObject, CheetahDigitalPlaces.GeofenceClientEvents {
+  open func createClientEventRegions(for location: CoreLocation.CLLocation)
+  open func triggerClientEvent(in region: CoreLocation.CLRegion, event: CheetahDigitalCore.Place.ClientEventType)
+  public func sendLocalNotification(for offers: [CheetahDigitalCore.Offer], withTitle title: Swift.String, andInterval fireDateInterval: Foundation.TimeInterval, completion: ((Swift.Error?) -> Swift.Void)?)
+  open func formParamsForNearbyPlaces(using location: CoreLocation.CLLocation) -> CheetahDigitalUtils.Parameters
+  open func computeRadius(placeDistance: Swift.Double?, placeRadius: Swift.Double?, defaultRadius: Swift.Int) -> Swift.Double
+  open func getTitleFor(event: CheetahDigitalCore.Place.ClientEventType, placeName: Swift.String) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers open class GeofenceManager : ObjectiveC.NSObject {
+  public var manager: CoreLocation.CLLocationManager! {
+    get
+  }
+  open var locationEventListener: ObjectiveC.NSObjectProtocol?
+  public var clientEventsManager: CheetahDigitalPlaces.GeofenceClientEvents?
+  public var lastKnownLocation: CoreLocation.CLLocation? {
+    get
+  }
+  public static let shared: CheetahDigitalPlaces.GeofenceManager
+  open var isGeofencingEnabled: Swift.Bool {
+    get
+  }
+  open var isLocationServicesAndGeofencingEnabled: Swift.Bool {
+    get
+  }
+  open func start()
+  open func stop()
+  open func stopMonitoringAllRegions()
+  open func updateThresholdRegion(radius: CoreLocation.CLLocationDistance)
+  open func updateMonitoredRegions(places: [CheetahDigitalPlaces.GeofencePlace])
+  open func addEventListener()
+  open func removeEventListener()
+  @objc deinit
+}
+extension CheetahDigitalPlaces.GeofenceManager : CoreLocation.CLLocationManagerDelegate {
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didEnterRegion region: CoreLocation.CLRegion)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didExitRegion region: CoreLocation.CLRegion)
+}
+extension CheetahDigitalPlaces.PlacesNotification : Swift.Equatable {}
+extension CheetahDigitalPlaces.PlacesNotification : Swift.Hashable {}

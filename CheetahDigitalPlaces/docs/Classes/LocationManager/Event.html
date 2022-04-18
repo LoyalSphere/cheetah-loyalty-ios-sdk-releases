@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Event Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/Event" class="dashAnchor"></a>
+    <a title="Event Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html"> Reference</a>
+        <img id="carat" src="../../img/carat.png" alt=""/>
+        Event Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/GeofenceClientEventsManager.html">GeofenceClientEventsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/GeofenceManager.html">GeofenceManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/LocationManager.html">LocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/LocationManager/Event.html">– Event</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Enums/PlacesNotification.html">PlacesNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Extensions/Place.html">Place</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Protocols/GeofenceClientEvents.html">GeofenceClientEvents</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/GeofencePlace.html">GeofencePlace</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Event</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Event</span></code></pre>
+
+                </div>
+              </div>
+            <p>Different events that the <code><a href="../../Classes/LocationManager.html">LocationManager</a></code> can broadcast to its listeners</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalPlaces15LocationManagerC5EventO013didSetCurrentD0yAESo10CLLocationCcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/didSetCurrentLocation(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalPlaces15LocationManagerC5EventO013didSetCurrentD0yAESo10CLLocationCcAEmF">didSetCurrentLocation(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event for when the current location did set</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">didSetCurrentLocation</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">CLLocation</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalPlaces15LocationManagerC5EventO015didFailUpdatingD0yAEs5Error_pcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/didFailUpdatingLocation(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalPlaces15LocationManagerC5EventO015didFailUpdatingD0yAEs5Error_pcAEmF">didFailUpdatingLocation(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event for when the location services did fail to update the location</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">didFailUpdatingLocation</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalPlaces15LocationManagerC5EventO012userDidGrantD10PermissionyAESbcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/userDidGrantLocationPermission(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalPlaces15LocationManagerC5EventO012userDidGrantD10PermissionyAESbcAEmF">userDidGrantLocationPermission(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event for when the user did or did not grant location permission</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">userDidGrantLocationPermission</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalPlaces15LocationManagerC5EventO34unknownAuthorizationStatusReceivedyAESo015CLAuthorizationI0VcAEmF"></a>
+                    <a name="//apple_ref/swift/Element/unknownAuthorizationStatusReceived(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalPlaces15LocationManagerC5EventO34unknownAuthorizationStatusReceivedyAESo015CLAuthorizationI0VcAEmF">unknownAuthorizationStatusReceived(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event for when an unknwon authorization status was received</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="nf">unknownAuthorizationStatusReceived</span><span class="p">(</span><span class="nv">_</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2022-04-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

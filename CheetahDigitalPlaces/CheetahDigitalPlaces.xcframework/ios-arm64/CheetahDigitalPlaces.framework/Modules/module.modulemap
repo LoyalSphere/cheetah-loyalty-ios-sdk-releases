@@ -1,0 +1,4 @@
+framework module CheetahDigitalPlaces {
+  header "CheetahDigitalPlaces-Swift.h"
+  requires objc
+}

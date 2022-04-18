@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GeofenceClientEventsManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/GeofenceClientEventsManager" class="dashAnchor"></a>
+    <a title="GeofenceClientEventsManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        GeofenceClientEventsManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/GeofenceClientEventsManager.html">GeofenceClientEventsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GeofenceManager.html">GeofenceManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocationManager.html">LocationManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LocationManager/Event.html">– Event</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/PlacesNotification.html">PlacesNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Place.html">Place</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/GeofenceClientEvents.html">GeofenceClientEvents</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GeofencePlace.html">GeofencePlace</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>GeofenceClientEventsManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">GeofenceClientEventsManager</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/GeofenceClientEvents.html">GeofenceClientEvents</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A class conforming to <code><a href="../Protocols/GeofenceClientEvents.html">GeofenceClientEvents</a></code> protocol that serves
+as a predefined handler for geofence events</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalPlaces27GeofenceClientEventsManagerC06createE12EventRegions3forySo10CLLocationC_tF"></a>
+                    <a name="//apple_ref/swift/Method/createClientEventRegions(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalPlaces27GeofenceClientEventsManagerC06createE12EventRegions3forySo10CLLocationC_tF">createClientEventRegions(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates regions that are based from the nearby places of the given location</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">createClientEventRegions</span><span class="p">(</span><span class="k">for</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">CLLocation</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>location</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The reference for fetching nearby places</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalPlaces27GeofenceClientEventsManagerC07triggerE5Event2in5eventySo8CLRegionC_0aB4Core5PlaceV0eI4TypeOtF"></a>
+                    <a name="//apple_ref/swift/Method/triggerClientEvent(in:event:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalPlaces27GeofenceClientEventsManagerC07triggerE5Event2in5eventySo8CLRegionC_0aB4Core5PlaceV0eI4TypeOtF">triggerClientEvent(in:<wbr>event:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Triggers <code>Place.ClientEventType</code> in a specific region</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">triggerClientEvent</span><span class="p">(</span><span class="k">in</span> <span class="nv">region</span><span class="p">:</span> <span class="kt">CLRegion</span><span class="p">,</span> <span class="nv">event</span><span class="p">:</span> <span class="kt">Place</span><span class="o">.</span><span class="kt">ClientEventType</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>region</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Region where the <code>Place.ClientEventType</code> will be triggered</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>event</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>Place.ClientEventType</code> that will be triggered</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalPlaces27GeofenceClientEventsManagerC21sendLocalNotification3for9withTitle11andInterval10completionySay0aB4Core5OfferVG_SSSdys5Error_pSgcSgtF"></a>
+                    <a name="//apple_ref/swift/Method/sendLocalNotification(for:withTitle:andInterval:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalPlaces27GeofenceClientEventsManagerC21sendLocalNotification3for9withTitle11andInterval10completionySay0aB4Core5OfferVG_SSSdys5Error_pSgcSgtF">sendLocalNotification(for:<wbr>withTitle:<wbr>andInterval:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initiates a notification request</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">sendLocalNotification</span><span class="p">(</span><span class="k">for</span> <span class="nv">offers</span><span class="p">:</span> <span class="p">[</span><span class="kt">Offer</span><span class="p">],</span>
+                                  <span class="n">withTitle</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                  <span class="n">andInterval</span> <span class="nv">fireDateInterval</span><span class="p">:</span> <span class="kt">TimeInterval</span><span class="p">,</span>
+                                  <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>[Offer]</code> that will be sent within the notification</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Title that will be displayed in the notification</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fireDateInterval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>TimeInterval</code> for when the notification will be triggered</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalPlaces27GeofenceClientEventsManagerC019formParamsForNearbyC05usingSDySSypGSo10CLLocationC_tF"></a>
+                    <a name="//apple_ref/swift/Method/formParamsForNearbyPlaces(using:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalPlaces27GeofenceClientEventsManagerC019formParamsForNearbyC05usingSDySSypGSo10CLLocationC_tF">formParamsForNearbyPlaces(using:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Forms the necessary parameters using the given location for fetching nearby places</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">formParamsForNearbyPlaces</span><span class="p">(</span><span class="n">using</span> <span class="nv">location</span><span class="p">:</span> <span class="kt">CLLocation</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Parameters</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalPlaces27GeofenceClientEventsManagerC13computeRadius13placeDistance0jI007defaultI0S2dSg_AHSitF"></a>
+                    <a name="//apple_ref/swift/Method/computeRadius(placeDistance:placeRadius:defaultRadius:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalPlaces27GeofenceClientEventsManagerC13computeRadius13placeDistance0jI007defaultI0S2dSg_AHSitF">computeRadius(placeDistance:<wbr>placeRadius:<wbr>defaultRadius:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>Computes the radius of the given place by multiplying its distance to 1609
+then adding its radius.</li>
+<li>Or if the the given place is <code>nil</code>, this returns the product of the given radius and 1609</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">computeRadius</span><span class="p">(</span><span class="nv">placeDistance</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?,</span> <span class="nv">placeRadius</span><span class="p">:</span> <span class="kt">Double</span><span class="p">?,</span> <span class="n">defaultRadius</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Double</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:20CheetahDigitalPlaces27GeofenceClientEventsManagerC11getTitleFor5event9placeNameSS0aB4Core5PlaceV0E9EventTypeO_SStF"></a>
+                    <a name="//apple_ref/swift/Method/getTitleFor(event:placeName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:20CheetahDigitalPlaces27GeofenceClientEventsManagerC11getTitleFor5event9placeNameSS0aB4Core5PlaceV0E9EventTypeO_SStF">getTitleFor(event:<wbr>placeName:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the localized title string for a given <code>Place.ClientEventType</code>
+that will be used in <code>makeMessagesForList</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">getTitleFor</span><span class="p">(</span><span class="nv">event</span><span class="p">:</span> <span class="kt">Place</span><span class="o">.</span><span class="kt">ClientEventType</span><span class="p">,</span> <span class="nv">placeName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2022-04-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
