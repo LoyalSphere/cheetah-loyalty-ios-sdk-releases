@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DataProvider Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/DataProvider" class="dashAnchor"></a>
+    <a title="DataProvider Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        DataProvider Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AlertViewController.html">AlertViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppInfoViewController.html">AppInfoViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseCollectionController.html">BaseCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseDetailController.html">BaseDetailController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseTableController.html">BaseTableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CarouselCollectionController.html">CarouselCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CarouselCollectionViewFlowLayout.html">CarouselCollectionViewFlowLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CarouselItemCell.html">CarouselItemCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CheckBox.html">CheckBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@CheetahDigitalUI@objc(cs)CheetahAppBackgroundView">CheetahAppBackgroundView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@CheetahDigitalUI@objc(cs)CheetahAppWindow">CheetahAppWindow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CheetahColorThemePainter.html">CheetahColorThemePainter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CollectionViewController.html">CollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CountriesCollectionController.html">CountriesCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CountryCollectionViewCell.html">CountryCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DataProvider.html">DataProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultLoadingViewController.html">DefaultLoadingViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultReloadViewController.html">DefaultReloadViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DetailViewController.html">DetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DynamicListCollectionViewFlowLayout.html">DynamicListCollectionViewFlowLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FloatingTextField.html">FloatingTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FloatingTextFieldWithIcon.html">FloatingTextFieldWithIcon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FloatingTextFieldWithIcon/IconPosition.html">– IconPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FloatingTextView.html">FloatingTextView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GenericAlertViewController.html">GenericAlertViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GrowingTextView.html">GrowingTextView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImagePickerPresenter.html">ImagePickerPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImagePickerPresenter/MediaType.html">– MediaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListCollectionController.html">ListCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListCollectionViewFlowLayout.html">ListCollectionViewFlowLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListItemCell.html">ListItemCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoadingAlertViewController.html">LoadingAlertViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MenuCollectionController.html">MenuCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MenuItemCell.html">MenuItemCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MenuViewController.html">MenuViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NibViewController.html">NibViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RadioButton.html">RadioButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RatingButton.html">RatingButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScannerViewController.html">ScannerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SegmentedViewController.html">SegmentedViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SelectionButton.html">SelectionButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StateCollectionViewCell.html">StateCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StatefulViewController.html">StatefulViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StatefulViewController/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StatesCollectionController.html">StatesCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableRowCell.html">TableRowCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableViewController.html">TableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThemeManager.html">ThemeManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThemeManager/TextStyle.html">– TextStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UpgradeCheckViewController.html">UpgradeCheckViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WebViewController.html">WebViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AnalyticsLogger.html">AnalyticsLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AnalyticsLogger/LogKeys.html">– LogKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BackButtonType.html">BackButtonType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CheetahImageLoader.html">CheetahImageLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FloatingTextFieldInputType.html">FloatingTextFieldInputType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UINotification.html">UINotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIBarItem.html">UIBarItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIButton.html">UIButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionViewCell.html">UICollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionViewFlowLayout.html">UICollectionViewFlowLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionViewLayout.html">UICollectionViewLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UILabel.html">UILabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UINavigationBar.html">UINavigationBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UINavigationController.html">UINavigationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableViewCell.html">UITableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITextField.html">UITextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITextView.html">UITextView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIWindow.html">UIWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AlertEmbeddableViewController.html">AlertEmbeddableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AlertEmbeddableViewControllerDelegate.html">AlertEmbeddableViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AnalyticsManager.html">AnalyticsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CarouselItemCellPresentable.html">CarouselItemCellPresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CollectionController.html">CollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ColorTheme.html">ColorTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ColorThemePainter.html">ColorThemePainter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ContentController.html">ContentController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DetailController.html">DetailController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DetailPresentable.html">DetailPresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FloatingTextFieldWithIconDelegate.html">FloatingTextFieldWithIconDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GrowingTextViewDelegate.html">GrowingTextViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ImageLoader.html">ImageLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ImagePickerPresenterDelegate.html">ImagePickerPresenterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListItemCellPresentable.html">ListItemCellPresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Loadable.html">Loadable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:16CheetahDigitalUI22LoadableViewControllerP">LoadableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MenuItemCellPresentable.html">MenuItemCellPresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Navigator.html">Navigator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Reloadable.html">Reloadable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:16CheetahDigitalUI24ReloadableViewControllerP">ReloadableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SegmentedController.html">SegmentedController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SelectionButtonDelegate.html">SelectionButtonDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TableController.html">TableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TableRowCellPresentable.html">TableRowCellPresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TextTheme.html">TextTheme</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CheetahColorTheme.html">CheetahColorTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CheetahTextTheme.html">CheetahTextTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TextAppearance.html">TextAppearance</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:16CheetahDigitalUI21ImageLoaderCompletiona">ImageLoaderCompletion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DataProvider</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">DataProvider</span><span class="o">&lt;</span><span class="kt">ItemType</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Class representing Data to be used in a collection view.</p>
+
+<p>This class manages a two dimensional array of an associated item type.
+The first dimension of the array serves as an indicator of the section while the second dimension are the items in the section.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC5itemsSaySayxGGvp"></a>
+                    <a name="//apple_ref/swift/Property/items" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC5itemsSaySayxGGvp">items</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A two dimensional array of the generic item type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">items</span><span class="p">:</span> <span class="p">[[</span><span class="kt">ItemType</span><span class="p">]]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC13lastIndexPath10Foundation0gH0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastIndexPath" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC13lastIndexPath10Foundation0gH0VSgvp">lastIndexPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The index path of the last item. This value is nil if <code><a href="../Classes/DataProvider.html#/s:16CheetahDigitalUI12DataProviderC5itemsSaySayxGGvp">items</a></code> is empty.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">lastIndexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC5itemsACyxGSaySayxGG_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(items:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC5itemsACyxGSaySayxGG_tcfc">init(items:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a newly initialized collection data provider with the specified two dimensional array of an item type.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">items</span><span class="p">:</span> <span class="p">[[</span><span class="kt">ItemType</span><span class="p">]])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A two dimensional array of an item type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The initialized collection data provider.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC12sectionItemsACyxGSayxG_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(sectionItems:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC12sectionItemsACyxGSayxG_tcfc">init(sectionItems:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a newly initialized collection data provided with the specified array of an item type. The given array will be put into another array to be identified as a two dimensional array.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="nv">sectionItems</span><span class="p">:</span> <span class="p">[</span><span class="kt">ItemType</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of an item type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The initialized collection data provider.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC16numberOfSectionsSiyF"></a>
+                    <a name="//apple_ref/swift/Method/numberOfSections()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC16numberOfSectionsSiyF">numberOfSections()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the number of sections contained in the items array.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">numberOfSections</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>Int</code> value representing the number of sections.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC13numberOfItems2inS2i_tF"></a>
+                    <a name="//apple_ref/swift/Method/numberOfItems(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC13numberOfItems2inS2i_tF">numberOfItems(in:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the number of items for the specified section contained in the items array.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">numberOfItems</span><span class="p">(</span><span class="k">in</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>section</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The section to get the number of items.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>Int</code> value representing the number of items in the specified section. If section is out of bounds, this returns zero.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC4item2atxSg10Foundation9IndexPathV_tF"></a>
+                    <a name="//apple_ref/swift/Method/item(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC4item2atxSg10Foundation9IndexPathV_tF">item(at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the item for the specified index path contained in the items array.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">item</span><span class="p">(</span><span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">ItemType</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>IndexPath</code> of the item.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An optional value with the generic item type. The optional value is nil if the index path is out of bounds</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC5items9atSectionSayxGSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/items(atSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC5items9atSectionSayxGSi_tF">items(atSection:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns items for the specified section contained in the items array.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">items</span><span class="p">(</span><span class="n">atSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">ItemType</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>section</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The section of the items.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of the generic item type. The array will be empty if the section is out of bounds.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC3addy10Foundation9IndexPathVxF"></a>
+                    <a name="//apple_ref/swift/Method/add(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC3addy10Foundation9IndexPathVxF">add(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds an item to the items array. The added item will be appended in the last section.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">_</span> <span class="nv">item</span><span class="p">:</span> <span class="kt">ItemType</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">IndexPath</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>item</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An object of the generic item type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The <code>IndexPath</code> of the added item.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC3addySay10Foundation9IndexPathVGSayxGF"></a>
+                    <a name="//apple_ref/swift/Method/add(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC3addySay10Foundation9IndexPathVGSayxGF">add(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds items to the items array. The added items will be appended in the last section.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">add</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="p">[</span><span class="kt">ItemType</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">IndexPath</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of the generic item type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An array of <code>IndexPath</code>s of the added items.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC10updateItem2at5valuey10Foundation9IndexPathV_xtF"></a>
+                    <a name="//apple_ref/swift/Method/updateItem(at:value:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC10updateItem2at5valuey10Foundation9IndexPathV_xtF">updateItem(at:<wbr>value:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates an item in the items array.</p>
+
+<p>If index path is out of bounds, this does nothing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">updateItem</span><span class="p">(</span><span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">ItemType</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>IndexPath</code> of the item to update.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>value</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The updated object of the generic item type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC6remove2aty10Foundation9IndexPathV_tF"></a>
+                    <a name="//apple_ref/swift/Method/remove(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC6remove2aty10Foundation9IndexPathV_tF">remove(at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes an item in the items array.</p>
+
+<p>If index path is out of bounds, this does nothing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">remove</span><span class="p">(</span><span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The <code>IndexPath</code> of the item to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI12DataProviderC14removeAllItemsyyF"></a>
+                    <a name="//apple_ref/swift/Method/removeAllItems()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI12DataProviderC14removeAllItemsyyF">removeAllItems()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes all items in the items array.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">removeAllItems</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2022-04-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

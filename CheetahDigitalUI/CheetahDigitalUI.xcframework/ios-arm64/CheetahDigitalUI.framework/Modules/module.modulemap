@@ -1,0 +1,4 @@
+framework module CheetahDigitalUI {
+  header "CheetahDigitalUI-Swift.h"
+  requires objc
+}

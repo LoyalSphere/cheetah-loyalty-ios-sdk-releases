@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BaseCollectionController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/BaseCollectionController" class="dashAnchor"></a>
+    <a title="BaseCollectionController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        BaseCollectionController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AlertViewController.html">AlertViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppInfoViewController.html">AppInfoViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseCollectionController.html">BaseCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseDetailController.html">BaseDetailController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseTableController.html">BaseTableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CarouselCollectionController.html">CarouselCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CarouselCollectionViewFlowLayout.html">CarouselCollectionViewFlowLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CarouselItemCell.html">CarouselItemCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CheckBox.html">CheckBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@CheetahDigitalUI@objc(cs)CheetahAppBackgroundView">CheetahAppBackgroundView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@CheetahDigitalUI@objc(cs)CheetahAppWindow">CheetahAppWindow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CheetahColorThemePainter.html">CheetahColorThemePainter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CollectionViewController.html">CollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CountriesCollectionController.html">CountriesCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CountryCollectionViewCell.html">CountryCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DataProvider.html">DataProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultLoadingViewController.html">DefaultLoadingViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultReloadViewController.html">DefaultReloadViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DetailViewController.html">DetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DynamicListCollectionViewFlowLayout.html">DynamicListCollectionViewFlowLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FloatingTextField.html">FloatingTextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FloatingTextFieldWithIcon.html">FloatingTextFieldWithIcon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FloatingTextFieldWithIcon/IconPosition.html">– IconPosition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FloatingTextView.html">FloatingTextView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GenericAlertViewController.html">GenericAlertViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GrowingTextView.html">GrowingTextView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImagePickerPresenter.html">ImagePickerPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ImagePickerPresenter/MediaType.html">– MediaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListCollectionController.html">ListCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListCollectionViewFlowLayout.html">ListCollectionViewFlowLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ListItemCell.html">ListItemCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoadingAlertViewController.html">LoadingAlertViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MenuCollectionController.html">MenuCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MenuItemCell.html">MenuItemCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MenuViewController.html">MenuViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NibViewController.html">NibViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RadioButton.html">RadioButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RatingButton.html">RatingButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ScannerViewController.html">ScannerViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SegmentedViewController.html">SegmentedViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SelectionButton.html">SelectionButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StateCollectionViewCell.html">StateCollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StatefulViewController.html">StatefulViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StatefulViewController/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StatesCollectionController.html">StatesCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableRowCell.html">TableRowCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/TableViewController.html">TableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThemeManager.html">ThemeManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThemeManager/TextStyle.html">– TextStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UpgradeCheckViewController.html">UpgradeCheckViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WebViewController.html">WebViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AnalyticsLogger.html">AnalyticsLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/AnalyticsLogger/LogKeys.html">– LogKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BackButtonType.html">BackButtonType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CheetahImageLoader.html">CheetahImageLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FloatingTextFieldInputType.html">FloatingTextFieldInputType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UINotification.html">UINotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/DispatchQueue.html">DispatchQueue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIBarItem.html">UIBarItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIButton.html">UIButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionViewCell.html">UICollectionViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionViewFlowLayout.html">UICollectionViewFlowLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionViewLayout.html">UICollectionViewLayout</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIFont.html">UIFont</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UILabel.html">UILabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UINavigationBar.html">UINavigationBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UINavigationController.html">UINavigationController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableViewCell.html">UITableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITextField.html">UITextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITextView.html">UITextView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIView.html">UIView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIWindow.html">UIWindow</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AlertEmbeddableViewController.html">AlertEmbeddableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AlertEmbeddableViewControllerDelegate.html">AlertEmbeddableViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AnalyticsManager.html">AnalyticsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CarouselItemCellPresentable.html">CarouselItemCellPresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CollectionController.html">CollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ColorTheme.html">ColorTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ColorThemePainter.html">ColorThemePainter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ContentController.html">ContentController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DetailController.html">DetailController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DetailPresentable.html">DetailPresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/FloatingTextFieldWithIconDelegate.html">FloatingTextFieldWithIconDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GrowingTextViewDelegate.html">GrowingTextViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ImageLoader.html">ImageLoader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ImagePickerPresenterDelegate.html">ImagePickerPresenterDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ListItemCellPresentable.html">ListItemCellPresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Loadable.html">Loadable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:16CheetahDigitalUI22LoadableViewControllerP">LoadableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MenuItemCellPresentable.html">MenuItemCellPresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Navigator.html">Navigator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Reloadable.html">Reloadable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:16CheetahDigitalUI24ReloadableViewControllerP">ReloadableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SegmentedController.html">SegmentedController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SelectionButtonDelegate.html">SelectionButtonDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TableController.html">TableController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TableRowCellPresentable.html">TableRowCellPresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/TextTheme.html">TextTheme</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/CheetahColorTheme.html">CheetahColorTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CheetahTextTheme.html">CheetahTextTheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/TextAppearance.html">TextAppearance</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:16CheetahDigitalUI21ImageLoaderCompletiona">ImageLoaderCompletion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BaseCollectionController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">BaseCollectionController</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/CollectionController.html">CollectionController</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>An abstract base class for providing data and handling actions for a <code><a href="../Classes/CollectionViewController.html">CollectionViewController</a></code>.</p>
+
+<p>This is a generic NSObject conforming to <code>UICollectionViewDataSource</code>, <code>UICollectionViewDelegate</code>, <code>UISearchBarDelegate</code> and <code>ContentLoader</code> protocols.</p>
+
+<p>This class is to be subclassed to comply to a specific behavior.</p>
+
+<p>The associated type of this class will be used to initialize it&rsquo;s <code><a href="../Classes/DataProvider.html">DataProvider</a></code> property. By default, the <code>init(collecitonView:)</code> initialization method assigns the collection view property and sets it up using the <code>setupCollectionView</code> method.</p>
+
+<p>This class also supports data filtering through <code>UISearchBarDelegate</code> <code>searchBar(_:,textDidChange:)</code> method. It calls the <code>updateFilteredData</code> to update the filtered <code><a href="../Classes/DataProvider.html">DataProvider</a></code> property. The <code>filteredData(with:)</code> is called to filter the data using the search string.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    Due to what maybe seems to be a bug with the Swift, methods not initially in the superclass and implemented in the subclass may not be executed. To get around this, the method needs to have an <code>@objc</code> attribue.
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI17ContentControllerP19navigationItemTitleSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/navigationItemTitle" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI17ContentControllerP19navigationItemTitleSSSgvp">navigationItemTitle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">navigationItemTitle</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI17ContentControllerP012statefulViewE0AA08StatefulgE0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/statefulViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI17ContentControllerP012statefulViewE0AA08StatefulgE0CSgvp">statefulViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">statefulViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/StatefulViewController.html">StatefulViewController</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC014collectionViewF0AA0ehF0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/collectionViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC014collectionViewF0AA0ehF0CSgvp">collectionViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The <code><a href="../Classes/BaseCollectionController.html#/s:16CheetahDigitalUI17ContentControllerP012statefulViewE0AA08StatefulgE0CSgvp">statefulViewController</a></code> cast as a <code><a href="../Classes/CollectionViewController.html">CollectionViewController</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">collectionViewController</span><span class="p">:</span> <span class="kt"><a href="../Classes/CollectionViewController.html">CollectionViewController</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC8providerAA12DataProviderCyxGvp"></a>
+                    <a name="//apple_ref/swift/Property/provider" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC8providerAA12DataProviderCyxGvp">provider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The data provider of the <code><a href="../Protocols/CollectionController.html">CollectionController</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt"><a href="../Classes/DataProvider.html">DataProvider</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC16filteredProviderAA04DataH0CyxGvp"></a>
+                    <a name="//apple_ref/swift/Property/filteredProvider" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC16filteredProviderAA04DataH0CyxGvp">filteredProvider</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An optional filtered data provider of the <code><a href="../Protocols/CollectionController.html">CollectionController</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">filteredProvider</span><span class="p">:</span> <span class="kt"><a href="../Classes/DataProvider.html">DataProvider</a></span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC10isFilteredSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isFiltered" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC10isFilteredSbvp">isFiltered</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Determines whether the data is supposed to be filtered or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">isFiltered</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionViewSo012UICollectionH0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/collectionView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionViewSo012UICollectionH0CSgvp">collectionView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The collection view to provide data and handle actions for.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC20collectionViewLayoutSo012UICollectionhI0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/collectionViewLayout" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC20collectionViewLayoutSo012UICollectionhI0Cvp">collectionViewLayout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The layout for the collection view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">collectionViewLayout</span><span class="p">:</span> <span class="kt">UICollectionViewLayout</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC10isFetchingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isFetching" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC10isFetchingSbvp">isFetching</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents whether the collection controller is fetching content.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">isFetching</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerCACyxGycfc"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerCACyxGycfc">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionViewACyxGSo012UICollectionH0CSg_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(collectionView:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionViewACyxGSo012UICollectionH0CSg_tcfc">init(collectionView:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a newly initialized collection controller with the specified collection view to provide data and handle actions for.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>collectionView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The collection view to associate with.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The initialized collection controller.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC05setupE4ViewyyF"></a>
+                    <a name="//apple_ref/swift/Method/setupCollectionView()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC05setupE4ViewyyF">setupCollectionView()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets up the collection view&rsquo;s layout, dataSource, delegate properties, and registers components to the collection view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupCollectionView</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC18registerComponentsyyF"></a>
+                    <a name="//apple_ref/swift/Method/registerComponents()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC18registerComponentsyyF">registerComponents()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Register components to the collection view.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">registerComponents</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC8dataItem2atxSg10Foundation9IndexPathV_tF"></a>
+                    <a name="//apple_ref/swift/Method/dataItem(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC8dataItem2atxSg10Foundation9IndexPathV_tF">dataItem(at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the item at the specified index path from either the <code><a href="../Classes/BaseCollectionController.html#/s:16CheetahDigitalUI24BaseCollectionControllerC8providerAA12DataProviderCyxGvp">provider</a></code> or the <code><a href="../Classes/BaseCollectionController.html#/s:16CheetahDigitalUI24BaseCollectionControllerC16filteredProviderAA04DataH0CyxGvp">filteredProvider</a></code> depending on the value of <code><a href="../Classes/BaseCollectionController.html#/s:16CheetahDigitalUI24BaseCollectionControllerC10isFilteredSbvp">isFiltered</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">dataItem</span><span class="p">(</span><span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The index path for the item.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Returns the item data.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC18updateFilteredData4withySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/updateFilteredData(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC18updateFilteredData4withySS_tF">updateFilteredData(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the filtered data given the search term.</p>
+
+<p>If the search term is empty, this sets <code><a href="../Classes/BaseCollectionController.html#/s:16CheetahDigitalUI24BaseCollectionControllerC10isFilteredSbvp">isFiltered</a></code> to false.
+Otherwise, this removes all data from the filtered data provider and gets new filtered data from <code>filterData(with:)</code> then sets <code><a href="../Classes/BaseCollectionController.html#/s:16CheetahDigitalUI24BaseCollectionControllerC10isFilteredSbvp">isFiltered</a></code> to true.
+The collection view is then reloaded afterwards.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">updateFilteredData</span><span class="p">(</span><span class="n">with</span> <span class="nv">searchTerm</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>searchTerm</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The search term to use as filter.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC12filteredData4withSayxGSS_tF"></a>
+                    <a name="//apple_ref/swift/Method/filteredData(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC12filteredData4withSayxGSS_tF">filteredData(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the filtered data from the data provider.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">filteredData</span><span class="p">(</span><span class="n">with</span> <span class="nv">searchTerm</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>searchTerm</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The search term to use as filter.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Returns the filtered data.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UICollectionViewDataSource"></a>
+                <a name="//apple_ref/swift/Section/UICollectionViewDataSource" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/UICollectionViewDataSource"></a>
+                  <h3 class="section-name"><span>UICollectionViewDataSource</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_22numberOfItemsInSectionSiSo012UICollectionH0C_SitF"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:numberOfItemsInSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_22numberOfItemsInSectionSiSo012UICollectionH0C_SitF">collectionView(_:<wbr>numberOfItemsInSection:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">numberOfItemsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_13cellForItemAtSo012UICollectionH4CellCSo0mH0C_10Foundation9IndexPathVtF"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:cellForItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_13cellForItemAtSo012UICollectionH4CellCSo0mH0C_10Foundation9IndexPathVtF">collectionView(_:<wbr>cellForItemAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">cellForItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UICollectionViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC16numberOfSections2inSiSo16UICollectionViewC_tF"></a>
+                    <a name="//apple_ref/swift/Method/numberOfSections(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC16numberOfSections2inSiSo16UICollectionViewC_tF">numberOfSections(in:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">numberOfSections</span><span class="p">(</span><span class="k">in</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_33viewForSupplementaryElementOfKind2atSo020UICollectionReusableH0CSo0pH0C_SS10Foundation9IndexPathVtF"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:viewForSupplementaryElementOfKind:at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_33viewForSupplementaryElementOfKind2atSo020UICollectionReusableH0CSo0pH0C_SS10Foundation9IndexPathVtF">collectionView(_:<wbr>viewForSupplementaryElementOfKind:<wbr>at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span>
+                         <span class="n">viewForSupplementaryElementOfKind</span> <span class="nv">kind</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                         <span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UICollectionReusableView</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UICollectionViewDelegate"></a>
+                <a name="//apple_ref/swift/Section/UICollectionViewDelegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/UICollectionViewDelegate"></a>
+                  <h3 class="section-name"><span>UICollectionViewDelegate</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_15didSelectItemAtySo012UICollectionH0C_10Foundation9IndexPathVtF"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:didSelectItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_15didSelectItemAtySo012UICollectionH0C_10Foundation9IndexPathVtF">collectionView(_:<wbr>didSelectItemAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">didSelectItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_17didDeselectItemAtySo012UICollectionH0C_10Foundation9IndexPathVtF"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:didDeselectItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_17didDeselectItemAtySo012UICollectionH0C_10Foundation9IndexPathVtF">collectionView(_:<wbr>didDeselectItemAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">didDeselectItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_11willDisplay9forItemAtySo012UICollectionH0C_So0nH4CellC10Foundation9IndexPathVtF"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:willDisplay:forItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_11willDisplay9forItemAtySo012UICollectionH0C_So0nH4CellC10Foundation9IndexPathVtF">collectionView(_:<wbr>willDisplay:<wbr>forItemAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">willDisplay</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">UICollectionViewCell</span><span class="p">,</span> <span class="n">forItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_024willDisplaySupplementaryH014forElementKind2atySo012UICollectionH0C_So0p8ReusableH0CSS10Foundation9IndexPathVtF"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:willDisplaySupplementaryView:forElementKind:at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_024willDisplaySupplementaryH014forElementKind2atySo012UICollectionH0C_So0p8ReusableH0CSS10Foundation9IndexPathVtF">collectionView(_:<wbr>willDisplaySupplementaryView:<wbr>forElementKind:<wbr>at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">willDisplaySupplementaryView</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UICollectionReusableView</span><span class="p">,</span> <span class="n">forElementKind</span> <span class="nv">elementKind</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_16didEndDisplaying9forItemAtySo012UICollectionH0C_So0oH4CellC10Foundation9IndexPathVtF"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:didEndDisplaying:forItemAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_16didEndDisplaying9forItemAtySo012UICollectionH0C_So0oH4CellC10Foundation9IndexPathVtF">collectionView(_:<wbr>didEndDisplaying:<wbr>forItemAt:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">didEndDisplaying</span> <span class="nv">cell</span><span class="p">:</span> <span class="kt">UICollectionViewCell</span><span class="p">,</span> <span class="n">forItemAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_029didEndDisplayingSupplementaryH016forElementOfKind2atySo012UICollectionH0C_So0r8ReusableH0CSS10Foundation9IndexPathVtF"></a>
+                    <a name="//apple_ref/swift/Method/collectionView(_:didEndDisplayingSupplementaryView:forElementOfKind:at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC14collectionView_029didEndDisplayingSupplementaryH016forElementOfKind2atySo012UICollectionH0C_So0r8ReusableH0CSS10Foundation9IndexPathVtF">collectionView(_:<wbr>didEndDisplayingSupplementaryView:<wbr>forElementOfKind:<wbr>at:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">collectionView</span><span class="p">(</span><span class="n">_</span> <span class="nv">collectionView</span><span class="p">:</span> <span class="kt">UICollectionView</span><span class="p">,</span> <span class="n">didEndDisplayingSupplementaryView</span> <span class="nv">view</span><span class="p">:</span> <span class="kt">UICollectionReusableView</span><span class="p">,</span> <span class="n">forElementOfKind</span> <span class="nv">elementKind</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">at</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ContentController"></a>
+                <a name="//apple_ref/swift/Section/ContentController" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/ContentController"></a>
+                  <h3 class="section-name"><span>ContentController</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI17ContentControllerP04loadD0yyF"></a>
+                    <a name="//apple_ref/swift/Method/loadContent()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI17ContentControllerP04loadD0yyF">loadContent()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">loadContent</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI17ContentControllerP07refreshD0yyF"></a>
+                    <a name="//apple_ref/swift/Method/refreshContent()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI17ContentControllerP07refreshD0yyF">refreshContent()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">refreshContent</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UISearchBarDelegate"></a>
+                <a name="//apple_ref/swift/Section/UISearchBarDelegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/UISearchBarDelegate"></a>
+                  <h3 class="section-name"><span>UISearchBarDelegate</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC27searchBarShouldBeginEditingySbSo08UISearchH0CF"></a>
+                    <a name="//apple_ref/swift/Method/searchBarShouldBeginEditing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC27searchBarShouldBeginEditingySbSo08UISearchH0CF">searchBarShouldBeginEditing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">searchBarShouldBeginEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC28searchBarTextDidBeginEditingyySo08UISearchH0CF"></a>
+                    <a name="//apple_ref/swift/Method/searchBarTextDidBeginEditing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC28searchBarTextDidBeginEditingyySo08UISearchH0CF">searchBarTextDidBeginEditing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">searchBarTextDidBeginEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC25searchBarShouldEndEditingySbSo08UISearchH0CF"></a>
+                    <a name="//apple_ref/swift/Method/searchBarShouldEndEditing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC25searchBarShouldEndEditingySbSo08UISearchH0CF">searchBarShouldEndEditing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">searchBarShouldEndEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC26searchBarTextDidEndEditingyySo08UISearchH0CF"></a>
+                    <a name="//apple_ref/swift/Method/searchBarTextDidEndEditing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC26searchBarTextDidEndEditingyySo08UISearchH0CF">searchBarTextDidEndEditing(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">searchBarTextDidEndEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC9searchBar_13textDidChangeySo08UISearchH0C_SStF"></a>
+                    <a name="//apple_ref/swift/Method/searchBar(_:textDidChange:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC9searchBar_13textDidChangeySo08UISearchH0C_SStF">searchBar(_:<wbr>textDidChange:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">searchBar</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">,</span> <span class="n">textDidChange</span> <span class="nv">searchText</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC9searchBar_18shouldChangeTextIn011replacementK0SbSo08UISearchH0C_So8_NSRangeVSStF"></a>
+                    <a name="//apple_ref/swift/Method/searchBar(_:shouldChangeTextIn:replacementText:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC9searchBar_18shouldChangeTextIn011replacementK0SbSo08UISearchH0C_So8_NSRangeVSStF">searchBar(_:<wbr>shouldChangeTextIn:<wbr>replacementText:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">searchBar</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">,</span> <span class="n">shouldChangeTextIn</span> <span class="nv">range</span><span class="p">:</span> <span class="kt">NSRange</span><span class="p">,</span> <span class="n">replacementText</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC28searchBarSearchButtonClickedyySo08UISearchH0CF"></a>
+                    <a name="//apple_ref/swift/Method/searchBarSearchButtonClicked(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC28searchBarSearchButtonClickedyySo08UISearchH0CF">searchBarSearchButtonClicked(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">searchBarSearchButtonClicked</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC30searchBarBookmarkButtonClickedyySo08UISearchH0CF"></a>
+                    <a name="//apple_ref/swift/Method/searchBarBookmarkButtonClicked(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC30searchBarBookmarkButtonClickedyySo08UISearchH0CF">searchBarBookmarkButtonClicked(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">searchBarBookmarkButtonClicked</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC28searchBarCancelButtonClickedyySo08UISearchH0CF"></a>
+                    <a name="//apple_ref/swift/Method/searchBarCancelButtonClicked(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC28searchBarCancelButtonClickedyySo08UISearchH0CF">searchBarCancelButtonClicked(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">searchBarCancelButtonClicked</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC33searchBarResultsListButtonClickedyySo08UISearchH0CF"></a>
+                    <a name="//apple_ref/swift/Method/searchBarResultsListButtonClicked(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC33searchBarResultsListButtonClickedyySo08UISearchH0CF">searchBarResultsListButtonClicked(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">searchBarResultsListButtonClicked</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:16CheetahDigitalUI24BaseCollectionControllerC9searchBar_33selectedScopeButtonIndexDidChangeySo08UISearchH0C_SitF"></a>
+                    <a name="//apple_ref/swift/Method/searchBar(_:selectedScopeButtonIndexDidChange:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:16CheetahDigitalUI24BaseCollectionControllerC9searchBar_33selectedScopeButtonIndexDidChangeySo08UISearchH0C_SitF">searchBar(_:<wbr>selectedScopeButtonIndexDidChange:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">searchBar</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">,</span> <span class="n">selectedScopeButtonIndexDidChange</span> <span class="nv">selectedScope</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2022-04-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1649 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahDigitalUI
+import AVFoundation
+import CheetahDigitalUtils
+import Foundation
+import MobileCoreServices
+import Photos
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+public protocol TextTheme {
+  var largeTitle: CheetahDigitalUI.TextAppearance { get }
+  var title1: CheetahDigitalUI.TextAppearance { get }
+  var title2: CheetahDigitalUI.TextAppearance { get }
+  var title3: CheetahDigitalUI.TextAppearance { get }
+  var headline: CheetahDigitalUI.TextAppearance { get }
+  var subheadline: CheetahDigitalUI.TextAppearance { get }
+  var body: CheetahDigitalUI.TextAppearance { get }
+  var callout: CheetahDigitalUI.TextAppearance { get }
+  var footnote: CheetahDigitalUI.TextAppearance { get }
+  var caption1: CheetahDigitalUI.TextAppearance { get }
+  var caption2: CheetahDigitalUI.TextAppearance { get }
+  var textView: CheetahDigitalUI.TextAppearance { get }
+  var textField: CheetahDigitalUI.TextAppearance { get }
+  var alertButton: CheetahDigitalUI.TextAppearance { get }
+  var alertTitle: CheetahDigitalUI.TextAppearance { get }
+  var alertMessage: CheetahDigitalUI.TextAppearance { get }
+  var button: CheetahDigitalUI.TextAppearance { get }
+}
+public struct TextAppearance {
+  public var fontName: Swift.String
+  public var textStyle: UIKit.UIFont.TextStyle?
+  public var fontSize: CoreGraphics.CGFloat?
+  public init(fontName: Swift.String, textStyle: UIKit.UIFont.TextStyle? = nil, fontSize: CoreGraphics.CGFloat? = nil)
+}
+extension CheetahDigitalUI.TextAppearance {
+  public var font: UIKit.UIFont {
+    get
+  }
+  public var attributes: [Foundation.NSAttributedString.Key : Any] {
+    get
+  }
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public func setTextAppearance(_ textAppearance: CheetahDigitalUI.TextAppearance, with title: Swift.String, for state: UIKit.UIControl.State, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func setTextStyle(_ textStyle: CheetahDigitalUI.ThemeManager.TextStyle, with title: Swift.String, for state: UIKit.UIControl.State, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public func setTextAppearance(_ textAppearance: CheetahDigitalUI.TextAppearance, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func setTextStyle(_ textStyle: CheetahDigitalUI.ThemeManager.TextStyle, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+}
+extension UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) public func setTextAppearance(_ textAppearance: CheetahDigitalUI.TextAppearance, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func setTextStyle(_ textStyle: CheetahDigitalUI.ThemeManager.TextStyle, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+}
+extension UIKit.UITextView {
+  @_Concurrency.MainActor(unsafe) public func setTextAppearance(_ textAppearance: CheetahDigitalUI.TextAppearance, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func setTextStyle(_ textStyle: CheetahDigitalUI.ThemeManager.TextStyle, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+}
+extension UIKit.UITableViewCell {
+  @_Concurrency.MainActor(unsafe) public func setTextAppearance(_ textAppearance: CheetahDigitalUI.TextAppearance, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) public func setTextStyle(_ textStyle: CheetahDigitalUI.ThemeManager.TextStyle, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+}
+extension UIKit.UIBarItem {
+  @_Concurrency.MainActor(unsafe) public func setTextAppearance(_ textAppearance: CheetahDigitalUI.TextAppearance, for state: UIKit.UIControl.State)
+  @_Concurrency.MainActor(unsafe) public func setTextStyle(_ textStyle: CheetahDigitalUI.ThemeManager.TextStyle, for state: UIKit.UIControl.State)
+}
+extension UIKit.UINavigationBar {
+  @_Concurrency.MainActor(unsafe) public func setTextAppearance(_ textAppearance: CheetahDigitalUI.TextAppearance)
+  @_Concurrency.MainActor(unsafe) public func setTextStyle(_ textStyle: CheetahDigitalUI.ThemeManager.TextStyle)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class LoadingAlertViewController : CheetahDigitalUI.NibViewController, CheetahDigitalUI.AlertEmbeddableViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var activitityIndicatorView: UIKit.UIActivityIndicatorView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var loadingLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) public var delegate: CheetahDigitalUI.AlertEmbeddableViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) open var loadingText: Swift.String?
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @objc deinit
+}
+public protocol ListItemCellPresentable {
+  var listImage: UIKit.UIImage? { get }
+  var listImageURL: Foundation.URL? { get }
+  var listSubtitle: Swift.String { get }
+  var listTitle: Swift.String { get }
+  func configureListCell(_ cell: CheetahDigitalUI.ListItemCell)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ListItemCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var containerView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var contentStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var titleLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var subtitleLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var actionButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var activityIndicator: UIKit.UIActivityIndicatorView!
+  @_Concurrency.MainActor(unsafe) public var loadMessage: Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CheetahDigitalUI.ListItemCell : CheetahDigitalUI.Loadable {
+  @_Concurrency.MainActor(unsafe) public func showLoading()
+  @_Concurrency.MainActor(unsafe) public func hideLoading()
+}
+@objc @_Concurrency.MainActor(unsafe) open class CollectionViewController : CheetahDigitalUI.StatefulViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var containerStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var searchBar: UIKit.UISearchBar?
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var collectionView: UIKit.UICollectionView!
+  @_Concurrency.MainActor(unsafe) open var refreshControl: UIKit.UIRefreshControl {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var searchEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var collectionController: CheetahDigitalUI.CollectionController? {
+    get
+    set
+  }
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillTransition(to size: CoreGraphics.CGSize, with coordinator: UIKit.UIViewControllerTransitionCoordinator)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @objc @_Concurrency.MainActor(unsafe) open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
+  @_Concurrency.MainActor(unsafe) open func setupSearchBar()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AppInfoViewController : CheetahDigitalUI.NibViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var logoImageViewHeightConstraint: UIKit.NSLayoutConstraint!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var logoImageViewAspectRatioConstraint: UIKit.NSLayoutConstraint!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var logoImageViewTopSpaceConstraint: UIKit.NSLayoutConstraint!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var descriptionLabelTopSpaceConstraint: UIKit.NSLayoutConstraint!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var infoLabelTopSpaceConstraint: UIKit.NSLayoutConstraint!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var infoLabelBottomSpaceConstraint: UIKit.NSLayoutConstraint!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var backgroundImageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var logoImageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var containerView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var descriptionLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var infoLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) public var backgroundImage: UIKit.UIImage?
+  @_Concurrency.MainActor(unsafe) public var logoImage: UIKit.UIImage?
+  @_Concurrency.MainActor(unsafe) public var descriptionText: Swift.String! {
+    get
+  }
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupImages()
+  @_Concurrency.MainActor(unsafe) open func setupDescription()
+  @_Concurrency.MainActor(unsafe) open func setupInfo()
+  @_Concurrency.MainActor(unsafe) open func adjustContentConstraintsIfNeeded()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class WebViewController : CheetahDigitalUI.NibViewController, WebKit.WKNavigationDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var webView: WebKit.WKWebView!
+  @_Concurrency.MainActor(unsafe) open var url: Foundation.URL?
+  @_Concurrency.MainActor(unsafe) open var webViewConfiguration: WebKit.WKWebViewConfiguration
+  @_Concurrency.MainActor(unsafe) open var estimatedProgressObserver: Foundation.NSKeyValueObservation?
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupEstimatedProgressObserver()
+  @_Concurrency.MainActor(unsafe) open func showProgressView()
+  @_Concurrency.MainActor(unsafe) open func hideProgressView()
+  @_Concurrency.MainActor(unsafe) @objc open func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc open func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc open func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc open func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc open func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @objc deinit
+}
+public protocol GrowingTextViewDelegate {
+  func willChangeHeight(_ textView: CheetahDigitalUI.GrowingTextView, height: CoreGraphics.CGFloat)
+  func didChangeHeight(_ textView: CheetahDigitalUI.GrowingTextView, height: CoreGraphics.CGFloat)
+}
+extension CheetahDigitalUI.GrowingTextViewDelegate {
+  public func willChangeHeight(_ textView: CheetahDigitalUI.GrowingTextView, height: CoreGraphics.CGFloat)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GrowingTextView : UIKit.UIScrollView {
+  @_Concurrency.MainActor(unsafe) open var placeholder: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var placeholderAttributedText: Foundation.NSAttributedString? {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var placeholderFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var textAlignment: UIKit.NSTextAlignment {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var placeholderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var growingTextViewDelegate: CheetahDigitalUI.GrowingTextViewDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var inputView: UIKit.UIView? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var textView: UIKit.UITextView {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var minLines: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var maxLines: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isFirstResponder: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func reloadInputViews()
+  @_Concurrency.MainActor(unsafe) open func getContainerInset() -> UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) open func updatePlaceholder()
+  @_Concurrency.MainActor(unsafe) open func updateTextAlignment()
+  @_Concurrency.MainActor(unsafe) open func handleBecomeFirstResponder()
+  @_Concurrency.MainActor(unsafe) open func handleResignFirstResponder()
+  @_Concurrency.MainActor(unsafe) open func handleTextChange()
+  @objc deinit
+}
+public protocol ImagePickerPresenterDelegate : AnyObject {
+  func didSelect(asset: Photos.PHAsset?, image: UIKit.UIImage, with imageURL: Foundation.URL?, from imagePickerPresenter: CheetahDigitalUI.ImagePickerPresenter)
+  func didSelect(asset: Photos.PHAsset?, movieURL: Foundation.URL, from imagePickerPresenter: CheetahDigitalUI.ImagePickerPresenter)
+  func didCancelPickingImage()
+}
+@objc @_Concurrency.MainActor(unsafe) open class ImagePickerPresenter : ObjectiveC.NSObject, UIKit.UIImagePickerControllerDelegate, UIKit.UINavigationControllerDelegate {
+  public enum MediaType {
+    case image
+    case movie
+    case imageAndMovie
+    public var pickerMediaTypes: [Swift.String] {
+      get
+    }
+    public static func == (a: CheetahDigitalUI.ImagePickerPresenter.MediaType, b: CheetahDigitalUI.ImagePickerPresenter.MediaType) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) public init(presentingViewController: UIKit.UIViewController, delegate: CheetahDigitalUI.ImagePickerPresenterDelegate? = nil)
+  @_Concurrency.MainActor(unsafe) open func present(with mediaType: CheetahDigitalUI.ImagePickerPresenter.MediaType = .image, editable: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) @objc public func imagePickerControllerDidCancel(_ picker: UIKit.UIImagePickerController)
+  @_Concurrency.MainActor(unsafe) @objc public func imagePickerController(_ picker: UIKit.UIImagePickerController, didFinishPickingMediaWithInfo info: [UIKit.UIImagePickerController.InfoKey : Any])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UpgradeCheckViewController : CheetahDigitalUI.NibViewController, CheetahDigitalUI.AlertEmbeddableViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var titleLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var messageTextView: UIKit.UITextView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var upgradeNowButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var upgradeLaterButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var photoImageView: UIKit.UIImageView!
+  @_Concurrency.MainActor(unsafe) public var delegate: CheetahDigitalUI.AlertEmbeddableViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) public var isForced: Swift.Bool!
+  @_Concurrency.MainActor(unsafe) public var heading: Swift.String!
+  @_Concurrency.MainActor(unsafe) public var subheading: Swift.String!
+  @_Concurrency.MainActor(unsafe) public var upgradeNowText: Swift.String!
+  @_Concurrency.MainActor(unsafe) public var upgradeLaterText: Swift.String!
+  @_Concurrency.MainActor(unsafe) public var appLink: Swift.String!
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func goToAppStore()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class CheetahAppWindow : UIKit.UIWindow {
+  @available(iOS 13.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(windowScene: UIKit.UIWindowScene)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) final public class CheetahAppBackgroundView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol ColorTheme {
+  var primaryColor: UIKit.UIColor { get }
+  var secondaryColor: UIKit.UIColor { get }
+  var primaryVariantColor: UIKit.UIColor { get }
+  var backgroundColor: UIKit.UIColor { get }
+  var disabledButtonColor: UIKit.UIColor { get }
+  var highlightedButtonColor: UIKit.UIColor { get }
+  var errorColor: UIKit.UIColor { get }
+  var textColor: UIKit.UIColor { get }
+  var textInputColor: UIKit.UIColor { get }
+  var textInputBackgroundColor: UIKit.UIColor { get }
+  var barItemColor: UIKit.UIColor { get }
+  var buttonTintColor: UIKit.UIColor { get }
+}
+extension CheetahDigitalUI.ColorTheme {
+  public var textColor: UIKit.UIColor {
+    get
+  }
+  public var textInputColor: UIKit.UIColor {
+    get
+  }
+  public var textInputBackgroundColor: UIKit.UIColor {
+    get
+  }
+  public var primaryVariantColor: UIKit.UIColor {
+    get
+  }
+  public var backgroundColor: UIKit.UIColor {
+    get
+  }
+  public var errorColor: UIKit.UIColor {
+    get
+  }
+  public var barItemColor: UIKit.UIColor {
+    get
+  }
+  public var disabledButtonColor: UIKit.UIColor {
+    get
+  }
+  public var highlightedButtonColor: UIKit.UIColor {
+    get
+  }
+  public var buttonTintColor: UIKit.UIColor {
+    get
+  }
+}
+public protocol DetailPresentable {
+  var detailImage: UIKit.UIImage? { get }
+  var detailImageUrl: Swift.String { get }
+  var detailHeading: Swift.String { get }
+  var detailSubheading: Swift.String { get }
+  var detailBody: Swift.String { get }
+  var detailPoints: Swift.String { get }
+  var detailPeriod: Swift.String { get }
+  var detailActionButtonTitle: Swift.String { get }
+}
+public protocol DetailController : CheetahDigitalUI.ContentController {
+  func actionButtonPressed(_ actionButton: UIKit.UIButton)
+  var detailProvider: CheetahDigitalUI.DetailPresentable? { get }
+}
+@objc @_inheritsConvenienceInitializers open class BaseDetailController : ObjectiveC.NSObject, CheetahDigitalUI.DetailController {
+  open var detailProvider: CheetahDigitalUI.DetailPresentable?
+  open var navigationItemTitle: Swift.String?
+  open var statefulViewController: CheetahDigitalUI.StatefulViewController?
+  open func actionButtonPressed(_ actionButton: UIKit.UIButton)
+  open func loadContent()
+  open func refreshContent()
+  @objc override dynamic public init()
+  open func setupDetails()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DetailViewController : CheetahDigitalUI.StatefulViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var scrollView: UIKit.UIScrollView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var contentView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var labelStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var headingLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var subheadingLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var bodyLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var pointsLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var periodLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var actionButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) open var refreshControl: UIKit.UIRefreshControl {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var detailController: CheetahDigitalUI.DetailController? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var isRefreshable: Swift.Bool {
+    get
+    set
+  }
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(controller: CheetahDigitalUI.ContentController?, loading: CheetahDigitalUI.LoadableViewController? = nil, empty: CheetahDigitalUI.ReloadableViewController? = nil, error: CheetahDigitalUI.ReloadableViewController? = nil)
+  @_Concurrency.MainActor(unsafe) public init(detailController: CheetahDigitalUI.DetailController, isRefreshable: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @objc @_Concurrency.MainActor(unsafe) open func actionButtonPressed(_ sender: UIKit.UIButton)
+  @objc @_Concurrency.MainActor(unsafe) open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
+  @objc deinit
+}
+public protocol AlertEmbeddableViewControllerDelegate {
+  func dismissAlert(completion: (() -> Swift.Void)?)
+}
+public protocol AlertEmbeddableViewController : CheetahDigitalUI.NibViewController {
+  var delegate: CheetahDigitalUI.AlertEmbeddableViewControllerDelegate? { get set }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AlertViewController : CheetahDigitalUI.NibViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var containerView: UIKit.UIView!
+  @_Concurrency.MainActor(unsafe) public var containerViewCornerRadius: CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) public var isFullScreen: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var fitEmbeddedViewToLayout: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var embeddedView: CheetahDigitalUI.AlertEmbeddableViewController?
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) convenience public init(embeddedView: CheetahDigitalUI.AlertEmbeddableViewController, isFullScreen: Swift.Bool, fitEmbeddedViewToLayout: Swift.Bool = true)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupEmbeddedView()
+  @_Concurrency.MainActor(unsafe) open func setupPresentationAndTransitionStyle()
+  @_Concurrency.MainActor(unsafe) open func setupEmbeddedViewLayoutFit()
+  @objc deinit
+}
+extension CheetahDigitalUI.AlertViewController : CheetahDigitalUI.AlertEmbeddableViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) public func dismissAlert(completion: (() -> Swift.Void)?)
+}
+extension CheetahDigitalUI.AlertViewController {
+  @_Concurrency.MainActor(unsafe) public static func message(heading: Swift.String, subheading: Swift.String = "", actionText: Swift.String = "Generic.Okay".localized, isFullScreen: Swift.Bool = false, action: (() -> Swift.Void)? = nil) -> CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) public static func confirmation(heading: Swift.String, subheading: Swift.String = "", confirmText: Swift.String = "Generic.Confirm".localized, cancelText: Swift.String = "Generic.Cancel".localized, isFullScreen: Swift.Bool = false, action: ((Swift.Int) -> Swift.Void)? = nil) -> CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) public static func forcedUpgradeCheck(heading: Swift.String = "UpgradeCheck.UpgradeRequired".localized, subheading: Swift.String = "UpgradeCheck.NewVersionAvailable".localized, upgradeNowText: Swift.String = "UpgradeCheck.UpgradeNow".localized, appLink: Swift.String, isFullScreen: Swift.Bool = true) -> CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) public static func upgradeCheck(heading: Swift.String = "UpgradeCheck.SuggestedUpgrade".localized, subheading: Swift.String = "UpgradeCheck.NewVersionAvailable".localized, upgradeNowText: Swift.String = "UpgradeCheck.UpgradeNow".localized, upgradeLaterText: Swift.String = "UpgradeCheck.UpgradeLater".localized, appLink: Swift.String, isFullScreen: Swift.Bool = true) -> CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) public static func loading(loadingText: Swift.String? = nil, isFullScreen: Swift.Bool = false) -> CheetahDigitalUI.AlertViewController
+}
+public protocol Navigator : AnyObject {
+  func navigate(to destinationViewController: UIKit.UIViewController, modally isModal: Swift.Bool, animated: Swift.Bool, completion: (() -> Swift.Void)?)
+}
+extension CheetahDigitalUI.Navigator where Self : UIKit.UIViewController {
+  public func navigate(to destinationViewController: UIKit.UIViewController, modally isModal: Swift.Bool = false, animated: Swift.Bool = true, completion: (() -> Swift.Void)? = nil)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CountryCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var nameLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum AnalyticsLogger {
+  public enum LogKeys : Swift.String {
+    case eventName
+    case screenName
+    case screenClass
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public static func logEvent(with parameters: [Swift.String : Any], eventName: Swift.String)
+  public static func logScreen(with screenName: Swift.String, screenClass: Swift.String)
+}
+public protocol AnalyticsManager : AnyObject {
+  var logEventObserver: ObjectiveC.NSObjectProtocol? { get set }
+  var logScreenObserver: ObjectiveC.NSObjectProtocol? { get set }
+  func observeAnalyticsLogs()
+  func removeAnalyticsLogsObservers()
+  func logEvent(from notification: Foundation.Notification)
+  func logScreen(from notification: Foundation.Notification)
+}
+extension CheetahDigitalUI.AnalyticsManager {
+  public func observeAnalyticsLogs()
+  public func removeAnalyticsLogsObservers()
+}
+public enum BackButtonType {
+  case text(title: Swift.String)
+  case image(image: UIKit.UIImage?)
+  case iOSDefault
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NibViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public static var customBackButtonType: CheetahDigitalUI.BackButtonType
+  @_Concurrency.MainActor(unsafe) public var customBackButtonAction: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var screenName: Swift.String
+  @_Concurrency.MainActor(unsafe) open class var nibName: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func setup()
+  @objc dynamic public init()
+  @_Concurrency.MainActor(unsafe) public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func setupCustomBackButton()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MenuCollectionController : CheetahDigitalUI.BaseCollectionController<CheetahDigitalUI.MenuItemCellPresentable> {
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) open var selectionClosure: ((CheetahDigitalUI.MenuViewController?, CheetahDigitalUI.MenuItemCellPresentable) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var logOutClosure: ((CheetahDigitalUI.MenuViewController?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var menuViewController: CheetahDigitalUI.MenuViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) convenience public init(items: [CheetahDigitalUI.MenuItemCellPresentable], collectionView: UIKit.UICollectionView? = nil)
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) open func didPressLogoutButton(_ logOutButton: UIKit.UIButton)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+public protocol SegmentedController {
+  var navigationItemTitle: Swift.String? { get }
+  func numberOfSegments() -> Swift.Int
+  func viewControllerForSegment(atIndex index: Swift.Int) -> UIKit.UIViewController?
+  func titleForSegment(atIndex index: Swift.Int) -> Swift.String?
+  func didSelectSegment(atIndex index: Swift.Int, of segmentedViewController: CheetahDigitalUI.SegmentedViewController)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SegmentedViewController : CheetahDigitalUI.NibViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) open var segmentedControl: UIKit.UISegmentedControl!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) open var contentView: UIKit.UIView!
+  @_Concurrency.MainActor(unsafe) open var segmentedController: CheetahDigitalUI.SegmentedController?
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public init(segmentedController: CheetahDigitalUI.SegmentedController)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @objc @_Concurrency.MainActor(unsafe) open func segmentedControlValueChanged(_ sender: UIKit.UISegmentedControl)
+  @_Concurrency.MainActor(unsafe) open func reloadData()
+  @_Concurrency.MainActor(unsafe) open func reloadSegments()
+  @_Concurrency.MainActor(unsafe) open func selectSegment(atIndex index: Swift.Int)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class DataProvider<ItemType> {
+  open var items: [[ItemType]]
+  open var lastIndexPath: Foundation.IndexPath? {
+    get
+  }
+  convenience public init(items: [[ItemType]])
+  convenience public init(sectionItems: [ItemType])
+  open func numberOfSections() -> Swift.Int
+  open func numberOfItems(in section: Swift.Int) -> Swift.Int
+  open func item(at indexPath: Foundation.IndexPath) -> ItemType?
+  open func items(atSection section: Swift.Int) -> [ItemType]
+  @discardableResult
+  open func add(_ item: ItemType) -> Foundation.IndexPath
+  @discardableResult
+  open func add(_ items: [ItemType]) -> [Foundation.IndexPath]
+  open func updateItem(at indexPath: Foundation.IndexPath, value: ItemType)
+  open func remove(at indexPath: Foundation.IndexPath)
+  open func removeAllItems()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RadioButton : CheetahDigitalUI.CheckBox {
+  @_Concurrency.MainActor(unsafe) override open func initializeSelectionButton()
+  @_Concurrency.MainActor(unsafe) override open func groupStateDidChange(by selectionButton: CheetahDigitalUI.SelectionButton)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ListCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
+  @_Concurrency.MainActor(unsafe) public var cellHeight: CoreGraphics.CGFloat
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepare()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func shouldInvalidateLayout(forBoundsChange newBounds: CoreGraphics.CGRect) -> Swift.Bool
+  @objc deinit
+}
+extension UIKit.UICollectionViewFlowLayout {
+  @_Concurrency.MainActor(unsafe) public static var list: CheetahDigitalUI.ListCollectionViewFlowLayout {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CarouselCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepare()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func shouldInvalidateLayout(forBoundsChange newBounds: CoreGraphics.CGRect) -> Swift.Bool
+  @objc deinit
+}
+extension UIKit.UICollectionViewFlowLayout {
+  @_Concurrency.MainActor(unsafe) public static var carousel: CheetahDigitalUI.CarouselCollectionViewFlowLayout {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DynamicListCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForElements(in rect: CoreGraphics.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func shouldInvalidateLayout(forBoundsChange newBounds: CoreGraphics.CGRect) -> Swift.Bool
+  @objc deinit
+}
+extension UIKit.UICollectionViewFlowLayout {
+  @_Concurrency.MainActor(unsafe) public static var dynamicList: CheetahDigitalUI.DynamicListCollectionViewFlowLayout {
+    get
+  }
+}
+extension UIKit.UICollectionViewLayout {
+  @available(iOS 13, *)
+  @_Concurrency.MainActor(unsafe) public static func dynamicList(estimatedHeight: CoreGraphics.CGFloat = 88, contentInsets: UIKit.NSDirectionalEdgeInsets = NSDirectionalEdgeInsets.zero) -> UIKit.UICollectionViewLayout
+}
+@objc @_Concurrency.MainActor(unsafe) open class TableViewController : CheetahDigitalUI.StatefulViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var containerStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var searchBar: UIKit.UISearchBar?
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var tableView: UIKit.UITableView!
+  @_Concurrency.MainActor(unsafe) open var refreshControl: UIKit.UIRefreshControl {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var searchEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var tableController: CheetahDigitalUI.TableController? {
+    get
+    set
+  }
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) convenience public init(tableController: CheetahDigitalUI.TableController?)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupSearchBar()
+  @objc @_Concurrency.MainActor(unsafe) open func refreshControlValueChanged(_ sender: UIKit.UIRefreshControl)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class FloatingTextView : CheetahDigitalUI.GrowingTextView {
+  @_Concurrency.MainActor(unsafe) open var title: Swift.String? {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var titleFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var errorMessage: Swift.String? {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var textColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var titleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var selectedTitleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var lineColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var selectedLineColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var errorColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var disabledColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var lineHeight: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var selectedLineHeight: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var hasErrorMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var isEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var titleLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) public var lineView: UIKit.UIView!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) override open func updateTextAlignment()
+  @_Concurrency.MainActor(unsafe) open func formatTitle(_ title: Swift.String?) -> Swift.String?
+  @_Concurrency.MainActor(unsafe) override open func getContainerInset() -> UIKit.UIEdgeInsets
+  @_Concurrency.MainActor(unsafe) override open func handleBecomeFirstResponder()
+  @_Concurrency.MainActor(unsafe) override open func handleResignFirstResponder()
+  @_Concurrency.MainActor(unsafe) override open func handleTextChange()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CheckBox : CheetahDigitalUI.SelectionButton {
+  @_Concurrency.MainActor(unsafe) override open func initializeSelectionButton()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GenericAlertViewController : CheetahDigitalUI.NibViewController, CheetahDigitalUI.AlertEmbeddableViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var headingLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var subheadingLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var stackView: UIKit.UIStackView!
+  @_Concurrency.MainActor(unsafe) public var delegate: CheetahDigitalUI.AlertEmbeddableViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) public var heading: Swift.String!
+  @_Concurrency.MainActor(unsafe) public var subheading: Swift.String!
+  @_Concurrency.MainActor(unsafe) public var buttons: [Swift.String]
+  @_Concurrency.MainActor(unsafe) public var itemBorderColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public var itemBorderWitdh: CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) public var didTapActionButton: ((Swift.Int) -> Swift.Void)?
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func addButtons()
+  @_Concurrency.MainActor(unsafe) open func setupStackAxis()
+  @objc deinit
+}
+public protocol ColorThemePainter {
+  func apply(using theme: CheetahDigitalUI.ColorTheme)
+  func extend(using theme: CheetahDigitalUI.ColorTheme)
+  func paintBackgroundView(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUILabel(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUIActivityIndicatorView(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUINavigationBar(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUIPageControl(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUISegmentedControl(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUISlider(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUISwitch(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUIButton(using theme: CheetahDigitalUI.ColorTheme)
+  func paintSelectionButton(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUIStepper(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUIProgressView(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUITableView(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUITableViewCell(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUIRefreshControl(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUIToolBar(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUISearchBar(using theme: CheetahDigitalUI.ColorTheme)
+  func paintUITabBar(using theme: CheetahDigitalUI.ColorTheme)
+  func paintFloatingTextFields(using theme: CheetahDigitalUI.ColorTheme)
+  func paintFloatingTextViews(using theme: CheetahDigitalUI.ColorTheme)
+}
+open class CheetahColorThemePainter : CheetahDigitalUI.ColorThemePainter {
+  public init()
+  open func apply(using theme: CheetahDigitalUI.ColorTheme)
+  open func extend(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintBackgroundView(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUILabel(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUIActivityIndicatorView(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUINavigationBar(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUIPageControl(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUISegmentedControl(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUISlider(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUISwitch(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUIButton(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintSelectionButton(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUIStepper(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUIProgressView(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUITableView(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUITableViewCell(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUIRefreshControl(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUIToolBar(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUISearchBar(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintUITabBar(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintFloatingTextFields(using theme: CheetahDigitalUI.ColorTheme)
+  open func paintFloatingTextViews(using theme: CheetahDigitalUI.ColorTheme)
+  @objc deinit
+}
+public protocol MenuItemCellPresentable {
+  var image: UIKit.UIImage? { get }
+  var name: Swift.String { get }
+  func configureMenuCell(_ cell: CheetahDigitalUI.MenuItemCell)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MenuItemCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var image: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var name: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var nameContainerView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var menuStackView: UIKit.UIStackView!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol FloatingTextFieldWithIconDelegate {
+  func didTapIcon(textField: CheetahDigitalUI.FloatingTextFieldWithIcon)
+  func didLongPressIcon(textField: CheetahDigitalUI.FloatingTextFieldWithIcon, gesture: UIKit.UILongPressGestureRecognizer)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class FloatingTextFieldWithIcon : CheetahDigitalUI.FloatingTextField {
+  public enum IconPosition : Swift.Int {
+    case left
+    case right
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) open var iconImageView: UIKit.UIImageView!
+  @_Concurrency.MainActor(unsafe) open var iconImage: UIKit.UIImage? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var templateImage: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var iconDelegate: CheetahDigitalUI.FloatingTextFieldWithIconDelegate?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var iconColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var selectedIconColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) public var iconPosition: CheetahDigitalUI.FloatingTextFieldWithIcon.IconPosition {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var iconPositionIndex: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var iconWidth: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var iconMarginLeft: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var iconMarginBottom: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var iconRotationDegrees: Swift.Double {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func textRect(forBounds bounds: CoreGraphics.CGRect) -> CoreGraphics.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func editingRect(forBounds bounds: CoreGraphics.CGRect) -> CoreGraphics.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func placeholderRect(forBounds bounds: CoreGraphics.CGRect) -> CoreGraphics.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutSubviews()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class ThemeManager {
+  public static let shared: CheetahDigitalUI.ThemeManager
+  open var color: CheetahDigitalUI.ColorTheme {
+    get
+  }
+  open var text: CheetahDigitalUI.TextTheme
+  public enum TextStyle {
+    case largeTitle
+    case title1
+    case title2
+    case title3
+    case headline
+    case subheadline
+    case body
+    case callout
+    case footnote
+    case caption1
+    case caption2
+    case textView
+    case textField
+    case alertButton
+    case alertTitle
+    case alertMessage
+    case button
+    public var textAppearance: CheetahDigitalUI.TextAppearance {
+      get
+    }
+    public static func == (a: CheetahDigitalUI.ThemeManager.TextStyle, b: CheetahDigitalUI.ThemeManager.TextStyle) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  open func applyColor(theme: CheetahDigitalUI.ColorTheme = ThemeManager.shared.color, with painter: CheetahDigitalUI.ColorThemePainter = CheetahColorThemePainter())
+  public static func setTextAppearance(for views: [UIKit.UIView], using textAppearance: CheetahDigitalUI.TextAppearance, shouldAdjustsFontForContentSizeCategory: Swift.Bool = true)
+  public static func setTextStyle(for views: [UIKit.UIView], using textStyle: CheetahDigitalUI.ThemeManager.TextStyle)
+  @objc deinit
+}
+extension UIKit.UIColor {
+  public var hexDescription: Swift.String {
+    get
+  }
+  public var hexWithAlphaDescription: Swift.String {
+    get
+  }
+  convenience public init(hex: Swift.String?)
+  public static var error: UIKit.UIColor {
+    get
+  }
+  public static var primary: UIKit.UIColor {
+    get
+  }
+  public static var secondary: UIKit.UIColor {
+    get
+  }
+  public static var primaryVariant: UIKit.UIColor {
+    get
+  }
+  public static var text: UIKit.UIColor {
+    get
+  }
+  public static var textInput: UIKit.UIColor {
+    get
+  }
+  public static var textInputBackground: UIKit.UIColor {
+    get
+  }
+  public static var barItem: UIKit.UIColor {
+    get
+  }
+  public static var disabledButton: UIKit.UIColor {
+    get
+  }
+  public static var highlightedButton: UIKit.UIColor {
+    get
+  }
+  public static var buttonTint: UIKit.UIColor {
+    get
+  }
+  public static var background: UIKit.UIColor {
+    get
+  }
+  public static func fromMainOrCheetah(named: Swift.String) -> UIKit.UIColor?
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func embed(subview: UIKit.UIView)
+  @_Concurrency.MainActor(unsafe) public func isContainedWithin(_ other: UIKit.UIView) -> Swift.Bool
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) public func setAttributedTitleString(_ title: Swift.String, for state: UIKit.UIControl.State)
+  @_Concurrency.MainActor(unsafe) public func setBackgroundColor(color: UIKit.UIColor, for state: UIKit.UIControl.State)
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public func embed(child newChild: UIKit.UIViewController, in container: UIKit.UIView? = nil)
+  @_Concurrency.MainActor(unsafe) public func unembed()
+  @_Concurrency.MainActor(unsafe) public func unembedAllChildren()
+  @_Concurrency.MainActor(unsafe) public func showModally(in viewController: UIKit.UIViewController? = nil, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public static func topMost(atRoot root: UIKit.UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIKit.UIViewController?
+  @_Concurrency.MainActor(unsafe) public func close(animated: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+}
+extension UIKit.UINavigationController {
+  @_Concurrency.MainActor(unsafe) public func pushViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool, completion: (() -> Swift.Void)?)
+  @_Concurrency.MainActor(unsafe) public func popViewController(animated: Swift.Bool, completion: (() -> Swift.Void)?)
+}
+extension UIKit.UIWindow {
+  @_Concurrency.MainActor(unsafe) convenience public init(rootViewController: UIKit.UIViewController)
+}
+extension Foundation.Bundle {
+  public static var CheetahDigitalUIIdentifier: Swift.String {
+    get
+  }
+  public static var CheetahDigitalUI: Foundation.Bundle? {
+    get
+  }
+}
+extension UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) open class func nibName() -> Swift.String
+  @_Concurrency.MainActor(unsafe) open class func nib() -> UIKit.UINib
+}
+extension UIKit.UITableViewCell {
+  @_Concurrency.MainActor(unsafe) open class func nibName() -> Swift.String
+  @_Concurrency.MainActor(unsafe) open class func nib() -> UIKit.UINib
+}
+extension Dispatch.DispatchQueue {
+  public static func mainAsyncIfNeeded(execute work: @escaping @convention(block) () -> Swift.Void)
+}
+extension UIKit.UIImage {
+  public static func fromMainOrCheetah(named: Swift.String) -> UIKit.UIImage?
+}
+public enum UINotification : CheetahDigitalUtils.CheetahNotification {
+  case analyticsLogEvent
+  case analyticsLogScreen
+  case selectionButtonGroupStateChange
+  public var name: Swift.String {
+    get
+  }
+  public static func == (a: CheetahDigitalUI.UINotification, b: CheetahDigitalUI.UINotification) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIFont {
+  public static var largeTitle: UIKit.UIFont {
+    get
+  }
+  public static var title1: UIKit.UIFont {
+    get
+  }
+  public static var title2: UIKit.UIFont {
+    get
+  }
+  public static var title3: UIKit.UIFont {
+    get
+  }
+  public static var headline: UIKit.UIFont {
+    get
+  }
+  public static var subheadline: UIKit.UIFont {
+    get
+  }
+  public static var body: UIKit.UIFont {
+    get
+  }
+  public static var callout: UIKit.UIFont {
+    get
+  }
+  public static var footnote: UIKit.UIFont {
+    get
+  }
+  public static var caption1: UIKit.UIFont {
+    get
+  }
+  public static var caption2: UIKit.UIFont {
+    get
+  }
+  public static var textView: UIKit.UIFont {
+    get
+  }
+  public static var textField: UIKit.UIFont {
+    get
+  }
+  public static var alertButton: UIKit.UIFont {
+    get
+  }
+  public static var alertTitle: UIKit.UIFont {
+    get
+  }
+  public static var alertMessage: UIKit.UIFont {
+    get
+  }
+  public static var button: UIKit.UIFont {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class StateCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var nameLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum FloatingTextFieldInputType {
+  case date(target: Swift.AnyObject, selector: ObjectiveC.Selector)
+  case decimal
+  case email
+  case phone
+  case integer
+  case url
+  case domain(pickerView: UIKit.UIPickerView)
+  case generic
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class FloatingTextField : UIKit.UITextField {
+  @_Concurrency.MainActor(unsafe) open var title: Swift.String? {
+    get
+    set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var titleFont: UIKit.UIFont {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var placeholder: Swift.String? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var placeholderFont: UIKit.UIFont? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var textAlignmentIndex: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var errorMessage: Swift.String? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var text: Swift.String? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var datePicker: UIKit.UIDatePicker?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textColor: UIKit.UIColor? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var titleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var selectedTitleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var lineColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var selectedLineColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var placeholderColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var disabledColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var errorColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var lineHeight: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var selectedLineHeight: CoreGraphics.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isSecureTextEntry: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isHighlighted: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isSelected: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isEnabled: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var isEditingOrSelected: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var hasErrorMessage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open func setIsTitleVisible(_ isTitleVisible: Swift.Bool, animated: Swift.Bool = false, animationCompletion: ((_ completed: Swift.Bool) -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) public var titleLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) public var lineView: UIKit.UIView!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func init_FloatingTextField()
+  @_Concurrency.MainActor(unsafe) open func setInputType(_ inputType: CheetahDigitalUI.FloatingTextFieldInputType)
+  @_Concurrency.MainActor(unsafe) open func formatTitle(_ title: Swift.String?) -> Swift.String?
+  @_Concurrency.MainActor(unsafe) open func textHeight() -> CoreGraphics.CGFloat
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func becomeFirstResponder() -> Swift.Bool
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func resignFirstResponder() -> Swift.Bool
+  @objc deinit
+}
+public protocol CarouselItemCellPresentable {
+  var carouselImage: UIKit.UIImage? { get }
+  var carouselImageURL: Foundation.URL? { get }
+  var carouselTitle: Swift.String { get }
+  func configureCarouselCell(_ cell: CheetahDigitalUI.CarouselItemCell)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CarouselItemCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var containerView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var titleContainerView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var titleLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) open var message: Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol TableController : CheetahDigitalUI.ContentController, UIKit.UISearchBarDelegate, UIKit.UITableViewDataSource, UIKit.UITableViewDataSourcePrefetching, UIKit.UITableViewDelegate {
+  var tableView: UIKit.UITableView? { get set }
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BaseTableController<T> : ObjectiveC.NSObject, CheetahDigitalUI.TableController {
+  @_Concurrency.MainActor(unsafe) open var navigationItemTitle: Swift.String?
+  @_Concurrency.MainActor(unsafe) open var statefulViewController: CheetahDigitalUI.StatefulViewController?
+  @_Concurrency.MainActor(unsafe) open var tableViewController: CheetahDigitalUI.TableViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var provider: CheetahDigitalUI.DataProvider<T>
+  @_Concurrency.MainActor(unsafe) open var filteredProvider: CheetahDigitalUI.DataProvider<T> {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var isFiltered: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var tableView: UIKit.UITableView? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var isFetching: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var currentPage: Swift.Int
+  @_Concurrency.MainActor(unsafe) open var totalItems: Swift.Int
+  @_Concurrency.MainActor(unsafe) open var onLastPage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var loadCellIndexPath: Foundation.IndexPath {
+    get
+  }
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) public init(tableView: UIKit.UITableView? = nil)
+  @_Concurrency.MainActor(unsafe) open func setupTableView()
+  @_Concurrency.MainActor(unsafe) open func registerComponents()
+  @_Concurrency.MainActor(unsafe) open func dataItem(at indexPath: Foundation.IndexPath) -> T?
+  @_Concurrency.MainActor(unsafe) open func updateFilteredData(with searchTerm: Swift.String)
+  @_Concurrency.MainActor(unsafe) open func filteredData(with searchTerm: Swift.String) -> [T]
+  @_Concurrency.MainActor(unsafe) open func isLoadingCell(at indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func visibleIndexPaths(from indexPaths: [Foundation.IndexPath]) -> [Foundation.IndexPath]
+  @_Concurrency.MainActor(unsafe) open func updateCollection(with newItems: [T])
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc open func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, willDisplay cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, willDisplayHeaderView view: UIKit.UIView, forSection section: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, willDisplayFooterView view: UIKit.UIView, forSection section: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, didEndDisplaying cell: UIKit.UITableViewCell, forRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, didEndDisplayingHeaderView view: UIKit.UIView, forSection section: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, didEndDisplayingFooterView view: UIKit.UIView, forSection section: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, heightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, heightForFooterInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, estimatedHeightForRowAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, estimatedHeightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, estimatedHeightForFooterInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, willSelectRowAt indexPath: Foundation.IndexPath) -> Foundation.IndexPath?
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, willDeselectRowAt indexPath: Foundation.IndexPath) -> Foundation.IndexPath?
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, didDeselectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc open func tableView(_ tableView: UIKit.UITableView, prefetchRowsAt indexPaths: [Foundation.IndexPath])
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarShouldBeginEditing(_ searchBar: UIKit.UISearchBar) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarShouldEndEditing(_ searchBar: UIKit.UISearchBar) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarTextDidEndEditing(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBar(_ searchBar: UIKit.UISearchBar, textDidChange searchText: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBar(_ searchBar: UIKit.UISearchBar, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarSearchButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarBookmarkButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarResultsListButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBar(_ searchBar: UIKit.UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Swift.Int)
+  @_Concurrency.MainActor(unsafe) open func loadContent()
+  @_Concurrency.MainActor(unsafe) open func refreshContent()
+  @objc deinit
+}
+public protocol ContentController : AnyObject {
+  var navigationItemTitle: Swift.String? { get }
+  var statefulViewController: CheetahDigitalUI.StatefulViewController? { get set }
+  func loadContent()
+  func refreshContent()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class StatefulViewController : CheetahDigitalUI.NibViewController, CheetahDigitalUI.Navigator {
+  public enum State : Swift.Equatable {
+    case content
+    case empty(message: Swift.String, reloadHandler: (() -> Swift.Void)?)
+    case error(error: Swift.Error, reloadHandler: (() -> Swift.Void)?)
+    case loading(message: Swift.String?)
+    public static func == (lhs: CheetahDigitalUI.StatefulViewController.State, rhs: CheetahDigitalUI.StatefulViewController.State) -> Swift.Bool
+  }
+  @_Concurrency.MainActor(unsafe) open var contentController: CheetahDigitalUI.ContentController?
+  @_Concurrency.MainActor(unsafe) open var emptyViewController: CheetahDigitalUI.ReloadableViewController
+  @_Concurrency.MainActor(unsafe) open var errorViewController: CheetahDigitalUI.ReloadableViewController
+  @_Concurrency.MainActor(unsafe) open var loadingViewController: CheetahDigitalUI.LoadableViewController
+  @_Concurrency.MainActor(unsafe) open var state: CheetahDigitalUI.StatefulViewController.State {
+    get
+    set
+  }
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public init(controller: CheetahDigitalUI.ContentController?, loading: CheetahDigitalUI.LoadableViewController? = nil, empty: CheetahDigitalUI.ReloadableViewController? = nil, error: CheetahDigitalUI.ReloadableViewController? = nil)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class StatesCollectionController : CheetahDigitalUI.CountriesCollectionController {
+  @_Concurrency.MainActor(unsafe) open var countryCode: Swift.String
+  @_Concurrency.MainActor(unsafe) convenience public init(countryCode: Swift.String, collectionView: UIKit.UICollectionView? = nil)
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+public protocol TableRowCellPresentable {
+  var rowImage: UIKit.UIImage? { get }
+  var rowImageURL: Foundation.URL? { get }
+  var rowSubtitle: Swift.String { get }
+  var rowTitle: Swift.String { get }
+  func configureRowCell(_ cell: CheetahDigitalUI.TableRowCell)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TableRowCell : UIKit.UITableViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var containerView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var contentImageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var contentStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var titleLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var subtitleLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var actionButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var activityIndicator: UIKit.UIActivityIndicatorView!
+  @_Concurrency.MainActor(unsafe) public var loadMessage: Swift.String
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CheetahDigitalUI.TableRowCell : CheetahDigitalUI.Loadable {
+  @_Concurrency.MainActor(unsafe) public func showLoading()
+  @_Concurrency.MainActor(unsafe) public func hideLoading()
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MenuViewController : CheetahDigitalUI.CollectionViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var logOutButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) open var menuCollectionController: CheetahDigitalUI.MenuCollectionController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var logoutButtonEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) convenience public init(items: [CheetahDigitalUI.MenuItemCellPresentable], selection: ((CheetahDigitalUI.MenuViewController?, CheetahDigitalUI.MenuItemCellPresentable) -> Swift.Void)?, logOut: ((CheetahDigitalUI.MenuViewController?) -> Swift.Void)?)
+  @_Concurrency.MainActor(unsafe) open func setupLogoutButton()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+public typealias ImageLoaderCompletion = ((Swift.Result<UIKit.UIImage, Swift.Error>) -> Swift.Void)
+public protocol ImageLoader {
+  var imagePlaceholder: UIKit.UIImage? { get }
+  func loadImage(for imageView: UIKit.UIImageView, with urlString: Swift.String, placeholder: UIKit.UIImage?, completion: CheetahDigitalUI.ImageLoaderCompletion?)
+  func loadImage(for imageView: UIKit.UIImageView, with url: Foundation.URL, placeholder: UIKit.UIImage?, completion: CheetahDigitalUI.ImageLoaderCompletion?)
+}
+public enum CheetahImageLoader {
+  public static var `default`: CheetahDigitalUI.ImageLoader?
+}
+public protocol CollectionController : CheetahDigitalUI.ContentController, UIKit.UICollectionViewDataSource, UIKit.UICollectionViewDelegate, UIKit.UISearchBarDelegate {
+  var collectionView: UIKit.UICollectionView? { get set }
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BaseCollectionController<T> : ObjectiveC.NSObject, CheetahDigitalUI.CollectionController {
+  @_Concurrency.MainActor(unsafe) open var navigationItemTitle: Swift.String?
+  @_Concurrency.MainActor(unsafe) weak open var statefulViewController: CheetahDigitalUI.StatefulViewController?
+  @_Concurrency.MainActor(unsafe) open var collectionViewController: CheetahDigitalUI.CollectionViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var provider: CheetahDigitalUI.DataProvider<T>
+  @_Concurrency.MainActor(unsafe) open var filteredProvider: CheetahDigitalUI.DataProvider<T> {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var isFiltered: Swift.Bool
+  @_Concurrency.MainActor(unsafe) weak open var collectionView: UIKit.UICollectionView? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var isFetching: Swift.Bool
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) public init(collectionView: UIKit.UICollectionView? = nil)
+  @_Concurrency.MainActor(unsafe) open func setupCollectionView()
+  @_Concurrency.MainActor(unsafe) open func registerComponents()
+  @_Concurrency.MainActor(unsafe) open func dataItem(at indexPath: Foundation.IndexPath) -> T?
+  @_Concurrency.MainActor(unsafe) open func updateFilteredData(with searchTerm: Swift.String)
+  @_Concurrency.MainActor(unsafe) open func filteredData(with searchTerm: Swift.String) -> [T]
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didDeselectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, willDisplaySupplementaryView view: UIKit.UICollectionReusableView, forElementKind elementKind: Swift.String, at indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplaying cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, didEndDisplayingSupplementaryView view: UIKit.UICollectionReusableView, forElementOfKind elementKind: Swift.String, at indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) open func loadContent()
+  @_Concurrency.MainActor(unsafe) open func refreshContent()
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarShouldBeginEditing(_ searchBar: UIKit.UISearchBar) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarTextDidBeginEditing(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarShouldEndEditing(_ searchBar: UIKit.UISearchBar) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarTextDidEndEditing(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBar(_ searchBar: UIKit.UISearchBar, textDidChange searchText: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBar(_ searchBar: UIKit.UISearchBar, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarSearchButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarBookmarkButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarCancelButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBarResultsListButtonClicked(_ searchBar: UIKit.UISearchBar)
+  @_Concurrency.MainActor(unsafe) @objc open func searchBar(_ searchBar: UIKit.UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Swift.Int)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ListCollectionController<T> : CheetahDigitalUI.BaseCollectionController<T>, UIKit.UICollectionViewDataSourcePrefetching {
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) open var currentPage: Swift.Int
+  @_Concurrency.MainActor(unsafe) open var totalItems: Swift.Int
+  @_Concurrency.MainActor(unsafe) open var onLastPage: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var loadCellIndexPath: Foundation.IndexPath {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override open func setupCollectionView()
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) open func isLoadingCell(at indexPath: Foundation.IndexPath) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func visibleIndexPaths(from indexPaths: [Foundation.IndexPath]) -> [Foundation.IndexPath]
+  @_Concurrency.MainActor(unsafe) open func updateCollection(with newItems: [T])
+  @_Concurrency.MainActor(unsafe) override open func refreshContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, willDisplay cell: UIKit.UICollectionViewCell, forItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, prefetchItemsAt indexPaths: [Foundation.IndexPath])
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CarouselCollectionController<T> : CheetahDigitalUI.BaseCollectionController<T> {
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) open var pageControl: UIKit.UIPageControl {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) override open func setupCollectionView()
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) open func setupPageControl()
+  @_Concurrency.MainActor(unsafe) open func updateCollection(with newItems: [T])
+  @objc @_Concurrency.MainActor(unsafe) open func pageControlValueChanged(_ sender: UIKit.UIPageControl)
+  @_Concurrency.MainActor(unsafe) @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc @_Concurrency.MainActor(unsafe) open func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @objc @_Concurrency.MainActor(unsafe) open func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+public struct CheetahColorTheme : CheetahDigitalUI.ColorTheme {
+  public let primaryColor: UIKit.UIColor
+  public let secondaryColor: UIKit.UIColor
+  public let primaryVariantColor: UIKit.UIColor
+}
+public struct CheetahTextTheme : CheetahDigitalUI.TextTheme {
+  public var largeTitle: CheetahDigitalUI.TextAppearance
+  public var title1: CheetahDigitalUI.TextAppearance
+  public var title2: CheetahDigitalUI.TextAppearance
+  public var title3: CheetahDigitalUI.TextAppearance
+  public var headline: CheetahDigitalUI.TextAppearance
+  public var subheadline: CheetahDigitalUI.TextAppearance
+  public var body: CheetahDigitalUI.TextAppearance
+  public var callout: CheetahDigitalUI.TextAppearance
+  public var footnote: CheetahDigitalUI.TextAppearance
+  public var caption1: CheetahDigitalUI.TextAppearance
+  public var caption2: CheetahDigitalUI.TextAppearance
+  public var textView: CheetahDigitalUI.TextAppearance
+  public var textField: CheetahDigitalUI.TextAppearance
+  public var alertButton: CheetahDigitalUI.TextAppearance
+  public var alertTitle: CheetahDigitalUI.TextAppearance
+  public var alertMessage: CheetahDigitalUI.TextAppearance
+  public var button: CheetahDigitalUI.TextAppearance
+}
+public protocol Reloadable {
+  var reload: (() -> Swift.Void)? { get set }
+  var reloadMessage: Swift.String { get set }
+}
+public protocol ReloadableViewController : UIKit.UIViewController, CheetahDigitalUI.Reloadable {
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DefaultReloadViewController : CheetahDigitalUI.NibViewController, CheetahDigitalUI.ReloadableViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var containerStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var messageLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var retryButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) open var reload: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var reloadMessage: Swift.String
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @objc @_Concurrency.MainActor(unsafe) open func retryButtonPressed(_ sender: UIKit.UIButton)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CountriesCollectionController : CheetahDigitalUI.BaseCollectionController<CheetahDigitalUI.CountriesCollectionController.ItemTuple> {
+  @_Concurrency.MainActor(unsafe) public static let defaultsKey: Swift.String
+  public typealias ItemTuple = (name: Swift.String, code: Swift.String)
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) open var selectionClosure: ((Swift.String, Swift.String) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func filteredData(with searchTerm: Swift.String) -> [CheetahDigitalUI.CountriesCollectionController.ItemTuple]
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SelectionButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) open var groupName: Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var isSelected: Swift.Bool {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var delegate: CheetahDigitalUI.SelectionButtonDelegate?
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var titleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var selectedTitleColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var imageColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var selectedImageColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var adjustsImageWithTitle: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var shouldNotify: Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) open func initializeSelectionButton()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func imageRect(forContentRect contentRect: CoreGraphics.CGRect) -> CoreGraphics.CGRect
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func titleRect(forContentRect contentRect: CoreGraphics.CGRect) -> CoreGraphics.CGRect
+  @_Concurrency.MainActor(unsafe) open func setTintColors()
+  @_Concurrency.MainActor(unsafe) open func setTitleColors()
+  @_Concurrency.MainActor(unsafe) open func notifyGroupMembers()
+  @_Concurrency.MainActor(unsafe) open func groupStateDidChange(by selectionButton: CheetahDigitalUI.SelectionButton)
+  @objc @_Concurrency.MainActor(unsafe) open func didTapButton()
+  @_Concurrency.MainActor(unsafe) open func groupStateDidChange(_ notification: Foundation.Notification)
+}
+public protocol SelectionButtonDelegate {
+  func willChange(_ selectionButton: CheetahDigitalUI.SelectionButton, isSelected: Swift.Bool) -> Swift.Bool
+  func didTap(_ selectionButton: CheetahDigitalUI.SelectionButton)
+}
+extension CheetahDigitalUI.SelectionButtonDelegate {
+  public func willChange(_ selectionButton: CheetahDigitalUI.SelectionButton, isSelected: Swift.Bool) -> Swift.Bool
+}
+public protocol Loadable {
+  var loadMessage: Swift.String { get set }
+  func showLoading()
+  func hideLoading()
+}
+public protocol LoadableViewController : UIKit.UIViewController, CheetahDigitalUI.Loadable {
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DefaultLoadingViewController : CheetahDigitalUI.NibViewController, CheetahDigitalUI.LoadableViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var activityIndicator: UIKit.UIActivityIndicatorView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var loadingLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) open var loadMessage: Swift.String
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func showLoading()
+  @_Concurrency.MainActor(unsafe) open func hideLoading()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RatingButton : CheetahDigitalUI.SelectionButton {
+  @_Concurrency.MainActor(unsafe) open var ratingIndex: Swift.Int
+  @_Concurrency.MainActor(unsafe) override open func initializeSelectionButton()
+  @_Concurrency.MainActor(unsafe) override open func groupStateDidChange(by selectionButton: CheetahDigitalUI.SelectionButton)
+  @objc @_Concurrency.MainActor(unsafe) override open func didTapButton()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ScannerViewController : CheetahDigitalUI.NibViewController, AVFoundation.AVCaptureMetadataOutputObjectsDelegate {
+  @_Concurrency.MainActor(unsafe) open var helpAction: (_ scanner: CheetahDigitalUI.ScannerViewController, UIKit.UIButton) -> Swift.Void
+  @_Concurrency.MainActor(unsafe) open var captureSession: AVFoundation.AVCaptureSession?
+  @_Concurrency.MainActor(unsafe) open var previewLayer: AVFoundation.AVCaptureVideoPreviewLayer?
+  @_Concurrency.MainActor(unsafe) open var deviceInput: AVFoundation.AVCaptureDeviceInput?
+  @_Concurrency.MainActor(unsafe) open var metadataOutput: AVFoundation.AVCaptureMetadataOutput?
+  @_Concurrency.MainActor(unsafe) open var metadataObjectTypes: [AVFoundation.AVMetadataObject.ObjectType]
+  @_Concurrency.MainActor(unsafe) open var captureAction: ((CheetahDigitalUI.ScannerViewController, Swift.String) -> Swift.Void)?
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupHelp()
+  @_Concurrency.MainActor(unsafe) open func setupCaptor()
+  @_Concurrency.MainActor(unsafe) open func startScanning()
+  @_Concurrency.MainActor(unsafe) open func stopScanning()
+  @_Concurrency.MainActor(unsafe) open func scanFailed(with title: Swift.String?, message: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc open func metadataOutput(_ output: AVFoundation.AVCaptureMetadataOutput, didOutput metadataObjects: [AVFoundation.AVMetadataObject], from connection: AVFoundation.AVCaptureConnection)
+  @objc deinit
+}
+extension CheetahDigitalUI.ImagePickerPresenter.MediaType : Swift.Equatable {}
+extension CheetahDigitalUI.ImagePickerPresenter.MediaType : Swift.Hashable {}
+extension CheetahDigitalUI.AnalyticsLogger.LogKeys : Swift.Equatable {}
+extension CheetahDigitalUI.AnalyticsLogger.LogKeys : Swift.Hashable {}
+extension CheetahDigitalUI.AnalyticsLogger.LogKeys : Swift.RawRepresentable {}
+extension CheetahDigitalUI.FloatingTextFieldWithIcon.IconPosition : Swift.Equatable {}
+extension CheetahDigitalUI.FloatingTextFieldWithIcon.IconPosition : Swift.Hashable {}
+extension CheetahDigitalUI.FloatingTextFieldWithIcon.IconPosition : Swift.RawRepresentable {}
+extension CheetahDigitalUI.ThemeManager.TextStyle : Swift.Equatable {}
+extension CheetahDigitalUI.ThemeManager.TextStyle : Swift.Hashable {}
+extension CheetahDigitalUI.UINotification : Swift.Equatable {}
+extension CheetahDigitalUI.UINotification : Swift.Hashable {}
