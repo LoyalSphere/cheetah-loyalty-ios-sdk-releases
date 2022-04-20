@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MetricTransferRewardViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/MetricTransferRewardViewController" class="dashAnchor"></a>
+    <a title="MetricTransferRewardViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        MetricTransferRewardViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BaseRewardResponder.html">BaseRewardResponder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CertificateRewardViewController.html">CertificateRewardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChallengeRewardViewController.html">ChallengeRewardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CombinationRewardCollectionController.html">CombinationRewardCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CombinationRewardViewController.html">CombinationRewardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultRewardResponderFactory.html">DefaultRewardResponderFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GenericRewardViewController.html">GenericRewardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MetricTransferRewardViewController.html">MetricTransferRewardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RedemptionDetailController.html">RedemptionDetailController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RedemptionDetailViewController.html">RedemptionDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RequiredAttributesCollectionController.html">RequiredAttributesCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RequiredAttributesRewardViewController.html">RequiredAttributesRewardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RewardAttributeCell.html">RewardAttributeCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RewardAttributeSectionHeader.html">RewardAttributeSectionHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RewardDetailController.html">RewardDetailController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RewardDetailViewController.html">RewardDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShipToAddressController.html">ShipToAddressController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShipToAddressViewController.html">ShipToAddressViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RewardsNotification.html">RewardsNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ChallengeNavigatorDelegate.html">ChallengeNavigatorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CombinationRewardDelegate.html">CombinationRewardDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RewardResponder.html">RewardResponder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RewardResponderDelegate.html">RewardResponderDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RewardResponderFactory.html">RewardResponderFactory</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MetricTransferRewardViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">MetricTransferRewardViewController</span> <span class="p">:</span> <span class="kt">NibViewController</span><span class="p">,</span> <span class="kt"><a href="../Protocols/RewardResponderDelegate.html">RewardResponderDelegate</a></span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><span>Properties</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards34MetricTransferRewardViewControllerC9responderAA0F9Responder_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/responder" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards34MetricTransferRewardViewControllerC9responderAA0F9Responder_pSgvp">responder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reward Responder object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">responder</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RewardResponder.html">RewardResponder</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards34MetricTransferRewardViewControllerC12loadingAlert0aB2UI0jgH0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/loadingAlert" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards34MetricTransferRewardViewControllerC12loadingAlert0aB2UI0jgH0Cvp">loadingAlert</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loading alert that is displayed when redeeming the reward.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">loadingAlert</span><span class="p">:</span> <span class="kt">AlertViewController</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><span>Initializers</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards34MetricTransferRewardViewControllerC4with7awardIdAC0aB4Core0F0V_SiSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(with:awardId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards34MetricTransferRewardViewControllerC4with7awardIdAC0aB4Core0F0V_SiSgtcfc">init(with:<wbr>awardId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">convenience</span> <span class="nf">init</span><span class="p">(</span><span class="n">with</span> <span class="nv">reward</span><span class="p">:</span> <span class="kt">Reward</span><span class="p">,</span> <span class="nv">awardId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Lifecycle"></a>
+                <a name="//apple_ref/swift/Section/Lifecycle" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Lifecycle"></a>
+                  <h3 class="section-name"><span>Lifecycle</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards34MetricTransferRewardViewControllerC5setupyyF"></a>
+                    <a name="//apple_ref/swift/Method/setup()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards34MetricTransferRewardViewControllerC5setupyyF">setup()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">setup</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Actions"></a>
+                <a name="//apple_ref/swift/Section/Actions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Actions"></a>
+                  <h3 class="section-name"><span>Actions</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards34MetricTransferRewardViewControllerC18sliderValueChangedyySo8UISliderCF"></a>
+                    <a name="//apple_ref/swift/Method/sliderValueChanged(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards34MetricTransferRewardViewControllerC18sliderValueChangedyySo8UISliderCF">sliderValueChanged(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">sliderValueChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UISlider</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards34MetricTransferRewardViewControllerC19actionButtonPressedyySo8UIButtonCF"></a>
+                    <a name="//apple_ref/swift/Method/actionButtonPressed(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards34MetricTransferRewardViewControllerC19actionButtonPressedyySo8UIButtonCF">actionButtonPressed(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method called when the action button was pressed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">func</span> <span class="nf">actionButtonPressed</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/RewardResponderDelegate"></a>
+                <a name="//apple_ref/swift/Section/RewardResponderDelegate" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/RewardResponderDelegate"></a>
+                  <h3 class="section-name"><span>RewardResponderDelegate</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards23RewardResponderDelegateP9onFailure4withys5Error_p_tF"></a>
+                    <a name="//apple_ref/swift/Method/onFailure(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards23RewardResponderDelegateP9onFailure4withys5Error_p_tF">onFailure(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onFailure</span><span class="p">(</span><span class="n">with</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards23RewardResponderDelegateP9onSuccess4withy0aB4Core11APIResponseVyAF0D0V12ResponseInfoVG_tF"></a>
+                    <a name="//apple_ref/swift/Method/onSuccess(with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards23RewardResponderDelegateP9onSuccess4withy0aB4Core11APIResponseVyAF0D0V12ResponseInfoVG_tF">onSuccess(with:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">onSuccess</span><span class="p">(</span><span class="n">with</span> <span class="nv">apiResponse</span><span class="p">:</span> <span class="kt">APIResponse</span><span class="o">&lt;</span><span class="kt">Reward</span><span class="o">.</span><span class="kt">ResponseInfo</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2022-04-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

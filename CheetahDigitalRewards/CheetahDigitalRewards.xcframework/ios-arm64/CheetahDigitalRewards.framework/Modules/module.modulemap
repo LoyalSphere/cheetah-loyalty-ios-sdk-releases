@@ -1,0 +1,11 @@
+framework module CheetahDigitalRewards {
+  umbrella header "CheetahDigitalRewards.h"
+
+  export *
+  module * { export * }
+}
+
+module CheetahDigitalRewards.Swift {
+    header "CheetahDigitalRewards-Swift.h"
+    requires objc
+}

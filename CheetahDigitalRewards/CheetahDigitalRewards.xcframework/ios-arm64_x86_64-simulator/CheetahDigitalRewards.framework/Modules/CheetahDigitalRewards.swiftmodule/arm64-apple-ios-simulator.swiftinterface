@@ -1,0 +1,358 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahDigitalRewards
+import CheetahDigitalCore
+@_exported import CheetahDigitalRewards
+import CheetahDigitalUI
+import CheetahDigitalUtils
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MetricTransferRewardViewController : CheetahDigitalUI.NibViewController, CheetahDigitalRewards.RewardResponderDelegate {
+  @_Concurrency.MainActor(unsafe) open var responder: CheetahDigitalRewards.RewardResponder? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) convenience public init(with reward: CheetahDigitalCore.Reward, awardId: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @objc @_Concurrency.MainActor(unsafe) open func sliderValueChanged(_ sender: UIKit.UISlider)
+  @objc @_Concurrency.MainActor(unsafe) open func actionButtonPressed(_ sender: UIKit.UIButton)
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Reward.ResponseInfo>)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Foundation.Bundle {
+  public static var CheetahDigitalRewardsIdentifier: Swift.String {
+    get
+  }
+}
+public enum RewardsNotification : CheetahDigitalUtils.CheetahNotification {
+  case rewardUpdated
+  public var name: Swift.String {
+    get
+  }
+  public static func == (a: CheetahDigitalRewards.RewardsNotification, b: CheetahDigitalRewards.RewardsNotification) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol RewardResponderFactory {
+  static func responder(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController?
+  static func badge(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func certificate(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func challenge(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func contest(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func coupon(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func couponCom(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func debit(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func dynamic(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func giftcard(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func metric(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func metricPurchase(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func metricTransfer(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func offer(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  static func product(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+}
+@_hasMissingDesignatedInitializers open class DefaultRewardResponderFactory : CheetahDigitalRewards.RewardResponderFactory {
+  open class func responder(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController?
+  open class func badge(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func certificate(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func challenge(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func contest(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func coupon(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func couponCom(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func debit(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func dynamic(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func giftcard(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func metric(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func metricPurchase(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func metricTransfer(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func offer(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  open class func product(for reward: CheetahDigitalCore.Reward, with awardId: Swift.Int?) -> UIKit.UIViewController
+  @objc deinit
+}
+public protocol RewardResponderDelegate : AnyObject {
+  func onFailure(with error: Swift.Error)
+  func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Reward.ResponseInfo>)
+}
+public protocol RewardResponder : AnyObject {
+  var reward: CheetahDigitalCore.Reward { get }
+  var awardId: Swift.Int? { get }
+  var delegate: CheetahDigitalRewards.RewardResponderDelegate? { get set }
+  var isResponding: Swift.Bool { get set }
+  func didRespond(with result: Swift.Result<CheetahDigitalCore.APIResponse<CheetahDigitalCore.Reward.ResponseInfo>, Swift.Error>)
+  func redeem(address: [Swift.String : Any]?, and parameters: CheetahDigitalUtils.Parameters?)
+}
+@objc open class BaseRewardResponder : ObjectiveC.NSObject, CheetahDigitalRewards.RewardResponder {
+  open var reward: CheetahDigitalCore.Reward
+  open var awardId: Swift.Int?
+  open var isResponding: Swift.Bool
+  weak open var delegate: CheetahDigitalRewards.RewardResponderDelegate?
+  public init(with reward: CheetahDigitalCore.Reward, awardId: Swift.Int? = nil, delegate: CheetahDigitalRewards.RewardResponderDelegate? = nil)
+  open func didRespond(with result: Swift.Result<CheetahDigitalCore.APIResponse<CheetahDigitalCore.Reward.ResponseInfo>, Swift.Error>)
+  open func redeem(address: [Swift.String : Any]?, and parameters: CheetahDigitalUtils.Parameters?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RedemptionDetailViewController : CheetahDigitalUI.DetailViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var messageLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var detailLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var notesLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var statusImageView: UIKit.UIImageView!
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) open func setStatusImage(with image: UIKit.UIImage)
+  @_Concurrency.MainActor(unsafe) open func showRedemptionCancellingConfirmation()
+  @_Concurrency.MainActor(unsafe) open func redemptionCancelledSuccessfully(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Reward.Response>)
+  @_Concurrency.MainActor(unsafe) open func redemptionCancelFailed(with error: Swift.Error)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(controller: CheetahDigitalUI.ContentController?, loading: CheetahDigitalUI.LoadableViewController? = nil, empty: CheetahDigitalUI.ReloadableViewController? = nil, error: CheetahDigitalUI.ReloadableViewController? = nil)
+  @_Concurrency.MainActor(unsafe) override public init(detailController: CheetahDigitalUI.DetailController, isRefreshable: Swift.Bool = super)
+  @objc deinit
+}
+open class RedemptionDetailController : CheetahDigitalUI.BaseDetailController {
+  open var id: Swift.Int
+  open var notes: Swift.String {
+    get
+  }
+  public init(id: Swift.Int)
+  override open func actionButtonPressed(_ actionButton: UIKit.UIButton)
+  override open func loadContent()
+  open func setupActionButton()
+  open func cancelReward()
+  @objc deinit
+}
+open class RewardDetailController : CheetahDigitalUI.BaseDetailController {
+  open var awardID: Swift.Int?
+  open var awardStatus: CheetahDigitalCore.Award.Status
+  open var id: Swift.Int
+  open var params: [Swift.String : Any] {
+    get
+  }
+  open var rewardRedeemedListener: ObjectiveC.NSObjectProtocol?
+  open var isRedeemable: Swift.Bool {
+    get
+    set
+  }
+  open var responderFactory: CheetahDigitalRewards.RewardResponderFactory.Type
+  public init(id: Swift.Int, awardID: Swift.Int? = nil)
+  @objc deinit
+  override open func setupDetails()
+  override open func actionButtonPressed(_ actionButton: UIKit.UIButton)
+  override open func loadContent()
+  open func setupRewardRedeemedListener()
+  open func setupRewardRespondableStatus()
+  open func setupAwardClaimStatus()
+  open func rewardRedeemed()
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RewardDetailViewController : CheetahDigitalUI.DetailViewController, CheetahDigitalUI.SelectionButtonDelegate {
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func didTap(_ selectionButton: CheetahDigitalUI.SelectionButton)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(controller: CheetahDigitalUI.ContentController?, loading: CheetahDigitalUI.LoadableViewController? = nil, empty: CheetahDigitalUI.ReloadableViewController? = nil, error: CheetahDigitalUI.ReloadableViewController? = nil)
+  @_Concurrency.MainActor(unsafe) override public init(detailController: CheetahDigitalUI.DetailController, isRefreshable: Swift.Bool = super)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CertificateRewardViewController : CheetahDigitalRewards.GenericRewardViewController {
+  @_Concurrency.MainActor(unsafe) override open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Reward.ResponseInfo>)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol ChallengeNavigatorDelegate : AnyObject {
+  func navigate(to challenge: CheetahDigitalCore.Challenge)
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ChallengeRewardViewController : CheetahDigitalRewards.GenericRewardViewController {
+  @_Concurrency.MainActor(unsafe) weak open var navigatorDelegate: CheetahDigitalRewards.ChallengeNavigatorDelegate?
+  @_Concurrency.MainActor(unsafe) convenience public init(with reward: CheetahDigitalCore.Reward, awardId: Swift.Int? = nil, heading: Swift.String? = nil, defaultResponseMessage: Swift.String? = nil, navigatorDelegate: CheetahDigitalRewards.ChallengeNavigatorDelegate?, nibName: Swift.String = "GenericRewardViewController")
+  @_Concurrency.MainActor(unsafe) override open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Reward.ResponseInfo>)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GenericRewardViewController : CheetahDigitalUI.GenericAlertViewController, CheetahDigitalRewards.RewardResponderDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var containerStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var activityIndicator: UIKit.UIActivityIndicatorView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var messageContainerView: UIKit.UIView!
+  @_Concurrency.MainActor(unsafe) open var responder: CheetahDigitalRewards.RewardResponder?
+  @_Concurrency.MainActor(unsafe) open var defaultResponseMessage: Swift.String
+  @_Concurrency.MainActor(unsafe) open var parameters: CheetahDigitalUtils.Parameters?
+  @_Concurrency.MainActor(unsafe) convenience public init(with reward: CheetahDigitalCore.Reward, awardId: Swift.Int? = nil, heading: Swift.String? = nil, defaultResponseMessage: Swift.String? = nil, reloadCompletion: (() -> Swift.Void)? = nil, nibName: Swift.String = "GenericRewardViewController")
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Reward.ResponseInfo>)
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol CombinationRewardDelegate : AnyObject {
+  func onSelectedCombinationUpdate(with values: [Swift.String])
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CombinationRewardCollectionController : CheetahDigitalUI.BaseCollectionController<CheetahDigitalCore.Reward.Attribute> {
+  @_Concurrency.MainActor(unsafe) weak open var delegate: CheetahDigitalRewards.CombinationRewardDelegate?
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CombinationRewardViewController : CheetahDigitalUI.NibViewController, CheetahDigitalRewards.CombinationRewardDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var actionButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var pointsLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var collectionViewContainer: UIKit.UIView!
+  @_Concurrency.MainActor(unsafe) convenience public init(with reward: CheetahDigitalCore.Reward, awardId: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupImageView()
+  @_Concurrency.MainActor(unsafe) open func setupActionButton()
+  @_Concurrency.MainActor(unsafe) open func setupPointsLabel()
+  @_Concurrency.MainActor(unsafe) open func updateViews()
+  @_Concurrency.MainActor(unsafe) open func setupCollectionView()
+  @_Concurrency.MainActor(unsafe) public func onSelectedCombinationUpdate(with values: [Swift.String])
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RequiredAttributesCollectionController : CheetahDigitalUI.BaseCollectionController<CheetahDigitalCore.Reward.Class>, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) override open func setupCollectionView()
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
+  @_Concurrency.MainActor(unsafe) @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RequiredAttributesRewardViewController : CheetahDigitalUI.CollectionViewController, CheetahDigitalRewards.RewardResponderDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var inStoreButton: UIKit.UIButton?
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var shipButton: UIKit.UIButton?
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) convenience public init(with reward: CheetahDigitalCore.Reward, awardId: Swift.Int? = nil, collectionController: CheetahDigitalRewards.RequiredAttributesCollectionController? = RequiredAttributesCollectionController(), selectedCombination: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupActionButtons()
+  @_Concurrency.MainActor(unsafe) open func enableActionButtons(_ enable: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func close()
+  @_Concurrency.MainActor(unsafe) public func onFailure(with error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) public func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Reward.ResponseInfo>)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RewardAttributeCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var checkBox: CheetahDigitalUI.CheckBox!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RewardAttributeSectionHeader : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var headingLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var subheadingLabel: UIKit.UILabel!
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class ShipToAddressController : CheetahDigitalUI.ContentController, CheetahDigitalRewards.RewardResponderDelegate {
+  open var navigationItemTitle: Swift.String?
+  open var responder: CheetahDigitalRewards.RewardResponder?
+  open var member: CheetahDigitalCore.Member? {
+    get
+    set
+  }
+  open var parameters: CheetahDigitalUtils.Parameters?
+  open var statefulViewController: CheetahDigitalUI.StatefulViewController?
+  convenience public init(with reward: CheetahDigitalCore.Reward, for member: CheetahDigitalCore.Member? = nil, awardId: Swift.Int? = nil, parameters: CheetahDigitalUtils.Parameters? = nil)
+  open func loadContent()
+  open func redeem(address: [Swift.String : Any]?)
+  open func getMemberProfile()
+  open func refreshContent()
+  open func onFailure(with error: Swift.Error)
+  open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Reward.ResponseInfo>)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ShipToAddressViewController : CheetahDigitalUI.StatefulViewController, UIKit.UITextFieldDelegate, CheetahDigitalUI.SelectionButtonDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var textFieldsStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var firstNameTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var lastNameTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var streetAddressTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var streetAddress2TextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var cityTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var postalCodeTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var countryCodeTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var stateTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var mobilePhoneTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var useAddressCheckbox: CheetahDigitalUI.CheckBox!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var saveAddressChecbox: CheetahDigitalUI.CheckBox!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var actionButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) open var isCountryStateSearchEnabled: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var hasMissingTextFields: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var countries: [CheetahDigitalCore.Country]
+  @_Concurrency.MainActor(unsafe) open var selectedCountry: CheetahDigitalCore.Country?
+  @_Concurrency.MainActor(unsafe) open var address: [Swift.String : Any] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) convenience public init(contentController: CheetahDigitalRewards.ShipToAddressController?)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupTextFieldsTitle()
+  @_Concurrency.MainActor(unsafe) open func setupTextFieldsAppearance()
+  @_Concurrency.MainActor(unsafe) open func setupTextFieldsDelegate()
+  @_Concurrency.MainActor(unsafe) open func setupTextFieldTexts()
+  @_Concurrency.MainActor(unsafe) open func setupCheckboxes()
+  @_Concurrency.MainActor(unsafe) open func setupActionButton()
+  @_Concurrency.MainActor(unsafe) open func redeemButtonPressed(_ sender: Any)
+  @_Concurrency.MainActor(unsafe) open func showErrorMessagesForMissingTextFieldsText()
+  @_Concurrency.MainActor(unsafe) open func setupLoadingViewForAward()
+  @_Concurrency.MainActor(unsafe) open func close()
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Reward.ResponseInfo>)
+  @_Concurrency.MainActor(unsafe) @objc open func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func didTap(_ selectionButton: CheetahDigitalUI.SelectionButton)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(controller: CheetahDigitalUI.ContentController?, loading: CheetahDigitalUI.LoadableViewController? = nil, empty: CheetahDigitalUI.ReloadableViewController? = nil, error: CheetahDigitalUI.ReloadableViewController? = nil)
+  @objc deinit
+}
+extension CheetahDigitalRewards.RewardsNotification : Swift.Equatable {}
+extension CheetahDigitalRewards.RewardsNotification : Swift.Hashable {}

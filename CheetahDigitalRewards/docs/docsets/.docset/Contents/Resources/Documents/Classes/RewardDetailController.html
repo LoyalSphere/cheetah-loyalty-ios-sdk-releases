@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RewardDetailController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/RewardDetailController" class="dashAnchor"></a>
+    <a title="RewardDetailController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        RewardDetailController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BaseRewardResponder.html">BaseRewardResponder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CertificateRewardViewController.html">CertificateRewardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ChallengeRewardViewController.html">ChallengeRewardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CombinationRewardCollectionController.html">CombinationRewardCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CombinationRewardViewController.html">CombinationRewardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DefaultRewardResponderFactory.html">DefaultRewardResponderFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GenericRewardViewController.html">GenericRewardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MetricTransferRewardViewController.html">MetricTransferRewardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RedemptionDetailController.html">RedemptionDetailController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RedemptionDetailViewController.html">RedemptionDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RequiredAttributesCollectionController.html">RequiredAttributesCollectionController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RequiredAttributesRewardViewController.html">RequiredAttributesRewardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RewardAttributeCell.html">RewardAttributeCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RewardAttributeSectionHeader.html">RewardAttributeSectionHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RewardDetailController.html">RewardDetailController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RewardDetailViewController.html">RewardDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShipToAddressController.html">ShipToAddressController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShipToAddressViewController.html">ShipToAddressViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/RewardsNotification.html">RewardsNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ChallengeNavigatorDelegate.html">ChallengeNavigatorDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CombinationRewardDelegate.html">CombinationRewardDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RewardResponder.html">RewardResponder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RewardResponderDelegate.html">RewardResponderDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RewardResponderFactory.html">RewardResponderFactory</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RewardDetailController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">RewardDetailController</span> <span class="p">:</span> <span class="kt">BaseDetailController</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Properties"></a>
+                  <h3 class="section-name"><span>Properties</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC7awardIDSiSgvp"></a>
+                    <a name="//apple_ref/swift/Property/awardID" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC7awardIDSiSgvp">awardID</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Award ID for a reward.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">awardID</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC11awardStatus0aB4Core5AwardV0H0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/awardStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC11awardStatus0aB4Core5AwardV0H0Ovp">awardStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Status of the award.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">awardStatus</span><span class="p">:</span> <span class="kt">Award</span><span class="o">.</span><span class="kt">Status</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC2idSivp"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC2idSivp">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The ID of the reward to get.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC6paramsSDySSypGvp"></a>
+                    <a name="//apple_ref/swift/Property/params" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC6paramsSDySSypGvp">params</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Parameter that will used on getting the reward detail.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">params</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC22rewardRedeemedListenerSo8NSObject_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/rewardRedeemedListener" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC22rewardRedeemedListenerSo8NSObject_pSgvp">rewardRedeemedListener</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Observer for when reward is redeemed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">rewardRedeemedListener</span><span class="p">:</span> <span class="kt">NSObjectProtocol</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC12isRedeemableSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isRedeemable" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC12isRedeemableSbvp">isRedeemable</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Boolean value if the award is available for redeem.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">isRedeemable</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC16responderFactoryAA0d9ResponderH0_pXpvp"></a>
+                    <a name="//apple_ref/swift/Property/responderFactory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC16responderFactoryAA0d9ResponderH0_pXpvp">responderFactory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Responsible for navigation throughout different reward type responder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="k">var</span> <span class="nv">responderFactory</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RewardResponderFactory.html">RewardResponderFactory</a></span><span class="o">.</span><span class="k">Type</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Initializers"></a>
+                  <h3 class="section-name"><span>Initializers</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC2id7awardIDACSi_SiSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(id:awardID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC2id7awardIDACSi_SiSgtcfc">init(id:<wbr>awardID:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a newly initialized reward detail controller with the specified reward ID and award id optionally.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">awardID</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the reward.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>awardID</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the award.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The initialized reward detail controller.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Open%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Open Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Open%20Methods"></a>
+                  <h3 class="section-name"><span>Open Methods</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC12setupDetailsyyF"></a>
+                    <a name="//apple_ref/swift/Method/setupDetails()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC12setupDetailsyyF">setupDetails()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupDetails</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC19actionButtonPressedyySo8UIButtonCF"></a>
+                    <a name="//apple_ref/swift/Method/actionButtonPressed(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC19actionButtonPressedyySo8UIButtonCF">actionButtonPressed(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">actionButtonPressed</span><span class="p">(</span><span class="n">_</span> <span class="nv">actionButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC11loadContentyyF"></a>
+                    <a name="//apple_ref/swift/Method/loadContent()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC11loadContentyyF">loadContent()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">open</span> <span class="kd">func</span> <span class="nf">loadContent</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC05setupD16RedeemedListeneryyF"></a>
+                    <a name="//apple_ref/swift/Method/setupRewardRedeemedListener()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC05setupD16RedeemedListeneryyF">setupRewardRedeemedListener()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setup the listener for when the reward is redeemed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupRewardRedeemedListener</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC05setupD17RespondableStatusyyF"></a>
+                    <a name="//apple_ref/swift/Method/setupRewardRespondableStatus()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC05setupD17RespondableStatusyyF">setupRewardRespondableStatus()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check whether the given Reward is Redeemable and sets the <strong>isRedeemable</strong> property to false if the reward is not redeemable.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupRewardRespondableStatus</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC21setupAwardClaimStatusyyF"></a>
+                    <a name="//apple_ref/swift/Method/setupAwardClaimStatus()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC21setupAwardClaimStatusyyF">setupAwardClaimStatus()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">setupAwardClaimStatus</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalRewards22RewardDetailControllerC14rewardRedeemedyyF"></a>
+                    <a name="//apple_ref/swift/Method/rewardRedeemed()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalRewards22RewardDetailControllerC14rewardRedeemedyyF">rewardRedeemed()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">rewardRedeemed</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2022-04-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
