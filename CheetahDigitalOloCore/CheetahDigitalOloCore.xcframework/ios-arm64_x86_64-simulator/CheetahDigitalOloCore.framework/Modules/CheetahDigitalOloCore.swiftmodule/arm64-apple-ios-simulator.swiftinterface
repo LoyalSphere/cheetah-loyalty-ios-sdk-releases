@@ -1,0 +1,2163 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahDigitalOloCore
+@_exported import CheetahDigitalOloCore
+import CheetahDigitalUtils
+import CoreLocation
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+public enum Contact {
+  public struct Detail : Swift.Codable {
+    public var contactDetails: Swift.String
+    public init(contactDetails: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Option : Swift.Codable {
+    public var optIn: Swift.String
+    public var upsell: Swift.String
+    public var emailReceipts: Swift.String
+    public var followUps: Swift.String
+    public var marketingSMS: Swift.String
+    public init(optIn: Swift.String, upsell: Swift.String, emailReceipts: Swift.String, followUps: Swift.String, marketingSMS: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+extension CheetahDigitalOloCore.Contact.Detail {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Contact.Option {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum FeedbackRequest : CheetahDigitalOloCore.OLOURLRequestConvertible {
+  case submit(feedback: CheetahDigitalOloCore.Feedback)
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var tokenLocation: CheetahDigitalOloCore.TokenLocation {
+    get
+  }
+}
+public enum FeedbackAPI {
+  public static func submit(feedback: CheetahDigitalOloCore.Feedback, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Feedback>)
+}
+public enum CommonParameter {
+  public struct Coordinates : Swift.Encodable {
+    public var latitude: Swift.Double
+    public var longitude: Swift.Double
+    public init(latitude: Swift.Double, longitude: Swift.Double)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct CalendarRange : Swift.Codable {
+    public var calendarStart: Swift.String
+    public var calendarEnd: Swift.String
+    public init(calendarStart: Swift.String, calendarEnd: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct Address : Swift.Codable {
+    public var id: Swift.Int?
+    public var building: Swift.String?
+    public var streetAddress: Swift.String
+    public var city: Swift.String
+    public var zipCode: Swift.String
+    public var phoneNumber: Swift.String
+    public var specialInstructions: Swift.String?
+    public var isDefault: Swift.Bool
+    public init(id: Swift.Int? = nil, building: Swift.String? = nil, streetAddress: Swift.String, city: Swift.String, zipCode: Swift.String, phoneNumber: Swift.String, specialInstructions: Swift.String? = nil, isDefault: Swift.Bool)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+}
+public enum CardType : Swift.Codable, Swift.Equatable {
+  case amex
+  case visa
+  case discover
+  case mastercard
+  case undefined(value: Swift.String)
+  public var stringValue: Swift.String {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: CheetahDigitalOloCore.CardType, b: CheetahDigitalOloCore.CardType) -> Swift.Bool
+}
+public enum Billing {
+  public struct Account : Swift.Codable {
+    public var accountId: Swift.Int
+    public var accountType: CheetahDigitalOloCore.Billing.AccountType?
+    public var cardType: CheetahDigitalOloCore.CardType?
+    public var cardSuffix: Swift.String
+    public var description: Swift.String
+    public var expirationDate: Swift.String
+    public var balance: CheetahDigitalOloCore.Billing.Balance?
+    public var isRemovable: Swift.Bool
+    public var isDefault: Swift.Bool
+    public init(accountId: Swift.Int, accountType: CheetahDigitalOloCore.Billing.AccountType?, cardType: CheetahDigitalOloCore.CardType?, cardSuffix: Swift.String, description: Swift.String, expirationDate: Swift.String, balance: CheetahDigitalOloCore.Billing.Balance?, isRemovable: Swift.Bool, isDefault: Swift.Bool)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum AccountType : Swift.Codable, Swift.Equatable {
+    case creditCard
+    case payInStore
+    case storedValue(billingSchemeName: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahDigitalOloCore.Billing.AccountType, b: CheetahDigitalOloCore.Billing.AccountType) -> Swift.Bool
+  }
+  public struct Accounts : Swift.Codable {
+    public var billingAccounts: [CheetahDigitalOloCore.Billing.Account]
+    public init(billingAccounts: [CheetahDigitalOloCore.Billing.Account])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Balance : Swift.Codable {
+    public var balance: Swift.Double
+    public var success: Swift.Bool
+    public var message: Swift.String
+    public init(balance: Swift.Double, success: Swift.Bool, message: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct FieldInput : Swift.Codable {
+    public var name: Swift.String
+    public var type: CheetahDigitalOloCore.Billing.FieldInputType?
+    public var label: Swift.String
+    public var minLength: Swift.Int
+    public var maxLength: Swift.Int
+    public var isMandatory: Swift.Bool
+    public init(name: Swift.String, type: CheetahDigitalOloCore.Billing.FieldInputType?, label: Swift.String, minLength: Swift.Int, maxLength: Swift.Int, isMandatory: Swift.Bool)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum FieldInputType : Swift.Codable, Swift.Equatable {
+    case number
+    case password
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahDigitalOloCore.Billing.FieldInputType, b: CheetahDigitalOloCore.Billing.FieldInputType) -> Swift.Bool
+  }
+  public struct Scheme : Swift.Codable {
+    public var id: Swift.Int
+    public var name: Swift.String
+    public var type: CheetahDigitalOloCore.Billing.SchemeType?
+    public var canCheckBalance: Swift.Bool
+    public var supportsFullAddressCollection: Swift.Bool
+    public var supportsSaveOnFile: Swift.Bool
+    public var fields: [CheetahDigitalOloCore.Billing.FieldInput]
+    public var accounts: [CheetahDigitalOloCore.Billing.Account]
+    public init(id: Swift.Int, name: Swift.String, type: CheetahDigitalOloCore.Billing.SchemeType?, canCheckBalance: Swift.Bool, supportsFullAddressCollection: Swift.Bool, supportsSaveOnFile: Swift.Bool, fields: [CheetahDigitalOloCore.Billing.FieldInput], accounts: [CheetahDigitalOloCore.Billing.Account])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Schemes : Swift.Codable {
+    public var billingSchemes: [CheetahDigitalOloCore.Billing.Scheme]
+    public init(billingSchemes: [CheetahDigitalOloCore.Billing.Scheme])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum SchemeType : Swift.Codable, Swift.Equatable {
+    case payInStore
+    case creditCard
+    case giftCard
+    case external
+    case prepaid
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahDigitalOloCore.Billing.SchemeType, b: CheetahDigitalOloCore.Billing.SchemeType) -> Swift.Bool
+  }
+  public struct StoredValueCards : Swift.Codable {
+    public var cardBalances: [CheetahDigitalOloCore.Billing.Balance]
+    public init(cardBalances: [CheetahDigitalOloCore.Billing.Balance])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+extension CheetahDigitalOloCore.Billing.Account {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Billing.Accounts {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Billing.Balance {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Billing.StoredValueCards {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Billing.FieldInput {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Billing.Scheme {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Billing.Schemes {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension Foundation.Bundle {
+  public static var appName: Swift.String {
+    get
+  }
+  public static var versionString: Swift.String {
+    get
+  }
+  public static var CheetahDigitalOloIdentifier: Swift.String {
+    get
+  }
+}
+extension Foundation.NSNotification.Name {
+  public static let APIAccessTokenDidBecomeInvalid: Foundation.Notification.Name
+  public static let ResetPasswordRequired: Foundation.Notification.Name
+}
+public struct Product : Swift.Codable {
+  public var id: Swift.Int
+  public var chainProductId: Swift.Int
+  public var name: Swift.String
+  public var description: Swift.String
+  public var cost: Swift.Double
+  public var baseCalories: Swift.String
+  public var maxCalories: Swift.String
+  public var caloriesSeparator: Swift.String
+  public var imageFileName: Swift.String
+  public var maximumQuantity: Swift.String
+  public var minimumQuantity: Swift.String
+  public var maximumBasketQuantity: Swift.String
+  public var minimumBasketQuantity: Swift.String
+  public var quantityIncrement: Swift.String
+  public var shortDescription: Swift.String
+  public var metadata: [CheetahDigitalOloCore.MetadataItem]
+  public var menuItemLabels: [CheetahDigitalOloCore.Menu.ItemLabel]
+  public var images: [CheetahDigitalOloCore.Image]
+  public var availability: CheetahDigitalOloCore.Menu.ItemAvailability?
+  public var unavailableHandOffModes: [Swift.String]
+  public var displayId: Swift.String
+  public var startHour: Swift.Double
+  public var endHour: Swift.Double
+  public init(id: Swift.Int, chainProductId: Swift.Int, name: Swift.String, description: Swift.String, cost: Swift.Double, baseCalories: Swift.String, maxCalories: Swift.String, caloriesSeparator: Swift.String, imageFileName: Swift.String, maximumQuantity: Swift.String, minimumQuantity: Swift.String, maximumBasketQuantity: Swift.String, minimumBasketQuantity: Swift.String, quantityIncrement: Swift.String, shortDescription: Swift.String, metadata: [CheetahDigitalOloCore.MetadataItem], menuItemLabels: [CheetahDigitalOloCore.Menu.ItemLabel], images: [CheetahDigitalOloCore.Image], availability: CheetahDigitalOloCore.Menu.ItemAvailability?, unavailableHandOffModes: [Swift.String], displayId: Swift.String, startHour: Swift.Double, endHour: Swift.Double)
+  public struct Option : Swift.Codable {
+    public var id: Swift.Int
+    public var chainOptionId: Swift.Int
+    public var displayId: Swift.String
+    public var name: Swift.String
+    public var isDefault: Swift.Bool
+    public var cost: Swift.Double
+    public var hasChildren: Swift.Bool
+    public var modifiers: [CheetahDigitalOloCore.Product.OptionGroup]
+    public var fields: [CheetahDigitalOloCore.Product.CustomField]
+    public var menuItemLabels: [CheetahDigitalOloCore.Menu.ItemLabel]
+    public var baseCalories: Swift.String
+    public var maxCalories: Swift.String
+    public var caloriesSeparator: Swift.String
+    public var adjustsParentPrice: Swift.Bool
+    public var adjustsParentCalories: Swift.Bool
+    public var availability: CheetahDigitalOloCore.Menu.ItemAvailability?
+    public var metadata: [CheetahDigitalOloCore.MetadataItem]
+    public init(id: Swift.Int, chainOptionId: Swift.Int, displayId: Swift.String, name: Swift.String, isDefault: Swift.Bool, cost: Swift.Double, hasChildren: Swift.Bool, modifiers: [CheetahDigitalOloCore.Product.OptionGroup], fields: [CheetahDigitalOloCore.Product.CustomField], menuItemLabels: [CheetahDigitalOloCore.Menu.ItemLabel], baseCalories: Swift.String, maxCalories: Swift.String, caloriesSeparator: Swift.String, adjustsParentPrice: Swift.Bool, adjustsParentCalories: Swift.Bool, availability: CheetahDigitalOloCore.Menu.ItemAvailability?, metadata: [CheetahDigitalOloCore.MetadataItem])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Category : Swift.Codable {
+    public var id: Swift.Int
+    public var name: Swift.String
+    public var description: Swift.String
+    public var metadata: [CheetahDigitalOloCore.MetadataItem]
+    public var images: [CheetahDigitalOloCore.Image]
+    public var products: [CheetahDigitalOloCore.Product]
+    public init(id: Swift.Int, name: Swift.String, description: Swift.String, metadata: [CheetahDigitalOloCore.MetadataItem], images: [CheetahDigitalOloCore.Image], products: [CheetahDigitalOloCore.Product])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct CustomField : Swift.Codable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var maxLength: Swift.Int
+    public var isRequired: Swift.Bool
+    public init(id: Swift.Int, label: Swift.String, maxLength: Swift.Int, isRequired: Swift.Bool)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct OptionGroup : Swift.Codable {
+    public var id: Swift.Int
+    public var chainModifierId: Swift.Int
+    public var description: Swift.String
+    public var isMandatory: Swift.Bool
+    public var options: [CheetahDigitalOloCore.Product.Option]
+    public var parentChoiceId: Swift.String
+    public var minSelects: Swift.String
+    public var maxSelects: Swift.String
+    public var minAggregateQuantity: Swift.String
+    public var maxAggregateQuantity: Swift.String
+    public var minChoiceQuantity: Swift.String
+    public var maxChoiceQuantity: Swift.String
+    public var supportsChoiceQuantities: Swift.Bool
+    public var choiceQuantityIncrement: Swift.String
+    public var availability: CheetahDigitalOloCore.Menu.ItemAvailability?
+    public var metadata: [CheetahDigitalOloCore.MetadataItem]
+    public var explanationText: Swift.String
+    public var hideChoiceCost: Swift.Bool
+    public init(id: Swift.Int, chainModifierId: Swift.Int, description: Swift.String, isMandatory: Swift.Bool, options: [CheetahDigitalOloCore.Product.Option], parentChoiceId: Swift.String, minSelects: Swift.String, maxSelects: Swift.String, minAggregateQuantity: Swift.String, maxAggregateQuantity: Swift.String, minChoiceQuantity: Swift.String, maxChoiceQuantity: Swift.String, supportsChoiceQuantities: Swift.Bool, choiceQuantityIncrement: Swift.String, availability: CheetahDigitalOloCore.Menu.ItemAvailability?, metadata: [CheetahDigitalOloCore.MetadataItem], explanationText: Swift.String, hideChoiceCost: Swift.Bool)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct OptionGroups : Swift.Codable {
+    public var optionGroups: [CheetahDigitalOloCore.Product.OptionGroup]
+    public init(optionGroups: [CheetahDigitalOloCore.Product.OptionGroup])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalOloCore.Product {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Product.Category {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Product.CustomField {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Product.Option {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Product.OptionGroup {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Product.OptionGroups {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum RestaurantRequest : CheetahDigitalOloCore.OLOURLRequestConvertible {
+  case getNearbyRestaurants(coordinates: CheetahDigitalOloCore.CommonParameter.Coordinates, calendarRange: CheetahDigitalOloCore.CommonParameter.CalendarRange?, radius: Swift.Double, limit: Swift.Int)
+  case getNearbyRestaurantsWithInHouseDelivery(coordinates: CheetahDigitalOloCore.CommonParameter.Coordinates, calendarRange: CheetahDigitalOloCore.CommonParameter.CalendarRange?, limit: Swift.Int)
+  case getRestaurantsByTelephone(telephone: Swift.String)
+  case getRestaurant(restaurantId: Swift.Int)
+  case getRestaurantByReference(storeNumber: Swift.String)
+  case getRestaurantBySlug(slug: Swift.String)
+  case getMenu(restaurantId: Swift.Int)
+  case getEightySixedItems(restaurantId: Swift.Int)
+  case getCalendars(restaurantId: Swift.Int, fromDate: Swift.String, toDate: Swift.String)
+  case getDisclaimers(restaurantId: Swift.Int)
+  case checkRestaurantDelivery(restaurantId: Swift.Int, coverageCheck: CheetahDigitalOloCore.RestaurantParameter.DeliveryCoverageCheck)
+  case getBrandLevelSettings
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var tokenLocation: CheetahDigitalOloCore.TokenLocation {
+    get
+  }
+}
+public enum RestaurantAPI {
+  public static func getNearbyRestaurants(coordinates: CheetahDigitalOloCore.CommonParameter.Coordinates, calendarRange: CheetahDigitalOloCore.CommonParameter.CalendarRange? = nil, radiusMiles: Swift.Double, limit: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Restaurants>)
+  public static func getNearbyRestaurantsWithInHouseDelivery(coordinates: CheetahDigitalOloCore.CommonParameter.Coordinates, calendarRange: CheetahDigitalOloCore.CommonParameter.CalendarRange? = nil, limit: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Restaurants>)
+  public static func getRestaurants(byTelephone telephone: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Restaurants>)
+  public static func getRestaurant(restaurantId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Restaurant>)
+  public static func getRestaurant(storeNumber: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Restaurant>)
+  public static func getRestaurant(slug: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Restaurant>)
+  public static func checkRestaurantDelivery(restaurantId: Swift.Int, coverageCheck: CheetahDigitalOloCore.RestaurantParameter.DeliveryCoverageCheck, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Delivery.CoverageResponse>)
+  public static func getMenu(restaurantId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Menu>)
+  public static func getEightySixedItems(restaurantId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.EightySixed.Items>)
+  public static func getCalendars(restaurantId: Swift.Int, fromDate: Swift.String, toDate: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Restaurant.Calendars>)
+  public static func getDisclaimers(restaurantId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Restaurant.Disclaimers>)
+  public static func getBrandLevelSettings(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Restaurant.BrandLevelSettings>)
+}
+public struct User : Swift.Codable {
+  public var authToken: Swift.String
+  public var firstName: Swift.String
+  public var lastName: Swift.String
+  public var cardSuffix: Swift.String
+  public var emailAddress: Swift.String
+  public var contactNumber: Swift.String
+  public init(authToken: Swift.String, firstName: Swift.String, lastName: Swift.String, cardSuffix: Swift.String, emailAddress: Swift.String, contactNumber: Swift.String)
+  public struct Exists : Swift.Codable {
+    public var providers: [Swift.String]
+    public var userId: Swift.String
+    public init(providers: [Swift.String], userId: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct LoginUser : Swift.Codable {
+    public var authToken: Swift.String
+    public var emailAddress: Swift.String
+    public var firstName: Swift.String
+    public var lastName: Swift.String
+    public var cardSuffix: Swift.String
+    public init(authToken: Swift.String, emailAddress: Swift.String, firstName: Swift.String, lastName: Swift.String, cardSuffix: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct New : Swift.Codable {
+    public var firstName: Swift.String
+    public var lastName: Swift.String
+    public var emailAddress: Swift.String
+    public var authToken: Swift.String
+    public var contactNumber: Swift.String
+    public var reference: Swift.String
+    public var basketId: Swift.String
+    public init(firstName: Swift.String, lastName: Swift.String, emailAddress: Swift.String, authToken: Swift.String, contactNumber: Swift.String, reference: Swift.String, basketId: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Login : Swift.Codable {
+    public var token: Swift.String
+    public var user: CheetahDigitalOloCore.User.LoginUser?
+    public init(token: Swift.String, user: CheetahDigitalOloCore.User.LoginUser?)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ChangePassword : Swift.Codable {
+    public var id: Swift.String
+    public init(id: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct SingleSignOn : Swift.Codable {
+    public var provider: Swift.String
+    public var providerToken: Swift.String
+    public var providerUserId: Swift.String
+    public var contactNumber: Swift.String
+    public var basketId: Swift.String
+    public var authToken: Swift.String
+    public var firstName: Swift.String
+    public var lastName: Swift.String
+    public var email: Swift.String
+    public var refreshToken: Swift.String
+    public init(provider: Swift.String, providerToken: Swift.String, providerUserId: Swift.String, contactNumber: Swift.String, basketId: Swift.String, authToken: Swift.String, firstName: Swift.String, lastName: Swift.String, email: Swift.String, refreshToken: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalOloCore.User {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.User.Exists {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.User.LoginUser {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.User.New {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.User.Login {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.User.ChangePassword {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.User.SingleSignOn {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum OrderRequest : CheetahDigitalOloCore.OLOURLRequestConvertible {
+  case editOrder(guid: Swift.String)
+  case cancelOrder(guid: Swift.String)
+  case getOrderStatus(guid: Swift.String)
+  case getOrderStatusByReference(reference: Swift.String)
+  case getOrderDeliveryStatus(guid: Swift.String)
+  case manualFireOrderByReference(reference: Swift.String, manualFire: CheetahDigitalOloCore.OrderParameter.ManualFire)
+  case manualFireOrder(guid: Swift.String, manualFire: CheetahDigitalOloCore.OrderParameter.ManualFire)
+  case notifyCustomerArrived(guid: Swift.String, message: Swift.String)
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var tokenLocation: CheetahDigitalOloCore.TokenLocation {
+    get
+  }
+}
+public enum OrderAPI {
+  public static func editOrder(withGuid guid: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func cancelOrder(withGuid guid: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.Status>)
+  public static func getOrderStatus(byGuid guid: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.Status>)
+  public static func getOrderStatusByReference(_ reference: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.Status>)
+  public static func getOrderDeliveryStatus(orderGuid guid: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Deliveries>)
+  public static func manualFireOrder(byReference reference: Swift.String, manualFire: CheetahDigitalOloCore.OrderParameter.ManualFire, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.ManualFireResult>)
+  public static func manualFireOrder(byGuid guid: Swift.String, manualFire: CheetahDigitalOloCore.OrderParameter.ManualFire, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.ManualFireResult>)
+  public static func notifyCustomerArrived(guid: Swift.String, message: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.Status>)
+}
+@_hasMissingDesignatedInitializers public class API {
+  public static let shared: CheetahDigitalOloCore.API
+  public var session: Foundation.URLSession
+  public func resetSession()
+  public func getAccessToken() -> Swift.String?
+  public func setCredentials(_ accessToken: Swift.String)
+  public func deleteCredentials()
+  public func send<T>(_ request: CheetahDigitalOloCore.OLOURLRequestConvertible, modelKeyPath: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<T>) where T : Swift.Decodable
+  @objc deinit
+}
+extension Swift.Result {
+  public var isSuccess: Swift.Bool {
+    get
+  }
+  public var isFailure: Swift.Bool {
+    get
+  }
+  public var value: Success? {
+    get
+  }
+  public var error: Swift.Error? {
+    get
+  }
+}
+public typealias ResponseCompletion<T> = ((Swift.Result<CheetahDigitalOloCore.APIResponse<T>, Swift.Error>) -> Swift.Void)?
+public struct APIResponse<Value> {
+  public let request: Foundation.URLRequest?
+  public let data: Foundation.Data?
+  public let response: Foundation.HTTPURLResponse?
+  public let value: Value
+  public init(request: Foundation.URLRequest?, data: Foundation.Data?, response: Foundation.HTTPURLResponse?, value: Value)
+}
+public enum ResponseError : Swift.Error {
+  public enum ResponseSerializationFailureReason {
+    case inputDataNilOrZeroLength
+    case decodingFailed(error: Swift.Error)
+  }
+  case responseSerializationFailed(reason: CheetahDigitalOloCore.ResponseError.ResponseSerializationFailureReason)
+}
+extension CheetahDigitalOloCore.ResponseError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+extension CheetahDigitalOloCore.ResponseError.ResponseSerializationFailureReason : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public struct EmptyResponse : Swift.Codable {
+  public init(isSuccess: Swift.Bool)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum QualificationCriteria : Swift.Codable, Swift.Equatable {
+  case allOrders
+  case deliveryOnly
+  case cashOnly
+  case curbsidePickUpOnly
+  case driveThruOnly
+  case dineInOnly
+  case carryOutOnly
+  case timeWantedThreshold
+  case orderAmountThreshold
+  case productQuantityThreshold
+  case timeWantedAndProductQuantityThreshold
+  case others(value: Swift.String)
+  public var stringValue: Swift.String {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: CheetahDigitalOloCore.QualificationCriteria, b: CheetahDigitalOloCore.QualificationCriteria) -> Swift.Bool
+}
+public enum CalendarType : Swift.Codable, Swift.Equatable {
+  case business
+  case delivery
+  case carryOut
+  case pickUpWindow
+  case dineIn
+  case curbSidePickUp
+  case driveThru
+  case dispatch
+  case others(value: Swift.String)
+  public var stringValue: Swift.String {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: CheetahDigitalOloCore.CalendarType, b: CheetahDigitalOloCore.CalendarType) -> Swift.Bool
+}
+public struct Restaurants : Swift.Codable {
+  public var restaurants: [CheetahDigitalOloCore.Restaurant]
+  public init(restaurants: [CheetahDigitalOloCore.Restaurant])
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct Restaurant : Swift.Codable {
+  public var id: Swift.Int
+  public var name: Swift.String
+  public var brand: Swift.String
+  public var storeName: Swift.String
+  public var telephone: Swift.String
+  public var streetAddress: Swift.String
+  public var crossStreet: Swift.String
+  public var city: Swift.String
+  public var contextualPricing: CheetahDigitalOloCore.ContextualPricing?
+  public var state: Swift.String
+  public var zip: Swift.String
+  public var country: Swift.String
+  public var latitude: Swift.Double
+  public var longitude: Swift.Double
+  public var utcOffset: Swift.Float
+  public var url: Swift.String
+  public var mobileUrl: Swift.String
+  public var distance: Swift.Double
+  public var extRef: Swift.String
+  public var isAdvanceOnly: Swift.Bool
+  public var advanceOrderDays: Swift.Int
+  public var supportsCoupons: Swift.Bool
+  public var supportsLoyalty: Swift.Bool
+  public var supportedCardTypes: Swift.String
+  public var supportsManualFire: Swift.Bool
+  public var canDeliver: Swift.Bool
+  public var canPickup: Swift.Bool
+  public var supportsCurbSide: Swift.Bool
+  public var supportsDispatch: Swift.Bool
+  public var hasOloPass: Swift.Bool
+  public var deliveryArea: Swift.String
+  public var minimumDeliveryOrder: Swift.Double
+  public var minimumPickUpOrder: Swift.Double
+  public var maximumPayInStoreOrder: Swift.Double
+  public var deliveryFee: Swift.Double
+  public var deliveryFeetiers: [CheetahDigitalOloCore.Delivery.FeeTier]
+  public var supportsTip: Swift.Bool
+  public var supportsSpecialInstructions: Swift.Bool
+  public var specialInstructionsMaxLength: Swift.Int
+  public var supportsGuestOrdering: Swift.Bool
+  public var requiresPhoneNumber: Swift.Bool
+  public var supportsOnlineOrdering: Swift.Bool
+  public var supportsNationalMenu: Swift.Bool
+  public var supportsFeedback: Swift.Bool
+  public var supportsSplitPayments: Swift.Bool
+  public var slug: Swift.String
+  public var isAvailable: Swift.Bool
+  public var supportsGroupOrders: Swift.Bool
+  public var supportsProductRecipientNames: Swift.Bool
+  public var supportsBasketTransfers: Swift.Bool
+  public var supportsDineIn: Swift.Bool
+  public var allowHandOffChoiceAtManualFire: Swift.Bool
+  public var productRecipientNameLabel: Swift.String
+  public var customerFacingMessage: Swift.String
+  public var availabilityMessage: Swift.String
+  public var supportsDriveThru: Swift.Bool
+  public var showCalories: Swift.Bool
+  public var acceptsOrdersUntilClosing: Swift.Bool
+  public var acceptsOrdersBeforeOpening: Swift.Bool
+  public var suggestedTipPercentage: Swift.Float
+  public var customFields: [CheetahDigitalOloCore.Restaurant.CustomField]
+  public var labels: [CheetahDigitalOloCore.Restaurant.CustomLabel]
+  public var metadata: [CheetahDigitalOloCore.MetadataItem]
+  public var supportedTimeModes: [CheetahDigitalOloCore.Basket.TimeMode]
+  public var attributes: [Swift.String]
+  public var supportedCountries: [Swift.String]
+  public var isCurrentlyOpen: Swift.Bool
+  public var supportedArrivalMessageHandoffModes: [Swift.String]
+  public var calendars: [CheetahDigitalOloCore.Restaurant.Calendars]
+  public init(id: Swift.Int, name: Swift.String, brand: Swift.String, storeName: Swift.String, telephone: Swift.String, streetAddress: Swift.String, crossStreet: Swift.String, city: Swift.String, contextualPricing: CheetahDigitalOloCore.ContextualPricing?, state: Swift.String, zip: Swift.String, country: Swift.String, latitude: Swift.Double, longitude: Swift.Double, utcOffset: Swift.Float, url: Swift.String, mobileUrl: Swift.String, distance: Swift.Double, extRef: Swift.String, isAdvanceOnly: Swift.Bool, advanceOrderDays: Swift.Int, supportsCoupons: Swift.Bool, supportsLoyalty: Swift.Bool, supportedCardTypes: Swift.String, supportsManualFire: Swift.Bool, canDeliver: Swift.Bool, canPickup: Swift.Bool, supportsCurbSide: Swift.Bool, supportsDispatch: Swift.Bool, hasOloPass: Swift.Bool, deliveryArea: Swift.String, minimumDeliveryOrder: Swift.Double, minimumPickUpOrder: Swift.Double, maximumPayInStoreOrder: Swift.Double, deliveryFee: Swift.Double, deliveryFeetiers: [CheetahDigitalOloCore.Delivery.FeeTier], supportsTip: Swift.Bool, supportsSpecialInstructions: Swift.Bool, specialInstructionsMaxLength: Swift.Int, supportsGuestOrdering: Swift.Bool, requiresPhoneNumber: Swift.Bool, supportsOnlineOrdering: Swift.Bool, supportsNationalMenu: Swift.Bool, supportsFeedback: Swift.Bool, supportsSplitPayments: Swift.Bool, slug: Swift.String, isAvailable: Swift.Bool, supportsGroupOrders: Swift.Bool, supportsProductRecipientNames: Swift.Bool, supportsBasketTransfers: Swift.Bool, supportsDineIn: Swift.Bool, allowHandOffChoiceAtManualFire: Swift.Bool, productRecipientNameLabel: Swift.String, customerFacingMessage: Swift.String, availabilityMessage: Swift.String, supportsDriveThru: Swift.Bool, showCalories: Swift.Bool, acceptsOrdersUntilClosing: Swift.Bool, acceptsOrdersBeforeOpening: Swift.Bool, suggestedTipPercentage: Swift.Float, customFields: [CheetahDigitalOloCore.Restaurant.CustomField], labels: [CheetahDigitalOloCore.Restaurant.CustomLabel], metadata: [CheetahDigitalOloCore.MetadataItem], supportedTimeModes: [CheetahDigitalOloCore.Basket.TimeMode], attributes: [Swift.String], supportedCountries: [Swift.String], isCurrentlyOpen: Swift.Bool, supportedArrivalMessageHandoffModes: [Swift.String], calendars: [CheetahDigitalOloCore.Restaurant.Calendars])
+  public struct CustomField : Swift.Codable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var isRequired: Swift.Bool
+    public var validationRegex: Swift.String
+    public var qualificationCriteria: CheetahDigitalOloCore.QualificationCriteria?
+    public init(id: Swift.Int, label: Swift.String, isRequired: Swift.Bool, validationRegex: Swift.String, qualificationCriteria: CheetahDigitalOloCore.QualificationCriteria?)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct CustomLabel : Swift.Codable {
+    public var key: Swift.String
+    public var value: Swift.String
+    public init(key: Swift.String, value: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Calendar : Swift.Codable {
+    public var label: Swift.String
+    public var type: CheetahDigitalOloCore.CalendarType?
+    public var ranges: [CheetahDigitalOloCore.Restaurant.CalendarTimeRange]
+    public init(label: Swift.String, type: CheetahDigitalOloCore.CalendarType?, ranges: [CheetahDigitalOloCore.Restaurant.CalendarTimeRange])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct CalendarTimeRange : Swift.Codable {
+    public var startDate: Swift.String
+    public var endDate: Swift.String
+    public var weekDay: Swift.String
+    public init(startDate: Swift.String, endDate: Swift.String, weekDay: Swift.String)
+    public func formatForDisplay(dateFormat: Swift.String = "hh:mma", dayFormat: Swift.String = "EEEE") -> (weekDay: Swift.String, timeRange: Swift.String)?
+    public func formatAsDates(dateFormat: Swift.String = "yyyyMMdd HH:mm", dayFormat: Swift.String = "EEE") -> (startDate: Foundation.Date, endDate: Foundation.Date, weekDay: Foundation.Date)?
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Calendars : Swift.Codable {
+    public var calendar: [CheetahDigitalOloCore.Restaurant.Calendar]
+    public init(calendar: [CheetahDigitalOloCore.Restaurant.Calendar])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Disclaimer : Swift.Codable {
+    public var code: Swift.String
+    public var name: Swift.String
+    public var disclaimer: Swift.String
+    public var images: [CheetahDigitalOloCore.Image]
+    public init(code: Swift.String, name: Swift.String, disclaimer: Swift.String, images: [CheetahDigitalOloCore.Image])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Disclaimers : Swift.Codable {
+    public var imagePath: Swift.String
+    public var disclaimers: [CheetahDigitalOloCore.Restaurant.Disclaimer]
+    public init(imagePath: Swift.String, disclaimers: [CheetahDigitalOloCore.Restaurant.Disclaimer])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct BrandLevelSettings : Swift.Codable {
+    public var advanceOrderDays: Swift.Int
+    public var deliveryInstructionsMaxLength: Swift.Int
+    public var deliveryModes: [CheetahDigitalOloCore.Restaurant.DeliveryMode]
+    public var loginProviders: [CheetahDigitalOloCore.Restaurant.LoginProvider]
+    public var pushNotifications: CheetahDigitalOloCore.Restaurant.PushNotification
+    public var timeModes: [CheetahDigitalOloCore.Restaurant.TimeMode]
+    public init(advanceOrderDays: Swift.Int, deliveryInstructionsMaxLength: Swift.Int, deliveryModes: [CheetahDigitalOloCore.Restaurant.DeliveryMode], loginProviders: [CheetahDigitalOloCore.Restaurant.LoginProvider], pushNotifications: CheetahDigitalOloCore.Restaurant.PushNotification, timeModes: [CheetahDigitalOloCore.Restaurant.TimeMode])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct DeliveryMode : Swift.Codable {
+    public var isDefault: Swift.Bool
+    public var label: Swift.String
+    public var timeModes: [Swift.String]
+    public var type: Swift.String
+    public init(isDefault: Swift.Bool, label: Swift.String, timeModes: [Swift.String], type: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct LoginProvider : Swift.Codable {
+    public var name: Swift.String
+    public var provider: Swift.String
+    public var type: Swift.String
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct PushNotification : Swift.Codable {
+    public var androidSenderId: Swift.String
+    public var platforms: [Swift.String]
+    public init(androidSenderId: Swift.String, platforms: [Swift.String])
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public struct TimeMode : Swift.Codable {
+    public var label: Swift.String
+    public var type: Swift.String
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalOloCore.Restaurant.CustomField {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Restaurant {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Restaurants {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Restaurant.CustomLabel {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Restaurant.Calendar {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Restaurant.CalendarTimeRange {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Restaurant.Calendars {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Restaurant.Disclaimer {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Restaurant.Disclaimers {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Restaurant.BrandLevelSettings {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum OrderParameter {
+  public struct ManualFire : Swift.Encodable {
+    public var handOffMode: Swift.String
+    public var customFieldValues: [CheetahDigitalOloCore.OrderParameter.CustomFieldValue]
+    public init(handOffMode: Swift.String, customFieldValues: [CheetahDigitalOloCore.OrderParameter.CustomFieldValue])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct CustomFieldValue : Swift.Encodable {
+    public var id: Swift.Int
+    public var value: Swift.String
+    public init(id: Swift.Int, value: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+public enum Response {
+  public struct BinValidation : Swift.Codable {
+    public var isPinRequired: Swift.Bool
+    public init(isPinRequired: Swift.Bool)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+extension CheetahDigitalOloCore.Response.BinValidation {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum BasketParameter {
+  public struct LoyaltyScheme : Swift.Encodable {
+    public var schemeId: Swift.Int
+    public var membershipNumber: Swift.String
+    public var checkBalance: Swift.Bool
+    public var checkRewards: Swift.Bool
+    public init(schemeId: Swift.Int, membershipNumber: Swift.String, checkBalance: Swift.Bool, checkRewards: Swift.Bool)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct TimeWanted : Swift.Encodable {
+    public var isManualFire: Swift.Bool
+    public var year: Swift.Int
+    public var month: Swift.Int
+    public var day: Swift.Int
+    public var hour: Swift.Int
+    public var minute: Swift.Int
+    public init(isManualFire: Swift.Bool, year: Swift.Int, month: Swift.Int, day: Swift.Int, hour: Swift.Int, minute: Swift.Int)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Product : Swift.Encodable {
+    public var productId: Swift.Int
+    public var quantity: Swift.Int
+    public var options: Swift.String
+    public var specialInstructions: Swift.String?
+    public var recipient: Swift.String?
+    public var customData: Swift.String?
+    public var choiceCustomFields: [CheetahDigitalOloCore.ProductParameter.Choice]?
+    public init(productId: Swift.Int, quantity: Swift.Int, options: Swift.String, specialInstructions: Swift.String? = nil, recipient: Swift.String? = nil, customData: Swift.String? = nil, choiceCustomFields: [CheetahDigitalOloCore.ProductParameter.Choice]? = nil)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ChainProduct : Swift.Encodable {
+    public var chainProductId: Swift.Int
+    public var quantity: Swift.Int
+    public var choices: [CheetahDigitalOloCore.ProductParameter.ChainChoice]
+    public var specialInstructions: Swift.String?
+    public var recipient: Swift.String?
+    public var customData: Swift.String?
+    public init(chainProductId: Swift.Int, quantity: Swift.Int, choices: [CheetahDigitalOloCore.ProductParameter.ChainChoice], specialInstructions: Swift.String? = nil, recipient: Swift.String? = nil, customData: Swift.String? = nil)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct BatchProduct : Swift.Encodable {
+    public var productId: Swift.Int
+    public var quantity: Swift.Int?
+    public var options: Swift.String?
+    public var specialInstructions: Swift.String?
+    public var recipient: Swift.String?
+    public var customData: Swift.String?
+    public var choices: [CheetahDigitalOloCore.ProductParameter.Choice]?
+    public init(productId: Swift.Int, quantity: Swift.Int? = nil, options: Swift.String? = nil, specialInstructions: Swift.String? = nil, recipient: Swift.String? = nil, customData: Swift.String? = nil, choices: [CheetahDigitalOloCore.ProductParameter.Choice]? = nil)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct UpsellItem : Swift.Encodable {
+    public var id: Swift.Int
+    public var quantity: Swift.Int
+    public init(id: Swift.Int, quantity: Swift.Int)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct BillingField : Swift.Encodable {
+    public var name: Swift.String
+    public var value: Swift.String
+    public init(name: Swift.String, value: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct OrderCustomData : Swift.Encodable {
+    public var key: Swift.String
+    public var value: Swift.String
+    public init(key: Swift.String, value: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum BillingMethod : Swift.Encodable {
+    case creditCard
+    case creditCardOnline
+    case billingAccount
+    case cash
+    case storedValue
+    case prepaid
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum UserType : Swift.Encodable {
+    case user
+    case guest
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Order : Swift.Encodable {
+    public var billingMethod: CheetahDigitalOloCore.BasketParameter.BillingMethod
+    public var billingAccountId: Swift.Int?
+    public var billingSchemeId: Swift.String?
+    public var billingFields: [CheetahDigitalOloCore.BasketParameter.BillingField]?
+    public var userType: CheetahDigitalOloCore.BasketParameter.UserType
+    public var firstName: Swift.String?
+    public var lastName: Swift.String?
+    public var emailAddress: Swift.String?
+    public var contactNumber: Swift.String?
+    public var reference: Swift.String?
+    public var cardNumber: Swift.String?
+    public var expiryYear: Swift.Int?
+    public var expiryMonth: Swift.Int?
+    public var cvv: Swift.String?
+    public var streetAddress: Swift.String?
+    public var streetAddress2: Swift.String?
+    public var city: Swift.String?
+    public var state: Swift.String?
+    public var zip: Swift.String?
+    public var country: Swift.String?
+    public var saveOnFile: Swift.String?
+    public var orderRef: Swift.String?
+    public var prepaidTransactionId: Swift.String?
+    public var prepaidDescription: Swift.String?
+    public var customData: [CheetahDigitalOloCore.BasketParameter.OrderCustomData]?
+    public var guestOptIn: Swift.Bool
+    public var receivingUser: CheetahDigitalOloCore.User?
+    public init(billingMethod: CheetahDigitalOloCore.BasketParameter.BillingMethod, billingAccountId: Swift.Int? = nil, billingSchemeId: Swift.String? = nil, billingFields: [CheetahDigitalOloCore.BasketParameter.BillingField]? = nil, userType: CheetahDigitalOloCore.BasketParameter.UserType, firstName: Swift.String? = nil, lastName: Swift.String? = nil, emailAddress: Swift.String? = nil, contactNumber: Swift.String? = nil, reference: Swift.String? = nil, cardNumber: Swift.String? = nil, expiryYear: Swift.Int? = nil, expiryMonth: Swift.Int? = nil, cvv: Swift.String? = nil, streetAddress: Swift.String? = nil, streetAddress2: Swift.String? = nil, city: Swift.String? = nil, state: Swift.String? = nil, zip: Swift.String? = nil, country: Swift.String? = nil, saveOnFile: Swift.String? = nil, orderRef: Swift.String? = nil, prepaidTransactionId: Swift.String? = nil, prepaidDescription: Swift.String? = nil, customData: [CheetahDigitalOloCore.BasketParameter.OrderCustomData]? = nil, guestOptIn: Swift.Bool, receivingUser: CheetahDigitalOloCore.User? = nil)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct BillingAccount : Swift.Encodable {
+    public var billingMethod: CheetahDigitalOloCore.BasketParameter.BillingMethod
+    public var amount: Swift.String
+    public var tipPortion: Swift.String
+    public var cardNumber: Swift.String?
+    public var expiryYear: Swift.Int?
+    public var expiryMonth: Swift.Int?
+    public var cvv: Swift.String?
+    public var streetAddress: Swift.String?
+    public var streetAddress2: Swift.String?
+    public var city: Swift.String?
+    public var state: Swift.String?
+    public var zip: Swift.String?
+    public var country: Swift.String?
+    public var saveOnFile: Swift.String?
+    public var billingAccountId: Swift.Int?
+    public var billingSchemeId: Swift.Int?
+    public var billingFields: [CheetahDigitalOloCore.BasketParameter.BillingField]?
+    public init(billingMethod: CheetahDigitalOloCore.BasketParameter.BillingMethod, amount: Swift.String, tipPortion: Swift.String, cardNumber: Swift.String? = nil, expiryYear: Swift.Int? = nil, expiryMonth: Swift.Int? = nil, cvv: Swift.String? = nil, streetAddress: Swift.String? = nil, streetAddress2: Swift.String? = nil, city: Swift.String? = nil, state: Swift.String? = nil, zip: Swift.String? = nil, country: Swift.String? = nil, saveOnFile: Swift.String? = nil, billingAccountId: Swift.Int? = nil, billingSchemeId: Swift.Int? = nil, billingFields: [CheetahDigitalOloCore.BasketParameter.BillingField]? = nil)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct MultiplePaymentsOrder : Swift.Encodable {
+    public var userType: CheetahDigitalOloCore.BasketParameter.UserType
+    public var firstName: Swift.String?
+    public var lastName: Swift.String?
+    public var emailAddress: Swift.String?
+    public var contactNumber: Swift.String?
+    public var reference: Swift.String?
+    public var orderRef: Swift.String?
+    public var customData: [CheetahDigitalOloCore.BasketParameter.OrderCustomData]?
+    public var guestOptIn: Swift.Bool
+    public var billingAccounts: [CheetahDigitalOloCore.BasketParameter.BillingAccount]?
+    public init(userType: CheetahDigitalOloCore.BasketParameter.UserType, firstName: Swift.String? = nil, lastName: Swift.String? = nil, emailAddress: Swift.String? = nil, contactNumber: Swift.String? = nil, reference: Swift.String? = nil, orderRef: Swift.String? = nil, customData: [CheetahDigitalOloCore.BasketParameter.OrderCustomData]? = nil, guestOptIn: Swift.Bool, billingAccounts: [CheetahDigitalOloCore.BasketParameter.BillingAccount]? = nil)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+public enum BasketRequest : CheetahDigitalOloCore.OLOURLRequestConvertible {
+  case create(vendor: Swift.Int, authToken: Swift.String)
+  case createFromOrder(orderRef: Swift.Int?, orderId: Swift.String, ignoreUnavailableProducts: Swift.Bool)
+  case createFromFave(faveId: Swift.Int, ignoreUnavailableProducts: Swift.Bool)
+  case getBasket(id: Swift.String)
+  case updateGroupOrder(groupOrderId: Swift.String, deadline: Swift.String, note: Swift.String?)
+  case createGroupOrder(restaurantId: Swift.Int, basketId: Swift.String?, deadline: Swift.String, note: Swift.String?)
+  case sendGroupOrderInvites(groupOrderId: Swift.String, emailAddress: [Swift.String])
+  case getGroupOrder(id: Swift.String)
+  case getGroupOrderForGuest(id: Swift.String, basketId: Swift.String)
+  case addProduct(basketId: Swift.String, product: CheetahDigitalOloCore.BasketParameter.Product)
+  case addProductByChainId(basketId: Swift.String, product: CheetahDigitalOloCore.BasketParameter.ChainProduct)
+  case deleteProduct(basketId: Swift.String, basketProductId: Swift.Int)
+  case updateProduct(basketId: Swift.String, basketProductId: Swift.Int, updatedProduct: CheetahDigitalOloCore.BasketParameter.Product)
+  case addProducts(basketId: Swift.String, products: [CheetahDigitalOloCore.BasketParameter.BatchProduct])
+  case updateProducts(basketId: Swift.String, updateProducts: [CheetahDigitalOloCore.BasketParameter.BatchProduct])
+  case addProductsByChainId(basketId: Swift.String, products: [CheetahDigitalOloCore.BasketParameter.ChainProduct])
+  case addProductsFromFave(basketId: Swift.String, faveId: Swift.Int)
+  case getUpsellItems(basketId: Swift.String)
+  case addUpsellItems(basketId: Swift.String, upsellItems: [CheetahDigitalOloCore.BasketParameter.UpsellItem])
+  case setTip(amount: Swift.Double, basketId: Swift.String)
+  case deleteCoupons(basketId: Swift.String)
+  case deleteCouponOrCompCode(basketId: Swift.String, promotionType: CheetahDigitalOloCore.Basket.PromotionType)
+  case applyCoupon(couponCode: Swift.String, basketId: Swift.String, couponType: Swift.String?, compAmount: Swift.Double?)
+  case applyCouponOrCompCode(code: Swift.String, basketId: Swift.String, promotionType: CheetahDigitalOloCore.Basket.PromotionType, secondarycode: Swift.String)
+  case getLoyaltySchemes(basketId: Swift.String, checkBalance: Swift.Bool, checkRewards: Swift.Bool)
+  case addUserMembership(basketId: Swift.String, loyaltyScheme: CheetahDigitalOloCore.BasketParameter.LoyaltyScheme)
+  case getLoyaltyRewards(basketId: Swift.String, membershipId: Swift.Int)
+  case getQualifyingRewards(basketId: Swift.String, membershipId: Swift.Int)
+  case applyReward(basketId: Swift.String, membershipId: Swift.Int, references: [Swift.String])
+  case deleteReward(basketId: Swift.String, rewardId: Swift.Int)
+  case setDeliveryMode(basketId: Swift.String, deliveryMode: CheetahDigitalOloCore.Delivery.Mode)
+  case getDeliveryAddress(basketId: Swift.String)
+  case setDeliveryAddress(basketId: Swift.String, address: CheetahDigitalOloCore.CommonParameter.Address)
+  case getDispatchAddress(basketId: Swift.String)
+  case setDispatchAddress(basketId: Swift.String, address: CheetahDigitalOloCore.CommonParameter.Address)
+  case deleteTimeWanted(basketId: Swift.String)
+  case setTimeWanted(basketId: Swift.String, timeWanted: CheetahDigitalOloCore.BasketParameter.TimeWanted)
+  case setCustomField(basketId: Swift.String, customFieldId: Swift.Int, value: Swift.String)
+  case deleteCustomField(basketId: Swift.String, customFieldId: Swift.Int)
+  case transferToAnotherRestaurant(basketId: Swift.String, restaurantId: Swift.Int)
+  case transferToOloWebsite(basketId: Swift.String)
+  case getBillingSchemes(basketId: Swift.String)
+  case getBillingScheme(basketId: Swift.String, billingSchemeId: Swift.Int)
+  case getGiftCardBalance(basketId: Swift.String, billingSchemeId: Swift.Int, cardNumber: Swift.String, pin: Swift.String)
+  case verifyGiftCardPinRequirement(billingSchemeId: Swift.Int, cardNumber: Swift.String)
+  case validate(basketId: Swift.String, checkUpsell: Swift.Bool)
+  case submitOrderWithSinglePayment(basketId: Swift.String, order: CheetahDigitalOloCore.BasketParameter.Order)
+  case submitOrderWithMultiplePayments(basketId: Swift.String, order: CheetahDigitalOloCore.BasketParameter.MultiplePaymentsOrder)
+  case requestCCSFPaymentToken(basketId: Swift.String)
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var tokenLocation: CheetahDigitalOloCore.TokenLocation {
+    get
+  }
+}
+public enum BasketAPI {
+  public static func create(vendorId: Swift.Int, authToken: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func createFromOrder(orderRef: Swift.Int? = nil, orderId: Swift.String, ignoreUnavailableProducts: Swift.Bool, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func createFromFave(faveId: Swift.Int, ignoreUnavailableProducts: Swift.Bool, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func getBasket(_ id: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func updateGroupOrder(groupOrderId: Swift.String, deadline: Swift.String, note: Swift.String? = nil, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.Group>)
+  public static func createGroupOrder(restaurantId: Swift.Int, basketId: Swift.String? = nil, deadline: Swift.String, note: Swift.String? = nil, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.Group>)
+  public static func sendGroupOrderInvites(groupOrderId: Swift.String, emailAddress: [Swift.String], completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.EmptyResponse>)
+  public static func getGroupOrder(_ id: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.Group>)
+  public static func getGroupOrderForGuest(_ id: Swift.String, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.Group>)
+  public static func addProduct(_ product: CheetahDigitalOloCore.BasketParameter.Product, toBasketId basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func addProductByChainId(_ product: CheetahDigitalOloCore.BasketParameter.ChainProduct, toBasketId basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func deleteProduct(withId productId: Swift.Int, fromBasketId basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func updateProduct(withId productId: Swift.Int, updatedProduct: CheetahDigitalOloCore.BasketParameter.Product, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func addProducts(_ products: [CheetahDigitalOloCore.BasketParameter.BatchProduct], basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket.ProductBatchResult>)
+  public static func updateProducts(_ updatedProducts: [CheetahDigitalOloCore.BasketParameter.BatchProduct], basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket.ProductBatchResult>)
+  public static func addProductsByChainId(_ products: [CheetahDigitalOloCore.BasketParameter.ChainProduct], basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket.ProductBatchResult>)
+  public static func addProductsByFave(id: Swift.Int, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket.ProductBatchResult>)
+  public static func getUpsellItems(basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Upsell.Groups>)
+  public static func addUpsellItems(_ items: [CheetahDigitalOloCore.BasketParameter.UpsellItem], basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func setTip(_ amount: Swift.Double, toBasketWithId id: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func deleteCoupons(basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func deleteCouponOrCompCode(basketId: Swift.String, promotionType: CheetahDigitalOloCore.Basket.PromotionType, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func applyCoupon(couponCode: Swift.String, toBasketId basketId: Swift.String, couponType: Swift.String?, compAmount: Swift.Double?, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func applyCouponOrCompCode(code: Swift.String, toBasketId basketId: Swift.String, promotionType: CheetahDigitalOloCore.Basket.PromotionType, secondaryCode: Swift.String = "", completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func getLoyaltySchemes(basketId: Swift.String, checkBalance: Swift.Bool, checkRewards: Swift.Bool, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Loyalty.Schemes>)
+  public static func addUserMembership(loyaltyScheme: CheetahDigitalOloCore.BasketParameter.LoyaltyScheme, toBasketId basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Loyalty.Schemes>)
+  public static func getLoyaltyRewards(membershipId: Swift.Int, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Loyalty.Rewards>)
+  public static func getQualifyingRewards(membershipId: Swift.Int, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Loyalty.Rewards>)
+  public static func applyReward(membershipId: Swift.Int, basketId: Swift.String, references: [Swift.String], completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func deleteReward(id: Swift.Int, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func setDeliveryMode(_ deliveryMode: CheetahDigitalOloCore.Delivery.Mode, toBasketId basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func getDeliveryAddress(basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Delivery.Address>)
+  public static func setDeliveryAddress(_ address: CheetahDigitalOloCore.CommonParameter.Address, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func getDispatchAddress(basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Delivery.Address>)
+  public static func setDispatchAddress(_ address: CheetahDigitalOloCore.CommonParameter.Address, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func deleteTimeWanted(basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func setTimeWanted(_ timeWanted: CheetahDigitalOloCore.BasketParameter.TimeWanted, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func setCustomField(id: Swift.Int, value: Swift.String, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func deleteCustomField(id: Swift.Int, fromBasketId basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket>)
+  public static func transferToAnotherRestaurant(basketId: Swift.String, restaurantId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket.TransferResult>)
+  public static func transferToOloWebsite(basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket.PlatformTransfer>)
+  public static func getBillingSchemes(basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Billing.Schemes>)
+  public static func getBillingScheme(id: Swift.Int, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Billing.Scheme>)
+  public static func getGiftCardBalance(billingSchemeId: Swift.Int, cardNumber: Swift.String, pin: Swift.String, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Billing.Balance>)
+  public static func getVerifyGiftCardPinRequirement(billingSchemeId: Swift.Int, cardNumber: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Response.BinValidation>)
+  public static func validate(basketId: Swift.String, checkUpsell: Swift.Bool, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Basket.Validation>)
+  public static func submitOrderWithSinglePayment(order: CheetahDigitalOloCore.BasketParameter.Order, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.Status>)
+  public static func submitOrderWithMultiplePayments(order: CheetahDigitalOloCore.BasketParameter.MultiplePaymentsOrder, basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.Status>)
+  public static func requestCCSFPaymentToken(basketId: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<Swift.String>)
+}
+extension CheetahDigitalOloCore.Restaurant {
+  public var coordinates: CoreLocation.CLLocationCoordinate2D? {
+    get
+  }
+  public var supportedDeliveryModes: [CheetahDigitalOloCore.Delivery.Mode] {
+    get
+  }
+  public func getLabelForDeliveryMode(_ mode: CheetahDigitalOloCore.Delivery.Mode) -> CheetahDigitalOloCore.Restaurant.CustomLabel?
+  public func getConfirmationLabelForDeliveryMode(_ mode: CheetahDigitalOloCore.Delivery.Mode) -> CheetahDigitalOloCore.Restaurant.CustomLabel?
+}
+public enum TokenLocation {
+  case path
+  case query
+  case body
+  case none
+  public static func == (a: CheetahDigitalOloCore.TokenLocation, b: CheetahDigitalOloCore.TokenLocation) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol OLOURLRequestConvertible : CheetahDigitalUtils.URLRequestConvertible {
+  var tokenLocation: CheetahDigitalOloCore.TokenLocation { get }
+}
+extension CheetahDigitalOloCore.OLOURLRequestConvertible {
+  public var parameterEncoding: CheetahDigitalUtils.ParameterEncoding {
+    get
+  }
+}
+extension CheetahDigitalOloCore.OLOURLRequestConvertible {
+  public func asURLRequest(token: Swift.String = "", headers additionalHeaders: CheetahDigitalUtils.HTTPHeaders = [:], parameters additionalParameters: CheetahDigitalUtils.Parameters = [:], attachments additionalAttachements: CheetahDigitalUtils.MultipartAttachments = []) throws -> Foundation.URLRequest
+}
+public enum RestaurantParameter {
+  public struct DeliveryCoverageCheck : Swift.Encodable {
+    public var handOffMode: Swift.String
+    public var timeWantedMode: Swift.String
+    public var timeWantedUtc: Swift.String
+    public var street: Swift.String
+    public var city: Swift.String
+    public var zipCode: Swift.String
+    public init(handOffMode: Swift.String, timeWantedMode: Swift.String, timeWantedUtc: Swift.String, street: Swift.String, city: Swift.String, zipCode: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+public enum OrderStatus : Swift.Codable, Swift.Equatable {
+  case completed
+  case canceled
+  case transmitting
+  case scheduled
+  case pendingManualFire
+  case inProgress
+  case undefined(value: Swift.String)
+  public var stringValue: Swift.String {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: CheetahDigitalOloCore.OrderStatus, b: CheetahDigitalOloCore.OrderStatus) -> Swift.Bool
+}
+public enum ArrivalStatus : Swift.Codable, Swift.Equatable {
+  case orderPlaced
+  case arrived
+  case pickedUp
+  case undefined(value: Swift.String)
+  public var stringValue: Swift.String {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+  public static func == (a: CheetahDigitalOloCore.ArrivalStatus, b: CheetahDigitalOloCore.ArrivalStatus) -> Swift.Bool
+}
+public enum Order {
+  public struct Group : Swift.Codable {
+    public var id: Swift.String
+    public var deadline: Swift.String
+    public var note: Swift.String
+    public var ownerName: Swift.String
+    public var isOpen: Swift.Bool
+    public var basket: CheetahDigitalOloCore.Basket?
+    public init(id: Swift.String, deadline: Swift.String, note: Swift.String, ownerName: Swift.String, isOpen: Swift.Bool, basket: CheetahDigitalOloCore.Basket?)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Fee : Swift.Codable {
+    public var amount: Swift.Double
+    public var description: Swift.String
+    public init(amount: Swift.Double, description: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ManualFire : Swift.Codable {
+    public var id: Swift.String
+    public var timePlaced: Swift.String
+    public var vendorName: Swift.String
+    public init(id: Swift.String, timePlaced: Swift.String, vendorName: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ManualFires : Swift.Codable {
+    public var orders: [CheetahDigitalOloCore.Order.ManualFire]
+    public init(orders: [CheetahDigitalOloCore.Order.ManualFire])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ManualFireResult : Swift.Codable {
+    public var success: Swift.Bool
+    public var message: Swift.String
+    public var order: CheetahDigitalOloCore.Order.Status?
+    public init(success: Swift.Bool, message: Swift.String, order: CheetahDigitalOloCore.Order.Status?)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Product : Swift.Codable {
+    public var name: Swift.String
+    public var quantity: Swift.Int
+    public var totalCost: Swift.Double
+    public var specialInstructions: Swift.String
+    public var customPassThroughData: Swift.String
+    public var choices: [CheetahDigitalOloCore.Order.ProductChoice]
+    public init(name: Swift.String, quantity: Swift.Int, totalCost: Swift.Double, specialInstructions: Swift.String, customPassThroughData: Swift.String, choices: [CheetahDigitalOloCore.Order.ProductChoice])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ProductChoice : Swift.Codable {
+    public var name: Swift.String
+    public var quantity: Swift.Int
+    public init(name: Swift.String, quantity: Swift.Int)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct RecentOrders : Swift.Codable {
+    public var orders: [CheetahDigitalOloCore.Order.Status]
+    public init(orders: [CheetahDigitalOloCore.Order.Status])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Status : Swift.Codable {
+    public var id: Swift.String
+    public var oloId: Swift.String
+    public var vendorId: Swift.Int
+    public var status: CheetahDigitalOloCore.OrderStatus?
+    public var subTotal: Swift.Double
+    public var salesTax: Swift.Double
+    public var taxes: [CheetahDigitalOloCore.Basket.TaxResult]
+    public var fees: [CheetahDigitalOloCore.Order.Fee]
+    public var totalFees: Swift.Double
+    public var total: Swift.Double
+    public var timeMode: CheetahDigitalOloCore.Basket.TimeMode?
+    public var tip: Swift.Double
+    public var mode: Swift.String
+    public var billingAccountId: Swift.String
+    public var billingAccountIds: [Swift.String]
+    public var contextualPricing: CheetahDigitalOloCore.ContextualPricing?
+    public var deliveryAddress: CheetahDigitalOloCore.Delivery.Address?
+    public var customFields: [CheetahDigitalOloCore.Basket.CustomField]
+    public var posReferenceResponse: Swift.String
+    public var isEditable: Swift.Bool
+    public var discount: Swift.Double
+    public var discounts: [CheetahDigitalOloCore.Basket.Discount]
+    public var orderRef: Swift.String
+    public var timePlaced: Swift.String
+    public var readyTime: Swift.String
+    public var vendorName: Swift.String
+    public var vendorExtRef: Swift.String
+    public var deliveryMode: CheetahDigitalOloCore.Delivery.Mode?
+    public var customerHandOffCharge: Swift.Double
+    public var arrivalStatus: CheetahDigitalOloCore.ArrivalStatus?
+    public var hasOloPass: Swift.Bool
+    public var products: [CheetahDigitalOloCore.Order.Product]
+    public var unavailableProducts: [CheetahDigitalOloCore.Order.Product]
+    public init(id: Swift.String, oloId: Swift.String, vendorId: Swift.Int, status: CheetahDigitalOloCore.OrderStatus?, subTotal: Swift.Double, salesTax: Swift.Double, taxes: [CheetahDigitalOloCore.Basket.TaxResult], fees: [CheetahDigitalOloCore.Order.Fee], totalFees: Swift.Double, total: Swift.Double, timeMode: CheetahDigitalOloCore.Basket.TimeMode?, tip: Swift.Double, mode: Swift.String, billingAccountId: Swift.String, billingAccountIds: [Swift.String], contextualPricing: CheetahDigitalOloCore.ContextualPricing?, deliveryAddress: CheetahDigitalOloCore.Delivery.Address?, customFields: [CheetahDigitalOloCore.Basket.CustomField], posReferenceResponse: Swift.String, isEditable: Swift.Bool, discount: Swift.Double, discounts: [CheetahDigitalOloCore.Basket.Discount], orderRef: Swift.String, timePlaced: Swift.String, readyTime: Swift.String, vendorName: Swift.String, vendorExtRef: Swift.String, deliveryMode: CheetahDigitalOloCore.Delivery.Mode?, customerHandOffCharge: Swift.Double, arrivalStatus: CheetahDigitalOloCore.ArrivalStatus?, hasOloPass: Swift.Bool, products: [CheetahDigitalOloCore.Order.Product], unavailableProducts: [CheetahDigitalOloCore.Order.Product])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+extension CheetahDigitalOloCore.Order.Group {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Order.Fee {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Order.ManualFire {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Order.ManualFires {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Order.ManualFireResult {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Order.Product {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Order.ProductChoice {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Order.RecentOrders {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Order.Status {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum UserRequest : CheetahDigitalOloCore.OLOURLRequestConvertible {
+  case create(newUser: CheetahDigitalOloCore.UserParameter.NewUser)
+  case getOrCreate(userSSO: CheetahDigitalOloCore.User.SingleSignOn)
+  case createFromOrder(guid: Swift.String, password: Swift.String, optin: Swift.String)
+  case authenticate(login: Swift.String, password: Swift.String, basketId: Swift.String?)
+  case changePassword(oldPassword: Swift.String, newPassword: Swift.String)
+  case forgotPassword(email: Swift.String)
+  case getCurrentUser
+  case getQualifyingRewards(restaurantId: Swift.Int)
+  case getNearbyRewards(coordinates: CheetahDigitalOloCore.CommonParameter.Coordinates, radius: Swift.Double, limit: Swift.Int)
+  case getRecentOrders
+  case getRecentOrdersByReference(reference: Swift.String)
+  case getOpenManualFireOrders
+  case checkUserExistence(email: Swift.String)
+  case updateUser(updatedUser: CheetahDigitalOloCore.UserParameter.UpdateUser)
+  case revokeToken
+  case deleteAccount
+  case getBillingAccounts(basketId: Swift.String?)
+  case getGiftCardBalances
+  case getGiftCardBalance(billingAccountId: Swift.Int)
+  case updateDefaultCreditCard(billingAccountId: Swift.Int, isDefault: Swift.Bool)
+  case deleteBillingAccount(billingAccountId: Swift.Int)
+  case getContactDetails
+  case updateContactDetails(contactNumber: Swift.String)
+  case getContactOptions
+  case updateContactOptions(option: CheetahDigitalOloCore.Contact.Option)
+  case getDeliveryAddresses
+  case updateDefaultDeliveryAddress(addressId: Swift.Int)
+  case deleteDeliveryAddress(addressId: Swift.Int)
+  case getUserByGuid(guid: Swift.String)
+  case updateUserByGuid(guid: Swift.String, updatedUser: CheetahDigitalOloCore.UserParameter.UpdateUser)
+  case getContactDetailsByGuid(guid: Swift.String)
+  case updateContactDetailsByGuid(guid: Swift.String, contactNumber: Swift.String)
+  case getContactOptionsByGuid(guid: Swift.String)
+  case updateContactOptionsByGuid(guid: Swift.String, option: CheetahDigitalOloCore.Contact.Option)
+  case changePasswordByGuid(guid: Swift.String, newPassword: Swift.String)
+  case getFavorites
+  case addFavorite(favorite: CheetahDigitalOloCore.UserParameter.Favorite)
+  case deleteFavorite(favoriteId: Swift.Int)
+  case getFavoriteLocations
+  case addFavoriteLocation(locationId: Swift.Int, isDefault: Swift.Bool)
+  case deleteFavoriteLocation(locationId: Swift.Int)
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var tokenLocation: CheetahDigitalOloCore.TokenLocation {
+    get
+  }
+}
+public enum UserAPI {
+  public static func create(newUser: CheetahDigitalOloCore.UserParameter.NewUser, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.User.New>)
+  public static func getOrCreate(userSSO: CheetahDigitalOloCore.User.SingleSignOn, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.User.SingleSignOn>)
+  public static func createFromOrder(guid: Swift.String, password: Swift.String, optin: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.User.LoginUser>)
+  public static func authenticate(login: Swift.String, password: Swift.String, basketId: Swift.String? = nil, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.User.Login>)
+  public static func changePassword(oldPassword: Swift.String, newPassword: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.EmptyResponse>)
+  public static func forgotPassword(email: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.EmptyResponse>)
+  public static func revokeToken(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.User>)
+  public static func getCurrentUser(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.User>)
+  public static func updateUser(updatedUser: CheetahDigitalOloCore.UserParameter.UpdateUser, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.User>)
+  public static func deleteAccount(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.EmptyResponse>)
+  public static func checkUserExistence(email: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.User.Exists>)
+  public static func getContactDetails(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Contact.Detail>)
+  public static func updateContactDetails(contactNumber: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Contact.Detail>)
+  public static func getContactOptions(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Contact.Option>)
+  public static func updateContactOptions(option: CheetahDigitalOloCore.Contact.Option, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Contact.Option>)
+  public static func getDeliveryAddresses(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Delivery.Addresses>)
+  public static func updateDefaultDeliveryAddress(addressId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Delivery.Address>)
+  public static func deleteDeliveryAddress(addressId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.EmptyResponse>)
+  public static func getBillingAccounts(basketId: Swift.String?, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Billing.Accounts>)
+  public static func deleteBillingAccount(billingAccountId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.EmptyResponse>)
+  public static func getGiftCardBalances(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Billing.StoredValueCards>)
+  public static func getGiftCardBalance(billingAccountId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Billing.Balance>)
+  public static func updateDefaultCreditCard(billingAccountId: Swift.Int, isDefault: Swift.Bool, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.EmptyResponse>)
+  public static func getFavorites(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Favorite.UserFavorites>)
+  public static func addFavorite(favorite: CheetahDigitalOloCore.UserParameter.Favorite, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Favorite.UserFavorites>)
+  public static func deleteFavorite(favoriteId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.EmptyResponse>)
+  public static func getFavoriteLocations(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Favorite.UserFavoriteLocations>)
+  public static func addFavoriteLocation(locationId: Swift.Int, isDefault: Swift.Bool, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Favorite.Location>)
+  public static func deleteFavoriteLocation(locationId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.EmptyResponse>)
+  public static func getRecentOrders(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.RecentOrders>)
+  public static func getRecentOrders(reference: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.RecentOrders>)
+  public static func getOpenManualFireOrders(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Order.ManualFires>)
+  public static func getQualifyingRewards(restaurantId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Loyalty.Rewards>)
+  public static func getNearbyRewards(coordinates: CheetahDigitalOloCore.CommonParameter.Coordinates, radiusMiles: Swift.Double, limit: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Loyalty.Vendors>)
+  public static func getUser(byGuid guid: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.User>)
+  public static func updateUser(byGuid guid: Swift.String, updatedUser: CheetahDigitalOloCore.UserParameter.UpdateUser, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.User>)
+  public static func getContactDetails(byGuid guid: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Contact.Detail>)
+  public static func updateContactDetails(byGuid guid: Swift.String, contactNumber: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Contact.Detail>)
+  public static func getContactOptions(byGuid guid: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Contact.Option>)
+  public static func updateContactOptions(byGuid guid: Swift.String, option: CheetahDigitalOloCore.Contact.Option, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Contact.Option>)
+  public static func changePassword(byGuid guid: Swift.String, newPassword: Swift.String, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.User.ChangePassword>)
+}
+public enum ProductParameter {
+  public struct CustomField : Swift.Encodable {
+    public var fieldId: Swift.Int
+    public var value: Swift.String
+    public init(fieldId: Swift.Int, value: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Choice : Swift.Encodable {
+    public var choiceId: Swift.Int
+    public var quantity: Swift.Int?
+    public var customFields: [CheetahDigitalOloCore.ProductParameter.CustomField]
+    public init(choiceId: Swift.Int, quantity: Swift.Int? = nil, customFields: [CheetahDigitalOloCore.ProductParameter.CustomField])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ChainChoice : Swift.Encodable {
+    public var chainChoiceId: Swift.Int
+    public var quantity: Swift.Int
+    public var customFields: [CheetahDigitalOloCore.ProductParameter.CustomField]?
+    public var choices: [CheetahDigitalOloCore.ProductParameter.ChainChoice]?
+    public init(chainChoiceId: Swift.Int, quantity: Swift.Int, customFields: [CheetahDigitalOloCore.ProductParameter.CustomField]? = nil, choices: [CheetahDigitalOloCore.ProductParameter.ChainChoice]? = nil)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+public enum UserParameter {
+  public struct NewUser : Swift.Encodable {
+    public var authToken: Swift.String
+    public var firstName: Swift.String
+    public var lastName: Swift.String
+    public var emailAddress: Swift.String
+    public var password: Swift.String
+    public var contactNumber: Swift.String
+    public var cardSuffix: Swift.String?
+    public var basketId: Swift.String?
+    public init(authToken: Swift.String, firstName: Swift.String, lastName: Swift.String, emailAddress: Swift.String, password: Swift.String, contactNumber: Swift.String, cardSuffix: Swift.String? = nil, basketId: Swift.String?)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct UpdateUser : Swift.Encodable {
+    public var firstName: Swift.String
+    public var lastName: Swift.String
+    public var emailAddress: Swift.String
+    public init(firstName: Swift.String, lastName: Swift.String, emailAddress: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Favorite : Swift.Encodable {
+    public var basketId: Swift.String
+    public var description: Swift.String
+    public var isDefault: Swift.Bool
+    public init(basketId: Swift.String, description: Swift.String, isDefault: Swift.Bool)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+public enum Upsell {
+  public struct Item : Swift.Codable {
+    public var id: Swift.Int
+    public var name: Swift.String
+    public var cost: Swift.String
+    public var shortDescription: Swift.String
+    public var minQuantity: Swift.Int
+    public var maxQuantity: Swift.Int
+    public init(id: Swift.Int, name: Swift.String, cost: Swift.String, shortDescription: Swift.String, minQuantity: Swift.Int, maxQuantity: Swift.Int)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Group : Swift.Codable {
+    public var title: Swift.String
+    public var items: [CheetahDigitalOloCore.Upsell.Item]
+    public init(title: Swift.String, items: [CheetahDigitalOloCore.Upsell.Item])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Groups : Swift.Codable {
+    public var groups: [CheetahDigitalOloCore.Upsell.Group]
+    public init(groups: [CheetahDigitalOloCore.Upsell.Group])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+extension CheetahDigitalOloCore.Upsell.Item {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Upsell.Group {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Upsell.Groups {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Feedback : Swift.Codable {
+  public var target: CheetahDigitalOloCore.Feedback.Target?
+  public var category: CheetahDigitalOloCore.Feedback.Category?
+  public var authToken: Swift.String
+  public var vendorId: Swift.String
+  public var basketId: Swift.String
+  public var orderId: Swift.String
+  public var fullName: Swift.String
+  public var email: Swift.String
+  public var feedback: Swift.String
+  public var data: [CheetahDigitalOloCore.Feedback.Parameter]
+  public init(target: CheetahDigitalOloCore.Feedback.Target, category: CheetahDigitalOloCore.Feedback.Category, authToken: Swift.String, vendorId: Swift.String, basketId: Swift.String, orderId: Swift.String, fullName: Swift.String, email: Swift.String, feedback: Swift.String, data: [CheetahDigitalOloCore.Feedback.Parameter])
+  public enum Target : Swift.Codable, Swift.Equatable {
+    case app
+    case service
+    case food
+    case other
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahDigitalOloCore.Feedback.Target, b: CheetahDigitalOloCore.Feedback.Target) -> Swift.Bool
+  }
+  public enum Category : Swift.Codable, Swift.Equatable {
+    case compliment
+    case issue
+    case question
+    case suggestion
+    case none
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahDigitalOloCore.Feedback.Category, b: CheetahDigitalOloCore.Feedback.Category) -> Swift.Bool
+  }
+  public struct Parameter : Swift.Codable {
+    public var key: Swift.String
+    public var value: Swift.String
+    public init(key: Swift.String, value: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalOloCore.Feedback {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Feedback.Parameter {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Favorite : Swift.Codable {
+  public var id: Swift.Int
+  public var name: Swift.String
+  public var vendorId: Swift.Int
+  public var vendorName: Swift.String
+  public var isOnline: Swift.Bool
+  public var isDefault: Swift.Bool
+  public var products: [CheetahDigitalOloCore.Favorite.Product]
+  public init(id: Swift.Int, name: Swift.String, vendorId: Swift.Int, vendorName: Swift.String, isOnline: Swift.Bool, isDefault: Swift.Bool, products: [CheetahDigitalOloCore.Favorite.Product])
+  public struct Product : Swift.Codable {
+    public var productId: Swift.Int
+    public var name: Swift.String
+    public var quantity: Swift.Int
+    public var choices: [CheetahDigitalOloCore.Favorite.ProductChoice]
+    public var isDisabled: Swift.Bool
+    public var recipient: Swift.String
+    public var specialInstructions: Swift.String
+    public init(productId: Swift.Int, name: Swift.String, quantity: Swift.Int, choices: [CheetahDigitalOloCore.Favorite.ProductChoice], isDisabled: Swift.Bool, recipient: Swift.String, specialInstructions: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ProductChoice : Swift.Codable {
+    public var optionId: Swift.Int
+    public var name: Swift.String
+    public var quantity: Swift.Int
+    public init(optionId: Swift.Int, name: Swift.String, quantity: Swift.Int)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Location : Swift.Codable {
+    public var id: Swift.Int
+    public var vendorId: Swift.Int
+    public var vendorName: Swift.String
+    public var isDefault: Swift.Bool
+    public init(id: Swift.Int, vendorId: Swift.Int, vendorName: Swift.String, isDefault: Swift.Bool)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct UserFavoriteLocations : Swift.Codable {
+    public var favoriteLocations: [CheetahDigitalOloCore.Favorite.Location]
+    public init(favoriteLocations: [CheetahDigitalOloCore.Favorite.Location])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct UserFavorites : Swift.Codable {
+    public var favorites: [CheetahDigitalOloCore.Favorite]
+    public init(favorites: [CheetahDigitalOloCore.Favorite])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalOloCore.Favorite {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Favorite.UserFavorites {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Favorite.Product {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Favorite.ProductChoice {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Favorite.Location {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Favorite.UserFavoriteLocations {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Basket : Swift.Codable {
+  public var id: Swift.String
+  public var timeWanted: Swift.String
+  public var earliestReadyTime: Swift.String
+  public var subTotal: Swift.Double
+  public var salesTax: Swift.Double
+  public var taxes: [CheetahDigitalOloCore.Basket.TaxResult]
+  public var suggestedTipAmount: Swift.Double
+  public var suggestedTipPercentage: Swift.Double
+  public var discount: Swift.Double
+  public var total: Swift.Double
+  public var tip: Swift.Double
+  public var coupon: CheetahDigitalOloCore.Basket.Coupon?
+  public var couponDiscount: Swift.Double
+  public var vendorId: Swift.Int
+  public var isVendorOnline: Swift.Bool
+  public var deliveryMode: CheetahDigitalOloCore.Delivery.Mode?
+  public var isUpsellEnabled: Swift.Bool
+  public var wasUpSold: Swift.Bool
+  public var customerHandOffCharge: Swift.Double
+  public var leadTimeEstimateMinutes: Swift.Int
+  public var timeMode: CheetahDigitalOloCore.Basket.TimeMode?
+  public var mode: Swift.String
+  public var deliveryAddress: CheetahDigitalOloCore.Delivery.Address?
+  public var appliedRewards: [CheetahDigitalOloCore.Loyalty.Reward]
+  public var fees: [CheetahDigitalOloCore.Basket.Fee]
+  public var totalFees: Swift.Double
+  public var contactNumber: Swift.String
+  public var contextualPricing: CheetahDigitalOloCore.ContextualPricing?
+  public var customFields: [CheetahDigitalOloCore.Basket.CustomField]
+  public var validationMessages: [CheetahDigitalOloCore.Basket.ValidationMessage]
+  public var allowsTip: Swift.Bool
+  public var discounts: [CheetahDigitalOloCore.Basket.Discount]
+  public var products: [CheetahDigitalOloCore.Basket.Product]
+  public init(id: Swift.String, timeWanted: Swift.String, earliestReadyTime: Swift.String, subTotal: Swift.Double, salesTax: Swift.Double, taxes: [CheetahDigitalOloCore.Basket.TaxResult], suggestedTipAmount: Swift.Double, suggestedTipPercentage: Swift.Double, discount: Swift.Double, total: Swift.Double, tip: Swift.Double, coupon: CheetahDigitalOloCore.Basket.Coupon?, couponDiscount: Swift.Double, vendorId: Swift.Int, isVendorOnline: Swift.Bool, deliveryMode: CheetahDigitalOloCore.Delivery.Mode?, isUpsellEnabled: Swift.Bool, wasUpSold: Swift.Bool, customerHandOffCharge: Swift.Double, leadTimeEstimateMinutes: Swift.Int, timeMode: CheetahDigitalOloCore.Basket.TimeMode?, mode: Swift.String, deliveryAddress: CheetahDigitalOloCore.Delivery.Address?, appliedRewards: [CheetahDigitalOloCore.Loyalty.Reward], fees: [CheetahDigitalOloCore.Basket.Fee], totalFees: Swift.Double, contactNumber: Swift.String, contextualPricing: CheetahDigitalOloCore.ContextualPricing?, customFields: [CheetahDigitalOloCore.Basket.CustomField], validationMessages: [CheetahDigitalOloCore.Basket.ValidationMessage], allowsTip: Swift.Bool, discounts: [CheetahDigitalOloCore.Basket.Discount], products: [CheetahDigitalOloCore.Basket.Product])
+  public enum TimeMode : Swift.Codable, Swift.Equatable {
+    case manualFire
+    case advance
+    case asap
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahDigitalOloCore.Basket.TimeMode, b: CheetahDigitalOloCore.Basket.TimeMode) -> Swift.Bool
+  }
+  public struct Coupon : Swift.Codable {
+    public var couponCode: Swift.String
+    public var description: Swift.String
+    public init(couponCode: Swift.String, description: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Discount : Swift.Codable {
+    public var description: Swift.String
+    public var amount: Swift.Double
+    public init(description: Swift.String, amount: Swift.Double)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Fee : Swift.Codable, Swift.Equatable {
+    public var amount: Swift.Double
+    public var description: Swift.String
+    public var note: Swift.String
+    public init(amount: Swift.Double, description: Swift.String, note: Swift.String)
+    public static func == (a: CheetahDigitalOloCore.Basket.Fee, b: CheetahDigitalOloCore.Basket.Fee) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct CustomField : Swift.Codable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var value: Swift.String
+    public var isRequired: Swift.Bool
+    public var validationRegex: Swift.String
+    public var scope: CheetahDigitalOloCore.Basket.CustomFieldScope?
+    public init(id: Swift.Int, label: Swift.String, value: Swift.String, isRequired: Swift.Bool, validationRegex: Swift.String, scope: CheetahDigitalOloCore.Basket.CustomFieldScope?)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Choice : Swift.Codable {
+    public var id: Swift.Int
+    public var optionId: Swift.Int
+    public var name: Swift.String
+    public var metric: Swift.Int
+    public var indent: Swift.Int
+    public var cost: Swift.Double
+    public var quantity: Swift.Int
+    public var customFields: [CheetahDigitalOloCore.Basket.ChoiceCustomFieldValue]
+    public init(id: Swift.Int, optionId: Swift.Int, name: Swift.String, metric: Swift.Int, indent: Swift.Int, cost: Swift.Double, quantity: Swift.Int, customFields: [CheetahDigitalOloCore.Basket.ChoiceCustomFieldValue])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ChoiceCustomFieldValue : Swift.Codable {
+    public var fieldId: Swift.Int
+    public var value: Swift.String
+    public init(fieldId: Swift.Int, value: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct PlatformTransfer : Swift.Codable {
+    public var web: Swift.String
+    public var mobileWeb: Swift.String
+    public init(web: Swift.String, mobileWeb: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum CustomFieldScope : Swift.Codable, Swift.Equatable {
+    case allOrders
+    case deliveryOrdersOnly
+    case cashOrdersOnly
+    case curbsidePickUpOrdersOnly
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahDigitalOloCore.Basket.CustomFieldScope, b: CheetahDigitalOloCore.Basket.CustomFieldScope) -> Swift.Bool
+  }
+  public struct Validation : Swift.Codable {
+    public var basketId: Swift.String
+    public var contextualPricing: CheetahDigitalOloCore.ContextualPricing?
+    public var tax: Swift.Double
+    public var taxes: [CheetahDigitalOloCore.Basket.TaxResult]
+    public var customerHandOffCharge: Swift.Double
+    public var fees: [CheetahDigitalOloCore.Basket.Fee]
+    public var subTotal: Swift.Double
+    public var total: Swift.Double
+    public var readyTime: Swift.String
+    public var totalFees: Swift.Double
+    public var posReferenceResponse: Swift.String
+    public var upsellGroups: [CheetahDigitalOloCore.Upsell.Group]
+    public init(basketId: Swift.String, contextualPricing: CheetahDigitalOloCore.ContextualPricing?, tax: Swift.Double, taxes: [CheetahDigitalOloCore.Basket.TaxResult], customerHandOffCharge: Swift.Double, fees: [CheetahDigitalOloCore.Basket.Fee], subTotal: Swift.Double, total: Swift.Double, readyTime: Swift.String, totalFees: Swift.Double, posReferenceResponse: Swift.String, upsellGroups: [CheetahDigitalOloCore.Upsell.Group])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct TaxResult : Swift.Codable {
+    public var label: Swift.String
+    public var tax: Swift.Double
+    public init(label: Swift.String, tax: Swift.Double)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ValidationMessage : Swift.Codable {
+    public var key: Swift.String
+    public var message: Swift.String
+    public var category: CheetahDigitalOloCore.Basket.ValidationMessageCategory?
+    public init(key: Swift.String, message: Swift.String, category: CheetahDigitalOloCore.Basket.ValidationMessageCategory?)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum ValidationMessageCategory : Swift.Codable, Swift.Equatable {
+    case error
+    case warning
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahDigitalOloCore.Basket.ValidationMessageCategory, b: CheetahDigitalOloCore.Basket.ValidationMessageCategory) -> Swift.Bool
+  }
+  public struct ProductBatchError : Swift.Codable {
+    public var productId: Swift.Int
+    public var optionId: Swift.Int
+    public var number: Swift.Int
+    public var message: Swift.String
+    public init(productId: Swift.Int, optionId: Swift.Int, number: Swift.Int, message: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ProductBatchResult : Swift.Codable {
+    public var basket: CheetahDigitalOloCore.Basket?
+    public var errors: [CheetahDigitalOloCore.Basket.ProductBatchError]
+    public init(basket: CheetahDigitalOloCore.Basket?, errors: [CheetahDigitalOloCore.Basket.ProductBatchError])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct TransferResult : Swift.Codable {
+    public var basket: CheetahDigitalOloCore.Basket?
+    public var itemsNotTransferred: [Swift.String]
+    public init(basket: CheetahDigitalOloCore.Basket?, itemsNotTransferred: [Swift.String])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Product : Swift.Codable {
+    public var id: Swift.Int
+    public var productId: Swift.Int
+    public var name: Swift.String
+    public var quantity: Swift.Int
+    public var baseCost: Swift.Double
+    public var totalCost: Swift.Double
+    public var specialInstructions: Swift.String
+    public var customData: Swift.String
+    public var recipient: Swift.String
+    public var choices: [CheetahDigitalOloCore.Basket.Choice]
+    public init(id: Swift.Int, productId: Swift.Int, name: Swift.String, quantity: Swift.Int, baseCost: Swift.Double, totalCost: Swift.Double, specialInstructions: Swift.String, customData: Swift.String, recipient: Swift.String, choices: [CheetahDigitalOloCore.Basket.Choice])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum PromotionType : Swift.Codable, Swift.Equatable {
+    case coupon
+    case compCode
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahDigitalOloCore.Basket.PromotionType, b: CheetahDigitalOloCore.Basket.PromotionType) -> Swift.Bool
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalOloCore.Basket {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.CustomField {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.Choice {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.ChoiceCustomFieldValue {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.Coupon {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.Discount {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.PlatformTransfer {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.Fee {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.Validation {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.TaxResult {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.ValidationMessage {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.ProductBatchError {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.ProductBatchResult {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.TransferResult {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Basket.Product {
+  public init(from decoder: Swift.Decoder) throws
+}
+public class Configuration : Swift.Decodable {
+  public static let shared: CheetahDigitalOloCore.Configuration
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case clientUrl
+    case apiVersion
+    case apiKey
+    case providerSlug
+    case logEnabled
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  final public let clientUrl: Swift.String
+  final public let apiVersion: Swift.String
+  final public let apiKey: Swift.String
+  final public let providerSlug: Swift.String
+  final public let logEnabled: Swift.Bool
+  @objc deinit
+  required public init(from decoder: Swift.Decoder) throws
+}
+public struct MetadataItem : Swift.Codable {
+  public var key: Swift.String
+  public var value: Swift.String
+  public init(key: Swift.String, value: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct ContextualPricing : Swift.Codable {
+  public var isPosValidated: Swift.Bool
+  public var isSyndicated: Swift.Bool
+  public init(isPosValidated: Swift.Bool, isSyndicated: Swift.Bool)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalOloCore.MetadataItem {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.ContextualPricing {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Image : Swift.Codable {
+  public var groupName: Swift.String
+  public var description: Swift.String
+  public var isDefault: Swift.Bool
+  public var fileName: Swift.String
+  public var url: Swift.String
+  public init(groupName: Swift.String, description: Swift.String, isDefault: Swift.Bool, fileName: Swift.String, url: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalOloCore.Image {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Menu : Swift.Codable {
+  public var imagePath: Swift.String
+  public var categories: [CheetahDigitalOloCore.Product.Category]
+  public init(imagePath: Swift.String, categories: [CheetahDigitalOloCore.Product.Category])
+  public struct ItemAvailability : Swift.Codable {
+    public var isAlways: Swift.Bool
+    public var isNow: Swift.Bool
+    public var description: Swift.String
+    public var startDate: Swift.String
+    public var endDate: Swift.String
+    public init(isAlways: Swift.Bool, isNow: Swift.Bool, description: Swift.String, startDate: Swift.String, endDate: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ItemLabel : Swift.Codable {
+    public var name: Swift.String
+    public var code: Swift.String
+    public var images: [CheetahDigitalOloCore.Image]
+    public init(name: Swift.String, code: Swift.String, images: [CheetahDigitalOloCore.Image])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct ItemLabels : Swift.Codable {
+    public var imagePath: Swift.String
+    public var labels: [CheetahDigitalOloCore.Menu.ItemLabel]
+    public init(imagePath: Swift.String, labels: [CheetahDigitalOloCore.Menu.ItemLabel])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalOloCore.Menu {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Menu.ItemAvailability {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Menu.ItemLabel {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Menu.ItemLabels {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum ProductRequest : CheetahDigitalOloCore.OLOURLRequestConvertible {
+  case getOptions(productId: Swift.Int)
+  case getTopLevelOptions(productId: Swift.Int)
+  case getNestedOption(optionId: Swift.Int)
+  case getMenuItemLabels
+  public var path: Swift.String {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var tokenLocation: CheetahDigitalOloCore.TokenLocation {
+    get
+  }
+}
+public enum ProductAPI {
+  public static func getOptions(_ productId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Product.OptionGroups>)
+  public static func getTopLevelOptions(_ productId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Product.OptionGroups>)
+  public static func getNestedOption(_ optionId: Swift.Int, completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Product.OptionGroups>)
+  public static func getMenuItemLabels(completion: CheetahDigitalOloCore.ResponseCompletion<CheetahDigitalOloCore.Menu.ItemLabels>)
+}
+public enum EightySixed {
+  public struct Choice : Swift.Codable {
+    public var id: Swift.Int
+    public var chainOptionId: Swift.Int
+    public init(id: Swift.Int, chainOptionId: Swift.Int)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Items : Swift.Codable {
+    public var choices: [CheetahDigitalOloCore.EightySixed.Choice]
+    public var products: [CheetahDigitalOloCore.EightySixed.Product]
+    public init(choices: [CheetahDigitalOloCore.EightySixed.Choice], products: [CheetahDigitalOloCore.EightySixed.Product])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Product : Swift.Codable {
+    public var id: Swift.Int
+    public var chainProductId: Swift.Int
+    public init(id: Swift.Int, chainProductId: Swift.Int)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+extension CheetahDigitalOloCore.EightySixed.Choice {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.EightySixed.Items {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.EightySixed.Product {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Deliveries : Swift.Codable {
+  public var deliveries: [CheetahDigitalOloCore.Delivery]
+  public init(deliveries: [CheetahDigitalOloCore.Delivery])
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct Delivery : Swift.Codable {
+  public var id: Swift.Int
+  public var status: Swift.String
+  public var driverName: Swift.String
+  public var driverPhoneNumber: Swift.String
+  public var deliveryService: Swift.String
+  public init(id: Swift.Int, status: Swift.String, driverName: Swift.String, driverPhoneNumber: Swift.String, deliveryService: Swift.String)
+  public struct Address : Swift.Codable {
+    public var id: Swift.Int
+    public var building: Swift.String
+    public var streetAddress: Swift.String
+    public var city: Swift.String
+    public var zipCode: Swift.String
+    public var phoneNumber: Swift.String
+    public var specialInstructions: Swift.String
+    public var isDefault: Swift.Bool
+    public init(id: Swift.Int, building: Swift.String, streetAddress: Swift.String, city: Swift.String, zipCode: Swift.String, phoneNumber: Swift.String, specialInstructions: Swift.String, isDefault: Swift.Bool)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum Mode : Swift.Codable, Swift.Equatable {
+    case curbSide
+    case driveThru
+    case pickUp
+    case dispatch
+    case delivery
+    case dineIn
+    case unspecified
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahDigitalOloCore.Delivery.Mode, b: CheetahDigitalOloCore.Delivery.Mode) -> Swift.Bool
+  }
+  public struct Addresses : Swift.Codable {
+    public var deliveryAddresses: [CheetahDigitalOloCore.Delivery.Address]
+    public init(deliveryAddresses: [CheetahDigitalOloCore.Delivery.Address])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct FeeTier : Swift.Codable {
+    public var feeType: CheetahDigitalOloCore.Delivery.FeeType?
+    public var amount: Swift.Double
+    public var subTotalMinimum: Swift.Double
+    public init(feeType: CheetahDigitalOloCore.Delivery.FeeType?, amount: Swift.Double, subTotalMinimum: Swift.Double)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public enum FeeType : Swift.Codable, Swift.Equatable {
+    case subTotalPercent
+    case dispatchFee
+    case fixedFee
+    case undefined(value: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+    public static func == (a: CheetahDigitalOloCore.Delivery.FeeType, b: CheetahDigitalOloCore.Delivery.FeeType) -> Swift.Bool
+  }
+  public struct CoverageResponse : Swift.Codable {
+    public var canDeliver: Swift.Bool
+    public var message: Swift.String
+    public init(canDeliver: Swift.Bool, message: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CheetahDigitalOloCore.Deliveries {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Delivery {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Delivery.Address {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Delivery.Addresses {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Delivery.FeeTier {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Delivery.CoverageResponse {
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum Loyalty {
+  public struct Balance : Swift.Codable {
+    public var quantity: Swift.Double
+    public var unit: Swift.String
+    public var label: Swift.String
+    public init(quantity: Swift.Double, unit: Swift.String, label: Swift.String)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Reward : Swift.Codable {
+    public var membershipId: Swift.Int
+    public var reference: Swift.String
+    public var label: Swift.String
+    public var type: Swift.String
+    public var value: Swift.Double
+    public var rewardId: Swift.Int
+    public var isApplied: Swift.Bool
+    public var quantityAvailable: Swift.Double
+    public var quantityApplied: Swift.Double
+    public var description: Swift.String
+    public var finePrint: Swift.String
+    public var imageUrl: Swift.String
+    public var validMinutes: Swift.Int
+    public var isAvailableOnline: Swift.Bool
+    public var isAvailableOffline: Swift.Bool
+    public var expirationDate: Swift.String
+    public var externalReference: Swift.String
+    public var vendorRefs: [Swift.String]
+    public var items: [Swift.Int]
+    public var categories: [Swift.Int]
+    public init(membershipId: Swift.Int, reference: Swift.String, label: Swift.String, type: Swift.String, value: Swift.Double, rewardId: Swift.Int, isApplied: Swift.Bool, quantityAvailable: Swift.Double, quantityApplied: Swift.Double, description: Swift.String, finePrint: Swift.String, imageUrl: Swift.String, validMinutes: Swift.Int, isAvailableOnline: Swift.Bool, isAvailableOffline: Swift.Bool, expirationDate: Swift.String, externalReference: Swift.String, vendorRefs: [Swift.String], items: [Swift.Int], categories: [Swift.Int])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Rewards : Swift.Codable {
+    public var rewards: [CheetahDigitalOloCore.Loyalty.Reward]
+    public init(rewards: [CheetahDigitalOloCore.Loyalty.Reward])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Membership : Swift.Codable {
+    public var id: Swift.Int
+    public var description: Swift.String
+    public var membershipNumber: Swift.String
+    public var balance: CheetahDigitalOloCore.Loyalty.Balance?
+    public var rewards: [CheetahDigitalOloCore.Loyalty.Reward]
+    public init(id: Swift.Int, description: Swift.String, membershipNumber: Swift.String, balance: CheetahDigitalOloCore.Loyalty.Balance?, rewards: [CheetahDigitalOloCore.Loyalty.Reward])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Scheme : Swift.Codable {
+    public var id: Swift.Int
+    public var label: Swift.String
+    public var name: Swift.String
+    public var provider: Swift.String
+    public var canCheckBalance: Swift.Bool
+    public var membership: CheetahDigitalOloCore.Loyalty.Membership?
+    public init(id: Swift.Int, label: Swift.String, name: Swift.String, provider: Swift.String, canCheckBalance: Swift.Bool, membership: CheetahDigitalOloCore.Loyalty.Membership?)
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Schemes : Swift.Codable {
+    public var schemes: [CheetahDigitalOloCore.Loyalty.Scheme]
+    public init(schemes: [CheetahDigitalOloCore.Loyalty.Scheme])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Vendor : Swift.Codable {
+    public var id: Swift.Int
+    public var name: Swift.String
+    public var storeName: Swift.String
+    public var streetAddress: Swift.String
+    public var distance: Swift.Double
+    public var extRef: Swift.String
+    public var supportsOnlineOrdering: Swift.Bool
+    public var canDeliver: Swift.Bool
+    public var canPickUp: Swift.Bool
+    public var supportsCurbside: Swift.Bool
+    public var rewards: [CheetahDigitalOloCore.Loyalty.Reward]
+    public init(id: Swift.Int, name: Swift.String, storeName: Swift.String, streetAddress: Swift.String, distance: Swift.Double, extRef: Swift.String, supportsOnlineOrdering: Swift.Bool, canDeliver: Swift.Bool, canPickUp: Swift.Bool, supportsCurbside: Swift.Bool, rewards: [CheetahDigitalOloCore.Loyalty.Reward])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Vendors : Swift.Codable {
+    public var vendors: [CheetahDigitalOloCore.Loyalty.Vendor]
+    public init(vendors: [CheetahDigitalOloCore.Loyalty.Vendor])
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+}
+extension CheetahDigitalOloCore.Loyalty.Balance {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Loyalty.Reward {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Loyalty.Rewards {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Loyalty.Membership {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Loyalty.Scheme {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Loyalty.Schemes {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Loyalty.Vendor {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.Loyalty.Vendors {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalOloCore.TokenLocation : Swift.Equatable {}
+extension CheetahDigitalOloCore.TokenLocation : Swift.Hashable {}
+extension CheetahDigitalOloCore.Configuration.CodingKeys : Swift.Equatable {}
+extension CheetahDigitalOloCore.Configuration.CodingKeys : Swift.Hashable {}
+extension CheetahDigitalOloCore.Configuration.CodingKeys : Swift.RawRepresentable {}

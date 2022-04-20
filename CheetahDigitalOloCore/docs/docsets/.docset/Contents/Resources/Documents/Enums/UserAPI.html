@@ -1,0 +1,3090 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UserAPI Enumeration Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Enum/UserAPI" class="dashAnchor"></a>
+    <a title="UserAPI Enumeration Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a></p>
+        <p class="header-right"><a href="https://github.com/LoyalSphere/cheetah-loyalty-ios-olo-sdk"><img src="../img/gh.png" alt="GitHub"/>View on GitHub</a></p>
+        <div class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        UserAPI Enumeration Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/API.html">API</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration/CodingKeys.html">– CodingKeys</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ArrivalStatus.html">ArrivalStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketAPI.html">BasketAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter.html">BasketParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/LoyaltyScheme.html">– LoyaltyScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/TimeWanted.html">– TimeWanted</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/ChainProduct.html">– ChainProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/BatchProduct.html">– BatchProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/UpsellItem.html">– UpsellItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/BillingField.html">– BillingField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/OrderCustomData.html">– OrderCustomData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/BillingMethod.html">– BillingMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/UserType.html">– UserType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/Order.html">– Order</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/BillingAccount.html">– BillingAccount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketParameter/MultiplePaymentsOrder.html">– MultiplePaymentsOrder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/BasketRequest.html">BasketRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing.html">Billing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Account.html">– Account</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/AccountType.html">– AccountType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Accounts.html">– Accounts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Balance.html">– Balance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/FieldInput.html">– FieldInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/FieldInputType.html">– FieldInputType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Scheme.html">– Scheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/Schemes.html">– Schemes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/SchemeType.html">– SchemeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Billing/StoredValueCards.html">– StoredValueCards</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CalendarType.html">CalendarType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CardType.html">CardType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommonParameter.html">CommonParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommonParameter/Coordinates.html">– Coordinates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommonParameter/CalendarRange.html">– CalendarRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CommonParameter/Address.html">– Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Contact.html">Contact</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Contact/Detail.html">– Detail</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Contact/Option.html">– Option</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EightySixed.html">EightySixed</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EightySixed/Choice.html">– Choice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EightySixed/Items.html">– Items</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EightySixed/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeedbackAPI.html">FeedbackAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/FeedbackRequest.html">FeedbackRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty.html">Loyalty</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Balance.html">– Balance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Reward.html">– Reward</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Rewards.html">– Rewards</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Membership.html">– Membership</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Scheme.html">– Scheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Schemes.html">– Schemes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Vendor.html">– Vendor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Loyalty/Vendors.html">– Vendors</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order.html">Order</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/Group.html">– Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/Fee.html">– Fee</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/ManualFire.html">– ManualFire</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/ManualFires.html">– ManualFires</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/ManualFireResult.html">– ManualFireResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/ProductChoice.html">– ProductChoice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/RecentOrders.html">– RecentOrders</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Order/Status.html">– Status</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderAPI.html">OrderAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderParameter.html">OrderParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderParameter/ManualFire.html">– ManualFire</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderParameter/CustomFieldValue.html">– CustomFieldValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderRequest.html">OrderRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderStatus.html">OrderStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductAPI.html">ProductAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductParameter.html">ProductParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductParameter/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductParameter/Choice.html">– Choice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductParameter/ChainChoice.html">– ChainChoice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ProductRequest.html">ProductRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/QualificationCriteria.html">QualificationCriteria</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Response.html">Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Response/BinValidation.html">– BinValidation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ResponseError.html">ResponseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ResponseError/ResponseSerializationFailureReason.html">– ResponseSerializationFailureReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestaurantAPI.html">RestaurantAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestaurantParameter.html">RestaurantParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestaurantParameter/DeliveryCoverageCheck.html">– DeliveryCoverageCheck</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RestaurantRequest.html">RestaurantRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TokenLocation.html">TokenLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Upsell.html">Upsell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Upsell/Item.html">– Item</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Upsell/Group.html">– Group</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Upsell/Groups.html">– Groups</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserAPI.html">UserAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserParameter.html">UserParameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserParameter/NewUser.html">– NewUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserParameter/UpdateUser.html">– UpdateUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserParameter/Favorite.html">– Favorite</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserRequest.html">UserRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/APIError.html">APIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Bundle.html">Bundle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Product.html">Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Product/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Product/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Product/Option.html">– Option</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Product/OptionGroup.html">– OptionGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Product/OptionGroups.html">– OptionGroups</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Result.html">Result</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/OLOURLRequestConvertible.html">OLOURLRequestConvertible</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/APIResponse.html">APIResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket.html">Basket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/TimeMode.html">– TimeMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Coupon.html">– Coupon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Discount.html">– Discount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Fee.html">– Fee</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Choice.html">– Choice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ChoiceCustomFieldValue.html">– ChoiceCustomFieldValue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/PlatformTransfer.html">– PlatformTransfer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/CustomFieldScope.html">– CustomFieldScope</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Validation.html">– Validation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/TaxResult.html">– TaxResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ValidationMessage.html">– ValidationMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ValidationMessageCategory.html">– ValidationMessageCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ProductBatchError.html">– ProductBatchError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/ProductBatchResult.html">– ProductBatchResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/TransferResult.html">– TransferResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Basket/PromotionType.html">– PromotionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContextualPricing.html">ContextualPricing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Deliveries.html">Deliveries</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery.html">Delivery</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/Address.html">– Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/Mode.html">– Mode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/Addresses.html">– Addresses</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/FeeTier.html">– FeeTier</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/FeeType.html">– FeeType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delivery/CoverageResponse.html">– CoverageResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/EmptyResponse.html">EmptyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite.html">Favorite</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/Product.html">– Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/ProductChoice.html">– ProductChoice</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/Location.html">– Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/UserFavoriteLocations.html">– UserFavoriteLocations</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Favorite/UserFavorites.html">– UserFavorites</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Feedback.html">Feedback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Feedback/Target.html">– Target</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Feedback/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Feedback/Parameter.html">– Parameter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Image.html">Image</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Menu.html">Menu</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Menu/ItemAvailability.html">– ItemAvailability</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Menu/ItemLabel.html">– ItemLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Menu/ItemLabels.html">– ItemLabels</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/MetadataItem.html">MetadataItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product.html">Product</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Option.html">– Option</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/Category.html">– Category</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/OptionGroup.html">– OptionGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Product/OptionGroups.html">– OptionGroups</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant.html">Restaurant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/CustomField.html">– CustomField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/CustomLabel.html">– CustomLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/Calendar.html">– Calendar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/CalendarTimeRange.html">– CalendarTimeRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/Calendars.html">– Calendars</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/Disclaimer.html">– Disclaimer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/Disclaimers.html">– Disclaimers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/BrandLevelSettings.html">– BrandLevelSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/DeliveryMode.html">– DeliveryMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/LoginProvider.html">– LoginProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/PushNotification.html">– PushNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurant/TimeMode.html">– TimeMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Restaurants.html">Restaurants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User.html">User</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/Exists.html">– Exists</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/LoginUser.html">– LoginUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/New.html">– New</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/Login.html">– Login</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/ChangePassword.html">– ChangePassword</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/User/SingleSignOn.html">– SingleSignOn</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UserAPI</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">UserAPI</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/USER%20%28U%29%20%3A%20Creation%20%26%20Authentication"></a>
+                <a name="//apple_ref/swift/Section/USER (U) : Creation &amp; Authentication" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/USER%20%28U%29%20%3A%20Creation%20%26%20Authentication"></a>
+                  <h3 class="section-name"><span>USER (U) : Creation &amp; Authentication</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO6create03newE010completionyAA0E9ParameterO03NewE0V_ys6ResultOyAA11APIResponseVyAA0E0V0K0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/create(newUser:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO6create03newE010completionyAA0E9ParameterO03NewE0V_ys6ResultOyAA11APIResponseVyAA0E0V0K0VGs5Error_pGcSgtFZ">create(newUser:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an Olo user. These are user accounts that have no associations with other login providers &ndash; i.e. the Olo user is the source of truth.</p>
+
+<p>With a successful response you will get a user authentication token which will be used to identify this user within Olo&rsquo;s Ordering API going forward.
+This authtoken may be stored by the application but the user&rsquo;s password may not.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>All reasonable security measures must be taken to secure the authtoken since it can be linked to the customer&rsquo;s credit card.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">create</span><span class="p">(</span><span class="nv">newUser</span><span class="p">:</span> <span class="kt"><a href="../Enums/UserParameter.html">UserParameter</a></span><span class="o">.</span><span class="kt">NewUser</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/User.html">User</a></span><span class="o">.</span><span class="kt">New</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newUser</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/UserParameter/NewUser.html">UserParameter.NewUser</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO11getOrCreate7userSSO10completionyAA0E0V12SingleSignOnV_ys6ResultOyAA11APIResponseVyAJGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getOrCreate(userSSO:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO11getOrCreate7userSSO10completionyAA0E0V12SingleSignOnV_ys6ResultOyAA11APIResponseVyAJGs5Error_pGcSgtFZ">getOrCreate(userSSO:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Links a user from an authorized (OAuth) third party login provider to a new Olo user.
+(Can also retrieve the details for an existing user previously created via this endpoint.)</p>
+
+<p>The source of truth for these users comes from the login provider, not Olo.
+Please provide a &ldquo;provider&rdquo; slug (can be found by contacting your Olo Customer Success representative)
+and the &ldquo;providertoken&rdquo; (to be retrieved from the third party login provider).</p>
+
+<p>With a successful response you will get an Olo user authentication token which will be used to identify this user within Olo&rsquo;s Ordering API going forward.</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>All reasonable security measures must be taken to secure the authtoken since it can be linked to the customer&rsquo;s credit card.</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This will return an HTTP 204 if the login provider you provided is not yet authorized for the brand associated with
+your API credentials (in the respective Olo environment). If this happens, please reach out to your Olo Customer Success representative for more information.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getOrCreate</span><span class="p">(</span><span class="nv">userSSO</span><span class="p">:</span> <span class="kt"><a href="../Structs/User.html">User</a></span><span class="o">.</span><span class="kt">SingleSignOn</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/User.html">User</a></span><span class="o">.</span><span class="kt">SingleSignOn</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userSSO</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Structs/User/SingleSignOn.html">User.SingleSignOn</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO15createFromOrder4guid8password5optin10completionySS_S2Sys6ResultOyAA11APIResponseVyAA0E0V05LoginE0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/createFromOrder(guid:password:optin:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO15createFromOrder4guid8password5optin10completionySS_S2Sys6ResultOyAA11APIResponseVyAA0E0V05LoginE0VGs5Error_pGcSgtFZ">createFromOrder(guid:<wbr>password:<wbr>optin:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new Olo user from the details provided in a previous guest order.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This endpoint is not compatible with the SSO flow outlined in the /users/getorcreate endpoint.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createFromOrder</span><span class="p">(</span><span class="nv">guid</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                   <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                   <span class="nv">optin</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                   <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/User.html">User</a></span><span class="o">.</span><span class="kt">LoginUser</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>guid</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Order GUID</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>password</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User&rsquo;s desired password</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>optin</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Opt-in</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO12authenticate5login8password8basketId10completionySS_S2SSgys6ResultOyAA11APIResponseVyAA0E0V5LoginVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/authenticate(login:password:basketId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO12authenticate5login8password8basketId10completionySS_S2SSgys6ResultOyAA11APIResponseVyAA0E0V5LoginVGs5Error_pGcSgtFZ">authenticate(login:<wbr>password:<wbr>basketId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates a new user authtoken and returns the user&rsquo;s basic information.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This endpoint is not compatible with the SSO flow outlined in the /users/getorcreate endpoint.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">authenticate</span><span class="p">(</span><span class="nv">login</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">password</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                <span class="nv">basketId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+                                <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/User.html">User</a></span><span class="o">.</span><span class="kt">Login</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>login</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User&rsquo;s login</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>password</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User&rsquo;s password</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>basketId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional) ID of ssociated basket</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO14changePassword03oldH003newH010completionySS_SSys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/changePassword(oldPassword:newPassword:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO14changePassword03oldH003newH010completionySS_SSys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ">changePassword(oldPassword:<wbr>newPassword:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Change an Olo user&rsquo;s password.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This endpoint is not compatible with the SSO flow outlined in the /users/getorcreate endpoint.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">changePassword</span><span class="p">(</span><span class="nv">oldPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                  <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                  <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/EmptyResponse.html">EmptyResponse</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>oldPassword</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User&rsquo;s old password</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newPassword</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User&rsquo;s new password</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO14forgotPassword5email10completionySS_ys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/forgotPassword(email:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO14forgotPassword5email10completionySS_ys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ">forgotPassword(email:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The user matching the email address will be e-mailed a link to a page on the website where they can reset their password.
+There is a velocity check on the number of times this call can be made per client IP address per hour.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This endpoint is not compatible with the SSO flow outlined in the /users/getorcreate endpoint.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">forgotPassword</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                  <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/EmptyResponse.html">EmptyResponse</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>email</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User&rsquo;s email address</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/U1%20%3A%20Modification%2C%20Deletion%2C%20%26%20Retrieval"></a>
+                <a name="//apple_ref/swift/Section/U1 : Modification, Deletion, &amp; Retrieval" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/U1%20%3A%20Modification%2C%20Deletion%2C%20%26%20Retrieval"></a>
+                  <h3 class="section-name"><span>U1 : Modification, Deletion, &amp; Retrieval</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO11revokeToken10completionyys6ResultOyAA11APIResponseVyAA0E0VGs5Error_pGcSg_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/revokeToken(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO11revokeToken10completionyys6ResultOyAA11APIResponseVyAA0E0VGs5Error_pGcSg_tFZ">revokeToken(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Revokes the user authentication token</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">revokeToken</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/User.html">User</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO010getCurrentE010completionyys6ResultOyAA11APIResponseVyAA0E0VGs5Error_pGcSg_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getCurrentUser(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO010getCurrentE010completionyys6ResultOyAA11APIResponseVyAA0E0VGs5Error_pGcSg_tFZ">getCurrentUser(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a <code><a href="../Structs/User.html">User</a></code> entity with their associated basic information</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getCurrentUser</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/User.html">User</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO06updateE007updatedE010completionyAA0E9ParameterO06UpdateE0V_ys6ResultOyAA11APIResponseVyAA0E0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/updateUser(updatedUser:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO06updateE007updatedE010completionyAA0E9ParameterO06UpdateE0V_ys6ResultOyAA11APIResponseVyAA0E0VGs5Error_pGcSgtFZ">updateUser(updatedUser:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the current user&rsquo;s personal details</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>For users linked to third party login providers, contact information must be updated with the login provider, not Olo</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updateUser</span><span class="p">(</span><span class="nv">updatedUser</span><span class="p">:</span> <span class="kt"><a href="../Enums/UserParameter.html">UserParameter</a></span><span class="o">.</span><span class="kt">UpdateUser</span><span class="p">,</span>
+                              <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/User.html">User</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>updatedUser</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/UserParameter/UpdateUser.html">UserParameter.UpdateUser</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO13deleteAccount10completionyys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSg_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/deleteAccount(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO13deleteAccount10completionyys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSg_tFZ">deleteAccount(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes the user account associated with the provided current Olo authentication token.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This action cannot be reversed and the user will need to create a new account if they wish to login in the future.
+All previously issued authentication tokens for the user will no longer be usable.
+Calling this endpoint using an authentication token obtained for an SSO linked user will only delete the user account in Olo&rsquo;s system
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">deleteAccount</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/EmptyResponse.html">EmptyResponse</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO05checkE9Existence5email10completionySS_ys6ResultOyAA11APIResponseVyAA0E0V6ExistsVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/checkUserExistence(email:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO05checkE9Existence5email10completionySS_ys6ResultOyAA11APIResponseVyAA0E0V6ExistsVGs5Error_pGcSgtFZ">checkUserExistence(email:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a list of brand-supported login providers that have accounts with the user&rsquo;s email address</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">checkUserExistence</span><span class="p">(</span><span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/User.html">User</a></span><span class="o">.</span><span class="kt">Exists</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/U2%20%3A%20Contact%20Information"></a>
+                <a name="//apple_ref/swift/Section/U2 : Contact Information" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/U2%20%3A%20Contact%20Information"></a>
+                  <h3 class="section-name"><span>U2 : Contact Information</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO17getContactDetails10completionyys6ResultOyAA11APIResponseVyAA0H0O6DetailVGs5Error_pGcSg_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getContactDetails(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO17getContactDetails10completionyys6ResultOyAA11APIResponseVyAA0H0O6DetailVGs5Error_pGcSg_tFZ">getContactDetails(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the user&rsquo;s Contact Number.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getContactDetails</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Contact.html">Contact</a></span><span class="o">.</span><span class="kt">Detail</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO20updateContactDetails13contactNumber10completionySS_ys6ResultOyAA11APIResponseVyAA0H0O6DetailVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/updateContactDetails(contactNumber:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO20updateContactDetails13contactNumber10completionySS_ys6ResultOyAA11APIResponseVyAA0H0O6DetailVGs5Error_pGcSgtFZ">updateContactDetails(contactNumber:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the user&rsquo;s Contact Number in case of issues with orders.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updateContactDetails</span><span class="p">(</span><span class="nv">contactNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Contact.html">Contact</a></span><span class="o">.</span><span class="kt">Detail</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contactNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User&rsquo;s contact number</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO17getContactOptions10completionyys6ResultOyAA11APIResponseVyAA0H0O6OptionVGs5Error_pGcSg_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getContactOptions(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO17getContactOptions10completionyys6ResultOyAA11APIResponseVyAA0H0O6OptionVGs5Error_pGcSg_tFZ">getContactOptions(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the user&rsquo;s current communication preferences, i.e. marketing email opt-in, upsell prompts, email receipts, and feedback follow-up.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getContactOptions</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Contact.html">Contact</a></span><span class="o">.</span><span class="kt">Option</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO20updateContactOptions6option10completionyAA0H0O6OptionV_ys6ResultOyAA11APIResponseVyAJGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/updateContactOptions(option:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO20updateContactOptions6option10completionyAA0H0O6OptionV_ys6ResultOyAA11APIResponseVyAJGs5Error_pGcSgtFZ">updateContactOptions(option:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the user&rsquo;s current communication preferences, i.e. marketing email opt-in, upsell prompts, email receipts, and feedback follow-up.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updateContactOptions</span><span class="p">(</span><span class="nv">option</span><span class="p">:</span> <span class="kt"><a href="../Enums/Contact.html">Contact</a></span><span class="o">.</span><span class="kt">Option</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Contact.html">Contact</a></span><span class="o">.</span><span class="kt">Option</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>option</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/Contact/Option.html">Contact.Option</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO20getDeliveryAddresses10completionyys6ResultOyAA11APIResponseVyAA0H0V0I0VGs5Error_pGcSg_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getDeliveryAddresses(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO20getDeliveryAddresses10completionyys6ResultOyAA11APIResponseVyAA0H0V0I0VGs5Error_pGcSg_tFZ">getDeliveryAddresses(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the user&rsquo;s previously used delivery addresses.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getDeliveryAddresses</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Delivery.html">Delivery</a></span><span class="o">.</span><span class="kt">Addresses</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO28updateDefaultDeliveryAddress9addressId10completionySi_ys6ResultOyAA11APIResponseVyAA0I0V0J0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/updateDefaultDeliveryAddress(addressId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO28updateDefaultDeliveryAddress9addressId10completionySi_ys6ResultOyAA11APIResponseVyAA0I0V0J0VGs5Error_pGcSgtFZ">updateDefaultDeliveryAddress(addressId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the user&rsquo;s default delivery address to the provided id.
+If the user already has a default delivery address set, it will be overriden with the provided delivery address id.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updateDefaultDeliveryAddress</span><span class="p">(</span><span class="nv">addressId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                                                <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Delivery.html">Delivery</a></span><span class="o">.</span><span class="kt">Address</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addressId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of <code><a href="../Structs/Delivery/Address.html">Delivery.Address</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO21deleteDeliveryAddress9addressId10completionySi_ys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/deleteDeliveryAddress(addressId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO21deleteDeliveryAddress9addressId10completionySi_ys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ">deleteDeliveryAddress(addressId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes the user&rsquo;s address.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">deleteDeliveryAddress</span><span class="p">(</span><span class="nv">addressId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/EmptyResponse.html">EmptyResponse</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addressId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of <code><a href="../Structs/Delivery/Address.html">Delivery.Address</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/U3%20%3A%20Billing%20Information"></a>
+                <a name="//apple_ref/swift/Section/U3 : Billing Information" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/U3%20%3A%20Billing%20Information"></a>
+                  <h3 class="section-name"><span>U3 : Billing Information</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO18getBillingAccounts8basketId10completionySSSg_ys6ResultOyAA11APIResponseVyAA0H0O0I0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getBillingAccounts(basketId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO18getBillingAccounts8basketId10completionySSSg_ys6ResultOyAA11APIResponseVyAA0H0O0I0VGs5Error_pGcSgtFZ">getBillingAccounts(basketId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lists all of the user&rsquo;s billing accounts. Billing accounts are intended to be displayed on or near the checkout page.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getBillingAccounts</span><span class="p">(</span><span class="nv">basketId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Billing.html">Billing</a></span><span class="o">.</span><span class="kt">Accounts</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>basketId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>(Optional) Olo basket guid to check for qualifying billing accounts.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO20deleteBillingAccount07billingI2Id10completionySi_ys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/deleteBillingAccount(billingAccountId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO20deleteBillingAccount07billingI2Id10completionySi_ys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ">deleteBillingAccount(billingAccountId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes a user&rsquo;s billing account</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Some accounts cannot be deleted. Also, this call will not impact prior orders utilizing this account.
+This is a soft removal (not a permanent deletion) that only prevents the account from getting returned.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">deleteBillingAccount</span><span class="p">(</span><span class="nv">billingAccountId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/EmptyResponse.html">EmptyResponse</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>billingAccountId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The id of the billing account to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO19getGiftCardBalances10completionyys6ResultOyAA11APIResponseVyAA7BillingO16StoredValueCardsVGs5Error_pGcSg_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getGiftCardBalances(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO19getGiftCardBalances10completionyys6ResultOyAA11APIResponseVyAA7BillingO16StoredValueCardsVGs5Error_pGcSg_tFZ">getGiftCardBalances(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a collection of gift cards balances.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getGiftCardBalances</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Billing.html">Billing</a></span><span class="o">.</span><span class="kt">StoredValueCards</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO18getGiftCardBalance16billingAccountId10completionySi_ys6ResultOyAA11APIResponseVyAA7BillingO0J0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getGiftCardBalance(billingAccountId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO18getGiftCardBalance16billingAccountId10completionySi_ys6ResultOyAA11APIResponseVyAA7BillingO0J0VGs5Error_pGcSgtFZ">getGiftCardBalance(billingAccountId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get balance of stored-value card</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getGiftCardBalance</span><span class="p">(</span><span class="nv">billingAccountId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Billing.html">Billing</a></span><span class="o">.</span><span class="kt">Balance</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>billingAccountId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The billing account ID associated with a saved gift card.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO23updateDefaultCreditCard16billingAccountId02isH010completionySi_Sbys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/updateDefaultCreditCard(billingAccountId:isDefault:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO23updateDefaultCreditCard16billingAccountId02isH010completionySi_Sbys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ">updateDefaultCreditCard(billingAccountId:<wbr>isDefault:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates a user&rsquo;s default credit card. If they already have an existing default credit card, it will be replaced.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updateDefaultCreditCard</span><span class="p">(</span><span class="nv">billingAccountId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                                           <span class="nv">isDefault</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+                                           <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/EmptyResponse.html">EmptyResponse</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>billingAccountId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The billing account ID associated with a saved gift card.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isDefault</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether set the billing account as default</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/U4%20%3A%20Favorites%20%28Baskets%20%26%20Locations%29"></a>
+                <a name="//apple_ref/swift/Section/U4 : Favorites (Baskets &amp; Locations)" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/U4%20%3A%20Favorites%20%28Baskets%20%26%20Locations%29"></a>
+                  <h3 class="section-name"><span>U4 : Favorites (Baskets &amp; Locations)</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO12getFavorites10completionyys6ResultOyAA11APIResponseVyAA8FavoriteV0eH0VGs5Error_pGcSg_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getFavorites(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO12getFavorites10completionyys6ResultOyAA11APIResponseVyAA8FavoriteV0eH0VGs5Error_pGcSg_tFZ">getFavorites(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a <code><a href="../Structs/Favorite/UserFavorites.html">Favorite.UserFavorites</a></code> for the user, which are effectively saved snapshots of a basket&rsquo;s contents.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getFavorites</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Favorite.html">Favorite</a></span><span class="o">.</span><span class="kt">UserFavorites</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO11addFavorite8favorite10completionyAA0E9ParameterO0H0V_ys6ResultOyAA11APIResponseVyAaIV0E9FavoritesVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/addFavorite(favorite:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO11addFavorite8favorite10completionyAA0E9ParameterO0H0V_ys6ResultOyAA11APIResponseVyAaIV0E9FavoritesVGs5Error_pGcSgtFZ">addFavorite(favorite:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a new <code><a href="../Structs/Favorite.html">Favorite</a></code> for the user based on the contents of the basket provided. Each favorite is effectively a saved snapshot of a basket&rsquo;s contents.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">addFavorite</span><span class="p">(</span><span class="nv">favorite</span><span class="p">:</span> <span class="kt"><a href="../Enums/UserParameter.html">UserParameter</a></span><span class="o">.</span><span class="kt"><a href="../Structs/Favorite.html">Favorite</a></span><span class="p">,</span>
+                               <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Favorite.html">Favorite</a></span><span class="o">.</span><span class="kt">UserFavorites</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>favorite</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/UserParameter/Favorite.html">UserParameter.Favorite</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO14deleteFavorite10favoriteId10completionySi_ys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/deleteFavorite(favoriteId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO14deleteFavorite10favoriteId10completionySi_ys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ">deleteFavorite(favoriteId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes a specific <code><a href="../Structs/Favorite.html">Favorite</a></code> from the user&rsquo;s account.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">deleteFavorite</span><span class="p">(</span><span class="nv">favoriteId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/EmptyResponse.html">EmptyResponse</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>favoriteId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The ID of the <code><a href="../Structs/Favorite.html">Favorite</a></code> to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO20getFavoriteLocations10completionyys6ResultOyAA11APIResponseVyAA0H0V0ehI0VGs5Error_pGcSg_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getFavoriteLocations(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO20getFavoriteLocations10completionyys6ResultOyAA11APIResponseVyAA0H0V0ehI0VGs5Error_pGcSg_tFZ">getFavoriteLocations(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a <code><a href="../Structs/Favorite/UserFavoriteLocations.html">Favorite.UserFavoriteLocations</a></code> for the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getFavoriteLocations</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Favorite.html">Favorite</a></span><span class="o">.</span><span class="kt">UserFavoriteLocations</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO19addFavoriteLocation10locationId9isDefault10completionySi_Sbys6ResultOyAA11APIResponseVyAA0H0V0I0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/addFavoriteLocation(locationId:isDefault:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO19addFavoriteLocation10locationId9isDefault10completionySi_Sbys6ResultOyAA11APIResponseVyAA0H0V0I0VGs5Error_pGcSgtFZ">addFavoriteLocation(locationId:<wbr>isDefault:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the specific restaurant (i.e. vendor) as a <code><a href="../Structs/Favorite/Location.html">Favorite.Location</a></code> for the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">addFavoriteLocation</span><span class="p">(</span><span class="nv">locationId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                                       <span class="nv">isDefault</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span>
+                                       <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Favorite.html">Favorite</a></span><span class="o">.</span><span class="kt">Location</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>locationId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Olo restaurant ID (a.k.a. vendor id) the user wishes to save as a favorite.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isDefault</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Whether or not the restaurant will be the default favorite restaurant. A user can only have one default restaurant at a time.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO22deleteFavoriteLocation10locationId10completionySi_ys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/deleteFavoriteLocation(locationId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO22deleteFavoriteLocation10locationId10completionySi_ys6ResultOyAA11APIResponseVyAA13EmptyResponseVGs5Error_pGcSgtFZ">deleteFavoriteLocation(locationId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes a specific <code><a href="../Structs/Favorite/Location.html">Favorite.Location</a></code> from the user&rsquo;s account.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">deleteFavoriteLocation</span><span class="p">(</span><span class="nv">locationId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/EmptyResponse.html">EmptyResponse</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>locationId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Olo restaurant id (a.k.a. vendor id) the user wishes to remove</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/U5%20%3A%20Recent%20%26%20Open%20Orders%20%28Manual%20Fire%29"></a>
+                <a name="//apple_ref/swift/Section/U5 : Recent &amp; Open Orders (Manual Fire)" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/U5%20%3A%20Recent%20%26%20Open%20Orders%20%28Manual%20Fire%29"></a>
+                  <h3 class="section-name"><span>U5 : Recent &amp; Open Orders (Manual Fire)</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO15getRecentOrders10completionyys6ResultOyAA11APIResponseVyAA5OrderO0hI0VGs5Error_pGcSg_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getRecentOrders(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO15getRecentOrders10completionyys6ResultOyAA11APIResponseVyAA5OrderO0hI0VGs5Error_pGcSg_tFZ">getRecentOrders(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the user&rsquo;s last 5 orders as <code><a href="../Enums/Order/RecentOrders.html">Order.RecentOrders</a></code> entity.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getRecentOrders</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Order.html">Order</a></span><span class="o">.</span><span class="kt">RecentOrders</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO15getRecentOrders9reference10completionySS_ys6ResultOyAA11APIResponseVyAA5OrderO0hI0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getRecentOrders(reference:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO15getRecentOrders9reference10completionySS_ys6ResultOyAA11APIResponseVyAA5OrderO0hI0VGs5Error_pGcSgtFZ">getRecentOrders(reference:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the user&rsquo;s last 5 orders as <code><a href="../Enums/Order/RecentOrders.html">Order.RecentOrders</a></code> entity based on the user&rsquo;s external &ldquo;reference&rdquo;</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getRecentOrders</span><span class="p">(</span><span class="nv">reference</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Order.html">Order</a></span><span class="o">.</span><span class="kt">RecentOrders</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>reference</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User reference in the calling system, as provided to the basket submission call.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO23getOpenManualFireOrders10completionyys6ResultOyAA11APIResponseVyAA5OrderO0I5FiresVGs5Error_pGcSg_tFZ"></a>
+                    <a name="//apple_ref/swift/Method/getOpenManualFireOrders(completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO23getOpenManualFireOrders10completionyys6ResultOyAA11APIResponseVyAA5OrderO0I5FiresVGs5Error_pGcSg_tFZ">getOpenManualFireOrders(completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a list of open Manual Fire orders that are waiting to be fired</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getOpenManualFireOrders</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Order.html">Order</a></span><span class="o">.</span><span class="kt">ManualFires</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/U6%20%3A%20Loyalty%20Rewards"></a>
+                <a name="//apple_ref/swift/Section/U6 : Loyalty Rewards" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/U6%20%3A%20Loyalty%20Rewards"></a>
+                  <h3 class="section-name"><span>U6 : Loyalty Rewards</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO20getQualifyingRewards12restaurantId10completionySi_ys6ResultOyAA11APIResponseVyAA7LoyaltyO0I0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getQualifyingRewards(restaurantId:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO20getQualifyingRewards12restaurantId10completionySi_ys6ResultOyAA11APIResponseVyAA7LoyaltyO0I0VGs5Error_pGcSgtFZ">getQualifyingRewards(restaurantId:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a list of qualifying rewards for the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getQualifyingRewards</span><span class="p">(</span><span class="nv">restaurantId</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                                        <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Loyalty.html">Loyalty</a></span><span class="o">.</span><span class="kt">Rewards</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>restaurantId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ID of the restaurant</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO16getNearbyRewards11coordinates11radiusMiles5limit10completionyAA15CommonParameterO11CoordinatesV_SdSiys6ResultOyAA11APIResponseVyAA7LoyaltyO7VendorsVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getNearbyRewards(coordinates:radiusMiles:limit:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO16getNearbyRewards11coordinates11radiusMiles5limit10completionyAA15CommonParameterO11CoordinatesV_SdSiys6ResultOyAA11APIResponseVyAA7LoyaltyO7VendorsVGs5Error_pGcSgtFZ">getNearbyRewards(coordinates:<wbr>radiusMiles:<wbr>limit:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a list of nearby restaurants (as <code>Vendor</code> entities) with their respective rewards for the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getNearbyRewards</span><span class="p">(</span><span class="nv">coordinates</span><span class="p">:</span> <span class="kt"><a href="../Enums/CommonParameter.html">CommonParameter</a></span><span class="o">.</span><span class="kt">Coordinates</span><span class="p">,</span>
+                                    <span class="nv">radiusMiles</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span>
+                                    <span class="nv">limit</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span>
+                                    <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Loyalty.html">Loyalty</a></span><span class="o">.</span><span class="kt">Vendors</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>coordinates</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Coordinates to search near</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>radiusMiles</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Search radius in miles</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Maximum number of results to return</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/U7%20%3A%20Unauthenticated"></a>
+                <a name="//apple_ref/swift/Section/U7 : Unauthenticated" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/U7%20%3A%20Unauthenticated"></a>
+                  <h3 class="section-name"><span>U7 : Unauthenticated</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO03getE06byGuid10completionySS_ys6ResultOyAA11APIResponseVyAA0E0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getUser(byGuid:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO03getE06byGuid10completionySS_ys6ResultOyAA11APIResponseVyAA0E0VGs5Error_pGcSgtFZ">getUser(byGuid:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a user&rsquo;s personal details.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This endpoint requires the &ldquo;Access Unauthenticated Users&rdquo; permission to use.
+A certification in a lower environment is also required. Please reach out to your Customer Success representative to enable this permission on your API key.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getUser</span><span class="p">(</span><span class="n">byGuid</span> <span class="nv">guid</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/User.html">User</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>guid</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Olo user guid.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO06updateE06byGuid07updatedE010completionySS_AA0E9ParameterO06UpdateE0Vys6ResultOyAA11APIResponseVyAA0E0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/updateUser(byGuid:updatedUser:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO06updateE06byGuid07updatedE010completionySS_AA0E9ParameterO06UpdateE0Vys6ResultOyAA11APIResponseVyAA0E0VGs5Error_pGcSgtFZ">updateUser(byGuid:<wbr>updatedUser:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the user&rsquo;s personal details.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>For users linked to third party login providers, contact information must be updated with the login provider, not Olo.</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This endpoint requires the &ldquo;Access Unauthenticated Users&rdquo; permission to use.
+A certification in a lower environment is also required. Please reach out to your Customer Success representative to enable this permission on your API key.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updateUser</span><span class="p">(</span><span class="n">byGuid</span> <span class="nv">guid</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                              <span class="nv">updatedUser</span><span class="p">:</span> <span class="kt"><a href="../Enums/UserParameter.html">UserParameter</a></span><span class="o">.</span><span class="kt">UpdateUser</span><span class="p">,</span>
+                              <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/User.html">User</a></span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>guid</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Olo user guid.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>updateUser</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/UserParameter/UpdateUser.html">UserParameter.UpdateUser</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO17getContactDetails6byGuid10completionySS_ys6ResultOyAA11APIResponseVyAA0H0O6DetailVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getContactDetails(byGuid:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO17getContactDetails6byGuid10completionySS_ys6ResultOyAA11APIResponseVyAA0H0O6DetailVGs5Error_pGcSgtFZ">getContactDetails(byGuid:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the user&rsquo;s contact number.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This endpoint requires the &ldquo;Access Unauthenticated Users&rdquo; permission to use.
+A certification in a lower environment is also required. Please reach out to your Customer Success representative to enable this permission on your API key.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getContactDetails</span><span class="p">(</span><span class="n">byGuid</span> <span class="nv">guid</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Contact.html">Contact</a></span><span class="o">.</span><span class="kt">Detail</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>guid</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Olo user guid.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO20updateContactDetails6byGuid13contactNumber10completionySS_SSys6ResultOyAA11APIResponseVyAA0H0O6DetailVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/updateContactDetails(byGuid:contactNumber:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO20updateContactDetails6byGuid13contactNumber10completionySS_SSys6ResultOyAA11APIResponseVyAA0H0O6DetailVGs5Error_pGcSgtFZ">updateContactDetails(byGuid:<wbr>contactNumber:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the user&rsquo;s Contact Number in case of issues with orders.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This endpoint requires the &ldquo;Access Unauthenticated Users&rdquo; permission to use.
+A certification in a lower environment is also required. Please reach out to your Customer Success representative to enable this permission on your API key.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updateContactDetails</span><span class="p">(</span><span class="n">byGuid</span> <span class="nv">guid</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                        <span class="nv">contactNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                        <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Contact.html">Contact</a></span><span class="o">.</span><span class="kt">Detail</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>guid</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Olo user guid.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>contactNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User&rsquo;s contact number</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO17getContactOptions6byGuid10completionySS_ys6ResultOyAA11APIResponseVyAA0H0O6OptionVGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/getContactOptions(byGuid:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO17getContactOptions6byGuid10completionySS_ys6ResultOyAA11APIResponseVyAA0H0O6OptionVGs5Error_pGcSgtFZ">getContactOptions(byGuid:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the user&rsquo;s current communication preferences, i.e. marketing email opt-in, upsell prompts, email receipts, and feedback follow-up.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This endpoint requires the &ldquo;Access Unauthenticated Users&rdquo; permission to use.
+A certification in a lower environment is also required. Please reach out to your Customer Success representative to enable this permission on your API key.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getContactOptions</span><span class="p">(</span><span class="n">byGuid</span> <span class="nv">guid</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Contact.html">Contact</a></span><span class="o">.</span><span class="kt">Option</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>guid</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Olo user guid.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO20updateContactOptions6byGuid6option10completionySS_AA0H0O6OptionVys6ResultOyAA11APIResponseVyAKGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/updateContactOptions(byGuid:option:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO20updateContactOptions6byGuid6option10completionySS_AA0H0O6OptionVys6ResultOyAA11APIResponseVyAKGs5Error_pGcSgtFZ">updateContactOptions(byGuid:<wbr>option:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates the user&rsquo;s current communication preferences, i.e. marketing email opt-in, upsell prompts, email receipts, and feedback follow-up.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This endpoint requires the &ldquo;Access Unauthenticated Users&rdquo; permission to use.
+A certification in a lower environment is also required. Please reach out to your Customer Success representative to enable this permission on your API key.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updateContactOptions</span><span class="p">(</span><span class="n">byGuid</span> <span class="nv">guid</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                        <span class="nv">option</span><span class="p">:</span> <span class="kt"><a href="../Enums/Contact.html">Contact</a></span><span class="o">.</span><span class="kt">Option</span><span class="p">,</span>
+                                        <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Enums/Contact.html">Contact</a></span><span class="o">.</span><span class="kt">Option</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>guid</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Olo user guid.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>option</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Enums/Contact/Option.html">Contact.Option</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:21CheetahDigitalOloCore7UserAPIO14changePassword6byGuid03newH010completionySS_SSys6ResultOyAA11APIResponseVyAA0E0V06ChangeH0VGs5Error_pGcSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/changePassword(byGuid:newPassword:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:21CheetahDigitalOloCore7UserAPIO14changePassword6byGuid03newH010completionySS_SSys6ResultOyAA11APIResponseVyAA0E0V06ChangeH0VGs5Error_pGcSgtFZ">changePassword(byGuid:<wbr>newPassword:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Change an Olo user&rsquo;s password.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This endpoint is not compatible with the SSO flow outlined in the /users/getorcreate endpoint.</p>
+
+</div><div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>This endpoint requires the &ldquo;Access Unauthenticated Users&rdquo; permission to use.
+A certification in a lower environment is also required. Please reach out to your Customer Success representative to enable this permission on your API key.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">changePassword</span><span class="p">(</span><span class="n">byGuid</span> <span class="nv">guid</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                  <span class="nv">newPassword</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+                                  <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:21CheetahDigitalOloCore18ResponseCompletiona">ResponseCompletion</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/User.html">User</a></span><span class="o">.</span><span class="kt">ChangePassword</span><span class="o">&gt;</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>guid</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Olo user guid.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>newPassword</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>User&rsquo;s new password</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The closure to be executed once the request has finished</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2022-04-20)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>

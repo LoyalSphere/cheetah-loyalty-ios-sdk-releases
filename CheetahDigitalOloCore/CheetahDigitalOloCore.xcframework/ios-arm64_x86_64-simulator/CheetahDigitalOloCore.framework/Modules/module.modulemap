@@ -1,0 +1,11 @@
+framework module CheetahDigitalOloCore {
+  umbrella header "CheetahDigitalOloCore.h"
+
+  export *
+  module * { export * }
+}
+
+module CheetahDigitalOloCore.Swift {
+    header "CheetahDigitalOloCore-Swift.h"
+    requires objc
+}
