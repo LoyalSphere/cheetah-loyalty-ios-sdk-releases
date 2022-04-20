@@ -1,4 +1,11 @@
 framework module CheetahDigitalUI {
-  header "CheetahDigitalUI-Swift.h"
-  requires objc
+  umbrella header "CheetahDigitalUI.h"
+
+  export *
+  module * { export * }
+}
+
+module CheetahDigitalUI.Swift {
+    header "CheetahDigitalUI-Swift.h"
+    requires objc
 }

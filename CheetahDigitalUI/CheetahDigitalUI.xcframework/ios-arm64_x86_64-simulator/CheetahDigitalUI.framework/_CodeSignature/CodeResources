@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		mE8j3aFP3R3N5urWYvEfqqGpDbU=
+		9uVQkE6wFFPlKS2yZcNuKNUNWS0=
 		</data>
 		<key>CarouselItemCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -60,13 +60,13 @@
 		<data>
 		jhZDnN8jVZykCwMqVjaueK7wqMg=
 		</data>
-		<key>Headers/CheetahLoyaltyUI.h</key>
+		<key>Headers/CheetahDigitalUI.h</key>
 		<data>
 		AEFxBcMe+BYAU2wYOI102ySASm4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7V1RgMSDxmgl0pfMxcFkM/P8XwE=
+		fILNn4uYoWUDyYbUluaGN6zMiDI=
 		</data>
 		<key>ListItemCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LhT70Fnb0O6qv2gTzKgg+trMhn8=
+		bmddluPugRH4TUFUIR2l3gWNfLA=
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JPpAdaFhaxZOfat1rmUYhLiXGvA=
+		CoszqDCirFJwQr1hwrRqPNlKM2U=
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -110,15 +110,15 @@
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		48nC2y0KHMckf/lmS1yEzy4aJFc=
+		2mXnjAX4IDSRkbs9iCY4sRAD8fM=
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		R499DNuqELSoNwVEBly4GFQdCko=
+		vU3bQfUD53xv+pWFynxKMSL1DVM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		0MoRN7G2zxUeILZPZnZq2UGG8S4=
+		y2vy96e32+hSc/6wxSU8fnBLGiQ=
 		</data>
 		<key>ScannerViewController.nib/objects-13.0+.nib</key>
 		<data>
@@ -201,7 +201,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YdL/h2UxnXXavDvrQPXOERXx+cGh1XulgA5wew96Uxk=
+			KCbSpQ12RetxHgj9UTfpcBW+vpwcz3axV/mYJF/JGNE=
 			</data>
 		</dict>
 		<key>CarouselItemCell.nib/objects-12.3+.nib</key>
@@ -274,7 +274,7 @@
 			k01DgxV8CbQ8oo5luqseA507kIybZY9y/lJiKQuQ0Oo=
 			</data>
 		</dict>
-		<key>Headers/CheetahLoyaltyUI.h</key>
+		<key>Headers/CheetahDigitalUI.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -334,14 +334,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5IyJ4a8PO9pvmCRjF3jw8saCmM0XfqljGasm5wBU37k=
+			i//TiQLzCIrg+z0r/G5dto395APioeJCteEJrXoAzz8=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eAOFbP6xRAOnIL6d45H6tSI4uIyPFnkXhFonoPOmfaU=
+			4UfyYg9vxhb+01sxAP5T2cJFGfWsfnVtY0+r0IJD78w=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -355,21 +355,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k3sXnyv7kdrLEbtQNZUqyITh0jvwgcRpNPqNUDOxntI=
+			o7C5wXkFwew+RmCAMbUecd8Vx6L8z3sRyXhUs+g5GV4=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rqW+06WqLcaLi2a78Nh5el0wH2Bv05svwPWgPHCtzLw=
+			5H6Ng3xbWIY6vgythQmDBxAU/HWuhmNdC+ZuQrJQFZo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IxaKbE1cHMSvEEn2if5ytHrDHgs/PvTYoQhqw2oV8tY=
+			lvngRt4OzjwxLMjXzuRLp2kT0HHBzU3PXXFW36Mgmhc=
 			</data>
 		</dict>
 		<key>ScannerViewController.nib/objects-13.0+.nib</key>

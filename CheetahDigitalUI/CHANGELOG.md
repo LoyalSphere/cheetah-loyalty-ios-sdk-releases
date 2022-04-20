@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-2.1.1] - 2022-04-19
+### Fixed
+- Framework not build correctly
+
 ## [UI-2.1.0] - 2022-04-18
 ### Changed
 - Built using Xcode 13.3.
