@@ -1,0 +1,11 @@
+framework module CheetahDigitalChallenges {
+  umbrella header "CheetahDigitalChallenges.h"
+
+  export *
+  module * { export * }
+}
+
+module CheetahDigitalChallenges.Swift {
+    header "CheetahDigitalChallenges-Swift.h"
+    requires objc
+}

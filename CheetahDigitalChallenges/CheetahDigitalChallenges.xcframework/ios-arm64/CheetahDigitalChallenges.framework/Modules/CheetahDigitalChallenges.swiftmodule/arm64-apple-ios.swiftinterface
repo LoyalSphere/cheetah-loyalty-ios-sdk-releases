@@ -1,0 +1,683 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahDigitalChallenges
+@_exported import CheetahDigitalChallenges
+import CheetahDigitalCore
+import CheetahDigitalUI
+import CheetahDigitalUtils
+import Photos
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GenericChallengeViewController : CheetahDigitalUI.GenericAlertViewController, CheetahDigitalChallenges.ChallengeResponderDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var containerStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var activityIndicator: UIKit.UIActivityIndicatorView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var messageContainerView: UIKit.UIView!
+  @_Concurrency.MainActor(unsafe) convenience public init(with challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>)
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol PreferenceChallengeCollectionController : CheetahDigitalUI.CollectionController {
+  var preferences: [CheetahDigitalCore.Preference] { get set }
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PreferenceChallengeViewController : CheetahDigitalUI.CollectionViewController, CheetahDigitalChallenges.ChallengeResponderDelegate {
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) open var responder: CheetahDigitalChallenges.ChallengeResponder?
+  @_Concurrency.MainActor(unsafe) convenience public init(with challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int? = nil, preferenceListController: CheetahDigitalChallenges.PreferenceChallengeCollectionController, nibName: Swift.String = "CollectionViewController")
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupSubmitButton()
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>)
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SurveyTextViewCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var textView: UIKit.UITextView!
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public typealias ProfileChallengeController = (CheetahDigitalChallenges.ProfileResponderDelegate & CheetahDigitalUI.CollectionController)
+public protocol ProfileResponderDelegate {
+  func modifiedAttributes(_ profileChallengeViewController: CheetahDigitalChallenges.ProfileChallengeViewController) -> [CheetahDigitalCore.MutableProfileAttribute]
+  func requiredAttributeIsMissing(_ profileChallengeViewController: CheetahDigitalChallenges.ProfileChallengeViewController, name: CheetahDigitalCore.MutableProfileAttribute)
+  func noModifiedAttributesFound(_ profileChallengeViewController: CheetahDigitalChallenges.ProfileChallengeViewController)
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProfileChallengeViewController : CheetahDigitalUI.CollectionViewController, CheetahDigitalChallenges.ChallengeResponderDelegate {
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) open var responder: CheetahDigitalChallenges.ChallengeResponder?
+  @_Concurrency.MainActor(unsafe) open var answer: CheetahDigitalUtils.Parameters?
+  @_Concurrency.MainActor(unsafe) convenience public init(with challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int? = nil, collectionController: CheetahDigitalChallenges.ProfileChallengeController?, nibName: Swift.String = "CollectionViewController")
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupSubmitButton()
+  @_Concurrency.MainActor(unsafe) open func answerIsSetFromAttributes(_ attributes: [CheetahDigitalCore.MutableProfileAttribute]) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>)
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SurveyTextFieldCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var textField: UIKit.UITextField!
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MultiQuestionCarouselController : CheetahDigitalUI.CarouselCollectionController<CheetahDigitalChallenges.SurveyResponderController> {
+  @_Concurrency.MainActor(unsafe) final public let cellReuseIdentifier: Swift.String
+  @_Concurrency.MainActor(unsafe) open var responderViewController: CheetahDigitalChallenges.MultiQuestionChallengeViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var surveyAnswers: [CheetahDigitalUtils.Parameters] {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var isAnswersComplete: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) convenience public init(challenge: CheetahDigitalCore.Challenge)
+  @_Concurrency.MainActor(unsafe) override open func setupPageControl()
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) open func previousButtonPressed(_ sender: UIKit.UIButton)
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc override open func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) open func getResponders(from challenge: CheetahDigitalCore.Challenge) -> [CheetahDigitalChallenges.SurveyResponderController]
+  @_Concurrency.MainActor(unsafe) open func scrollToNext()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MultiQuestionCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func setupEmbeddedCollectionView()
+  @objc deinit
+}
+public protocol MemeColorPickerDelegate {
+  func presentColorPicker(in memeChallengeViewController: CheetahDigitalChallenges.MemeChallengeViewController)
+  var userSelectedColor: UIKit.UIColor { get set }
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MemeChallengeViewController : CheetahDigitalUI.NibViewController, CheetahDigitalChallenges.ChallengeResponderDelegate, UIKit.UIGestureRecognizerDelegate, UIKit.UITextFieldDelegate, UIKit.UIPickerViewDelegate, UIKit.UIPickerViewDataSource {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var captionSeparateFromImageTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var fontTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var colorPickerButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var canvasView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var captionTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var addButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var captionEditorView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var submitButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) open var responder: CheetahDigitalChallenges.ChallengeResponder?
+  @_Concurrency.MainActor(unsafe) open var fontPickerView: UIKit.UIPickerView {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var selectedCaption: UIKit.UILabel?
+  @_Concurrency.MainActor(unsafe) open var captionColor: UIKit.UIColor {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var minCaptionFontSize: Swift.Int
+  @_Concurrency.MainActor(unsafe) open var maxCaptionFontSize: Swift.Int
+  @_Concurrency.MainActor(unsafe) open var fontSizes: [Swift.Int]
+  @_Concurrency.MainActor(unsafe) open var captionFont: UIKit.UIFont {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var memeColorPickerDelegate: CheetahDigitalChallenges.MemeColorPickerDelegate?
+  @_Concurrency.MainActor(unsafe) open var shareToSocialMediaDelegate: CheetahDigitalChallenges.ShareChallengeToSocialMediaDelegate?
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func dismiss(animated flag: Swift.Bool, completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) convenience public init(with challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func updateSelectedCaption()
+  @_Concurrency.MainActor(unsafe) open func selectCaption(label: UIKit.UILabel)
+  @_Concurrency.MainActor(unsafe) open func resetViews()
+  @_Concurrency.MainActor(unsafe) open func createCaptionInsideCanvas()
+  @objc @_Concurrency.MainActor(unsafe) open func didPanCaption(_ gestureRecognizer: UIKit.UIPanGestureRecognizer)
+  @objc @_Concurrency.MainActor(unsafe) open func didTapCaption(_ gestureRecognizer: UIKit.UITapGestureRecognizer)
+  @objc @_Concurrency.MainActor(unsafe) open func dismissKeyboard()
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>)
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc open func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldReceive touch: UIKit.UITouch) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func pickerView(_ pickerView: UIKit.UIPickerView, titleForRow row: Swift.Int, forComponent component: Swift.Int) -> Swift.String?
+  @_Concurrency.MainActor(unsafe) @objc public func pickerView(_ pickerView: UIKit.UIPickerView, didSelectRow row: Swift.Int, inComponent component: Swift.Int)
+  @_Concurrency.MainActor(unsafe) @objc public func numberOfComponents(in pickerView: UIKit.UIPickerView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc public func pickerView(_ pickerView: UIKit.UIPickerView, numberOfRowsInComponent component: Swift.Int) -> Swift.Int
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public func takeSnaphot(frame: CoreGraphics.CGRect) -> UIKit.UIImage
+}
+public protocol ShareChallengeToSocialMediaDelegate {
+  func share(image: UIKit.UIImage, with: CheetahDigitalCore.Challenge, completion: (() -> Swift.Void)?)
+  func share(video url: Foundation.URL, with: CheetahDigitalCore.Challenge, completion: (() -> Swift.Void)?)
+  func share(url: Foundation.URL, with: CheetahDigitalCore.Challenge, completion: (() -> Swift.Void)?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RatingSurveyResponderController : CheetahDigitalChallenges.SurveyResponderController, CheetahDigitalChallenges.SurveyRatingCellDelegate {
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func responderCell(for collectionView: UIKit.UICollectionView, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) open func buildAnswer(with rating: Swift.Int)
+  @_Concurrency.MainActor(unsafe) open func surveyRatingCellMaxRatingDidChange(_ cell: CheetahDigitalChallenges.SurveyRatingCell, maxRating: Swift.Int)
+  @_Concurrency.MainActor(unsafe) open func surveyRatingCellRateDidChange(_ cell: CheetahDigitalChallenges.SurveyRatingCell, rating: Swift.Int)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SurveyChallengeViewController : CheetahDigitalUI.CollectionViewController, CheetahDigitalChallenges.ChallengeResponderDelegate {
+  @_Concurrency.MainActor(unsafe) open var responder: CheetahDigitalChallenges.ChallengeResponder?
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) override open class var nibName: Swift.String {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) convenience public init(with challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int? = nil, responderController: CheetahDigitalChallenges.SurveyResponderController)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupTitle()
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>)
+  @_Concurrency.MainActor(unsafe) open func respondButtonPressed()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SurveyResponderController : ObjectiveC.NSObject, CheetahDigitalUI.CollectionController {
+  @_Concurrency.MainActor(unsafe) open var navigationItemTitle: Swift.String?
+  @_Concurrency.MainActor(unsafe) open var answer: CheetahDigitalUtils.Parameters?
+  @_Concurrency.MainActor(unsafe) open var statefulViewController: CheetahDigitalUI.StatefulViewController?
+  @_Concurrency.MainActor(unsafe) open var surveyChallengeViewController: CheetahDigitalChallenges.SurveyChallengeViewController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var collectionViewController: CheetahDigitalUI.CollectionViewController? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) weak open var collectionView: UIKit.UICollectionView? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var responseSetting: CheetahDigitalCore.SurveyChallengeResponseSetting? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var survey: CheetahDigitalCore.Survey?
+  @_Concurrency.MainActor(unsafe) open var surveyRespondable: CheetahDigitalChallenges.SurveyRespondable? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) convenience public init(survey: CheetahDigitalCore.Survey)
+  @_Concurrency.MainActor(unsafe) open func loadContent()
+  @_Concurrency.MainActor(unsafe) open func refreshContent()
+  @_Concurrency.MainActor(unsafe) open func setupCollectionView()
+  @_Concurrency.MainActor(unsafe) open func registerComponents()
+  @_Concurrency.MainActor(unsafe) open func responderCell(for collectionView: UIKit.UICollectionView, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) open func handleError(_ error: Swift.Error, in collectionViewController: CheetahDigitalUI.CollectionViewController?)
+  @_Concurrency.MainActor(unsafe) @objc open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc @_Concurrency.MainActor(unsafe) open func respondButtonPressed(_ sender: UIKit.UIButton)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension CheetahDigitalChallenges.SurveyChallengeViewController {
+  @_Concurrency.MainActor(unsafe) public static func surveyResponderFor(challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int? = nil) -> CheetahDigitalChallenges.SurveyChallengeViewController?
+}
+public protocol SurveyRespondable : CheetahDigitalChallenges.SurveyDetailCellPresentable, CheetahDigitalChallenges.SurveyRespondCellPresentable {
+}
+extension CheetahDigitalCore.SurveyChallengeResponseSetting : CheetahDigitalChallenges.SurveyRespondable {
+  public var image: UIKit.UIImage? {
+    get
+  }
+  public var questionText: Swift.String {
+    get
+  }
+  public var descriptionText: Swift.String {
+    get
+  }
+  public var respondTitle: Swift.String {
+    get
+  }
+}
+extension CheetahDigitalCore.Survey where Self : CheetahDigitalChallenges.SurveyRespondable {
+  public var image: UIKit.UIImage? {
+    get
+  }
+  public var questionText: Swift.String {
+    get
+  }
+  public var descriptionText: Swift.String {
+    get
+  }
+  public var respondTitle: Swift.String {
+    get
+  }
+}
+extension CheetahDigitalCore.MultipleChoiceSurvey : CheetahDigitalChallenges.SurveyRespondable {
+}
+extension CheetahDigitalCore.RatingSurvey : CheetahDigitalChallenges.SurveyRespondable {
+}
+extension CheetahDigitalCore.TextSurvey : CheetahDigitalChallenges.SurveyRespondable {
+}
+public protocol ChallengeResponderDelegate : AnyObject {
+  func onFailure(with error: Swift.Error)
+  func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>)
+}
+public protocol ChallengeResponder : AnyObject {
+  var challenge: CheetahDigitalCore.Challenge { get }
+  var delegate: CheetahDigitalChallenges.ChallengeResponderDelegate? { get set }
+  var isResponding: Swift.Bool { get set }
+  func didRespond(with result: Swift.Result<CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>, Swift.Error>)
+  func respond(with parameters: CheetahDigitalUtils.Parameters?)
+  func respond(with image: UIKit.UIImage, and parameters: CheetahDigitalUtils.Parameters?)
+  func respond(withVideo videoURL: Foundation.URL, and parameters: CheetahDigitalUtils.Parameters?)
+}
+@objc open class BaseChallengeResponder : ObjectiveC.NSObject, CheetahDigitalChallenges.ChallengeResponder {
+  open var challenge: CheetahDigitalCore.Challenge
+  open var isResponding: Swift.Bool
+  weak open var delegate: CheetahDigitalChallenges.ChallengeResponderDelegate?
+  public init(with challenge: CheetahDigitalCore.Challenge, delegate: CheetahDigitalChallenges.ChallengeResponderDelegate? = nil)
+  open func didRespond(with result: Swift.Result<CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>, Swift.Error>)
+  open func respond(with parameters: CheetahDigitalUtils.Parameters?)
+  open func respond(with image: UIKit.UIImage, and parameters: CheetahDigitalUtils.Parameters? = nil)
+  open func respond(withVideo videoURL: Foundation.URL, and parameters: CheetahDigitalUtils.Parameters? = nil)
+  @objc deinit
+}
+@objc open class ReEnterChallengeResponder : CheetahDigitalChallenges.BaseChallengeResponder {
+  open var responseId: Swift.Int
+  public init(with challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int, delegate: CheetahDigitalChallenges.ChallengeResponderDelegate? = nil)
+  override open func respond(with parameters: CheetahDigitalUtils.Parameters?)
+  override open func respond(with image: UIKit.UIImage, and parameters: CheetahDigitalUtils.Parameters? = nil)
+  override open func respond(withVideo videoURL: Foundation.URL, and parameters: CheetahDigitalUtils.Parameters? = nil)
+  @objc deinit
+}
+public enum ChallengesNotification : CheetahDigitalUtils.CheetahNotification {
+  case challengeUpdated
+  public var name: Swift.String {
+    get
+  }
+  public static func == (a: CheetahDigitalChallenges.ChallengesNotification, b: CheetahDigitalChallenges.ChallengesNotification) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+open class ViewPhotoChallengeController : CheetahDigitalChallenges.ViewContentController {
+  open var navigationItemTitle: Swift.String?
+  open var responseSetting: CheetahDigitalCore.ViewContentChallengeResponseSetting
+  open var contentHasLoaded: Swift.Bool {
+    get
+    set
+  }
+  open var statefulViewController: CheetahDigitalUI.StatefulViewController?
+  open var viewContentViewController: CheetahDigitalChallenges.ViewContentViewController? {
+    get
+  }
+  open var shareToSocialMediaDelegate: CheetahDigitalChallenges.ShareChallengeToSocialMediaDelegate?
+  open var imageView: UIKit.UIImageView
+  public init(responseSetting: CheetahDigitalCore.ViewContentChallengeResponseSetting)
+  open func loadContent()
+  open func refreshContent()
+  open func shareToSocialMedia(completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AvatarChallengeViewController : CheetahDigitalUI.NibViewController, CheetahDigitalChallenges.ChallengeResponderDelegate, CheetahDigitalUI.ImagePickerPresenterDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var scrollView: UIKit.UIScrollView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var submitButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var uploadLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) open var imagePickerPresenter: CheetahDigitalUI.ImagePickerPresenter?
+  @_Concurrency.MainActor(unsafe) open var playerObserver: ObjectiveC.NSObjectProtocol?
+  @_Concurrency.MainActor(unsafe) open var uiImage: UIKit.UIImage?
+  @_Concurrency.MainActor(unsafe) open var responder: CheetahDigitalChallenges.ChallengeResponder?
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) convenience public init(with challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupImageView()
+  @_Concurrency.MainActor(unsafe) open func setupUploadLabel()
+  @objc @_Concurrency.MainActor(unsafe) open func uploadPhoto()
+  @_Concurrency.MainActor(unsafe) open func didSelect(asset: Photos.PHAsset?, image: UIKit.UIImage, with imageURL: Foundation.URL?, from imagePickerPresenter: CheetahDigitalUI.ImagePickerPresenter)
+  @_Concurrency.MainActor(unsafe) open func didSelect(asset: Photos.PHAsset?, movieURL: Foundation.URL, from imagePickerPresenter: CheetahDigitalUI.ImagePickerPresenter)
+  @_Concurrency.MainActor(unsafe) open func didCancelPickingImage()
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>)
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc open class ReferralChallengeController : ObjectiveC.NSObject, UIKit.UIActivityItemSource {
+  open var challenge: CheetahDigitalCore.Challenge?
+  public init(challenge: CheetahDigitalCore.Challenge)
+  @objc open func activityViewControllerPlaceholderItem(_ activityViewController: UIKit.UIActivityViewController) -> Any
+  @objc open func activityViewController(_ activityViewController: UIKit.UIActivityViewController, itemForActivityType activityType: UIKit.UIActivity.ActivityType?) -> Any?
+  @objc open func activityViewController(_ activityViewController: UIKit.UIActivityViewController, subjectForActivityType activityType: UIKit.UIActivity.ActivityType?) -> Swift.String
+  open func showReferralChallengeResponder(in viewController: UIKit.UIViewController? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MultipleChoiceSurveyResponderController : CheetahDigitalChallenges.SurveyResponderController, CheetahDigitalUI.SelectionButtonDelegate, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) open var selectedOptions: [Swift.Int]
+  @_Concurrency.MainActor(unsafe) open var otherAnswer: Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func responderCell(for collectionView: UIKit.UICollectionView, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) open func willChange(_ selectionButton: CheetahDigitalUI.SelectionButton, isSelected: Swift.Bool) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func didTap(_ selectionButton: CheetahDigitalUI.SelectionButton)
+  @_Concurrency.MainActor(unsafe) @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func buildAnswer()
+  @_Concurrency.MainActor(unsafe) open func choiceCell(for collectionView: UIKit.UICollectionView, at indexPath: Foundation.IndexPath, item: Any) -> CheetahDigitalChallenges.SurveyChoiceCell?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CheckInChallengeViewController : CheetahDigitalUI.NibViewController, CheetahDigitalChallenges.ChallengeResponderDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var stackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var activityIndicatorView: UIKit.UIActivityIndicatorView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var headerLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var detailLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var subheaderLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var respondButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) open var nearestPlace: CheetahDigitalCore.Place? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var responder: CheetahDigitalChallenges.ChallengeResponder?
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) open var userLocation: CheetahDigitalCore.UserLocation?
+  @_Concurrency.MainActor(unsafe) convenience public init(with challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func refetchLatestChallenge()
+  @_Concurrency.MainActor(unsafe) open func setupNearby(place: CheetahDigitalCore.Place)
+  @_Concurrency.MainActor(unsafe) open func setupNoNearby()
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>)
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol ChallengeDetailController : CheetahDigitalUI.ContentController {
+  var challenge: CheetahDigitalCore.Challenge? { get set }
+  var responseInfo: CheetahDigitalCore.Challenge.ResponseInfo? { get set }
+  func setupViewController(_ viewController: CheetahDigitalChallenges.ChallengeResponseDetailViewController)
+  func backButtonPressed(_ backButton: UIKit.UIButton)
+  func feedButtonPressed(_ feedButton: UIKit.UIButton)
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ChallengeResponseDetailViewController : CheetahDigitalUI.NibViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var responseMessageLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var challengeDetailsLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var feedButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var backButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) open var challengeDetailController: CheetahDigitalChallenges.ChallengeDetailController?
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) convenience public init(challengeDetailController: CheetahDigitalChallenges.ChallengeDetailController)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MultiQuestionChallengeViewController : CheetahDigitalUI.CollectionViewController, CheetahDigitalChallenges.ChallengeResponderDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var pageControl: UIKit.UIPageControl!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var buttonsStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var previousButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var respondButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) open var carouselController: CheetahDigitalChallenges.MultiQuestionCarouselController? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var responder: CheetahDigitalChallenges.ChallengeResponder? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) convenience public init(with challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupPageControl()
+  @_Concurrency.MainActor(unsafe) open func setupButtons()
+  @_Concurrency.MainActor(unsafe) public func onFailure(with error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) public func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GameChallengeViewController : CheetahDigitalUI.NibViewController, CheetahDigitalChallenges.ChallengeResponderDelegate, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var gameView: WebKit.WKWebView!
+  @_Concurrency.MainActor(unsafe) open var prizeWon: CheetahDigitalCore.Prize?
+  @_Concurrency.MainActor(unsafe) open var errorDescription: Swift.String
+  @_Concurrency.MainActor(unsafe) open var responder: CheetahDigitalChallenges.ChallengeResponder?
+  @_Concurrency.MainActor(unsafe) convenience public init(with challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupView()
+  @_Concurrency.MainActor(unsafe) open func loadURL(url: Foundation.URL)
+  @_Concurrency.MainActor(unsafe) open func challengeViewDidFinishLoading()
+  @_Concurrency.MainActor(unsafe) open func challengeViewShowResult()
+  @_Concurrency.MainActor(unsafe) open func challengeViewSubmitChallenge()
+  @_Concurrency.MainActor(unsafe) @objc open func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc open func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc open func webView(_ webView: WebKit.WKWebView, didCommit navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc open func webView(_ webView: WebKit.WKWebView, runJavaScriptAlertPanelWithMessage message: Swift.String, initiatedByFrame frame: WebKit.WKFrameInfo, completionHandler: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>)
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc open func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+open class ViewUrlChallengeController : CheetahDigitalChallenges.ViewContentController {
+  open var navigationItemTitle: Swift.String?
+  open var responseSetting: CheetahDigitalCore.ViewContentChallengeResponseSetting
+  open var contentHasLoaded: Swift.Bool {
+    get
+    set
+  }
+  open var statefulViewController: CheetahDigitalUI.StatefulViewController?
+  open var viewContentViewController: CheetahDigitalChallenges.ViewContentViewController? {
+    get
+  }
+  open var shareToSocialMediaDelegate: CheetahDigitalChallenges.ShareChallengeToSocialMediaDelegate?
+  open var contentUrl: Foundation.URL?
+  open var webView: WebKit.WKWebView?
+  public init(responseSetting: CheetahDigitalCore.ViewContentChallengeResponseSetting)
+  open func loadContent()
+  open func refreshContent()
+  open func shareToSocialMedia(completion: (() -> Swift.Void)? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SurveyChoiceCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var containerView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var stackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var selectionStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var textField: UIKit.UITextField!
+  @_Concurrency.MainActor(unsafe) open var listType: CheetahDigitalCore.MultipleChoiceSurvey.ListType {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var selectionButton: CheetahDigitalUI.CheckBox? {
+    get
+  }
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor(unsafe) open func setUpSelectionButton()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SurveyRespondCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var respondButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol SurveyRespondCellPresentable {
+  var respondTitle: Swift.String { get }
+  func configure(cell: CheetahDigitalChallenges.SurveyRespondCell)
+}
+extension CheetahDigitalChallenges.SurveyRespondCellPresentable {
+  public func configure(cell: CheetahDigitalChallenges.SurveyRespondCell)
+}
+public protocol ViewContentController : CheetahDigitalUI.ContentController {
+  var responseSetting: CheetahDigitalCore.ViewContentChallengeResponseSetting { get }
+  var contentHasLoaded: Swift.Bool { get set }
+  var shareToSocialMediaDelegate: CheetahDigitalChallenges.ShareChallengeToSocialMediaDelegate? { get set }
+  func shareToSocialMedia(completion: (() -> Swift.Void)?)
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ViewContentViewController : CheetahDigitalUI.StatefulViewController, CheetahDigitalChallenges.ChallengeResponderDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var contentView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var actionButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var viewContentController: CheetahDigitalChallenges.ViewContentController? {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var responder: CheetahDigitalChallenges.ChallengeResponder?
+  @_Concurrency.MainActor(unsafe) convenience public init(with challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int? = nil, viewContentController: CheetahDigitalChallenges.ViewContentController)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupTitle()
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>)
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(controller: CheetahDigitalUI.ContentController?, loading: CheetahDigitalUI.LoadableViewController? = nil, empty: CheetahDigitalUI.ReloadableViewController? = nil, error: CheetahDigitalUI.ReloadableViewController? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class NumericSurveyResponderController : CheetahDigitalChallenges.SurveyResponderController, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func responderCell(for collectionView: UIKit.UICollectionView, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class MediaChallengeViewController : CheetahDigitalUI.NibViewController, CheetahDigitalUI.ImagePickerPresenterDelegate, CheetahDigitalChallenges.ChallengeResponderDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var videoContainerView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var textView: CheetahDigitalUI.GrowingTextView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var submitButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var actionLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var scrollView: UIKit.UIScrollView!
+  @_Concurrency.MainActor(unsafe) open var uiImage: UIKit.UIImage?
+  @_Concurrency.MainActor(unsafe) open var videoURL: Foundation.URL?
+  @_Concurrency.MainActor(unsafe) open var imageURL: Swift.String?
+  @_Concurrency.MainActor(unsafe) open var playerObserver: ObjectiveC.NSObjectProtocol?
+  @_Concurrency.MainActor(unsafe) open var imagePickerPresenter: CheetahDigitalUI.ImagePickerPresenter?
+  @_Concurrency.MainActor(unsafe) open var loadingAlert: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) open var responder: CheetahDigitalChallenges.ChallengeResponder?
+  @_Concurrency.MainActor(unsafe) open var player: AVFoundation.AVPlayer?
+  @_Concurrency.MainActor(unsafe) convenience public init(with challenge: CheetahDigitalCore.Challenge, responseId: Swift.Int? = nil)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func setupTitle()
+  @_Concurrency.MainActor(unsafe) open func setupTextView()
+  @_Concurrency.MainActor(unsafe) open func setupImageView()
+  @_Concurrency.MainActor(unsafe) open func setupVideoContainerView()
+  @_Concurrency.MainActor(unsafe) open func setupLabel()
+  @objc @_Concurrency.MainActor(unsafe) open func uploadMedia()
+  @_Concurrency.MainActor(unsafe) open func onSuccess(with apiResponse: CheetahDigitalCore.APIResponse<CheetahDigitalCore.Challenge.ResponseInfo>)
+  @_Concurrency.MainActor(unsafe) open func onFailure(with error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) open func didSelect(asset: Photos.PHAsset?, image: UIKit.UIImage, with imageURL: Foundation.URL?, from imagePickerPresenter: CheetahDigitalUI.ImagePickerPresenter)
+  @_Concurrency.MainActor(unsafe) open func didSelect(asset: Photos.PHAsset?, movieURL: Foundation.URL, from imagePickerPresenter: CheetahDigitalUI.ImagePickerPresenter)
+  @_Concurrency.MainActor(unsafe) open func didCancelPickingImage()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SurveyRatingCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var containerView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var stackView: UIKit.UIStackView!
+  @_Concurrency.MainActor(unsafe) open var maxRating: Swift.Int {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var ratingButtonGroupName: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var delegate: CheetahDigitalChallenges.SurveyRatingCellDelegate?
+  @_Concurrency.MainActor(unsafe) open var rating: Swift.Int {
+    get
+    set
+  }
+  @objc override dynamic open func awakeFromNib()
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) open func setupRatingButtons()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+public protocol SurveyRatingCellDelegate {
+  func surveyRatingCellMaxRatingDidChange(_ cell: CheetahDigitalChallenges.SurveyRatingCell, maxRating: Swift.Int)
+  func surveyRatingCellRateDidChange(_ cell: CheetahDigitalChallenges.SurveyRatingCell, rating: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SurveyDetailCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var containerView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var stackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var imageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var questionLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var descriptionLabel: UIKit.UILabel!
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol SurveyDetailCellPresentable {
+  var image: UIKit.UIImage? { get }
+  var questionText: Swift.String { get }
+  var descriptionText: Swift.String { get }
+  func configure(cell: CheetahDigitalChallenges.SurveyDetailCell)
+}
+extension CheetahDigitalChallenges.SurveyDetailCellPresentable {
+  public func configure(cell: CheetahDigitalChallenges.SurveyDetailCell)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TextSurveyResponderController : CheetahDigitalChallenges.SurveyResponderController, UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func responderCell(for collectionView: UIKit.UICollectionView, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc open func textView(_ textView: UIKit.UITextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension CheetahDigitalChallenges.ChallengesNotification : Swift.Equatable {}
+extension CheetahDigitalChallenges.ChallengesNotification : Swift.Hashable {}
