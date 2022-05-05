@@ -2220,6 +2220,7 @@ extension CheetahDigitalCore.Award {
 }
 public struct Badge : Swift.Codable, Swift.Equatable {
   public var id: Swift.Int
+  public var badge: CheetahDigitalCore.Badge.Badges?
   public var name: Swift.String
   public var label: Swift.String
   public var type: Swift.String
@@ -2235,7 +2236,7 @@ public struct Badge : Swift.Codable, Swift.Equatable {
   public var paymentType: Swift.String
   public var responseCurrencyAmount: Swift.String
   public var responseCurrencyName: Swift.String
-  public init(id: Swift.Int, name: Swift.String, label: Swift.String, type: Swift.String, levels: CheetahDigitalCore.CustomLevel?, imageUrl: Swift.String, earned: Swift.Bool, description: Swift.String, status: Swift.String, startPeriod: Swift.String, endPeriod: Swift.String, expirationInterval: Swift.Int, expirationIntervalPeriod: Swift.String, paymentType: Swift.String, responseCurrencyAmount: Swift.String, responseCurrencyName: Swift.String)
+  public init(id: Swift.Int, badge: CheetahDigitalCore.Badge.Badges?, name: Swift.String, label: Swift.String, type: Swift.String, levels: CheetahDigitalCore.CustomLevel?, imageUrl: Swift.String, earned: Swift.Bool, description: Swift.String, status: Swift.String, startPeriod: Swift.String, endPeriod: Swift.String, expirationInterval: Swift.Int, expirationIntervalPeriod: Swift.String, paymentType: Swift.String, responseCurrencyAmount: Swift.String, responseCurrencyName: Swift.String)
   public struct Level : Swift.Codable, Swift.Equatable {
     public var level: Swift.Int
     public var earned: Swift.Bool
@@ -2245,6 +2246,11 @@ public struct Badge : Swift.Codable, Swift.Equatable {
     public var imageUrl: Swift.String
     public init(level: Swift.Int, earned: Swift.Bool, name: Swift.String, label: Swift.String, description: Swift.String, imageUrl: Swift.String)
     public static func == (a: CheetahDigitalCore.Badge.Level, b: CheetahDigitalCore.Badge.Level) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct Badges : Swift.Codable, Swift.Equatable {
+    public init(id: Swift.Int, name: Swift.String, label: Swift.String, type: Swift.String, imageUrl: Swift.String, badgeDescription: Swift.String, status: Swift.String, startPeriod: Swift.String, endPeriod: Swift.String, expirationInterval: Swift.Int, expirationIntervalPeriod: Swift.String)
+    public static func == (a: CheetahDigitalCore.Badge.Badges, b: CheetahDigitalCore.Badge.Badges) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
   }
   public static func == (a: CheetahDigitalCore.Badge, b: CheetahDigitalCore.Badge) -> Swift.Bool
@@ -2261,6 +2267,9 @@ extension CheetahDigitalCore.Badge {
   public init(from decoder: Swift.Decoder) throws
 }
 extension CheetahDigitalCore.Badge.Level {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Badge.Badges {
   public init(from decoder: Swift.Decoder) throws
 }
 public enum FriendsRequest : CheetahDigitalUtils.URLRequestConvertible {

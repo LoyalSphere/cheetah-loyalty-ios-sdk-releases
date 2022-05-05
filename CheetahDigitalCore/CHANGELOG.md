@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-2.2.1] - 2022-05-05
+### Added 
+- `Badges` attribute: [#624]
+    - `badges`
+    
+[#624]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/624
+
 ## [Core-2.2.0] - 2022-04-18
 ### Changed
 - Built using Xcode 13.3.

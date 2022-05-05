@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sRC2rX/MzoC5FAbzgUz15UP+TMg=
+		jn/MDAro3xhEwzUAyKAmPdwdVqQ=
 		</data>
 		<key>Modules/CheetahDigitalCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/CheetahDigitalCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hH9po/1M+/7GGvdVH1eHcDmDrUU=
+		yuMQsCw5+yAxBQk8/H+UcZIhfZs=
 		</data>
 		<key>Modules/CheetahDigitalCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yG7YS1zknDEWZ/wEpMe4DeKOYyw=
+		8MdQLGCSb3YYYkDwHeAENI7hT2Q=
 		</data>
 		<key>Modules/CheetahDigitalCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/CheetahDigitalCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		hmgzHCuZvk2kIPGuQl8qFpoqWb0=
+		Mb6agnGNiGGI46vKWwy7djv++3M=
 		</data>
 		<key>Modules/CheetahDigitalCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XknC1xz3gRiO+GOYgalvlQOqJ9w=
+		yDDaWj67G9dTmg+bkJgqVs62it4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OTjtq1mdNfn+dHH04kpWakkuPeuRwDv8gwf7EBFviGE=
+			yLwHG6MwYnm8pUThqk3gKWpBtsI6Q89LLuuaOy5yegk=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ak8rOjjokhNXc2hm/cKubJ49mDX2pwq8b7eMCwZon3Y=
+			fysASANdonMoEIFwSOq9WyPYC1GnjjazgUyNwxuBiP8=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -106,14 +106,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C5gxy4qRh2P4r39clmC7CcI4dwd+6pBP0rUoII8D7SU=
+			GDgSmJrCuQInm6M2L08vj3O3RjRiNTWYTkFFYktZQzw=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VWCg7bVqD/E2wVUo+SGbmz+Iic4AkqFtE4jn8oPXqTQ=
+			g6ZzT3iYoVrqEQvxpKQIxXA51CBr0iQwuhaikNzZ90g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
