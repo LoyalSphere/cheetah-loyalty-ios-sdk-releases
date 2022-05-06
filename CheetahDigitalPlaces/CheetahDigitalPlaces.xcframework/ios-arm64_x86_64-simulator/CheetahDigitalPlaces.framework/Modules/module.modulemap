@@ -1,4 +1,11 @@
 framework module CheetahDigitalPlaces {
-  header "CheetahDigitalPlaces-Swift.h"
-  requires objc
+  umbrella header "CheetahDigitalPlaces.h"
+
+  export *
+  module * { export * }
+}
+
+module CheetahDigitalPlaces.Swift {
+    header "CheetahDigitalPlaces-Swift.h"
+    requires objc
 }
