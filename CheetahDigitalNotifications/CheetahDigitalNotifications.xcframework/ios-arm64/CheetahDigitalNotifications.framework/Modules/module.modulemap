@@ -1,4 +1,11 @@
 framework module CheetahDigitalNotifications {
-  header "CheetahDigitalNotifications-Swift.h"
-  requires objc
+  umbrella header "CheetahDigitalNotifications.h"
+
+  export *
+  module * { export * }
+}
+
+module CheetahDigitalNotifications.Swift {
+    header "CheetahDigitalNotifications-Swift.h"
+    requires objc
 }
