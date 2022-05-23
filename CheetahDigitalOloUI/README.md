@@ -10,9 +10,9 @@
 * Deployment Target: iOS 11.0
 * Xcode 11.x
 * Swift 5.1
-* `CheetahDigitalUI` v1.9.1
-* `CheetahDigitalOloCore` v1.2.0
-* `CheetahUtils` v1.2.0
+* `CheetahDigitalUI` v2.1.1
+* `CheetahDigitalOloCore` v2.0.0
+* `CheetahDigitalUtils` v2.1.0
 
 ## Installation
 
