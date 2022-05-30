@@ -1,0 +1,1230 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahDigitalOloUI
+import CheetahDigitalOloCore
+@_exported import CheetahDigitalOloUI
+import CheetahDigitalUI
+import CheetahDigitalUtils
+import Foundation
+import MapKit
+import Swift
+import UIKit
+import _Concurrency
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductSubCustomizationTableController : CheetahDigitalOloUI.ProductOptionsTableController {
+  @_Concurrency.MainActor(unsafe) open var option: CheetahDigitalOloCore.Product.Option!
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) open func updateRequiredFieldsFromPreSelectedOptions()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(tableView: UIKit.UITableView? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PaymentSummaryCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var headingLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var subHeadingLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var dividerView: UIKit.UIView!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductCategoriesCollectionController : CheetahDigitalUI.ListCollectionController<CheetahDigitalOloCore.Product.Category>, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) open var imagePath: Swift.String?
+  @_Concurrency.MainActor(unsafe) open var imageGroupName: Swift.String
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UserFavoriteDetailCell : UIKit.UITableViewCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) open func setupAsInfo(title: Swift.String, subtitle: Swift.String)
+  @_Concurrency.MainActor(unsafe) open func setupAsProduct(_ product: CheetahDigitalOloCore.Favorite.Product)
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum OrderProgressSavedData {
+  public static var restaurant: CheetahDigitalOloCore.Restaurant? {
+    get
+    set
+  }
+  public static var basket: CheetahDigitalOloCore.Basket? {
+    get
+    set
+  }
+  public static var menu: CheetahDigitalOloCore.Menu? {
+    get
+    set
+  }
+  public static func clearData()
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RedeemCouponViewController : CheetahDigitalUI.NibViewController, CheetahDigitalUI.AlertEmbeddableViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var headingLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var couponCodeFloatingTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var applyCouponButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cancelButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) public var delegate: CheetahDigitalUI.AlertEmbeddableViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) open func setupLabel()
+  @_Concurrency.MainActor(unsafe) open func setupFloatingTextField()
+  @_Concurrency.MainActor(unsafe) open func setupButtons()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RecentOrdersItemTotalCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol BillingAccountCellDelegate {
+  func deleteButtonTapped(_ cell: CheetahDigitalOloUI.BillingAccountCollectionViewCell)
+  func editButtonTapped(_ cell: CheetahDigitalOloUI.BillingAccountCollectionViewCell)
+  func amountTextFieldDidEndEditing(_ textField: UIKit.UITextField, parent cell: CheetahDigitalOloUI.BillingAccountCollectionViewCell)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BillingAccountCollectionViewCell : UIKit.UICollectionViewCell, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) open var delegate: CheetahDigitalOloUI.BillingAccountCellDelegate?
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) open func setupCell()
+  @_Concurrency.MainActor(unsafe) @objc open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor(unsafe) @objc open func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class OfferListCollectionController : CheetahDigitalUI.ListCollectionController<CheetahDigitalOloCore.Loyalty.Reward> {
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CheckBoxCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductInstructionsCell : UIKit.UITableViewCell, UIKit.UITextViewDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var instructionsTextView: UIKit.UITextView!
+  @_Concurrency.MainActor(unsafe) open var didUpdateInstructions: ((Swift.String) -> Swift.Void)?
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc public func textViewDidChange(_ textView: UIKit.UITextView)
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductQuantityCell : UIKit.UITableViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var minusImageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var addImageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var quantityLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) open var didUpdateQuantity: ((Swift.Int) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var quantity: Swift.Int {
+    get
+    set
+  }
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) open func addGestureRecognizers()
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CheetahDigitalOloCore.Product.OptionGroup {
+  public func isOptionRequired() -> Swift.Bool
+}
+public struct SelectedOption {
+  public var optionId: Swift.Int
+  public var choices: [CheetahDigitalOloCore.Product.Option]
+  public var customFields: [Swift.Int : [CheetahDigitalOloCore.ProductParameter.CustomField]]
+  public var nestedChoices: [Swift.Int : [CheetahDigitalOloUI.SelectedOption]]
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductOptionsTableController : CheetahDigitalUI.BaseTableController<CheetahDigitalOloCore.Product.OptionGroup>, CheetahDigitalOloUI.ProductOptionsViewControllerDelegate {
+  @_Concurrency.MainActor(unsafe) open var selectedOptions: [CheetahDigitalOloUI.SelectedOption]
+  @_Concurrency.MainActor(unsafe) open var unselectedRequiredFields: [Swift.Int] {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) override open func refreshContent()
+  @_Concurrency.MainActor(unsafe) override open func setupTableView()
+  @_Concurrency.MainActor(unsafe) open func updateCollectionProvider(with newItems: [CheetahDigitalOloCore.Product.OptionGroup])
+  @_Concurrency.MainActor(unsafe) open func setRequiredFields()
+  @_Concurrency.MainActor(unsafe) open func removeFromUnselectedRequiredFields(optionGroupId: Swift.Int)
+  @_Concurrency.MainActor(unsafe) open func appendToRequiredFields(optionGroup: CheetahDigitalOloCore.Product.OptionGroup)
+  @_Concurrency.MainActor(unsafe) open func enableActionButton()
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) open func totalSection() -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) open func addNewItem(_ option: CheetahDigitalOloCore.Product.Option, selectedSubOptions: [CheetahDigitalOloUI.SelectedOption]? = nil, optionGroup: CheetahDigitalOloCore.Product.OptionGroup)
+  @_Concurrency.MainActor(unsafe) open func optionHasNestedOptionSelected(option: CheetahDigitalOloCore.Product.Option, group: CheetahDigitalOloCore.Product.OptionGroup) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) public func didUpdateOption(_ option: CheetahDigitalOloCore.Product.Option, with selectedOptions: [CheetahDigitalOloUI.SelectedOption])
+  @_Concurrency.MainActor(unsafe) open func navigateToSubCustomization(option: CheetahDigitalOloCore.Product.Option, group: CheetahDigitalOloCore.Product.OptionGroup)
+  @_Concurrency.MainActor(unsafe) open func setupProductOptionCell(_ cell: CheetahDigitalOloUI.ProductOptionCell, indexPath: Foundation.IndexPath, optionGroup: CheetahDigitalOloCore.Product.OptionGroup) -> CheetahDigitalOloUI.ProductOptionCell
+  @_Concurrency.MainActor(unsafe) open func setupTextfieldUpdate(_ cell: CheetahDigitalOloUI.ProductOptionCell, option: CheetahDigitalOloCore.Product.Option, optionGroup: CheetahDigitalOloCore.Product.OptionGroup)
+  @_Concurrency.MainActor(unsafe) open func setupCheckBoxSelection(_ cell: CheetahDigitalOloUI.ProductOptionCell, option: CheetahDigitalOloCore.Product.Option, optionGroup: CheetahDigitalOloCore.Product.OptionGroup)
+  @_Concurrency.MainActor(unsafe) open func setupCellSubheading(_ cell: CheetahDigitalOloUI.ProductOptionCell, option: CheetahDigitalOloCore.Product.Option)
+  @_Concurrency.MainActor(unsafe) open func setupOptionHeader(sectionHeader: CheetahDigitalOloUI.ProductOptionHeaderView, optionGroup: CheetahDigitalOloCore.Product.OptionGroup) -> CheetahDigitalOloUI.ProductOptionHeaderView
+  @_Concurrency.MainActor(unsafe) open func maxSelectReached(optionGroup: CheetahDigitalOloCore.Product.OptionGroup, option: CheetahDigitalOloCore.Product.Option) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func didSelectOption(_ indexPath: Foundation.IndexPath, optionGroup: CheetahDigitalOloCore.Product.OptionGroup, tableView: UIKit.UITableView)
+  @_Concurrency.MainActor(unsafe) open func setDefaultSelectedOptions()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(tableView: UIKit.UITableView? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductCategoriesViewController : CheetahDigitalOloUI.FooterButtonCollectionViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var storeSeparatorView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var storeLabelView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var storeLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var caretRightImageView: UIKit.UIImageView!
+  @_Concurrency.MainActor(unsafe) open var showCurrentRestaurant: Swift.Bool
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class HandOffModeDetailViewController : CheetahDigitalOloUI.FooterButtonCollectionViewController {
+  @_Concurrency.MainActor(unsafe) override open func setupActionButton()
+  @_Concurrency.MainActor(unsafe) override open func performAction()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductOptionHeaderView : UIKit.UITableViewHeaderFooterView {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var headingLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var separatorView: UIKit.UIView!
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductCategoryCollectionViewCell : CheetahDigitalUI.ListItemCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class OrderProgressViewController : CheetahDigitalUI.NibViewController, CheetahDigitalOloUI.OrderProgressViewDelegate {
+  @_Concurrency.MainActor(unsafe) open var contentViewControllers: [UIKit.UIViewController]
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) open func selected(view: CheetahDigitalOloUI.OrderProgressView)
+  @_Concurrency.MainActor(unsafe) open func currentViewController() -> UIKit.UIViewController
+  @_Concurrency.MainActor(unsafe) open func completeOrderStep()
+  @_Concurrency.MainActor(unsafe) open func resetCurrentStep()
+  @_Concurrency.MainActor(unsafe) open func resetAllOrderStep()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol ProductOptionsViewControllerDelegate {
+  func didUpdateOption(_ option: CheetahDigitalOloCore.Product.Option, with selectedOptions: [CheetahDigitalOloUI.SelectedOption])
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductSubCustomizationViewController : CheetahDigitalOloUI.FooterButtonTableViewController {
+  @_Concurrency.MainActor(unsafe) open var delegate: CheetahDigitalOloUI.ProductOptionsViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) convenience public init(option: CheetahDigitalOloCore.Product.Option, selectedOptions: [CheetahDigitalOloUI.SelectedOption]? = nil, tableController: CheetahDigitalOloUI.ProductSubCustomizationTableController? = ProductSubCustomizationTableController())
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func setupTitle()
+  @_Concurrency.MainActor(unsafe) override open func setupActionButton()
+  @_Concurrency.MainActor(unsafe) override open func performAction()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DeliveryPreferencesController : CheetahDigitalUI.BaseCollectionController<Any>, UIKit.UICollectionViewDelegateFlowLayout, UIKit.UITextFieldDelegate, CheetahDigitalOloUI.TextFieldCollectionViewCellDelegate {
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc public func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) public func updateText(cell: CheetahDigitalOloUI.TextFieldCollectionViewCell, value: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func updateDate(cell: CheetahDigitalOloUI.TextFieldCollectionViewCell, date: Foundation.Date)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+extension CheetahDigitalOloUI.DeliveryPreferencesController {
+  @_Concurrency.MainActor(unsafe) open func showHandOffModeDetails(criteria: CheetahDigitalOloCore.QualificationCriteria, mode: CheetahDigitalOloCore.Delivery.Mode)
+  @_Concurrency.MainActor(unsafe) open func setDeliveryMode(index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) open func displayDeliveryAddresses(index: Swift.Int)
+  @_Concurrency.MainActor(unsafe) public func completeDeliveryPreferences()
+}
+extension CheetahDigitalOloCore.Delivery.Address {
+  public func getShortAddress() -> Swift.String
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DeliveryPreferencesViewController : CheetahDigitalOloUI.FooterButtonCollectionViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override open func setupActionButton()
+  @_Concurrency.MainActor(unsafe) override open func performAction()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class FooterButtonTableViewController : CheetahDigitalUI.TableViewController, CheetahDigitalOloUI.OrderProgressCompletable {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var actionButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupActionButton()
+  @_Concurrency.MainActor(unsafe) open func showActionButton(_ show: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func enableActionButton(_ enable: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func performAction()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductDetailCell : UIKit.UITableViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var headingLabel: UIKit.UILabel!
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductCollectionViewCell : CheetahDigitalUI.ListItemCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CardCollectionViewCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) open func toggleSelection(selected: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol TextFieldCollectionViewCellDelegate {
+  func updateText(cell: CheetahDigitalOloUI.TextFieldCollectionViewCell, value: Swift.String)
+  func updateDate(cell: CheetahDigitalOloUI.TextFieldCollectionViewCell, date: Foundation.Date)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TextFieldCollectionViewCell : UIKit.UICollectionViewCell, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) open var delegate: CheetahDigitalOloUI.TextFieldCollectionViewCellDelegate?
+  @_Concurrency.MainActor(unsafe) final public let dateDisplayFormat: Swift.String
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func prepareForReuse()
+  @_Concurrency.MainActor(unsafe) open func setupAsTextField()
+  @_Concurrency.MainActor(unsafe) open func setupAsDatePicker()
+  @_Concurrency.MainActor(unsafe) open func setDateLabel(date: Foundation.Date?)
+  @_Concurrency.MainActor(unsafe) @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RecentOrdersListCell : CheetahDigitalUI.ListItemCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UserFavoritesController : CheetahDigitalUI.ListCollectionController<CheetahDigitalOloCore.Favorite>, CheetahDigitalOloUI.UserFavoriteDetailControllerDelegate {
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override open func setupCollectionView()
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) open func setupNavBar()
+  @_Concurrency.MainActor(unsafe) open func favoriteWasDelete(_ favorite: CheetahDigitalOloCore.Favorite)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PaymentSummaryActionViewCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var actionLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var caretImageView: UIKit.UIImageView!
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class CreditCardViewController : CheetahDigitalUI.NibViewController, UIKit.UITextFieldDelegate, CheetahDigitalUI.SelectionButtonDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var creditCardView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cvvLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cardDividerView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cardTypeImageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cardNumberLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var monthYearLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var expirationLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var showCreditCardScannerButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cardNumberFloatingTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cardExpirationFloatingTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cvvFloatingTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var zipCodeFloatingTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var saveOnFileCheckBox: CheetahDigitalUI.CheckBox!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var addAndPayButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var addButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var creditCardViewBackground: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var floatingTextFields: [CheetahDigitalUI.FloatingTextField]!
+  @_Concurrency.MainActor(unsafe) open var amount: Swift.Double?
+  @_Concurrency.MainActor(unsafe) open var saveOnFileSupported: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var didTapActionButton: ((Swift.Int, CheetahDigitalOloUI.OLOCreditCard) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var editCreditCard: CheetahDigitalOloUI.OLOCreditCard?
+  @_Concurrency.MainActor(unsafe) convenience public init(amount: Swift.Double?, saveOnFileSupported: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) override open func setupCustomBackButton()
+  @_Concurrency.MainActor(unsafe) open func showCreditCardScannerButtonPressed(_ sender: UIKit.UIButton)
+  @_Concurrency.MainActor(unsafe) open func addAndPayButtonPressed(_ sender: UIKit.UIButton)
+  @_Concurrency.MainActor(unsafe) open func addButtonPressed(_ sender: UIKit.UIButton)
+  @_Concurrency.MainActor(unsafe) open func formatExpirationDate(currentText: Swift.String, textField: UIKit.UITextField, range: Swift.Range<Swift.String.Index>, string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func formatCvv(using updatedText: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func formatZipCode(using updatedText: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func formatCreditCardNumber(currentText: Swift.String, textField: UIKit.UITextField, range: Swift.Range<Swift.String.Index>, string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor(unsafe) @objc open func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor(unsafe) @objc open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func didTap(_ selectionButton: CheetahDigitalUI.SelectionButton)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RestaurantsCollectionViewController : CheetahDigitalUI.CollectionViewController, CheetahDigitalOloUI.OrderProgressCompletable {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RestaurantListCollectionController : CheetahDigitalUI.ListCollectionController<CheetahDigitalOloCore.Restaurant>, CoreLocation.CLLocationManagerDelegate {
+  @_Concurrency.MainActor(unsafe) open var radiusMiles: Swift.Double
+  @_Concurrency.MainActor(unsafe) open var locationManager: CoreLocation.CLLocationManager
+  @_Concurrency.MainActor(unsafe) open var restaurantLimit: Swift.Int
+  @_Concurrency.MainActor(unsafe) open var isUserAGuest: Swift.Bool
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) convenience public init(radiusMiles: Swift.Double = 5.0, restaurantLimit: Swift.Int = 10)
+  @_Concurrency.MainActor(unsafe) override open func setupCollectionView()
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) override open func filteredData(with searchTerm: Swift.String) -> [CheetahDigitalOloCore.Restaurant]
+  @_Concurrency.MainActor(unsafe) @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc open func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @_Concurrency.MainActor(unsafe) @objc open func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: Swift.Error)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SaveAsFavoriteViewController : CheetahDigitalUI.NibViewController, CheetahDigitalUI.AlertEmbeddableViewController {
+  @_Concurrency.MainActor(unsafe) open var delegate: CheetahDigitalUI.AlertEmbeddableViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) public var didTapActionButton: ((Swift.String) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class GiftCardViewController : CheetahDigitalUI.NibViewController, CheetahDigitalUI.AlertEmbeddableViewController, CheetahDigitalUI.SelectionButtonDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var buttonStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var saveOnFileContainerView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var saveOnFileCheckBox: CheetahDigitalUI.CheckBox!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var addAndPayButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var addButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var giftCardNumberFloatingTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var giftCardPinFloatingTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var cancelButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var footnoteLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) open var didTapActionButton: ((Swift.Int, CheetahDigitalOloUI.GiftCard) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var amount: Swift.Double?
+  @_Concurrency.MainActor(unsafe) open var delegate: CheetahDigitalUI.AlertEmbeddableViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) open var saveOnFileSupported: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var isPinRequired: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var editGiftCard: CheetahDigitalOloUI.GiftCard?
+  @_Concurrency.MainActor(unsafe) convenience public init(amount: Swift.Double?, saveOnFileSupported: Swift.Bool, isPinRequired: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func didTap(_ selectionButton: CheetahDigitalUI.SelectionButton)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UserFavoriteDetailTableViewController : CheetahDigitalUI.TableViewController {
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupDeleteButton()
+  @_Concurrency.MainActor(unsafe) open func setupReorderButton()
+  @_Concurrency.MainActor(unsafe) open func orderAgain()
+  @_Concurrency.MainActor(unsafe) open func setReorderButtonVisibility(isVisible: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) open func didTapDeleteButton(_ sender: UIKit.UIBarButtonItem)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductCustomizationTableController : CheetahDigitalOloUI.ProductOptionsTableController {
+  @_Concurrency.MainActor(unsafe) open var productQuantity: Swift.Int
+  @_Concurrency.MainActor(unsafe) open var product: CheetahDigitalOloCore.Product?
+  @_Concurrency.MainActor(unsafe) open var productId: Swift.Int!
+  @_Concurrency.MainActor(unsafe) open var specialInstructions: Swift.String
+  @_Concurrency.MainActor(unsafe) open var shouldSupportSpecialInstruction: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var additionalSections: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func totalSection() -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, heightForHeaderInSection section: Swift.Int) -> CoreGraphics.CGFloat
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) open func isOptionType(section: Swift.Int) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func basketSelectedOptionsParameters() -> (Swift.String, [CheetahDigitalOloCore.ProductParameter.Choice])
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(tableView: UIKit.UITableView? = nil)
+  @objc deinit
+}
+extension CheetahDigitalUI.CollectionViewController {
+  @_Concurrency.MainActor(unsafe) convenience public init(nibName: Swift.String, collectionController: CheetahDigitalUI.CollectionController?)
+}
+extension CheetahDigitalUI.TableViewController {
+  @_Concurrency.MainActor(unsafe) convenience public init(nibName: Swift.String, tableController: CheetahDigitalUI.TableController?)
+}
+public enum OLOUINotification : CheetahDigitalUtils.CheetahNotification {
+  case basketChanged
+  case orderPlaced
+  case restaurantChanged
+  public var name: Swift.String {
+    get
+  }
+  public static let orderPlacedStatusKey: Swift.String
+  public static let orderPlacedViewControllerKey: Swift.String
+  public static func == (a: CheetahDigitalOloUI.OLOUINotification, b: CheetahDigitalOloUI.OLOUINotification) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UITableViewHeaderFooterView {
+  @_Concurrency.MainActor(unsafe) open class func nibName() -> Swift.String
+  @_Concurrency.MainActor(unsafe) open class func nib() -> UIKit.UINib
+}
+extension Swift.String {
+  public static func matchesRegex(regex: Swift.String, text: Swift.String) -> Swift.Bool
+}
+extension Swift.ClosedRange : CheetahDigitalOloUI.OLOCreditCardPrefixComparable {
+}
+extension Swift.String : CheetahDigitalOloUI.OLOCreditCardPrefixComparable {
+}
+extension CheetahDigitalOloCore.Billing.Account : CheetahDigitalOloUI.BillingAccountCellDisplayable {
+  public var cellDescription: Swift.String {
+    get
+  }
+  public var cellAccountNumber: Swift.String {
+    get
+  }
+  public var cellCardTypeLabel: Swift.String {
+    get
+  }
+  public var cellValidityPeriod: Swift.String {
+    get
+  }
+  public var cardNumber: Swift.String {
+    get
+  }
+}
+extension CheetahDigitalOloUI.OLOCreditCard : CheetahDigitalOloUI.BillingAccountCellDisplayable {
+  public var cellDescription: Swift.String {
+    get
+  }
+  public var cellAccountNumber: Swift.String {
+    get
+  }
+  public var cellCardTypeLabel: Swift.String {
+    get
+  }
+  public var cellValidityPeriod: Swift.String {
+    get
+  }
+  public var cardNumber: Swift.String {
+    get
+  }
+}
+extension CheetahDigitalOloUI.GiftCard : CheetahDigitalOloUI.BillingAccountCellDisplayable {
+  public var cellDescription: Swift.String {
+    get
+  }
+  public var cellAccountNumber: Swift.String {
+    get
+  }
+  public var cellCardTypeLabel: Swift.String {
+    get
+  }
+  public var cellValidityPeriod: Swift.String {
+    get
+  }
+  public var cardNumber: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class FooterButtonCollectionViewController : CheetahDigitalUI.CollectionViewController, CheetahDigitalOloUI.OrderProgressCompletable {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var actionButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func setupActionButton()
+  @_Concurrency.MainActor(unsafe) open func showActionButton(_ show: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func enableActionButton(_ enable: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func performAction()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductCollectionController : CheetahDigitalUI.BaseCollectionController<CheetahDigitalOloCore.Product>, UIKit.UICollectionViewDelegateFlowLayout {
+  @_Concurrency.MainActor(unsafe) open var imagePath: Swift.String?
+  @_Concurrency.MainActor(unsafe) open var imageGroupName: Swift.String?
+  @_Concurrency.MainActor(unsafe) open var category: CheetahDigitalOloCore.Product.Category?
+  @_Concurrency.MainActor(unsafe) convenience public init(category: CheetahDigitalOloCore.Product.Category, imagePath: Swift.String?, imageGroupName: Swift.String? = nil)
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+public protocol CreditCardScanner {
+  func openScanner(in viewController: CheetahDigitalOloUI.CreditCardViewController)
+}
+public enum CreditCardScannerLoader {
+  public static var scanner: CheetahDigitalOloUI.CreditCardScanner?
+  public static var creditCardViewController: CheetahDigitalOloUI.CreditCardViewController?
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RecentOrdersListCollectionViewController : CheetahDigitalUI.CollectionViewController {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RecentOrdersListCollectionController : CheetahDigitalUI.ListCollectionController<CheetahDigitalOloCore.Order.Status> {
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func setupCollectionView()
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BasketCollectionController : CheetahDigitalUI.ListCollectionController<CheetahDigitalOloCore.Basket.Product>, CheetahDigitalOloUI.BasketItemCollectionViewCellDelegate {
+  @_Concurrency.MainActor(unsafe) open var basket: CheetahDigitalOloCore.Basket?
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override open func refreshContent()
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) open func formatOptionsWithCustomFields(_ product: CheetahDigitalOloCore.Basket.Product) -> Swift.String
+  @_Concurrency.MainActor(unsafe) open func updateTotalCost()
+  @_Concurrency.MainActor(unsafe) open func editBasketItemCollectionViewCell(_ cell: CheetahDigitalOloUI.BasketItemCollectionViewCell)
+  @_Concurrency.MainActor(unsafe) open func removeBasketItemCollectionViewCell(_ cell: CheetahDigitalOloUI.BasketItemCollectionViewCell)
+  @_Concurrency.MainActor(unsafe) open func updateBasketItemQuantity(_ cell: CheetahDigitalOloUI.BasketItemCollectionViewCell, quantity: Swift.Int)
+  @_Concurrency.MainActor(unsafe) open func deleteProductFromBasket(indexPath: Foundation.IndexPath, product: CheetahDigitalOloCore.Basket.Product)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class HeaderCollectionViewCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol BasketItemCollectionViewCellDelegate {
+  func removeBasketItemCollectionViewCell(_ cell: CheetahDigitalOloUI.BasketItemCollectionViewCell)
+  func editBasketItemCollectionViewCell(_ cell: CheetahDigitalOloUI.BasketItemCollectionViewCell)
+  func updateBasketItemQuantity(_ cell: CheetahDigitalOloUI.BasketItemCollectionViewCell, quantity: Swift.Int)
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BasketItemCollectionViewCell : CheetahDigitalUI.ListItemCell {
+  @_Concurrency.MainActor(unsafe) open var quantity: Swift.Int {
+    get
+    set
+  }
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) open func setupGestureRecognizers()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class AddTipViewController : CheetahDigitalUI.NibViewController, CheetahDigitalUI.AlertEmbeddableViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var headingLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var tipFloatingTextField: CheetahDigitalUI.FloatingTextField!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var addTipButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var cancelButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) open var delegate: CheetahDigitalUI.AlertEmbeddableViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) open var addTipCompletion: ((Swift.Double) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UserFavoritesListCell : UIKit.UICollectionViewCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) open func setup(favorite: CheetahDigitalOloCore.Favorite)
+  @_Concurrency.MainActor(unsafe) open func getDetailLabel(products: [CheetahDigitalOloCore.Favorite.Product]) -> Swift.String
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BasketViewController : CheetahDigitalOloUI.FooterButtonCollectionViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var totalCostLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var footerSeparatorView: UIKit.UIView!
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@_Concurrency.MainActor(unsafe) open class HandOffModeDetailController : CheetahDigitalUI.ListCollectionController<CheetahDigitalOloCore.Restaurant.CustomField> {
+  @_Concurrency.MainActor(unsafe) open var criteria: CheetahDigitalOloCore.QualificationCriteria
+  @_Concurrency.MainActor(unsafe) open var deliveryMode: CheetahDigitalOloCore.Delivery.Mode
+  @_Concurrency.MainActor(unsafe) open var selectedCustomFields: [Swift.Int : Swift.String]
+  @_Concurrency.MainActor(unsafe) open var customFieldAPIErrors: [Swift.Int]
+  @_Concurrency.MainActor(unsafe) open var customFieldRegExErrors: [Swift.Int]
+  @_Concurrency.MainActor(unsafe) open var requiredFields: [Swift.Int]
+  @_Concurrency.MainActor(unsafe) open var basket: CheetahDigitalOloCore.Basket?
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) required public init(criteria: CheetahDigitalOloCore.QualificationCriteria, mode: CheetahDigitalOloCore.Delivery.Mode)
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) open func loadBasketValues(fields: [CheetahDigitalOloCore.Restaurant.CustomField])
+  @_Concurrency.MainActor(unsafe) open func filterRequiredFields(fields: [CheetahDigitalOloCore.Restaurant.CustomField])
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) open func submitCustomFields()
+  @_Concurrency.MainActor(unsafe) open func validateCustomFields()
+  @_Concurrency.MainActor(unsafe) open func setDeliveryMode()
+  @objc deinit
+}
+public protocol OLOCreditCardPrefixComparable {
+}
+public struct OLOCreditCard : Swift.Equatable {
+  public static func detectType(using number: Swift.String) -> CheetahDigitalOloCore.CardType
+  public static func formatNumberForDisplay(_ number: Swift.String) -> Swift.String
+  public static func luhnCheck(number: Swift.String) -> Swift.Bool
+  public static func isExpirationDateValid(_ text: Swift.String) -> Swift.Bool
+  public static func == (a: CheetahDigitalOloUI.OLOCreditCard, b: CheetahDigitalOloUI.OLOCreditCard) -> Swift.Bool
+}
+extension CheetahDigitalOloCore.CardType {
+  public static var allCases: [CheetahDigitalOloCore.CardType] {
+    get
+  }
+  public var regex: Swift.String {
+    get
+  }
+  public var prefixes: [CheetahDigitalOloUI.OLOCreditCardPrefixComparable] {
+    get
+  }
+  public var displayString: Swift.String {
+    get
+  }
+  public var imageFileName: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PaymentSummaryCollectionController : CheetahDigitalUI.BaseCollectionController<Any>, UIKit.UICollectionViewDelegateFlowLayout, CheetahDigitalOloUI.PaymentSummarySetTipCollectionViewCellDelegate {
+  public enum PaymentSummaryCollectionSection : Swift.Int, Swift.CaseIterable {
+    case availableOffers
+    case applyCoupons
+    case setTip
+    case orderSummary
+    case subtotal
+    case fees
+    case handOffCharge
+    case taxes
+    case discounts
+    case coupon
+    case rewards
+    case tip
+    case total
+    case upsell
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [CheetahDigitalOloUI.PaymentSummaryCollectionController.PaymentSummaryCollectionSection]
+    public typealias RawValue = Swift.Int
+    public static var allCases: [CheetahDigitalOloUI.PaymentSummaryCollectionController.PaymentSummaryCollectionSection] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor(unsafe) open var basket: CheetahDigitalOloCore.Basket?
+  @_Concurrency.MainActor(unsafe) open var supportsCoupon: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var supportsOffers: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var supportsTipping: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open func actionButtonPressed()
+  @_Concurrency.MainActor(unsafe) open func showAvailableOffersCellPressed()
+  @_Concurrency.MainActor(unsafe) open func showCouponsCellPressed()
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, viewForSupplementaryElementOfKind kind: Swift.String, at indexPath: Foundation.IndexPath) -> UIKit.UICollectionReusableView
+  @_Concurrency.MainActor(unsafe) @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, referenceSizeForHeaderInSection section: Swift.Int) -> CoreGraphics.CGSize
+  @_Concurrency.MainActor(unsafe) open func noTipButtonTapped(_ sender: UIKit.UIButton)
+  @_Concurrency.MainActor(unsafe) open func tipButtonTapped(_ sender: UIKit.UIButton)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+public protocol BillingAccountCellDisplayable {
+  var cellDescription: Swift.String { get }
+  var cellAccountNumber: Swift.String { get }
+  var cellCardTypeLabel: Swift.String { get }
+  var cellValidityPeriod: Swift.String { get }
+  var cardNumber: Swift.String { get }
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PaymentCheckoutCollectionController : CheetahDigitalUI.ListCollectionController<CheetahDigitalOloUI.BillingAccountCellDisplayable>, UIKit.UICollectionViewDelegateFlowLayout, CheetahDigitalOloUI.BillingAccountCellDelegate, CheetahDigitalUI.SelectionButtonDelegate {
+  @_Concurrency.MainActor(unsafe) open var basket: CheetahDigitalOloCore.Basket?
+  @_Concurrency.MainActor(unsafe) open var billingSchemes: [CheetahDigitalOloCore.Billing.Scheme]
+  @_Concurrency.MainActor(unsafe) open var loading: CheetahDigitalUI.AlertViewController
+  @_Concurrency.MainActor(unsafe) open var textFieldAmounts: [Swift.Int : Swift.String]
+  @_Concurrency.MainActor(unsafe) open var isPaymentSplitted: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var selectedAccountsToUse: [Swift.Int]
+  @_Concurrency.MainActor(unsafe) open var totalAmount: Swift.Double {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var editAccountIndexPath: Foundation.IndexPath?
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) open func didTap(_ selectionButton: CheetahDigitalUI.SelectionButton)
+  @_Concurrency.MainActor(unsafe) open func actionButtonPressed(_ sender: Any)
+  @_Concurrency.MainActor(unsafe) open func addAccountButtonTapped(_ sender: UIKit.UIButton)
+  @_Concurrency.MainActor(unsafe) open func deleteButtonTapped(_ cell: CheetahDigitalOloUI.BillingAccountCollectionViewCell)
+  @_Concurrency.MainActor(unsafe) open func editButtonTapped(_ cell: CheetahDigitalOloUI.BillingAccountCollectionViewCell)
+  @_Concurrency.MainActor(unsafe) open func amountTextFieldDidEndEditing(_ textField: UIKit.UITextField, parent cell: CheetahDigitalOloUI.BillingAccountCollectionViewCell)
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) override open func refreshContent()
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc open func collectionView(_ collectionView: UIKit.UICollectionView, layout collectionViewLayout: UIKit.UICollectionViewLayout, sizeForItemAt indexPath: Foundation.IndexPath) -> CoreGraphics.CGSize
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PaymentCheckoutCollectionViewController : CheetahDigitalUI.CollectionViewController {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var totalAmountToBePaidStaticLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var totalAmountLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var paymentMethodView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var paymentMethodStaticLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var splitPaymentStaticLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var splitPaymentMethodCheckbox: CheetahDigitalUI.CheckBox!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var actionButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var checkboxCollectionViewStackView: UIKit.UIStackView!
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) open func actionButtonPressed(_ sender: Any)
+  @objc @_Concurrency.MainActor(unsafe) open func addButtonTapped(_ sender: UIKit.UIButton)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RestaurantListCell : CheetahDigitalUI.ListItemCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor(unsafe) open func setupServicesLabel()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UpsellItemsListCollectionController : CheetahDigitalUI.ListCollectionController<CheetahDigitalOloCore.Upsell.Item>, CheetahDigitalOloUI.UpsellItemCollectionViewCellDelegate {
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, didSelectItemAt indexPath: Foundation.IndexPath)
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) open func actionButtonPressed()
+  @_Concurrency.MainActor(unsafe) open func updateUpsellItemQuantity(_ cell: CheetahDigitalOloUI.UpsellItemsListCell, quantity: Swift.Int)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PaymentSummaryViewController : CheetahDigitalOloUI.FooterButtonCollectionViewController {
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) override open func performAction()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RestaurantScheduleViewController : CheetahDigitalUI.CollectionViewController {
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RecentOrdersDetailCollectionController : CheetahDigitalUI.BaseCollectionController<Any> {
+  @_Concurrency.MainActor(unsafe) override open func setupCollectionView()
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, numberOfItemsInSection section: Swift.Int) -> Swift.Int
+  @objc @_Concurrency.MainActor(unsafe) open func actionButtonTapped(_ sender: UIKit.UIButton)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RecentOrdersPaymentCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RestaurantScheduleCollectionController : CheetahDigitalUI.ListCollectionController<CheetahDigitalOloCore.Restaurant.CalendarTimeRange> {
+  @_Concurrency.MainActor(unsafe) open var calendars: [CheetahDigitalOloCore.Restaurant.Calendar]
+  @_Concurrency.MainActor(unsafe) open var startDate: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var endDate: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) override open var collectionViewLayout: UIKit.UICollectionViewLayout {
+    @_Concurrency.MainActor(unsafe) get
+  }
+  @_Concurrency.MainActor(unsafe) open func callRestaurantButtonPressed(_ sender: UIKit.UIButton)
+  @_Concurrency.MainActor(unsafe) open func getDirectionsButtonPressed(_ sender: UIKit.UIButton)
+  @_Concurrency.MainActor(unsafe) open func segmentedControlValueChanged(_ sender: UIKit.UISegmentedControl)
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) override open func refreshContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func collectionView(_ collectionView: UIKit.UICollectionView, cellForItemAt indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewCell
+  @_Concurrency.MainActor(unsafe) @objc override open func numberOfSections(in collectionView: UIKit.UICollectionView) -> Swift.Int
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(collectionView: UIKit.UICollectionView? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UpsellItemsViewController : CheetahDigitalOloUI.FooterButtonCollectionViewController {
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) override open func performAction()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) override public init(collectionController: CheetahDigitalUI.CollectionController?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ButtonCollectionViewCell : UIKit.UICollectionViewCell {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol OrderProgressViewDelegate : CheetahDigitalOloUI.OrderProgressViewController {
+  func selected(view: CheetahDigitalOloUI.OrderProgressView)
+}
+public protocol OrderProgressCompletable {
+  func markOrderStepAsCompleted(parameters: [Swift.String : Any]?)
+  func resetsAllOrderStep()
+  func resetCurrentOrderStep()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) open class OrderProgressView : UIKit.UIView {
+  public enum Position {
+    case start
+    case inner
+    case last
+    public static func == (a: CheetahDigitalOloUI.OrderProgressView.Position, b: CheetahDigitalOloUI.OrderProgressView.Position) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var leadingLineView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var trailingLineView: UIKit.UIView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var stateImageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var stateLabel: UIKit.UILabel!
+  @_Concurrency.MainActor(unsafe) weak open var delegate: CheetahDigitalOloUI.OrderProgressViewDelegate?
+  @_Concurrency.MainActor(unsafe) open var index: Swift.Int
+  @_Concurrency.MainActor(unsafe) open var visitedColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) open var unvisitedColor: UIKit.UIColor
+  @_Concurrency.MainActor(unsafe) open var completedImage: UIKit.UIImage?
+  @_Concurrency.MainActor(unsafe) open var isVisited: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var isCompleted: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) open var position: CheetahDigitalOloUI.OrderProgressView.Position {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func setup()
+  @objc deinit
+}
+public enum OloOrdering {
+  public static func oloProgressViewController() -> CheetahDigitalOloUI.OrderProgressViewController
+}
+extension CheetahDigitalOloUI.OrderProgressCompletable where Self : UIKit.UIViewController {
+  public func markOrderStepAsCompleted(parameters: [Swift.String : Any]?)
+  public func resetCurrentOrderStep()
+  public func resetsAllOrderStep()
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductCustomizationViewController : CheetahDigitalOloUI.FooterButtonTableViewController {
+  @_Concurrency.MainActor(unsafe) convenience public init(product: CheetahDigitalOloCore.Product, tableController: CheetahDigitalOloUI.ProductCustomizationTableController? = ProductCustomizationTableController())
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) override open func setupActionButton()
+  @_Concurrency.MainActor(unsafe) override open func performAction()
+  @_Concurrency.MainActor(unsafe) open func showAddToCartError(_ error: Swift.Error)
+  @_Concurrency.MainActor(unsafe) open func addToCart(_ selectedOptions: Swift.String, customFields: [CheetahDigitalOloCore.ProductParameter.Choice], productId: Swift.Int, instructions: Swift.String, quantity: Swift.Int)
+  @_Concurrency.MainActor(unsafe) open func addProductToBasket(_ parameter: CheetahDigitalOloCore.BasketParameter.Product!)
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BasketItemUpdateTableController : CheetahDigitalOloUI.ProductCustomizationTableController {
+  @_Concurrency.MainActor(unsafe) open var choices: [CheetahDigitalOloCore.Basket.Choice]?
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) open func setSelectedOptionsFromBasketUpdate()
+  @_Concurrency.MainActor(unsafe) open func setBasketNestedOptions(optionGroups: [CheetahDigitalOloCore.Product.OptionGroup]) -> [CheetahDigitalOloUI.SelectedOption]
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(tableView: UIKit.UITableView? = nil)
+  @objc deinit
+}
+public enum OrderUser {
+  public static var isGuest: Swift.Bool {
+    get
+  }
+  public static var guestFirstName: Swift.String? {
+    get
+    set
+  }
+  public static var guestLastName: Swift.String? {
+    get
+    set
+  }
+  public static var guestEmail: Swift.String? {
+    get
+    set
+  }
+  public static func clearData()
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class BasketItemUpdateViewController : CheetahDigitalOloUI.ProductCustomizationViewController {
+  @_Concurrency.MainActor(unsafe) open var basketProduct: CheetahDigitalOloCore.Basket.Product?
+  @_Concurrency.MainActor(unsafe) convenience public init(product: CheetahDigitalOloCore.Basket.Product, tableController: CheetahDigitalOloUI.BasketItemUpdateTableController? = BasketItemUpdateTableController())
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) override open func setupActionButton()
+  @_Concurrency.MainActor(unsafe) open func updateProductInBasket(_ parameter: CheetahDigitalOloCore.BasketParameter.Product!)
+  @_Concurrency.MainActor(unsafe) override open func performAction()
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class HandOffModeDetailCell : UIKit.UICollectionViewCell, UIKit.UITextViewDelegate {
+  @_Concurrency.MainActor(unsafe) open var didChangeTextValue: ((Swift.String) -> Swift.Void)?
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc public func textView(_ textView: UIKit.UITextView, shouldChangeTextIn range: Foundation.NSRange, replacementText text: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RecentOrdersHeaderCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol UpsellItemCollectionViewCellDelegate {
+  func updateUpsellItemQuantity(_ cell: CheetahDigitalOloUI.UpsellItemsListCell, quantity: Swift.Int)
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UpsellItemsListCell : CheetahDigitalUI.ListItemCell {
+  @_Concurrency.MainActor(unsafe) open var quantity: Swift.Int {
+    get
+    set
+  }
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RecentOrdersFooterCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class RecentOrdersItemCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol UserFavoriteDetailControllerDelegate {
+  func favoriteWasDelete(_ favorite: CheetahDigitalOloCore.Favorite)
+}
+@_Concurrency.MainActor(unsafe) open class UserFavoriteDetailController : CheetahDigitalUI.BaseTableController<Any> {
+  @_Concurrency.MainActor(unsafe) required public init(favorite: CheetahDigitalOloCore.Favorite)
+  @_Concurrency.MainActor(unsafe) override open func setupTableView()
+  @_Concurrency.MainActor(unsafe) override open func registerComponents()
+  @_Concurrency.MainActor(unsafe) override open func loadContent()
+  @_Concurrency.MainActor(unsafe) @objc override open func numberOfSections(in tableView: UIKit.UITableView) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc override open func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) open func orderAgain()
+  @_Concurrency.MainActor(unsafe) open func deleteFavorite()
+  @objc deinit
+}
+public struct GiftCard {
+}
+public protocol PaymentSummarySetTipCollectionViewCellDelegate : AnyObject {
+  func noTipButtonTapped(_ sender: UIKit.UIButton)
+  func tipButtonTapped(_ sender: UIKit.UIButton)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PaymentSummarySetTipCollectionViewCell : UIKit.UICollectionViewCell {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var buttonsStackView: UIKit.UIStackView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var noTipButton: UIKit.UIButton!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak open var tipButton: UIKit.UIButton!
+  @_Concurrency.MainActor(unsafe) weak open var buttonTappedDelagate: CheetahDigitalOloUI.PaymentSummarySetTipCollectionViewCellDelegate?
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class ProductOptionCell : UIKit.UITableViewCell, CheetahDigitalUI.SelectionButtonDelegate, UIKit.UITextFieldDelegate {
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var checkBox: CheetahDigitalUI.CheckBox!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var caretImage: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var headingLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var subheadingLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor(unsafe) public var stackView: UIKit.UIStackView!
+  @_Concurrency.MainActor(unsafe) open var didSelectCheckBox: ((CheetahDigitalOloUI.ProductOptionCell) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var didUpdateCustomField: ((CheetahDigitalOloUI.ProductOptionCell, Swift.String, Swift.Int) -> Swift.Void)?
+  @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor(unsafe) public func didTap(_ selectionButton: CheetahDigitalUI.SelectionButton)
+  @_Concurrency.MainActor(unsafe) open func addTextField(fields: [CheetahDigitalOloCore.Product.CustomField], selectedFields: [CheetahDigitalOloCore.ProductParameter.CustomField])
+  @_Concurrency.MainActor(unsafe) open func removeAllTextfields()
+  @_Concurrency.MainActor(unsafe) open func textFieldWithTag(_ tag: Swift.Int) -> CheetahDigitalUI.FloatingTextField?
+  @_Concurrency.MainActor(unsafe) @objc open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc open func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class DeliveryAddressViewController : CheetahDigitalUI.NibViewController, CheetahDigitalUI.AlertEmbeddableViewController, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) open var delegate: CheetahDigitalUI.AlertEmbeddableViewControllerDelegate?
+  @_Concurrency.MainActor(unsafe) open var completeAction: ((CheetahDigitalOloCore.Basket) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var phoneNumber: Swift.String?
+  @_Concurrency.MainActor(unsafe) open var deliveryMode: CheetahDigitalOloCore.Delivery.Mode
+  @_Concurrency.MainActor(unsafe) override open func setup()
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor(unsafe) @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @objc override dynamic public init()
+  @_Concurrency.MainActor(unsafe) override public init(nibName: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension CheetahDigitalOloUI.OLOUINotification : Swift.Equatable {}
+extension CheetahDigitalOloUI.OLOUINotification : Swift.Hashable {}
+extension CheetahDigitalOloUI.PaymentSummaryCollectionController.PaymentSummaryCollectionSection : Swift.Equatable {}
+extension CheetahDigitalOloUI.PaymentSummaryCollectionController.PaymentSummaryCollectionSection : Swift.Hashable {}
+extension CheetahDigitalOloUI.PaymentSummaryCollectionController.PaymentSummaryCollectionSection : Swift.RawRepresentable {}
+extension CheetahDigitalOloUI.OrderProgressView.Position : Swift.Equatable {}
+extension CheetahDigitalOloUI.OrderProgressView.Position : Swift.Hashable {}
