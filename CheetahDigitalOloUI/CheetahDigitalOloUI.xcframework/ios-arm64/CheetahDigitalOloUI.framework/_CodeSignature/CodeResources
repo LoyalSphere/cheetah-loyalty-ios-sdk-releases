@@ -98,7 +98,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZSVP2lBWc+fizKh82nplIT5Vdqs=
+		7BMzhMEy2qfXd50ljuVCtYcNT3I=
 		</data>
 		<key>Modules/CheetahDigitalOloUI.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -254,11 +254,11 @@
 		</data>
 		<key>RestaurantListCell.nib/objects-12.3+.nib</key>
 		<data>
-		YLJQbgHCftKY9/B3pmpt3T9TMAk=
+		7bV82LjyPxXnm9iDoZ7VP4Ta86I=
 		</data>
 		<key>RestaurantListCell.nib/runtime.nib</key>
 		<data>
-		FkdRnC6PxBZEHA1viRdKl70Vjx4=
+		W4Yel2Rsav39NQeWJy6uzRPd7x0=
 		</data>
 		<key>RestaurantScheduleCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -274,7 +274,7 @@
 		</data>
 		<key>SaveAsFavoriteViewController.nib</key>
 		<data>
-		4qI/r0M5JKf8if4cLANlEUnLrxM=
+		Z57QBxv69cblyF37U65ZKhC+uUk=
 		</data>
 		<key>TextFieldCollectionViewCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -751,14 +751,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QdzlpCRnemeMKZpaCozGtsmWFP5qah4NWeyTqxbictM=
+			gs7hfSgyVIsrOzoudR2ZAS62I7AQhTW1G48Zmha73QI=
 			</data>
 		</dict>
 		<key>RestaurantListCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JlGUospoqtQz/IqNSiQ+Dq8up5HSMghQTQ/o4dpVr54=
+			5XrmA/cVNZ/C8Tljxb/x274KYPRxhbH88x2VFvxa13U=
 			</data>
 		</dict>
 		<key>RestaurantScheduleCollectionViewCell.nib/objects-12.3+.nib</key>
@@ -786,7 +786,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rTRytlKlGZ3rSauebsFqq1h1f3F2OxSOjpJzbSNB7ZQ=
+			Dc+rBVt7zIU/piIUYRWYBsI60oKZeDIoGhQvyo49lLk=
 			</data>
 		</dict>
 		<key>TextFieldCollectionViewCell.nib/objects-12.3+.nib</key>
