@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Notifications-2.2.0] - 2022-09-04
+### Added
+- Additional Properties for 'track' endpoint. [#627] [#628]
+
+### Changed
+- Changed dependency version requirements to CheetahDigitalCore 2.3.0
+
+[#627]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/627
+[#628]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/628
+
 ## [Notifications-2.1.1] - 2022-05-05
 ### Changed
 - Changed dependency version requirements to CheetahDigitalCore 2.2.1

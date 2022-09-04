@@ -32,7 +32,7 @@ public protocol NotificationHelper {
   var deviceId: Swift.String { get }
   func requestAuthorization(options: UserNotifications.UNAuthorizationOptions, completion: @escaping (_ granted: Swift.Bool, _ error: Swift.Error?) -> Swift.Void)
   func sendDeviceTokenToServerIfNeeded(_ deviceToken: Foundation.Data)
-  func trackMessage(id: Swift.Int)
+  func trackMessage(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
   func handleNotificationResponse(_ response: UserNotifications.UNNotificationResponse, completionHandler: @escaping () -> Swift.Void)
 }
 extension UserNotifications.UNNotificationAttachment {
@@ -149,7 +149,7 @@ open class DefaultNotificationHelper : CheetahDigitalNotifications.NotificationH
   required public init(pushHandler: CheetahDigitalNotifications.PushHandler, richPushHandler: CheetahDigitalNotifications.RichPushHandler, emsOpenHandler: CheetahDigitalNotifications.EMSOpenHandler)
   open func sendDeviceTokenToServerIfNeeded(_ deviceToken: Foundation.Data)
   open func requestAuthorization(options: UserNotifications.UNAuthorizationOptions = [.alert, .sound, .badge], completion: @escaping (_ granted: Swift.Bool, _ error: Swift.Error?) -> Swift.Void)
-  open func trackMessage(id: Swift.Int)
+  open func trackMessage(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
   open func handleNotificationResponse(_ response: UserNotifications.UNNotificationResponse, completionHandler: @escaping () -> Swift.Void)
   @objc deinit
 }
