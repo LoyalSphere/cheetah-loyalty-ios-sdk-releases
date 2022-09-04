@@ -2950,7 +2950,7 @@ public enum ProfileAPI {
 }
 public enum MessagesRequest : CheetahDigitalUtils.URLRequestConvertible {
   case getMessages(parameters: CheetahDigitalUtils.Parameters?)
-  case trackMessage(id: Swift.String, action: CheetahDigitalCore.MessagesRequest.TrackAction)
+  case trackMessage(id: Swift.String, parameters: CheetahDigitalUtils.Parameters?, action: CheetahDigitalCore.MessagesRequest.TrackAction)
   case dismissMessage(id: Swift.String)
   public enum TrackAction : Swift.String {
     case delivered, opened
@@ -2972,7 +2972,7 @@ public enum MessagesRequest : CheetahDigitalUtils.URLRequestConvertible {
 }
 public enum MessagesAPI {
   public static func getMessages(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Message]> = nil)
-  public static func trackMessage(id: Swift.String, action: CheetahDigitalCore.MessagesRequest.TrackAction = .opened, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func trackMessage(id: Swift.String, parameters: CheetahDigitalUtils.Parameters? = nil, action: CheetahDigitalCore.MessagesRequest.TrackAction = .opened, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
   public static func dismissMessage(id: Swift.String, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
 }
 public class Configuration : Swift.Decodable {
@@ -2985,6 +2985,7 @@ public class Configuration : Swift.Decodable {
   final public let isGeofencingEnabled: Swift.Bool
   final public let businessUnit: Swift.String
   final public let isAccessTokenExternal: Swift.Bool
+  final public let appLanguage: Swift.String
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case userAgentName
     case clientId
@@ -2994,6 +2995,7 @@ public class Configuration : Swift.Decodable {
     case isGeofencingEnabled
     case businessUnit
     case isAccessTokenExternal
+    case appLanguage
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -3019,7 +3021,7 @@ public class Configuration : Swift.Decodable {
       get
     }
   }
-  public init(userAgentName: Swift.String, clientId: Swift.String, clientSecret: Swift.String, clientUrl: Swift.String, metric: Swift.String, businessUnit: Swift.String, isGeofencingEnabled: Swift.Bool, isAccessTokenExternal: Swift.Bool)
+  public init(userAgentName: Swift.String, clientId: Swift.String, clientSecret: Swift.String, clientUrl: Swift.String, metric: Swift.String, businessUnit: Swift.String, isGeofencingEnabled: Swift.Bool, isAccessTokenExternal: Swift.Bool, appLanguage: Swift.String)
   public static func getDefaultsValue(for key: CheetahDigitalCore.Configuration.DefaultsKeys) -> Any?
   public static func setDefaults(value: Any?, for key: CheetahDigitalCore.Configuration.DefaultsKeys)
   @objc deinit
