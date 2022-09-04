@@ -3,6 +3,7 @@
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CheetahDigitalOffers
 import AVFoundation
 import CheetahDigitalCore
+@_exported import CheetahDigitalOffers
 import CheetahDigitalUI
 import CheetahDigitalUtils
 import Foundation

@@ -12,13 +12,13 @@
 		<data>
 		f973n+ziRMOFHOWTvakF6jUYPhk=
 		</data>
-		<key>Headers/CheetahLoyaltyOffers.h</key>
+		<key>Headers/CheetahDigitalOffers.h</key>
 		<data>
 		6qBKYT17XwvcojMss+dxPY94fzQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4JX+grPE0iwaed3TK5CBZmandEI=
+		4vOzimADFlzt047o8VIKOtkXd98=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/CheetahDigitalOffers.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Vkxkk7RJGsxUjp6rI3isRYsBWDw=
+		rHTidfnhLQL/PapKR5RDScThtxc=
 		</data>
 		<key>Modules/CheetahDigitalOffers.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		baZe2sIaT+D8XuOgWFYwZdCVQJQ=
+		D2+HchrhTRjgkpAYut8lps3kyI4=
 		</data>
 		<key>Modules/CheetahDigitalOffers.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,15 +42,15 @@
 		</data>
 		<key>Modules/CheetahDigitalOffers.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		tpsMm7WMv5GAmj0eOljv8h4MhtQ=
+		NAacpvpgWIykWrDHYKrLFTEm2Bk=
 		</data>
 		<key>Modules/CheetahDigitalOffers.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+ZFKaGzMV171IBfKRRpuhdyJw8g=
+		az62OSrLxPFQGphEGRwk/jVA53I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		IivbNiAcM0F3SnKvF6u1VvYKQH0=
+		SQF1zxYko0ANSh8A2Eb7gb9Y9Jk=
 		</data>
 		<key>OfferDetailViewController.nib</key>
 		<data>
@@ -73,7 +73,7 @@
 			+2CeUg2KLW878cx9rhMK/2wZZZFHJS+vp9x4uHn85x0=
 			</data>
 		</dict>
-		<key>Headers/CheetahLoyaltyOffers.h</key>
+		<key>Headers/CheetahDigitalOffers.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			02c1+Rv/rnF6jG5Fi7kgltfZbuNPOna+hU+/H+G7yNo=
+			VTSI93KHziNt+B00aR3QdJ/Yb/6ame7mUyEsLSIyhDc=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalOffers.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zVk27CgWhQVkiMqLnKbHdkFWj9CpJ1/Q7YfUUN3bIzY=
+			Nn5zJdRcBWJxjWAACMTNFX3hdSeO60T3UTvhzKTVYBM=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalOffers.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -119,21 +119,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EE1Pcsvm4V+eB1PFC/SL7LAlaID1JUY9elZamTnozNg=
+			9tO4IAi12cROjQwFXb9ZDJtVLul7W0/JfE52nKRuWVE=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalOffers.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8DGR66gEaBbVXRC+QgPeHGKdc5RRx2Fn0pZ/D3EIB70=
+			lAi8iFjXn46Y0GdmY8DtTfqocAl2UPGW7KmcUKxTHWI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OjvqA4KYpo1w12vvClTPJKaWDF0O21P40mNTPEZ4WUg=
+			ylx7ZGx+pYHOflaQzmK7bcUG7b45YrsnOEvdfDcyWJI=
 			</data>
 		</dict>
 		<key>OfferDetailViewController.nib</key>

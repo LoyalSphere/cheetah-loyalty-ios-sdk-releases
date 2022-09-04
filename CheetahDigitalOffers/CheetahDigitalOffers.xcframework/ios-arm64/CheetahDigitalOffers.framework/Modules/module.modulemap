@@ -1,4 +1,11 @@
 framework module CheetahDigitalOffers {
-  header "CheetahDigitalOffers-Swift.h"
-  requires objc
+  umbrella header "CheetahDigitalOffers.h"
+
+  export *
+  module * { export * }
+}
+
+module CheetahDigitalOffers.Swift {
+    header "CheetahDigitalOffers-Swift.h"
+    requires objc
 }
