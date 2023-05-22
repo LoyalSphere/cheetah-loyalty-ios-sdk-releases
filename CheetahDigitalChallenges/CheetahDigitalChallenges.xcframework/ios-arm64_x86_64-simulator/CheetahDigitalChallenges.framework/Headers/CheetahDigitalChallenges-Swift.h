@@ -226,11 +226,13 @@ SWIFT_CLASS("_TtC24CheetahDigitalChallenges22BaseChallengeResponder")
 @end
 
 @class NSCoder;
+@class UICollectionViewLayoutAttributes;
 
 SWIFT_CLASS("_TtC24CheetahDigitalChallenges17MultiQuestionCell")
 @interface MultiQuestionCell : UICollectionViewCell
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class UICollectionView;
@@ -293,7 +295,6 @@ SWIFT_CLASS("_TtC24CheetahDigitalChallenges27ReferralChallengeController")
 @class UIView;
 @class UIStackView;
 @class UIImageView;
-@class UICollectionViewLayoutAttributes;
 
 SWIFT_CLASS("_TtC24CheetahDigitalChallenges16SurveyChoiceCell")
 @interface SurveyChoiceCell : UICollectionViewCell
@@ -340,6 +341,7 @@ SWIFT_CLASS("_TtC24CheetahDigitalChallenges16SurveyRatingCell")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified containerView;
 /// Stack view of the cell.
 @property (nonatomic, weak) IBOutlet UIStackView * _Null_unspecified stackView;
+- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -361,6 +363,7 @@ SWIFT_CLASS("_TtC24CheetahDigitalChallenges19SurveyTextFieldCell")
 @interface SurveyTextFieldCell : UICollectionViewCell
 /// Text field of the cell.
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified textField;
+- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -372,6 +375,7 @@ SWIFT_CLASS("_TtC24CheetahDigitalChallenges18SurveyTextViewCell")
 @interface SurveyTextViewCell : UICollectionViewCell
 /// Text view of the cell.
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified textView;
+- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -619,11 +623,13 @@ SWIFT_CLASS("_TtC24CheetahDigitalChallenges22BaseChallengeResponder")
 @end
 
 @class NSCoder;
+@class UICollectionViewLayoutAttributes;
 
 SWIFT_CLASS("_TtC24CheetahDigitalChallenges17MultiQuestionCell")
 @interface MultiQuestionCell : UICollectionViewCell
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class UICollectionView;
@@ -686,7 +692,6 @@ SWIFT_CLASS("_TtC24CheetahDigitalChallenges27ReferralChallengeController")
 @class UIView;
 @class UIStackView;
 @class UIImageView;
-@class UICollectionViewLayoutAttributes;
 
 SWIFT_CLASS("_TtC24CheetahDigitalChallenges16SurveyChoiceCell")
 @interface SurveyChoiceCell : UICollectionViewCell
@@ -733,6 +738,7 @@ SWIFT_CLASS("_TtC24CheetahDigitalChallenges16SurveyRatingCell")
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified containerView;
 /// Stack view of the cell.
 @property (nonatomic, weak) IBOutlet UIStackView * _Null_unspecified stackView;
+- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -754,6 +760,7 @@ SWIFT_CLASS("_TtC24CheetahDigitalChallenges19SurveyTextFieldCell")
 @interface SurveyTextFieldCell : UICollectionViewCell
 /// Text field of the cell.
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified textField;
+- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -765,6 +772,7 @@ SWIFT_CLASS("_TtC24CheetahDigitalChallenges18SurveyTextViewCell")
 @interface SurveyTextViewCell : UICollectionViewCell
 /// Text view of the cell.
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified textView;
+- (UICollectionViewLayoutAttributes * _Nonnull)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes * _Nonnull)layoutAttributes SWIFT_WARN_UNUSED_RESULT;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;

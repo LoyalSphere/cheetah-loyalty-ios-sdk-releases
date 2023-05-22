@@ -44,6 +44,7 @@ public protocol PreferenceChallengeCollectionController : CheetahDigitalUI.Colle
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SurveyTextViewCell : UIKit.UICollectionViewCell {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var textView: UIKit.UITextView!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
   @objc override dynamic open func awakeFromNib()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -74,6 +75,7 @@ public protocol ProfileResponderDelegate {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class SurveyTextFieldCell : UIKit.UICollectionViewCell {
   @objc @IBOutlet @_Concurrency.MainActor(unsafe) weak public var textField: UIKit.UITextField!
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
   @objc override dynamic open func awakeFromNib()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -108,6 +110,7 @@ public protocol ProfileResponderDelegate {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) open func setupEmbeddedCollectionView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
   @objc deinit
 }
 public protocol MemeColorPickerDelegate {
@@ -640,6 +643,7 @@ public protocol ViewContentController : CheetahDigitalUI.ContentController {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func preferredLayoutAttributesFitting(_ layoutAttributes: UIKit.UICollectionViewLayoutAttributes) -> UIKit.UICollectionViewLayoutAttributes
   @objc override dynamic open func awakeFromNib()
   @objc deinit
   @_Concurrency.MainActor(unsafe) open func setupRatingButtons()
