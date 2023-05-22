@@ -603,6 +603,9 @@
                 <a href="../Structs/Order/Place.html">– Place</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/Order/Response.html">– Response</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/Product.html">Product</a>
               </li>
               <li class="nav-group-task">
@@ -654,6 +657,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/AccountSummary/MetricThreshold.html">– MetricThreshold</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/AccountSummary/MetricExpiration.html">– MetricExpiration</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ProfileAPI.html">ProfileAPI</a>
@@ -821,6 +827,12 @@
                 <a href="../Enums/MetaReferencesRequest.html">MetaReferencesRequest</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Enums/OrdersAPI.html">OrdersAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrdersRequest.html">OrdersRequest</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/UpgradeCheckAPI.html">UpgradeCheckAPI</a>
               </li>
               <li class="nav-group-task">
@@ -952,6 +964,33 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:18CheetahDigitalCore14AccountSummaryV16metricExpirationSDySSSDySSAC06MetricG0VGGvp"></a>
+                    <a name="//apple_ref/swift/Property/metricExpiration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore14AccountSummaryV16metricExpirationSDySSSDySSAC06MetricG0VGGvp">metricExpiration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Member&rsquo;s expiring metrics.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">metricExpiration</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">AccountSummary</span><span class="o">.</span><span class="kt"><a href="../Structs/AccountSummary/MetricExpiration.html">MetricExpiration</a></span><span class="p">]]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:18CheetahDigitalCore14AccountSummaryV7metricsSDySSAC6MetricVGvp"></a>
                     <a name="//apple_ref/swift/Property/metrics" class="dashAnchor"></a>
                     <a class="token" href="#/s:18CheetahDigitalCore14AccountSummaryV7metricsSDySSAC6MetricVGvp">metrics</a>
@@ -1033,9 +1072,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:18CheetahDigitalCore14AccountSummaryV4tier6member7metrics0G6Badges11permissionsA2C8TierInfoVSg_AC6MemberVSgSDySSAC6MetricVGSayAC0M5BadgeVGSDyS2SGtcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(tier:member:metrics:memberBadges:permissions:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:18CheetahDigitalCore14AccountSummaryV4tier6member7metrics0G6Badges11permissionsA2C8TierInfoVSg_AC6MemberVSgSDySSAC6MetricVGSayAC0M5BadgeVGSDyS2SGtcfc">init(tier:<wbr>member:<wbr>metrics:<wbr>memberBadges:<wbr>permissions:<wbr>)</a>
+                    <a name="/s:18CheetahDigitalCore14AccountSummaryV4tier6member16metricExpiration7metrics0G6Badges11permissionsA2C8TierInfoVSg_AC6MemberVSgSDySSSDySSAC06MetricI0VGGSDySSAC0P0VGSayAC0O5BadgeVGSDyS2SGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(tier:member:metricExpiration:metrics:memberBadges:permissions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore14AccountSummaryV4tier6member16metricExpiration7metrics0G6Badges11permissionsA2C8TierInfoVSg_AC6MemberVSgSDySSSDySSAC06MetricI0VGGSDySSAC0P0VGSayAC0O5BadgeVGSDyS2SGtcfc">init(tier:<wbr>member:<wbr>metricExpiration:<wbr>metrics:<wbr>memberBadges:<wbr>permissions:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1049,7 +1088,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">tier</span><span class="p">:</span> <span class="kt">AccountSummary</span><span class="o">.</span><span class="kt"><a href="../Structs/AccountSummary/TierInfo.html">TierInfo</a></span><span class="p">?,</span> <span class="nv">member</span><span class="p">:</span> <span class="kt">AccountSummary</span><span class="o">.</span><span class="kt"><a href="../Structs/AccountSummary/Member.html">Member</a></span><span class="p">?,</span> <span class="nv">metrics</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">AccountSummary</span><span class="o">.</span><span class="kt"><a href="../Structs/AccountSummary/Metric.html">Metric</a></span><span class="p">],</span> <span class="nv">memberBadges</span><span class="p">:</span> <span class="p">[</span><span class="kt">AccountSummary</span><span class="o">.</span><span class="kt"><a href="../Structs/AccountSummary/MemberBadge.html">MemberBadge</a></span><span class="p">],</span> <span class="nv">permissions</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">tier</span><span class="p">:</span> <span class="kt">AccountSummary</span><span class="o">.</span><span class="kt"><a href="../Structs/AccountSummary/TierInfo.html">TierInfo</a></span><span class="p">?,</span> <span class="nv">member</span><span class="p">:</span> <span class="kt">AccountSummary</span><span class="o">.</span><span class="kt"><a href="../Structs/AccountSummary/Member.html">Member</a></span><span class="p">?,</span> <span class="nv">metricExpiration</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">AccountSummary</span><span class="o">.</span><span class="kt"><a href="../Structs/AccountSummary/MetricExpiration.html">MetricExpiration</a></span><span class="p">]],</span> <span class="nv">metrics</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">AccountSummary</span><span class="o">.</span><span class="kt"><a href="../Structs/AccountSummary/Metric.html">Metric</a></span><span class="p">],</span> <span class="nv">memberBadges</span><span class="p">:</span> <span class="p">[</span><span class="kt">AccountSummary</span><span class="o">.</span><span class="kt"><a href="../Structs/AccountSummary/MemberBadge.html">MemberBadge</a></span><span class="p">],</span> <span class="nv">permissions</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
@@ -1255,6 +1294,34 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:18CheetahDigitalCore14AccountSummaryV16MetricExpirationV"></a>
+                    <a name="//apple_ref/swift/Struct/MetricExpiration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:18CheetahDigitalCore14AccountSummaryV16MetricExpirationV">MetricExpiration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Struct representing Metric Expiration related values</p>
+
+                        <a href="../Structs/AccountSummary/MetricExpiration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">MetricExpiration</span> <span class="p">:</span> <span class="kt">Codable</span><span class="p">,</span> <span class="kt">Equatable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:Se4fromxs7Decoder_p_tKcfc"></a>
                     <a name="//apple_ref/swift/Method/init(from:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:Se4fromxs7Decoder_p_tKcfc">init(from:<wbr>)</a>
@@ -1283,7 +1350,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2022 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2022-09-04)</p>
+          <p>&copy; 2023 <a class="link" href="https://www.cheetahdigital.com/products/cheetah-loyalty" target="_blank" rel="external noopener">Cheetah Digital</a>. All rights reserved. (Last updated: 2023-05-22)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

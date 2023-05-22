@@ -325,7 +325,8 @@ public struct PunchCard : Swift.Codable, Swift.Equatable {
   public var expiration: Swift.String
   public var punchDetail: [CheetahDigitalCore.PunchCard.Detail]
   public var punchCardType: CheetahDigitalCore.PunchCard.PunchCardType?
-  public init(id: Swift.Int, name: Swift.String, label: Swift.String, status: Swift.String, description: Swift.String, requiredPunches: Swift.Int, effectivityStart: Swift.String, effectivityEnd: Swift.String, usageStartDate: Swift.String, usageEndDate: Swift.String, usageSchedule: Swift.String, heading: Swift.String, subheading: Swift.String, body: Swift.String, details: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String, subject: Swift.String, action: Swift.String, headingColor: Swift.String, color: Swift.String, bgColor: Swift.String, headingBgColor: Swift.String, image1Bg: Swift.String, layoutId: Swift.String, punches: [CheetahDigitalCore.PunchCard.Punch], startDate: Swift.String, expiration: Swift.String, punchDetail: [CheetahDigitalCore.PunchCard.Detail], punchCardType: CheetahDigitalCore.PunchCard.PunchCardType?)
+  public var currentPunches: Swift.Int
+  public init(id: Swift.Int, name: Swift.String, label: Swift.String, status: Swift.String, description: Swift.String, requiredPunches: Swift.Int, effectivityStart: Swift.String, effectivityEnd: Swift.String, usageStartDate: Swift.String, usageEndDate: Swift.String, usageSchedule: Swift.String, heading: Swift.String, subheading: Swift.String, body: Swift.String, details: Swift.String, imageUrl: Swift.String, thumbImageUrl: Swift.String, originalImageUrl: Swift.String, subject: Swift.String, action: Swift.String, headingColor: Swift.String, color: Swift.String, bgColor: Swift.String, headingBgColor: Swift.String, image1Bg: Swift.String, layoutId: Swift.String, currentPunches: Swift.Int, punches: [CheetahDigitalCore.PunchCard.Punch], startDate: Swift.String, expiration: Swift.String, punchDetail: [CheetahDigitalCore.PunchCard.Detail], punchCardType: CheetahDigitalCore.PunchCard.PunchCardType?)
   public struct Detail : Swift.Codable, Swift.Equatable {
     public var name: Swift.String
     public var punches: Swift.Int
@@ -1109,8 +1110,6 @@ public enum ProductsRequest : CheetahDigitalUtils.URLRequestConvertible {
   case getCategories
   case loadProductComponents(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
   case prepareClientToken
-  case getOrders(parameters: CheetahDigitalUtils.Parameters?)
-  case getOrder(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
   public var path: Swift.String {
     get
   }
@@ -1123,8 +1122,6 @@ public enum ProductsAPI {
   public static func getCategories(completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Product.Category]> = nil)
   public static func loadProductComponents(id: Swift.Int, with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Product> = nil)
   public static func prepareClientToken(completion: CheetahDigitalCore.ResponseCompletion<Swift.String> = nil)
-  public static func getOrders(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Order]> = nil)
-  public static func getOrder(with id: Swift.Int, parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Order> = nil)
 }
 public struct NewsFeed : Swift.Codable, Swift.Equatable {
   public var allowedToPost: Swift.Bool
@@ -1363,6 +1360,27 @@ extension CheetahDigitalCore.Product.Component {
 extension CheetahDigitalCore.Product.Category {
   public init(from decoder: Swift.Decoder) throws
 }
+public enum OrdersRequest : CheetahDigitalUtils.URLRequestConvertible {
+  case getOrders(parameters: CheetahDigitalUtils.Parameters?)
+  case getOrder(id: Swift.Int, parameters: CheetahDigitalUtils.Parameters?)
+  case createOrder(parameters: CheetahDigitalUtils.Parameters?)
+  case retroClaim(id: Swift.String, businessDate: Swift.String, placeId: Swift.String, parameters: CheetahDigitalUtils.Parameters?)
+  public var path: Swift.String {
+    get
+  }
+  public var method: CheetahDigitalUtils.HTTPMethod {
+    get
+  }
+  public var parameters: CheetahDigitalUtils.Parameters? {
+    get
+  }
+}
+public enum OrdersAPI {
+  public static func getOrders(with parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<[CheetahDigitalCore.Order]> = nil)
+  public static func getOrder(with id: Swift.Int, parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Order> = nil)
+  public static func createOrder(parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<Swift.Bool> = nil)
+  public static func retroClaim(id: Swift.String, businessDate: Swift.String, placeId: Swift.String, parameters: CheetahDigitalUtils.Parameters? = nil, completion: CheetahDigitalCore.ResponseCompletion<CheetahDigitalCore.Order.Response> = nil)
+}
 public enum PreferencesRequest : CheetahDigitalUtils.URLRequestConvertible {
   case getPreferences(parameters: CheetahDigitalUtils.Parameters?)
   case addDomain(domain: Swift.String, preferenceName: Swift.String)
@@ -1412,7 +1430,8 @@ public struct Order : Swift.Codable, Swift.Equatable {
   public var items: [CheetahDigitalCore.Order.Item]
   public var overallItemCount: Swift.Int
   public var place: CheetahDigitalCore.Order.Place?
-  public init(id: Swift.Int, transactionType: Swift.String, orderedAt: Swift.String, preferredReceiveAt: Swift.String, sourceName: Swift.String, orderStatus: Swift.String, integrationId: Swift.String, placeIntegrationId: Swift.String, terminalName: Swift.String, transactionId: Swift.String, businessDate: Swift.String, metricName: Swift.String, metricAmount: Swift.String, currency: Swift.String, eligibleSubtotal: Swift.String, subtotal: Swift.String, overallDiscount: Swift.String, tipAmount: Swift.String, serviceCharge: Swift.String, tax: Swift.String, totalAmount: Swift.String, createdAt: Swift.String, updatedAt: Swift.String, itemCount: Swift.Int, items: [CheetahDigitalCore.Order.Item], overallItemCount: Swift.Int, place: CheetahDigitalCore.Order.Place?)
+  public var transactionTimeStamp: Swift.String
+  public init(id: Swift.Int, transactionType: Swift.String, orderedAt: Swift.String, preferredReceiveAt: Swift.String, sourceName: Swift.String, orderStatus: Swift.String, integrationId: Swift.String, placeIntegrationId: Swift.String, terminalName: Swift.String, transactionId: Swift.String, businessDate: Swift.String, metricName: Swift.String, metricAmount: Swift.String, currency: Swift.String, eligibleSubtotal: Swift.String, subtotal: Swift.String, overallDiscount: Swift.String, tipAmount: Swift.String, serviceCharge: Swift.String, tax: Swift.String, totalAmount: Swift.String, createdAt: Swift.String, updatedAt: Swift.String, itemCount: Swift.Int, items: [CheetahDigitalCore.Order.Item], overallItemCount: Swift.Int, place: CheetahDigitalCore.Order.Place?, transactionTimeStamp: Swift.String)
   public struct Item : Swift.Codable, Swift.Equatable {
     public var id: Swift.Int
     public var kind: Swift.String
@@ -1446,6 +1465,15 @@ public struct Order : Swift.Codable, Swift.Equatable {
     public static func == (a: CheetahDigitalCore.Order.Place, b: CheetahDigitalCore.Order.Place) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
   }
+  public struct Response : Swift.Codable, Swift.Equatable {
+    public var claimStub: Swift.String
+    public var claimedAt: Swift.String
+    public var metricAmount: Swift.String
+    public var metricName: Swift.String
+    public init(claimStub: Swift.String, claimedAt: Swift.String, metricAmount: Swift.String, metricName: Swift.String)
+    public static func == (a: CheetahDigitalCore.Order.Response, b: CheetahDigitalCore.Order.Response) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+  }
   public static func == (a: CheetahDigitalCore.Order, b: CheetahDigitalCore.Order) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -1456,6 +1484,9 @@ extension CheetahDigitalCore.Order.Item {
   public init(from decoder: Swift.Decoder) throws
 }
 extension CheetahDigitalCore.Order.Place {
+  public init(from decoder: Swift.Decoder) throws
+}
+extension CheetahDigitalCore.Order.Response {
   public init(from decoder: Swift.Decoder) throws
 }
 public enum LeaderboardsRequest : CheetahDigitalUtils.URLRequestConvertible {
@@ -2046,10 +2077,11 @@ public struct ProfileAttribute : Swift.Codable, Swift.Equatable, CheetahDigitalC
 public struct AccountSummary : Swift.Codable, Swift.Equatable {
   public var tier: CheetahDigitalCore.AccountSummary.TierInfo?
   public var member: CheetahDigitalCore.AccountSummary.Member?
+  public var metricExpiration: [Swift.String : [Swift.String : CheetahDigitalCore.AccountSummary.MetricExpiration]]
   public var metrics: [Swift.String : CheetahDigitalCore.AccountSummary.Metric]
   public var memberBadges: [CheetahDigitalCore.AccountSummary.MemberBadge]
   public var permissions: [Swift.String : Swift.String]
-  public init(tier: CheetahDigitalCore.AccountSummary.TierInfo?, member: CheetahDigitalCore.AccountSummary.Member?, metrics: [Swift.String : CheetahDigitalCore.AccountSummary.Metric], memberBadges: [CheetahDigitalCore.AccountSummary.MemberBadge], permissions: [Swift.String : Swift.String])
+  public init(tier: CheetahDigitalCore.AccountSummary.TierInfo?, member: CheetahDigitalCore.AccountSummary.Member?, metricExpiration: [Swift.String : [Swift.String : CheetahDigitalCore.AccountSummary.MetricExpiration]], metrics: [Swift.String : CheetahDigitalCore.AccountSummary.Metric], memberBadges: [CheetahDigitalCore.AccountSummary.MemberBadge], permissions: [Swift.String : Swift.String])
   public struct Member : Swift.Codable, Swift.Equatable {
     public var memberId: Swift.String
     public var firstName: Swift.String
@@ -2123,6 +2155,15 @@ public struct AccountSummary : Swift.Codable, Swift.Equatable {
     public init(points: Swift.Int, spend: Swift.Int)
     public static func == (a: CheetahDigitalCore.AccountSummary.MetricThreshold, b: CheetahDigitalCore.AccountSummary.MetricThreshold) -> Swift.Bool
     public func encode(to encoder: Swift.Encoder) throws
+  }
+  public struct MetricExpiration : Swift.Codable, Swift.Equatable {
+    public var nextExpirationDate: Swift.String
+    public var expiringMetricValue: Swift.Int
+    public var daysToExpiration: Swift.Int
+    public init(nextExpirationDate: Swift.String, expiringMetricValue: Swift.Int, daysToExpiration: Swift.Int)
+    public static func == (a: CheetahDigitalCore.AccountSummary.MetricExpiration, b: CheetahDigitalCore.AccountSummary.MetricExpiration) -> Swift.Bool
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
   }
   public static func == (a: CheetahDigitalCore.AccountSummary, b: CheetahDigitalCore.AccountSummary) -> Swift.Bool
   public func encode(to encoder: Swift.Encoder) throws

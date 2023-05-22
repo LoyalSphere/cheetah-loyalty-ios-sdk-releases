@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Core-4.0.0] - 2023-05-18
+### Added
+- Support for metric_expiration in api/summary [#640]
+### Changed
+- Bumped version and build number to 4.0.0
+
+[#640]: https://github.com/LoyalSphere/cheetah-loyalty-ios-sdk/pull/640
+
 ## [Core-2.3.0] - 2022-09-04
 ### Added
 - Added `APP_LANGUAGE` Configuration property. [#625]
