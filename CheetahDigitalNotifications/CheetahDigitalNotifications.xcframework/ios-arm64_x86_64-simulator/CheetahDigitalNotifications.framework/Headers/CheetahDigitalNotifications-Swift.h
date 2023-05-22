@@ -227,6 +227,7 @@ SWIFT_CLASS("_TtC27CheetahDigitalNotifications15RichPushService")
 
 
 
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
@@ -458,6 +459,7 @@ SWIFT_CLASS("_TtC27CheetahDigitalNotifications15RichPushService")
 - (void)serviceExtensionTimeWillExpire;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

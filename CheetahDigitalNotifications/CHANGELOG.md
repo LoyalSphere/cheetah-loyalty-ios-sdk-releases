@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Notifications-4.0.0] - 2023-05-18
+### Changed
+- Bumped version and build number to 4.0.0
+
 ## [Notifications-2.2.0] - 2022-09-04
 ### Added
 - Additional Properties for 'track' endpoint. [#627] [#628]

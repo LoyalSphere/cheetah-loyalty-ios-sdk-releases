@@ -55,7 +55,7 @@ open class DefaultPushHandler : CheetahDigitalNotifications.PushHandler {
   public var bestAttemptContent: UserNotifications.UNMutableNotificationContent?
   @objc override dynamic open func didReceive(_ request: UserNotifications.UNNotificationRequest, withContentHandler contentHandler: @escaping (UserNotifications.UNNotificationContent) -> Swift.Void)
   @objc override dynamic open func serviceExtensionTimeWillExpire()
-  open func addImageIfNecessary(content: UserNotifications.UNMutableNotificationContent, userInfo: [Swift.String : Any])
+  open func addImageIfNecessary(content: UserNotifications.UNMutableNotificationContent, userInfo: [Swift.String : Any]) -> UserNotifications.UNMutableNotificationContent?
   open func createSupportedCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory?
   open func setupPostLikeCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
   open func setupPostLikeCommentCategory(_ userInfo: [Swift.String : Any]) -> UserNotifications.UNNotificationCategory
