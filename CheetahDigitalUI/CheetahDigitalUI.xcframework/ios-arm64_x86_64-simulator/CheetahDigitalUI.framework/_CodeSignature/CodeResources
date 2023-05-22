@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		9uVQkE6wFFPlKS2yZcNuKNUNWS0=
+		gYa8syshbAYvTMTLQ4ePSTx0Rdc=
 		</data>
 		<key>CarouselItemCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fILNn4uYoWUDyYbUluaGN6zMiDI=
+		zKYre6wTGW+zZ5THYN8PVVpKJew=
 		</data>
 		<key>ListItemCell.nib/objects-12.3+.nib</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		CoszqDCirFJwQr1hwrRqPNlKM2U=
+		7HOvbsg/OC1krZGupUkc9cxkDXY=
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vU3bQfUD53xv+pWFynxKMSL1DVM=
+		PM7vCJzmumj82i6s0aKgOQP7DUU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -201,7 +201,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KCbSpQ12RetxHgj9UTfpcBW+vpwcz3axV/mYJF/JGNE=
+			lci9tWfJR8/Bpx2LgY0IFifke1YPB8nx+cbtOxeCIdY=
 			</data>
 		</dict>
 		<key>CarouselItemCell.nib/objects-12.3+.nib</key>
@@ -341,7 +341,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4UfyYg9vxhb+01sxAP5T2cJFGfWsfnVtY0+r0IJD78w=
+			oNVVVXFe0OZff2B++5FJcxI5TXFV4bgrVReddZZV2Tk=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -362,7 +362,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5H6Ng3xbWIY6vgythQmDBxAU/HWuhmNdC+ZuQrJQFZo=
+			dTmx8FZh0Em9TrPJB5m8yvsKH4gQTJsWM79rg9Lmsig=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

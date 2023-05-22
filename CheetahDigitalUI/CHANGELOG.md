@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [UI-4.0.0] - 2023-05-18
+### Changed
+- Bumped version and build number to 4.0.0.
+
 ## [UI-2.1.1] - 2022-04-19
 ### Fixed
 - Framework not build correctly
