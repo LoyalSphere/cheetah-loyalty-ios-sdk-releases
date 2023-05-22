@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		djmBQ4SPEOrCp7oOrwHJIIlERiQ=
+		e3TX6l4XmHxtIKhYZ3nla2WKVmY=
 		</data>
 		<key>Modules/CheetahDigitalUtils.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/CheetahDigitalUtils.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		I43mmwb4Ry2/ibBAZtoiMWUwpvY=
+		irNf2TLo+1Ua1WuG73b76S5Y0Kw=
 		</data>
 		<key>Modules/CheetahDigitalUtils.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/CheetahDigitalUtils.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zA8EpbqvpteXoP7nWfo5e0dTn4I=
+		h4NC9XhB6YNKwKYvjO1W5LKyIPM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -83,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GOc9fNTcYLlHwHgEB40lG+UwD9wcL9tCpcXhhNQt7+U=
+			kYKvPPsTJe7YIfbLm1xR80cHI4Lr6TeOH10VmgfvW9U=
 			</data>
 		</dict>
 		<key>Modules/CheetahDigitalUtils.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -104,7 +104,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			y1WdrPz/YY7lNNhWpnpHbn5f+9AywynGbg2fucWuCRw=
+			c7ZxWqxFfo7iVQy4UdMuMn9Vh9CVFBZQumRDl48qMuQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

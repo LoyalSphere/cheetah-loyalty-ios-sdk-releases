@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Utils-4.0.0] - 2023-05-18
+### Changed
+- Bumped version and build number to 4.0.0
+
 ## [Utils-2.1.0] - 2022-04-18
 ### Changed
 - Built using Xcode 13.3.
