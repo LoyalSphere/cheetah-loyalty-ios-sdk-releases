@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Rewards-4.0.0] - 2023-05-18
+### Changed
+- Bumped version and build number to 4.0.0
+
 ## [Rewards-2.2.0] - 2022-09-04
 ### Changed
 - Changed dependency version requirements to CheetahDigitalCore 2.3.0.
